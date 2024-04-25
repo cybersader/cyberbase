@@ -22,10 +22,10 @@ Deadwood, SD 57732
 - Custer State Park
 	- [Sylvan Lake | Black Hills & Badlands - South Dakota](https://www.blackhillsbadlands.com/places/sylvan-lake) 
 		- Cliff jumping + Wet suit
-		- ![](attachments/Planning%20Deadwood%202024%20WWHF%20Trip/IMG-20240318223248473.png)
-		- ![](attachments/Planning%20Deadwood%202024%20WWHF%20Trip/IMG-20240318223528032.png)
+		- ![](IMG-20240318223248473.png)
+		- ![](IMG-20240318223528032.png)
 - Hippie Hole
 	- Cliff jumping + wet suit
 		- [Hippie Hole - Hiking - Black Hills The Hike - South Dakota](https://www.blackhillsthehike.com/hippie-hole/)
-		- ![200](attachments/Planning%20Deadwood%202024%20WWHF%20Trip/IMG-20240318223420382.png)
+		- ![200](IMG-20240318223420382.png)
 	- 
