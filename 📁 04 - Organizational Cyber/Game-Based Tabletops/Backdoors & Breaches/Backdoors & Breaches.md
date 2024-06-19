@@ -3,16 +3,17 @@ aliases:
   - Cubicles and Compromises
   - Cubicles & Compromises
   - Backdoors and Breaches
+  - Awesome Backdoors & Breaches
 tags:
   - "#BHIS"
   - "#AntisyphonTraining"
 publish: true
 date created: Monday, May 27th 2024, 10:06 am
-date modified: Monday, May 27th 2024, 12:55 pm
+date modified: Wednesday, June 19th 2024, 1:52 pm
 ---
 
 # Scenario Brainstorm
-- 
+- [IR Tabletop Scenarios](../../Incident%20Response/IR%20Tabletop%20Scenarios.md) 
 # Resources
 - [Backdoors & Breaches - Black Hills Information Security](https://www.blackhillsinfosec.com/projects/backdoorsandbreaches/)
 	- Game mat image files
@@ -33,10 +34,17 @@ date modified: Monday, May 27th 2024, 12:55 pm
 ## Shop, Physical Game, Playmats
 - [Backdoors & Breaches, Incident Response Card Game – Spearphish General Store](https://spearphish-general-store.myshopify.com/collections/backdoors-breaches-incident-response-card-game)
 - Print custom playmats - [Custom Playmats](https://www.inkedgaming.com/pages/custom-playmats-1) 
+- Print custom playing card for B&B:
+	- 1$ - [Custom Card Game Printing and Manufacturer](https://www.makeplayingcards.com/promotional/blank-playing-cards.html)
+	- Requires quote - [Custom Playing Cards - Personalized Decks of Playing Cards](https://shuffledink.com/custom-playing-cards/)
+	- [Custom Playing Cards Single Design (rectangle) | ArtsCow.com](https://www.artscow.com/photo-gifts/playing-cards/playing-cards-single-design-rectangle-298)
+- Playmat image files - https://www.blackhillsinfosec.com/projects/backdoorsandbreaches/
+	- https://www.blackhillsinfosec.com/wp-content/uploads/2021/09/Playmat_competitive_300dpi-1-768x893.jpg
+	- https://www.blackhillsinfosec.com/wp-content/uploads/2021/09/PLAYMAT_14x24_300dpi-1-606x1024.jpg
+	- https://www.blackhillsinfosec.com/wp-content/uploads/2023/06/BnB_tabletop_playmat-1321x1536.png
 ## Tutorials, Demos, Videos
 - [How to Use Backdoors & Breaches to do Tabletop Exercises and Learn Cybersecurity - Black Hills Information Security](https://www.blackhillsinfosec.com/how-to-use-backdoors-breaches/) 
 - [(1) AASLR: Backdoors & Breaches Live w/ Ean Meyer - YouTube](https://www.youtube.com/watch?v=0hAeEQRBVIs)
-- 
 - [(1) Backdoors & Breaches: Live Tabletop Exercise Demo - YouTube](https://www.youtube.com/watch?v=-g_CRiaS6-4) 
 - [(1) BHIS | How to Use Backdoors & Breaches to do Tabletop Exercises and Learn Cybersecurity - YouTube](https://www.youtube.com/watch?v=pMY2HXUrKsg) 
 - [(1) How to Play Competitive Backdoors & Breaches w/ Jason Blanchard (1-Hour) - YouTube](https://www.youtube.com/watch?v=nTwvGA8_8YA) 
