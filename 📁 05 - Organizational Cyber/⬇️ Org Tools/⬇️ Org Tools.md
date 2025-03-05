@@ -12,6 +12,12 @@ date modified: Monday, March 3rd 2025, 8:57 pm
 [Project Management](../../📁%2010%20-%20My%20Obsidian%20Stack/Project%20Management/Project%20Management.md)
 [Scalable Project Management](../../🕸️%20UNSTRUCTURED/Scalable%20Project%20Management.md)
 
+# Risk Management Database and Knowledge Platform Options
+- Obsidian
+- Notion
+- Affine
+- Appflowy
+
 # DROP
 
 - [spinach.ai > Spinach AI](https://www.spinach.ai/)
