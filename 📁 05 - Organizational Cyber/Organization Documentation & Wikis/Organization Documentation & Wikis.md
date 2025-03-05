@@ -12,6 +12,9 @@ date modified: Sunday, March 2nd 2025, 7:29 pm
 [Obsidian Setup for Corporate](../../📁%2009%20-%20My%20Obsidian%20Stack/Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)
 [Wiki, KB, KMS](../../📁%2003%20-%20Curations,%20Stacks/Wiki,%20KB,%20KMS/Wiki,%20KB,%20KMS.md)
 
+# Ideas
+- GRC and risk management and knowledge base and wiki platform
+
 # Curated Options
 
 - OneNote
