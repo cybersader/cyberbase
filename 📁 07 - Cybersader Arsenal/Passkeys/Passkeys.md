@@ -15,4 +15,6 @@ date modified: Thursday, March 6th 2025, 9:02 pm
 - [Autofill Logins on Android | Bitwarden](https://bitwarden.com/help/auto-fill-android/)
 - [Bitwarden passkeys on android 15, Google keeps popping up by default : r/Bitwarden](https://www.reddit.com/r/Bitwarden/comments/1grh593/bitwarden_passkeys_on_android_15_google_keeps/)
 - [Bitwarden Roadmap - Feature Requests - Bitwarden Community Forums](https://community.bitwarden.com/t/bitwarden-roadmap/69396)
+- [Generating a new passkey on Android : r/Bitwarden](https://www.reddit.com/r/Bitwarden/comments/1guk7e2/generating_a_new_passkey_on_android/)
+- [WebAuthn.io](https://webauthn.io/)
 - 
