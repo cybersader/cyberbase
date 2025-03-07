@@ -66,7 +66,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Mon, Mar 3, 2025 - [[⬇ Tech Dropzone]]
+> Thu, Mar 6, 2025 - [[Cyber Training, CTFs]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -94,18 +94,18 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 ```
 %%
 
-| File                                                                                                                                          | Last modified            |
-| --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md\|⬇ Tech Dropzone]]                                                             | Mon - 3/3/2025, 9:03 PM  |
-| [[📁 05 - Organizational Cyber/⬇️ Org Tools/⬇️ Org Tools.md\|⬇️ Org Tools]]                                                                   | Mon - 3/3/2025, 8:57 PM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                | Mon - 3/3/2025, 2:00 PM  |
-| [[README.md\|README]]                                                                                                                         | Mon - 3/3/2025, 2:00 PM  |
-| [[📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md\|Wiki, KB, KMS]]                                                                   | Mon - 3/3/2025, 1:59 PM  |
-| [[📁 03 - Curations, Stacks/Personal Productivity Stack/Personal Productivity Stack.md\|Personal Productivity Stack]]                         | Mon - 3/3/2025, 1:58 PM  |
-| [[📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md\|Organization Documentation & Wikis]] | Mon - 3/3/2025, 1:53 PM  |
-| [[📁 10 - My Obsidian Stack/Project Management/Project Management.md\|Project Management]]                                                    | Mon - 3/3/2025, 1:48 PM  |
-| [[📁 34 - Gaming/📁 34 - Gaming.md\|📁 34 - Gaming]]                                                                                          | Mon - 3/3/2025, 1:46 PM  |
-| [[📁 07 - Cybersader Arsenal/Persuasive Technology Defenses/Persuasive Technology Defenses.md\|Persuasive Technology Defenses]]               | Mon - 3/3/2025, 12:15 PM |
+| File                                                                                                                                          | Last modified           |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| [[📁 05 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md\|Cyber Training, CTFs]]                                           | Thu - 3/6/2025, 7:08 PM |
+| [[📁 05 - Organizational Cyber/⬇️ Org Tools/⬇️ Org Tools.md\|⬇️ Org Tools]]                                                                   | Thu - 3/6/2025, 7:03 PM |
+| [[📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md\|Organization Documentation & Wikis]] | Thu - 3/6/2025, 6:48 PM |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                | Mon - 3/3/2025, 9:03 PM |
+| [[README.md\|README]]                                                                                                                         | Mon - 3/3/2025, 9:03 PM |
+| [[📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md\|⬇ Tech Dropzone]]                                                             | Mon - 3/3/2025, 9:03 PM |
+| [[📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md\|Wiki, KB, KMS]]                                                                   | Mon - 3/3/2025, 1:59 PM |
+| [[📁 03 - Curations, Stacks/Personal Productivity Stack/Personal Productivity Stack.md\|Personal Productivity Stack]]                         | Mon - 3/3/2025, 1:58 PM |
+| [[📁 10 - My Obsidian Stack/Project Management/Project Management.md\|Project Management]]                                                    | Mon - 3/3/2025, 1:48 PM |
+| [[📁 34 - Gaming/📁 34 - Gaming.md\|📁 34 - Gaming]]                                                                                          | Mon - 3/3/2025, 1:46 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
