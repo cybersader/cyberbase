@@ -5,6 +5,10 @@
       "path": "📁 05 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md"
     },
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
       "basename": "Wiki, KB, KMS",
       "path": "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md"
     },
@@ -135,10 +139,6 @@
     {
       "basename": "⬇️ Ontological Drop",
       "path": "📁 13 - Religion, Ontology, Philosophy/⬇️ Ontological Drop/⬇️ Ontological Drop.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "Dataview & Mermaid Roadmaps",
