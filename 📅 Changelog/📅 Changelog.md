@@ -16,11 +16,13 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                          | Last modified             |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 07 - Cybersader Arsenal/Passkeys/Passkeys.md\|Passkeys]]                                                                                 | Thu - 3/6/2025, 9:32 PM   |
+| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                      | Thu - 3/6/2025, 8:47 PM   |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                | Thu - 3/6/2025, 8:29 PM   |
+| [[README.md\|README]]                                                                                                                         | Thu - 3/6/2025, 8:29 PM   |
 | [[📁 05 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md\|Cyber Training, CTFs]]                                           | Thu - 3/6/2025, 7:08 PM   |
 | [[📁 05 - Organizational Cyber/⬇️ Org Tools/⬇️ Org Tools.md\|⬇️ Org Tools]]                                                                   | Thu - 3/6/2025, 7:03 PM   |
 | [[📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md\|Organization Documentation & Wikis]] | Thu - 3/6/2025, 6:48 PM   |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                | Mon - 3/3/2025, 9:03 PM   |
-| [[README.md\|README]]                                                                                                                         | Mon - 3/3/2025, 9:03 PM   |
 | [[📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md\|⬇ Tech Dropzone]]                                                             | Mon - 3/3/2025, 9:03 PM   |
 | [[📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md\|Wiki, KB, KMS]]                                                                   | Mon - 3/3/2025, 1:59 PM   |
 | [[📁 03 - Curations, Stacks/Personal Productivity Stack/Personal Productivity Stack.md\|Personal Productivity Stack]]                         | Mon - 3/3/2025, 1:58 PM   |
@@ -64,7 +66,5 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md\|Xbox Home Networking]]                                                       | Fri - 2/21/2025, 5:08 PM  |
 | [[📁 06 - Learning, Notes/StudyGRC/StudyGRC.md\|StudyGRC]]                                                                                    | Fri - 2/21/2025, 1:05 PM  |
 | [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                                                               | Fri - 2/21/2025, 12:35 PM |
-| [[🕸️ Daily Notes/2025/02/2025-02-20-Thursday/2025-02-20-Thursday.md\|2025-02-20-Thursday]]                                                   | Thu - 2/20/2025, 9:18 PM  |
-| [[🕸️ Daily Notes/2025/02/2025-02-19-Wednesday/2025-02-19-Wednesday.md\|2025-02-19-Wednesday]]                                                | Wed - 2/19/2025, 9:47 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
