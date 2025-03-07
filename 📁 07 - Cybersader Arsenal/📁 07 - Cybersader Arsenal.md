@@ -25,6 +25,7 @@ date modified: Thursday, June 20th 2024, 3:38 pm
 - **[[Internet Usage & Ethics]]**
 - **[[MY TECH STACK]]**
 - **[[OpSec Tierlist]]**
+- **[[Passkeys]]**
 - **[[Personal Authentication Approach]]**
 - **[[Personal Cyber Resilience]]**
 - **[[Personal Email]]**
