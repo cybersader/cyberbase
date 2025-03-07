@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, March 2nd 2025, 7:03 pm
-date modified: Monday, March 3rd 2025, 8:57 pm
+date modified: Thursday, March 6th 2025, 7:03 pm
 ---
 
 [Personal Productivity Stack](../../📁%2003%20-%20Curations,%20Stacks/Personal%20Productivity%20Stack/Personal%20Productivity%20Stack.md)
@@ -13,6 +13,7 @@ date modified: Monday, March 3rd 2025, 8:57 pm
 [Scalable Project Management](../../🕸️%20UNSTRUCTURED/Scalable%20Project%20Management.md)
 
 # Risk Management Database and Knowledge Platform Options
+
 - Obsidian
 - Notion
 - Affine
