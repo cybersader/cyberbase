@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, September 20th 2024, 1:59 pm
-date modified: Monday, March 3rd 2025, 8:07 am
+date modified: Thursday, March 6th 2025, 7:08 pm
 ---
 
 
@@ -12,6 +12,7 @@ date modified: Monday, March 3rd 2025, 8:07 am
 
 - https://www.antisyphontraining.com/training-calendar/ 
 - https://notion.cybersader.com/cybersecurity-media-education-jobs 
+- [ > TryHackMe | Cyber Security Training](https://tryhackme.com/soc-sim/)
 
 # Best Cyber Resources/Companies
 
