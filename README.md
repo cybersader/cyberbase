@@ -66,7 +66,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Thu, Mar 6, 2025 - [[Passkeys]]
+> Sat, Mar 8, 2025 - [[Obsidian Nested Tags]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -94,18 +94,18 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 ```
 %%
 
-| File                                                                                                                                          | Last modified           |
-| --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| [[📁 07 - Cybersader Arsenal/Passkeys/Passkeys.md\|Passkeys]]                                                                                 | Thu - 3/6/2025, 9:32 PM |
-| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                      | Thu - 3/6/2025, 8:47 PM |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                | Thu - 3/6/2025, 8:29 PM |
-| [[README.md\|README]]                                                                                                                         | Thu - 3/6/2025, 8:29 PM |
-| [[📁 05 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md\|Cyber Training, CTFs]]                                           | Thu - 3/6/2025, 7:08 PM |
-| [[📁 05 - Organizational Cyber/⬇️ Org Tools/⬇️ Org Tools.md\|⬇️ Org Tools]]                                                                   | Thu - 3/6/2025, 7:03 PM |
-| [[📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md\|Organization Documentation & Wikis]] | Thu - 3/6/2025, 6:48 PM |
-| [[📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md\|⬇ Tech Dropzone]]                                                             | Mon - 3/3/2025, 9:03 PM |
-| [[📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md\|Wiki, KB, KMS]]                                                                   | Mon - 3/3/2025, 1:59 PM |
-| [[📁 03 - Curations, Stacks/Personal Productivity Stack/Personal Productivity Stack.md\|Personal Productivity Stack]]                         | Mon - 3/3/2025, 1:58 PM |
+| File                                                                                                                                          | Last modified            |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [[📁 10 - My Obsidian Stack/Obsidian Nested Tags/Obsidian Nested Tags.md\|Obsidian Nested Tags]]                                              | Sat - 3/8/2025, 11:52 AM |
+| [[📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md\|Knowledge Organization]]                                    | Fri - 3/7/2025, 9:17 PM  |
+| [[📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md\|📁 10 - My Obsidian Stack]]                                                         | Fri - 3/7/2025, 8:00 PM  |
+| [[📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md\|Organization Documentation & Wikis]] | Fri - 3/7/2025, 7:53 PM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                | Thu - 3/6/2025, 9:54 PM  |
+| [[README.md\|README]]                                                                                                                         | Thu - 3/6/2025, 9:54 PM  |
+| [[📁 07 - Cybersader Arsenal/Passkeys/Passkeys.md\|Passkeys]]                                                                                 | Thu - 3/6/2025, 9:32 PM  |
+| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                      | Thu - 3/6/2025, 8:47 PM  |
+| [[📁 05 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md\|Cyber Training, CTFs]]                                           | Thu - 3/6/2025, 7:08 PM  |
+| [[📁 05 - Organizational Cyber/⬇️ Org Tools/⬇️ Org Tools.md\|⬇️ Org Tools]]                                                                   | Thu - 3/6/2025, 7:03 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 
