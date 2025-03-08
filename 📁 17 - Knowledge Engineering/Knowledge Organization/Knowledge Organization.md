@@ -106,6 +106,7 @@ Here's the breakdown and ways I like to define it that works in personal or work
 - [groepl/Take-Useful-Notes: eBook: "MAKE USEFUL NOTES. A simple guide to a complex skill by using Sketchnotes, Obsidian and Zettelkasten."](https://github.com/groepl/Take-Useful-Notes)
 - [Ideaverse for Obsidian](https://start.linkingyourthinking.com/ideaverse-for-obsidian)
 - [cuken/obsidian-weave: Obsidian Vault Template for Software Developers/Managers working in the corporate world.](https://github.com/cuken/obsidian-weave)
+- [obsidian-community/obsidian-hub: Resource hub for Obsidian resources.](https://github.com/obsidian-community/obsidian-hub)
 
 ## Note Templates
 
