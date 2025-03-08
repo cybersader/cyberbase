@@ -4,7 +4,7 @@ aliases: [Obsidian Vault Structure]
 tags: [knowledge_management, wiki_organization, taxonomies, taxonomy, wiki_structure, library-science, wiki, kms]
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Saturday, March 8th 2025, 3:07 pm
+date modified: Saturday, March 8th 2025, 3:22 pm
 ---
 
 [Obsidian Knowledge Management Workflows](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Obsidian%20Knowledge%20Management%20Workflows.md)
@@ -13,7 +13,15 @@ date modified: Saturday, March 8th 2025, 3:07 pm
 
 > [!tip] Auto organize in Obsidian with something like [File Organizer 2000](../../📁%2009%20-%20My%20Obsidian%20Stack/Auto%20-%20Tagging,%20Linking,%20Dropzones%20&%20Organizers/File%20Organizer%202000/File%20Organizer%202000.md) 
 
+> [!important] This is a work in progress and always will be
+
 # My Systems
+
+## MOCs
+
+- [Maps of Content: Effortless organization for notes - Obsidian Rocks](https://obsidian.rocks/maps-of-content-effortless-organization-for-notes/)
+- [Quickly Organize Notes in Obsidian - Obsidian Rocks](https://obsidian.rocks/quick-tip-quickly-organize-notes-in-obsidian/)
+- 
 
 ## Tagging
 
@@ -99,6 +107,7 @@ Here's the breakdown and ways I like to define it that works in personal or work
 - [groepl/Take-Useful-Notes: eBook: "MAKE USEFUL NOTES. A simple guide to a complex skill by using Sketchnotes, Obsidian and Zettelkasten."](https://github.com/groepl/Take-Useful-Notes)
 - [Ideaverse for Obsidian](https://start.linkingyourthinking.com/ideaverse-for-obsidian)
 - 
+
 ## Note Templates
 
 - [nicolevanderhoeven/obsidian-okrs: Templates for setting OKRs/goals in Obsidian](https://github.com/nicolevanderhoeven/obsidian-okrs)
