@@ -95,7 +95,9 @@ Here's the breakdown and ways I like to define it that works in personal or work
 
 - [groepl/Obsidian-Zettelkasten-Starter-Kit: A Starter Kit for Obsidian with all essential elements to build up your own Zettelkasten system.](https://github.com/groepl/Obsidian-Zettelkasten-Starter-Kit)
 	- [16 Obsidian Templates For Zettelkasten To Start With - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/16-obsidian-templates-for-zettelkasten-to-start-with/49098/43)
-
+- [groepl/Obsidian-Templates: A repository containing templates and scripts for #Obsidian to support the #Zettelkasten method for note-taking.](https://github.com/groepl/Obsidian-Templates)
+- [groepl/Take-Useful-Notes: eBook: "MAKE USEFUL NOTES. A simple guide to a complex skill by using Sketchnotes, Obsidian and Zettelkasten."](https://github.com/groepl/Take-Useful-Notes)
+- 
 ## Opinionated Systems for Obsidian
 
 - Zettelkasten
