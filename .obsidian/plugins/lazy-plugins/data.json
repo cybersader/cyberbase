@@ -931,6 +931,12 @@
       },
       "tier-list": {
         "startupType": "disabled"
+      },
+      "auto-note-mover": {
+        "startupType": "disabled"
+      },
+      "obsidian-mstodo-sync": {
+        "startupType": "instant"
       }
     }
   }
