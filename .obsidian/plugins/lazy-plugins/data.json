@@ -919,6 +919,18 @@
       },
       "yanki": {
         "startupType": "disabled"
+      },
+      "colored-tags-wrangler": {
+        "startupType": "disabled"
+      },
+      "export-graph-view": {
+        "startupType": "disabled"
+      },
+      "subdivider": {
+        "startupType": "disabled"
+      },
+      "tier-list": {
+        "startupType": "disabled"
       }
     }
   }
