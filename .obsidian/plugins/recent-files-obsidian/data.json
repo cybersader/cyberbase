@@ -5,6 +5,14 @@
       "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
     },
     {
+      "basename": "Query All The Things",
+      "path": "📁 10 - My Obsidian Stack/Query All The Things/Query All The Things.md"
+    },
+    {
+      "basename": "Microsoft Graph API in Obsidian",
+      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/Microsoft Graph API in Obsidian/Microsoft Graph API in Obsidian.md"
+    },
+    {
       "basename": "Surf the Web in Obsidian",
       "path": "📁 10 - My Obsidian Stack/Surf the Web in Obsidian/Surf the Web in Obsidian.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "RSS",
       "path": "🕸️ UNSTRUCTURED/RSS/RSS.md"
-    },
-    {
-      "basename": "Xbox Home Networking",
-      "path": "🕸️ UNSTRUCTURED/Xbox Home Networking/Xbox Home Networking.md"
-    },
-    {
-      "basename": "📁 51 - Cyberbase",
-      "path": "📁 51 - Cyberbase/📁 51 - Cyberbase.md"
     }
   ],
   "omittedPaths": [],

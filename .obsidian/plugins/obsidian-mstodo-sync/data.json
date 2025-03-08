@@ -1,0 +1,26 @@
+{
+  "todoListSync": {},
+  "diary": {
+    "folder": "",
+    "format": "",
+    "stayWithPN": false
+  },
+  "displayOptions_DateFormat": "YYYY-MM-DD",
+  "displayOptions_TimeFormat": "HH:mm",
+  "displayOptions_TaskCreatedPrefix": "🔎",
+  "displayOptions_TaskDuePrefix": "📅",
+  "displayOptions_TaskStartPrefix": "🛫",
+  "displayOptions_TaskBodyPrefix": "💡",
+  "displayOptions_ReplaceAddCreatedAt": false,
+  "displayOptions_ReplacementFormat": "- [ ] {{TASK}}",
+  "todo_OpenUsingApplicationProtocol": false,
+  "loggingOptions": {
+    "minLevels": {
+      "": "info"
+    }
+  },
+  "taskIdLookup": {
+    "0000ABCD": "0"
+  },
+  "taskIdIndex": 0
+}

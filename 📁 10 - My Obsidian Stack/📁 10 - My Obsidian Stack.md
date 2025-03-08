@@ -44,6 +44,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Plugin Development]]**
 - **[[Plugin Maintenance]]**
 - **[[Project Management]]**
+- **[[Query All The Things]]**
 - **[[Surf the Web in Obsidian]]**
 - **[[Syncing Obsidian]]**
 	- **[[Syncthing for Obsidian Notes]]**

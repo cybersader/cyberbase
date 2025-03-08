@@ -4,7 +4,7 @@ aliases: [Obsidian Vault Structure]
 tags: [knowledge_management, wiki_organization, taxonomies, taxonomy, wiki_structure, library-science, wiki, kms]
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Saturday, March 8th 2025, 3:46 pm
+date modified: Saturday, March 8th 2025, 4:20 pm
 ---
 
 [Obsidian Knowledge Management Workflows](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Obsidian%20Knowledge%20Management%20Workflows.md)
@@ -103,7 +103,6 @@ Here's the breakdown and ways I like to define it that works in personal or work
 
 - [groepl/Obsidian-Zettelkasten-Starter-Kit: A Starter Kit for Obsidian with all essential elements to build up your own Zettelkasten system.](https://github.com/groepl/Obsidian-Zettelkasten-Starter-Kit)
 	- [16 Obsidian Templates For Zettelkasten To Start With - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/16-obsidian-templates-for-zettelkasten-to-start-with/49098/43)
-- [groepl/Obsidian-Templates: A repository containing templates and scripts for #Obsidian to support the #Zettelkasten method for note-taking.](https://github.com/groepl/Obsidian-Templates)
 - [groepl/Take-Useful-Notes: eBook: "MAKE USEFUL NOTES. A simple guide to a complex skill by using Sketchnotes, Obsidian and Zettelkasten."](https://github.com/groepl/Take-Useful-Notes)
 - [Ideaverse for Obsidian](https://start.linkingyourthinking.com/ideaverse-for-obsidian)
 - [cuken/obsidian-weave: Obsidian Vault Template for Software Developers/Managers working in the corporate world.](https://github.com/cuken/obsidian-weave)
@@ -114,11 +113,12 @@ Here's the breakdown and ways I like to define it that works in personal or work
 
 - [nicolevanderhoeven/obsidian-okrs: Templates for setting OKRs/goals in Obsidian](https://github.com/nicolevanderhoeven/obsidian-okrs)
 - [llZektorll/OB_Template: OB_Templates is a Obsidian reference for note templates focused on new users of the application using only core plugins.](https://github.com/llZektorll/OB_Template)
-- 
+- [groepl/Obsidian-Templates: A repository containing templates and scripts for #Obsidian to support the #Zettelkasten method for note-taking.](https://github.com/groepl/Obsidian-Templates)
 
 ## Opinionated Systems for Obsidian
 
 - Zettelkasten
+	- [groepl/Take-Useful-Notes: eBook: "MAKE USEFUL NOTES. A simple guide to a complex skill by using Sketchnotes, Obsidian and Zettelkasten."](https://github.com/groepl/Take-Useful-Notes/tree/main)
 - ARCO
 	- **A**tlas: Book of maps.
 	- **R**eference: Book of facts and external links.
