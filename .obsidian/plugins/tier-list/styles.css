@@ -1,0 +1,192 @@
+/* Wrapper container */
+.tier-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 1em 0px;
+    list-style: none;
+}
+
+.tier-list>ul {
+    font-size: 0.7em;
+    background-color: var(--background-modifier-border);
+    display: inline-block;
+    padding: 0px;
+    --tier-list-indent: var(--hr-thickness);
+    --tier-list-slot-width: calc((var(--screen-width) * var(--tier-list-width-ratio) - 3 * var(--tier-list-indent)) / (var(--tier-list-slot-count) + 1))
+}
+
+.tier-list .unordered {
+    width: calc((var(--screen-width) * var(--tier-list-width-ratio) - 2 * var(--tier-list-indent)));
+    min-height: 1em;
+    padding: 0px 1px;
+}
+
+.tier-list>ul>li {
+    margin: var(--tier-list-indent);
+    background-color: var(--background-modifier-border);
+    display: flex;
+    align-items: stretch;
+    gap: var(--tier-list-indent);
+    padding: 0px;
+}
+
+/* List without header */
+.tier-list>ul>li>ul {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--background-primary);
+    width: calc(var(--tier-list-slot-width) * var(--tier-list-slot-count));
+}
+
+.tier-list>ul>li>ul::before,
+.tier-list>ul>li>ul::after {
+    display: none !important;
+}
+
+.tier-list .settings {
+    display: none;
+}
+
+/* Slot */
+.tier-list-slot {
+    width: var(--tier-list-slot-width);
+    max-width: var(--tier-list-slot-width);
+    height: calc(var(--tier-list-slot-width) / var(--tier-list-aspect-ratio));
+    background-color: var(--background-secondary);
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    word-wrap: break-word;
+    white-space: normal;
+    margin: 0px !important;
+    word-break: break-word;
+    padding: 0px !important;
+}
+
+.tier-list-slot:not(:has(*)) {
+    padding: 0.5em !important;
+}
+
+.tier-list-tier {
+    height: inherit;
+    min-height: calc(var(--tier-list-slot-width) / var(--tier-list-aspect-ratio));
+}
+
+.tier-list-slot img {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0px !important;
+    /* filter: blur(0.5px); */
+}
+
+.tier-list-slot > span[style*="transform"] img {
+    object-fit: contain;
+}
+
+.tier-list-slot>span {
+    padding: 0.5em;
+    z-index: 1;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.help-cursor {
+    cursor: help !important;
+}
+
+.option-red,
+.option-red:hover {
+    background-color: var(--color-red) !important;
+}
+
+/* Settings Tab */
+
+.tier-list-settings .tier-list-number-setting {
+    width: 3em;
+    text-align: center;
+}
+
+.tier-list-settings .setting-item-control:has(input.tier-list-persentage-setting)::after {
+    content: '%\00a0\00a0\00a0';
+}
+
+.tier-list-settings .setting-item-control:has(input.tier-list-pieces-setting)::after {
+    content: 'pcs.';
+}
+
+.tier-list-settings .setting-item-control:has(input.tier-list-ms-setting)::after {
+    content: 'ms';
+}
+
+.tier-list-settings .tier-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--background-modifier-border);
+    cursor: grab;
+    width: 100%;
+}
+
+.tier-list-settings .setting-item {
+    padding: 0.75em 0px 0.75em 0px !important;
+}
+
+.tier-list-query textarea {
+    resize: none;
+}
+
+/* Modal */
+
+.tier-list-slot-modal .tier-list {
+    margin: auto 20px;
+    padding: 0px !important;
+    width: auto;
+}
+
+.tier-list-slot-modal .tier-list-slot {
+    margin: 2px !important;
+    background-color: var(--background-secondary);
+}
+
+.tier-list-slot-modal .flex {
+    display: flex;
+    border: 0px;
+    border-top: 1px var(--background-modifier-border);
+    border-style: solid;
+    padding-top: 11px;
+}
+
+.tier-list-slot-modal .flex .right {
+    padding-left: 16px;
+    flex: 1;
+}
+
+.tier-list-slot-modal .move {
+    cursor: move;
+}
+
+.tier-list-slot-modal .rotate {
+    cursor: grab;
+}
+
+.tier-list-slot-modal ul {
+    padding: 0px !important;
+    margin: 0px !important;
+}

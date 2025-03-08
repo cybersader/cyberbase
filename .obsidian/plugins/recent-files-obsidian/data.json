@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Obsidian Frameworker",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
+    },
+    {
       "basename": "Obsidian Nested Tags",
       "path": "📁 10 - My Obsidian Stack/Obsidian Nested Tags/Obsidian Nested Tags.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "⬇️ Cyber News DROP",
       "path": "📁 02 - CyberNews/⬇️ Cyber News DROP/⬇️ Cyber News DROP.md"
-    },
-    {
-      "basename": "📅 Changelog",
-      "path": "📅 Changelog/📅 Changelog.md"
     }
   ],
   "omittedPaths": [],

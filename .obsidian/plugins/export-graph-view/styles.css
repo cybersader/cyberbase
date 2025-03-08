@@ -1,0 +1,28 @@
+.quick-export-button,
+.export-button {
+	font-size: 16px;
+	padding: 20px;
+}
+
+.metadata-section {
+	text-align: center;
+	margin-top: 20px;
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.metadata-section p {
+	margin: 5px 0;
+	font-size: 0.9em;
+}
+
+.help-text {
+	font-size: 12px;
+	border-bottom: none;
+	margin-top: 20px;
+}
+
+.root-notice {
+	font-size: 12px;
+}

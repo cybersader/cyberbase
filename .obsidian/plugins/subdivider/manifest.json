@@ -1,0 +1,10 @@
+{
+	"id": "subdivider",
+	"name": "Subdivider",
+	"version": "0.1.7",
+	"minAppVersion": "0.15.0",
+	"description": "Converts your notes into nested folders, automatically creating separate files for each subheading.",
+	"author": "Tricster",
+	"authorUrl": "https://github.com/MediosZ",
+	"isDesktopOnly": false
+}
