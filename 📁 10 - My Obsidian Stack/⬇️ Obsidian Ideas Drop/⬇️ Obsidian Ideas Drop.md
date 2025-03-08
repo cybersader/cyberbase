@@ -4,7 +4,7 @@ aliases: [Obsidian Wiki Drop]
 tags: []
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Sunday, March 2nd 2025, 9:57 pm
+date modified: Saturday, March 8th 2025, 3:47 pm
 ---
 
 %% Begin Waypoint %%
@@ -15,6 +15,7 @@ date modified: Sunday, March 2nd 2025, 9:57 pm
 - [ ] Linter that can be given conditions, bulk handling, or ability to ask user about certain cases before linting the file? ➕ 2024-11-06
 - [ ] Vault crawler tool that uses AI to find connections in the vault - kind of like Omnisearch + File Organizer 2000 ➕ 2024-11-07
 
+- [OpenGate](https://open-gate.aiocean.io/)
 - https://dentropy.github.io/1f1f914c-8e6e-48b7-9068-bc7b290b6b64/
 - Per device obsidian customizing
 	- obsidian per device

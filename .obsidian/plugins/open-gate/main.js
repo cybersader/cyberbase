@@ -40,8 +40,8 @@ var import_obsidian = require("obsidian");
 
 // src/fns/getSvgIcon.ts
 var getSvgIcon = (siteUrl) => {
-  const siteId = encodeURIComponent(btoa(siteUrl));
-  return `<svg viewBox="0 0 100 100"><image href="https://fetch-favicon.fly.dev/favicon/${siteId}" height="100" width="100" /></svg>`;
+  const domain = new URL(siteUrl).hostname;
+  return `<svg viewBox="0 0 100 100"><image href="https://icon.horse/icon/${domain}" height="100" width="100" /></svg>`;
 };
 
 // src/fns/normalizeGateOption.ts
@@ -6738,19 +6738,21 @@ var OpenGatePlugin = class extends import_obsidian12.Plugin {
     this.registerObsidianProtocolHandler("opengate", this.handleCustomProtocol.bind(this));
   }
   getGateOptionFromProtocolData(data) {
-    const { title, url, id } = data;
+    const { title, url, id, position } = data;
     let targetGate;
     if (id && this.settings.gates[id]) {
       targetGate = this.settings.gates[id];
+    } else {
+      targetGate = Object.values(this.settings.gates).find((gate) => title && gate.title.toLowerCase() === title.toLowerCase() || url && gate.url.toLowerCase() === url.toLowerCase());
     }
-    if (targetGate === void 0 && title) {
-      targetGate = Object.values(this.settings.gates).find((gate) => gate.title.toLowerCase() === title.toLowerCase());
+    if (!targetGate) {
+      targetGate = createEmptyGateOption();
     }
-    if (targetGate === void 0 && url) {
-      targetGate = Object.values(this.settings.gates).find((gate) => gate.url.toLowerCase() === url.toLowerCase());
-    }
-    if (targetGate !== void 0 && url) {
+    if (url) {
       targetGate.url = url;
+    }
+    if (position) {
+      targetGate.position = position;
     }
     return targetGate;
   }
@@ -6765,6 +6767,7 @@ var OpenGatePlugin = class extends import_obsidian12.Plugin {
         return;
       }
     }
+    console.log(targetGate);
     const gate = await openView(this.app.workspace, (targetGate == null ? void 0 : targetGate.id) || "temp-gate", targetGate == null ? void 0 : targetGate.position);
     const gateView = gate.view;
     gateView == null ? void 0 : gateView.onFrameReady(() => {
