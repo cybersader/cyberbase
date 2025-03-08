@@ -28,13 +28,11 @@
   "obsidian-tasks-plugin",
   "templater-obsidian",
   "obsidian-timestamper",
-  "ytranscript",
   "obsidian-regex-replace",
   "custom-save",
   "lazy-plugins",
   "settings-search",
   "obsidian-trim-whitespace",
-  "editor-width-slider",
   "obsidian-git",
   "backlink-cache",
   "folder-notes",
@@ -50,5 +48,9 @@
   "recent-files-obsidian",
   "chronos",
   "obsidian-wakatime",
-  "obsidian-mstodo-sync"
+  "obsidian-mstodo-sync",
+  "convert-url-to-iframe",
+  "excalibrain",
+  "context-command-hider",
+  "obsidian-copy-block-link"
 ]
