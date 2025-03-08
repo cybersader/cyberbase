@@ -4,7 +4,7 @@ aliases: [Obsidian Vault Structure]
 tags: [knowledge_management, wiki_organization, taxonomies, taxonomy, wiki_structure, library-science, wiki, kms]
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Saturday, March 8th 2025, 12:39 pm
+date modified: Saturday, March 8th 2025, 2:10 pm
 ---
 
 [Obsidian Knowledge Management Workflows](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Obsidian%20Knowledge%20Management%20Workflows.md)
@@ -19,7 +19,6 @@ date modified: Saturday, March 8th 2025, 12:39 pm
 
 - [Use Tags. But how? - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/use-tags-but-how/35320)
 	- ![400](_attachments/file-20250308123332534.png)
-	- ![400](_attachments/file-20250308123503228.png)
 
 ### Nested Tags
 
@@ -32,7 +31,7 @@ date modified: Saturday, March 8th 2025, 12:39 pm
 - Controlled Vocabulary, Taxonomy, Ontology as Nested Tags?
 	- [4.5 - Applying Research](../../📁%2098%20-%20ARCHIVE/GradSchoolProjects/Honey%20Accounts%20in%20Windows%20AD/Project%20Workspace/4.5%20-%20Applying%20Research.md)[Teleseer](../../CybersaderNotion/03%20Awesome-Cyber/Apps%20&%20Tech/Cyber%20Tools/Teleseer.md)[DD 108](../../⬇%20INBOX,%20DROPZONE/From%20Other%20Wiki/Learning/Cyber%20News,%20TTP,%20Learning/DD%20108.md)
 
-#### PARAUT - instead of PARA
+#### PARAUT - Corporate Structure - instead of PARA
 
 Here's the breakdown and ways I like to define it that works in personal or work
 1. Projects, Workspaces
@@ -92,6 +91,11 @@ Here's the breakdown and ways I like to define it that works in personal or work
 		7. Ontologies
 		8. Folksonomies
 
+## Vault Templates
+
+- [groepl/Obsidian-Zettelkasten-Starter-Kit: A Starter Kit for Obsidian with all essential elements to build up your own Zettelkasten system.](https://github.com/groepl/Obsidian-Zettelkasten-Starter-Kit)
+	- [16 Obsidian Templates For Zettelkasten To Start With - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/16-obsidian-templates-for-zettelkasten-to-start-with/49098/43)
+
 ## Opinionated Systems for Obsidian
 
 - Zettelkasten
@@ -100,13 +104,37 @@ Here's the breakdown and ways I like to define it that works in personal or work
 	- **R**eference: Book of facts and external links.
 	- **C**alendar: Book of events.
 	- **O**rganizer: Book of tasks and projects.
+- ACE and STIR
+	- [The Ultimate Folder System: A quixotic journey to ACE - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/the-ultimate-folder-system-a-quixotic-journey-to-ace/63483)
+	- STIR
+		- Space
+		- Time
+		- Importance
+		- Relatedness
+		- Examples
+			- ![300](_attachments/file-20250308140749259.png)
+			- ![300](_attachments/file-20250308140855158.png)
+	- ACE
+		- So here is my “aha” moment: The “STI” of STIR can map to the ACE folder structure—and in the process give us a universal folder system that optimizes for recall!
+		- **A**tlas is for the SPACE of knowledge and ideas
+		- **C**alendar is for moments in TIME
+		- **E**fforts are for projects of Importance
+		- ...and the “R” in STIR is for the _**links**_ we make between them all!
+- LATCH
+	- Location
+	- Alphabet
+	- Time
+	- Category
+	- Hierarchy (the original refers to this as “Continuum”, but that’s not as catchy)
+- 
 
 - [Provide structure. How do you use Zettelkasten in Obsidian? - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/provide-structure-how-do-you-use-zettelkasten-in-obsidian/35008/19)
 	- ![450](_attachments/file-20250308123756780.png)
 	- ![450](_attachments/file-20250308123845499.png)
 	- ![400](_attachments/file-20250308124011072.png)
 	- ![](_attachments/file-20250308124048337.png)
-	- 
+	- ![400](_attachments/file-20250308123503228.png)
+
 # Wiki Organization Methodologies, Taxonomies, Structures
 
 ## Organizing Using the Library of Congress Subject Headings
@@ -170,4 +198,5 @@ Here's the breakdown and ways I like to define it that works in personal or work
 - [How is Obsidian more than a Wiki? - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/how-is-obsidian-more-than-a-wiki/2914)
 - [Personal knowledge management - Evan Harmon - Memex - Obsidian Publish](https://publish.obsidian.md/evanharmon/pkm)
 - [AI Obsidian File Organizer Plugin - Automatically Organize Your Notes](https://fileorganizer2000.com/)
+- [16 Obsidian Templates For Zettelkasten To Start With - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/16-obsidian-templates-for-zettelkasten-to-start-with/49098/43)
 
