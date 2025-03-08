@@ -4,7 +4,7 @@ aliases: [Obsidian Vault Structure]
 tags: [knowledge_management, wiki_organization, taxonomies, taxonomy, wiki_structure, library-science, wiki, kms]
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Friday, March 7th 2025, 9:17 pm
+date modified: Saturday, March 8th 2025, 12:39 pm
 ---
 
 [Obsidian Knowledge Management Workflows](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Obsidian%20Knowledge%20Management%20Workflows.md)
@@ -16,6 +16,10 @@ date modified: Friday, March 7th 2025, 9:17 pm
 # My Systems
 
 ## Tagging
+
+- [Use Tags. But how? - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/use-tags-but-how/35320)
+	- ![400](_attachments/file-20250308123332534.png)
+	- ![400](_attachments/file-20250308123503228.png)
 
 ### Nested Tags
 
@@ -54,6 +58,16 @@ Here's the breakdown and ways I like to define it that works in personal or work
 - [Obsidian Resources - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/obsidian-resources/81835)
 - [An opinionated reflection on using folders, links, tags, and properties - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/an-opinionated-reflection-on-using-folders-links-tags-and-properties/78548) 
 
+- [reddit.com > Introducing D.E.E.Z.N.U.T.S. (not a meme)](https://www.reddit.com/r/ObsidianMD/comments/1j66utn/introducing_deeznuts_not_a_meme/?post_fullname=t3_1j66utn&post_index=0)
+	- **D** - Dashboards (Dashboards or Maps of content) 
+	- **E** - Efforts (Things you're actively working on) 
+	- **E** - Extras (Templates, Archive) 
+	- **Z** - Zettelkasten (Atomic ideas) 
+	- **N** - Network & People (Notes on real people, and social connections) 
+	- **U** - Unsorted/Unfinished (Like an inbox for new notes or notes that are, well, Unfinished) 
+	- **T** - Thoughts & Journal (Your personal reflections, journal, and daily logs)
+	- **S** - Sources (Raw materials: books, PDFs, articles, videos, etc.)
+
 - [CUT(ter) AWAY THE CHAOS OF YOUR VAULT WITH THIS ONE (two three four five six) SIMPLE METHOD(s) - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/cut-ter-away-the-chaos-of-your-vault-with-this-one-two-three-four-five-six-simple-method-s/33700) 
 	- [A system to organise your life • Johnny.Decimal](https://johnnydecimal.com/) 
 	- 
@@ -78,6 +92,21 @@ Here's the breakdown and ways I like to define it that works in personal or work
 		7. Ontologies
 		8. Folksonomies
 
+## Opinionated Systems for Obsidian
+
+- Zettelkasten
+- ARCO
+	- **A**tlas: Book of maps.
+	- **R**eference: Book of facts and external links.
+	- **C**alendar: Book of events.
+	- **O**rganizer: Book of tasks and projects.
+
+- [Provide structure. How do you use Zettelkasten in Obsidian? - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/provide-structure-how-do-you-use-zettelkasten-in-obsidian/35008/19)
+	- ![450](_attachments/file-20250308123756780.png)
+	- ![450](_attachments/file-20250308123845499.png)
+	- ![400](_attachments/file-20250308124011072.png)
+	- ![](_attachments/file-20250308124048337.png)
+	- 
 # Wiki Organization Methodologies, Taxonomies, Structures
 
 ## Organizing Using the Library of Congress Subject Headings
@@ -141,3 +170,4 @@ Here's the breakdown and ways I like to define it that works in personal or work
 - [How is Obsidian more than a Wiki? - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/how-is-obsidian-more-than-a-wiki/2914)
 - [Personal knowledge management - Evan Harmon - Memex - Obsidian Publish](https://publish.obsidian.md/evanharmon/pkm)
 - [AI Obsidian File Organizer Plugin - Automatically Organize Your Notes](https://fileorganizer2000.com/)
+

@@ -12,8 +12,8 @@ date modified: Sunday, November 10th 2024, 2:12 pm
 [📁 18 - Information Science, Ontology Traversal](../📁%2018%20-%20Information%20Science,%20Ontology%20Traversal/📁%2018%20-%20Information%20Science,%20Ontology%20Traversal.md)
 
 %% Begin Waypoint %%
-- **[[⬇️ KnowEng Drop/⬇️ KnowEng Drop]]**
-- **[[Knowledge Organization/Knowledge Organization]]**
+- **[[⬇️ KnowEng Drop]]**
+- **[[Knowledge Organization]]**
 
 %% End Waypoint %%
 
