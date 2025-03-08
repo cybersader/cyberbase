@@ -4,7 +4,7 @@ aliases: [Obsidian Vault Structure]
 tags: [knowledge_management, wiki_organization, taxonomies, taxonomy, wiki_structure, library-science, wiki, kms]
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Sunday, February 16th 2025, 4:18 pm
+date modified: Friday, March 7th 2025, 9:17 pm
 ---
 
 [Obsidian Knowledge Management Workflows](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Obsidian%20Knowledge%20Management%20Workflows.md)
@@ -19,6 +19,8 @@ date modified: Sunday, February 16th 2025, 4:18 pm
 
 ### Nested Tags
 
+[Obsidian Nested Tags](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Nested%20Tags/Obsidian%20Nested%20Tags.md)
+
 - [help.obsidian.md > Tags - Obsidian Help](https://help.obsidian.md/Editing+and+formatting/Tags)
 - Plugins
 	- [github.com > drPilman/obsidian-graph-nested-tags: A small plugin for Obsidian that links nested tags in graph view](https://github.com/drPilman/obsidian-graph-nested-tags)
@@ -28,11 +30,11 @@ date modified: Sunday, February 16th 2025, 4:18 pm
 
 #### PARAUT - instead of PARA
 
-Here's the breakdown and ways I like to define it
+Here's the breakdown and ways I like to define it that works in personal or work
 1. Projects, Workspaces
 2. Areas, Initiatives
 3. Resources, Topics
-4. Archive
+4. Archive, Admin
 5. Unstructured
 6. Taxonomies, Ontologies
 
