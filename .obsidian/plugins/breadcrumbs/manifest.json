@@ -1,10 +1,1 @@
-{
-  "id": "breadcrumbs",
-  "name": "Breadcrumbs",
-  "version": "3.6.11",
-  "minAppVersion": "0.15.2",
-  "description": "Visualise & navigate your vault's structure",
-  "author": "SkepticMystic",
-  "authorUrl": "https://github.com/SkepticMystic/breadcrumbs",
-  "isDesktopOnly": false
-}
+{"id":"breadcrumbs","name":"Breadcrumbs","version":"4.2.35-beta","minAppVersion":"1.0.0","description":"Add structured hierarchies to your notes","author":"SkepticMystic","authorUrl":"https://github.com/SkepticMystic/breadcrumbs","fundingUrl":"https://github.com/SkepticMystic/breadcrumbs#donations","helpUrl":"https://publish.obsidian.md/breadcrumbs-docs","isDesktopOnly":false}
