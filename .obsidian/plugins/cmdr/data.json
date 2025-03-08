@@ -81,7 +81,9 @@
   "explorer": [],
   "hide": {
     "statusbar": [],
-    "leftRibbon": []
+    "leftRibbon": [
+      "BRAT"
+    ]
   },
   "spacing": "8",
   "advancedToolbar": {
