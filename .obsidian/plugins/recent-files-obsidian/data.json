@@ -5,8 +5,28 @@
       "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
     },
     {
+      "basename": "Surf the Web in Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Surf the Web in Obsidian/Surf the Web in Obsidian.md"
+    },
+    {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
+      "basename": "📁 17 - Knowledge Engineering",
+      "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
+    },
+    {
       "basename": "_attachments",
       "path": "📁 17 - Knowledge Engineering/Knowledge Organization/_attachments/_attachments.md"
+    },
+    {
+      "basename": "Digital Gardening",
+      "path": "📁 17 - Knowledge Engineering/Digital Gardening/Digital Gardening.md"
+    },
+    {
+      "basename": "Digital Garden",
+      "path": "🕸️ UNSTRUCTURED/Digital Garden.md"
     },
     {
       "basename": "Obsidian Plugins and Ideas for Contributions",
@@ -67,10 +87,6 @@
     {
       "basename": "IPFS",
       "path": "📁 51 - Cyberbase/IPFS/IPFS.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
     {
       "basename": "📁 10 - My Obsidian Stack",
@@ -183,22 +199,6 @@
     {
       "basename": "📁 51 - Cyberbase",
       "path": "📁 51 - Cyberbase/📁 51 - Cyberbase.md"
-    },
-    {
-      "basename": "StudyGRC",
-      "path": "📁 06 - Learning, Notes/StudyGRC/StudyGRC.md"
-    },
-    {
-      "basename": "2025-02-20-Thursday",
-      "path": "🕸️ Daily Notes/2025/02/2025-02-20-Thursday/2025-02-20-Thursday.md"
-    },
-    {
-      "basename": "📁 20 - Home DIY",
-      "path": "📁 20 - Home DIY/📁 20 - Home DIY.md"
-    },
-    {
-      "basename": "2025-02-19-Wednesday",
-      "path": "🕸️ Daily Notes/2025/02/2025-02-19-Wednesday/2025-02-19-Wednesday.md"
     }
   ],
   "omittedPaths": [],
