@@ -4,7 +4,7 @@ aliases: [Obsidian Vault Structure]
 tags: [knowledge_management, wiki_organization, taxonomies, taxonomy, wiki_structure, library-science, wiki, kms]
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Saturday, March 8th 2025, 2:10 pm
+date modified: Saturday, March 8th 2025, 3:07 pm
 ---
 
 [Obsidian Knowledge Management Workflows](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Obsidian%20Knowledge%20Management%20Workflows.md)
@@ -97,7 +97,13 @@ Here's the breakdown and ways I like to define it that works in personal or work
 	- [16 Obsidian Templates For Zettelkasten To Start With - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/16-obsidian-templates-for-zettelkasten-to-start-with/49098/43)
 - [groepl/Obsidian-Templates: A repository containing templates and scripts for #Obsidian to support the #Zettelkasten method for note-taking.](https://github.com/groepl/Obsidian-Templates)
 - [groepl/Take-Useful-Notes: eBook: "MAKE USEFUL NOTES. A simple guide to a complex skill by using Sketchnotes, Obsidian and Zettelkasten."](https://github.com/groepl/Take-Useful-Notes)
+- [Ideaverse for Obsidian](https://start.linkingyourthinking.com/ideaverse-for-obsidian)
 - 
+## Note Templates
+
+- [nicolevanderhoeven/obsidian-okrs: Templates for setting OKRs/goals in Obsidian](https://github.com/nicolevanderhoeven/obsidian-okrs)
+- 
+
 ## Opinionated Systems for Obsidian
 
 - Zettelkasten
@@ -201,4 +207,6 @@ Here's the breakdown and ways I like to define it that works in personal or work
 - [Personal knowledge management - Evan Harmon - Memex - Obsidian Publish](https://publish.obsidian.md/evanharmon/pkm)
 - [AI Obsidian File Organizer Plugin - Automatically Organize Your Notes](https://fileorganizer2000.com/)
 - [16 Obsidian Templates For Zettelkasten To Start With - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/16-obsidian-templates-for-zettelkasten-to-start-with/49098/43)
-
+- [What‘s your preferred workflow for using Zettelkasten? — Zettelkasten Forum](https://forum.zettelkasten.de/discussion/2217/what-s-your-preferred-workflow-for-using-zettelkasten)
+- [12 Principles for using Zettelkasten - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/12-principles-for-using-zettelkasten/51679)
+- 
