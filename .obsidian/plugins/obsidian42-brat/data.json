@@ -1,5 +1,6 @@
 {
   "pluginList": [
+    "LumosLovegood/obsidian-mstodo-sync",
     "SkepticMystic/breadcrumbs"
   ],
   "pluginSubListFrozenVersion": [],
