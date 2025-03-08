@@ -32,6 +32,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Obsidian Issues & Feature Requests]]**
 - **[[Obsidian Knowledge Management Workflows]]**
 	- **[[Inputs, Capture]]**
+- **[[Obsidian Nested Tags]]**
 - **[[Obsidian Plugins and 3rd Party Tools]]**
 	- [[⬇️ Obsidian Integrations]]
 	- **[[Obsidian Plugin List]]**

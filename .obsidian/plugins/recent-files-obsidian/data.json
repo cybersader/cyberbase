@@ -1,20 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "Untitled",
-      "path": "📁 07 - Cybersader Arsenal/Untitled/Untitled.md"
-    },
-    {
-      "basename": "Cyber Training, CTFs",
-      "path": "📁 05 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
+      "basename": "Obsidian Nested Tags",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Nested Tags/Obsidian Nested Tags.md"
     },
     {
       "basename": "Wiki, KB, KMS",
       "path": "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md"
+    },
+    {
+      "basename": "⬇️ Org Tools",
+      "path": "📁 05 - Organizational Cyber/⬇️ Org Tools/⬇️ Org Tools.md"
+    },
+    {
+      "basename": "Organization Documentation & Wikis",
+      "path": "📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
+    },
+    {
+      "basename": "Personal Productivity Stack",
+      "path": "📁 03 - Curations, Stacks/Personal Productivity Stack/Personal Productivity Stack.md"
     },
     {
       "basename": "⬇ Tech Dropzone",
@@ -25,16 +29,16 @@
       "path": "📁 07 - Cybersader Arsenal/Persuasive Technology Defenses/Persuasive Technology Defenses.md"
     },
     {
-      "basename": "⬇️ Org Tools",
-      "path": "📁 05 - Organizational Cyber/⬇️ Org Tools/⬇️ Org Tools.md"
+      "basename": "Passkeys",
+      "path": "📁 07 - Cybersader Arsenal/Passkeys/Passkeys.md"
     },
     {
-      "basename": "Personal Productivity Stack",
-      "path": "📁 03 - Curations, Stacks/Personal Productivity Stack/Personal Productivity Stack.md"
+      "basename": "Cyber Training, CTFs",
+      "path": "📁 05 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md"
     },
     {
-      "basename": "Organization Documentation & Wikis",
-      "path": "📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
+      "basename": "README",
+      "path": "README.md"
     },
     {
       "basename": "Project Management",
@@ -195,10 +199,6 @@
     {
       "basename": "📅 Changelog",
       "path": "📅 Changelog/📅 Changelog.md"
-    },
-    {
-      "basename": "Dangers of Indifference to Religion",
-      "path": "📁 13 - Religion, Ontology, Philosophy/Dangers of Indifference to Religion/Dangers of Indifference to Religion.md"
     }
   ],
   "omittedPaths": [],
