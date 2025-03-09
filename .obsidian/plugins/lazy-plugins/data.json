@@ -937,6 +937,30 @@
       },
       "obsidian-mstodo-sync": {
         "startupType": "instant"
+      },
+      "advanced-canvas": {
+        "startupType": "disabled"
+      },
+      "canvas-mindmap": {
+        "startupType": "disabled"
+      },
+      "diffzip": {
+        "startupType": "disabled"
+      },
+      "enhanced-canvas": {
+        "startupType": "disabled"
+      },
+      "file-explorer-note-count": {
+        "startupType": "instant"
+      },
+      "iconic": {
+        "startupType": "disabled"
+      },
+      "local-backup": {
+        "startupType": "disabled"
+      },
+      "simple-canvasearch": {
+        "startupType": "disabled"
       }
     }
   }

@@ -14,3 +14,4 @@ date modified: Saturday, March 8th 2025, 10:29 pm
 - [JSON Canvas — JSON Canvas Spec](https://jsoncanvas.org/spec/1.0/)
 - [Obsidian Canvas - Visualize your ideas](https://obsidian.md/canvas)
 - 
+
