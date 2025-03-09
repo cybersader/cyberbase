@@ -16,11 +16,11 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                          | Last modified            |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md\|Generating MOCs with Dataview]]               | Sat - 3/8/2025, 10:46 PM |
-| [[📁 17 - Knowledge Engineering/Generating Graph MOCs/Generating Graph MOCs.md\|Generating Graph MOCs]]                                       | Sat - 3/8/2025, 10:46 PM |
+| [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md\|Generating MOCs with Dataview]]               | Sun - 3/9/2025, 1:17 PM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                | Sun - 3/9/2025, 1:16 PM  |
+| [[README.md\|README]]                                                                                                                         | Sun - 3/9/2025, 1:16 PM  |
+| [[📁 17 - Knowledge Engineering/Generating Graph MOCs/Generating Graph MOCs.md\|Generating Graph MOCs]]                                       | Sun - 3/9/2025, 1:13 PM  |
 | [[📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md\|📁 17 - Knowledge Engineering]]                                             | Sat - 3/8/2025, 10:02 PM |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                | Sat - 3/8/2025, 9:56 PM  |
-| [[README.md\|README]]                                                                                                                         | Sat - 3/8/2025, 9:56 PM  |
 | [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                                                                 | Sat - 3/8/2025, 9:55 PM  |
 | [[📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md\|📁 52 - Obsidian Starters & Templates]]                     | Sat - 3/8/2025, 9:55 PM  |
 | [[🕸️ Daily Notes/2025/03/2025-03-08-Saturday/2025-03-08-Saturday.md\|2025-03-08-Saturday]]                                                   | Sat - 3/8/2025, 9:48 PM  |

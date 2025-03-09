@@ -1,15 +1,20 @@
 ---
-aliases:
-  - Dataview Queries
-tags: 
+aliases: [Dataview Queries]
+tags: []
 publish: true
 permalink: 
 date created: Saturday, March 8th 2025, 9:23 pm
-date modified: Saturday, March 8th 2025, 10:00 pm
+date modified: Sunday, March 9th 2025, 1:18 pm
 ---
 
 [Dataview](../../📁%2010%20-%20My%20Obsidian%20Stack/Dataview/Dataview.md)
 [Obsidian Roadmaps](../../📁%2051%20-%20Cyberbase/Obsidian%20Roadmaps/Obsidian%20Roadmaps.md)
+
+# WORKSPACE
+
+
+
+# ARCHIVE
 
 ```_dataview
 list rows.file.link
@@ -18,7 +23,9 @@ sort file.name asc
 group by file.folder
 sort file.name asc
 ```
-```dataviewjs
+
+
+```_dataviewjs
 ////////////////////////////////////////////////////////////////////////////////
 // 1. CONFIGURATION
 ////////////////////////////////////////////////////////////////////////////////
@@ -216,6 +223,7 @@ if (config.renderMode === "headings") {
   renderTreeBullets(tree, 0);
 }
 ```
+
 
 ```_dataview
  TABLE rows.file.link AS Note FROM #workspaces
