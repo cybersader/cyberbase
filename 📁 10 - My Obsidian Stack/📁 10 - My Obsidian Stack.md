@@ -16,6 +16,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Cursor and Frontmatter Issues]]**
 - **[[Daily Notes Workflow]]**
 - **[[Dataview]]**
+- **[[Dataview Queries]]**
 - **[[File Order]]**
 - **[[Image Handling]]**
 - **[[Linting & Formatting]]**

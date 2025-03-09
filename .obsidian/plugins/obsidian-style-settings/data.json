@@ -5,5 +5,6 @@
   "minimal-style@@h4-size": "1em",
   "minimal-style@@h5-size": "0.9em",
   "minimal-style@@minimal-code-scroll": false,
-  "minimal-style@@trim-cols": true
+  "minimal-style@@trim-cols": true,
+  "minimal-style@@file-header-visibility": "minimal-tab-title-visible"
 }
