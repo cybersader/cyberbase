@@ -1,3 +1,12 @@
+---
+aliases: 
+tags: 
+publish: true
+permalink:
+date created: Saturday, March 8th 2025, 7:42 pm
+date modified: Saturday, March 8th 2025, 9:11 pm
+---
+
 # Starters
 
 couple starter

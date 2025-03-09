@@ -1,134 +1,13 @@
-```dataview
-TABLE rows.file.link AS Note FROM #workspaces
-FLATTEN file.etags AS Tags
-WHERE contains(Tags, "#workspaces") AND contains(Tags, "monitoring") AND !contains(Tags, "#archive")
-GROUP BY Tags
-```
+---
+aliases: []
+tags: []
+publish: true
+permalink:
+date created: Saturday, March 8th 2025, 9:28 pm
+date modified: Saturday, March 8th 2025, 9:28 pm
+---
 
-
-```dataview
-TABLE rows.file.link AS Note FROM #workspaces
-FLATTEN file.etags AS Tags
-WHERE contains(Tags, "#workspaces") AND contains(Tags, "meeting") AND !contains(Tags, "#archive")
-GROUP BY Tags
-```
-
-```dataview
-TABLE rows.file.link AS Note FROM #projects
-FLATTEN file.etags AS Tags
-WHERE contains(Tags, "#projects") AND !contains(Tags, "#archive") 
-GROUP BY Tags
-```
-
-```dataview
-TABLE rows.file.link AS Note FROM #workspaces
-FLATTEN file.etags AS Tags
-WHERE contains(Tags, "#workspaces") AND !contains(Tags, "#archive")
-GROUP BY Tags
-```
-
-
-```dataviewjs
-// Get all pages in the specified path
-
-let pages = dv.pages('#workspaces');
-
-// Initialize a map to store notes by their nested tags
-
-let tagMap = new Map();
-
-// Loop through each page
-
-for (let page of pages) {
-
-    // Check if the page has tags
-
-    if (page.tags) {
-
-        // Get the tags associated with the page
-
-        let tags = page.tags;
-
-        // Loop through each tag
-
-        for (let tag of tags) {
-
-            // Split the tag by '/' and take the last segment (nested tag)
-
-            let nestedTag = tag.includes('/') ? tag.split('/')
-                .pop() : tag;
-
-            // If the nested tag is not already in the map, add it with an empty array
-
-            if (!tagMap.has(nestedTag)) {
-
-                tagMap.set(nestedTag, []);
-
-            }
-
-            // Add the page link to the list of pages for this nested tag
-
-            tagMap.get(nestedTag)
-                .push(page.file.link);
-
-        }
-
-    }
-
-}
-
-// Loop through each nested tag in the map
-
-for (let [nestedTag, pages] of tagMap) {
-
-    // Create a header for the nested tag
-
-    dv.header(3, nestedTag);
-
-    // Display the list of pages under the nested tag
-
-    dv.list(pages);
-
-}
-```
-
-
-```_tasks
-path includes {{query.file.path}}
-not done
-group by function task.tags.filter( (tag) => ! tag.includes("#tracker") )
-limit groups to 10
-show urgency
-show tree
-sort by function reverse task.urgency
-limit 100
-```
-
-Show tasks completed on a certain day:
-```
-(tag regex matches /ben|brent|secops|tracker/i) OR (path includes {{query.file.path}}) 
-done on ALT_D_ENTER_HERE
-group by function task.tags.filter( (tag) => ! tag.includes("#tracker") )
-limit groups to 10
-show urgency
-show tree
-sort by function reverse task.urgency
-limit 100
-```
-
-```_dataview
-LIST FROM #workspaces/vendor_meetings 
-SORT data DESCENDING
-```
-
-# FAQ
-
-## I accidentally deleted data
-
-- Check the `.trash` folder in File Explorer at the root of the folder for the vault
-
-- 
-
+[Dataview and Chronos Roadmap](../Dataview%20and%20Chronos%20Roadmap/Dataview%20and%20Chronos%20Roadmap.md)
 
 # Roadmap
 
@@ -144,11 +23,6 @@ show tree
 sort by function reverse task.urgency
 limit 100
 ```
-
-## Roadmaps
-
-### Chronos Timeline
-
 ```dataviewjs
 //////////////////////////////////////////////////////////////////////////////////////////
 // 1. CONFIGURATION PULLED FROM FRONTMATTER OR INLINE FIELDS
@@ -630,4 +504,3 @@ dv.paragraph(out.join("\n"));
 > [!info]- 2 ) Controlling Colors
 > - Colors are mainly based on priority color, but will fall back to the start, scheduled, created, or due date.
 > - Change mermaid or chronos settings to see how it affects the colors
-

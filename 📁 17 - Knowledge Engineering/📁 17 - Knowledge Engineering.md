@@ -12,6 +12,7 @@ date modified: Saturday, March 8th 2025, 3:45 pm
 %% Begin Waypoint %%
 - **[[⬇️ KnowEng Drop]]**
 - **[[Digital Gardening]]**
+- **[[Generating MOCs with Dataview]]**
 - **[[Knowledge Organization]]**
 
 %% End Waypoint %%

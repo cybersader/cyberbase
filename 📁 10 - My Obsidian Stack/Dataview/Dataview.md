@@ -17,4 +17,3 @@ date modified: Friday, December 20th 2024, 9:36 pm
 - [Codeblock Reference - Dataview](https://blacksmithgu.github.io/obsidian-dataview/api/code-reference/)
 - [Codeblock Examples - Dataview](https://blacksmithgu.github.io/obsidian-dataview/api/code-examples/)
 - [Data Arrays - Dataview](https://blacksmithgu.github.io/obsidian-dataview/api/data-array/)
-- 

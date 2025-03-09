@@ -8,6 +8,7 @@ date modified: Sunday, March 2nd 2025, 9:36 pm
 ---
 
 %% Begin Waypoint %%
+- **[[Chronos Dataview Code for Vault]]**
 - **[[Dataview & Mermaid Roadmaps]]**
 - **[[Dataview and Chronos Roadmap]]**
 

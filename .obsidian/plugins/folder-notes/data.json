@@ -6,12 +6,26 @@
   "templatePath": "",
   "autoCreate": true,
   "enableCollapsing": false,
-  "excludeFolders": [],
+  "excludeFolders": [
+    {
+      "type": "folder",
+      "path": "_attachments",
+      "subFolders": true,
+      "disableSync": true,
+      "disableAutoCreate": true,
+      "disableFolderNote": true,
+      "enableCollapsing": false,
+      "position": 0,
+      "excludeFromFolderOverview": false,
+      "string": "",
+      "hideInSettings": false
+    }
+  ],
   "whitelistFolders": [],
   "showDeleteConfirmation": true,
   "underlineFolder": true,
   "stopWhitespaceCollapsing": false,
-  "underlineFolderInPath": true,
+  "underlineFolderInPath": false,
   "openFolderNoteOnClickInPath": true,
   "openInNewTab": true,
   "folderNoteName": "{{folder_name}}",
@@ -48,7 +62,7 @@
     "explorer": true,
     "path": true
   },
-  "settingsTab": "general",
+  "settingsTab": "exclude_folders",
   "supportedFileTypes": [
     "md",
     "canvas"
@@ -85,7 +99,7 @@
     "excludeFromFolderOverview": false,
     "string": ""
   },
-  "hideCollapsingIcon": false,
+  "hideCollapsingIcon": true,
   "tabManagerEnabled": true,
   "ignoreAttachmentFolder": true,
   "deleteFilesAction": "trash"
