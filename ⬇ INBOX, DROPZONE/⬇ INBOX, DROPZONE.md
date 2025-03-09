@@ -25,6 +25,7 @@ publish: true
 - **[[Malware Sandboxing]]**
 - **[[Public Threat Actor Reporting, Blacklists]]**
 - **[[Team Resource Management]]**
+- [[Template Ideas]]
 - **[[Video Ideas]]**
 - **[[Windows 11 UI Stuff]]**
 - **[[Windows BCDR]]**
