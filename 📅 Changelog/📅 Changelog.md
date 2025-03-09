@@ -16,15 +16,16 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                          | Last modified            |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md\|Generating MOCs with Dataview]]               | Sun - 3/9/2025, 1:17 PM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                | Sun - 3/9/2025, 1:16 PM  |
-| [[README.md\|README]]                                                                                                                         | Sun - 3/9/2025, 1:16 PM  |
-| [[📁 17 - Knowledge Engineering/Generating Graph MOCs/Generating Graph MOCs.md\|Generating Graph MOCs]]                                       | Sun - 3/9/2025, 1:13 PM  |
+| [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md\|Generating MOCs with Dataview]]               | Sun - 3/9/2025, 3:32 PM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                | Sun - 3/9/2025, 3:31 PM  |
+| [[README.md\|README]]                                                                                                                         | Sun - 3/9/2025, 3:31 PM  |
+| [[📁 17 - Knowledge Engineering/Generating Graph MOCs/Generating Graph MOCs.md\|Generating Graph MOCs]]                                       | Sun - 3/9/2025, 3:29 PM  |
+| [[🕸️ Daily Notes/2025/03/2025-03-09-Sunday/2025-03-09-Sunday.md\|2025-03-09-Sunday]]                                                         | Sun - 3/9/2025, 1:22 PM  |
+| [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                       | Sun - 3/9/2025, 1:22 PM  |
 | [[📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md\|📁 17 - Knowledge Engineering]]                                             | Sat - 3/8/2025, 10:02 PM |
 | [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                                                                 | Sat - 3/8/2025, 9:55 PM  |
 | [[📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md\|📁 52 - Obsidian Starters & Templates]]                     | Sat - 3/8/2025, 9:55 PM  |
 | [[🕸️ Daily Notes/2025/03/2025-03-08-Saturday/2025-03-08-Saturday.md\|2025-03-08-Saturday]]                                                   | Sat - 3/8/2025, 9:48 PM  |
-| [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                       | Sat - 3/8/2025, 9:47 PM  |
 | [[🕸️ Daily Notes/2025/03/03.md\|03]]                                                                                                         | Sat - 3/8/2025, 9:47 PM  |
 | [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                                 | Sat - 3/8/2025, 9:34 PM  |
 | [[📁 10 - My Obsidian Stack/Dataview Queries/Dataview Queries.md\|Dataview Queries]]                                                          | Sat - 3/8/2025, 9:33 PM  |
@@ -65,6 +66,5 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[📁 07 - Cybersader Arsenal/Internet Safety for Children/⬇️ Internet & Children/⬇️ Internet & Children.md\|⬇️ Internet & Children]]          | Sun - 3/2/2025, 3:04 PM  |
 | [[📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Inputs, Capture/Inputs, Capture.md\|Inputs, Capture]]                     | Sun - 3/2/2025, 1:03 PM  |
 | [[⬇ INBOX, DROPZONE/Financial Cyber/Financial Cyber.md\|Financial Cyber]]                                                                     | Sun - 3/2/2025, 1:02 PM  |
-| [[📁 13 - Religion, Ontology, Philosophy/📁 13 - Religion, Ontology, Philosophy.md\|📁 13 - Religion, Ontology, Philosophy]]                  | Sun - 3/2/2025, 1:00 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
