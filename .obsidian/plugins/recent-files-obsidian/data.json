@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Generating MOCs with Dataview",
-      "path": "📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md"
-    },
-    {
       "basename": "Generating Graph MOCs",
       "path": "📁 17 - Knowledge Engineering/Generating Graph MOCs/Generating Graph MOCs.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Generating MOCs with Dataview",
+      "path": "📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md"
     },
     {
       "basename": "Dataview and Chronos Roadmap",
@@ -131,10 +135,6 @@
     {
       "basename": "Cyber Training, CTFs",
       "path": "📁 05 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "Project Management",
