@@ -16,11 +16,11 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                          | Last modified            |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md\|Generating MOCs with Dataview]]               | Sun - 3/9/2025, 3:32 PM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                | Sun - 3/9/2025, 3:31 PM  |
-| [[README.md\|README]]                                                                                                                         | Sun - 3/9/2025, 3:31 PM  |
-| [[📁 17 - Knowledge Engineering/Generating Graph MOCs/Generating Graph MOCs.md\|Generating Graph MOCs]]                                       | Sun - 3/9/2025, 3:29 PM  |
-| [[🕸️ Daily Notes/2025/03/2025-03-09-Sunday/2025-03-09-Sunday.md\|2025-03-09-Sunday]]                                                         | Sun - 3/9/2025, 1:22 PM  |
+| [[🕸️ Daily Notes/2025/03/2025-03-09-Sunday/2025-03-09-Sunday.md\|2025-03-09-Sunday]]                                                         | Sun - 3/9/2025, 4:34 PM  |
+| [[📁 17 - Knowledge Engineering/Generating Graph MOCs/Generating Graph MOCs.md\|Generating Graph MOCs]]                                       | Sun - 3/9/2025, 4:31 PM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                | Sun - 3/9/2025, 4:31 PM  |
+| [[README.md\|README]]                                                                                                                         | Sun - 3/9/2025, 4:31 PM  |
+| [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md\|Generating MOCs with Dataview]]               | Sun - 3/9/2025, 4:30 PM  |
 | [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                       | Sun - 3/9/2025, 1:22 PM  |
 | [[📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md\|📁 17 - Knowledge Engineering]]                                             | Sat - 3/8/2025, 10:02 PM |
 | [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                                                                 | Sat - 3/8/2025, 9:55 PM  |

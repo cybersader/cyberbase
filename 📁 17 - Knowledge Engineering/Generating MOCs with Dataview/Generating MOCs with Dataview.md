@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: 
 date created: Saturday, March 8th 2025, 9:23 pm
-date modified: Sunday, March 9th 2025, 2:49 pm
+date modified: Sunday, March 9th 2025, 4:30 pm
 ---
 
 [Dataview](../../📁%2010%20-%20My%20Obsidian%20Stack/Dataview/Dataview.md)
@@ -12,8 +12,450 @@ date modified: Sunday, March 9th 2025, 2:49 pm
 
 # WORKSPACE
 
-%% DATAVIEW_PUBLISHER: start
-```dataviewjs
+## For Vault Use
+
+```_dataviewjs
+////////////////////////////////////////////////////////////////////////////////
+// 1. CONFIGURATION
+////////////////////////////////////////////////////////////////////////////////
+const config = {
+  // Base tag (exclude the '#' prefix)
+  baseTag: "areas",
+
+  // If true, the base tag is rendered as an H1 (or top-level bullet in bullet mode).
+  // If false, the base tag is skipped and its children become top-level.
+  useBaseTagAsH1: false,
+
+  // Rendering mode: "headings" (headings until max depth then bullets)
+  // or "bullets" (pure bullet list).
+  renderMode: "headings", 
+
+  // Maximum heading depth (only applicable when renderMode is "headings").
+  // Beyond this depth, bullet lists are used.
+  maxHeadingDepth: 6,
+
+  // Maximum number of nested tag segments to include.
+  maxNestedTagDepth: 9999,
+
+  // Starting depth for rendering.
+  // For example, startingDepth: 1 renders the root as H1 (if useBaseTagAsH1 is true),
+  // startingDepth: 2 renders the root as H2, etc.
+  startingDepth: 1,
+
+  // If true, display the full tag path (e.g. grandparent/parent/child) instead of just the current node.
+  useFullTagPath: true,
+
+  // If true, add an extra newline before a heading.
+  newlineBeforeHeading: false,
+
+  // If true, add an extra newline after a heading.
+  newlineAfterHeading: false,
+
+  // If true, add a '#' prefix to the displayed tag names (if not already present).
+  addHashPrefixToTagNames: false,
+
+  // Filter function: return true to include a page, false to skip it.
+  filterFunction: (page) => {
+    if (!page.file.tags) return true;
+    return !page.file.tags.some(t => t.toLowerCase().includes("archive"));
+  },
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// 2. COLLECT & BUILD TREE
+////////////////////////////////////////////////////////////////////////////////
+
+// Query pages that have the base tag.
+const pages = dv.pages(`#${config.baseTag}`).where(config.filterFunction);
+
+// Initialize the tree. The root represents the base tag.
+let tree = {
+  name: config.baseTag,
+  fullPath: config.baseTag,
+  pages: [],
+  children: {}
+};
+
+/**
+ * Add a page into the tree based on a tag.
+ * The tag must start with the base tag; we remove that portion,
+ * split on '/', and keep up to config.maxNestedTagDepth segments.
+ */
+function addToTree(fullTag, page) {
+  let raw = fullTag.replace(/^#/, "");
+  let parts = raw.split("/");
+  // Remove the base tag segment.
+  parts.shift();
+  // Limit nested depth.
+  parts = parts.slice(0, config.maxNestedTagDepth);
+  
+  let node = tree;
+  for (let part of parts) {
+    if (!node.children[part]) {
+      node.children[part] = {
+        name: part,
+        fullPath: node.fullPath ? (node.fullPath + "/" + part) : part,
+        pages: [],
+        children: {}
+      };
+    }
+    node = node.children[part];
+  }
+  node.pages.push(page.file.link);
+}
+
+// Process each page and each tag.
+for (let page of pages) {
+  if (!page.file.tags) continue;
+  for (let tag of page.file.tags) {
+    if (tag.startsWith(`#${config.baseTag}`) || tag.startsWith(config.baseTag)) {
+      addToTree(tag, page);
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// 3. BUILD MARKDOWN STRING
+////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * Helper: optionally prefix the tag name with '#' if enabled.
+ */
+function formatTitle(title) {
+  if (config.addHashPrefixToTagNames && title && !title.startsWith("#")) {
+    return "#" + title;
+  }
+  return title;
+}
+
+/**
+ * Build a Markdown string in "headings" mode.
+ * - Headings are generated at effective depth = startingDepth + current recursion depth.
+ * - When effective depth is within maxHeadingDepth, output a Markdown heading.
+ * - When it exceeds maxHeadingDepth, output the node title as a bullet with no indent.
+ * - In headings mode, page links are always output flush left (no indent).
+ */
+function buildMarkdownHeadings(node, depth = 0) {
+  let md = "";
+  let effectiveDepth = config.startingDepth + depth; // e.g. startingDepth=1 => root=1, child=2, etc.
+  
+  // Determine the display title.
+  let title = config.useFullTagPath ? node.fullPath : node.name;
+  title = formatTitle(title);
+  
+  // Only render the node title if either:
+  // - depth > 0, or
+  // - depth === 0 and we're showing the base tag.
+  if ((depth > 0 || (depth === 0 && config.useBaseTagAsH1)) && node.name) {
+    if (config.newlineBeforeHeading && md !== "") { md += "\n"; }
+    if (effectiveDepth <= config.maxHeadingDepth) {
+      md += `${"#".repeat(effectiveDepth)} ${title}\n`;
+    } else {
+      // Beyond heading depth, output title as a bullet with no indent.
+      md += `- ${title}\n`;
+    }
+    if (config.newlineAfterHeading) { md += "\n"; }
+  }
+  
+  // Output page links for this node with no indentation.
+  if (node.pages.length > 0) {
+    for (let link of node.pages) {
+      md += `- ${link}\n`;
+    }
+    md += "\n";
+  }
+  
+  // Process children.
+  for (let child in node.children) {
+    md += buildMarkdownHeadings(node.children[child], depth + 1);
+  }
+  return md;
+}
+
+/**
+ * Build a Markdown string in pure "bullets" mode.
+ * - If useBaseTagAsH1 is true, output the base node as a heading and process its children starting at depth 1.
+ * - For nodes at depth >= 1, the node label is output with (depth-1) tab characters,
+ *   and its page links are indented with depth tab characters.
+ */
+function buildMarkdownBullets(node, depth = 0) {
+  let md = "";
+  function tab(n) { return "\t".repeat(n); }
+  if (depth === 0) {
+    if (config.useBaseTagAsH1 && node.name) {
+      md += `# ${formatTitle(node.name)}\n\n`;
+    }
+    if (node.pages.length > 0) {
+      // Base node page links flush left.
+      for (let link of node.pages) {
+        md += `- ${link}\n`;
+      }
+      md += "\n";
+    }
+    for (let child in node.children) {
+      md += buildMarkdownBullets(node.children[child], 1);
+    }
+  } else {
+    // Node label gets indent = (depth - 1) tabs.
+    md += `${tab(depth - 1)}- ${formatTitle(config.useFullTagPath ? node.fullPath : node.name)}\n`;
+    // Page links get indent = depth tabs.
+    if (node.pages.length > 0) {
+      let linkIndent = tab(depth);
+      for (let link of node.pages) {
+        md += `${linkIndent}- ${link}\n`;
+      }
+      md += "\n";
+    }
+    for (let child in node.children) {
+      md += buildMarkdownBullets(node.children[child], depth + 1);
+    }
+  }
+  return md;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// 4. FINAL OUTPUT VIA dv.paragraph
+////////////////////////////////////////////////////////////////////////////////
+let finalMd = "";
+if (config.renderMode === "headings") {
+  finalMd = buildMarkdownHeadings(tree, 0);
+} else {
+  finalMd = buildMarkdownBullets(tree, 0);
+}
+if (finalMd.trim() === "") {
+  finalMd = `No pages found for tag #${config.baseTag}`;
+}
+
+// Now, instead of returning the string, we render it via dv.paragraph.
+dv.paragraph(finalMd);
+```
+
+## For Publishing
+
+```_dataviewjs
+////////////////////////////////////////////////////////////////////////////////
+// 1. CONFIGURATION
+////////////////////////////////////////////////////////////////////////////////
+const config = {
+  // Base tag (exclude the '#' prefix)
+  baseTag: "areas",
+
+  // If true, the base tag is rendered as an H1 (or top-level bullet in bullet mode).
+  // If false, the base tag is skipped and its children become top-level.
+  useBaseTagAsH1: false,
+
+  // Rendering mode: "headings" (headings until max depth then bullets)
+  // or "bullets" (pure bullet list).
+  renderMode: "headings", 
+
+  // Maximum heading depth (only applicable when renderMode is "headings").
+  // Beyond this depth, bullet lists are used.
+  maxHeadingDepth: 6,
+
+  // Maximum number of nested tag segments to include.
+  maxNestedTagDepth: 9999,
+
+  // Starting depth for rendering.
+  // For example, startingDepth: 1 renders the root as H1 (if useBaseTagAsH1 is true),
+  // startingDepth: 2 renders the root as H2, etc.
+  startingDepth: 1,
+
+  // If true, display the full tag path (e.g. grandparent/parent/child) instead of just the current node.
+  useFullTagPath: true,
+
+  // If true, add an extra newline before a heading.
+  newlineBeforeHeading: true,
+
+  // If true, add an extra newline after a heading.
+  newlineAfterHeading: true,
+
+  // If true, add a '#' prefix to the displayed tag names (if not already present).
+  addHashPrefixToTagNames: false,
+
+  // Filter function: return true to include a page, false to skip it.
+  filterFunction: (page) => {
+    if (!page.file.tags) return true;
+    return !page.file.tags.some(t => t.toLowerCase().includes("archive"));
+  },
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// 2. COLLECT & BUILD TREE
+////////////////////////////////////////////////////////////////////////////////
+
+// Query pages that have the base tag.
+const pages = dv.pages(`#${config.baseTag}`).where(config.filterFunction);
+
+// Initialize the tree. The root represents the base tag.
+let tree = {
+  name: config.baseTag,
+  fullPath: config.baseTag,
+  pages: [],
+  children: {}
+};
+
+/**
+ * Add a page into the tree based on a tag.
+ * The tag must start with the base tag; we remove that portion,
+ * split on '/', and keep up to config.maxNestedTagDepth segments.
+ */
+function addToTree(fullTag, page) {
+  let raw = fullTag.replace(/^#/, "");
+  let parts = raw.split("/");
+  // Remove the base tag segment.
+  parts.shift();
+  // Limit nested depth.
+  parts = parts.slice(0, config.maxNestedTagDepth);
+  
+  let node = tree;
+  for (let part of parts) {
+    if (!node.children[part]) {
+      node.children[part] = {
+        name: part,
+        fullPath: node.fullPath ? (node.fullPath + "/" + part) : part,
+        pages: [],
+        children: {}
+      };
+    }
+    node = node.children[part];
+  }
+  node.pages.push(page.file.link);
+}
+
+// Process each page and each tag.
+for (let page of pages) {
+  if (!page.file.tags) continue;
+  for (let tag of page.file.tags) {
+    if (tag.startsWith(`#${config.baseTag}`) || tag.startsWith(config.baseTag)) {
+      addToTree(tag, page);
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// 3. BUILD MARKDOWN STRING
+////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * Helper: optionally prefix the tag name with '#' if enabled.
+ */
+function formatTitle(title) {
+  if (config.addHashPrefixToTagNames && title && !title.startsWith("#")) {
+    return "#" + title;
+  }
+  return title;
+}
+
+/**
+ * Build a Markdown string in "headings" mode.
+ * - Headings are generated at effective depth = startingDepth + current recursion depth.
+ * - When effective depth is within maxHeadingDepth, output a Markdown heading.
+ * - When it exceeds maxHeadingDepth, output the node title as a bullet with no indent.
+ * - In headings mode, page links are always output flush left (no indent).
+ */
+function buildMarkdownHeadings(node, depth = 0) {
+  let md = "";
+  let effectiveDepth = config.startingDepth + depth; // e.g. startingDepth=1 => root=1, child=2, etc.
+  
+  // Determine the display title.
+  let title = config.useFullTagPath ? node.fullPath : node.name;
+  title = formatTitle(title);
+  
+  // Only render the node title if either:
+  // - depth > 0, or
+  // - depth === 0 and we're showing the base tag.
+  if ((depth > 0 || (depth === 0 && config.useBaseTagAsH1)) && node.name) {
+    if (config.newlineBeforeHeading && md !== "") { md += "\n"; }
+    if (effectiveDepth <= config.maxHeadingDepth) {
+      md += `${"#".repeat(effectiveDepth)} ${title}\n`;
+    } else {
+      // Beyond heading depth, output title as a bullet with no indent.
+      md += `- ${title}\n`;
+    }
+    if (config.newlineAfterHeading) { md += "\n"; }
+  }
+  
+  // Output page links for this node with no indentation.
+  if (node.pages.length > 0) {
+    for (let link of node.pages) {
+      md += `- ${link}\n`;
+    }
+    md += "\n";
+  }
+  
+  // Process children.
+  for (let child in node.children) {
+    md += buildMarkdownHeadings(node.children[child], depth + 1);
+  }
+  return md;
+}
+
+/**
+ * Build a Markdown string in pure "bullets" mode.
+ * - If useBaseTagAsH1 is true, output the base node as a heading and process its children starting at depth 1.
+ * - For nodes at depth >= 1, the node label is output with (depth-1) tabs,
+ *   and its page links are indented with depth tabs.
+ */
+function buildMarkdownBullets(node, depth = 0) {
+  let md = "";
+  function tab(n) { return "\t".repeat(n); }
+  if (depth === 0) {
+    if (config.useBaseTagAsH1 && node.name) {
+      md += `# ${formatTitle(node.name)}\n\n`;
+    }
+    if (node.pages.length > 0) {
+      for (let link of node.pages) {
+        md += `- ${link}\n`;
+      }
+      md += "\n";
+    }
+    for (let child in node.children) {
+      md += buildMarkdownBullets(node.children[child], 1);
+    }
+  } else {
+    md += `${tab(depth - 1)}- ${formatTitle(config.useFullTagPath ? node.fullPath : node.name)}\n`;
+    if (node.pages.length > 0) {
+      let linkIndent = tab(depth);
+      for (let link of node.pages) {
+        md += `${linkIndent}- ${link}\n`;
+      }
+      md += "\n";
+    }
+    for (let child in node.children) {
+      md += buildMarkdownBullets(node.children[child], depth + 1);
+    }
+  }
+  return md;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// 4. FINAL OUTPUT
+////////////////////////////////////////////////////////////////////////////////
+let finalMd = "";
+if (config.renderMode === "headings") {
+  finalMd = buildMarkdownHeadings(tree, 0);
+} else {
+  finalMd = buildMarkdownBullets(tree, 0);
+}
+if (finalMd.trim() === "") {
+  finalMd = `No pages found for tag #${config.baseTag}`;
+}
+finalMd
+```
+
+# ARCHIVE
+
+```_dataview
+list rows.file.link
+FROM "#areas"
+sort file.name asc
+group by file.folder
+sort file.name asc
+```
+
+## MOC DATAVIEWJS & DV PUBLISHER
+
+```_dataviewjs
 ////////////////////////////////////////////////////////////////////////////////
 // 1. CONFIGURATION
 ////////////////////////////////////////////////////////////////////////////////
@@ -232,50 +674,6 @@ if (finalMd.trim() === "") {
 }
 finalMd
 ```
-%%
-
-- [[📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md|Wiki, KB, KMS]]
-- [[📁 03 - Curations, Stacks/Flashcards & Memorization/Flashcards & Memorization.md|Flashcards & Memorization]]
-- [[📁 17 - Knowledge Engineering/Generating Graph MOCs/Generating Graph MOCs.md|Generating Graph MOCs]]
-- [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md|Generating MOCs with Dataview]]
-
-- #areas/knowledge-management
-	- [[📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md|Wiki, KB, KMS]]
-	- [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md|Generating MOCs with Dataview]]
-
-- #areas/kms
-	- [[📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md|Wiki, KB, KMS]]
-	- [[📁 17 - Knowledge Engineering/Generating Graph MOCs/Generating Graph MOCs.md|Generating Graph MOCs]]
-	- [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md|Generating MOCs with Dataview]]
-
-	- #areas/kms/test
-		- [[📁 17 - Knowledge Engineering/Generating Graph MOCs/Generating Graph MOCs.md|Generating Graph MOCs]]
-		- [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md|Generating MOCs with Dataview]]
-
-		- #areas/kms/test/test
-			- [[📁 17 - Knowledge Engineering/Generating Graph MOCs/Generating Graph MOCs.md|Generating Graph MOCs]]
-			- [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md|Generating MOCs with Dataview]]
-
-- #areas/learning
-	- [[📁 03 - Curations, Stacks/Flashcards & Memorization/Flashcards & Memorization.md|Flashcards & Memorization]]
-	- [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md|Generating MOCs with Dataview]]
-
-%% DATAVIEW_PUBLISHER: end %%
-
-## MD DISPLAY
-
-
-# ARCHIVE
-
-```_dataview
-list rows.file.link
-FROM "#areas"
-sort file.name asc
-group by file.folder
-sort file.name asc
-```
-
-## MOC DATAVIEWJS & DV PUBLISHER
 
 ```
 ////////////////////////////////////////////////////////////////////////////////
