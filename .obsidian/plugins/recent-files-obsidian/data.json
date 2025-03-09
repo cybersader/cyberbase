@@ -1,16 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "Dataview Queries",
-      "path": "📁 10 - My Obsidian Stack/Dataview Queries/Dataview Queries.md"
+      "basename": "Generating MOCs with Dataview",
+      "path": "📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md"
+    },
+    {
+      "basename": "Generating Graph MOCs",
+      "path": "📁 17 - Knowledge Engineering/Generating Graph MOCs/Generating Graph MOCs.md"
+    },
+    {
+      "basename": "Dataview and Chronos Roadmap",
+      "path": "📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md"
+    },
+    {
+      "basename": "Obsidian Roadmaps",
+      "path": "📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md"
     },
     {
       "basename": "Knowledge Organization",
       "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
     },
     {
-      "basename": "Generating MOCs with Dataview",
-      "path": "📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md"
+      "basename": "2025-03-08-Saturday",
+      "path": "🕸️ Daily Notes/2025/03/2025-03-08-Saturday/2025-03-08-Saturday.md"
+    },
+    {
+      "basename": "📁 52 - Obsidian Starters & Templates",
+      "path": "📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md"
+    },
+    {
+      "basename": "📁 17 - Knowledge Engineering",
+      "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
+    },
+    {
+      "basename": "Obsidian Frameworker",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
+    },
+    {
+      "basename": "03",
+      "path": "🕸️ Daily Notes/2025/03/03.md"
+    },
+    {
+      "basename": "Dataview Queries",
+      "path": "📁 10 - My Obsidian Stack/Dataview Queries/Dataview Queries.md"
     },
     {
       "basename": "Dataview",
@@ -31,14 +63,6 @@
     {
       "basename": "Chronos Dataview Code for Vault",
       "path": "📁 51 - Cyberbase/Obsidian Roadmaps/Chronos Dataview Code for Vault/Chronos Dataview Code for Vault.md"
-    },
-    {
-      "basename": "Obsidian Roadmaps",
-      "path": "📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md"
-    },
-    {
-      "basename": "Dataview and Chronos Roadmap",
-      "path": "📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md"
     },
     {
       "basename": "_attachments",
@@ -69,20 +93,12 @@
       "path": "📁 10 - My Obsidian Stack/Surf the Web in Obsidian/Surf the Web in Obsidian.md"
     },
     {
-      "basename": "📁 17 - Knowledge Engineering",
-      "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
-    },
-    {
       "basename": "Digital Gardening",
       "path": "📁 17 - Knowledge Engineering/Digital Gardening/Digital Gardening.md"
     },
     {
       "basename": "Obsidian Plugins and Ideas for Contributions",
       "path": "📁 51 - Cyberbase/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
-    },
-    {
-      "basename": "Obsidian Frameworker",
-      "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
     },
     {
       "basename": "Wiki, KB, KMS",
@@ -183,14 +199,6 @@
     {
       "basename": "📁 31 - Education, Pedagogy",
       "path": "📁 31 - Education, Pedagogy/📁 31 - Education, Pedagogy.md"
-    },
-    {
-      "basename": "Static Website Services for Obsidian",
-      "path": "📁 51 - Cyberbase/Static Website Services for Obsidian/Static Website Services for Obsidian.md"
-    },
-    {
-      "basename": "3D Printing",
-      "path": "⬇ INBOX, DROPZONE/3D Printing/3D Printing.md"
     }
   ],
   "omittedPaths": [],
