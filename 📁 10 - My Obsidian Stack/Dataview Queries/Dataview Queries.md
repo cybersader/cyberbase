@@ -7,28 +7,28 @@ date created: Saturday, March 8th 2025, 9:33 pm
 date modified: Saturday, March 8th 2025, 9:33 pm
 ---
 
-```dataview
+```_dataview
 TABLE rows.file.link AS Note FROM #workspaces
 FLATTEN file.etags AS Tags
 WHERE contains(Tags, "#workspaces") AND contains(Tags, "monitoring") AND !contains(Tags, "#archive")
 GROUP BY Tags
 ```
 
-```dataview
+```_dataview
 TABLE rows.file.link AS Note FROM #workspaces
 FLATTEN file.etags AS Tags
 WHERE contains(Tags, "#workspaces") AND contains(Tags, "meeting") AND !contains(Tags, "#archive")
 GROUP BY Tags
 ```
 
-```dataview
+```_dataview
 TABLE rows.file.link AS Note FROM #projects
 FLATTEN file.etags AS Tags
 WHERE contains(Tags, "#projects") AND !contains(Tags, "#archive") 
 GROUP BY Tags
 ```
 
-```dataview
+```_dataview
 TABLE rows.file.link AS Note FROM #workspaces
 FLATTEN file.etags AS Tags
 WHERE contains(Tags, "#workspaces") AND !contains(Tags, "#archive")
