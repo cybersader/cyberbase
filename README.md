@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, March 9th 2024, 8:53 pm
-date modified: Tuesday, February 25th 2025, 9:15 pm
+date modified: Saturday, March 8th 2025, 10:48 pm
 title: Welcome to my Cyberbase
 cssclasses:
   - list-cards
@@ -66,7 +66,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sat, Mar 8, 2025 - [[📁 51 - Cyberbase]]
+> Sat, Mar 8, 2025 - [[Generating MOCs with Dataview]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -94,18 +94,18 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 ```
 %%
 
-| File                                                                                                                            | Last modified           |
-| ------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                                                   | Sat - 3/8/2025, 9:55 PM |
-| [[📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md\|📁 52 - Obsidian Starters & Templates]]       | Sat - 3/8/2025, 9:55 PM |
-| [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md\|Generating MOCs with Dataview]] | Sat - 3/8/2025, 9:53 PM |
-| [[🕸️ Daily Notes/2025/03/2025-03-08-Saturday/2025-03-08-Saturday.md\|2025-03-08-Saturday]]                                     | Sat - 3/8/2025, 9:48 PM |
-| [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                         | Sat - 3/8/2025, 9:47 PM |
-| [[🕸️ Daily Notes/2025/03/03.md\|03]]                                                                                           | Sat - 3/8/2025, 9:47 PM |
-| [[📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md\|📁 17 - Knowledge Engineering]]                               | Sat - 3/8/2025, 9:34 PM |
-| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                   | Sat - 3/8/2025, 9:34 PM |
-| [[📁 10 - My Obsidian Stack/Dataview Queries/Dataview Queries.md\|Dataview Queries]]                                            | Sat - 3/8/2025, 9:33 PM |
-| [[📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md\|📁 10 - My Obsidian Stack]]                                           | Sat - 3/8/2025, 9:33 PM |
+| File                                                                                                                            | Last modified            |
+| ------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md\|Generating MOCs with Dataview]] | Sat - 3/8/2025, 10:46 PM |
+| [[📁 17 - Knowledge Engineering/Generating Graph MOCs/Generating Graph MOCs.md\|Generating Graph MOCs]]                         | Sat - 3/8/2025, 10:46 PM |
+| [[📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md\|📁 17 - Knowledge Engineering]]                               | Sat - 3/8/2025, 10:02 PM |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                  | Sat - 3/8/2025, 9:56 PM  |
+| [[README.md\|README]]                                                                                                           | Sat - 3/8/2025, 9:56 PM  |
+| [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                                                   | Sat - 3/8/2025, 9:55 PM  |
+| [[📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md\|📁 52 - Obsidian Starters & Templates]]       | Sat - 3/8/2025, 9:55 PM  |
+| [[🕸️ Daily Notes/2025/03/2025-03-08-Saturday/2025-03-08-Saturday.md\|2025-03-08-Saturday]]                                     | Sat - 3/8/2025, 9:48 PM  |
+| [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                         | Sat - 3/8/2025, 9:47 PM  |
+| [[🕸️ Daily Notes/2025/03/03.md\|03]]                                                                                           | Sat - 3/8/2025, 9:47 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 
