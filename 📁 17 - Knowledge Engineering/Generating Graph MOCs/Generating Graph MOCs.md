@@ -1,6 +1,8 @@
 ---
 aliases: 
-tags: []
+tags:
+  - "#areas/kms/test"
+  - areas/kms/test/test
 publish: true
 permalink: 
 date created: Saturday, March 8th 2025, 10:02 pm
