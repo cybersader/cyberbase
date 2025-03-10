@@ -16,9 +16,9 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                          | Last modified            |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                | Mon - 3/10/2025, 1:05 PM |
-| [[README.md\|README]]                                                                                                                         | Mon - 3/10/2025, 1:05 PM |
-| [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md\|Generating MOCs with Dataview]]               | Mon - 3/10/2025, 1:05 PM |
+| [[README.md\|README]]                                                                                                                         | Mon - 3/10/2025, 1:41 PM |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                | Mon - 3/10/2025, 1:41 PM |
+| [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md\|Generating MOCs with Dataview]]               | Mon - 3/10/2025, 1:38 PM |
 | [[📁 10 - My Obsidian Stack/Dataview Queries/Dataview Queries.md\|Dataview Queries]]                                                          | Sun - 3/9/2025, 8:44 PM  |
 | [[📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md\|📁 52 - Obsidian Starters & Templates]]                     | Sun - 3/9/2025, 6:38 PM  |
 | [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                                 | Sun - 3/9/2025, 6:32 PM  |

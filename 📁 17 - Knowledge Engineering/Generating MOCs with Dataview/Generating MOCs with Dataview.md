@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: 
 date created: Saturday, March 8th 2025, 9:23 pm
-date modified: Monday, March 10th 2025, 1:05 pm
+date modified: Monday, March 10th 2025, 1:38 pm
 ---
 
 [Dataview](../../📁%2010%20-%20My%20Obsidian%20Stack/Dataview/Dataview.md)
@@ -12,7 +12,104 @@ date modified: Monday, March 10th 2025, 1:05 pm
 
 # WORKSPACE
 
-## SUPER MINIFIED - NO NEWLINES
+## FULL CODE OPTIMIZED
+
+### Vault Version
+
+```_dataviewjs
+/* CONFIG START – modify these settings as desired:
+   tag_base – Base tag (without "#")
+   tag_useBaseTagAsH1 – if true, show the base tag as a heading
+   tag_renderMode – "headings" or "bullets"
+   tag_maxHeadingDepth – maximum heading level before switching to bullets
+   tag_maxNestedTagDepth – maximum nested segments to use
+   tag_startingDepth – starting heading level (1 means H1, 2 means H2, etc.)
+   tag_useFullTagPath – if true, display full tag path (e.g. areas/parent/child)
+   tag_newlineBeforeHeading/AfterHeading – extra newlines before/after headings
+   tag_addHashPrefixToTagNames – if true, prepend "#" to tag names
+   tag_filterFunction – a function that filters pages; for example:
+      // (p)=> p.file.tags && p.file.tags.some(t=>t.includes("monitoring"))
+      // (p)=> !p.file.tags || !p.file.tags.some(t=>t.toLowerCase().includes("archive"))
+*/
+const cfg = {
+  baseTag: dv.current().tag_base || "areas",
+  useBaseTagAsH1: dv.current().tag_useBaseTagAsH1 !== undefined ? dv.current().tag_useBaseTagAsH1 : false,
+  renderMode: dv.current().tag_renderMode || "headings",
+  maxHeadingDepth: dv.current().tag_maxHeadingDepth || 2,
+  maxNestedTagDepth: dv.current().tag_maxNestedTagDepth || 9999,
+  startingDepth: dv.current().tag_startingDepth || 1,
+  useFullTagPath: dv.current().tag_useFullTagPath !== undefined ? dv.current().tag_useFullTagPath : true,
+  newlineBeforeHeading: dv.current().tag_newlineBeforeHeading !== undefined ? dv.current().tag_newlineBeforeHeading : false,
+  newlineAfterHeading: dv.current().tag_newlineAfterHeading !== undefined ? dv.current().tag_newlineAfterHeading : false,
+  addHashPrefixToTagNames: dv.current().tag_addHashPrefixToTagNames !== undefined ? dv.current().tag_addHashPrefixToTagNames : true,
+  filterFunction: dv.current().tag_filterFunction || ((p)=>{ return !p.file.tags || !p.file.tags.some(t=>t.toLowerCase().includes("archive")); })
+};
+/* CONFIG END */
+////////////////////////////////////////////////////////////////////////////////
+const p = dv.pages(`#${cfg.baseTag}`).where(cfg.filterFunction);
+let t = {name: cfg.baseTag, fullPath: cfg.baseTag, pages: [], children: {}};
+p.forEach(p => { if(p.file.tags){ p.file.tags.forEach(tg => { if(tg.startsWith(`#${cfg.baseTag}`)||tg.startsWith(cfg.baseTag)){ let parts = tg.replace(/^#/,"").split("/").slice(1, cfg.maxNestedTagDepth+1); let n = t; parts.forEach(x => { if(!n.children[x]) n.children[x] = {name: x, fullPath: n.fullPath+"/"+x, pages: [], children: {}}; n = n.children[x]; }); n.pages.push(p.file.link); } }); } });
+function fT(s){ return cfg.addHashPrefixToTagNames && s && !s.startsWith("#") ? "#"+s : s; }
+function nF(n){ return cfg.useFullTagPath ? n.fullPath : n.name; }
+function bH(n,d=0){ let md=""; let eff = cfg.startingDepth+d, title = fT(nF(n));
+ if((d>0||(d===0&&cfg.useBaseTagAsH1))&&n.name){ if(cfg.newlineBeforeHeading && md!=="") md+="\n"; md += (eff<=cfg.maxHeadingDepth ? "#".repeat(eff)+" "+title+"\n" : "- "+title+"\n"); if(cfg.newlineAfterHeading) md+="\n"; }
+ if(n.pages.length){ n.pages.forEach(link=>{ md+="- "+link+"\n"; }); md+="\n"; }
+ for(let c in n.children){ md+=bH(n.children[c], d+1); } return md; }
+function bB(n,d=0){ let md=""; let tab = n=>"\t".repeat(n);
+ if(d===0){ if(cfg.useBaseTagAsH1 && n.name){ md+="# "+fT(n.name)+"\n\n"; }
+  if(n.pages.length){ n.pages.forEach(link=>{ md+="- "+link+"\n"; }); md+="\n"; }
+  for(let c in n.children){ md+=bB(n.children[c],1); } }
+ else { md+=tab(d-1)+"- "+fT(cfg.useFullTagPath?n.fullPath:n.name)+"\n";
+  if(n.pages.length){ let li = tab(d); n.pages.forEach(link=>{ md+=li+"- "+link+"\n"; }); md+="\n"; }
+  for(let c in n.children){ md+=bB(n.children[c], d+1); } }
+ return md; }
+let finalMd = cfg.renderMode==="headings"?bH(t,0):bB(t,0);
+if(finalMd.trim()==="") finalMd=`No pages found for tag #${cfg.baseTag}`;
+dv.paragraph(finalMd);
+```
+
+### Publish Version
+
+```_dataviewjs
+/* CONFIG START – see Vault version for details */
+const cfg = {
+  baseTag: dv.current().tag_base || "areas",
+  useBaseTagAsH1: dv.current().tag_useBaseTagAsH1 !== undefined ? dv.current().tag_useBaseTagAsH1 : false,
+  renderMode: dv.current().tag_renderMode || "headings",
+  maxHeadingDepth: dv.current().tag_maxHeadingDepth || 2,
+  maxNestedTagDepth: dv.current().tag_maxNestedTagDepth || 9999,
+  startingDepth: dv.current().tag_startingDepth || 1,
+  useFullTagPath: dv.current().tag_useFullTagPath !== undefined ? dv.current().tag_useFullTagPath : true,
+  newlineBeforeHeading: dv.current().tag_newlineBeforeHeading !== undefined ? dv.current().tag_newlineBeforeHeading : false,
+  newlineAfterHeading: dv.current().tag_newlineAfterHeading !== undefined ? dv.current().tag_newlineAfterHeading : false,
+  addHashPrefixToTagNames: dv.current().tag_addHashPrefixToTagNames !== undefined ? dv.current().tag_addHashPrefixToTagNames : true,
+  filterFunction: dv.current().tag_filterFunction || ((p)=>{ return !p.file.tags || !p.file.tags.some(t=>t.toLowerCase().includes("archive")); })
+};
+/* CONFIG END */
+////////////////////////////////////////////////////////////////////////////////
+const p = dv.pages(`#${cfg.baseTag}`).where(cfg.filterFunction);
+let t = {name: cfg.baseTag, fullPath: cfg.baseTag, pages: [], children: {}};
+p.forEach(p => { if(p.file.tags){ p.file.tags.forEach(tg => { if(tg.startsWith(`#${cfg.baseTag}`)||tg.startsWith(cfg.baseTag)){ let parts = tg.replace(/^#/,"").split("/").slice(1, cfg.maxNestedTagDepth+1); let n = t; parts.forEach(x => { if(!n.children[x]) n.children[x] = {name: x, fullPath: n.fullPath+"/"+x, pages: [], children: {}}; n = n.children[x]; }); n.pages.push(p.file.link); } }); } });
+function fT(s){ return cfg.addHashPrefixToTagNames && s && !s.startsWith("#") ? "#"+s : s; }
+function nF(n){ return cfg.useFullTagPath ? n.fullPath : n.name; }
+function bH(n,d=0){ let md="",eff = cfg.startingDepth+d,title = fT(nF(n));
+ if((d>0||(d===0&&cfg.useBaseTagAsH1))&&n.name){ if(cfg.newlineBeforeHeading && md!=="") md+="\n"; md+=(eff<=cfg.maxHeadingDepth ? "#".repeat(eff)+" "+title+"\n" : "- "+title+"\n"); if(cfg.newlineAfterHeading) md+="\n"; }
+ if(n.pages.length){ n.pages.forEach(link=>{ md+="- "+link+"\n"; }); md+="\n"; }
+ for(let c in n.children){ md+=bH(n.children[c],d+1); } return md; }
+function bB(n,d=0){ let md="",tab=n=>"\t".repeat(n);
+ if(d===0){ if(cfg.useBaseTagAsH1 && n.name){ md+="# "+fT(n.name)+"\n\n"; }
+  if(n.pages.length){ n.pages.forEach(link=>{ md+="- "+link+"\n"; }); md+="\n"; }
+  for(let c in n.children){ md+=bB(n.children[c],1); } }
+ else { md+=tab(d-1)+"- "+fT(cfg.useFullTagPath?n.fullPath:n.name)+"\n";
+  if(n.pages.length){ let li=tab(d); n.pages.forEach(link=>{ md+=li+"- "+link+"\n"; }); md+="\n"; }
+  for(let c in n.children){ md+=bB(n.children[c],d+1); } }
+ return md; }
+let finalMd = cfg.renderMode==="headings"?bH(t,0):bB(t,0);
+if(finalMd.trim()==="") finalMd=`No pages found for tag #${cfg.baseTag}`;
+finalMd
+```
+
+## SUPER MINIFIED - NO NEWLINES (experimental)
 
 ### Vault Version
 
@@ -69,7 +166,7 @@ const cfg = {
 let t={name:cfg.baseTag,fullPath:cfg.baseTag,pages:[],children:{}};function fT(e){return cfg.addHashPrefixToTagNames&&e&&!e.startsWith("#")?"#"+e:e}function nF(e){return cfg.useFullTagPath?e.fullPath:e.name}function bH(e,a=0){let n="",l=cfg.startingDepth+a,i=fT(nF(e));for(let r in(a>0||0===a&&cfg.useBaseTagAsH1)&&e.name&&(cfg.newlineBeforeHeading&&""!==n&&(n+="\n"),n+=l<=cfg.maxHeadingDepth?"#".repeat(l)+" "+i+"\n":"- "+i+"\n",cfg.newlineAfterHeading&&(n+="\n")),e.pages.length&&(e.pages.forEach(e=>{n+="- "+e+"\n"}),n+="\n"),e.children)n+=bH(e.children[r],a+1);return n}function bB(e,a=0){let n="",l=e=>" ".repeat(e);if(0===a)for(let i in cfg.useBaseTagAsH1&&e.name&&(n+="# "+fT(e.name)+"\n\n"),e.pages.length&&(e.pages.forEach(e=>{n+="- "+e+"\n"}),n+="\n"),e.children)n+=bB(e.children[i],1);else{if(n+=l(a-1)+"- "+fT(cfg.useFullTagPath?e.fullPath:e.name)+"\n",e.pages.length){let r=l(a);e.pages.forEach(e=>{n+=r+"- "+e+"\n"}),n+="\n"}for(let s in e.children)n+=bB(e.children[s],a+1)}return n}dv.pages(`#${cfg.baseTag}`).where(cfg.filterFunction).forEach(e=>{e.file.tags&&e.file.tags.forEach(a=>{if(a.startsWith(`#${cfg.baseTag}`)||a.startsWith(cfg.baseTag)){let n=a.replace(/^#/,"").split("/").slice(1,cfg.maxNestedTagDepth+1),l=t;n.forEach(e=>{l.children[e]||(l.children[e]={name:e,fullPath:l.fullPath+"/"+e,pages:[],children:{}}),l=l.children[e]}),l.pages.push(e.file.link)}})});let finalMd="headings"===cfg.renderMode?bH(t,0):bB(t,0);""===finalMd.trim()&&(finalMd=`No pages found for tag #${cfg.baseTag}`);
 ```
 
-## SUPER MINIFIED
+## SUPER MINIFIED (experimental)
 
 ### Vault Version
 
@@ -187,7 +284,7 @@ if(finalMd.trim()==="") finalMd=`No pages found for tag #${cfg.baseTag}`;
 finalMd
 ```
 
-## MINIFIED CODE VERSIONS
+## MINIFIED CODE VERSIONS (experimental)
 
 ### For Vault Use
 
@@ -344,51 +441,34 @@ finalMd
 ### For Vault Use
 
 ```_dataviewjs
-////////////////////////////////////////////////////////////////////////////////
-// 1. CONFIGURATION
-////////////////////////////////////////////////////////////////////////////////
-const config = {
-  // Base tag (exclude the '#' prefix)
-  baseTag: "areas",
-
-  // If true, the base tag is rendered as an H1 (or top-level bullet in bullet mode).
-  // If false, the base tag is skipped and its children become top-level.
-  useBaseTagAsH1: false,
-
-  // Rendering mode: "headings" (headings until max depth then bullets)
-  // or "bullets" (pure bullet list).
-  renderMode: "headings", 
-
-  // Maximum heading depth (only applicable when renderMode is "headings").
-  // Beyond this depth, bullet lists are used.
-  maxHeadingDepth: 6,
-
-  // Maximum number of nested tag segments to include.
-  maxNestedTagDepth: 9999,
-
-  // Starting depth for rendering.
-  // For example, startingDepth: 1 renders the root as H1 (if useBaseTagAsH1 is true),
-  // startingDepth: 2 renders the root as H2, etc.
-  startingDepth: 1,
-
-  // If true, display the full tag path (e.g. grandparent/parent/child) instead of just the current node.
-  useFullTagPath: true,
-
-  // If true, add an extra newline before a heading.
-  newlineBeforeHeading: false,
-
-  // If true, add an extra newline after a heading.
-  newlineAfterHeading: false,
-
-  // If true, add a '#' prefix to the displayed tag names (if not already present).
-  addHashPrefixToTagNames: false,
-
-  // Filter function: return true to include a page, false to skip it.
-  filterFunction: (page) => {
-    if (!page.file.tags) return true;
-    return !page.file.tags.some(t => t.toLowerCase().includes("archive"));
-  },
+/* CONFIG START – modify these settings as desired:
+   tag_base – Base tag (without "#")
+   tag_useBaseTagAsH1 – if true, show the base tag as a heading
+   tag_renderMode – "headings" or "bullets"
+   tag_maxHeadingDepth – maximum heading level before switching to bullets
+   tag_maxNestedTagDepth – maximum nested segments to use
+   tag_startingDepth – starting heading level (1 means H1, 2 means H2, etc.)
+   tag_useFullTagPath – if true, display full tag path (e.g. areas/parent/child)
+   tag_newlineBeforeHeading/AfterHeading – extra newlines before/after headings
+   tag_addHashPrefixToTagNames – if true, prepend "#" to tag names
+   tag_filterFunction – a function that filters pages; for example:
+      // (p)=> p.file.tags && p.file.tags.some(t=>t.includes("monitoring"))
+      // (p)=> !p.file.tags || !p.file.tags.some(t=>t.toLowerCase().includes("archive"))
+*/
+const cfg = {
+  baseTag: dv.current().tag_base || "areas",
+  useBaseTagAsH1: dv.current().tag_useBaseTagAsH1 !== undefined ? dv.current().tag_useBaseTagAsH1 : false,
+  renderMode: dv.current().tag_renderMode || "headings",
+  maxHeadingDepth: dv.current().tag_maxHeadingDepth || 2,
+  maxNestedTagDepth: dv.current().tag_maxNestedTagDepth || 9999,
+  startingDepth: dv.current().tag_startingDepth || 1,
+  useFullTagPath: dv.current().tag_useFullTagPath !== undefined ? dv.current().tag_useFullTagPath : true,
+  newlineBeforeHeading: dv.current().tag_newlineBeforeHeading !== undefined ? dv.current().tag_newlineBeforeHeading : false,
+  newlineAfterHeading: dv.current().tag_newlineAfterHeading !== undefined ? dv.current().tag_newlineAfterHeading : false,
+  addHashPrefixToTagNames: dv.current().tag_addHashPrefixToTagNames !== undefined ? dv.current().tag_addHashPrefixToTagNames : true,
+  filterFunction: dv.current().tag_filterFunction || ((p)=>{ return !p.file.tags || !p.file.tags.some(t=>t.toLowerCase().includes("archive")); })
 };
+/* CONFIG END */
 
 ////////////////////////////////////////////////////////////////////////////////
 // 2. COLLECT & BUILD TREE
@@ -565,48 +645,21 @@ dv.paragraph(finalMd);
 ////////////////////////////////////////////////////////////////////////////////
 // 1. CONFIGURATION
 ////////////////////////////////////////////////////////////////////////////////
-const config = {
-  // Base tag (exclude the '#' prefix)
-  baseTag: "areas",
-
-  // If true, the base tag is rendered as an H1 (or top-level bullet in bullet mode).
-  // If false, the base tag is skipped and its children become top-level.
-  useBaseTagAsH1: false,
-
-  // Rendering mode: "headings" (headings until max depth then bullets)
-  // or "bullets" (pure bullet list).
-  renderMode: "headings", 
-
-  // Maximum heading depth (only applicable when renderMode is "headings").
-  // Beyond this depth, bullet lists are used.
-  maxHeadingDepth: 6,
-
-  // Maximum number of nested tag segments to include.
-  maxNestedTagDepth: 9999,
-
-  // Starting depth for rendering.
-  // For example, startingDepth: 1 renders the root as H1 (if useBaseTagAsH1 is true),
-  // startingDepth: 2 renders the root as H2, etc.
-  startingDepth: 1,
-
-  // If true, display the full tag path (e.g. grandparent/parent/child) instead of just the current node.
-  useFullTagPath: true,
-
-  // If true, add an extra newline before a heading.
-  newlineBeforeHeading: true,
-
-  // If true, add an extra newline after a heading.
-  newlineAfterHeading: true,
-
-  // If true, add a '#' prefix to the displayed tag names (if not already present).
-  addHashPrefixToTagNames: false,
-
-  // Filter function: return true to include a page, false to skip it.
-  filterFunction: (page) => {
-    if (!page.file.tags) return true;
-    return !page.file.tags.some(t => t.toLowerCase().includes("archive"));
-  },
+/* CONFIG START – see Vault version for details */
+const cfg = {
+  baseTag: dv.current().tag_base || "areas",
+  useBaseTagAsH1: dv.current().tag_useBaseTagAsH1 !== undefined ? dv.current().tag_useBaseTagAsH1 : false,
+  renderMode: dv.current().tag_renderMode || "headings",
+  maxHeadingDepth: dv.current().tag_maxHeadingDepth || 2,
+  maxNestedTagDepth: dv.current().tag_maxNestedTagDepth || 9999,
+  startingDepth: dv.current().tag_startingDepth || 1,
+  useFullTagPath: dv.current().tag_useFullTagPath !== undefined ? dv.current().tag_useFullTagPath : true,
+  newlineBeforeHeading: dv.current().tag_newlineBeforeHeading !== undefined ? dv.current().tag_newlineBeforeHeading : false,
+  newlineAfterHeading: dv.current().tag_newlineAfterHeading !== undefined ? dv.current().tag_newlineAfterHeading : false,
+  addHashPrefixToTagNames: dv.current().tag_addHashPrefixToTagNames !== undefined ? dv.current().tag_addHashPrefixToTagNames : true,
+  filterFunction: dv.current().tag_filterFunction || ((p)=>{ return !p.file.tags || !p.file.tags.some(t=>t.toLowerCase().includes("archive")); })
 };
+/* CONFIG END */
 
 ////////////////////////////////////////////////////////////////////////////////
 // 2. COLLECT & BUILD TREE
