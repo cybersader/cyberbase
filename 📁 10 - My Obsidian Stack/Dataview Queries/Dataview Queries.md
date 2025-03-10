@@ -112,7 +112,7 @@ limit 100
 
 Show tasks completed on a certain day:
 ```
-(tag regex matches /ben|brent|secops|tracker/i) OR (path includes {{query.file.path}}) 
+(tag regex matches /person_1|secops|tracker/i) OR (path includes {{query.file.path}}) 
 done on ALT_D_ENTER_HERE
 group by function task.tags.filter( (tag) => ! tag.includes("#tracker") )
 limit groups to 10

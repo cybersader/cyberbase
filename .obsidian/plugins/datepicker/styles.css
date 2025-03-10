@@ -1,0 +1,21 @@
+.datepicker-container{
+    /* required for the Datepicker plugin to function correctly */
+    position: fixed;
+    min-width: 0px;
+    min-height: 0px;
+    display: flex;
+
+    padding: 5px;
+    background-color: var(--interactive-hover);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.datepicker-button{
+    --icon-size: 14px;
+    margin-left: 4px;
+    margin-right: 6px;
+}
+.datepicker-container-button{
+    --icon-size: 12px;
+    margin-left: 4px;
+}
