@@ -66,7 +66,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sun, Mar 9, 2025 - [[Dataview Queries]]
+> Mon, Mar 10, 2025 - [[📅 Changelog]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -96,14 +96,14 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                            | Last modified            |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                  | Mon - 3/10/2025, 1:05 PM |
+| [[README.md\|README]]                                                                                                           | Mon - 3/10/2025, 1:05 PM |
+| [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md\|Generating MOCs with Dataview]] | Mon - 3/10/2025, 1:05 PM |
 | [[📁 10 - My Obsidian Stack/Dataview Queries/Dataview Queries.md\|Dataview Queries]]                                            | Sun - 3/9/2025, 8:44 PM  |
 | [[📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md\|📁 52 - Obsidian Starters & Templates]]       | Sun - 3/9/2025, 6:38 PM  |
 | [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                   | Sun - 3/9/2025, 6:32 PM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                  | Sun - 3/9/2025, 4:34 PM  |
-| [[README.md\|README]]                                                                                                           | Sun - 3/9/2025, 4:34 PM  |
 | [[🕸️ Daily Notes/2025/03/2025-03-09-Sunday/2025-03-09-Sunday.md\|2025-03-09-Sunday]]                                           | Sun - 3/9/2025, 4:34 PM  |
 | [[📁 17 - Knowledge Engineering/Generating Graph MOCs/Generating Graph MOCs.md\|Generating Graph MOCs]]                         | Sun - 3/9/2025, 4:31 PM  |
-| [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md\|Generating MOCs with Dataview]] | Sun - 3/9/2025, 4:30 PM  |
 | [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                         | Sun - 3/9/2025, 1:22 PM  |
 | [[📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md\|📁 17 - Knowledge Engineering]]                               | Sat - 3/8/2025, 10:02 PM |
 

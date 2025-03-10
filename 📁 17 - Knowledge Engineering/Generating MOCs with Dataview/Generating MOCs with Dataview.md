@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: 
 date created: Saturday, March 8th 2025, 9:23 pm
-date modified: Sunday, March 9th 2025, 4:30 pm
+date modified: Monday, March 10th 2025, 1:05 pm
 ---
 
 [Dataview](../../📁%2010%20-%20My%20Obsidian%20Stack/Dataview/Dataview.md)
@@ -12,7 +12,336 @@ date modified: Sunday, March 9th 2025, 4:30 pm
 
 # WORKSPACE
 
-## For Vault Use
+## SUPER MINIFIED - NO NEWLINES
+
+### Vault Version
+
+```_dataviewjs
+/* CONFIG START – modify these settings as desired:
+   tag_base – Base tag (without "#")
+   tag_useBaseTagAsH1 – if true, show the base tag as a heading
+   tag_renderMode – "headings" or "bullets"
+   tag_maxHeadingDepth – maximum heading level before switching to bullets
+   tag_maxNestedTagDepth – maximum nested segments to use
+   tag_startingDepth – starting heading level (1 means H1, 2 means H2, etc.)
+   tag_useFullTagPath – if true, display full tag path (e.g. areas/parent/child)
+   tag_newlineBeforeHeading/AfterHeading – extra newlines before/after headings
+   tag_addHashPrefixToTagNames – if true, prepend "#" to tag names
+   tag_filterFunction – a function that filters pages; for example:
+      // (p)=> p.file.tags && p.file.tags.some(t=>t.includes("monitoring"))
+      // (p)=> !p.file.tags || !p.file.tags.some(t=>t.toLowerCase().includes("archive"))
+*/
+const cfg = {
+  baseTag: dv.current().tag_base || "areas",
+  useBaseTagAsH1: dv.current().tag_useBaseTagAsH1 !== undefined ? dv.current().tag_useBaseTagAsH1 : false,
+  renderMode: dv.current().tag_renderMode || "headings",
+  maxHeadingDepth: dv.current().tag_maxHeadingDepth || 2,
+  maxNestedTagDepth: dv.current().tag_maxNestedTagDepth || 9999,
+  startingDepth: dv.current().tag_startingDepth || 1,
+  useFullTagPath: dv.current().tag_useFullTagPath !== undefined ? dv.current().tag_useFullTagPath : true,
+  newlineBeforeHeading: dv.current().tag_newlineBeforeHeading !== undefined ? dv.current().tag_newlineBeforeHeading : false,
+  newlineAfterHeading: dv.current().tag_newlineAfterHeading !== undefined ? dv.current().tag_newlineAfterHeading : false,
+  addHashPrefixToTagNames: dv.current().tag_addHashPrefixToTagNames !== undefined ? dv.current().tag_addHashPrefixToTagNames : true,
+  filterFunction: dv.current().tag_filterFunction || ((p)=>{ return !p.file.tags || !p.file.tags.some(t=>t.toLowerCase().includes("archive")); })
+};
+/* CONFIG END */
+let t={name:cfg.baseTag,fullPath:cfg.baseTag,pages:[],children:{}};function fT(e){return cfg.addHashPrefixToTagNames&&e&&!e.startsWith("#")?"#"+e:e}function nF(e){return cfg.useFullTagPath?e.fullPath:e.name}function bH(e,a=0){let n="",l=cfg.startingDepth+a,r=fT(nF(e));for(let i in(a>0||0===a&&cfg.useBaseTagAsH1)&&e.name&&(cfg.newlineBeforeHeading&&""!==n&&(n+="\n"),n+=l<=cfg.maxHeadingDepth?"#".repeat(l)+" "+r+"\n":"- "+r+"\n",cfg.newlineAfterHeading&&(n+="\n")),e.pages.length&&(e.pages.forEach(e=>{n+="- "+e+"\n"}),n+="\n"),e.children)n+=bH(e.children[i],a+1);return n}function bB(e,a=0){let n="",l=e=>" ".repeat(e);if(0===a)for(let r in cfg.useBaseTagAsH1&&e.name&&(n+="# "+fT(e.name)+"\n\n"),e.pages.length&&(e.pages.forEach(e=>{n+="- "+e+"\n"}),n+="\n"),e.children)n+=bB(e.children[r],1);else{if(n+=l(a-1)+"- "+fT(cfg.useFullTagPath?e.fullPath:e.name)+"\n",e.pages.length){let i=l(a);e.pages.forEach(e=>{n+=i+"- "+e+"\n"}),n+="\n"}for(let s in e.children)n+=bB(e.children[s],a+1)}return n}dv.pages(`#${cfg.baseTag}`).where(cfg.filterFunction).forEach(e=>{e.file.tags&&e.file.tags.forEach(a=>{if(a.startsWith(`#${cfg.baseTag}`)||a.startsWith(cfg.baseTag)){let n=a.replace(/^#/,"").split("/").slice(1,cfg.maxNestedTagDepth+1),l=t;n.forEach(e=>{l.children[e]||(l.children[e]={name:e,fullPath:l.fullPath+"/"+e,pages:[],children:{}}),l=l.children[e]}),l.pages.push(e.file.link)}})});let finalMd="headings"===cfg.renderMode?bH(t,0):bB(t,0);""===finalMd.trim()&&(finalMd=`No pages found for tag #${cfg.baseTag}`),dv.paragraph(finalMd);
+```
+
+### Publish Version
+
+```_dataviewjs
+/* CONFIG START – see Vault version for details */
+const cfg = {
+  baseTag: dv.current().tag_base || "areas",
+  useBaseTagAsH1: dv.current().tag_useBaseTagAsH1 !== undefined ? dv.current().tag_useBaseTagAsH1 : false,
+  renderMode: dv.current().tag_renderMode || "headings",
+  maxHeadingDepth: dv.current().tag_maxHeadingDepth || 2,
+  maxNestedTagDepth: dv.current().tag_maxNestedTagDepth || 9999,
+  startingDepth: dv.current().tag_startingDepth || 1,
+  useFullTagPath: dv.current().tag_useFullTagPath !== undefined ? dv.current().tag_useFullTagPath : true,
+  newlineBeforeHeading: dv.current().tag_newlineBeforeHeading !== undefined ? dv.current().tag_newlineBeforeHeading : false,
+  newlineAfterHeading: dv.current().tag_newlineAfterHeading !== undefined ? dv.current().tag_newlineAfterHeading : false,
+  addHashPrefixToTagNames: dv.current().tag_addHashPrefixToTagNames !== undefined ? dv.current().tag_addHashPrefixToTagNames : true,
+  filterFunction: dv.current().tag_filterFunction || ((p)=>{ return !p.file.tags || !p.file.tags.some(t=>t.toLowerCase().includes("archive")); })
+};
+/* CONFIG END */
+let t={name:cfg.baseTag,fullPath:cfg.baseTag,pages:[],children:{}};function fT(e){return cfg.addHashPrefixToTagNames&&e&&!e.startsWith("#")?"#"+e:e}function nF(e){return cfg.useFullTagPath?e.fullPath:e.name}function bH(e,a=0){let n="",l=cfg.startingDepth+a,i=fT(nF(e));for(let r in(a>0||0===a&&cfg.useBaseTagAsH1)&&e.name&&(cfg.newlineBeforeHeading&&""!==n&&(n+="\n"),n+=l<=cfg.maxHeadingDepth?"#".repeat(l)+" "+i+"\n":"- "+i+"\n",cfg.newlineAfterHeading&&(n+="\n")),e.pages.length&&(e.pages.forEach(e=>{n+="- "+e+"\n"}),n+="\n"),e.children)n+=bH(e.children[r],a+1);return n}function bB(e,a=0){let n="",l=e=>" ".repeat(e);if(0===a)for(let i in cfg.useBaseTagAsH1&&e.name&&(n+="# "+fT(e.name)+"\n\n"),e.pages.length&&(e.pages.forEach(e=>{n+="- "+e+"\n"}),n+="\n"),e.children)n+=bB(e.children[i],1);else{if(n+=l(a-1)+"- "+fT(cfg.useFullTagPath?e.fullPath:e.name)+"\n",e.pages.length){let r=l(a);e.pages.forEach(e=>{n+=r+"- "+e+"\n"}),n+="\n"}for(let s in e.children)n+=bB(e.children[s],a+1)}return n}dv.pages(`#${cfg.baseTag}`).where(cfg.filterFunction).forEach(e=>{e.file.tags&&e.file.tags.forEach(a=>{if(a.startsWith(`#${cfg.baseTag}`)||a.startsWith(cfg.baseTag)){let n=a.replace(/^#/,"").split("/").slice(1,cfg.maxNestedTagDepth+1),l=t;n.forEach(e=>{l.children[e]||(l.children[e]={name:e,fullPath:l.fullPath+"/"+e,pages:[],children:{}}),l=l.children[e]}),l.pages.push(e.file.link)}})});let finalMd="headings"===cfg.renderMode?bH(t,0):bB(t,0);""===finalMd.trim()&&(finalMd=`No pages found for tag #${cfg.baseTag}`);
+```
+
+## SUPER MINIFIED
+
+### Vault Version
+
+```_dataviewjs
+/* CONFIG START – modify these settings as desired:
+   tag_base – Base tag (without "#")
+   tag_useBaseTagAsH1 – if true, show the base tag as a heading
+   tag_renderMode – "headings" or "bullets"
+   tag_maxHeadingDepth – maximum heading level before switching to bullets
+   tag_maxNestedTagDepth – maximum nested segments to use
+   tag_startingDepth – starting heading level (1 means H1, 2 means H2, etc.)
+   tag_useFullTagPath – if true, display full tag path (e.g. areas/parent/child)
+   tag_newlineBeforeHeading/AfterHeading – extra newlines before/after headings
+   tag_addHashPrefixToTagNames – if true, prepend "#" to tag names
+   tag_filterFunction – a function that filters pages; for example:
+      // (p)=> p.file.tags && p.file.tags.some(t=>t.includes("monitoring"))
+      // (p)=> !p.file.tags || !p.file.tags.some(t=>t.toLowerCase().includes("archive"))
+*/
+const cfg = {
+  baseTag: dv.current().tag_base || "areas",
+  useBaseTagAsH1: dv.current().tag_useBaseTagAsH1 !== undefined ? dv.current().tag_useBaseTagAsH1 : false,
+  renderMode: dv.current().tag_renderMode || "headings",
+  maxHeadingDepth: dv.current().tag_maxHeadingDepth || 2,
+  maxNestedTagDepth: dv.current().tag_maxNestedTagDepth || 9999,
+  startingDepth: dv.current().tag_startingDepth || 1,
+  useFullTagPath: dv.current().tag_useFullTagPath !== undefined ? dv.current().tag_useFullTagPath : true,
+  newlineBeforeHeading: dv.current().tag_newlineBeforeHeading !== undefined ? dv.current().tag_newlineBeforeHeading : false,
+  newlineAfterHeading: dv.current().tag_newlineAfterHeading !== undefined ? dv.current().tag_newlineAfterHeading : false,
+  addHashPrefixToTagNames: dv.current().tag_addHashPrefixToTagNames !== undefined ? dv.current().tag_addHashPrefixToTagNames : true,
+  filterFunction: dv.current().tag_filterFunction || ((p)=>{ return !p.file.tags || !p.file.tags.some(t=>t.toLowerCase().includes("archive")); })
+};
+/* CONFIG END */
+
+let t={name:cfg.baseTag,fullPath:cfg.baseTag,pages:[],children:{}};
+dv.pages(`#${cfg.baseTag}`).where(cfg.filterFunction).forEach(p=>{
+  if(p.file.tags){
+    p.file.tags.forEach(tg=>{
+      if(tg.startsWith(`#${cfg.baseTag}`)||tg.startsWith(cfg.baseTag)){
+        let parts=tg.replace(/^#/,"").split("/").slice(1, cfg.maxNestedTagDepth+1);
+        let n=t; parts.forEach(part=>{ if(!n.children[part]) n.children[part]={name:part,fullPath:n.fullPath+"/"+part,pages:[],children:{}}; n=n.children[part]; });
+        n.pages.push(p.file.link);
+      }
+    });
+  }
+});
+function fT(t){ return cfg.addHashPrefixToTagNames && t && !t.startsWith("#") ? "#"+t : t; }
+function nF(n){ return cfg.useFullTagPath ? n.fullPath : n.name; }
+function bH(n,d=0){ let md="",eff=cfg.startingDepth+d,title=fT(nF(n));
+  if((d>0||(d===0&&cfg.useBaseTagAsH1))&&n.name){ if(cfg.newlineBeforeHeading&&md!=="") md+="\n"; 
+    md+=(eff<=cfg.maxHeadingDepth ? "#".repeat(eff)+" "+title+"\n" : "- "+title+"\n"); 
+    if(cfg.newlineAfterHeading) md+="\n"; }
+  if(n.pages.length){ n.pages.forEach(link=>{ md+="- "+link+"\n"; }); md+="\n"; }
+  for(let c in n.children){ md+=bH(n.children[c],d+1); } return md; }
+function bB(n,d=0){ let md="",tab=n=>"\t".repeat(n);
+  if(d===0){ if(cfg.useBaseTagAsH1&&n.name){ md+="# "+fT(n.name)+"\n\n"; }
+    if(n.pages.length){ n.pages.forEach(link=>{ md+="- "+link+"\n"; }); md+="\n"; }
+    for(let c in n.children){ md+=bB(n.children[c],1); } }
+  else { md+=tab(d-1)+"- "+fT(cfg.useFullTagPath?n.fullPath:n.name)+"\n";
+    if(n.pages.length){ let li=tab(d); n.pages.forEach(link=>{ md+=li+"- "+link+"\n"; }); md+="\n"; }
+    for(let c in n.children){ md+=bB(n.children[c],d+1); } } return md; }
+let finalMd=cfg.renderMode==="headings"?bH(t,0):bB(t,0);
+if(finalMd.trim()==="") finalMd=`No pages found for tag #${cfg.baseTag}`;
+dv.paragraph(finalMd);
+```
+
+### Publish Version
+
+```_dataviewjs
+/* CONFIG START – see Vault version for details */
+const cfg = {
+  baseTag: dv.current().tag_base || "areas",
+  useBaseTagAsH1: dv.current().tag_useBaseTagAsH1 !== undefined ? dv.current().tag_useBaseTagAsH1 : false,
+  renderMode: dv.current().tag_renderMode || "headings",
+  maxHeadingDepth: dv.current().tag_maxHeadingDepth || 2,
+  maxNestedTagDepth: dv.current().tag_maxNestedTagDepth || 9999,
+  startingDepth: dv.current().tag_startingDepth || 1,
+  useFullTagPath: dv.current().tag_useFullTagPath !== undefined ? dv.current().tag_useFullTagPath : true,
+  newlineBeforeHeading: dv.current().tag_newlineBeforeHeading !== undefined ? dv.current().tag_newlineBeforeHeading : false,
+  newlineAfterHeading: dv.current().tag_newlineAfterHeading !== undefined ? dv.current().tag_newlineAfterHeading : false,
+  addHashPrefixToTagNames: dv.current().tag_addHashPrefixToTagNames !== undefined ? dv.current().tag_addHashPrefixToTagNames : true,
+  filterFunction: dv.current().tag_filterFunction || ((p)=>{ return !p.file.tags || !p.file.tags.some(t=>t.toLowerCase().includes("archive")); })
+};
+/* CONFIG END */
+let t={name:cfg.baseTag,fullPath:cfg.baseTag,pages:[],children:{}};
+dv.pages(`#${cfg.baseTag}`).where(cfg.filterFunction).forEach(p=>{
+  if(p.file.tags){
+    p.file.tags.forEach(tg=>{
+      if(tg.startsWith(`#${cfg.baseTag}`)||tg.startsWith(cfg.baseTag)){
+        let parts=tg.replace(/^#/,"").split("/").slice(1, cfg.maxNestedTagDepth+1);
+        let n=t; parts.forEach(part=>{ if(!n.children[part]) n.children[part]={name:part,fullPath:n.fullPath+"/"+part,pages:[],children:{}}; n=n.children[part]; });
+        n.pages.push(p.file.link);
+      }
+    });
+  }
+});
+function fT(t){ return cfg.addHashPrefixToTagNames && t && !t.startsWith("#") ? "#"+t : t; }
+function nF(n){ return cfg.useFullTagPath ? n.fullPath : n.name; }
+function bH(n,d=0){ let md="",eff=cfg.startingDepth+d,title=fT(nF(n));
+  if((d>0||(d===0&&cfg.useBaseTagAsH1))&&n.name){
+    if(cfg.newlineBeforeHeading&&md!=="") md+="\n";
+    md+=(eff<=cfg.maxHeadingDepth ? "#".repeat(eff)+" "+title+"\n" : "- "+title+"\n");
+    if(cfg.newlineAfterHeading) md+="\n";
+  }
+  if(n.pages.length){ n.pages.forEach(link=>{ md+="- "+link+"\n"; }); md+="\n"; }
+  for(let c in n.children){ md+=bH(n.children[c],d+1); } return md; }
+function bB(n,d=0){ let md="",tab=n=>"\t".repeat(n);
+  if(d===0){ if(cfg.useBaseTagAsH1&&n.name){ md+="# "+fT(n.name)+"\n\n"; }
+    if(n.pages.length){ n.pages.forEach(link=>{ md+="- "+link+"\n"; }); md+="\n"; }
+    for(let c in n.children){ md+=bB(n.children[c],1); } }
+  else { md+=tab(d-1)+"- "+fT(cfg.useFullTagPath?n.fullPath:n.name)+"\n";
+    if(n.pages.length){ let li=tab(d); n.pages.forEach(link=>{ md+=li+"- "+link+"\n"; }); md+="\n"; }
+    for(let c in n.children){ md+=bB(n.children[c],d+1); } } return md; }
+let finalMd=cfg.renderMode==="headings"?bH(t,0):bB(t,0);
+if(finalMd.trim()==="") finalMd=`No pages found for tag #${cfg.baseTag}`;
+finalMd
+```
+
+## MINIFIED CODE VERSIONS
+
+### For Vault Use
+
+Vault Version (dv.paragraph)
+
+```_dataviewjs
+// Vault Version – renders via dv.paragraph(finalMd)
+const cfg = {
+  baseTag: dv.current().tag_base || "areas",
+  useBaseTagAsH1: dv.current().tag_useBaseTagAsH1 !== undefined ? dv.current().tag_useBaseTagAsH1 : false,
+  renderMode: dv.current().tag_renderMode || "headings", // "headings" or "bullets"
+  maxHeadingDepth: dv.current().tag_maxHeadingDepth || 2,
+  maxNestedTagDepth: dv.current().tag_maxNestedTagDepth || 9999,
+  startingDepth: dv.current().tag_startingDepth || 1,
+  useFullTagPath: dv.current().tag_useFullTagPath !== undefined ? dv.current().tag_useFullTagPath : true,
+  newlineBeforeHeading: dv.current().tag_newlineBeforeHeading !== undefined ? dv.current().tag_newlineBeforeHeading : false,
+  newlineAfterHeading: dv.current().tag_newlineAfterHeading !== undefined ? dv.current().tag_newlineAfterHeading : false,
+  addHashPrefixToTagNames: dv.current().tag_addHashPrefixToTagNames !== undefined ? dv.current().tag_addHashPrefixToTagNames : true,
+  filterFunction: dv.current().tag_filterFunction ||
+    ((page) => { 
+      // Example filters:
+      // return page.file.tags && page.file.tags.some(t => t.includes("monitoring"));
+      // return page.file.tags && page.file.tags.some(t => /monitoring/i.test(t));
+      return !page.file.tags || !page.file.tags.some(t => t.toLowerCase().includes("archive"));
+    })
+};
+
+let tree = { name: cfg.baseTag, fullPath: cfg.baseTag, pages: [], children: {} };
+dv.pages(`#${cfg.baseTag}`).where(cfg.filterFunction).forEach(p => {
+  if(p.file.tags){
+    p.file.tags.forEach(t => {
+      if(t.startsWith(`#${cfg.baseTag}`) || t.startsWith(cfg.baseTag)){
+        let parts = t.replace(/^#/,"").split("/").slice(1, cfg.maxNestedTagDepth+1);
+        let node = tree;
+        parts.forEach(part => {
+          if(!node.children[part]) node.children[part] = { name: part, fullPath: node.fullPath+"/"+part, pages: [], children: {} };
+          node = node.children[part];
+        });
+        node.pages.push(p.file.link);
+      }
+    });
+  }
+});
+
+function formatTitle(t) { return cfg.addHashPrefixToTagNames && t && !t.startsWith("#") ? "#" + t : t; }
+function nodeFull(n) { return cfg.useFullTagPath ? n.fullPath : n.name; }
+function buildHeadings(n, d = 0) {
+  let md = "", eff = cfg.startingDepth + d, title = formatTitle(nodeFull(n));
+  if((d > 0 || (d === 0 && cfg.useBaseTagAsH1)) && n.name) {
+    if(cfg.newlineBeforeHeading && md !== "") md += "\n";
+    if(eff <= cfg.maxHeadingDepth) { md += "#".repeat(eff) + " " + title + "\n"; }
+    else { md += "- " + title + "\n"; }
+    if(cfg.newlineAfterHeading) md += "\n";
+  }
+  if(n.pages.length) { n.pages.forEach(link => { md += "- " + link + "\n"; }); md += "\n"; }
+  for(let c in n.children) { md += buildHeadings(n.children[c], d + 1); }
+  return md;
+}
+function buildBullets(n, d = 0) {
+  let md = "", tab = n => "\t".repeat(n);
+  if(d === 0) {
+    if(cfg.useBaseTagAsH1 && n.name) { md += "# " + formatTitle(n.name) + "\n\n"; }
+    if(n.pages.length) { n.pages.forEach(link => { md += "- " + link + "\n"; }); md += "\n"; }
+    for(let c in n.children) { md += buildBullets(n.children[c], 1); }
+  } else {
+    md += tab(d - 1) + "- " + formatTitle(cfg.useFullTagPath ? n.fullPath : n.name) + "\n";
+    if(n.pages.length) { let li = tab(d); n.pages.forEach(link => { md += li + "- " + link + "\n"; }); md += "\n"; }
+    for(let c in n.children) { md += buildBullets(n.children[c], d + 1); }
+  }
+  return md;
+}
+let finalMd = cfg.renderMode === "headings" ? buildHeadings(tree, 0) : buildBullets(tree, 0);
+if(finalMd.trim() === "") finalMd = `No pages found for tag #${cfg.baseTag}`;
+dv.paragraph(finalMd);
+```
+
+### For Publishing
+
+Publish Version (Publish-Compatible Output)
+
+```_dataviewjs
+// Publish Version – returns finalMd so that Dataview Publisher renders it as Markdown
+const cfg = {
+  baseTag: dv.current().tag_base || "areas",
+  useBaseTagAsH1: dv.current().tag_useBaseTagAsH1 !== undefined ? dv.current().tag_useBaseTagAsH1 : false,
+  renderMode: dv.current().tag_renderMode || "headings",
+  maxHeadingDepth: dv.current().tag_maxHeadingDepth || 2,
+  maxNestedTagDepth: dv.current().tag_maxNestedTagDepth || 9999,
+  startingDepth: dv.current().tag_startingDepth || 1,
+  useFullTagPath: dv.current().tag_useFullTagPath !== undefined ? dv.current().tag_useFullTagPath : true,
+  newlineBeforeHeading: dv.current().tag_newlineBeforeHeading !== undefined ? dv.current().tag_newlineBeforeHeading : false,
+  newlineAfterHeading: dv.current().tag_newlineAfterHeading !== undefined ? dv.current().tag_newlineAfterHeading : false,
+  addHashPrefixToTagNames: dv.current().tag_addHashPrefixToTagNames !== undefined ? dv.current().tag_addHashPrefixToTagNames : true,
+  filterFunction: dv.current().tag_filterFunction ||
+    ((page) => {
+      // Examples:
+      // return page.file.tags && page.file.tags.some(t => t.includes("monitoring"));
+      // return page.file.tags && page.file.tags.some(t => /monitoring/i.test(t));
+      return !page.file.tags || !page.file.tags.some(t => t.toLowerCase().includes("archive"));
+    })
+};
+
+let tree = { name: cfg.baseTag, fullPath: cfg.baseTag, pages: [], children: {} };
+dv.pages(`#${cfg.baseTag}`).where(cfg.filterFunction).forEach(p => {
+  if(p.file.tags){
+    p.file.tags.forEach(t => {
+      if(t.startsWith(`#${cfg.baseTag}`) || t.startsWith(cfg.baseTag)){
+        let parts = t.replace(/^#/,"").split("/").slice(1, cfg.maxNestedTagDepth+1);
+        let node = tree;
+        parts.forEach(part => {
+          if(!node.children[part]) node.children[part] = { name: part, fullPath: node.fullPath+"/"+part, pages: [], children: {} };
+          node = node.children[part];
+        });
+        node.pages.push(p.file.link);
+      }
+    });
+  }
+});
+
+function formatTitle(t){ return cfg.addHashPrefixToTagNames && t && !t.startsWith("#") ? "#"+t : t; }
+function nodeFull(n){ return cfg.useFullTagPath ? n.fullPath : n.name; }
+function buildHeadings(n, d=0){
+  let md="", eff = cfg.startingDepth+d, title = formatTitle(nodeFull(n));
+  if((d>0||(d===0 && cfg.useBaseTagAsH1)) && n.name){
+    if(cfg.newlineBeforeHeading && md!=="") md+="\n";
+    if(eff<=cfg.maxHeadingDepth){ md += "#".repeat(eff)+" "+title+"\n"; }
+    else { md += "- "+title+"\n"; }
+    if(cfg.newlineAfterHeading) md+="\n";
+  }
+  if(n.pages.length){ n.pages.forEach(link => { md += "- "+link+"\n"; }); md+="\n"; }
+  for(let c in n.children){ md += buildHeadings(n.children[c], d+1); }
+  return md;
+}
+function buildBullets(n, d=0){
+  let md="", tab = n => "\t".repeat(n);
+  if(d===0){
+    if(cfg.useBaseTagAsH1 && n.name){ md += "# "+formatTitle(n.name)+"\n\n"; }
+    if(n.pages.length){ n.pages.forEach(link => { md += "- "+link+"\n"; }); md+="\n"; }
+    for(let c in n.children){ md += buildBullets(n.children[c],1); }
+  } else {
+    md += tab(d-1)+"- "+formatTitle(cfg.useFullTagPath ? n.fullPath : n.name)+"\n";
+    if(n.pages.length){ let li = tab(d); n.pages.forEach(link => { md += li+"- "+link+"\n"; }); md+="\n"; }
+    for(let c in n.children){ md += buildBullets(n.children[c], d+1); }
+  }
+  return md;
+}
+let finalMd = cfg.renderMode==="headings" ? buildHeadings(tree,0) : buildBullets(tree,0);
+if(finalMd.trim()==="") finalMd = `No pages found for tag #${cfg.baseTag}`;
+finalMd
+```
+
+## FULL CODE VERSIONS
+
+### For Vault Use
 
 ```_dataviewjs
 ////////////////////////////////////////////////////////////////////////////////
@@ -230,7 +559,7 @@ if (finalMd.trim() === "") {
 dv.paragraph(finalMd);
 ```
 
-## For Publishing
+### For Publishing
 
 ```_dataviewjs
 ////////////////////////////////////////////////////////////////////////////////
