@@ -36,6 +36,8 @@ dataview queries
 
 # Organization
 
+structured "storefront"/library + MoCs/dynamic linking from nested tags
+
 para
 paraut
 deeznuts
@@ -43,6 +45,7 @@ ace
 zettelkasten
 arco
 latch
+cyanvoxel - para + zettelkasten
 based on process not content
 folders with numbers
 emoji ordering with filenames
