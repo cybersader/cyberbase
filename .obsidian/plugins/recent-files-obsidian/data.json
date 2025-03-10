@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
       "basename": "Generating MOCs with Dataview",
       "path": "📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md"
     },
@@ -39,10 +43,6 @@
     {
       "basename": "Linking to Frameworks",
       "path": "📁 01 - Projects/Obsidian Frameworker/Linking to Frameworks/Linking to Frameworks.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "Dataview & Mermaid Roadmaps",
