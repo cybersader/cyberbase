@@ -38,6 +38,13 @@ dataview queries
 
 structured "storefront"/library + MoCs/dynamic linking from nested tags
 
+my system:
+- latch
+- para
+- zettelkasten
+- folder, links, tags, properties/metadata/frontmatter
+- 
+
 para
 paraut
 deeznuts
@@ -45,6 +52,12 @@ ace
 zettelkasten
 arco
 latch
+- location - "where" it was recorded
+- alphabet
+- time
+- categories - clustering
+- hierarchy - taxonomies
+
 cyanvoxel - para + zettelkasten
 based on process not content
 folders with numbers
