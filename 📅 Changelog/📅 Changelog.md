@@ -16,19 +16,19 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                          | Last modified            |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [[📁 10 - My Obsidian Stack/Dataview Queries/Dataview Queries.md\|Dataview Queries]]                                                          | Sun - 3/9/2025, 8:44 PM  |
+| [[📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md\|📁 52 - Obsidian Starters & Templates]]                     | Sun - 3/9/2025, 6:38 PM  |
+| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                                 | Sun - 3/9/2025, 6:32 PM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                | Sun - 3/9/2025, 4:34 PM  |
+| [[README.md\|README]]                                                                                                                         | Sun - 3/9/2025, 4:34 PM  |
 | [[🕸️ Daily Notes/2025/03/2025-03-09-Sunday/2025-03-09-Sunday.md\|2025-03-09-Sunday]]                                                         | Sun - 3/9/2025, 4:34 PM  |
 | [[📁 17 - Knowledge Engineering/Generating Graph MOCs/Generating Graph MOCs.md\|Generating Graph MOCs]]                                       | Sun - 3/9/2025, 4:31 PM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                | Sun - 3/9/2025, 4:31 PM  |
-| [[README.md\|README]]                                                                                                                         | Sun - 3/9/2025, 4:31 PM  |
 | [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md\|Generating MOCs with Dataview]]               | Sun - 3/9/2025, 4:30 PM  |
 | [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                       | Sun - 3/9/2025, 1:22 PM  |
 | [[📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md\|📁 17 - Knowledge Engineering]]                                             | Sat - 3/8/2025, 10:02 PM |
 | [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                                                                 | Sat - 3/8/2025, 9:55 PM  |
-| [[📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md\|📁 52 - Obsidian Starters & Templates]]                     | Sat - 3/8/2025, 9:55 PM  |
 | [[🕸️ Daily Notes/2025/03/2025-03-08-Saturday/2025-03-08-Saturday.md\|2025-03-08-Saturday]]                                                   | Sat - 3/8/2025, 9:48 PM  |
 | [[🕸️ Daily Notes/2025/03/03.md\|03]]                                                                                                         | Sat - 3/8/2025, 9:47 PM  |
-| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                                 | Sat - 3/8/2025, 9:34 PM  |
-| [[📁 10 - My Obsidian Stack/Dataview Queries/Dataview Queries.md\|Dataview Queries]]                                                          | Sat - 3/8/2025, 9:33 PM  |
 | [[📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md\|📁 10 - My Obsidian Stack]]                                                         | Sat - 3/8/2025, 9:33 PM  |
 | [[📁 10 - My Obsidian Stack/Dataview/Dataview.md\|Dataview]]                                                                                  | Sat - 3/8/2025, 9:33 PM  |
 | [[📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md\|⬇️ Obsidian Ideas Drop]]                                        | Sat - 3/8/2025, 9:32 PM  |
@@ -36,7 +36,6 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[📁 51 - Cyberbase/Obsidian Roadmaps/Obsidian Roadmaps.md\|Obsidian Roadmaps]]                                                               | Sat - 3/8/2025, 9:28 PM  |
 | [[⬇ INBOX, DROPZONE/Go Pro as a Webcam/Go Pro as a Webcam.md\|Go Pro as a Webcam]]                                                            | Sat - 3/8/2025, 9:19 PM  |
 | [[⬇ INBOX, DROPZONE/Go Pro as a Webcam/_attachments/_attachments.md\|_attachments]]                                                           | Sat - 3/8/2025, 9:19 PM  |
-| [[⬇ INBOX, DROPZONE/Template Ideas/Template Ideas.md\|Template Ideas]]                                                                        | Sat - 3/8/2025, 9:11 PM  |
 | [[📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md\|Knowledge Organization]]                                    | Sat - 3/8/2025, 5:21 PM  |
 | [[📁 10 - My Obsidian Stack/Query All The Things/Query All The Things.md\|Query All The Things]]                                              | Sat - 3/8/2025, 4:18 PM  |
 | [[📁 10 - My Obsidian Stack/Surf the Web in Obsidian/Surf the Web in Obsidian.md\|Surf the Web in Obsidian]]                                  | Sat - 3/8/2025, 3:48 PM  |
@@ -66,5 +65,6 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[📁 07 - Cybersader Arsenal/Internet Safety for Children/⬇️ Internet & Children/⬇️ Internet & Children.md\|⬇️ Internet & Children]]          | Sun - 3/2/2025, 3:04 PM  |
 | [[📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Inputs, Capture/Inputs, Capture.md\|Inputs, Capture]]                     | Sun - 3/2/2025, 1:03 PM  |
 | [[⬇ INBOX, DROPZONE/Financial Cyber/Financial Cyber.md\|Financial Cyber]]                                                                     | Sun - 3/2/2025, 1:02 PM  |
+| [[📁 13 - Religion, Ontology, Philosophy/📁 13 - Religion, Ontology, Philosophy.md\|📁 13 - Religion, Ontology, Philosophy]]                  | Sun - 3/2/2025, 1:00 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
