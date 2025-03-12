@@ -15,6 +15,7 @@ date modified: Saturday, March 8th 2025, 3:45 pm
 - **[[Generating Graph MOCs]]**
 - **[[Generating MOCs with Dataview]]**
 - **[[Knowledge Organization]]**
+- **[[Obsidian MOCs]]**
 
 %% End Waypoint %%
 
