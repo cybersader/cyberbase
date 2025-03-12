@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Printify",
+      "path": "⬇️ Clippings/Tech Inbox/Printify.md"
+    },
+    {
+      "basename": "Opennote",
+      "path": "⬇️ Clippings/Tech Inbox/Opennote.md"
+    },
+    {
+      "basename": "⬇️ Clippings",
+      "path": "⬇️ Clippings/⬇️ Clippings.md"
+    },
+    {
       "basename": "Obsidian MOCs",
       "path": "📁 17 - Knowledge Engineering/Obsidian MOCs/Obsidian MOCs.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "Awesome Stream Deck Alternatives",
       "path": "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives/Awesome Stream Deck Alternatives.md"
-    },
-    {
-      "basename": "Awesome Splunk",
-      "path": "📁 03 - Curations, Stacks/Awesome Splunk/Awesome Splunk.md"
-    },
-    {
-      "basename": "Markdown Tools",
-      "path": "📁 03 - Curations, Stacks/Wiki, KB, KMS/Markdown Tools/Markdown Tools.md"
-    },
-    {
-      "basename": "Responsibilities & Coldening",
-      "path": "📁 13 - Religion, Ontology, Philosophy/Responsibilities & Coldening/Responsibilities & Coldening.md"
     }
   ],
   "omittedPaths": [],
