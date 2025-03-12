@@ -1,7 +1,13 @@
 ---
-permalink:
-aliases: [Ontology Traversal, Information Retrieval, Knowledge Procurement]
-tags: []
+permalink: 
+aliases:
+  - Ontology Traversal
+  - Information Retrieval
+  - Knowledge Procurement
+tags:
+  - areas/kms
+  - workspaces/obsidian
+  - tech/obsidian
 publish: true
 date created: Thursday, June 20th 2024, 2:09 pm
 date modified: Saturday, March 8th 2025, 3:45 pm

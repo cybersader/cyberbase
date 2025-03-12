@@ -6,6 +6,10 @@ publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
 date modified: Saturday, March 8th 2025, 5:21 pm
 ---
+%% Begin Waypoint %%
+
+
+%% End Waypoint %%
 
 [Obsidian Knowledge Management Workflows](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Obsidian%20Knowledge%20Management%20Workflows.md)
 [Cyber Frameworks, Ontologies](../../📁%2005%20-%20Organizational%20Cyber/Frameworks,%20Standards/Frameworks,%20Ontologies/Cyber%20Frameworks,%20Ontologies.md)
