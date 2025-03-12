@@ -1,12 +1,44 @@
 {
   "recentFiles": [
     {
+      "basename": "Readdy",
+      "path": "⬇️ Clippings/Tech Inbox/Readdy/Readdy.md"
+    },
+    {
       "basename": "Printify",
-      "path": "⬇️ Clippings/Tech Inbox/Printify.md"
+      "path": "⬇️ Clippings/Tech Inbox/Printify/Printify.md"
+    },
+    {
+      "basename": "Peertube",
+      "path": "⬇️ Clippings/Tech Inbox/Peertube/Peertube.md"
     },
     {
       "basename": "Opennote",
-      "path": "⬇️ Clippings/Tech Inbox/Opennote.md"
+      "path": "⬇️ Clippings/Tech Inbox/Opennote/Opennote.md"
+    },
+    {
+      "basename": "Makemydrivefun",
+      "path": "⬇️ Clippings/Tech Inbox/Makemydrivefun/Makemydrivefun.md"
+    },
+    {
+      "basename": "Openfhe",
+      "path": "⬇️ Clippings/Tech Inbox/Openfhe/Openfhe.md"
+    },
+    {
+      "basename": "Kittl",
+      "path": "⬇️ Clippings/Tech Inbox/Kittl/Kittl.md"
+    },
+    {
+      "basename": "Fakeupdate",
+      "path": "⬇️ Clippings/Tech Inbox/Fakeupdate/Fakeupdate.md"
+    },
+    {
+      "basename": "Slido",
+      "path": "⬇️ Clippings/Tech Inbox/Slido/Slido.md"
+    },
+    {
+      "basename": "Knowledge Organization",
+      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
     },
     {
       "basename": "⬇️ Clippings",
@@ -19,10 +51,6 @@
     {
       "basename": "📁 52 - Obsidian Starters & Templates",
       "path": "📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
     },
     {
       "basename": "⬇️ Obsidian Integrations",
@@ -171,34 +199,6 @@
     {
       "basename": "Cyber Training, CTFs",
       "path": "📁 05 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md"
-    },
-    {
-      "basename": "Project Management",
-      "path": "📁 10 - My Obsidian Stack/Project Management/Project Management.md"
-    },
-    {
-      "basename": "📁 34 - Gaming",
-      "path": "📁 34 - Gaming/📁 34 - Gaming.md"
-    },
-    {
-      "basename": "Implementing a Forum Website",
-      "path": "📁 01 - Projects/⬇️ Project Drop/Implementing a Forum Website/Implementing a Forum Website.md"
-    },
-    {
-      "basename": "IPFS",
-      "path": "📁 51 - Cyberbase/IPFS/IPFS.md"
-    },
-    {
-      "basename": "Scalable Project Management",
-      "path": "🕸️ UNSTRUCTURED/Scalable Project Management.md"
-    },
-    {
-      "basename": "Teleprompters",
-      "path": "📁 03 - Curations, Stacks/Teleprompters/Teleprompters.md"
-    },
-    {
-      "basename": "Awesome Stream Deck Alternatives",
-      "path": "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives/Awesome Stream Deck Alternatives.md"
     }
   ],
   "omittedPaths": [],
