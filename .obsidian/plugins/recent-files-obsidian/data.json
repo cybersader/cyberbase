@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Untitled",
-      "path": "📁 17 - Knowledge Engineering/Untitled/Untitled.md"
+      "basename": "Knowledge Organization",
+      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "Obsidian MOCs",
+      "path": "📁 17 - Knowledge Engineering/Obsidian MOCs/Obsidian MOCs.md"
+    },
+    {
+      "basename": "⬇️ KnowEng Drop",
+      "path": "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md"
     },
     {
       "basename": "📁 17 - Knowledge Engineering",
@@ -27,10 +35,6 @@
     {
       "basename": "Dataview and Chronos Roadmap",
       "path": "📁 51 - Cyberbase/Obsidian Roadmaps/Dataview and Chronos Roadmap/Dataview and Chronos Roadmap.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
     },
     {
       "basename": "📁 10 - My Obsidian Stack",
@@ -195,10 +199,6 @@
     {
       "basename": "Workforce Cyber Resilience",
       "path": "📁 05 - Organizational Cyber/Workforce Cyber Resilience/Workforce Cyber Resilience.md"
-    },
-    {
-      "basename": "Cyberbase Development",
-      "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
     }
   ],
   "omittedPaths": [],
