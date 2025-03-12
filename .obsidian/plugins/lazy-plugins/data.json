@@ -961,6 +961,12 @@
       },
       "simple-canvasearch": {
         "startupType": "disabled"
+      },
+      "date-inserter": {
+        "startupType": "disabled"
+      },
+      "datepicker": {
+        "startupType": "disabled"
       }
     }
   }
