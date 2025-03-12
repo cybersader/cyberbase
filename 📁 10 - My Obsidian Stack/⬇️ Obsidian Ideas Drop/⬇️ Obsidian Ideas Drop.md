@@ -4,11 +4,11 @@ aliases: [Obsidian Wiki Drop]
 tags: []
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Saturday, March 8th 2025, 9:32 pm
+date modified: Tuesday, March 11th 2025, 9:14 pm
 ---
 
 %% Begin Waypoint %%
-- **[[Microsoft Graph API in Obsidian]]**
+
 
 %% End Waypoint %%
 
@@ -31,6 +31,7 @@ date modified: Saturday, March 8th 2025, 9:32 pm
 	- Atomic and granular power over syncing and collaboration
 - Sync obsidian before opening app 
 - Sort by name and not folder vs file
+- [Fleeting Notes | A scratchpad that syncs with Obsidian](https://www.fleetingnotes.app/)
 
 # Users in Obsidian
 

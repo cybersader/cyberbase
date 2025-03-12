@@ -20,6 +20,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[File Order]]**
 - **[[Image Handling]]**
 - **[[Linting & Formatting]]**
+- **[[Microsoft Graph API in Obsidian]]**
 - **[[Obsidian & Corporate Docs]]**
 - **[[Obsidian & N8n]]**
 - **[[Obsidian Dictionary and Grammar]]**

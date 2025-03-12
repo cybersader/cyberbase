@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "Obsidian MOCs",
+      "path": "📁 17 - Knowledge Engineering/Obsidian MOCs/Obsidian MOCs.md"
+    },
+    {
+      "basename": "📁 52 - Obsidian Starters & Templates",
+      "path": "📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md"
+    },
+    {
       "basename": "Knowledge Organization",
       "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
     },
     {
-      "basename": "Obsidian MOCs",
-      "path": "📁 17 - Knowledge Engineering/Obsidian MOCs/Obsidian MOCs.md"
+      "basename": "⬇️ Obsidian Integrations",
+      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Integrations/⬇️ Obsidian Integrations.md"
+    },
+    {
+      "basename": "Arguments in Markdown",
+      "path": "📁 10 - My Obsidian Stack/Arguments in Markdown/Arguments in Markdown.md"
+    },
+    {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     },
     {
       "basename": "⬇️ KnowEng Drop",
@@ -19,10 +35,6 @@
     {
       "basename": "Generating MOCs with Dataview",
       "path": "📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md"
-    },
-    {
-      "basename": "📁 52 - Obsidian Starters & Templates",
-      "path": "📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md"
     },
     {
       "basename": "Dataview Queries",
@@ -81,10 +93,6 @@
       "path": "🕸️ UNSTRUCTURED/Digital Garden.md"
     },
     {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
-    },
-    {
       "basename": "Chronos Dataview Code for Vault",
       "path": "📁 51 - Cyberbase/Obsidian Roadmaps/Chronos Dataview Code for Vault/Chronos Dataview Code for Vault.md"
     },
@@ -106,7 +114,7 @@
     },
     {
       "basename": "Microsoft Graph API in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/Microsoft Graph API in Obsidian/Microsoft Graph API in Obsidian.md"
+      "path": "📁 10 - My Obsidian Stack/Microsoft Graph API in Obsidian/Microsoft Graph API in Obsidian.md"
     },
     {
       "basename": "Surf the Web in Obsidian",
@@ -191,14 +199,6 @@
     {
       "basename": "Responsibilities & Coldening",
       "path": "📁 13 - Religion, Ontology, Philosophy/Responsibilities & Coldening/Responsibilities & Coldening.md"
-    },
-    {
-      "basename": "Inputs, Capture",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Inputs, Capture/Inputs, Capture.md"
-    },
-    {
-      "basename": "Workforce Cyber Resilience",
-      "path": "📁 05 - Organizational Cyber/Workforce Cyber Resilience/Workforce Cyber Resilience.md"
     }
   ],
   "omittedPaths": [],
