@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Tue, Mar 11, 2025 - [[Slido]]
+> Wed, Mar 12, 2025 - [[Readwise]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -101,16 +101,16 @@ SORT file.mtime DESC LIMIT 10
 
 | File                                                                         | Last modified             |
 | ---------------------------------------------------------------------------- | ------------------------- |
-| [[⬇️ Clippings/Tech Inbox/Slido/Slido.md\|Slido]]                            | Tue - 3/11/2025, 10:15 PM |
-| [[⬇️ Clippings/Tech Inbox/Peertube/Peertube.md\|Peertube]]                   | Tue - 3/11/2025, 10:13 PM |
-| [[⬇️ Clippings/Tech Inbox/Openfhe/Openfhe.md\|Openfhe]]                      | Tue - 3/11/2025, 10:12 PM |
-| [[⬇️ Clippings/Tech Inbox/Readdy/Readdy.md\|Readdy]]                         | Tue - 3/11/2025, 10:09 PM |
-| [[⬇️ Clippings/Tech Inbox/Makemydrivefun/Makemydrivefun.md\|Makemydrivefun]] | Tue - 3/11/2025, 10:07 PM |
-| [[⬇️ Clippings/Tech Inbox/Kittl/Kittl.md\|Kittl]]                            | Tue - 3/11/2025, 10:07 PM |
-| [[⬇️ Clippings/Tech Inbox/Fakeupdate/Fakeupdate.md\|Fakeupdate]]             | Tue - 3/11/2025, 9:59 PM  |
-| [[⬇️ Clippings/Tech Inbox/Printify/Printify.md\|Printify]]                   | Tue - 3/11/2025, 9:48 PM  |
-| [[⬇️ Clippings/Tech Inbox/Opennote/Opennote.md\|Opennote]]                   | Tue - 3/11/2025, 9:38 PM  |
-| [[⬇️ Clippings/Tech Inbox/Tech Inbox.md\|Tech Inbox]]                        | Tue - 3/11/2025, 9:33 PM  |
+| [[⬇️ Clippings/Tech Inbox/Readwise/Readwise.md\|Readwise]]                   | Wed - 3/12/2025, 10:00 PM |
+| [[⬇️ Clippings/Tech Inbox/Google-Gemma-3/Google-Gemma-3.md\|Google-Gemma-3]] | Wed - 3/12/2025, 10:00 PM |
+| [[⬇️ Clippings/Tech Inbox/Cryptomator/Cryptomator.md\|Cryptomator]]          | Wed - 3/12/2025, 10:00 PM |
+| [[⬇️ Clippings/Tech Inbox/Ollama/Ollama.md\|Ollama]]                         | Wed - 3/12/2025, 9:59 PM  |
+| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                | Wed - 3/12/2025, 9:58 PM  |
+| [[⬇️ Clippings/Tech Inbox/Cryptee/Cryptee.md\|Cryptee]]                      | Wed - 3/12/2025, 9:57 PM  |
+| [[⬇️ Clippings/Tech Inbox/Tech Inbox.md\|Tech Inbox]]                        | Wed - 3/12/2025, 9:57 PM  |
+| [[⬇️ Clippings/Tech Inbox/Napkin/Napkin.md\|Napkin]]                         | Wed - 3/12/2025, 9:53 PM  |
+| [[⬇️ Clippings/Tech Inbox/Notesnook/Notesnook.md\|Notesnook]]                | Wed - 3/12/2025, 9:51 PM  |
+| [[⬇️ Clippings/Tech Inbox/Trilium Notes/Trilium Notes.md\|Trilium Notes]]    | Wed - 3/12/2025, 9:50 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 
