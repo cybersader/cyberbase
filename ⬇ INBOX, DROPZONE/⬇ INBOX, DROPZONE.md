@@ -10,6 +10,7 @@ publish: true
 
 %% Begin Waypoint %%
 - **[[⬇️ New Tools]]**
+- [[3-12-2025 - Obsidian Links]]
 - **[[3D Printing]]**
 - **[[Arc Browser on Windows]]**
 - **[[Awesome Password Security]]**
