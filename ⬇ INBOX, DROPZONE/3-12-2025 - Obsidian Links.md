@@ -1,0 +1,13 @@
+- https://forum.obsidian.md/t/template-dataview-to-embed-all-headings-blocks-that-contain-keyword-from-a-list/39946
+- https://forum.obsidian.md/t/can-we-dataview-table-that-list-files-that-have-tags-in-common-with-current-file/59106/8
+- file tags obsidian dataviewjs
+- dataview embed incoming links heading
+- dataviewjs obsidian api pages with tag
+- https://blacksmithgu.github.io/obsidian-dataview/reference/sources/#tags
+- https://github.com/blacksmithgu/obsidian-dataview/discussions/2086
+- https://pivic.blog/blog/my-favourite-obsidian-plugins/#latticework
+- https://forum.obsidian.md/t/can-you-please-share-some-of-your-templates/31151
+- https://github.com/WebBreacher/obsidian-osint-templates/blob/main/START%20HERE.md
+- https://notes.leahferguson.com/00+Meta/04+SOP/Obsidian+Community+Plugins+SOP
+- https://www.reddit.com/user/leanproductivity/
+- obsidian SOP template
