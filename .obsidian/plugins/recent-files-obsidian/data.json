@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Tech Inbox",
+      "path": "⬇️ Clippings/Tech Inbox/Tech Inbox.md"
+    },
+    {
       "basename": "Readdy",
       "path": "⬇️ Clippings/Tech Inbox/Readdy/Readdy.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Passkeys",
       "path": "📁 07 - Cybersader Arsenal/Passkeys/Passkeys.md"
-    },
-    {
-      "basename": "Cyber Training, CTFs",
-      "path": "📁 05 - Organizational Cyber/Cyber Training, CTFs/Cyber Training, CTFs.md"
     }
   ],
   "omittedPaths": [],
