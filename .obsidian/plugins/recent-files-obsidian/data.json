@@ -1,8 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "Tech Inbox",
-      "path": "⬇️ Clippings/Tech Inbox/Tech Inbox.md"
+      "basename": "Fakeupdate",
+      "path": "⬇️ Clippings/Tech Inbox/Fakeupdate/Fakeupdate.md"
+    },
+    {
+      "basename": "Cryptomator",
+      "path": "⬇️ Clippings/Tech Inbox/Cryptomator/Cryptomator.md"
+    },
+    {
+      "basename": "Cryptee",
+      "path": "⬇️ Clippings/Tech Inbox/Cryptee/Cryptee.md"
+    },
+    {
+      "basename": "Ollama",
+      "path": "⬇️ Clippings/Tech Inbox/Ollama/Ollama.md"
+    },
+    {
+      "basename": "Trilium Notes",
+      "path": "⬇️ Clippings/Tech Inbox/Trilium Notes/Trilium Notes.md"
+    },
+    {
+      "basename": "Zivver Security",
+      "path": "⬇️ Clippings/Tech Inbox/Zivver Security/Zivver Security.md"
+    },
+    {
+      "basename": "Slido",
+      "path": "⬇️ Clippings/Tech Inbox/Slido/Slido.md"
+    },
+    {
+      "basename": "Readwise",
+      "path": "⬇️ Clippings/Tech Inbox/Readwise/Readwise.md"
     },
     {
       "basename": "Readdy",
@@ -21,24 +49,40 @@
       "path": "⬇️ Clippings/Tech Inbox/Opennote/Opennote.md"
     },
     {
-      "basename": "Makemydrivefun",
-      "path": "⬇️ Clippings/Tech Inbox/Makemydrivefun/Makemydrivefun.md"
-    },
-    {
       "basename": "Openfhe",
       "path": "⬇️ Clippings/Tech Inbox/Openfhe/Openfhe.md"
     },
     {
+      "basename": "Notesnook",
+      "path": "⬇️ Clippings/Tech Inbox/Notesnook/Notesnook.md"
+    },
+    {
+      "basename": "Napkin",
+      "path": "⬇️ Clippings/Tech Inbox/Napkin/Napkin.md"
+    },
+    {
+      "basename": "Google-Gemma-3",
+      "path": "⬇️ Clippings/Tech Inbox/Google-Gemma-3/Google-Gemma-3.md"
+    },
+    {
+      "basename": "📁 52 - Obsidian Starters & Templates",
+      "path": "📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md"
+    },
+    {
+      "basename": "Obsidian Web Clipper",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Web Clipper/Obsidian Web Clipper.md"
+    },
+    {
+      "basename": "Tech Inbox",
+      "path": "⬇️ Clippings/Tech Inbox/Tech Inbox.md"
+    },
+    {
+      "basename": "Makemydrivefun",
+      "path": "⬇️ Clippings/Tech Inbox/Makemydrivefun/Makemydrivefun.md"
+    },
+    {
       "basename": "Kittl",
       "path": "⬇️ Clippings/Tech Inbox/Kittl/Kittl.md"
-    },
-    {
-      "basename": "Fakeupdate",
-      "path": "⬇️ Clippings/Tech Inbox/Fakeupdate/Fakeupdate.md"
-    },
-    {
-      "basename": "Slido",
-      "path": "⬇️ Clippings/Tech Inbox/Slido/Slido.md"
     },
     {
       "basename": "Knowledge Organization",
@@ -51,10 +95,6 @@
     {
       "basename": "Obsidian MOCs",
       "path": "📁 17 - Knowledge Engineering/Obsidian MOCs/Obsidian MOCs.md"
-    },
-    {
-      "basename": "📁 52 - Obsidian Starters & Templates",
-      "path": "📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md"
     },
     {
       "basename": "⬇️ Obsidian Integrations",
@@ -155,46 +195,6 @@
     {
       "basename": "Query All The Things",
       "path": "📁 10 - My Obsidian Stack/Query All The Things/Query All The Things.md"
-    },
-    {
-      "basename": "Microsoft Graph API in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Microsoft Graph API in Obsidian/Microsoft Graph API in Obsidian.md"
-    },
-    {
-      "basename": "Surf the Web in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Surf the Web in Obsidian/Surf the Web in Obsidian.md"
-    },
-    {
-      "basename": "Digital Gardening",
-      "path": "📁 17 - Knowledge Engineering/Digital Gardening/Digital Gardening.md"
-    },
-    {
-      "basename": "Obsidian Plugins and Ideas for Contributions",
-      "path": "📁 51 - Cyberbase/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
-    },
-    {
-      "basename": "Wiki, KB, KMS",
-      "path": "📁 03 - Curations, Stacks/Wiki, KB, KMS/Wiki, KB, KMS.md"
-    },
-    {
-      "basename": "⬇️ Org Tools",
-      "path": "📁 05 - Organizational Cyber/⬇️ Org Tools/⬇️ Org Tools.md"
-    },
-    {
-      "basename": "Organization Documentation & Wikis",
-      "path": "📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
-    },
-    {
-      "basename": "Personal Productivity Stack",
-      "path": "📁 03 - Curations, Stacks/Personal Productivity Stack/Personal Productivity Stack.md"
-    },
-    {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
-    },
-    {
-      "basename": "Persuasive Technology Defenses",
-      "path": "📁 07 - Cybersader Arsenal/Persuasive Technology Defenses/Persuasive Technology Defenses.md"
     }
   ],
   "omittedPaths": [],

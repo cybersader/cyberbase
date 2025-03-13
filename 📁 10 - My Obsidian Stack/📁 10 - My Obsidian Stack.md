@@ -42,6 +42,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Obsidian Setup for Corporate]]**
 - **[[Obsidian to Ghost]]**
 - **[[Obsidian Vault Security]]**
+- **[[Obsidian Web Clipper]]**
 - **[[Obsidian-Related Bloggers]]**
 - **[[Plugin Development]]**
 - **[[Plugin Maintenance]]**
