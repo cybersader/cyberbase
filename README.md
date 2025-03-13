@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Mon, Mar 10, 2025 - [[Generating MOCs with Dataview]]
+> Tue, Mar 11, 2025 - [[Slido]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -99,18 +99,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                            | Last modified            |
-| ------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md\|Generating MOCs with Dataview]] | Mon - 3/10/2025, 1:38 PM |
-| [[📁 10 - My Obsidian Stack/Dataview Queries/Dataview Queries.md\|Dataview Queries]]                                            | Sun - 3/9/2025, 8:44 PM  |
-| [[📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md\|📁 52 - Obsidian Starters & Templates]]       | Sun - 3/9/2025, 6:38 PM  |
-| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                   | Sun - 3/9/2025, 6:32 PM  |
-| [[🕸️ Daily Notes/2025/03/2025-03-09-Sunday/2025-03-09-Sunday.md\|2025-03-09-Sunday]]                                           | Sun - 3/9/2025, 4:34 PM  |
-| [[📁 17 - Knowledge Engineering/Generating Graph MOCs/Generating Graph MOCs.md\|Generating Graph MOCs]]                         | Sun - 3/9/2025, 4:31 PM  |
-| [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                         | Sun - 3/9/2025, 1:22 PM  |
-| [[📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md\|📁 17 - Knowledge Engineering]]                               | Sat - 3/8/2025, 10:02 PM |
-| [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                                                   | Sat - 3/8/2025, 9:55 PM  |
-| [[🕸️ Daily Notes/2025/03/2025-03-08-Saturday/2025-03-08-Saturday.md\|2025-03-08-Saturday]]                                     | Sat - 3/8/2025, 9:48 PM  |
+| File                                                                         | Last modified             |
+| ---------------------------------------------------------------------------- | ------------------------- |
+| [[⬇️ Clippings/Tech Inbox/Slido/Slido.md\|Slido]]                            | Tue - 3/11/2025, 10:15 PM |
+| [[⬇️ Clippings/Tech Inbox/Peertube/Peertube.md\|Peertube]]                   | Tue - 3/11/2025, 10:13 PM |
+| [[⬇️ Clippings/Tech Inbox/Openfhe/Openfhe.md\|Openfhe]]                      | Tue - 3/11/2025, 10:12 PM |
+| [[⬇️ Clippings/Tech Inbox/Readdy/Readdy.md\|Readdy]]                         | Tue - 3/11/2025, 10:09 PM |
+| [[⬇️ Clippings/Tech Inbox/Makemydrivefun/Makemydrivefun.md\|Makemydrivefun]] | Tue - 3/11/2025, 10:07 PM |
+| [[⬇️ Clippings/Tech Inbox/Kittl/Kittl.md\|Kittl]]                            | Tue - 3/11/2025, 10:07 PM |
+| [[⬇️ Clippings/Tech Inbox/Fakeupdate/Fakeupdate.md\|Fakeupdate]]             | Tue - 3/11/2025, 9:59 PM  |
+| [[⬇️ Clippings/Tech Inbox/Printify/Printify.md\|Printify]]                   | Tue - 3/11/2025, 9:48 PM  |
+| [[⬇️ Clippings/Tech Inbox/Opennote/Opennote.md\|Opennote]]                   | Tue - 3/11/2025, 9:38 PM  |
+| [[⬇️ Clippings/Tech Inbox/Tech Inbox.md\|Tech Inbox]]                        | Tue - 3/11/2025, 9:33 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 
