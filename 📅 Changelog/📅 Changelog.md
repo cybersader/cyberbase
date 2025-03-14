@@ -16,6 +16,8 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                          | Last modified             |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                | Wed - 3/12/2025, 10:11 PM |
+| [[README.md\|README]]                                                                                                                         | Wed - 3/12/2025, 10:11 PM |
 | [[⬇️ Clippings/Tech Inbox/Readwise/Readwise.md\|Readwise]]                                                                                    | Wed - 3/12/2025, 10:00 PM |
 | [[⬇️ Clippings/Tech Inbox/Google-Gemma-3/Google-Gemma-3.md\|Google-Gemma-3]]                                                                  | Wed - 3/12/2025, 10:00 PM |
 | [[⬇️ Clippings/Tech Inbox/Cryptomator/Cryptomator.md\|Cryptomator]]                                                                           | Wed - 3/12/2025, 10:00 PM |
@@ -29,8 +31,6 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[⬇️ Clippings/Tech Inbox/Zivver Security/Zivver Security.md\|Zivver Security]]                                                               | Wed - 3/12/2025, 9:49 PM  |
 | [[📁 10 - My Obsidian Stack/Obsidian Web Clipper/Obsidian Web Clipper.md\|Obsidian Web Clipper]]                                              | Wed - 3/12/2025, 9:44 PM  |
 | [[📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md\|📁 10 - My Obsidian Stack]]                                                         | Wed - 3/12/2025, 9:28 PM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                | Tue - 3/11/2025, 10:16 PM |
-| [[README.md\|README]]                                                                                                                         | Tue - 3/11/2025, 10:16 PM |
 | [[⬇️ Clippings/Tech Inbox/Slido/Slido.md\|Slido]]                                                                                             | Tue - 3/11/2025, 10:15 PM |
 | [[⬇️ Clippings/Tech Inbox/Peertube/Peertube.md\|Peertube]]                                                                                    | Tue - 3/11/2025, 10:13 PM |
 | [[⬇️ Clippings/Tech Inbox/Openfhe/Openfhe.md\|Openfhe]]                                                                                       | Tue - 3/11/2025, 10:12 PM |
