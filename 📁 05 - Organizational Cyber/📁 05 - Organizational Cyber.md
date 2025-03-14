@@ -38,6 +38,7 @@ publish: true
 - **[[Identity Provider]]**
 - **[[Incident Response]]**
 - **[[Log Management, Event-Driven Architectures]]**
+- **[[Lucidchart for Data Governance]]**
 - **[[Morals, Ethics, Laws, Regulations, Policies, Procedures & Standards]]**
 	- [[Indiana Cyber Regulation, Laws]]
 - **[[Networking]]**
