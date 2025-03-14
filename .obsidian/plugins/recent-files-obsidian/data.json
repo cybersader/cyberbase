@@ -5,16 +5,20 @@
       "path": "📁 53 - Cybersader GRC Tools/📁 53 - Cybersader GRC Tools.md"
     },
     {
+      "basename": "Obsidian Frameworker",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
       "basename": "📁 01 - Projects",
       "path": "📁 01 - Projects/📁 01 - Projects.md"
     },
     {
       "basename": "Fixing Toilets",
       "path": "📁 20 - Home DIY/Fixing Toilets/Fixing Toilets.md"
-    },
-    {
-      "basename": "Obsidian Frameworker",
-      "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
     },
     {
       "basename": "Lucidchart for Data Governance",
@@ -151,10 +155,6 @@
     {
       "basename": "Dataview Queries",
       "path": "📁 10 - My Obsidian Stack/Dataview Queries/Dataview Queries.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "Dataview and Chronos Roadmap",
