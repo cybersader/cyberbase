@@ -1,8 +1,9 @@
 ---
-aliases: []
-tags: []
+aliases:
+  - Dataview Queries
+tags: 
 publish: true
-permalink:
+permalink: 
 date created: Saturday, March 15th 2025, 3:33 pm
 date modified: Saturday, March 15th 2025, 4:28 pm
 ---

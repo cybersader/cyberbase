@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Saturday, March 15th 2025, 3:28 pm
-date modified: Saturday, March 15th 2025, 4:15 pm
+date modified: Saturday, March 15th 2025, 4:42 pm
 ---
 
 [Knowledge Organization](../../📁%2017%20-%20Knowledge%20Engineering/Knowledge%20Organization/Knowledge%20Organization.md)
@@ -12,12 +12,13 @@ date modified: Saturday, March 15th 2025, 4:15 pm
 # How you can use tags
 
 - Use tags for
-	- Part of ontology/hierarchy (nested tags)
+	- Part or full path of ontology/hierarchy (nested tags)
 		- parent/child/grandchild
 	- Clustering
 		- tag
 - Automating based on tags
 - Querying things around tags
+	- [Dataview Query Showcase](../../📁%2017%20-%20Knowledge%20Engineering/Dataview%20Query%20Showcase/Dataview%20Query%20Showcase.md)
 
 - Automating folders and links from tags?
 	- Dataview publisher based on tags and nested tags
@@ -25,6 +26,8 @@ date modified: Saturday, March 15th 2025, 4:15 pm
 
 # Related Plugins
 
+- [Dataview](../Dataview/Dataview.md)
+	- [Generating MOCs with Dataview](../../📁%2017%20-%20Knowledge%20Engineering/Generating%20MOCs%20with%20Dataview/Generating%20MOCs%20with%20Dataview.md)
 - 
 
 # Adding Tags
