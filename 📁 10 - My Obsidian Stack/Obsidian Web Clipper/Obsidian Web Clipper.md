@@ -7,7 +7,7 @@ date created: Wednesday, March 12th 2025, 9:28 pm
 date modified: Saturday, March 15th 2025, 10:25 am
 ---
 
-[Ollama](../../⬇️%20Clippings/Tech%20Inbox/Ollama/Ollama.md)
+[Ollama](../../⬇️%20Clippings/Tech/Ollama/Ollama.md)
 
 # Using Local Models with Ollama
 

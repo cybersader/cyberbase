@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Fri, Mar 14, 2025 - [[📁 53 - Cybersader GRC Tools]]
+> Sat, Mar 15, 2025 - [[Articles, Blogs]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                              | Last modified             |
-| --------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 53 - Cybersader GRC Tools/📁 53 - Cybersader GRC Tools.md\|📁 53 - Cybersader GRC Tools]]                                    | Fri - 3/14/2025, 1:09 PM  |
-| [[📁 01 - Projects/📁 01 - Projects.md\|📁 01 - Projects]]                                                                        | Fri - 3/14/2025, 1:09 PM  |
-| [[📁 05 - Organizational Cyber/Lucidchart for Data Governance/Lucidchart for Data Governance.md\|Lucidchart for Data Governance]] | Fri - 3/14/2025, 12:10 PM |
-| [[📁 05 - Organizational Cyber/📁 05 - Organizational Cyber.md\|📁 05 - Organizational Cyber]]                                    | Fri - 3/14/2025, 12:09 PM |
-| [[⬇️ Clippings/Tech Inbox/Readwise/Readwise.md\|Readwise]]                                                                        | Wed - 3/12/2025, 10:00 PM |
-| [[⬇️ Clippings/Tech Inbox/Google-Gemma-3/Google-Gemma-3.md\|Google-Gemma-3]]                                                      | Wed - 3/12/2025, 10:00 PM |
-| [[⬇️ Clippings/Tech Inbox/Cryptomator/Cryptomator.md\|Cryptomator]]                                                               | Wed - 3/12/2025, 10:00 PM |
-| [[⬇️ Clippings/Tech Inbox/Ollama/Ollama.md\|Ollama]]                                                                              | Wed - 3/12/2025, 9:59 PM  |
-| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                     | Wed - 3/12/2025, 9:58 PM  |
-| [[⬇️ Clippings/Tech Inbox/Cryptee/Cryptee.md\|Cryptee]]                                                                           | Wed - 3/12/2025, 9:57 PM  |
+| File                                                                 | Last modified            |
+| -------------------------------------------------------------------- | ------------------------ |
+| [[⬇️ Clippings/Articles, Blogs/Articles, Blogs.md\|Articles, Blogs]] | Sat - 3/15/2025, 2:56 PM |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                       | Sat - 3/15/2025, 2:56 PM |
+| [[⬇️ Clippings/ChatGPT/ChatGPT.md\|ChatGPT]]                         | Sat - 3/15/2025, 2:56 PM |
+| [[⬇️ Clippings/GitHub Repos/GitHub Repos.md\|GitHub Repos]]          | Sat - 3/15/2025, 2:56 PM |
+| [[⬇️ Clippings/News/News.md\|News]]                                  | Sat - 3/15/2025, 2:55 PM |
+| [[⬇️ Clippings/Reddit/Reddit.md\|Reddit]]                            | Sat - 3/15/2025, 2:55 PM |
+| [[⬇️ Clippings/Wikipedia/Wikipedia.md\|Wikipedia]]                   | Sat - 3/15/2025, 2:55 PM |
+| [[⬇️ Clippings/YouTube/YouTube.md\|YouTube]]                         | Sat - 3/15/2025, 2:55 PM |
+| [[⬇️ Clippings/Tech/Tech.md\|Tech]]                                  | Sat - 3/15/2025, 2:55 PM |
+| [[⬇️ Clippings/Tech/Chatwoot/Chatwoot.md\|Chatwoot]]                 | Sat - 3/15/2025, 2:49 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
