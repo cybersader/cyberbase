@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Wednesday, March 12th 2025, 9:28 pm
-date modified: Wednesday, March 12th 2025, 9:44 pm
+date modified: Saturday, March 15th 2025, 10:25 am
 ---
 
 [Ollama](../../⬇️%20Clippings/Tech%20Inbox/Ollama/Ollama.md)
@@ -20,3 +20,7 @@ date modified: Wednesday, March 12th 2025, 9:44 pm
 ## Using Ollama
 
 - Go onto the [Ollama](https://ollama.com/) website to find resources and the models that they support
+
+# Using CSS Selectors
+
+- 
