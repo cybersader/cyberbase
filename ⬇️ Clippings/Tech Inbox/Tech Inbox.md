@@ -1,4 +1,5 @@
 %% Begin Waypoint %%
+- **[[Chatwoot]]**
 - **[[Cryptee]]**
 - **[[Cryptomator]]**
 - **[[Fakeupdate]]**

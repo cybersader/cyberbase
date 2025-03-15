@@ -40,6 +40,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Obsidian Regex Find & Replace]]**
 - **[[Obsidian Run]]**
 - **[[Obsidian Setup for Corporate]]**
+- **[[Obsidian Slides]]**
 - **[[Obsidian to Ghost]]**
 - **[[Obsidian Vault Security]]**
 - **[[Obsidian Web Clipper]]**
