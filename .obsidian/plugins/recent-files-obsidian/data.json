@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Dataview Queries",
-      "path": "📁 10 - My Obsidian Stack/Dataview Queries/Dataview Queries.md"
+      "basename": "Dataview",
+      "path": "📁 10 - My Obsidian Stack/Dataview/Dataview.md"
+    },
+    {
+      "basename": "📁 10 - My Obsidian Stack",
+      "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
+    },
+    {
+      "basename": "Dataview Query Showcase",
+      "path": "📁 17 - Knowledge Engineering/Dataview Query Showcase/Dataview Query Showcase.md"
+    },
+    {
+      "basename": "Using Tags",
+      "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
     },
     {
       "basename": "File Order",
@@ -25,24 +37,12 @@
       "path": "📁 10 - My Obsidian Stack/Templater/Templater.md"
     },
     {
-      "basename": "📁 10 - My Obsidian Stack",
-      "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
-    },
-    {
       "basename": "Obsidian Plugins",
       "path": "⬇️ Clippings/Obsidian Plugins/Obsidian Plugins.md"
     },
     {
-      "basename": "Using Tags",
-      "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
-    },
-    {
       "basename": "📁 52 - Obsidian Starters & Templates",
       "path": "📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md"
-    },
-    {
-      "basename": "Dataview Query Showcase",
-      "path": "📁 17 - Knowledge Engineering/Dataview Query Showcase/Dataview Query Showcase.md"
     },
     {
       "basename": "Tasks Queries",

@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Thursday, April 25th 2024, 5:04 pm
-date modified: Friday, December 20th 2024, 9:36 pm
+date modified: Saturday, March 15th 2025, 4:29 pm
 ---
 
 [Obsidian Frameworker](../../📁%2001%20-%20Projects/Obsidian%20Frameworker/Obsidian%20Frameworker.md)

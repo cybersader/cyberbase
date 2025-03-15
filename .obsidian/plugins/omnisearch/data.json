@@ -16,7 +16,7 @@
   "openInNewPane": false,
   "vimLikeNavigationShortcut": false,
   "ribbonIcon": true,
-  "showExcerpt": false,
+  "showExcerpt": true,
   "maxEmbeds": 5,
   "renderLineReturnInExcerpts": true,
   "showCreateButton": false,
