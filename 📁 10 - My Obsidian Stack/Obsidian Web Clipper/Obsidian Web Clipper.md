@@ -23,3 +23,6 @@ date modified: Saturday, March 15th 2025, 10:25 am
 
 # Using CSS Selectors
 
+- [Obsidian Web Clipper - Selector Variables - Obsidian Help](https://help.obsidian.md/web-clipper/variables#Selector+variables)
+
+- 
