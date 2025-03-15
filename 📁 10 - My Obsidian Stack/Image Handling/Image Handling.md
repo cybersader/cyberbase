@@ -4,10 +4,8 @@ tags: []
 publish: true
 permalink:
 date created: Friday, December 20th 2024, 1:27 pm
-date modified: Friday, December 20th 2024, 1:38 pm
+date modified: Saturday, March 15th 2025, 4:17 pm
 ---
-
-
 
 I ran into this problem with my [Frameworker](../../📁%2001%20-%20Projects/Obsidian%20Frameworker/Obsidian%20Frameworker.md) tool.
 

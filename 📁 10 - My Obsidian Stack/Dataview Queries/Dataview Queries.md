@@ -1,10 +1,10 @@
 ---
-aliases: 
-tags: 
+aliases: []
+tags: []
 publish: true
 permalink:
 date created: Saturday, March 8th 2025, 9:33 pm
-date modified: Saturday, March 8th 2025, 9:33 pm
+date modified: Saturday, March 15th 2025, 4:16 pm
 ---
 
 ```_dataview
@@ -35,7 +35,7 @@ WHERE contains(Tags, "#workspaces") AND !contains(Tags, "#archive")
 GROUP BY Tags
 ```
 
-```dataviewjs
+```_dataviewjs
 // Get all pages in the specified path
 
 let pages = dv.pages('#workspaces');

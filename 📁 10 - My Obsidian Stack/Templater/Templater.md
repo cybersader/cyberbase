@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Thursday, April 25th 2024, 4:13 pm
-date modified: Friday, December 13th 2024, 5:15 pm
+date modified: Saturday, March 15th 2025, 4:17 pm
 ---
 
 # What is Templater For?

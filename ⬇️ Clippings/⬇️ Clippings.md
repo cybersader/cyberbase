@@ -3,6 +3,7 @@
 - **[[ChatGPT]]**
 - **[[GitHub Repos]]**
 - **[[News]]**
+- **[[Obsidian Plugins]]**
 - **[[Reddit]]**
 - **[[Tech]]**
 - **[[Wikipedia]]**
