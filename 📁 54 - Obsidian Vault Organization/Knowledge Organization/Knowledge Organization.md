@@ -35,7 +35,6 @@ date modified: Saturday, March 15th 2025, 5:13 pm
 	- [github.com > drPilman/obsidian-graph-nested-tags: A small plugin for Obsidian that links nested tags in graph view](https://github.com/drPilman/obsidian-graph-nested-tags)
 	- [github.com > HananoshikaYomaru/obsidian-tag-generator: Break down nested tags into multiple parent tags](https://github.com/HananoshikaYomaru/obsidian-tag-generator)
 - Controlled Vocabulary, Taxonomy, Ontology as Nested Tags?
-	- [4.5 - Applying Research](../../📁%2098%20-%20ARCHIVE/GradSchoolProjects/Honey%20Accounts%20in%20Windows%20AD/Project%20Workspace/4.5%20-%20Applying%20Research.md)[Teleseer](../../CybersaderNotion/03%20Awesome-Cyber/Apps%20&%20Tech/Cyber%20Tools/Teleseer.md)[DD 108](../../⬇%20INBOX,%20DROPZONE/From%20Other%20Wiki/Learning/Cyber%20News,%20TTP,%20Learning/DD%20108.md)
 
 #### PARAUT - Corporate Structure - instead of PARA
 

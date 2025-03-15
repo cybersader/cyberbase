@@ -1,8 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "YouTube",
+      "path": "⬇️ Clippings/YouTube/YouTube.md"
+    },
+    {
+      "basename": "📁 10 - My Obsidian Stack",
+      "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
+    },
+    {
+      "basename": "Dataview",
+      "path": "📁 10 - My Obsidian Stack/Dataview/Dataview.md"
+    },
+    {
       "basename": "📁 54 - Obsidian Vault Organization",
       "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
+    },
+    {
+      "basename": "Knowledge Organization",
+      "path": "📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "Using Tags",
+      "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
     },
     {
       "basename": "📁 52 - Obsidian Starters & Templates",
@@ -13,28 +33,12 @@
       "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Obsidian Knowledge Management Workflows.md"
     },
     {
-      "basename": "Knowledge Organization",
-      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
-    },
-    {
-      "basename": "Using Tags",
-      "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
-    },
-    {
       "basename": "Generating MOCs with Dataview",
       "path": "📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md"
     },
     {
       "basename": "Dataview Query Showcase",
       "path": "📁 17 - Knowledge Engineering/Dataview Query Showcase/Dataview Query Showcase.md"
-    },
-    {
-      "basename": "Dataview",
-      "path": "📁 10 - My Obsidian Stack/Dataview/Dataview.md"
-    },
-    {
-      "basename": "📁 10 - My Obsidian Stack",
-      "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
     },
     {
       "basename": "File Order",
@@ -161,10 +165,6 @@
       "path": "⬇️ Clippings/Wikipedia/Wikipedia.md"
     },
     {
-      "basename": "YouTube",
-      "path": "⬇️ Clippings/YouTube/YouTube.md"
-    },
-    {
       "basename": "S3 - 2025 The Dawn of Energy Abundance  TOO CHEAP TO METER Film",
       "path": "⬇️ Clippings/YouTube/S3 - 2025 The Dawn of Energy Abundance  TOO CHEAP TO METER Film/S3 - 2025 The Dawn of Energy Abundance  TOO CHEAP TO METER Film.md"
     },
@@ -195,10 +195,6 @@
     {
       "basename": "Dealing with Asbestos",
       "path": "📁 20 - Home DIY/Dealing with Asbestos/Dealing with Asbestos.md"
-    },
-    {
-      "basename": "📁 07 - Cybersader Arsenal",
-      "path": "📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md"
     }
   ],
   "omittedPaths": [],

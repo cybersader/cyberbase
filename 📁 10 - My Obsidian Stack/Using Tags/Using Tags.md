@@ -23,7 +23,6 @@ date modified: Saturday, March 15th 2025, 5:12 pm
 - Automating folders and links from tags?
 	- Dataview publisher based on tags and nested tags
 	- MoCs
-		
 
 # Related Plugins
 
