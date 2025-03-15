@@ -11,7 +11,7 @@
   "page-preview": true,
   "daily-notes": true,
   "templates": true,
-  "note-composer": true,
+  "note-composer": false,
   "command-palette": true,
   "slash-command": false,
   "editor-status": true,

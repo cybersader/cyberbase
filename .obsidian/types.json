@@ -48,6 +48,7 @@
     "BC-dataview-note-query": "text",
     "BC-dataview-note-field": "text",
     "BC-ignore-in-edges": "checkbox",
-    "BC-ignore-out-edges": "checkbox"
+    "BC-ignore-out-edges": "checkbox",
+    "date created": "text"
   }
 }
