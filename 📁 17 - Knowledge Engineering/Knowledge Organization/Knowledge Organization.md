@@ -4,13 +4,12 @@ aliases: [Obsidian Vault Structure]
 tags: [knowledge_management, wiki_organization, taxonomies, taxonomy, wiki_structure, library-science, wiki, kms]
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Saturday, March 8th 2025, 5:21 pm
+date modified: Saturday, March 15th 2025, 3:16 pm
 ---
-[Obsidian Knowledge Management Workflows](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Obsidian%20Knowledge%20Management%20Workflows.md)
-[Cyber Frameworks, Ontologies](../../📁%2005%20-%20Organizational%20Cyber/Frameworks,%20Standards/Frameworks,%20Ontologies/Cyber%20Frameworks,%20Ontologies.md)
-[Obsidian Frameworker](../../📁%2001%20-%20Projects/Obsidian%20Frameworker/Obsidian%20Frameworker.md)
 
-> [!tip] Auto organize in Obsidian with something like [File Organizer 2000](../../📁%2009%20-%20My%20Obsidian%20Stack/Auto%20-%20Tagging,%20Linking,%20Dropzones%20&%20Organizers/File%20Organizer%202000/File%20Organizer%202000.md) 
+[Obsidian Knowledge Management Workflows](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Obsidian%20Knowledge%20Management%20Workflows.md)
+[Cyber Frameworks, Ontologies](../../📁%2005%20-%20Organizational%20Cyber/Frameworks,%20Standards/Cyber%20Frameworks,%20Ontologies/Cyber%20Frameworks,%20Ontologies.md)
+[Obsidian Frameworker](../../📁%2001%20-%20Projects/Obsidian%20Frameworker/Obsidian%20Frameworker.md)
 
 > [!important] This is a work in progress and always will be
 

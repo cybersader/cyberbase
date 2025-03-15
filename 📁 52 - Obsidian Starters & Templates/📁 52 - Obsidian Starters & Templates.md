@@ -9,6 +9,13 @@ date modified: Sunday, March 9th 2025, 6:37 pm
 
 [📁 17 - Knowledge Engineering](../📁%2017%20-%20Knowledge%20Engineering/📁%2017%20-%20Knowledge%20Engineering.md)
 
+%% Begin Waypoint %%
+- **[[0 - FAQ]]**
+- **[[0 - Vault Basics]]**
+- **[[1 - Starting Your Vault]]**
+- **[[2 - Vault Organization]]**
+
+%% End Waypoint %%
 # Vault Starters
 
 ## Core Starters

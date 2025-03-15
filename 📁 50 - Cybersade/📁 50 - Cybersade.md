@@ -22,4 +22,3 @@ date modified: Sunday, January 5th 2025, 9:20 pm
 - [Another Way “The Social Dilemma” Falls Short | by Karen DeGroot Carter | Medium](https://karendegrootcarter.medium.com/another-way-the-social-dilemma-fell-short-be4d2148c7fc)
 - [A closer look into the "The Social Dilemma"](https://www.fsunews.com/story/entertainment/2020/10/04/closer-look-into-the-social-dilemma/3609349001/)
 - [The Social Dilemma: Social Graph VS Interest Graph](https://itmunch.com/social-graph-vs-interest-graph-the-social-dilemma/)
-- 

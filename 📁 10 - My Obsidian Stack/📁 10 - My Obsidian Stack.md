@@ -55,6 +55,6 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 	- **[[Syncthing Incompatible with Git]]**
 - **[[Task Prioritization]]**
 - **[[Templater]]**
-- **[[Test Vault Workflow]]**
+- **[[Using Tags]]**
 
 %% End Landmark %%

@@ -17,11 +17,13 @@ date modified: Saturday, March 8th 2025, 3:45 pm
 
 %% Begin Waypoint %%
 - **[[⬇️ KnowEng Drop]]**
+- **[[Dataview Query Showcase]]**
 - **[[Digital Gardening]]**
 - **[[Generating Graph MOCs]]**
 - **[[Generating MOCs with Dataview]]**
 - **[[Knowledge Organization]]**
 - **[[Obsidian MOCs]]**
+- **[[Tasks Queries]]**
 
 %% End Waypoint %%
 

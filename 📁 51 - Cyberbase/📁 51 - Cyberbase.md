@@ -1,13 +1,13 @@
 ---
-aliases: 
-tags:
-  - initiatives/cyberbase
-  - personal/professional/personal-branding
+aliases: []
+tags: [initiatives/cyberbase, personal/professional/personal-branding]
 publish: true
 permalink: 
 date created: Friday, January 31st 2025, 4:49 pm
-date modified: Friday, January 31st 2025, 4:56 pm
+date modified: Saturday, March 15th 2025, 3:25 pm
 ---
+
+> [!tldr] This is my idea for a contributable cyber hub based out of Obsidian
 
 %% Begin Landmark %%
 - **[[✒️ Cyberbase Architecture]]**

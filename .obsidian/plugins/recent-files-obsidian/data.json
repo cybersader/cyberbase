@@ -1,6 +1,110 @@
 {
   "recentFiles": [
     {
+      "basename": "Using Tags",
+      "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
+    },
+    {
+      "basename": "📁 52 - Obsidian Starters & Templates",
+      "path": "📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md"
+    },
+    {
+      "basename": "📁 10 - My Obsidian Stack",
+      "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
+    },
+    {
+      "basename": "Dataview Query Showcase",
+      "path": "📁 17 - Knowledge Engineering/Dataview Query Showcase/Dataview Query Showcase.md"
+    },
+    {
+      "basename": "Tasks Queries",
+      "path": "📁 17 - Knowledge Engineering/Tasks Queries/Tasks Queries.md"
+    },
+    {
+      "basename": "📁 17 - Knowledge Engineering",
+      "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
+    },
+    {
+      "basename": "Generating MOCs with Dataview",
+      "path": "📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md"
+    },
+    {
+      "basename": "Knowledge Organization",
+      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "Arguments in Markdown",
+      "path": "📁 10 - My Obsidian Stack/Arguments in Markdown/Arguments in Markdown.md"
+    },
+    {
+      "basename": "Markdown or Wikilinks",
+      "path": "📁 52 - Obsidian Starters & Templates/0 - FAQ/Markdown or Wikilinks/Markdown or Wikilinks.md"
+    },
+    {
+      "basename": "0 - FAQ",
+      "path": "📁 52 - Obsidian Starters & Templates/0 - FAQ/0 - FAQ.md"
+    },
+    {
+      "basename": "Obsidian-Related Bloggers",
+      "path": "📁 10 - My Obsidian Stack/Obsidian-Related Bloggers/Obsidian-Related Bloggers.md"
+    },
+    {
+      "basename": "Plugin Development",
+      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
+    },
+    {
+      "basename": "Plugin Maintenance",
+      "path": "📁 10 - My Obsidian Stack/Plugin Maintenance/Plugin Maintenance.md"
+    },
+    {
+      "basename": "Project Management",
+      "path": "📁 10 - My Obsidian Stack/Project Management/Project Management.md"
+    },
+    {
+      "basename": "Query All The Things",
+      "path": "📁 10 - My Obsidian Stack/Query All The Things/Query All The Things.md"
+    },
+    {
+      "basename": "2 - Vault Organization",
+      "path": "📁 52 - Obsidian Starters & Templates/2 - Vault Organization/2 - Vault Organization.md"
+    },
+    {
+      "basename": "Surf the Web in Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Surf the Web in Obsidian/Surf the Web in Obsidian.md"
+    },
+    {
+      "basename": "📁 51 - Cyberbase",
+      "path": "📁 51 - Cyberbase/📁 51 - Cyberbase.md"
+    },
+    {
+      "basename": "1 - Starting Your Vault",
+      "path": "📁 52 - Obsidian Starters & Templates/1 - Starting Your Vault/1 - Starting Your Vault.md"
+    },
+    {
+      "basename": "0 - Vault Basics",
+      "path": "📁 52 - Obsidian Starters & Templates/0 - Vault Basics/0 - Vault Basics.md"
+    },
+    {
+      "basename": "Obsidian Knowledge Management Workflows",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Obsidian Knowledge Management Workflows.md"
+    },
+    {
+      "basename": "Cyber Frameworks, Ontologies",
+      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Cyber Frameworks, Ontologies/Cyber Frameworks, Ontologies.md"
+    },
+    {
+      "basename": "📁 50 - Cybersade",
+      "path": "📁 50 - Cybersade/📁 50 - Cybersade.md"
+    },
+    {
+      "basename": "Tech",
+      "path": "⬇️ Clippings/Tech/Tech.md"
+    },
+    {
+      "basename": "Cyberbase Tech Stack",
+      "path": "📁 51 - Cyberbase/Cyberbase Tech Stack/Cyberbase Tech Stack.md"
+    },
+    {
       "basename": "Articles, Blogs",
       "path": "⬇️ Clippings/Articles, Blogs/Articles, Blogs.md"
     },
@@ -33,10 +137,6 @@
       "path": "⬇️ Clippings/YouTube/S3 - 2025 The Dawn of Energy Abundance  TOO CHEAP TO METER Film/S3 - 2025 The Dawn of Energy Abundance  TOO CHEAP TO METER Film.md"
     },
     {
-      "basename": "Tech",
-      "path": "⬇️ Clippings/Tech/Tech.md"
-    },
-    {
       "basename": "⬇️ Clippings",
       "path": "⬇️ Clippings/⬇️ Clippings.md"
     },
@@ -57,10 +157,6 @@
       "path": "⬇️ Clippings/Tech/Fakeupdate/Fakeupdate.md"
     },
     {
-      "basename": "Generating MOCs with Dataview",
-      "path": "📁 17 - Knowledge Engineering/Generating MOCs with Dataview/Generating MOCs with Dataview.md"
-    },
-    {
       "basename": "📁 53 - Cybersader GRC Tools",
       "path": "📁 53 - Cybersader GRC Tools/📁 53 - Cybersader GRC Tools.md"
     },
@@ -79,10 +175,6 @@
     {
       "basename": "Obsidian Slides",
       "path": "📁 10 - My Obsidian Stack/Obsidian Slides/Obsidian Slides.md"
-    },
-    {
-      "basename": "📁 10 - My Obsidian Stack",
-      "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
     },
     {
       "basename": "Untitled",
@@ -107,98 +199,6 @@
     {
       "basename": "Fixing Toilets",
       "path": "📁 20 - Home DIY/Fixing Toilets/Fixing Toilets.md"
-    },
-    {
-      "basename": "Lucidchart for Data Governance",
-      "path": "📁 05 - Organizational Cyber/Lucidchart for Data Governance/Lucidchart for Data Governance.md"
-    },
-    {
-      "basename": "📁 05 - Organizational Cyber",
-      "path": "📁 05 - Organizational Cyber/📁 05 - Organizational Cyber.md"
-    },
-    {
-      "basename": "Cryptomator",
-      "path": "⬇️ Clippings/Tech/Cryptomator/Cryptomator.md"
-    },
-    {
-      "basename": "Cryptee",
-      "path": "⬇️ Clippings/Tech/Cryptee/Cryptee.md"
-    },
-    {
-      "basename": "Ollama",
-      "path": "⬇️ Clippings/Tech/Ollama/Ollama.md"
-    },
-    {
-      "basename": "Trilium Notes",
-      "path": "⬇️ Clippings/Tech/Trilium Notes/Trilium Notes.md"
-    },
-    {
-      "basename": "Zivver Security",
-      "path": "⬇️ Clippings/Tech/Zivver Security/Zivver Security.md"
-    },
-    {
-      "basename": "Slido",
-      "path": "⬇️ Clippings/Tech/Slido/Slido.md"
-    },
-    {
-      "basename": "Readwise",
-      "path": "⬇️ Clippings/Tech/Readwise/Readwise.md"
-    },
-    {
-      "basename": "Readdy",
-      "path": "⬇️ Clippings/Tech/Readdy/Readdy.md"
-    },
-    {
-      "basename": "Printify",
-      "path": "⬇️ Clippings/Tech/Printify/Printify.md"
-    },
-    {
-      "basename": "Peertube",
-      "path": "⬇️ Clippings/Tech/Peertube/Peertube.md"
-    },
-    {
-      "basename": "Opennote",
-      "path": "⬇️ Clippings/Tech/Opennote/Opennote.md"
-    },
-    {
-      "basename": "Napkin",
-      "path": "⬇️ Clippings/Tech/Napkin/Napkin.md"
-    },
-    {
-      "basename": "Google-Gemma-3",
-      "path": "⬇️ Clippings/Tech/Google-Gemma-3/Google-Gemma-3.md"
-    },
-    {
-      "basename": "📁 52 - Obsidian Starters & Templates",
-      "path": "📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md"
-    },
-    {
-      "basename": "Makemydrivefun",
-      "path": "⬇️ Clippings/Tech/Makemydrivefun/Makemydrivefun.md"
-    },
-    {
-      "basename": "Kittl",
-      "path": "⬇️ Clippings/Tech/Kittl/Kittl.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 17 - Knowledge Engineering/Knowledge Organization/Knowledge Organization.md"
-    },
-    {
-      "basename": "Obsidian MOCs",
-      "path": "📁 17 - Knowledge Engineering/Obsidian MOCs/Obsidian MOCs.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Integrations",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Integrations/⬇️ Obsidian Integrations.md"
-    },
-    {
-      "basename": "Arguments in Markdown",
-      "path": "📁 10 - My Obsidian Stack/Arguments in Markdown/Arguments in Markdown.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     }
   ],
   "omittedPaths": [],
