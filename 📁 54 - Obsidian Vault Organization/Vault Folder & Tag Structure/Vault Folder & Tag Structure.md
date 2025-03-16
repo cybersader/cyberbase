@@ -49,6 +49,8 @@ start simple then scale up or down as needed...srsly
 
 # tags
 
+just as folders need structures so do tags, but they can overlap
+
 good ways to structure tags
 - by the content
 - with unique names
@@ -61,3 +63,25 @@ ideas for tag structures
 - use meta tag categories
 - use a tag root for meta stuff for working in the vault
 - 
+
+what's supported for tags?
+https://help.obsidian.md/tags 
+
+tag case
+- just use snake-case since double clicking and programming with the tag names becomes easier
+
+## tag structure example
+
+- _/unstructured categories or tags
+    - alphatical or automcomplete sorting can also help here
+- #-word_here/ontologies
+    - or structured strictly where the alphabetical or chronoglocial naming helps
+- words/stuff based on information process or KMS process or functionality (e.g. clippings)
+    - these have to be easy to remember
+- -/other purpose
+
+if you need to use regular words for unstructured tags then you can hide some things in the underscore or - tags
+
+The first type of character helps with automcomplete
+
+
