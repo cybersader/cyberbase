@@ -20,7 +20,9 @@ limit 1000
 
 
 %% Begin Waypoint %%
-
+- **[[S3 - 2025 The Dawn of Energy Abundance]]**
+- **[[SXSW - The State of Personal Online Security and Confidentiality]]**
+- **[[To Scale - To Scale TIME]]**
 
 %% End Waypoint %%
 
