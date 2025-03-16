@@ -9,6 +9,7 @@ date modified: Saturday, March 15th 2025, 5:46 pm
 
 %% Begin Waypoint %%
 - **[[Knowledge Organization]]**
+- **[[Vault Folder & Tag Structure]]**
 
 %% End Waypoint %%
 

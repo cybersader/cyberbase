@@ -1,3 +1,12 @@
+---
+aliases: 
+tags: 
+publish: true
+permalink:
+date created: Saturday, March 15th 2025, 7:17 pm
+date modified: Sunday, March 16th 2025, 1:30 pm
+---
+
 the workflow
 - ARC - add, relate, communicate
 - 
