@@ -20,9 +20,7 @@ limit 1000
 
 
 %% Begin Waypoint %%
-- **[[SXSW - The State of Personal Online Security and Confidentiality - SXSW LIVE]]**
-- **[[Theo - t3․gg - OpenAI is TERRIFIED (this is absurd)]]**
-- **[[To Scale - To Scale TIME]]**
+
 
 %% End Waypoint %%
 
