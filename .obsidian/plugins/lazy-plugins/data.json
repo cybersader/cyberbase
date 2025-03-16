@@ -967,6 +967,9 @@
       },
       "datepicker": {
         "startupType": "disabled"
+      },
+      "quick-explorer": {
+        "startupType": "disabled"
       }
     }
   }
