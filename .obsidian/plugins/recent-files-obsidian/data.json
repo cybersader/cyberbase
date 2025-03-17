@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Using Tags",
+      "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
+    },
+    {
+      "basename": "Vault Folder & Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
+    },
+    {
+      "basename": "Simplemind",
+      "path": "⬇️ Clippings/Tech/Simplemind/Simplemind.md"
+    },
+    {
       "basename": "Custom PCs Australia - Steve Jobs perfect response to an insult. Worldwide developer conference 1997",
       "path": "CLIPPI~1/YouTube/Custom PCs Australia - Steve Jobs perfect response to an insult. Worldwide developer conference 1997/Custom PCs Australia - Steve Jobs perfect response to an insult. Worldwide developer conference 1997.md"
     },
@@ -25,10 +37,6 @@
       "path": "⬇️ Clippings/YouTube/SXSW - The State of Personal Online Security and Confidentiality/SXSW - The State of Personal Online Security and Confidentiality.md"
     },
     {
-      "basename": "Vault Folder & Tag Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
-    },
-    {
       "basename": "README",
       "path": "README.md"
     },
@@ -47,10 +55,6 @@
     {
       "basename": "Dataview",
       "path": "📁 10 - My Obsidian Stack/Dataview/Dataview.md"
-    },
-    {
-      "basename": "Using Tags",
-      "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
     },
     {
       "basename": "📁 52 - Obsidian Starters & Templates",
@@ -191,14 +195,6 @@
     {
       "basename": "⬇️ Clippings",
       "path": "⬇️ Clippings/⬇️ Clippings.md"
-    },
-    {
-      "basename": "Chatwoot",
-      "path": "⬇️ Clippings/Tech/Chatwoot/Chatwoot.md"
-    },
-    {
-      "basename": "Openfhe",
-      "path": "⬇️ Clippings/Tech/Openfhe/Openfhe.md"
     }
   ],
   "omittedPaths": [],

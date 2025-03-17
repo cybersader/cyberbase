@@ -9886,6 +9886,7 @@ async function renderSlot(plugin, settings, slot) {
           parent.textContent = "";
           await import_obsidian.MarkdownRenderer.render(app, `!${imageSrc}`, parent, "", plugin);
           slot.setAttr("href", filePath);
+          slot.setAttr("title", link.textContent);
         }
       }
     }
@@ -9901,7 +9902,32 @@ async function renderSlot(plugin, settings, slot) {
   if (child) {
     slot.style.backgroundColor = child.style.backgroundColor;
   }
+  const fileEmbed = slot.find(".internal-embed.file-embed.mod-generic.is-loaded");
+  if (fileEmbed) {
+    const textNode = findTextNodeRecursive(fileEmbed);
+    if (textNode) {
+      textNode.nodeValue = fileEmbed.getAttr("alt");
+    }
+  }
+  const altEl = slot.find("[alt]");
+  if (altEl) {
+    slot.setAttr("title", altEl.getAttr("alt"));
+  }
   return slot;
+}
+function findTextNodeRecursive(element) {
+  const childNodesArray = Array.from(element.childNodes);
+  for (const node of childNodesArray) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      return node;
+    }
+    if (node.nodeType === Node.ELEMENT_NODE) {
+      const found = findTextNodeRecursive(node);
+      if (found)
+        return found;
+    }
+  }
+  return null;
 }
 
 // src/post-processor.ts
@@ -10065,10 +10091,17 @@ var LocalSettingsModal = class extends import_obsidian3.Modal {
       this.init(DEFAULT_SETTINGS);
     })).addButton(
       (btn) => btn.setIcon("check").setCta().onClick(() => {
-        this.onSave(updatedSettings);
-        this.close();
+        onSubmitHandler();
       })
     );
+    this.scope.register([], "Enter", (evt) => {
+      evt.preventDefault();
+      onSubmitHandler();
+    });
+    const onSubmitHandler = () => {
+      this.onSave(updatedSettings);
+      this.close();
+    };
   }
   onOpen() {
     this.init(this.settings);
@@ -10234,7 +10267,20 @@ function generateTierListPostProcessor(plugin) {
             if (img) {
               const src = img.getAttribute("src");
               if (src) {
-                window.open(src, "_blank");
+                const isExternal = src.startsWith("http://") || src.startsWith("https://");
+                console.log(src);
+                if (isExternal) {
+                  window.open(src, "_blank");
+                } else {
+                  const match = decodeURIComponent(src).match(/.*[\\\/]([\d\w\.]*)\??/);
+                  if (match) {
+                    const href = match[1];
+                    const file = app.metadataCache.getFirstLinkpathDest(href, "");
+                    if (file) {
+                      app.workspace.openLinkText(href, file.path);
+                    }
+                  }
+                }
               }
             }
           }
@@ -10590,7 +10636,7 @@ var ParsedInput = class {
     return !this.mirrorX && !this.mirrorY && Number(this.rotation.toFixed(2)) == 0 && Number(this.scale.toFixed(2)) == 1 && this.x == 0 && this.y == 0;
   }
   parseTransform(transformString) {
-    const translateMatch = transformString.match(/translate\(([-\d.]+)px,\s*([-\d.]+)px\)/);
+    const translateMatch = transformString.match(/translate\(([-\d.]+)%,\s*([-\d.]+)%\)/);
     const rotateMatch = transformString.match(/rotate\(([-\d.]+)deg\)/);
     const scaleMatch = transformString.match(/scale\(([-\d.]+),? ?([-\d.]+)?\)/);
     if (translateMatch) {
@@ -10621,7 +10667,7 @@ var ParsedInput = class {
     const rotation = Number(this.rotation.toFixed(2));
     const scale = Number(this.scale.toFixed(2));
     if (x !== 0 || y !== 0) {
-      transforms.push(`translate(${x}px, ${y}px)`);
+      transforms.push(`translate(${x}%, ${y}%)`);
     }
     if (rotation !== 0) {
       transforms.push(`rotate(${rotation}deg)`);
@@ -10738,8 +10784,9 @@ var SlotModal = class extends import_obsidian6.Modal {
         this.renderEl.removeClass("rotate");
       }
       if (isDragging) {
-        this.value.x = startX + event.clientX - mouseStartX;
-        this.value.y = startY + event.clientY - mouseStartY;
+        const computedStyle = getComputedStyle(this.renderEl.find(".tier-list-slot"));
+        this.value.x = startX + (event.clientX - mouseStartX) * 100 / parseFloat(computedStyle.width);
+        this.value.y = startY + (event.clientY - mouseStartY) * 100 / parseFloat(computedStyle.height);
         this.render();
       }
       if (isRotating) {
@@ -10902,9 +10949,13 @@ var SlotModal = class extends import_obsidian6.Modal {
       this.transformResetButton.setCta();
     const app = this.plugin.app;
     const str = this.value.toString().replace(/^\t/, "");
+    const tempEl = document.createElement("div");
+    await import_obsidian6.MarkdownRenderer.render(app, str, tempEl, "", this.component);
+    await renderSlot(this.plugin, this.settings, tempEl.find("li"));
     this.renderEl.replaceChildren();
-    await import_obsidian6.MarkdownRenderer.render(app, str, this.renderEl, "", this.component);
-    await renderSlot(this.plugin, this.settings, this.renderEl.find("li"));
+    while (tempEl.firstChild) {
+      this.renderEl.appendChild(tempEl.firstChild);
+    }
   }
   updateSettings() {
     this.valueSetting.clear().setName("Value").addText((text) => {

@@ -107,35 +107,12 @@ var ReleaseNotesModal = class extends import_obsidian.Modal {
 };
 
 // virtual-module:virtual:release-notes
-var releaseNotes = '<h2>\u{1F6D1} Exclude Me Please</h2>\n<h3>[1.10.3] - 2024-12-14</h3>\n<h4>\u{1F41B} Fixed</h4>\n<ul>\n<li>Improved parent selector matching to properly detect and exclude Rich Foot when specified selectors are present in the view or its parent elements</li>\n</ul>\n<h3>[1.10.2] - 2024-12-11</h3>\n<h4>\u{1F41B} Fixed</h4>\n<ul>\n<li>Missing <code>Excluded Folders</code> section in the settings</li>\n</ul>\n<h3>[1.10.1] - 2024-12-10</h3>\n<h4>\u{1F41B} Fixed</h4>\n<ul>\n<li>Extra padding on the bottom of the editor in Canvas / Kanban Cards</li>\n</ul>\n<h3>[1.10.0] - 2024-12-08</h3>\n<h4>\u2728 Added</h4>\n<ul>\n<li>Exclusion rule via <code>frontmatter</code> field</li>\n<li>Custom exclusions using specified DOM parent selectors for advanced control</li>\n</ul>\n<p><a href="https://raw.githubusercontent.com/jparkerweb/ref/refs/heads/main/equill-labs/rich-foot/rich-foot-v1.10.0.jpg"><img src="https://raw.githubusercontent.com/jparkerweb/ref/refs/heads/main/equill-labs/rich-foot/rich-foot-v1.10.0.jpg" alt="screenshot"></a></p>\n';
+var releaseNotes = '<h2>\u{1F6D1} Exclude Me Please</h2>\n<h2>[1.10.9] - 2025-01-25</h2>\n<h3>\u{1F41B} Fixed</h3>\n<ul>\n<li>Addressed issue with Rich Foot being duplicated when a note was opened in a &quot;new window&quot;</li>\n</ul>\n<h2>[1.10.8] - 2025-01-25</h2>\n<h3>\u2728 Added</h3>\n<ul>\n<li>Outlink collections now include embedded notes</li>\n</ul>\n<h3>\u{1F41B} Fixed</h3>\n<ul>\n<li>Fixed issue with Rich Foot not being applied in Reading Mode if the note has an embedded note</li>\n</ul>\n<h3>[1.10.7] - 2025-01-13</h3>\n<h4>\u{1F4E6} Updated</h4>\n<ul>\n<li>Updated <code>css</code> variables to support the <code>Minimal</code> theme</li>\n</ul>\n<h3>[1.10.6] - 2025-01-10</h3>\n<h4>\u{1F4E6} Updated</h4>\n<ul>\n<li>Adjusted <code>css</code> padding values to be compatible with <code>Typewriter Scroll</code> plugin</li>\n</ul>\n<h3>[1.10.5] - 2024-12-26</h3>\n<h4>\u{1F4E6} Updated</h4>\n<ul>\n<li>Support for more date formats in <code>frontmatter</code> created/modified fields (ISO, space-separated, and just date)</li>\n</ul>\n<h3>[1.10.4] - 2024-12-23</h3>\n<h4>\u{1F41B} Fixed</h4>\n<ul>\n<li>Fixed issue with Rich Foot not loading all user defined colors when Obsidian is restarted</li>\n</ul>\n<h3>[1.10.3] - 2024-12-14</h3>\n<h4>\u{1F41B} Fixed</h4>\n<ul>\n<li>Improved parent selector matching to properly detect and exclude Rich Foot when specified selectors are present in the view or its parent elements</li>\n</ul>\n<h3>[1.10.2] - 2024-12-11</h3>\n<h4>\u{1F41B} Fixed</h4>\n<ul>\n<li>Missing <code>Excluded Folders</code> section in the settings</li>\n</ul>\n<h3>[1.10.1] - 2024-12-10</h3>\n<h4>\u{1F41B} Fixed</h4>\n<ul>\n<li>Extra padding on the bottom of the editor in Canvas / Kanban Cards</li>\n</ul>\n<h3>[1.10.0] - 2024-12-08</h3>\n<h4>\u2728 Added</h4>\n<ul>\n<li>Exclusion rule via <code>frontmatter</code> field</li>\n<li>Custom exclusions using specified DOM parent selectors for advanced control</li>\n</ul>\n<p><a href="https://raw.githubusercontent.com/jparkerweb/ref/refs/heads/main/equill-labs/rich-foot/rich-foot-v1.10.0.jpg"><img src="https://raw.githubusercontent.com/jparkerweb/ref/refs/heads/main/equill-labs/rich-foot/rich-foot-v1.10.0.jpg" alt="screenshot"></a></p>\n';
 
 // src/settings.js
 var import_obsidian2 = require("obsidian");
-var DEFAULT_SETTINGS = {
-  borderWidth: 1,
-  borderStyle: "dashed",
-  borderOpacity: 1,
-  borderRadius: 15,
-  datesOpacity: 1,
-  linksOpacity: 1,
-  showReleaseNotes: true,
-  excludedFolders: [],
-  dateColor: "var(--text-accent)",
-  borderColor: "var(--text-accent)",
-  linkColor: "var(--link-color)",
-  linkBackgroundColor: "var(--tag-background)",
-  linkBorderColor: "rgba(255, 255, 255, 0.204)",
-  customCreatedDateProp: "",
-  customModifiedDateProp: "",
-  dateDisplayFormat: "mmmm dd, yyyy",
-  showBacklinks: true,
-  showOutlinks: true,
-  showDates: true,
-  combineLinks: false,
-  updateDelay: 3e3,
-  excludedParentSelectors: [],
-  frontmatterExclusionField: ""
-};
+
+// src/utils.js
 function rgbToHex(color) {
   if (color.startsWith("hsl")) {
     const temp = document.createElement("div");
@@ -188,6 +165,33 @@ function formatDate(date, format) {
   });
   return result;
 }
+
+// src/settings.js
+var DEFAULT_SETTINGS = {
+  borderWidth: 1,
+  borderStyle: "dashed",
+  borderOpacity: 1,
+  borderRadius: 15,
+  datesOpacity: 1,
+  linksOpacity: 1,
+  showReleaseNotes: true,
+  excludedFolders: [],
+  dateColor: "var(--text-accent)",
+  borderColor: "var(--text-accent)",
+  linkColor: "var(--link-color)",
+  linkBackgroundColor: "var(--tag-background)",
+  linkBorderColor: "rgba(255, 255, 255, 0.204)",
+  customCreatedDateProp: "",
+  customModifiedDateProp: "",
+  dateDisplayFormat: "mmmm dd, yyyy",
+  showBacklinks: true,
+  showOutlinks: true,
+  showDates: true,
+  combineLinks: false,
+  updateDelay: 3e3,
+  excludedParentSelectors: [],
+  frontmatterExclusionField: ""
+};
 var RichFootSettingTab = class extends import_obsidian2.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
@@ -646,42 +650,6 @@ var FolderSuggestModal = class extends import_obsidian2.FuzzySuggestModal {
 };
 
 // src/main.js
-function formatDate2(date, format) {
-  const d = new Date(date);
-  const year = d.getFullYear();
-  const month = d.getMonth();
-  const day = d.getDate();
-  const weekday = d.getDay();
-  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  const monthsShort = months.map((m) => m.slice(0, 3));
-  const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  const weekdaysShort = weekdays.map((w) => w.slice(0, 3));
-  const pad = (num) => num.toString().padStart(2, "0");
-  const tokens = {
-    "dddd": weekdays[weekday],
-    "ddd": weekdaysShort[weekday],
-    "dd": pad(day),
-    "d": day.toString(),
-    "mmmm": months[month],
-    "mmm": monthsShort[month],
-    "mm": pad(month + 1),
-    "m": (month + 1).toString(),
-    "yyyy": year.toString(),
-    "yy": year.toString().slice(-2)
-  };
-  const sortedTokens = Object.keys(tokens).sort((a, b) => b.length - a.length);
-  let result = format;
-  const replacements = /* @__PURE__ */ new Map();
-  sortedTokens.forEach((token, index) => {
-    const placeholder = `__${index}__`;
-    replacements.set(placeholder, tokens[token]);
-    result = result.replace(new RegExp(token, "g"), placeholder);
-  });
-  replacements.forEach((value, placeholder) => {
-    result = result.replace(new RegExp(placeholder, "g"), value);
-  });
-  return result;
-}
 var RichFootPlugin = class extends import_obsidian3.Plugin {
   async onload() {
     await this.loadSettings();
@@ -691,6 +659,11 @@ var RichFootPlugin = class extends import_obsidian3.Plugin {
     document.documentElement.style.setProperty("--rich-foot-border-radius", `${this.settings.borderRadius}px`);
     document.documentElement.style.setProperty("--rich-foot-dates-opacity", this.settings.datesOpacity);
     document.documentElement.style.setProperty("--rich-foot-links-opacity", this.settings.linksOpacity);
+    document.documentElement.style.setProperty("--rich-foot-date-color", this.settings.dateColor);
+    document.documentElement.style.setProperty("--rich-foot-border-color", this.settings.borderColor);
+    document.documentElement.style.setProperty("--rich-foot-link-color", this.settings.linkColor);
+    document.documentElement.style.setProperty("--rich-foot-link-background", this.settings.linkBackgroundColor);
+    document.documentElement.style.setProperty("--rich-foot-link-border-color", this.settings.linkBorderColor);
     await this.checkVersion();
     const updateRichFootCallback = async () => {
       const activeLeaf = this.app.workspace.activeLeaf;
@@ -814,14 +787,20 @@ var RichFootPlugin = class extends import_obsidian3.Plugin {
         return;
       }
       if (this.shouldExcludeFile(file.path)) {
-        const existingRichFoots2 = document.querySelectorAll(".rich-foot");
+        const existingRichFoots2 = view.contentEl.querySelectorAll(".rich-foot");
         existingRichFoots2.forEach((el) => el.remove());
         return;
       }
       const content = view.contentEl;
       let container;
       if (((_b = (_a = view.getMode) == null ? void 0 : _a.call(view)) != null ? _b : view.mode) === "preview") {
-        container = content.querySelector(".markdown-preview-section");
+        const previewSections = content.querySelectorAll(".markdown-preview-section");
+        for (const section of previewSections) {
+          if (!section.closest(".internal-embed")) {
+            container = section;
+            break;
+          }
+        }
       } else if (((_d = (_c = view.getMode) == null ? void 0 : _c.call(view)) != null ? _d : view.mode) === "source" || ((_f = (_e = view.getMode) == null ? void 0 : _e.call(view)) != null ? _f : view.mode) === "live") {
         container = content.querySelector(".cm-sizer");
       }
@@ -830,7 +809,7 @@ var RichFootPlugin = class extends import_obsidian3.Plugin {
       }
       if ((_h = (_g = this.settings) == null ? void 0 : _g.excludedParentSelectors) == null ? void 0 : _h.some((selector) => {
         try {
-          const matchingElements = document.querySelectorAll(selector);
+          const matchingElements = content.querySelectorAll(selector);
           return Array.from(matchingElements).some(
             (el) => el === container || el.contains(container)
           );
@@ -839,15 +818,15 @@ var RichFootPlugin = class extends import_obsidian3.Plugin {
           return false;
         }
       })) {
-        const existingRichFoots2 = document.querySelectorAll(".rich-foot");
+        const existingRichFoots2 = view.contentEl.querySelectorAll(".rich-foot");
         existingRichFoots2.forEach((el) => el.remove());
         return;
       }
-      const existingRichFoots = document.querySelectorAll(".rich-foot");
+      const existingRichFoots = view.contentEl.querySelectorAll(".rich-foot");
       existingRichFoots.forEach((el) => el.remove());
       this.disconnectObservers();
       const richFoot = await this.createRichFoot(file);
-      const newCheck = document.querySelectorAll(".rich-foot");
+      const newCheck = view.contentEl.querySelectorAll(".rich-foot");
       if (newCheck.length > 0) {
         newCheck.forEach((el) => el.remove());
       }
@@ -911,7 +890,7 @@ var RichFootPlugin = class extends import_obsidian3.Plugin {
   }
   async createRichFoot(file) {
     const richFoot = createDiv({ cls: "rich-foot rich-foot--hidden" });
-    const richFootDashedLine = richFoot.createDiv({ cls: "rich-foot--dashed-line" });
+    richFoot.createDiv({ cls: "rich-foot--dashed-line" });
     const backlinksData = this.app.metadataCache.getBacklinksForFile(file);
     const outlinks = await this.getOutlinks(file);
     if (this.settings.combineLinks) {
@@ -1027,16 +1006,17 @@ var RichFootPlugin = class extends import_obsidian3.Plugin {
           }
         }
         if (isValidDate) {
-          const datePart = tempDate.split("T")[0];
-          const dateStr = tempDate.includes("T") ? tempDate : `${datePart}T00:00:00`;
-          const dateObj = new Date(dateStr);
-          modifiedDate = formatDate2(dateObj, this.settings.dateDisplayFormat);
+          if (!tempDate.includes("T") && !tempDate.includes(" ")) {
+            tempDate = `${tempDate}T00:00:00`;
+          }
+          const dateObj = new Date(tempDate);
+          modifiedDate = formatDate(dateObj, this.settings.dateDisplayFormat);
         } else {
           modifiedDate = modifiedDate;
         }
       } else {
         modifiedDate = new Date(file.stat.mtime);
-        modifiedDate = formatDate2(modifiedDate, this.settings.dateDisplayFormat);
+        modifiedDate = formatDate(modifiedDate, this.settings.dateDisplayFormat);
       }
       datesWrapper.createDiv({
         cls: "rich-foot--modified-date",
@@ -1071,16 +1051,17 @@ var RichFootPlugin = class extends import_obsidian3.Plugin {
           }
         }
         if (isValidDate) {
-          const datePart = tempDate.split("T")[0];
-          const dateStr = tempDate.includes("T") ? tempDate : `${datePart}T00:00:00`;
-          const dateObj = new Date(dateStr);
-          createdDate = formatDate2(dateObj, this.settings.dateDisplayFormat);
+          if (!tempDate.includes("T") && !tempDate.includes(" ")) {
+            tempDate = `${tempDate}T00:00:00`;
+          }
+          const dateObj = new Date(tempDate);
+          createdDate = formatDate(dateObj, this.settings.dateDisplayFormat);
         } else {
           createdDate = createdDate;
         }
       } else {
         createdDate = new Date(file.stat.ctime);
-        createdDate = formatDate2(createdDate, this.settings.dateDisplayFormat);
+        createdDate = formatDate(createdDate, this.settings.dateDisplayFormat);
       }
       datesWrapper.createDiv({
         cls: "rich-foot--created-date",
@@ -1098,6 +1079,15 @@ var RichFootPlugin = class extends import_obsidian3.Plugin {
     if (cache == null ? void 0 : cache.links) {
       for (const link of cache.links) {
         const linkPath = link.link.split("#")[0];
+        const targetFile = this.app.metadataCache.getFirstLinkpathDest(linkPath, file.path);
+        if (targetFile && targetFile.extension === "md") {
+          links.add(targetFile.path);
+        }
+      }
+    }
+    if (cache == null ? void 0 : cache.embeds) {
+      for (const embed of cache.embeds) {
+        const linkPath = embed.link.split("#")[0];
         const targetFile = this.app.metadataCache.getFirstLinkpathDest(linkPath, file.path);
         if (targetFile && targetFile.extension === "md") {
           links.add(targetFile.path);

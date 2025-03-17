@@ -1,9 +1,9 @@
 {
 	"id": "obsidian-read-it-later",
 	"name": "ReadItLater",
-	"version": "0.4.0",
-	"minAppVersion": "0.15.9",
-	"description": "Saves the clipboard to a new note.",
+	"version": "0.11.4",
+	"minAppVersion": "1.7.7",
+	"description": "Save online content to your Vault, utilize embedded template engine and organize your reading list to your needs. Preserve the web with ReadItLater.",
 	"author": "Dominik Pieper",
 	"authorUrl": "https://github.com/DominikPieper",
 	"isDesktopOnly": false

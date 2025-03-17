@@ -37,14 +37,17 @@ var DEFAULT_QUICK_LINKS = [
   // Wikipedia
   {
     prefix: "w",
-    target: "https://www.wikipedia.org/w/index.php?title=Special:Search&search=%s"
+    target: "https://www.wikipedia.org/w/index.php?title=Special:Search&search=%s",
+    wordSeparator: ""
   },
   // Blank entry for the settings editor
   {
     prefix: "",
-    target: ""
+    target: "",
+    wordSeparator: ""
   }
 ];
+var URL_ENCODED_SPACE = "%20";
 function transformLink(link, quickLinksMap) {
   const linkPrefix = getLinkPrefix(link.target);
   if (linkPrefix === "") {
@@ -65,7 +68,15 @@ function transformLink(link, quickLinksMap) {
     // use that.
     link.text === "" || link.target === link.text ? linkHrefNoPrefix : link.text
   );
-  const linkTarget = quickLink.target.replace("%s", linkHrefNoPrefix);
+  let linkTarget = quickLink.target.replace("%s", linkHrefNoPrefix);
+  let wordSeparator = URL_ENCODED_SPACE;
+  if (quickLink.wordSeparator !== null && quickLink.wordSeparator !== void 0) {
+    const customSeparator = quickLink.wordSeparator.trim();
+    if (customSeparator !== "" && !customSeparator.contains(" ")) {
+      wordSeparator = customSeparator;
+    }
+  }
+  linkTarget = linkTarget.replace(/ +/g, wordSeparator);
   return { target: linkTarget, text: displayText, em: link.em };
 }
 function getLinkPrefix(linkHref) {
@@ -101,31 +112,11 @@ var QuickLinksSettingTab = class extends import_obsidian.PluginSettingTab {
   }
   renderQuickLinksSettings(containerEl) {
     containerEl.empty();
-    containerEl.createEl("hr");
-    new import_obsidian.Setting(containerEl).setName("Manage quick links").setHeading().addButton((btn) => {
-      btn.setButtonText("New quick link").setCta();
-      btn.onClick(async (e) => {
-        this.plugin.settings.quickLinks.push({
-          prefix: "",
-          target: ""
-        });
-        this.renderQuickLinksSettings(containerEl);
-      });
-    });
     const quickLinksArray = this.plugin.settings.quickLinks;
     for (let i = 0; i < quickLinksArray.length; i++) {
       const quickLink = quickLinksArray[i];
-      new import_obsidian.Setting(containerEl).setName(`Quick link ${i + 1}`).addText((text) => {
-        text.setPlaceholder("Link prefix").setValue(quickLink.prefix).onChange(async (value) => {
-          quickLink.prefix = value;
-          await this.plugin.saveSettings();
-        });
-      }).addText((text) => {
-        text.setPlaceholder("Target URL with %s").setValue(quickLink.target).onChange(async (value) => {
-          quickLink.target = value;
-          await this.plugin.saveSettings();
-        });
-      }).addButton((btn) => {
+      const el = containerEl.createEl("div");
+      new import_obsidian.Setting(el).setName(`Quick link ${i + 1}`).setHeading().addButton((btn) => {
         btn.setButtonText("Delete").setWarning();
         btn.onClick(async (e) => {
           this.plugin.settings.quickLinks.splice(i, 1);
@@ -133,8 +124,36 @@ var QuickLinksSettingTab = class extends import_obsidian.PluginSettingTab {
           this.renderQuickLinksSettings(containerEl);
         });
       });
+      new import_obsidian.Setting(el).setName("Link prefix").setDesc("e.g., 'w' for [[w:...]]").addText((text) => {
+        text.setValue(quickLink.prefix).onChange(async (value) => {
+          quickLink.prefix = value;
+          await this.plugin.saveSettings();
+        });
+      });
+      new import_obsidian.Setting(el).setName("Target URL").setDesc("Put %s as a placeholder for the text of the link.").addText((text) => {
+        text.setValue(quickLink.target).onChange(async (value) => {
+          quickLink.target = value;
+          await this.plugin.saveSettings();
+        });
+      });
+      new import_obsidian.Setting(el).setName("Word separator").setDesc("If set, spaces in the link text will be replaced by this character (e.g., an underscore).").addText((text) => {
+        text.setValue(quickLink.wordSeparator).onChange(async (value) => {
+          quickLink.wordSeparator = value;
+          await this.plugin.saveSettings();
+        });
+      });
     }
     new import_obsidian.Setting(containerEl).addButton((btn) => {
+      btn.setButtonText("New quick link").setCta();
+      btn.onClick(async (e) => {
+        this.plugin.settings.quickLinks.push({
+          prefix: "",
+          target: "",
+          wordSeparator: ""
+        });
+        this.renderQuickLinksSettings(containerEl);
+      });
+    }).addButton((btn) => {
       btn.setButtonText("Reset to defaults").setWarning();
       btn.onClick(async (e) => {
         this.plugin.settings.quickLinks = DEFAULT_QUICK_LINKS;
@@ -232,7 +251,9 @@ var LivePreviewQuickLinksPluginValue = class {
         from,
         to,
         enter: (node) => {
-          console.debug("Found node:", node.node.type.name);
+          if (false) {
+            console.debug("Found node:", node.node.type.name);
+          }
           nodes.push(node.node);
         }
       });
@@ -243,14 +264,18 @@ var LivePreviewQuickLinksPluginValue = class {
         "hmd-internal-link",
         "formatting-link_formatting-link-end"
       ];
-      console.debug("Searching for plain internal links");
+      if (false) {
+        console.debug("Searching for plain internal links");
+      }
       for (const chunk of findChunks(nodes, plainInternalLinkPattern)) {
         console.assert(chunk.length === 3);
         const from = chunk[0].from;
         const to = chunk[chunk.length - 1].to;
         const target = view.state.sliceDoc(chunk[1].from, chunk[1].to);
         const link = { text: "", target, em: chunk[0].name.startsWith("em") };
-        console.debug("Found link (plain internal)", link);
+        if (false) {
+          console.debug("Found link (plain internal)", link);
+        }
         this.handleLink(link, false, { from, to }, slices, quickLinksMap);
       }
       const pipedInternalLinkPattern = [
@@ -260,7 +285,9 @@ var LivePreviewQuickLinksPluginValue = class {
         "hmd-internal-link_link-alias",
         "formatting-link_formatting-link-end"
       ];
-      console.debug("Searching for piped internal links");
+      if (false) {
+        console.debug("Searching for piped internal links");
+      }
       for (const chunk of findChunks(nodes, pipedInternalLinkPattern)) {
         console.assert(chunk.length === 5);
         const from = chunk[0].from;
@@ -268,7 +295,9 @@ var LivePreviewQuickLinksPluginValue = class {
         const target = view.state.sliceDoc(chunk[1].from, chunk[1].to);
         const text = view.state.sliceDoc(chunk[3].from, chunk[3].to);
         const link = { text, target, em: chunk[0].name.startsWith("em") };
-        console.debug("Found link (piped internal)", link);
+        if (false) {
+          console.debug("Found link (piped internal)", link);
+        }
         this.handleLink(link, false, { from, to }, slices, quickLinksMap);
       }
     }
@@ -280,7 +309,9 @@ var LivePreviewQuickLinksPluginValue = class {
       "string_url",
       "formatting_formatting-link-string_string_url"
     ];
-    console.debug("Searching for external links");
+    if (false) {
+      console.debug("Searching for external links");
+    }
     for (const chunk of findChunks(nodes, externalLinkPattern1)) {
       console.assert(chunk.length === 6);
       const from = chunk[0].from;
@@ -288,7 +319,9 @@ var LivePreviewQuickLinksPluginValue = class {
       const target = view.state.sliceDoc(chunk[4].from, chunk[4].to);
       const text = view.state.sliceDoc(chunk[1].from, chunk[1].to);
       const link = { text, target, em: false };
-      console.debug("Found link (external)", link);
+      if (false) {
+        console.debug("Found link (external)", link);
+      }
       this.handleLink(link, true, { from, to }, slices, quickLinksMap);
     }
     const externalLinkPattern2 = [
@@ -297,7 +330,9 @@ var LivePreviewQuickLinksPluginValue = class {
       "string_url",
       "formatting_formatting-link-string_string_url"
     ];
-    console.debug("Searching for external links (pattern2)");
+    if (false) {
+      console.debug("Searching for external links (pattern2)");
+    }
     for (const chunk of findChunks(nodes, externalLinkPattern2)) {
       console.assert(chunk.length === 4);
       const from = chunk[0].from;
@@ -305,7 +340,9 @@ var LivePreviewQuickLinksPluginValue = class {
       const target = view.state.sliceDoc(chunk[2].from, chunk[2].to);
       const text = "";
       const link = { text, target, em: false };
-      console.debug("Found link (external)", link);
+      if (false) {
+        console.debug("Found link (external)", link);
+      }
       this.handleLink(link, true, { from, to }, slices, quickLinksMap);
     }
   }
@@ -396,3 +433,5 @@ var QuickLinksPlugin = class extends import_obsidian4.Plugin {
     await this.saveData(this.settings);
   }
 };
+
+/* nosourcemap */

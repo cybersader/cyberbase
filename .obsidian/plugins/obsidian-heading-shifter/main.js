@@ -83,6 +83,15 @@ var DEFAULT_SETTINGS = {
   styleToRemove: {
     beginning: { ul: true, ol: true, userDefined: [] },
     surrounding: { bold: false, italic: false, userDefined: [] }
+  },
+  autoOutdent: {
+    enable: true,
+    hotKey: {
+      key: "Tab",
+      shift: true,
+      ctrl: false,
+      alt: false
+    }
   }
 };
 var HeadingShifterSettingTab = class extends import_obsidian.PluginSettingTab {
@@ -156,6 +165,47 @@ var HeadingShifterSettingTab = class extends import_obsidian.PluginSettingTab {
         this.plugin.settings.styleToRemove.surrounding.userDefined = str2.split("\n");
         yield this.plugin.saveSettings();
       }));
+    });
+    containerEl.createEl("h3", { text: "Auto Outdent" });
+    containerEl.createEl("p", {
+      text: "When heading is applied to a list, if outdent is needed for lists after that line, execute it."
+    });
+    new import_obsidian.Setting(containerEl).setName("Enable").addToggle((toggle) => {
+      toggle.setValue(this.plugin.settings.autoOutdent.enable).onChange((v) => {
+        this.plugin.settings.autoOutdent.enable = v;
+        this.plugin.saveSettings();
+      });
+    });
+    containerEl.createEl("b", {
+      text: "Hotkey"
+    });
+    containerEl.createEl("p", {
+      text: "Basically, we expect you to apply `Shift + Tab` from https://github.com/vslinko/obsidian-outliner, but if you want to use something else, apply a hotkey with equivalent functionality.",
+      cls: "setting-item-description"
+    });
+    new import_obsidian.Setting(containerEl).setName("Key").addText((toggle) => {
+      toggle.setValue(this.plugin.settings.autoOutdent.hotKey.key).onChange((v) => {
+        this.plugin.settings.autoOutdent.hotKey.key = v;
+        this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian.Setting(containerEl).setName("Shift").addToggle((toggle) => {
+      toggle.setValue(this.plugin.settings.autoOutdent.hotKey.shift).onChange((v) => {
+        this.plugin.settings.autoOutdent.hotKey.shift = v;
+        this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian.Setting(containerEl).setName("Ctrl").addToggle((toggle) => {
+      toggle.setValue(this.plugin.settings.autoOutdent.hotKey.ctrl).onChange((v) => {
+        this.plugin.settings.autoOutdent.hotKey.ctrl = v;
+        this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian.Setting(containerEl).setName("Alt").addToggle((toggle) => {
+      toggle.setValue(this.plugin.settings.autoOutdent.hotKey.alt).onChange((v) => {
+        this.plugin.settings.autoOutdent.hotKey.alt = v;
+        this.plugin.saveSettings();
+      });
     });
   }
 };
@@ -267,23 +317,6 @@ var InterfaceService = class {
 // src/features/shiftHeading/operation.ts
 var import_obsidian4 = require("obsidian");
 
-// src/utils/editorChange.ts
-var composeLineChanges = (editor, lineNumbers, changeCallback, settings) => {
-  const editorChange = [];
-  for (const line of lineNumbers) {
-    const shifted = changeCallback(editor.getLine(line), settings);
-    editorChange.push({
-      text: shifted,
-      from: { line, ch: 0 },
-      to: {
-        line,
-        ch: editor.getLine(line).length
-      }
-    });
-  }
-  return editorChange;
-};
-
 // src/utils/range.ts
 var setMin = (prev, cur) => {
   if (prev == void 0 || prev !== void 0 && cur < prev) {
@@ -388,6 +421,93 @@ var removeUsingRegexpStrings = (str, regExpStrings) => {
   }
   return removed;
 };
+var getNeedsOutdentLines = (startLineNumber, editor) => {
+  let currentLineNumber = startLineNumber;
+  const needsOutdentLines = [];
+  while (currentLineNumber < editor.lineCount()) {
+    const line = editor.getLine(currentLineNumber);
+    const indentLevel = isNeedsOutdent(line);
+    if (!indentLevel)
+      return needsOutdentLines;
+    needsOutdentLines.push(currentLineNumber);
+    currentLineNumber++;
+  }
+  return needsOutdentLines;
+};
+var isNeedsOutdent = (line) => {
+  var _a;
+  const matched = line.match(new RegExp("^(?<space>(\\s|\\S|\\t)+)(?:-|\\*)\\s.+"));
+  if (!matched)
+    return void 0;
+  const space = (_a = matched.groups) == null ? void 0 : _a["space"];
+  if (!space)
+    return void 0;
+  return space.length;
+};
+
+// src/utils/event.ts
+var simulateHotkey = (key, modifiers = []) => {
+  var _a;
+  const event = new KeyboardEvent("keydown", {
+    key,
+    code: key,
+    ctrlKey: modifiers.includes("Ctrl"),
+    shiftKey: modifiers.includes("Shift"),
+    altKey: modifiers.includes("Alt"),
+    metaKey: modifiers.includes("Meta")
+  });
+  (_a = document.activeElement) == null ? void 0 : _a.dispatchEvent(event);
+};
+
+// src/utils/editorChange.ts
+var composeLineChanges = (editor, lineNumbers, changeCallback, settings) => {
+  const editorChange = [];
+  for (const line of lineNumbers) {
+    const shifted = changeCallback(editor.getLine(line), settings);
+    editorChange.push({
+      text: shifted,
+      from: { line, ch: 0 },
+      to: {
+        line,
+        ch: editor.getLine(line).length
+      }
+    });
+  }
+  return editorChange;
+};
+var execOutdent = (startLineNumber, editor, settings) => {
+  if (!settings.autoOutdent.enable)
+    return;
+  const currentSelection = {
+    head: editor.getCursor("head"),
+    anchor: editor.getCursor("anchor")
+  };
+  const lineNumbers = getNeedsOutdentLines(startLineNumber, editor);
+  if (lineNumbers.length === 0)
+    return;
+  editor.setSelection({ line: Math.min(...lineNumbers), ch: 0 }, {
+    line: Math.max(...lineNumbers),
+    ch: editor.getLine(Math.max(...lineNumbers)).length
+  });
+  const modifiers = [];
+  if (settings.autoOutdent.hotKey.shift)
+    modifiers.push("Shift");
+  if (settings.autoOutdent.hotKey.ctrl)
+    modifiers.push("Ctrl");
+  if (settings.autoOutdent.hotKey.alt)
+    modifiers.push("Alt");
+  simulateHotkey(settings.autoOutdent.hotKey.key, modifiers);
+  const lineNumbersAfter = getNeedsOutdentLines(startLineNumber, editor);
+  if (JSON.stringify(lineNumbers) === JSON.stringify(lineNumbersAfter)) {
+    editor.setSelection(currentSelection.anchor, currentSelection.head);
+    return;
+  }
+  if (lineNumbersAfter.length === 0) {
+    editor.setSelection(currentSelection.anchor, currentSelection.head);
+    return;
+  }
+  execOutdent(startLineNumber, editor, settings);
+};
 
 // src/constant/regExp.ts
 var RegExpExample = {
@@ -440,6 +560,7 @@ var ApplyHeading = class {
       editor.transaction({
         changes: composeLineChanges(editor, lines, (chunk) => applyHeading(chunk, this.headingSize, this.settings))
       });
+      execOutdent(Math.max(...lines) + 1, editor, this.settings);
       if (isOneLine) {
         editor.setCursor(editor.getCursor("anchor").line);
       }
@@ -563,6 +684,7 @@ var InsertHeadingAtCurrentLevel = class {
       editor.transaction({
         changes: composeLineChanges(editor, [cursorLine], (chunk) => applyHeading(chunk, headingLevel, this.settings))
       });
+      execOutdent(cursorLine + 1, editor, this.settings);
       editor.setCursor(editor.getCursor().line);
       return true;
     });
@@ -589,8 +711,9 @@ var InsertHeadingAtDeeperLevel = class {
         return true;
       }
       editor.transaction({
-        changes: composeLineChanges(editor, [cursorLine], (chunk) => applyHeading(chunk, headingLevel + 1))
+        changes: composeLineChanges(editor, [cursorLine], (chunk) => applyHeading(chunk, headingLevel + 1, this.settings))
       });
+      execOutdent(cursorLine + 1, editor, this.settings);
       editor.setCursor(editor.getCursor().line);
       return true;
     });
@@ -615,6 +738,7 @@ var InsertHeadingAtHigherLevel = class {
       editor.transaction({
         changes: composeLineChanges(editor, [cursorLine], (chunk) => applyHeading(chunk, headingLevel - 1, this.settings))
       });
+      execOutdent(cursorLine + 1, editor, this.settings);
       editor.setCursor(editor.getCursor().line);
       return true;
     });

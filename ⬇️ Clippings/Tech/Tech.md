@@ -35,6 +35,7 @@ LIMIT 1000
 - **[[Printify]]**
 - **[[Readdy]]**
 - **[[Readwise]]**
+- **[[Simplemind]]**
 - **[[Slido]]**
 - **[[Trilium Notes]]**
 - **[[Zivver Security]]**

@@ -646,6 +646,7 @@ var import_obsidian2 = require("obsidian");
 var import_obsidian_daily_notes_interface = __toESM(require_main());
 
 // src/todo.ts
+var UntitledSection = "Untitled";
 function escapeRegexCharacter(character) {
   if (["-", "^", "\\"].includes(character)) {
     return "\\" + character;
@@ -694,22 +695,60 @@ function parseTextForTodos(text, bySection, allowedChars, completeChars) {
   const lines = text.split("\n");
   let sectionTitle = null;
   const todosBySection = /* @__PURE__ */ new Map();
-  const untitled = "Untitled";
   for (let i = 0; i < lines.length; i++) {
     const result = parseForTodos(allowedChars, completeChars, lines, i, -1);
     if (result.todo === null) {
       sectionTitle = parseLineForTitle(lines[i]);
     }
     if (result.todo !== null && result.todo.item !== "") {
-      i += result.numItems - 1;
       if (bySection && sectionTitle != null) {
         updateElseSet(todosBySection, sectionTitle, result.todo);
       } else {
-        updateElseSet(todosBySection, untitled, result.todo);
+        updateElseSet(todosBySection, UntitledSection, result.todo);
       }
+      i += result.numItems - 1;
     }
   }
   return todosBySection;
+}
+function removeIncompleteTodos(previousText, incompleteTodos, bySection, allowedChars, completeChars) {
+  const lines = previousText.split("\n");
+  const updatedNoteText = [];
+  let sectionTitle = null;
+  for (let i = 0; i < lines.length; i++) {
+    const result = parseForTodos(allowedChars, completeChars, lines, i, -1);
+    if (result.todo === null) {
+      sectionTitle = parseLineForTitle(lines[i]);
+    }
+    if (result.todo !== null && result.todo.item !== "") {
+      const sectionToCheck = bySection && sectionTitle !== null ? sectionTitle : UntitledSection;
+      const item = result.todo.item;
+      const todosToCheck = incompleteTodos.get(sectionToCheck);
+      let itemFound = false;
+      if (todosToCheck) {
+        for (let j = 0; j < todosToCheck.length; j++) {
+          if (todosToCheck[j].item === item) {
+            itemFound = true;
+            break;
+          }
+        }
+      }
+      if (itemFound) {
+        if (result.todo.complete && !todoHasIncompleteItem(result.todo)) {
+          console.info(`Not removing ${item} because it is complete`);
+          updatedNoteText.push(...lines.slice(i, i + result.numItems));
+        } else {
+          console.info(`Removing ${item} because it is incomplete and was added to today's note`);
+        }
+      } else {
+        updatedNoteText.push(...lines.slice(i, i + result.numItems));
+      }
+      i += result.numItems - 1;
+    } else {
+      updatedNoteText.push(lines[i]);
+    }
+  }
+  return updatedNoteText.join("\n");
 }
 function parseLineForTitle(line) {
   const titleRegex = /^#+\s(.+)/;
@@ -849,6 +888,25 @@ var NestedDailyTodosSettingTab = class extends import_obsidian.PluginSettingTab 
       this.plugin.settings.removeEmptyTodos = value;
       await this.plugin.saveSettings();
     }));
+    new import_obsidian.Setting(containerEl).setName("Remove incomplete todos from previous notes").setDesc((() => {
+      const fragment = document.createDocumentFragment();
+      const description = document.createElement("div");
+      description.innerHTML = `
+                \u26A0 This setting is destructive, data loss can occur. Please use with care and ensure your vault is 
+                backed up.<br>
+                Please be particularly aware that this plugin does not enforce equality of a Todo's children. If the 
+                same top-level Todo has different children in a newer note, enabling this option will remove the older 
+                todo and its children, permanently losing the information about what the previous children 
+                were. \u26A0<br><br>
+                When enabled, todos that are added to today's Daily Note will be removed from the parsed previous notes.
+                When left disabled, previous notes are left unchanged and the most recent version of incomplete todos are copied to today's Daily Note.
+            `;
+      fragment.appendChild(description);
+      return fragment;
+    })()).addToggle((toggle) => toggle.setValue(this.plugin.settings.removeIncompleteTodosFromPreviousNotes).onChange(async (value) => {
+      this.plugin.settings.removeIncompleteTodosFromPreviousNotes = value;
+      await this.plugin.saveSettings();
+    }));
     new import_obsidian.Setting(containerEl).setName("Supported Todo characters").setDesc('Todo items with these values will be considered todos and carried forward if incomplete. If you use a theme or plugin that makes use of non-standard values like - [!] and you want that entry to carry forward, include "!" in this setting.').addText((text) => text.setPlaceholder("xX/-").setValue(Array.from(this.plugin.settings.supportedTodoChars).join("")).onChange(async (value) => {
       this.plugin.settings.supportedTodoChars = new Set(value.length > 0 ? value.split("") : DEFAULT_SETTINGS.supportedTodoChars);
       await this.plugin.saveSettings();
@@ -866,6 +924,7 @@ var DEFAULT_SETTINGS = {
   lookBackExistingNotesInsteadOfDays: false,
   groupBySection: true,
   removeEmptyTodos: true,
+  removeIncompleteTodosFromPreviousNotes: false,
   supportedTodoChars: /* @__PURE__ */ new Set(["x", "X", "/", "-"]),
   completeTodoChars: /* @__PURE__ */ new Set(["x", "X", "-"])
 };
@@ -943,6 +1002,7 @@ async function addIncompleteTodosToTodaysNote(plugin) {
     notesToProcess = [...prevNotes.map((key) => allDailyNotes[key])];
   }
   notesToProcess = notesToProcess.reverse();
+  const previousNotes = notesToProcess.slice(0, -1);
   console.debug(`Running with: supportedTodoChars: "${Array.from(settings.supportedTodoChars).join("")}", completeTodoChars: "${Array.from(settings.completeTodoChars).join("")}"`);
   console.info(`Checking notes: ${notesToProcess.map((note) => note.name).join(", ")}`);
   const existingTodos = await parseFilesForTodos(notesToProcess, settings.groupBySection, settings.supportedTodoChars, settings.completeTodoChars);
@@ -973,6 +1033,14 @@ async function addIncompleteTodosToTodaysNote(plugin) {
   if (settings.removeEmptyTodos) {
     this.app.vault.process(todayNote, removeEmptyTodos.bind(null));
   }
+  if (settings.removeIncompleteTodosFromPreviousNotes && numMissingTodos > 0) {
+    console.info("Removing incomplete todos from previous notes that were carried forward");
+    for (const previousNote of previousNotes) {
+      const previousNoteText = await this.app.vault.read(previousNote);
+      const updatedNoteText = removeIncompleteTodos(previousNoteText, missingIncompleteTodos, settings.groupBySection, settings.supportedTodoChars, settings.completeTodoChars);
+      await this.app.vault.modify(previousNote, updatedNoteText);
+    }
+  }
 }
 async function parseFilesForTodos(notes, groupBySection, supportedChars, completeTodoChars) {
   const todos = [];
@@ -989,3 +1057,5 @@ function parseDateFromDailyNoteKey(key) {
   const dateString = key.substring(4);
   return new Date(dateString);
 }
+
+/* nosourcemap */

@@ -17,6 +17,7 @@
     /* min-height: 280px; */
     max-height: 280px;
     user-select: text;
+    -webkit-user-select: text;
 }
 
 .op-pre {
@@ -435,4 +436,11 @@ span.ls-mark-cr::after {
 
 .sls-dialogue-note-countdown {
     font-size: 0.8em;
+}
+
+.sls-qr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: max-content;
 }

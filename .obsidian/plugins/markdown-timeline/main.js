@@ -26,10 +26,16 @@ __export(main_exports, {
   default: () => TimelinePlugin
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian3 = require("obsidian");
+
+// src/types/index.ts
+var DEFAULT_SETTINGS = {
+  defaultView: "basic",
+  timelineOrder: "asc",
+  showHeaderButtons: true
+};
 
 // src/views/TimelineView.ts
-var import_obsidian2 = require("obsidian");
+var import_obsidian5 = require("obsidian");
 
 // src/utils/parser.ts
 function parseTimelineContent(content) {
@@ -68,33 +74,265 @@ function parseTimelineContent(content) {
       events.push(currentEvent);
     }
   });
-  return events.sort((a, b) => {
-    const yearDiff = parseInt(b.year) - parseInt(a.year);
-    if (yearDiff !== 0)
-      return yearDiff;
-    if (a.month && b.month) {
-      const monthDiff = parseInt(b.month) - parseInt(a.month);
-      if (monthDiff !== 0)
-        return monthDiff;
-    } else if (a.month) {
-      return -1;
-    } else if (b.month) {
-      return 1;
-    }
-    if (a.day && b.day) {
-      return parseInt(b.day) - parseInt(a.day);
-    } else if (a.day) {
-      return -1;
-    } else if (b.day) {
-      return 1;
-    }
-    return 0;
-  });
+  return events;
 }
 
 // src/utils/timeline-renderer.ts
+var import_obsidian4 = require("obsidian");
+
+// src/constants/timeline.ts
+var TIMELINE_CLASSES = {
+  TIMELINE: "timeline",
+  TIMELINE_HEADER: "timeline-header",
+  TIMELINE_SEARCH: "timeline-search",
+  TIMELINE_SEARCH_BUTTON: "timeline-search-button",
+  TIMELINE_ORDER_TOGGLE: "timeline-order-toggle",
+  TIMELINE_EVENT: "timeline-event",
+  TIMELINE_DATE: "timeline-date",
+  TIMELINE_YEAR: "timeline-year",
+  TIMELINE_MONTH: "timeline-month",
+  TIMELINE_POINT: "timeline-point",
+  TIMELINE_CONTENT: "timeline-content",
+  TIMELINE_MARKDOWN_CONTENT: "timeline-markdown-content"
+};
+var TIMELINE_ORDER = {
+  ASC: "asc",
+  DESC: "desc"
+};
+var TIMELINE_ARIA_LABELS = {
+  SEARCH_BUTTON: "Search events",
+  ORDER_ASC: "Sorted oldest first",
+  ORDER_DESC: "Sorted newest first"
+};
+
+// src/components/TimelineAddButton.ts
 var import_obsidian = require("obsidian");
-var TimelineEventContent = class extends import_obsidian.MarkdownRenderChild {
+var AddEventModal = class extends import_obsidian.Modal {
+  constructor(app, onSubmit, getExistingEventsContent) {
+    super(app);
+    this.onSubmit = onSubmit;
+    this.getExistingEventsContent = getExistingEventsContent;
+  }
+  onOpen() {
+    const { contentEl } = this;
+    contentEl.createEl("h2", { text: "Add New Event" });
+    const dateInput = new import_obsidian.Setting(contentEl).setName("Date").addText((text) => {
+      text.setPlaceholder("YYYY-MM-DD OR YYYY-MM OR YYYY");
+      text.inputEl.style.width = "100%";
+    });
+    const titleInput = new import_obsidian.Setting(contentEl).setName("Title").addText((text) => {
+      text.setPlaceholder("Event Title");
+      text.inputEl.style.width = "100%";
+    });
+    const contentInput = new import_obsidian.Setting(contentEl).setName("Content").addTextArea((text) => {
+      text.setPlaceholder("Markdown Content");
+      text.inputEl.style.width = "100%";
+      text.inputEl.style.height = "150px";
+      text.inputEl.style.resize = "none";
+    });
+    new import_obsidian.Setting(contentEl).addButton(
+      (btn) => btn.setButtonText("Add Event").setCta().onClick(() => {
+        var _a, _b, _c;
+        console.log("Add Event button clicked");
+        const dateValue = ((_a = dateInput.settingEl.querySelector("input")) == null ? void 0 : _a.value) || "";
+        if (!dateValue) {
+          console.error("Date input is empty");
+          return;
+        }
+        const dateParts = dateValue.split("-");
+        console.log("dateParts", dateParts);
+        const formattedDate = `${dateParts[0]}${dateParts[1] ? "-" + dateParts[1] : ""}${dateParts[2] ? "-" + dateParts[2] : ""}`;
+        const titleValue = ((_b = titleInput.settingEl.querySelector("input")) == null ? void 0 : _b.value) || "";
+        if (!titleValue) {
+          console.error("Title input is empty");
+          return;
+        }
+        const contentValue = ((_c = contentInput.settingEl.querySelector("textarea")) == null ? void 0 : _c.value) || "";
+        if (!contentValue) {
+          console.error("Content input is empty");
+          return;
+        }
+        const newEventContent = `# ${formattedDate}
+## ${titleValue}
+${contentValue}`;
+        const toBeWrittenWholeContent = `${newEventContent}
+---
+${this.getExistingEventsContent()}`;
+        console.log("New Event Content:", newEventContent);
+        this.updateTimelineBlock(newEventContent);
+        const newEvent = {
+          year: dateParts[0],
+          month: dateParts[1] ? dateParts[1] : void 0,
+          day: dateParts[2] ? dateParts[2] : void 0,
+          title: titleValue,
+          content: toBeWrittenWholeContent
+        };
+        console.log("New Event:", newEvent);
+        this.onSubmit(newEvent);
+        this.close();
+      })
+    );
+  }
+  onClose() {
+    const { contentEl } = this;
+    contentEl.empty();
+  }
+  updateTimelineBlock(newEventContent) {
+    const file = this.app.workspace.getActiveFile();
+    if (file instanceof import_obsidian.TFile) {
+      this.app.vault.read(file).then((content) => {
+        const timelineBlocks = content.match(
+          /```timeline[\s\S]*?```/g
+        );
+        if (!timelineBlocks || timelineBlocks.length === 0) {
+          console.error("No timeline blocks found");
+          return;
+        }
+        const updatedBlock = timelineBlocks[0].replace(
+          "```timeline",
+          `\`\`\`timeline
+${newEventContent}
+---
+`
+        );
+        const updatedContent = content.replace(
+          timelineBlocks[0],
+          updatedBlock
+        );
+        this.app.vault.modify(file, updatedContent);
+      }).catch((err) => {
+        console.error("Error reading file:", err);
+      });
+    } else {
+      console.error("No active file found");
+    }
+  }
+};
+var TimelineAddButton = class {
+  constructor(container, app, onAddEvent, getExistingEventsContent) {
+    this.container = container;
+    this.app = app;
+    this.onAddEvent = onAddEvent;
+    this.getExistingEventsContent = getExistingEventsContent;
+    this.initializeAddButton();
+  }
+  initializeAddButton() {
+    this.addButton = this.container.createEl("button", {
+      cls: "timeline-add-button"
+    });
+    this.addButton.textContent = "Add new event";
+    (0, import_obsidian.setIcon)(this.addButton, "plus");
+    this.addButton.setAttribute("aria-label", "Add new event");
+    this.addButton.addEventListener(
+      "click",
+      () => this.openAddEventModal()
+    );
+  }
+  openAddEventModal() {
+    new AddEventModal(
+      this.app,
+      this.onAddEvent,
+      this.getExistingEventsContent
+    ).open();
+  }
+};
+
+// src/components/TimelineOrderToggle.ts
+var import_obsidian2 = require("obsidian");
+var TimelineOrderToggle = class {
+  constructor(container, initialOrder, onOrderChange) {
+    this.container = container;
+    this.onOrderChange = onOrderChange;
+    this.currentOrder = initialOrder;
+    this.initializeOrderToggle();
+  }
+  initializeOrderToggle() {
+    this.orderButton = this.container.createEl("button", {
+      cls: TIMELINE_CLASSES.TIMELINE_ORDER_TOGGLE
+    });
+    this.updateOrderButton();
+    this.setupEventListeners();
+  }
+  setupEventListeners() {
+    this.orderButton.addEventListener("click", () => {
+      this.currentOrder = this.currentOrder === TIMELINE_ORDER.ASC ? TIMELINE_ORDER.DESC : TIMELINE_ORDER.ASC;
+      this.updateOrderButton();
+      this.onOrderChange(this.currentOrder);
+    });
+  }
+  updateOrderButton() {
+    this.orderButton.empty();
+    (0, import_obsidian2.setIcon)(this.orderButton, this.currentOrder === TIMELINE_ORDER.ASC ? "arrow-up" : "arrow-down");
+    this.orderButton.setAttribute(
+      "aria-label",
+      this.currentOrder === TIMELINE_ORDER.ASC ? TIMELINE_ARIA_LABELS.ORDER_ASC : TIMELINE_ARIA_LABELS.ORDER_DESC
+    );
+  }
+  getCurrentOrder() {
+    return this.currentOrder;
+  }
+  sortEvents(events) {
+    return [...events].sort((a, b) => {
+      const aDate = new Date(`${a.year}-${a.month || "01"}-${a.day || "01"}`);
+      const bDate = new Date(`${b.year}-${b.month || "01"}-${b.day || "01"}`);
+      const modifier = this.currentOrder === TIMELINE_ORDER.ASC ? 1 : -1;
+      return (aDate.getTime() - bDate.getTime()) * modifier;
+    });
+  }
+};
+
+// src/components/TimelineSearch.ts
+var import_obsidian3 = require("obsidian");
+var TimelineSearch = class {
+  constructor(container, onSearch, initialSearchQuery = "") {
+    this.container = container;
+    this.onSearch = onSearch;
+    this.currentSearch = initialSearchQuery;
+    this.initializeSearch();
+  }
+  initializeSearch() {
+    this.searchEl = this.container.createEl("input", {
+      cls: TIMELINE_CLASSES.TIMELINE_SEARCH,
+      attr: {
+        type: "text",
+        placeholder: "Search events...",
+        value: this.currentSearch
+      }
+    });
+    this.searchButton = this.container.createEl("button", {
+      cls: TIMELINE_CLASSES.TIMELINE_SEARCH_BUTTON
+    });
+    (0, import_obsidian3.setIcon)(this.searchButton, "search");
+    this.searchButton.setAttribute("aria-label", TIMELINE_ARIA_LABELS.SEARCH_BUTTON);
+    this.setupEventListeners();
+  }
+  setupEventListeners() {
+    this.searchButton.addEventListener("click", () => this.performSearch());
+    this.searchEl.addEventListener("keyup", (e) => {
+      if (e.key === "Enter") {
+        this.performSearch();
+      }
+    });
+  }
+  performSearch() {
+    this.currentSearch = this.searchEl.value;
+    this.onSearch(this.currentSearch);
+  }
+  getCurrentSearch() {
+    return this.currentSearch;
+  }
+  filterEvents(events) {
+    if (!this.currentSearch)
+      return events;
+    const searchLower = this.currentSearch.toLowerCase();
+    return events.filter(
+      (event) => event.title.toLowerCase().includes(searchLower) || event.content.toLowerCase().includes(searchLower)
+    );
+  }
+};
+
+// src/utils/timeline-renderer.ts
+var TimelineEventContent = class extends import_obsidian4.MarkdownRenderChild {
   constructor(container, content, sourcePath, plugin) {
     super(container);
     this.content = content;
@@ -102,7 +340,7 @@ var TimelineEventContent = class extends import_obsidian.MarkdownRenderChild {
     this.plugin = plugin;
   }
   async onload() {
-    await import_obsidian.MarkdownRenderer.render(
+    await import_obsidian4.MarkdownRenderer.render(
       this.plugin.app,
       this.content,
       this.containerEl,
@@ -111,22 +349,69 @@ var TimelineEventContent = class extends import_obsidian.MarkdownRenderChild {
     );
   }
 };
-function renderTimelineEvents(container, events, plugin, sourcePath = "") {
-  const timeline = container.createEl("div", { cls: "timeline" });
+function renderTimelineEvents(container, events, plugin, sourcePath = "", initialOrder, searchQuery = "") {
+  let currentOrder = initialOrder != null ? initialOrder : plugin.settings.timelineOrder;
+  let filteredEvents = events;
   const renderChildren = [];
-  for (const event of events) {
-    const eventEl = timeline.createEl("div", { cls: "timeline-event" });
-    const dateEl = eventEl.createEl("div", { cls: "timeline-date" });
-    dateEl.createEl("span", { cls: "timeline-year", text: event.year });
+  if (plugin.settings.showHeaderButtons) {
+    const headerEl = container.createEl("div", { cls: TIMELINE_CLASSES.TIMELINE_HEADER });
+    const search = new TimelineSearch(headerEl, (newSearchQuery) => {
+      container.empty();
+      const newRenderChildren = renderTimelineEvents(
+        container,
+        events,
+        plugin,
+        sourcePath,
+        currentOrder,
+        newSearchQuery
+      );
+      if (plugin instanceof TimelinePlugin) {
+        newRenderChildren.forEach((child) => plugin.addChild(child));
+      }
+    }, searchQuery);
+    const orderToggle = new TimelineOrderToggle(headerEl, currentOrder, (newOrder) => {
+      container.empty();
+      const newRenderChildren = renderTimelineEvents(
+        container,
+        events,
+        plugin,
+        sourcePath,
+        newOrder,
+        search.getCurrentSearch()
+      );
+      if (plugin instanceof TimelinePlugin) {
+        newRenderChildren.forEach((child) => plugin.addChild(child));
+      }
+    });
+    new TimelineAddButton(headerEl, plugin.app, (newEvent) => {
+      events.push(newEvent);
+      container.empty();
+      renderTimelineEvents(container, events, plugin, sourcePath, currentOrder, search.getCurrentSearch());
+    }, () => events.map((event) => `# ${event.year}${event.month ? "-" + event.month : ""}${event.day ? "-" + event.day : ""}
+## ${event.title}
+${event.content}`).join("\n---\n"));
+    filteredEvents = search.filterEvents(events);
+    filteredEvents = orderToggle.sortEvents(filteredEvents);
+  }
+  const timeline = container.createEl("div", { cls: TIMELINE_CLASSES.TIMELINE });
+  for (const event of filteredEvents) {
+    const eventEl = timeline.createEl("div", { cls: TIMELINE_CLASSES.TIMELINE_EVENT });
+    const dateEl = eventEl.createEl("div", { cls: TIMELINE_CLASSES.TIMELINE_DATE });
+    dateEl.createEl("span", { cls: TIMELINE_CLASSES.TIMELINE_YEAR, text: event.year });
     if (event.month) {
-      const monthDisplay = new Intl.DateTimeFormat("en-US", { month: "short" }).format(new Date(2e3, parseInt(event.month) - 1));
+      const monthDisplay = new Intl.DateTimeFormat("en-US", {
+        month: "short"
+      }).format(new Date(2e3, parseInt(event.month) - 1));
       const dateDisplay = event.day ? `${monthDisplay} ${event.day}` : monthDisplay;
-      dateEl.createEl("span", { cls: "timeline-month", text: dateDisplay });
+      dateEl.createEl("span", {
+        cls: TIMELINE_CLASSES.TIMELINE_MONTH,
+        text: dateDisplay
+      });
     }
-    eventEl.createEl("div", { cls: "timeline-point" });
-    const contentEl = eventEl.createEl("div", { cls: "timeline-content" });
+    eventEl.createEl("div", { cls: TIMELINE_CLASSES.TIMELINE_POINT });
+    const contentEl = eventEl.createEl("div", { cls: TIMELINE_CLASSES.TIMELINE_CONTENT });
     contentEl.createEl("h3", { text: event.title });
-    const markdownContent = contentEl.createDiv("timeline-markdown-content");
+    const markdownContent = contentEl.createDiv(TIMELINE_CLASSES.TIMELINE_MARKDOWN_CONTENT);
     const renderChild = new TimelineEventContent(
       markdownContent,
       event.content,
@@ -138,12 +423,23 @@ function renderTimelineEvents(container, events, plugin, sourcePath = "") {
   return renderChildren;
 }
 
+// src/utils/sort.ts
+function sortTimelineEvents(events, order) {
+  return [...events].sort((a, b) => {
+    const aDate = new Date(`${a.year}-${a.month || "01"}-${a.day || "01"}`);
+    const bDate = new Date(`${b.year}-${b.month || "01"}-${b.day || "01"}`);
+    const modifier = order === "asc" ? 1 : -1;
+    return (aDate.getTime() - bDate.getTime()) * modifier;
+  });
+}
+
 // src/views/TimelineView.ts
 var VIEW_TYPE_TIMELINE = "timeline-view";
-var TimelineView = class extends import_obsidian2.ItemView {
+var TimelineView = class extends import_obsidian5.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.plugin = plugin;
+    this.content = "";
   }
   getViewType() {
     return VIEW_TYPE_TIMELINE;
@@ -157,29 +453,59 @@ var TimelineView = class extends import_obsidian2.ItemView {
     container.createEl("div", { cls: "timeline-container" });
   }
   async setContent(content) {
+    this.content = content;
+    await this.renderContent();
+  }
+  async renderContent() {
     const container = this.containerEl.querySelector(".timeline-container");
     if (!container)
       return;
     container.empty();
-    const events = parseTimelineContent(content);
-    const renderChildren = renderTimelineEvents(container, events, this.plugin);
+    const events = parseTimelineContent(this.content);
+    const sortedEvents = sortTimelineEvents(events, this.plugin.settings.timelineOrder);
+    const renderChildren = renderTimelineEvents(container, sortedEvents, this.plugin);
     renderChildren.forEach((child) => this.addChild(child));
   }
 };
 
-// src/types/index.ts
-var DEFAULT_SETTINGS = {
-  defaultView: "basic"
+// src/main.ts
+var import_obsidian7 = require("obsidian");
+
+// src/settings/SettingsTab.ts
+var import_obsidian6 = require("obsidian");
+var TimelineSettingTab = class extends import_obsidian6.PluginSettingTab {
+  constructor(app, plugin) {
+    super(app, plugin);
+    this.plugin = plugin;
+  }
+  display() {
+    const { containerEl } = this;
+    containerEl.empty();
+    containerEl.createEl("h2", { text: "Timeline Settings" });
+    new import_obsidian6.Setting(containerEl).setName("Default sort order").setDesc("Choose the default sort order for timeline events").addDropdown(
+      (dropdown) => dropdown.addOption("asc", "Ascending (oldest first)").addOption("desc", "Descending (newest first)").setValue(this.plugin.settings.timelineOrder).onChange(async (value) => {
+        this.plugin.settings.timelineOrder = value;
+        await this.plugin.saveSettings();
+      })
+    );
+    new import_obsidian6.Setting(containerEl).setName("Show header buttons").setDesc("Show or hide the operation buttons in timeline headers").addToggle(
+      (toggle) => toggle.setValue(this.plugin.settings.showHeaderButtons).onChange(async (value) => {
+        this.plugin.settings.showHeaderButtons = value;
+        await this.plugin.saveSettings();
+      })
+    );
+  }
 };
 
 // src/main.ts
-var TimelinePlugin = class extends import_obsidian3.Plugin {
+var TimelinePlugin = class extends import_obsidian7.Plugin {
   constructor() {
     super(...arguments);
     this.timelineView = null;
   }
   async onload() {
     await this.loadSettings();
+    this.addSettingTab(new TimelineSettingTab(this.app, this));
     this.registerView(
       VIEW_TYPE_TIMELINE,
       (leaf) => this.timelineView = new TimelineView(leaf, this)
@@ -187,7 +513,8 @@ var TimelinePlugin = class extends import_obsidian3.Plugin {
     this.registerMarkdownCodeBlockProcessor("timeline", async (source, el, ctx) => {
       const container = el.createEl("div", { cls: "timeline-container" });
       const events = parseTimelineContent(source);
-      const renderChildren = renderTimelineEvents(container, events, this, ctx.sourcePath);
+      const sortedEvents = sortTimelineEvents(events, this.settings.timelineOrder);
+      const renderChildren = renderTimelineEvents(container, sortedEvents, this, ctx.sourcePath);
       renderChildren.forEach((child) => this.addChild(child));
     });
   }

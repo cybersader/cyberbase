@@ -1,10 +1,10 @@
 ---
-aliases: 
-tags: 
+aliases: []
+tags: []
 publish: true
 permalink:
 date created: Saturday, March 15th 2025, 7:17 pm
-date modified: Sunday, March 16th 2025, 1:30 pm
+date modified: Monday, March 17th 2025, 10:24 am
 ---
 
 the workflow
@@ -74,7 +74,7 @@ tag case
 
 - _/unstructured categories or tags
     - alphatical or automcomplete sorting can also help here
-- #-word_here/ontologies
+- NUMBER-word_here/ontologies
     - or structured strictly where the alphabetical or chronoglocial naming helps
 - words/stuff based on information process or KMS process or functionality (e.g. clippings)
     - these have to be easy to remember
@@ -82,6 +82,6 @@ tag case
 
 if you need to use regular words for unstructured tags then you can hide some things in the underscore or - tags
 
-The first type of character helps with automcomplete
+The first type of character helps with autocomplete
 
 

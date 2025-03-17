@@ -83,6 +83,17 @@ body {
     font-size: calc(var(--nav-item-size) * 0.9);
     min-height: 1.3em;
 }
+
+/* When no preview is shown, adjust date position */
+.recent-note-info:empty {
+    justify-content: flex-end;
+}
+
+/* When no preview and no time are shown, hide the info container */
+.recent-note-info:empty {
+    display: none;
+}
+
 .recent-notes-view h6 {
     top: -14px;
     padding: 6px 0px;
@@ -143,3 +154,61 @@ body {
 .recent-note-item:hover:not(.is-active) .recent-note-info {
     color: var(--recent-notes-hover-text-color, var(--text-muted));
 }
+
+/* Pin icon in Pinned header */
+.pin-icon-small {
+    --icon-size: 1.1em;
+    position: relative;
+    top: 2px;
+    margin-right: 4px;
+}
+
+/* Compact view styles */
+body[data-recent-notes-density="compact"] div.recent-note-item {
+    padding: 5px;
+}
+
+body[data-recent-notes-density="compact"] .recent-notes-view h6 {
+    margin: 0;
+}
+
+body[data-recent-notes-density="compact"] div.recent-note-item:hover:not(.is-active) {
+    background: var(--background-modifier-hover);
+}
+
+body[data-recent-notes-density="compact"] .recent-note-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+}
+
+body[data-recent-notes-density="compact"] .recent-note-title {
+    flex-grow: 1; 
+    text-align: left; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    order: 1;
+}
+
+body[data-recent-notes-density="compact"] .recent-note-date {
+    color: gray;
+    font-size: 0.8em;
+    white-space: nowrap; 
+    margin-left: 8px;
+    order: 2;
+}
+
+body[data-recent-notes-density="compact"] .recent-note-preview {
+    margin-top: 2px;
+    font-size: 0.85em;
+    color: var(--text-muted);
+}
+
+body[data-recent-notes-density="compact"] .recent-note-preview-line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+

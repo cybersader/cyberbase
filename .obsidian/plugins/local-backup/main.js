@@ -40,8 +40,7 @@ var require_universalify = __commonJS({
     "use strict";
     exports.fromCallback = function(fn) {
       return Object.defineProperty(function(...args) {
-        if (typeof args[args.length - 1] === "function")
-          fn.apply(this, args);
+        if (typeof args[args.length - 1] === "function") fn.apply(this, args);
         else {
           return new Promise((resolve, reject) => {
             args.push((err, res) => err != null ? reject(err) : resolve(res));
@@ -53,8 +52,7 @@ var require_universalify = __commonJS({
     exports.fromPromise = function(fn) {
       return Object.defineProperty(function(...args) {
         const cb = args[args.length - 1];
-        if (typeof cb !== "function")
-          return fn.apply(this, args);
+        if (typeof cb !== "function") return fn.apply(this, args);
         else {
           args.pop();
           fn.apply(this, args).then((r) => cb(null, r), cb);
@@ -86,8 +84,7 @@ var require_polyfills = __commonJS({
         cwd = null;
         chdir.call(process, d);
       };
-      if (Object.setPrototypeOf)
-        Object.setPrototypeOf(process.chdir, chdir);
+      if (Object.setPrototypeOf) Object.setPrototypeOf(process.chdir, chdir);
     }
     var chdir;
     module2.exports = patch;
@@ -118,16 +115,14 @@ var require_polyfills = __commonJS({
       fs2.lstatSync = statFixSync(fs2.lstatSync);
       if (fs2.chmod && !fs2.lchmod) {
         fs2.lchmod = function(path2, mode, cb) {
-          if (cb)
-            process.nextTick(cb);
+          if (cb) process.nextTick(cb);
         };
         fs2.lchmodSync = function() {
         };
       }
       if (fs2.chown && !fs2.lchown) {
         fs2.lchown = function(path2, uid, gid, cb) {
-          if (cb)
-            process.nextTick(cb);
+          if (cb) process.nextTick(cb);
         };
         fs2.lchownSync = function() {
         };
@@ -151,12 +146,10 @@ var require_polyfills = __commonJS({
                   backoff += 10;
                 return;
               }
-              if (cb)
-                cb(er);
+              if (cb) cb(er);
             });
           }
-          if (Object.setPrototypeOf)
-            Object.setPrototypeOf(rename, fs$rename);
+          if (Object.setPrototypeOf) Object.setPrototypeOf(rename, fs$rename);
           return rename;
         }(fs2.rename);
       }
@@ -175,11 +168,10 @@ var require_polyfills = __commonJS({
           }
           return fs$read.call(fs2, fd, buffer, offset, length, position, callback);
         }
-        if (Object.setPrototypeOf)
-          Object.setPrototypeOf(read, fs$read);
+        if (Object.setPrototypeOf) Object.setPrototypeOf(read, fs$read);
         return read;
       }(fs2.read);
-      fs2.readSync = typeof fs2.readSync !== "function" ? fs2.readSync : function(fs$readSync) {
+      fs2.readSync = typeof fs2.readSync !== "function" ? fs2.readSync : /* @__PURE__ */ function(fs$readSync) {
         return function(fd, buffer, offset, length, position) {
           var eagCounter = 0;
           while (true) {
@@ -203,14 +195,12 @@ var require_polyfills = __commonJS({
             mode,
             function(err, fd) {
               if (err) {
-                if (callback)
-                  callback(err);
+                if (callback) callback(err);
                 return;
               }
               fs3.fchmod(fd, mode, function(err2) {
                 fs3.close(fd, function(err22) {
-                  if (callback)
-                    callback(err2 || err22);
+                  if (callback) callback(err2 || err22);
                 });
               });
             }
@@ -241,14 +231,12 @@ var require_polyfills = __commonJS({
           fs3.lutimes = function(path2, at, mt, cb) {
             fs3.open(path2, constants.O_SYMLINK, function(er, fd) {
               if (er) {
-                if (cb)
-                  cb(er);
+                if (cb) cb(er);
                 return;
               }
               fs3.futimes(fd, at, mt, function(er2) {
                 fs3.close(fd, function(er22) {
-                  if (cb)
-                    cb(er2 || er22);
+                  if (cb) cb(er2 || er22);
                 });
               });
             });
@@ -274,64 +262,52 @@ var require_polyfills = __commonJS({
           };
         } else if (fs3.futimes) {
           fs3.lutimes = function(_a, _b, _c, cb) {
-            if (cb)
-              process.nextTick(cb);
+            if (cb) process.nextTick(cb);
           };
           fs3.lutimesSync = function() {
           };
         }
       }
       function chmodFix(orig) {
-        if (!orig)
-          return orig;
+        if (!orig) return orig;
         return function(target, mode, cb) {
           return orig.call(fs2, target, mode, function(er) {
-            if (chownErOk(er))
-              er = null;
-            if (cb)
-              cb.apply(this, arguments);
+            if (chownErOk(er)) er = null;
+            if (cb) cb.apply(this, arguments);
           });
         };
       }
       function chmodFixSync(orig) {
-        if (!orig)
-          return orig;
+        if (!orig) return orig;
         return function(target, mode) {
           try {
             return orig.call(fs2, target, mode);
           } catch (er) {
-            if (!chownErOk(er))
-              throw er;
+            if (!chownErOk(er)) throw er;
           }
         };
       }
       function chownFix(orig) {
-        if (!orig)
-          return orig;
+        if (!orig) return orig;
         return function(target, uid, gid, cb) {
           return orig.call(fs2, target, uid, gid, function(er) {
-            if (chownErOk(er))
-              er = null;
-            if (cb)
-              cb.apply(this, arguments);
+            if (chownErOk(er)) er = null;
+            if (cb) cb.apply(this, arguments);
           });
         };
       }
       function chownFixSync(orig) {
-        if (!orig)
-          return orig;
+        if (!orig) return orig;
         return function(target, uid, gid) {
           try {
             return orig.call(fs2, target, uid, gid);
           } catch (er) {
-            if (!chownErOk(er))
-              throw er;
+            if (!chownErOk(er)) throw er;
           }
         };
       }
       function statFix(orig) {
-        if (!orig)
-          return orig;
+        if (!orig) return orig;
         return function(target, options, cb) {
           if (typeof options === "function") {
             cb = options;
@@ -339,27 +315,21 @@ var require_polyfills = __commonJS({
           }
           function callback(er, stats) {
             if (stats) {
-              if (stats.uid < 0)
-                stats.uid += 4294967296;
-              if (stats.gid < 0)
-                stats.gid += 4294967296;
+              if (stats.uid < 0) stats.uid += 4294967296;
+              if (stats.gid < 0) stats.gid += 4294967296;
             }
-            if (cb)
-              cb.apply(this, arguments);
+            if (cb) cb.apply(this, arguments);
           }
           return options ? orig.call(fs2, target, options, callback) : orig.call(fs2, target, callback);
         };
       }
       function statFixSync(orig) {
-        if (!orig)
-          return orig;
+        if (!orig) return orig;
         return function(target, options) {
           var stats = options ? orig.call(fs2, target, options) : orig.call(fs2, target);
           if (stats) {
-            if (stats.uid < 0)
-              stats.uid += 4294967296;
-            if (stats.gid < 0)
-              stats.gid += 4294967296;
+            if (stats.uid < 0) stats.uid += 4294967296;
+            if (stats.gid < 0) stats.gid += 4294967296;
           }
           return stats;
         };
@@ -391,8 +361,7 @@ var require_legacy_streams = __commonJS({
         WriteStream
       };
       function ReadStream(path2, options) {
-        if (!(this instanceof ReadStream))
-          return new ReadStream(path2, options);
+        if (!(this instanceof ReadStream)) return new ReadStream(path2, options);
         Stream.call(this);
         var self = this;
         this.path = path2;
@@ -408,8 +377,7 @@ var require_legacy_streams = __commonJS({
           var key = keys[index];
           this[key] = options[key];
         }
-        if (this.encoding)
-          this.setEncoding(this.encoding);
+        if (this.encoding) this.setEncoding(this.encoding);
         if (this.start !== void 0) {
           if ("number" !== typeof this.start) {
             throw TypeError("start must be a Number");
@@ -442,8 +410,7 @@ var require_legacy_streams = __commonJS({
         });
       }
       function WriteStream(path2, options) {
-        if (!(this instanceof WriteStream))
-          return new WriteStream(path2, options);
+        if (!(this instanceof WriteStream)) return new WriteStream(path2, options);
         Stream.call(this);
         this.path = path2;
         this.fd = null;
@@ -885,6 +852,7 @@ var require_fs = __commonJS({
       "chown",
       "close",
       "copyFile",
+      "cp",
       "fchmod",
       "fchown",
       "fdatasync",
@@ -892,8 +860,10 @@ var require_fs = __commonJS({
       "fsync",
       "ftruncate",
       "futimes",
+      "glob",
       "lchmod",
       "lchown",
+      "lutimes",
       "link",
       "lstat",
       "mkdir",
@@ -908,6 +878,7 @@ var require_fs = __commonJS({
       "rm",
       "rmdir",
       "stat",
+      "statfs",
       "symlink",
       "truncate",
       "unlink",
@@ -934,8 +905,7 @@ var require_fs = __commonJS({
       }
       return new Promise((resolve, reject) => {
         fs2.read(fd, buffer, offset, length, position, (err, bytesRead, buffer2) => {
-          if (err)
-            return reject(err);
+          if (err) return reject(err);
           resolve({ bytesRead, buffer: buffer2 });
         });
       });
@@ -946,8 +916,7 @@ var require_fs = __commonJS({
       }
       return new Promise((resolve, reject) => {
         fs2.write(fd, buffer, ...args, (err, bytesWritten, buffer2) => {
-          if (err)
-            return reject(err);
+          if (err) return reject(err);
           resolve({ bytesWritten, buffer: buffer2 });
         });
       });
@@ -958,8 +927,7 @@ var require_fs = __commonJS({
       }
       return new Promise((resolve, reject) => {
         fs2.readv(fd, buffers, ...args, (err, bytesRead, buffers2) => {
-          if (err)
-            return reject(err);
+          if (err) return reject(err);
           resolve({ bytesRead, buffers: buffers2 });
         });
       });
@@ -970,8 +938,7 @@ var require_fs = __commonJS({
       }
       return new Promise((resolve, reject) => {
         fs2.writev(fd, buffers, ...args, (err, bytesWritten, buffers2) => {
-          if (err)
-            return reject(err);
+          if (err) return reject(err);
           resolve({ bytesWritten, buffers: buffers2 });
         });
       });
@@ -1014,8 +981,7 @@ var require_make_dir = __commonJS({
     var { checkPath } = require_utils();
     var getMode = (options) => {
       const defaults = { mode: 511 };
-      if (typeof options === "number")
-        return options;
+      if (typeof options === "number") return options;
       return { ...defaults, ...options }.mode;
     };
     module2.exports.makeDir = async (dir, options) => {
@@ -1116,8 +1082,7 @@ var require_stat = __commonJS({
       return Promise.all([
         statFunc(src),
         statFunc(dest).catch((err) => {
-          if (err.code === "ENOENT")
-            return null;
+          if (err.code === "ENOENT") return null;
           throw err;
         })
       ]).then(([srcStat, destStat]) => ({ srcStat, destStat }));
@@ -1129,8 +1094,7 @@ var require_stat = __commonJS({
       try {
         destStat = statFunc(dest);
       } catch (err) {
-        if (err.code === "ENOENT")
-          return { srcStat, destStat: null };
+        if (err.code === "ENOENT") return { srcStat, destStat: null };
         throw err;
       }
       return { srcStat, destStat };
@@ -1184,14 +1148,12 @@ var require_stat = __commonJS({
     async function checkParentPaths(src, srcStat, dest, funcName) {
       const srcParent = path2.resolve(path2.dirname(src));
       const destParent = path2.resolve(path2.dirname(dest));
-      if (destParent === srcParent || destParent === path2.parse(destParent).root)
-        return;
+      if (destParent === srcParent || destParent === path2.parse(destParent).root) return;
       let destStat;
       try {
         destStat = await fs2.stat(destParent, { bigint: true });
       } catch (err) {
-        if (err.code === "ENOENT")
-          return;
+        if (err.code === "ENOENT") return;
         throw err;
       }
       if (areIdentical(srcStat, destStat)) {
@@ -1202,14 +1164,12 @@ var require_stat = __commonJS({
     function checkParentPathsSync(src, srcStat, dest, funcName) {
       const srcParent = path2.resolve(path2.dirname(src));
       const destParent = path2.resolve(path2.dirname(dest));
-      if (destParent === srcParent || destParent === path2.parse(destParent).root)
-        return;
+      if (destParent === srcParent || destParent === path2.parse(destParent).root) return;
       let destStat;
       try {
         destStat = fs2.statSync(destParent, { bigint: true });
       } catch (err) {
-        if (err.code === "ENOENT")
-          return;
+        if (err.code === "ENOENT") return;
         throw err;
       }
       if (areIdentical(srcStat, destStat)) {
@@ -1268,8 +1228,7 @@ var require_copy = __commonJS({
       const { srcStat, destStat } = await stat.checkPaths(src, dest, "copy", opts);
       await stat.checkParentPaths(src, srcStat, dest, "copy");
       const include = await runFilter(src, dest, opts);
-      if (!include)
-        return;
+      if (!include) return;
       const destParent = path2.dirname(dest);
       const dirExists = await pathExists(destParent);
       if (!dirExists) {
@@ -1278,28 +1237,21 @@ var require_copy = __commonJS({
       await getStatsAndPerformCopy(destStat, src, dest, opts);
     }
     async function runFilter(src, dest, opts) {
-      if (!opts.filter)
-        return true;
+      if (!opts.filter) return true;
       return opts.filter(src, dest);
     }
     async function getStatsAndPerformCopy(destStat, src, dest, opts) {
       const statFn = opts.dereference ? fs2.stat : fs2.lstat;
       const srcStat = await statFn(src);
-      if (srcStat.isDirectory())
-        return onDir(srcStat, destStat, src, dest, opts);
-      if (srcStat.isFile() || srcStat.isCharacterDevice() || srcStat.isBlockDevice())
-        return onFile(srcStat, destStat, src, dest, opts);
-      if (srcStat.isSymbolicLink())
-        return onLink(destStat, src, dest, opts);
-      if (srcStat.isSocket())
-        throw new Error(`Cannot copy a socket file: ${src}`);
-      if (srcStat.isFIFO())
-        throw new Error(`Cannot copy a FIFO pipe: ${src}`);
+      if (srcStat.isDirectory()) return onDir(srcStat, destStat, src, dest, opts);
+      if (srcStat.isFile() || srcStat.isCharacterDevice() || srcStat.isBlockDevice()) return onFile(srcStat, destStat, src, dest, opts);
+      if (srcStat.isSymbolicLink()) return onLink(destStat, src, dest, opts);
+      if (srcStat.isSocket()) throw new Error(`Cannot copy a socket file: ${src}`);
+      if (srcStat.isFIFO()) throw new Error(`Cannot copy a FIFO pipe: ${src}`);
       throw new Error(`Unknown file: ${src}`);
     }
     async function onFile(srcStat, destStat, src, dest, opts) {
-      if (!destStat)
-        return copyFile(srcStat, src, dest, opts);
+      if (!destStat) return copyFile(srcStat, src, dest, opts);
       if (opts.overwrite) {
         await fs2.unlink(dest);
         return copyFile(srcStat, src, dest, opts);
@@ -1329,16 +1281,21 @@ var require_copy = __commonJS({
       if (!destStat) {
         await fs2.mkdir(dest);
       }
-      const items = await fs2.readdir(src);
-      await Promise.all(items.map(async (item) => {
-        const srcItem = path2.join(src, item);
-        const destItem = path2.join(dest, item);
-        const include = await runFilter(srcItem, destItem, opts);
-        if (!include)
-          return;
-        const { destStat: destStat2 } = await stat.checkPaths(srcItem, destItem, "copy", opts);
-        return getStatsAndPerformCopy(destStat2, srcItem, destItem, opts);
-      }));
+      const promises = [];
+      for await (const item of await fs2.opendir(src)) {
+        const srcItem = path2.join(src, item.name);
+        const destItem = path2.join(dest, item.name);
+        promises.push(
+          runFilter(srcItem, destItem, opts).then((include) => {
+            if (include) {
+              return stat.checkPaths(srcItem, destItem, "copy", opts).then(({ destStat: destStat2 }) => {
+                return getStatsAndPerformCopy(destStat2, srcItem, destItem, opts);
+              });
+            }
+          })
+        );
+      }
+      await Promise.all(promises);
       if (!destStat) {
         await fs2.chmod(dest, srcStat.mode);
       }
@@ -1355,8 +1312,7 @@ var require_copy = __commonJS({
       try {
         resolvedDest = await fs2.readlink(dest);
       } catch (e) {
-        if (e.code === "EINVAL" || e.code === "UNKNOWN")
-          return fs2.symlink(resolvedSrc, dest);
+        if (e.code === "EINVAL" || e.code === "UNKNOWN") return fs2.symlink(resolvedSrc, dest);
         throw e;
       }
       if (opts.dereference) {
@@ -1400,31 +1356,23 @@ var require_copy_sync = __commonJS({
       }
       const { srcStat, destStat } = stat.checkPathsSync(src, dest, "copy", opts);
       stat.checkParentPathsSync(src, srcStat, dest, "copy");
-      if (opts.filter && !opts.filter(src, dest))
-        return;
+      if (opts.filter && !opts.filter(src, dest)) return;
       const destParent = path2.dirname(dest);
-      if (!fs2.existsSync(destParent))
-        mkdirsSync(destParent);
+      if (!fs2.existsSync(destParent)) mkdirsSync(destParent);
       return getStats(destStat, src, dest, opts);
     }
     function getStats(destStat, src, dest, opts) {
       const statSync2 = opts.dereference ? fs2.statSync : fs2.lstatSync;
       const srcStat = statSync2(src);
-      if (srcStat.isDirectory())
-        return onDir(srcStat, destStat, src, dest, opts);
-      else if (srcStat.isFile() || srcStat.isCharacterDevice() || srcStat.isBlockDevice())
-        return onFile(srcStat, destStat, src, dest, opts);
-      else if (srcStat.isSymbolicLink())
-        return onLink(destStat, src, dest, opts);
-      else if (srcStat.isSocket())
-        throw new Error(`Cannot copy a socket file: ${src}`);
-      else if (srcStat.isFIFO())
-        throw new Error(`Cannot copy a FIFO pipe: ${src}`);
+      if (srcStat.isDirectory()) return onDir(srcStat, destStat, src, dest, opts);
+      else if (srcStat.isFile() || srcStat.isCharacterDevice() || srcStat.isBlockDevice()) return onFile(srcStat, destStat, src, dest, opts);
+      else if (srcStat.isSymbolicLink()) return onLink(destStat, src, dest, opts);
+      else if (srcStat.isSocket()) throw new Error(`Cannot copy a socket file: ${src}`);
+      else if (srcStat.isFIFO()) throw new Error(`Cannot copy a FIFO pipe: ${src}`);
       throw new Error(`Unknown file: ${src}`);
     }
     function onFile(srcStat, destStat, src, dest, opts) {
-      if (!destStat)
-        return copyFile(srcStat, src, dest, opts);
+      if (!destStat) return copyFile(srcStat, src, dest, opts);
       return mayCopyFile(srcStat, src, dest, opts);
     }
     function mayCopyFile(srcStat, src, dest, opts) {
@@ -1437,13 +1385,11 @@ var require_copy_sync = __commonJS({
     }
     function copyFile(srcStat, src, dest, opts) {
       fs2.copyFileSync(src, dest);
-      if (opts.preserveTimestamps)
-        handleTimestamps(srcStat.mode, src, dest);
+      if (opts.preserveTimestamps) handleTimestamps(srcStat.mode, src, dest);
       return setDestMode(dest, srcStat.mode);
     }
     function handleTimestamps(srcMode, src, dest) {
-      if (fileIsNotWritable(srcMode))
-        makeFileWritable(dest, srcMode);
+      if (fileIsNotWritable(srcMode)) makeFileWritable(dest, srcMode);
       return setDestTimestamps(src, dest);
     }
     function fileIsNotWritable(srcMode) {
@@ -1460,8 +1406,7 @@ var require_copy_sync = __commonJS({
       return utimesMillisSync(dest, updatedSrcStat.atime, updatedSrcStat.mtime);
     }
     function onDir(srcStat, destStat, src, dest, opts) {
-      if (!destStat)
-        return mkDirAndCopy(srcStat.mode, src, dest, opts);
+      if (!destStat) return mkDirAndCopy(srcStat.mode, src, dest, opts);
       return copyDir(src, dest, opts);
     }
     function mkDirAndCopy(srcMode, src, dest, opts) {
@@ -1470,13 +1415,20 @@ var require_copy_sync = __commonJS({
       return setDestMode(dest, srcMode);
     }
     function copyDir(src, dest, opts) {
-      fs2.readdirSync(src).forEach((item) => copyDirItem(item, src, dest, opts));
+      const dir = fs2.opendirSync(src);
+      try {
+        let dirent;
+        while ((dirent = dir.readSync()) !== null) {
+          copyDirItem(dirent.name, src, dest, opts);
+        }
+      } finally {
+        dir.closeSync();
+      }
     }
     function copyDirItem(item, src, dest, opts) {
       const srcItem = path2.join(src, item);
       const destItem = path2.join(dest, item);
-      if (opts.filter && !opts.filter(srcItem, destItem))
-        return;
+      if (opts.filter && !opts.filter(srcItem, destItem)) return;
       const { destStat } = stat.checkPathsSync(srcItem, destItem, "copy", opts);
       return getStats(destStat, srcItem, destItem, opts);
     }
@@ -1492,8 +1444,7 @@ var require_copy_sync = __commonJS({
         try {
           resolvedDest = fs2.readlinkSync(dest);
         } catch (err) {
-          if (err.code === "EINVAL" || err.code === "UNKNOWN")
-            return fs2.symlinkSync(resolvedSrc, dest);
+          if (err.code === "EINVAL" || err.code === "UNKNOWN") return fs2.symlinkSync(resolvedSrc, dest);
           throw err;
         }
         if (opts.dereference) {
@@ -1600,8 +1551,7 @@ var require_file = __commonJS({
         stats = await fs2.stat(file);
       } catch (e) {
       }
-      if (stats && stats.isFile())
-        return;
+      if (stats && stats.isFile()) return;
       const dir = path2.dirname(file);
       let dirStats = null;
       try {
@@ -1627,18 +1577,15 @@ var require_file = __commonJS({
         stats = fs2.statSync(file);
       } catch (e) {
       }
-      if (stats && stats.isFile())
-        return;
+      if (stats && stats.isFile()) return;
       const dir = path2.dirname(file);
       try {
         if (!fs2.statSync(dir).isDirectory()) {
           fs2.readdirSync(dir);
         }
       } catch (err) {
-        if (err && err.code === "ENOENT")
-          mkdir.mkdirsSync(dir);
-        else
-          throw err;
+        if (err && err.code === "ENOENT") mkdir.mkdirsSync(dir);
+        else throw err;
       }
       fs2.writeFileSync(file, "");
     }
@@ -1672,8 +1619,7 @@ var require_link = __commonJS({
         err.message = err.message.replace("lstat", "ensureLink");
         throw err;
       }
-      if (dstStat && areIdentical(srcStat, dstStat))
-        return;
+      if (dstStat && areIdentical(srcStat, dstStat)) return;
       const dir = path2.dirname(dstpath);
       const dirExists = await pathExists(dir);
       if (!dirExists) {
@@ -1689,16 +1635,14 @@ var require_link = __commonJS({
       }
       try {
         const srcStat = fs2.lstatSync(srcpath);
-        if (dstStat && areIdentical(srcStat, dstStat))
-          return;
+        if (dstStat && areIdentical(srcStat, dstStat)) return;
       } catch (err) {
         err.message = err.message.replace("lstat", "ensureLink");
         throw err;
       }
       const dir = path2.dirname(dstpath);
       const dirExists = fs2.existsSync(dir);
-      if (dirExists)
-        return fs2.linkSync(srcpath, dstpath);
+      if (dirExists) return fs2.linkSync(srcpath, dstpath);
       mkdir.mkdirsSync(dir);
       return fs2.linkSync(srcpath, dstpath);
     }
@@ -1753,8 +1697,7 @@ var require_symlink_paths = __commonJS({
     function symlinkPathsSync(srcpath, dstpath) {
       if (path2.isAbsolute(srcpath)) {
         const exists2 = fs2.existsSync(srcpath);
-        if (!exists2)
-          throw new Error("absolute srcpath does not exist");
+        if (!exists2) throw new Error("absolute srcpath does not exist");
         return {
           toCwd: srcpath,
           toDst: srcpath
@@ -1770,8 +1713,7 @@ var require_symlink_paths = __commonJS({
         };
       }
       const srcExists = fs2.existsSync(srcpath);
-      if (!srcExists)
-        throw new Error("relative srcpath does not exist");
+      if (!srcExists) throw new Error("relative srcpath does not exist");
       return {
         toCwd: srcpath,
         toDst: path2.relative(dstdir, srcpath)
@@ -1791,8 +1733,7 @@ var require_symlink_type = __commonJS({
     var fs2 = require_fs();
     var u = require_universalify().fromPromise;
     async function symlinkType(srcpath, type) {
-      if (type)
-        return type;
+      if (type) return type;
       let stats;
       try {
         stats = await fs2.lstat(srcpath);
@@ -1802,8 +1743,7 @@ var require_symlink_type = __commonJS({
       return stats && stats.isDirectory() ? "dir" : "file";
     }
     function symlinkTypeSync(srcpath, type) {
-      if (type)
-        return type;
+      if (type) return type;
       let stats;
       try {
         stats = fs2.lstatSync(srcpath);
@@ -1842,8 +1782,7 @@ var require_symlink = __commonJS({
           fs2.stat(srcpath),
           fs2.stat(dstpath)
         ]);
-        if (areIdentical(srcStat, dstStat))
-          return;
+        if (areIdentical(srcStat, dstStat)) return;
       }
       const relative = await symlinkPaths(srcpath, dstpath);
       srcpath = relative.toDst;
@@ -1863,16 +1802,14 @@ var require_symlink = __commonJS({
       if (stats && stats.isSymbolicLink()) {
         const srcStat = fs2.statSync(srcpath);
         const dstStat = fs2.statSync(dstpath);
-        if (areIdentical(srcStat, dstStat))
-          return;
+        if (areIdentical(srcStat, dstStat)) return;
       }
       const relative = symlinkPathsSync(srcpath, dstpath);
       srcpath = relative.toDst;
       type = symlinkTypeSync(relative.toCwd, type);
       const dir = path2.dirname(dstpath);
       const exists = fs2.existsSync(dir);
-      if (exists)
-        return fs2.symlinkSync(srcpath, dstpath, type);
+      if (exists) return fs2.symlinkSync(srcpath, dstpath, type);
       mkdirsSync(dir);
       return fs2.symlinkSync(srcpath, dstpath, type);
     }
@@ -1919,8 +1856,7 @@ var require_utils2 = __commonJS({
       return str.replace(/\n/g, EOL) + EOF;
     }
     function stripBom(content) {
-      if (Buffer.isBuffer(content))
-        content = content.toString("utf8");
+      if (Buffer.isBuffer(content)) content = content.toString("utf8");
       return content.replace(/^\uFEFF/, "");
     }
     module2.exports = { stringify, stripBom };
@@ -2158,8 +2094,7 @@ var require_move_sync = __commonJS({
       const overwrite = opts.overwrite || opts.clobber || false;
       const { srcStat, isChangingCase = false } = stat.checkPathsSync(src, dest, "move", opts);
       stat.checkParentPathsSync(src, srcStat, dest, "move");
-      if (!isParentRoot(dest))
-        mkdirpSync(path2.dirname(dest));
+      if (!isParentRoot(dest)) mkdirpSync(path2.dirname(dest));
       return doRename(src, dest, overwrite, isChangingCase);
     }
     function isParentRoot(dest) {
@@ -2168,22 +2103,19 @@ var require_move_sync = __commonJS({
       return parsedPath.root === parent;
     }
     function doRename(src, dest, overwrite, isChangingCase) {
-      if (isChangingCase)
-        return rename(src, dest, overwrite);
+      if (isChangingCase) return rename(src, dest, overwrite);
       if (overwrite) {
         removeSync(dest);
         return rename(src, dest, overwrite);
       }
-      if (fs2.existsSync(dest))
-        throw new Error("dest already exists.");
+      if (fs2.existsSync(dest)) throw new Error("dest already exists.");
       return rename(src, dest, overwrite);
     }
     function rename(src, dest, overwrite) {
       try {
         fs2.renameSync(src, dest);
       } catch (err) {
-        if (err.code !== "EXDEV")
-          throw err;
+        if (err.code !== "EXDEV") throw err;
         return moveAcrossDevice(src, dest, overwrite);
       }
     }
@@ -2546,8 +2478,7 @@ var require_utils3 = __commonJS({
       function mkdirSync(fpath) {
         let resolvedPath = fpath.split(self.sep)[0];
         fpath.split(self.sep).forEach(function(name) {
-          if (!name || name.substr(-1, 1) === ":")
-            return;
+          if (!name || name.substr(-1, 1) === ":") return;
           resolvedPath += self.sep + name;
           var stat;
           try {
@@ -2555,8 +2486,7 @@ var require_utils3 = __commonJS({
           } catch (e) {
             self.fs.mkdirSync(resolvedPath);
           }
-          if (stat && stat.isFile())
-            throw Errors.FILE_IN_THE_WAY(`"${resolvedPath}"`);
+          if (stat && stat.isFile()) throw Errors.FILE_IN_THE_WAY(`"${resolvedPath}"`);
         });
       }
       mkdirSync(folder);
@@ -2564,8 +2494,7 @@ var require_utils3 = __commonJS({
     Utils.prototype.writeFileTo = function(path2, content, overwrite, attr) {
       const self = this;
       if (self.fs.existsSync(path2)) {
-        if (!overwrite)
-          return false;
+        if (!overwrite) return false;
         var stat = self.fs.statSync(path2);
         if (stat.isDirectory()) {
           return false;
@@ -2599,16 +2528,14 @@ var require_utils3 = __commonJS({
       }
       const self = this;
       self.fs.exists(path2, function(exist) {
-        if (exist && !overwrite)
-          return callback(false);
+        if (exist && !overwrite) return callback(false);
         self.fs.stat(path2, function(err, stat) {
           if (exist && stat.isDirectory()) {
             return callback(false);
           }
           var folder = pth.dirname(path2);
           self.fs.exists(folder, function(exists) {
-            if (!exists)
-              self.makeDir(folder);
+            if (!exists) self.makeDir(folder);
             self.fs.open(path2, "w", 438, function(err2, fd) {
               if (err2) {
                 self.fs.chmod(path2, 438, function() {
@@ -2654,8 +2581,7 @@ var require_utils3 = __commonJS({
           if (!pattern || pattern.test(path3)) {
             files.push(pth.normalize(path3) + (stat.isDirectory() ? self.sep : ""));
           }
-          if (stat.isDirectory() && recursive)
-            files = files.concat(findSync(path3, pattern, recursive));
+          if (stat.isDirectory() && recursive) files = files.concat(findSync(path3, pattern, recursive));
         });
         return files;
       }
@@ -2665,29 +2591,23 @@ var require_utils3 = __commonJS({
       const self = this;
       let results = [];
       self.fs.readdir(dir, function(err, list) {
-        if (err)
-          return cb(err);
+        if (err) return cb(err);
         let list_length = list.length;
-        if (!list_length)
-          return cb(null, results);
+        if (!list_length) return cb(null, results);
         list.forEach(function(file) {
           file = pth.join(dir, file);
           self.fs.stat(file, function(err2, stat) {
-            if (err2)
-              return cb(err2);
+            if (err2) return cb(err2);
             if (stat) {
               results.push(pth.normalize(file) + (stat.isDirectory() ? self.sep : ""));
               if (stat.isDirectory()) {
                 self.findFilesAsync(file, function(err3, res) {
-                  if (err3)
-                    return cb(err3);
+                  if (err3) return cb(err3);
                   results = results.concat(res);
-                  if (!--list_length)
-                    cb(null, results);
+                  if (!--list_length) cb(null, results);
                 });
               } else {
-                if (!--list_length)
-                  cb(null, results);
+                if (!--list_length) cb(null, results);
               }
             }
           });
@@ -2707,8 +2627,7 @@ var require_utils3 = __commonJS({
       }
       let len = buf.length;
       let crc = ~0;
-      for (let off = 0; off < len; )
-        crc = Utils.crc32update(crc, buf[off++]);
+      for (let off = 0; off < len; ) crc = Utils.crc32update(crc, buf[off++]);
       return ~crc >>> 0;
     };
     Utils.methodToString = function(method) {
@@ -2722,20 +2641,17 @@ var require_utils3 = __commonJS({
       }
     };
     Utils.canonical = function(path2) {
-      if (!path2)
-        return "";
+      if (!path2) return "";
       const safeSuffix = pth.posix.normalize("/" + path2.split("\\").join("/"));
       return pth.join(".", safeSuffix);
     };
     Utils.zipnamefix = function(path2) {
-      if (!path2)
-        return "";
+      if (!path2) return "";
       const safeSuffix = pth.posix.normalize("/" + path2.split("\\").join("/"));
       return pth.posix.join(".", safeSuffix);
     };
     Utils.findLast = function(arr, callback) {
-      if (!Array.isArray(arr))
-        throw new TypeError("arr is not array");
+      if (!Array.isArray(arr)) throw new TypeError("arr is not array");
       const len = arr.length >>> 0;
       for (let i = len - 1; i >= 0; i--) {
         if (callback(arr[i], i, arr)) {
@@ -3219,8 +3135,7 @@ var require_mainHeader = __commonJS({
         toJSON: function() {
           const offset = function(nr, len) {
             let offs = nr.toString(16).toUpperCase();
-            while (offs.length < len)
-              offs = "0" + offs;
+            while (offs.length < len) offs = "0" + offs;
             return "0x" + offs;
           };
           return {
@@ -3344,8 +3259,7 @@ var require_zipcrypto = __commonJS({
     genSalt.node = () => {
       const salt = Buffer.alloc(12);
       const len = salt.length;
-      for (let i = 0; i < len; i++)
-        salt[i] = Math.random() * 256 & 255;
+      for (let i = 0; i < len; i++) salt[i] = Math.random() * 256 & 255;
       return salt;
     };
     var config = {
@@ -3384,8 +3298,7 @@ var require_zipcrypto = __commonJS({
     function make_encrypter(pwd) {
       const keys = new Initkeys(pwd);
       return function(data, result, pos = 0) {
-        if (!result)
-          result = Buffer.alloc(data.length);
+        if (!result) result = Buffer.alloc(data.length);
         for (let c of data) {
           const k = keys.next();
           result[pos++] = c ^ k;
@@ -3418,15 +3331,12 @@ var require_zipcrypto = __commonJS({
       }
     }
     function encrypt(data, header, pwd, oldlike = false) {
-      if (data == null)
-        data = Buffer.alloc(0);
-      if (!Buffer.isBuffer(data))
-        data = Buffer.from(data.toString());
+      if (data == null) data = Buffer.alloc(0);
+      if (!Buffer.isBuffer(data)) data = Buffer.from(data.toString());
       const encrypter = make_encrypter(pwd);
       const salt = config.genSalt();
       salt[11] = header.crc >>> 24 & 255;
-      if (oldlike)
-        salt[10] = header.crc >>> 16 & 255;
+      if (oldlike) salt[10] = header.crc >>> 16 & 255;
       const result = Buffer.alloc(data.length + 12);
       encrypter(salt, result);
       return encrypter(data, result, 12);
@@ -3507,8 +3417,7 @@ var require_zipEntry = __commonJS({
         }
         var compressedData = getCompressedDataFromZip();
         if (compressedData.length === 0) {
-          if (async && callback)
-            callback(compressedData);
+          if (async && callback) callback(compressedData);
           return compressedData;
         }
         if (_centralHeader.encrypted) {
@@ -3522,12 +3431,10 @@ var require_zipEntry = __commonJS({
           case Utils.Constants.STORED:
             compressedData.copy(data);
             if (!crc32OK(data)) {
-              if (async && callback)
-                callback(data, Utils.Errors.BAD_CRC());
+              if (async && callback) callback(data, Utils.Errors.BAD_CRC());
               throw Utils.Errors.BAD_CRC();
             } else {
-              if (async && callback)
-                callback(data);
+              if (async && callback) callback(data);
               return data;
             }
           case Utils.Constants.DEFLATED:
@@ -3553,15 +3460,13 @@ var require_zipEntry = __commonJS({
             }
             break;
           default:
-            if (async && callback)
-              callback(Buffer.alloc(0), Utils.Errors.UNKNOWN_METHOD());
+            if (async && callback) callback(Buffer.alloc(0), Utils.Errors.UNKNOWN_METHOD());
             throw Utils.Errors.UNKNOWN_METHOD();
         }
       }
       function compress(async, callback) {
         if ((!uncompressedData || !uncompressedData.length) && Buffer.isBuffer(input)) {
-          if (async && callback)
-            callback(getCompressedDataFromZip());
+          if (async && callback) callback(getCompressedDataFromZip());
           return getCompressedDataFromZip();
         }
         if (uncompressedData.length && !_isDirectory) {
@@ -3571,8 +3476,7 @@ var require_zipEntry = __commonJS({
               _centralHeader.compressedSize = _centralHeader.size;
               compressedData = Buffer.alloc(uncompressedData.length);
               uncompressedData.copy(compressedData);
-              if (async && callback)
-                callback(compressedData);
+              if (async && callback) callback(compressedData);
               return compressedData;
             default:
             case Utils.Constants.DEFLATED:
@@ -3681,8 +3585,7 @@ var require_zipEntry = __commonJS({
         set comment(val) {
           _comment = Utils.toBuffer(val, decoder.encode);
           _centralHeader.commentLength = _comment.length;
-          if (_comment.length > 65535)
-            throw Utils.Errors.COMMENT_TOO_LONG();
+          if (_comment.length > 65535) throw Utils.Errors.COMMENT_TOO_LONG();
         },
         get name() {
           var n = decoder.decode(_entryName);
@@ -3804,8 +3707,7 @@ var require_zipFile = __commonJS({
         for (const elem of Object.keys(entryTable)) {
           const elements = elem.split("/");
           elements.pop();
-          if (!elements.length)
-            continue;
+          if (!elements.length) continue;
           for (let i = 0; i < elements.length; i++) {
             const sub = elements.slice(0, i + 1).join("/") + "/";
             foldersList.add(sub);
@@ -3838,8 +3740,7 @@ var require_zipFile = __commonJS({
           if (entry.header.extraLength) {
             entry.extra = inBuffer.slice(tmp, tmp += entry.header.extraLength);
           }
-          if (entry.header.commentLength)
-            entry.comment = inBuffer.slice(tmp, tmp + entry.header.commentLength);
+          if (entry.header.commentLength) entry.comment = inBuffer.slice(tmp, tmp + entry.header.commentLength);
           index += entry.header.centralHeaderSize;
           entryList[i] = entry;
           entryTable[entry.entryName] = entry;
@@ -3850,11 +3751,9 @@ var require_zipFile = __commonJS({
       function readMainHeader(readNow) {
         var i = inBuffer.length - Utils.Constants.ENDHDR, max = Math.max(0, i - 65535), n = max, endStart = inBuffer.length, endOffset = -1, commentEnd = 0;
         const trailingSpace = typeof opts.trailingSpace === "boolean" ? opts.trailingSpace : false;
-        if (trailingSpace)
-          max = 0;
+        if (trailingSpace) max = 0;
         for (i; i >= n; i--) {
-          if (inBuffer[i] !== 80)
-            continue;
+          if (inBuffer[i] !== 80) continue;
           if (inBuffer.readUInt32LE(i) === Utils.Constants.ENDSIG) {
             endOffset = i;
             commentEnd = i;
@@ -3872,14 +3771,12 @@ var require_zipFile = __commonJS({
             break;
           }
         }
-        if (endOffset == -1)
-          throw Utils.Errors.INVALID_FORMAT();
+        if (endOffset == -1) throw Utils.Errors.INVALID_FORMAT();
         mainHeader.loadFromBinary(inBuffer.slice(endOffset, endStart));
         if (mainHeader.commentLength) {
           _comment = inBuffer.slice(commentEnd + Utils.Constants.ENDHDR);
         }
-        if (readNow)
-          readEntries();
+        if (readNow) readEntries();
       }
       function sortEntries() {
         if (entryList.length > 1 && !noSort) {
@@ -4084,11 +3981,9 @@ var require_zipFile = __commonJS({
               if (entryLists.length > 0) {
                 const entry = entryLists.shift();
                 const name = entry.entryName + entry.extra.toString();
-                if (onItemStart)
-                  onItemStart(name);
+                if (onItemStart) onItemStart(name);
                 entry.getCompressedDataAsync(function(compressedData) {
-                  if (onItemEnd)
-                    onItemEnd(name);
+                  if (onItemEnd) onItemEnd(name);
                   entry.header.offset = dindex;
                   const localHeader = entry.packLocalHeader();
                   const dataLength = localHeader.length + compressedData.length;
@@ -4163,8 +4058,7 @@ var require_adm_zip = __commonJS({
         if (!(input instanceof Uint8Array)) {
           Object.assign(opts, input);
           input = opts.input ? opts.input : void 0;
-          if (opts.input)
-            delete opts.input;
+          if (opts.input) delete opts.input;
         }
         if (Buffer.isBuffer(input)) {
           inBuffer = input;
@@ -4191,10 +4085,8 @@ var require_adm_zip = __commonJS({
       function getEntry(entry) {
         if (entry && _zip) {
           var item;
-          if (typeof entry === "string")
-            item = _zip.getEntry(pth.posix.normalize(entry));
-          if (typeof entry === "object" && typeof entry.entryName !== "undefined" && typeof entry.header !== "undefined")
-            item = _zip.getEntry(entry.entryName);
+          if (typeof entry === "string") item = _zip.getEntry(pth.posix.normalize(entry));
+          if (typeof entry === "object" && typeof entry.entryName !== "undefined" && typeof entry.header !== "undefined") item = _zip.getEntry(entry.entryName);
           if (item) {
             return item;
           }
@@ -4207,7 +4099,7 @@ var require_adm_zip = __commonJS({
       }
       function filenameFilter(filterfn) {
         if (filterfn instanceof RegExp) {
-          return function(rx) {
+          return /* @__PURE__ */ function(rx) {
             return function(filename) {
               return rx.test(filename);
             };
@@ -4395,8 +4287,7 @@ var require_adm_zip = __commonJS({
             zipPath += zipName ? zipName : p;
             const _attr = filetools.fs.statSync(localPath2);
             const data = _attr.isFile() ? filetools.fs.readFileSync(localPath2) : Buffer.alloc(0);
-            if (_attr.isDirectory())
-              zipPath += filetools.sep;
+            if (_attr.isDirectory()) zipPath += filetools.sep;
             this.addFile(zipPath, data, comment, _attr);
           } else {
             throw Utils.Errors.FILE_NOT_FOUND(localPath2);
@@ -4426,15 +4317,13 @@ var require_adm_zip = __commonJS({
           let { zipPath, zipName } = options2;
           const self = this;
           filetools.fs.stat(localPath2, function(err, stats) {
-            if (err)
-              return callback(err, false);
+            if (err) return callback(err, false);
             zipPath = zipPath ? fixPath(zipPath) : "";
             const p = pth.win32.basename(pth.win32.normalize(localPath2));
             zipPath += zipName ? zipName : p;
             if (stats.isFile()) {
               filetools.fs.readFile(localPath2, function(err2, data) {
-                if (err2)
-                  return callback(err2, false);
+                if (err2) return callback(err2, false);
                 self.addFile(zipPath, data, comment, stats);
                 return setImmediate(callback, void 0, true);
               });
@@ -4500,8 +4389,7 @@ var require_adm_zip = __commonJS({
                   p = p.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^\x20-\x7E]/g, "");
                   if (filter(p)) {
                     filetools.fs.stat(filepath, function(er0, stats) {
-                      if (er0)
-                        callback(void 0, er0);
+                      if (er0) callback(void 0, er0);
                       if (stats.isFile()) {
                         filetools.fs.readFile(filepath, function(er1, data) {
                           if (er1) {
@@ -4546,7 +4434,7 @@ var require_adm_zip = __commonJS({
           localPath = pth.resolve(fixPath(options2.localPath));
           let { zipPath, filter, namefix } = options2;
           if (filter instanceof RegExp) {
-            filter = function(rx) {
+            filter = /* @__PURE__ */ function(rx) {
               return function(filename) {
                 return rx.test(filename);
               };
@@ -4560,8 +4448,7 @@ var require_adm_zip = __commonJS({
           if (namefix == "latin1") {
             namefix = (str) => str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^\x20-\x7E]/g, "");
           }
-          if (typeof namefix !== "function")
-            namefix = (str) => str;
+          if (typeof namefix !== "function") namefix = (str) => str;
           const relPathFix = (entry) => pth.join(zipPath, namefix(relativePath(localPath, entry)));
           const fileNameFix = (entry) => pth.win32.basename(pth.win32.normalize(namefix(entry)));
           filetools.fs.open(localPath, "r", function(err) {
@@ -4571,16 +4458,13 @@ var require_adm_zip = __commonJS({
               callback(void 0, err);
             } else {
               filetools.findFilesAsync(localPath, function(err2, fileEntries) {
-                if (err2)
-                  return callback(err2);
+                if (err2) return callback(err2);
                 fileEntries = fileEntries.filter((dir) => filter(relPathFix(dir)));
-                if (!fileEntries.length)
-                  callback(void 0, false);
+                if (!fileEntries.length) callback(void 0, false);
                 setImmediate(
                   fileEntries.reverse().reduce(function(next, entry) {
                     return function(err3, done) {
-                      if (err3 || done === false)
-                        return setImmediate(next, err3, false);
+                      if (err3 || done === false) return setImmediate(next, err3, false);
                       self.addLocalFileAsync(
                         {
                           localPath: entry,
@@ -4608,10 +4492,8 @@ var require_adm_zip = __commonJS({
         addLocalFolderPromise: function(localPath2, props) {
           return new Promise((resolve, reject) => {
             this.addLocalFolderAsync2(Object.assign({ localPath: localPath2 }, props), (err, done) => {
-              if (err)
-                reject(err);
-              if (done)
-                resolve(this);
+              if (err) reject(err);
+              if (done) resolve(this);
             });
           });
         },
@@ -4650,8 +4532,7 @@ var require_adm_zip = __commonJS({
           fileattr = (fileattr | unix << 16) >>> 0;
           entry.attr = fileattr;
           entry.setData(content);
-          if (!update)
-            _zip.setEntry(entry);
+          if (!update) _zip.setEntry(entry);
           return entry;
         },
         /**
@@ -4706,8 +4587,7 @@ var require_adm_zip = __commonJS({
           if (item.isDirectory) {
             var children = _zip.getEntryChildren(item);
             children.forEach(function(child) {
-              if (child.isDirectory)
-                return;
+              if (child.isDirectory) return;
               var content2 = child.getData();
               if (!content2) {
                 throw Utils.Errors.CANT_EXTRACT_FILE();
@@ -4720,8 +4600,7 @@ var require_adm_zip = __commonJS({
             return true;
           }
           var content = item.getData(_zip.password);
-          if (!content)
-            throw Utils.Errors.CANT_EXTRACT_FILE();
+          if (!content) throw Utils.Errors.CANT_EXTRACT_FILE();
           if (filetools.fs.existsSync(target) && !overwrite) {
             throw Utils.Errors.CANT_OVERRIDE();
           }
@@ -4766,8 +4645,7 @@ var require_adm_zip = __commonJS({
           keepOriginalPermission = get_Bool(false, keepOriginalPermission);
           pass = get_Str(keepOriginalPermission, pass);
           overwrite = get_Bool(false, overwrite);
-          if (!_zip)
-            throw Utils.Errors.NO_ZIP();
+          if (!_zip) throw Utils.Errors.NO_ZIP();
           _zip.entries.forEach(function(entry) {
             var entryName = sanitize(targetPath, canonical(entry.entryName));
             if (entry.isDirectory) {
@@ -4833,8 +4711,7 @@ var require_adm_zip = __commonJS({
             const dirAttr = keepOriginalPermission ? entry.header.fileAttr : void 0;
             try {
               filetools.makeDir(dirPath);
-              if (dirAttr)
-                filetools.fs.chmodSync(dirPath, dirAttr);
+              if (dirAttr) filetools.fs.chmodSync(dirPath, dirAttr);
               filetools.fs.utimesSync(dirPath, entry.header.time, entry.header.time);
             } catch (er) {
               callback(getError("Unable to create folder", dirPath));
@@ -4888,13 +4765,11 @@ var require_adm_zip = __commonJS({
           if (!targetFileName && opts.filename) {
             targetFileName = opts.filename;
           }
-          if (!targetFileName)
-            return;
+          if (!targetFileName) return;
           var zipData = _zip.compressToBuffer();
           if (zipData) {
             var ok = filetools.writeFileTo(targetFileName, zipData, true);
-            if (typeof callback === "function")
-              callback(!ok ? new Error("failed") : null, "");
+            if (typeof callback === "function") callback(!ok ? new Error("failed") : null, "");
           }
         },
         /**
@@ -4909,10 +4784,8 @@ var require_adm_zip = __commonJS({
         writeZipPromise: function(targetFileName, props) {
           const { overwrite, perm } = Object.assign({ overwrite: true }, props);
           return new Promise((resolve, reject) => {
-            if (!targetFileName && opts.filename)
-              targetFileName = opts.filename;
-            if (!targetFileName)
-              reject("ADM-ZIP: ZIP File Name Missing");
+            if (!targetFileName && opts.filename) targetFileName = opts.filename;
+            if (!targetFileName) reject("ADM-ZIP: ZIP File Name Missing");
             this.toBufferPromise().then((zipData) => {
               const ret = (done) => done ? resolve(done) : reject("ADM-ZIP: Wasn't able to write zip file");
               filetools.writeFileToAsync(targetFileName, zipData, overwrite, perm, ret);
@@ -4969,12 +4842,26 @@ var LocalBackupSettingTab = class extends import_obsidian.PluginSettingTab {
     containerEl.empty();
     containerEl.createEl("h3", { text: "General Settings" });
     const ribbonIconDesc = document.createDocumentFragment();
-    ribbonIconDesc.appendChild(document.createTextNode("Show a ribbon icon in the left sidebar."));
+    ribbonIconDesc.appendChild(
+      document.createTextNode("Show a ribbon icon in the left sidebar.")
+    );
     ribbonIconDesc.appendChild(document.createElement("br"));
-    ribbonIconDesc.appendChild(document.createTextNode("Please close and reopen Obsidian for this setting to take effect."));
+    ribbonIconDesc.appendChild(
+      document.createTextNode(
+        "Please close and reopen Obsidian for this setting to take effect."
+      )
+    );
     new import_obsidian.Setting(containerEl).setName("Backup once on startup").setDesc("Run local backup once on Obsidian starts.").addToggle(
       (toggle) => toggle.setValue(this.plugin.settings.startupBackupStatus).onChange(async (value) => {
         this.plugin.settings.startupBackupStatus = value;
+        await this.plugin.saveSettings();
+      })
+    );
+    new import_obsidian.Setting(containerEl).setName("Backup once on quit").setDesc(
+      "Run local backup once on Obsidian quits. Works on `External file archiver backup` toggled."
+    ).addToggle(
+      (toggle) => toggle.setValue(this.plugin.settings.onquitBackupStatus).onChange(async (value) => {
+        this.plugin.settings.onquitBackupStatus = value;
         await this.plugin.saveSettings();
       })
     );
@@ -5008,22 +4895,32 @@ var LocalBackupSettingTab = class extends import_obsidian.PluginSettingTab {
         await this.plugin.saveSettings();
       })
     );
-    new import_obsidian.Setting(containerEl).setName("Windows output path (optional)").setDesc("Setup a Windows backup storage path. eg. D:\\documents\\Obsidian").addText(
+    new import_obsidian.Setting(containerEl).setName("Windows output path (optional)").setDesc(
+      "Setup a Windows backup storage path. eg. D:\\documents\\Obsidian"
+    ).addText(
       (text) => text.setValue(this.plugin.settings.winSavePathValue).onChange(async (value) => {
         this.plugin.settings.winSavePathValue = value;
         await this.plugin.saveSettings();
       })
     );
-    new import_obsidian.Setting(containerEl).setName("Linux/MacOS output path (optional)").setDesc("Setup a Unix backup storage path. eg. /home/user/Documents/Obsidian").addText(
+    new import_obsidian.Setting(containerEl).setName("Linux/MacOS output path (optional)").setDesc(
+      "Setup a Unix backup storage path. eg. /home/user/Documents/Obsidian"
+    ).addText(
       (text) => text.setValue(this.plugin.settings.unixSavePathValue).onChange(async (value) => {
         this.plugin.settings.unixSavePathValue = value;
         await this.plugin.saveSettings();
       })
     );
     const fileNameFragment = document.createDocumentFragment();
-    fileNameFragment.appendChild(document.createTextNode("Name of the backup ZIP file."));
+    fileNameFragment.appendChild(
+      document.createTextNode("Name of the backup ZIP file.")
+    );
     fileNameFragment.appendChild(document.createElement("br"));
-    fileNameFragment.appendChild(document.createTextNode("You may use date placeholders to add date and time."));
+    fileNameFragment.appendChild(
+      document.createTextNode(
+        "You may use date placeholders to add date and time."
+      )
+    );
     fileNameFragment.appendChild(document.createElement("br"));
     fileNameFragment.appendChild(document.createTextNode("%Y for year"));
     fileNameFragment.appendChild(document.createElement("br"));
@@ -5037,10 +4934,22 @@ var LocalBackupSettingTab = class extends import_obsidian.PluginSettingTab {
     fileNameFragment.appendChild(document.createElement("br"));
     fileNameFragment.appendChild(document.createTextNode("%S for second"));
     fileNameFragment.appendChild(document.createElement("br"));
-    fileNameFragment.appendChild(document.createTextNode("Default: {vaultName}-Backup-%Y_%m_%d-%H_%M_%S"));
+    fileNameFragment.appendChild(
+      document.createTextNode(
+        "Default: {vaultName}-Backup-%Y_%m_%d-%H_%M_%S"
+      )
+    );
     new import_obsidian.Setting(containerEl).setName("File name").setDesc(fileNameFragment).addText(
       (text) => text.setValue(this.plugin.settings.fileNameFormatValue).onChange(async (value) => {
         this.plugin.settings.fileNameFormatValue = value;
+        await this.plugin.saveSettings();
+      })
+    );
+    new import_obsidian.Setting(containerEl).setName("Excluded directories").setDesc(
+      "Specify directories to exclude from backup. Use comma-separated list with wildcards (e.g., .git, .trash, node_modules, *.mp4) If `External file archiver backup` turns on, it's recommend to clear this setting and customize your arguments in `Customized arguments`"
+    ).addText(
+      (text) => text.setPlaceholder(".git, .trash, node_modules").setValue(this.plugin.settings.excludedDirectoriesValue).onChange(async (value) => {
+        this.plugin.settings.excludedDirectoriesValue = value;
         await this.plugin.saveSettings();
       })
     );
@@ -5107,70 +5016,37 @@ var LocalBackupSettingTab = class extends import_obsidian.PluginSettingTab {
         await this.plugin.saveSettings();
       })
     );
-    new import_obsidian.Setting(containerEl).setName("Show notifications").setDesc("Enable/Disable normal notifications, keep exceptions only").addToggle(
+    new import_obsidian.Setting(containerEl).setName("Show notifications").setDesc(
+      "Enable/Disable normal notifications, keep exceptions only"
+    ).addToggle(
       (toggle) => toggle.setValue(this.plugin.settings.showNotifications).onChange(async (value) => {
         this.plugin.settings.showNotifications = value;
         await this.plugin.saveSettings();
       })
     );
-    containerEl.createEl("h3", { text: "One Way Backup Settings" });
-    new import_obsidian.Setting(containerEl).setName("Enable one way backups").setDesc("Enable one-way backups to another folder").addToggle(
-      (toggle) => toggle.setValue(this.plugin.settings.oneWayBackupStatus).onChange(async (value) => {
-        this.plugin.settings.oneWayBackupStatus = value;
-        await this.plugin.saveSettings();
+    new import_obsidian.Setting(containerEl).addButton(
+      (btn) => btn.setTooltip("Reload Local-Backup to apply changes.").setButtonText("Apply & Reload").onClick(async () => {
+        new import_obsidian.Notice("Local-Backup Reloading.");
+        await this.plugin.unload();
+        await this.plugin.load();
+        new import_obsidian.Notice("Local-Backup Reloaded.");
       })
     );
-    new import_obsidian.Setting(containerEl).setName("One way Windows output path").setDesc("Setup a Windows one-way backup storage path. eg. D:\\documents\\OneWayBackup").addText(
-      (text) => text.setValue(this.plugin.settings.oneWayWinSavePathValue).onChange(async (value) => {
-        this.plugin.settings.oneWayWinSavePathValue = value;
-        await this.plugin.saveSettings();
-      })
-    );
-    new import_obsidian.Setting(containerEl).setName("One way Linux/MacOS output path").setDesc("Setup a Unix one-way backup storage path. eg. /home/user/Documents/OneWayBackup").addText(
-      (text) => text.setValue(this.plugin.settings.oneWayUnixSavePathValue).onChange(async (value) => {
-        this.plugin.settings.oneWayUnixSavePathValue = value;
-        await this.plugin.saveSettings();
-      })
-    );
-    new import_obsidian.Setting(containerEl).setName("One way backup history length (days)").setDesc(
-      "Specify the number of days one-way backups should be retained. (0 -- Infinity)"
-    ).addText(
-      (text) => text.setValue(this.plugin.settings.oneWayLifecycleValue).onChange(async (value) => {
-        const numericValue = parseFloat(value);
-        if (isNaN(numericValue) || numericValue < 0) {
-          new import_obsidian.Notice(
-            "One way backup lifecycle must be a non-negative number."
-          );
-          return;
-        }
-        this.plugin.settings.oneWayLifecycleValue = value;
-        await this.plugin.saveSettings();
-      })
-    );
-    new import_obsidian.Setting(containerEl).setName("One way backups per day").setDesc(
-      "Specify the number of one-way backups per day to keep. (0 -- Infinity)"
-    ).addText(
-      (text) => text.setValue(this.plugin.settings.oneWayBackupsPerDayValue).onChange(async (value) => {
-        const numericValue = parseFloat(value);
-        if (isNaN(numericValue) || numericValue < 0) {
-          new import_obsidian.Notice(
-            "One way backups per day must be a non-negative number."
-          );
-          return;
-        }
-        this.plugin.settings.oneWayBackupsPerDayValue = value;
-        await this.plugin.saveSettings();
-      })
-    );
-    containerEl.createEl("h3", { text: "File Archiver Settings (Optional)" });
-    new import_obsidian.Setting(containerEl).setName("Backup by Calling external file archiver").setDesc("If toggled, backups will be created by calling external file archiver.").addToggle(
+    containerEl.createEl("h3", {
+      text: "File Archiver Settings (Optional)"
+    });
+    new import_obsidian.Setting(containerEl).setName("External file archiver backup").setDesc(
+      "If toggled, backups will be created by calling external file archiver. Using 7-Zip is recommended."
+    ).addToggle(
       (toggle) => toggle.setValue(this.plugin.settings.callingArchiverStatus).onChange(async (value) => {
         this.plugin.settings.callingArchiverStatus = value;
         await this.plugin.saveSettings();
       })
     );
-    new import_obsidian.Setting(containerEl).setName("Select file archiver").setDesc("The selected archiver must be installed. eg. 7-Zip for Windows, 7-Zip/p7zip for Unix").addDropdown((dropDown) => {
-      dropDown.addOption("sevenZip", "7-Zip").addOption("winRAR", "WinRAR").addOption("bandizip", "bandizip").setValue(this.plugin.settings.archiverTypeValue).onChange(async (value) => {
+    new import_obsidian.Setting(containerEl).setName("Select file archiver").setDesc(
+      "The selected archiver must be installed. eg. 7-Zip for Windows, 7-Zip/p7zip for Unix"
+    ).addDropdown((dropDown) => {
+      dropDown.addOption("sevenZip", "7-Zip").addOption("winRAR", "WinRAR").addOption("bandizip", "Bandizip").setValue(this.plugin.settings.archiverTypeValue).onChange(async (value) => {
         this.plugin.settings.archiverTypeValue = value;
         await this.plugin.saveSettings();
       });
@@ -5181,7 +5057,9 @@ var LocalBackupSettingTab = class extends import_obsidian.PluginSettingTab {
         await this.plugin.saveSettings();
       });
     });
-    new import_obsidian.Setting(containerEl).setName("File archiver path (Win)").setDesc("Full path of Archiver. eg. D:\\software\\7-Zip\\7z.exe for Windows. Using bz.exe (Bandizip) for Windows is recommended.").addText(
+    new import_obsidian.Setting(containerEl).setName("File archiver path (Win)").setDesc(
+      "Full path of Archiver. eg. D:\\software\\7-Zip\\7z.exe. And bz.exe for Bandizip, WinRAR.exe for WinRAR."
+    ).addText(
       (text) => text.setValue(this.plugin.settings.archiverWinPathValue).onChange(async (value) => {
         this.plugin.settings.archiverWinPathValue = value;
         await this.plugin.saveSettings();
@@ -5190,6 +5068,14 @@ var LocalBackupSettingTab = class extends import_obsidian.PluginSettingTab {
     new import_obsidian.Setting(containerEl).setName("File archiver path (Unix)").setDesc("Full path of Archiver. eg. /usr/bin/7z or 7z for Unix.").addText(
       (text) => text.setValue(this.plugin.settings.archiverUnixPathValue).onChange(async (value) => {
         this.plugin.settings.archiverUnixPathValue = value;
+        await this.plugin.saveSettings();
+      })
+    );
+    new import_obsidian.Setting(containerEl).setName("Customized arguments").setDesc(
+      "Add your customized arguments when creating archive files. eg. `-pMySecretPassword` for 7-Zip. For more, read document of your activated archiver."
+    ).addText(
+      (text) => text.setValue(this.plugin.settings.customizedArguments).onChange(async (value) => {
+        this.plugin.settings.customizedArguments = value;
         await this.plugin.saveSettings();
       })
     );
@@ -5215,14 +5101,12 @@ var LocalBackupUtils = class {
    * Delete backups by lifecycleSetting
    * @param winSavePath
    * @param unixSavePath
-   * @param fileNameFormat 
-   * @param lifecycle 
-   * @returns 
+   * @param fileNameFormat
+   * @param lifecycle
+   * @returns
    */
   deleteBackupsByLifeCycle(winSavePath, unixSavePath, fileNameFormat, lifecycle) {
-    if (this.plugin.settings.showConsoleLog) {
-      console.log("Run deleteBackupsByLifeCycle");
-    }
+    this.log("Run deleteBackupsByLifeCycle", "log");
     const os = require("os");
     const platform = os.platform();
     let savePathSetting = "";
@@ -5237,7 +5121,7 @@ var LocalBackupUtils = class {
     }
     fs.readdir(savePathSetting, (err, files) => {
       if (err) {
-        console.error(err);
+        this.log(err.message, "error");
         return;
       }
       if (parseInt(lifecycle) !== 0) {
@@ -5248,12 +5132,14 @@ var LocalBackupUtils = class {
           const matchFileName = file.match(fileNameRegex);
           if (stats.isFile() && matchFileName !== null) {
             const parseTime = stats.mtime;
-            const createDate = new Date(parseTime.getFullYear(), parseTime.getMonth(), parseTime.getDate());
+            const createDate = new Date(
+              parseTime.getFullYear(),
+              parseTime.getMonth(),
+              parseTime.getDate()
+            );
             if (createDate < currentDate) {
               fs.remove(filePath);
-              if (this.plugin.settings.showConsoleLog) {
-                console.log(`Backup removed by deleteBackupsByLifeCycle: ${filePath}`);
-              }
+              this.log(`Backup removed by deleteBackupsByLifeCycle: ${filePath}`, "log");
             }
           }
         });
@@ -5263,14 +5149,12 @@ var LocalBackupUtils = class {
   /**
    * Delete backups by backupsPerDayValue
    * @param winSavePath
-   * @param unixSavePath 
-   * @param fileNameFormat 
-   * @param backupsPerDay 
+   * @param unixSavePath
+   * @param fileNameFormat
+   * @param backupsPerDay
    */
   deletePerDayBackups(winSavePath, unixSavePath, fileNameFormat, backupsPerDay) {
-    if (this.plugin.settings.showConsoleLog) {
-      console.log("Run deletePerDayBackups");
-    }
+    this.log("Run deletePerDayBackups", "log");
     if (parseInt(backupsPerDay) === 0) {
       return;
     }
@@ -5284,7 +5168,7 @@ var LocalBackupUtils = class {
     }
     fs.readdir(savePathSetting, (err, files) => {
       if (err) {
-        console.error(err);
+        this.log(err.message, "error");
         return;
       }
       const currentDate = /* @__PURE__ */ new Date();
@@ -5300,20 +5184,25 @@ var LocalBackupUtils = class {
         const filePath = path.join(savePathSetting, file);
         const stats = fs.statSync(filePath);
         const parseTime = stats.mtime;
-        const createDate = new Date(parseTime.getFullYear(), parseTime.getMonth(), parseTime.getDate());
+        const createDate = new Date(
+          parseTime.getFullYear(),
+          parseTime.getMonth(),
+          parseTime.getDate()
+        );
         return createDate.getTime() === currentDate.getTime();
       });
       if (todayBackupFiles.length > parseInt(backupsPerDay)) {
-        const filesToDelete = todayBackupFiles.slice(0, todayBackupFiles.length - parseInt(backupsPerDay));
+        const filesToDelete = todayBackupFiles.slice(
+          0,
+          todayBackupFiles.length - parseInt(backupsPerDay)
+        );
         filesToDelete.forEach((file) => {
           const filePath = path.join(savePathSetting, file);
           fs.remove(filePath, (err2) => {
             if (err2) {
-              console.error(`Failed to remove backup file: ${filePath}`, err2);
+              this.log(`Failed to remove backup file: ${filePath}, ${err2.message}`, "error");
             } else {
-              if (this.plugin.settings.showConsoleLog) {
-                console.log(`Backup removed by deletePerDayBackups: ${filePath}`);
-              }
+              this.log(`Backup removed by deletePerDayBackups: ${filePath}`, "log");
             }
           });
         });
@@ -5322,8 +5211,8 @@ var LocalBackupUtils = class {
   }
   /**
    * Generate regex from custom pattern,
-   * @param customPattern 
-   * @returns 
+   * @param customPattern
+   * @returns
    */
   generateRegexFromCustomPattern(customPattern) {
     const regexPattern = customPattern.replace(/%Y/g, "\\d{4}").replace(/%m/g, "\\d{2}").replace(/%d/g, "\\d{2}").replace(/%H/g, "\\d{2}").replace(/%M/g, "\\d{2}").replace(/%S/g, "\\d{2}");
@@ -5331,38 +5220,82 @@ var LocalBackupUtils = class {
   }
   /**
    * Create zip file by adm-zip
-   * @param vaultPath 
-   * @param backupZipPath 
+   * @param vaultPath
+   * @param backupZipPath
    */
   async createZipByAdmZip(vaultPath, backupZipPath) {
     const zip = new import_adm_zip.default();
-    zip.addLocalFolder(vaultPath);
+    const excludedPatterns = this.plugin.settings.excludedDirectoriesValue.split(",").map((pattern) => pattern.trim()).filter((pattern) => pattern.length > 0);
+    if (excludedPatterns.length > 0 && this.plugin.settings.showConsoleLog) {
+      this.log(`Excluding patterns: ${excludedPatterns.join(", ")}`, "log");
+    }
+    if (excludedPatterns.length === 0) {
+      zip.addLocalFolder(vaultPath);
+    } else {
+      const fs2 = require_lib();
+      const path2 = require("path");
+      const addFilesRecursively = (dirPath, relativePath = "") => {
+        const entries = fs2.readdirSync(dirPath);
+        for (const entry of entries) {
+          const fullPath = path2.join(dirPath, entry);
+          const entryRelativePath = path2.join(relativePath, entry);
+          if (this.shouldExcludePath(
+            entryRelativePath,
+            excludedPatterns
+          )) {
+            continue;
+          }
+          const stats = fs2.statSync(fullPath);
+          if (stats.isDirectory()) {
+            addFilesRecursively(fullPath, entryRelativePath);
+          } else {
+            zip.addLocalFile(fullPath, relativePath);
+          }
+        }
+      };
+      addFilesRecursively(vaultPath);
+    }
     await zip.writeZipPromise(backupZipPath);
   }
   /**
    * Create file by external archiver
-   * @param archiverType 
-   * @param archiverPath 
-   * @param vaultPath 
-   * @param backupZipPath 
-   * @returns 
+   * @param archiverType
+   * @param archiverPath
+   * @param vaultPath
+   * @param backupZipPath
+   * @returns
    */
-  async createFileByArchiver(archiverType, archiverPath, archiveFileType, vaultPath, backupFilePath) {
+  async createFileByArchiver(archiverType, archiverPath, archiveFileType, vaultPath, backupFilePath, customizedArguments) {
+    const excludedPatterns = this.plugin.settings.excludedDirectoriesValue.split(",").map((pattern) => pattern.trim()).filter((pattern) => pattern.length > 0);
+    let exclusionParams = "";
+    if (excludedPatterns.length > 0) {
+      this.log(`Excluding patterns for ${archiverType}: ${excludedPatterns.join(
+        ", "
+      )}`, "log");
+      switch (archiverType) {
+        case "sevenZip":
+          exclusionParams = excludedPatterns.map((pattern) => `-xr!${pattern}`).join(" ");
+          break;
+        case "winRAR":
+          exclusionParams = excludedPatterns.map((pattern) => `-x${pattern}`).join(" ");
+          break;
+        case "bandizip":
+          const exclusions = excludedPatterns.map((pattern) => `${pattern}/*`).join(";");
+          exclusionParams = `-ex:"${exclusions}"`;
+          break;
+      }
+    }
     switch (archiverType) {
       case "sevenZip":
         const sevenZipPromise = new Promise((resolve, reject) => {
-          const command = `"${archiverPath}" a "${backupFilePath}" "${vaultPath}"`;
-          if (this.plugin.settings.showConsoleLog) {
-            console.log(`command: ${command}`);
-          }
+          const command = `"${archiverPath}" a "${backupFilePath}" "${vaultPath}" ${exclusionParams} ${customizedArguments}`;
+          this.log(`command: ${command}`, "log");
           (0, import_child_process.exec)(command, (error, stdout, stderr) => {
             if (error) {
-              console.error("Failed to create file by 7-Zip:", error);
+              this.log(`Failed to create file by 7-Zip: ${error.message}`, "error");
               reject(error);
             } else {
-              if (this.plugin.settings.showConsoleLog) {
-                console.log("File created by 7-Zip successfully.");
-              }
+              this.log("File created by 7-Zip successfully.", "log");
               resolve();
             }
           });
@@ -5370,18 +5303,14 @@ var LocalBackupUtils = class {
         return sevenZipPromise;
       case "winRAR":
         const winRARPromise = new Promise((resolve, reject) => {
-          const command = `"${archiverPath}" a -ep1 -rh "${backupFilePath}" "${vaultPath}*"`;
-          if (this.plugin.settings.showConsoleLog) {
-            console.log(`command: ${command}`);
-          }
+          const command = `"${archiverPath}" a -ep1 -rh ${exclusionParams} ${customizedArguments} "${backupFilePath}" "${vaultPath}\\*"`;
+          this.log(`command: ${command}`, "log");
           (0, import_child_process.exec)(command, (error, stdout, stderr) => {
             if (error) {
-              console.error("Failed to create file by WinRAR:", error);
+              this.log(`Failed to create file by WinRAR: ${error.message}`, "error");
               reject(error);
             } else {
-              if (this.plugin.settings.showConsoleLog) {
-                console.log("File created by WinRAR successfully.");
-              }
+              this.log("File created by WinRAR successfully.", "log");
               resolve();
             }
           });
@@ -5389,18 +5318,14 @@ var LocalBackupUtils = class {
         return winRARPromise;
       case "bandizip":
         const bandizipPromise = new Promise((resolve, reject) => {
-          const command = `"${archiverPath}" c "${backupFilePath}" "${vaultPath}"`;
-          if (this.plugin.settings.showConsoleLog) {
-            console.log(`command: ${command}`);
-          }
+          const command = `"${archiverPath}" c ${exclusionParams} ${customizedArguments} "${backupFilePath}" "${vaultPath}"`;
+          this.log(`command: ${command}`, "log");
           (0, import_child_process.exec)(command, (error, stdout, stderr) => {
             if (error) {
-              console.error("Failed to create file by Bandizip:", error);
+              this.log(`Failed to create file by Bandizip: ${error.message}`, "error");
               reject(error);
             } else {
-              if (this.plugin.settings.showConsoleLog) {
-                console.log("File created by Bandizip successfully.");
-              }
+              this.log("File created by Bandizip successfully.", "log");
               resolve();
             }
           });
@@ -5408,6 +5333,54 @@ var LocalBackupUtils = class {
         return bandizipPromise;
       default:
         break;
+    }
+  }
+  /**
+   * Check if a path should be excluded based on the wildcards
+   * @param filePath The path to check
+   * @param excludedPatterns Array of patterns to exclude
+   * @returns True if the path should be excluded, false otherwise
+   */
+  shouldExcludePath(filePath, excludedPatterns) {
+    if (!excludedPatterns || excludedPatterns.length === 0) {
+      return false;
+    }
+    const normalizedPath = filePath.replace(/\\/g, "/");
+    for (const pattern of excludedPatterns) {
+      if (!pattern.trim()) continue;
+      const regexPattern = pattern.trim().replace(/\./g, "\\.").replace(/\*/g, ".*").replace(/\?/g, ".");
+      const regex = new RegExp(regexPattern, "i");
+      if (regex.test(normalizedPath)) {
+        this.log(
+          `Excluding path: ${filePath} (matched pattern: ${pattern})`,
+          "log"
+        );
+        return true;
+      }
+    }
+    return false;
+  }
+  /**
+   * Logging function
+   * @param message
+   * @param type
+   */
+  log(message, type) {
+    if (this.plugin.settings.showConsoleLog) {
+      switch (type) {
+        case "log":
+          console.log(message);
+          break;
+        case "error":
+          console.error(message);
+          break;
+        case "debug":
+          console.debug(message);
+          break;
+        default:
+          console.log(message);
+          break;
+      }
     }
   }
 };
@@ -5482,52 +5455,44 @@ var NewVersionNotifyModal = class extends import_obsidian2.Modal {
   }
   onOpen() {
     const { contentEl } = this;
-    const release = "0.1.8";
-    const header = `### New in Local Backup ${release}
-`;
-    const text = `Thank you for using Local Backup!
-`;
-    const contentDiv = contentEl.createDiv("local-backup-update-modal");
+    const release = this.plugin.manifest.version;
+    contentEl.empty();
+    const header = `### New in Local Backup ${release}`;
+    const text = `Thank you for using Local Backup!`;
+    const andNow = `**Here are the updates in the latest version:**`;
     const releaseNotes = [
-      "1. Update default backup function to asynchronous.",
-      "2. Add `Show console logs` and `Show notifications` button in settings page.",
-      "3. Contributed by @Lyqed. Add `One Way Backup Settings` in settings page. Now you can output backups to one more path."
-    ].join("\n");
-    const andNow = `Here are the updates in the latest version:`;
+      "Fix issues of external file archiver backup",
+      "Add customized arguments for external file archiver"
+    ];
     const markdownStr = `${header}
+
 ${text}
+
 ${andNow}
 
 ---
 
-${addExtraHashToHeadings(
-      releaseNotes
-    )}`;
-    new import_obsidian2.Setting(contentEl).addButton((btn) => btn.setButtonText("Okey").setCta().onClick(() => {
-      this.plugin.saveSettings();
-      this.close();
-    }));
-    void import_obsidian2.MarkdownRenderer.renderMarkdown(
+${releaseNotes.map((note, index) => `- ${note}`).join("\n")}`;
+    const container = contentEl.createDiv("local-backup-update-modal");
+    import_obsidian2.MarkdownRenderer.renderMarkdown(
       markdownStr,
-      contentDiv,
-      this.app.vault.getRoot().path,
-      new import_obsidian2.Component()
+      container,
+      "",
+      this.plugin
     );
+    const closeButton = container.createEl("button", { text: "Close" });
+    closeButton.addEventListener("click", () => {
+      this.close();
+    });
+    container.style.padding = "16px";
+    container.style.lineHeight = "1.6";
+    closeButton.style.marginTop = "16px";
   }
   onClose() {
     let { contentEl } = this;
     contentEl.empty();
   }
 };
-function addExtraHashToHeadings(markdownText, numHashes = 1) {
-  const lines = markdownText.split("\n");
-  for (let i = 0; i < lines.length; i++) {
-    if (lines[i].startsWith("#")) {
-      lines[i] = "#".repeat(numHashes) + lines[i];
-    }
-  }
-  return lines.join("\n");
-}
 var PromptModal = class extends import_obsidian2.Modal {
   constructor(prompt_text, default_value, multi_line, app, plugin) {
     super(app);
@@ -5574,8 +5539,7 @@ var PromptModal = class extends import_obsidian2.Modal {
     );
   }
   enterCallback(evt) {
-    if (evt.isComposing || evt.keyCode === 229)
-      return;
+    if (evt.isComposing || evt.keyCode === 229) return;
     if (this.multi_line) {
       if (import_obsidian2.Platform.isDesktop) {
         if (evt.shiftKey && evt.key === "Enter") {
@@ -5609,6 +5573,7 @@ var PromptModal = class extends import_obsidian2.Modal {
 var DEFAULT_SETTINGS = {
   versionValue: "",
   startupBackupStatus: false,
+  onquitBackupStatus: false,
   lifecycleValue: "3",
   backupsPerDayValue: "3",
   maxRetriesValue: "1",
@@ -5626,11 +5591,8 @@ var DEFAULT_SETTINGS = {
   showRibbonIcon: true,
   showConsoleLog: false,
   showNotifications: true,
-  oneWayBackupStatus: false,
-  oneWayWinSavePathValue: "",
-  oneWayUnixSavePathValue: "",
-  oneWayLifecycleValue: "3",
-  oneWayBackupsPerDayValue: "3"
+  excludedDirectoriesValue: "",
+  customizedArguments: ""
 };
 var LocalBackupPlugin = class extends import_obsidian3.Plugin {
   constructor() {
@@ -5648,7 +5610,10 @@ var LocalBackupPlugin = class extends import_obsidian3.Plugin {
         await this.saveSettings();
       }
     } catch (error) {
-      new import_obsidian3.Notice(`Please reconfigure \`Local Backup\` after upgrading to ${this.manifest.version}!`, 1e4);
+      new import_obsidian3.Notice(
+        `Please reconfigure \`Local Backup\` after upgrading to ${this.manifest.version}!`,
+        1e4
+      );
     }
     this.addCommand({
       id: "run-local-backup",
@@ -5683,9 +5648,19 @@ var LocalBackupPlugin = class extends import_obsidian3.Plugin {
       await this.archiveVaultWithRetryAsync();
     }
     await this.applySettings();
+    if (this.settings.onquitBackupStatus) {
+      this.app.workspace.on(
+        "quit",
+        () => this.archiveVaultWithRetryAsync()
+      );
+    }
   }
   async loadSettings() {
-    this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
+    this.settings = Object.assign(
+      {},
+      DEFAULT_SETTINGS,
+      await this.loadData()
+    );
   }
   async loadUtis() {
     this.utils = new LocalBackupUtils(this.app, this);
@@ -5701,26 +5676,32 @@ var LocalBackupPlugin = class extends import_obsidian3.Plugin {
     while (retryCount < maxRetries) {
       try {
         await this.archiveVaultAsync(specificFileName);
-        if (this.settings.oneWayBackupStatus) {
-          await this.archiveVaultAsync(specificFileName, true);
-        }
         break;
       } catch (error) {
-        console.error(`Error during archive attempt ${retryCount + 1}: ${error}`);
+        this.utils.log(
+          `Error during archive attempt ${retryCount + 1}: ${error}`,
+          "error"
+        );
         retryCount++;
         if (retryCount < maxRetries) {
           await this.delay(retryInterval);
-          if (this.settings.showConsoleLog) {
-            console.log(`Retrying archive attempt ${retryCount + 1}...`);
-          }
+          this.utils.log(
+            `Retrying archive attempt ${retryCount + 1}...`,
+            "log"
+          );
         } else {
-          console.error(`Failed to create vault backup after ${maxRetries} attempts.`);
-          new import_obsidian3.Notice(`Failed to create vault backup after ${maxRetries} attempts: ${error}`);
+          this.utils.log(
+            `Failed to create vault backup after ${maxRetries} attempts.`,
+            "error"
+          );
+          new import_obsidian3.Notice(
+            `Failed to create vault backup after ${maxRetries} attempts: ${error}`
+          );
         }
       }
     }
   }
-  async archiveVaultAsync(specificFileName, isOneWay = false) {
+  async archiveVaultAsync(specificFileName) {
     try {
       await this.loadSettings();
       let fileName = specificFileName || this.settings.fileNameFormatValue;
@@ -5733,24 +5714,32 @@ var LocalBackupPlugin = class extends import_obsidian3.Plugin {
       let lifecycleValue = "";
       let backupsPerDayValue = "";
       if (platform === "win32") {
-        savePathValue = isOneWay ? this.settings.oneWayWinSavePathValue : this.settings.winSavePathValue;
+        savePathValue = this.settings.winSavePathValue;
         archiverPathValue = this.settings.archiverWinPathValue;
       } else if (platform === "linux" || platform === "darwin") {
-        savePathValue = isOneWay ? this.settings.oneWayUnixSavePathValue : this.settings.unixSavePathValue;
+        savePathValue = this.settings.unixSavePathValue;
         archiverPathValue = this.settings.archiverUnixPathValue;
       }
-      lifecycleValue = isOneWay ? this.settings.oneWayLifecycleValue : this.settings.lifecycleValue;
-      backupsPerDayValue = isOneWay ? this.settings.oneWayBackupsPerDayValue : this.settings.backupsPerDayValue;
+      lifecycleValue = this.settings.lifecycleValue;
+      backupsPerDayValue = this.settings.backupsPerDayValue;
       let backupFilePath = (0, import_path.join)(savePathValue, backupZipName);
       if (this.settings.callingArchiverStatus) {
-        backupFilePath = (0, import_path.join)(savePathValue, `${fileNameWithDateValues}.${this.settings.archiveFileTypeValue}`);
-        await this.utils.createFileByArchiver(this.settings.archiverTypeValue, archiverPathValue, this.settings.archiveFileTypeValue, vaultPath, backupFilePath);
+        backupFilePath = (0, import_path.join)(
+          savePathValue,
+          `${fileNameWithDateValues}.${this.settings.archiveFileTypeValue}`
+        );
+        await this.utils.createFileByArchiver(
+          this.settings.archiverTypeValue,
+          archiverPathValue,
+          this.settings.archiveFileTypeValue,
+          vaultPath,
+          backupFilePath,
+          this.settings.customizedArguments
+        );
       } else {
         await this.utils.createZipByAdmZip(vaultPath, backupFilePath);
       }
-      if (this.settings.showConsoleLog) {
-        console.log(`Vault backup created: ${backupFilePath}`);
-      }
+      this.utils.log(`Vault backup created: ${backupFilePath}`, "log");
       if (this.settings.showNotifications) {
         new import_obsidian3.Notice(`Vault backup created: ${backupFilePath}`);
       }
@@ -5796,7 +5785,9 @@ var LocalBackupPlugin = class extends import_obsidian3.Plugin {
   async applySettings() {
     await this.loadSettings();
     if (this.settings.intervalBackupStatus && !isNaN(parseInt(this.settings.backupFrequencyValue))) {
-      const intervalMinutes = parseInt(this.settings.backupFrequencyValue);
+      const intervalMinutes = parseInt(
+        this.settings.backupFrequencyValue
+      );
       await this.startAutoBackupInterval(intervalMinutes);
     } else if (!this.settings.intervalBackupStatus) {
       this.stopAutoBackupInterval();
@@ -5808,9 +5799,7 @@ var LocalBackupPlugin = class extends import_obsidian3.Plugin {
     await this.saveSettings();
   }
   onunload() {
-    if (this.settings.showConsoleLog) {
-      console.log("Local Backup unloaded");
-    }
+    this.utils.log("Local Backup unloaded", "log");
   }
 };
 

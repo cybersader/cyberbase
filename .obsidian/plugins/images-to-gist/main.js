@@ -95,9 +95,9 @@ var DEFAULT_SETTINGS = {
   serverUrl: "https://itg.singhinder.com",
   showConfirmationModal: false
 };
-var GUIDE_BASE_URL = "https://pluginguide.singhinder.com";
-var GITHUB_TOKEN_GUIDE = `${GUIDE_BASE_URL}?g=token`;
-var SERVER_URL_GUIDE = `${GUIDE_BASE_URL}?g=serverurl`;
+var GUIDE_BASE_URL = "https://github.com/singh-inder/obsidian-images-to-gist";
+var GITHUB_TOKEN_GUIDE = `${GUIDE_BASE_URL}/blob/main/docs/getting_started.md`;
+var SERVER_URL_GUIDE = `${GUIDE_BASE_URL}?tab=readme-ov-file#faq`;
 var SettingsTab = class extends import_obsidian2.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
