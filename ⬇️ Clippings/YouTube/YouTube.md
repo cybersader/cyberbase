@@ -20,6 +20,7 @@ limit 1000
 
 
 %% Begin Waypoint %%
+- **[[Custom PCs Australia - Steve Jobs perfect response to an insult. Worldwide developer conference 1997]]**
 - **[[S3 - 2025 The Dawn of Energy Abundance]]**
 - **[[SXSW - The State of Personal Online Security and Confidentiality]]**
 - **[[To Scale - To Scale TIME]]**
