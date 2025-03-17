@@ -69,6 +69,8 @@ function around1(obj, method, createWrapper) {
 var EnhancedCanvas = class extends import_obsidian.Plugin {
   constructor() {
     super(...arguments);
+    // flag to check if edge is patched
+    this.isMetadataClicked = false;
     // update the items in the "propertyName" array in the frontmatter of the file.
     this.updateFrontmatter = async (file, link, action, propertyName) => {
       await this.app.fileManager.processFrontMatter(file, (frontmatter) => {
@@ -103,7 +105,6 @@ var EnhancedCanvas = class extends import_obsidian.Plugin {
       return commandFn(canvas, canvasData);
     };
   }
-  // flag to check if edge is patched
   addLinkAndOptimizeEdge(canvas) {
     const selectedNodes = Array.from(canvas.selection);
     const fileNodes = selectedNodes.filter((node) => node == null ? void 0 : node.filePath);
@@ -295,7 +296,6 @@ var EnhancedCanvas = class extends import_obsidian.Plugin {
             const canvasData = JSON.parse(content);
             if (!canvasData)
               return;
-            await this.processEdgesInCanvas(canvasData, canvasFile);
             if (canvasData.nodes && Array.isArray(canvasData.nodes)) {
               for (const node of canvasData.nodes) {
                 if (!(node == null ? void 0 : node.file))
@@ -303,6 +303,7 @@ var EnhancedCanvas = class extends import_obsidian.Plugin {
                 this.addProperty(node, canvasFile.name, canvasFile.basename);
               }
             }
+            await this.processEdgesInCanvas(canvasData, canvasFile);
           } catch (parseError) {
             return;
           }
@@ -403,10 +404,21 @@ var EnhancedCanvas = class extends import_obsidian.Plugin {
     });
   }
   registerFocusCanvas() {
+    this.registerDomEvent(document, "click", (evt) => {
+      const target = evt.target;
+      if (target.closest(".metadata-container")) {
+        this.isMetadataClicked = true;
+        setTimeout(() => {
+          this.isMetadataClicked = false;
+        }, 300);
+      }
+    });
     this.registerEvent(
       // Implement the feature to zoom to the last opened file when switching to the canvas view.
       this.app.workspace.on("active-leaf-change", () => {
         Promise.resolve().then(async () => {
+          if (this.isMetadataClicked == false)
+            return;
           const activeLeaf = this.app.workspace.getActiveViewOfType(import_obsidian.ItemView);
           if (!activeLeaf || activeLeaf.getViewType() !== "canvas")
             return;

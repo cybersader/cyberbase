@@ -27716,7 +27716,7 @@ var ConvertibleFileView = class extends import_obsidian.TextFileView {
   }
   getDisplayText() {
     var _a, _b;
-    return (_b = (_a = this.file) == null ? void 0 : _a.name) != null ? _b : "???";
+    return (_b = (_a = this.file) == null ? void 0 : _a.basename) != null ? _b : "???";
   }
   getContext(file) {
     var _a, _b, _c;
@@ -28973,6 +28973,5 @@ jszip/dist/jszip.min.js:
   https://github.com/nodeca/pako/blob/main/LICENSE
   *)
 */
-
 
 /* nosourcemap */

@@ -4462,6 +4462,32 @@ function hookLogFunctions(debugLevelIndex, tag) {
   logInfo = debugLevelIndex <= debugLevels.indexOf("info") ? console.info.bind(console, tag + "[INFO]:") : logIgnore;
   logDbg = debugLevelIndex <= debugLevels.indexOf("debug") ? console.debug.bind(console, tag + "[DEBUG]:") : logIgnore;
 }
+var htmlChars = {
+  "&": "&amp;",
+  '"': "&quot;",
+  "'/": "&#39;",
+  "<": "&lt;",
+  ">": "&gt;",
+  "\n": "<br>\n"
+};
+var htmlCharsRegexp = new RegExp(Object.keys(htmlChars).join("|"), "g");
+var htmlWhitespaceChars = {
+  ...htmlChars,
+  "	": "&rarr;	",
+  " ": "&middot;",
+  "\n": "&para;<br>\n"
+};
+var htmlWhitespaceCharsRegexp = new RegExp(Object.keys(htmlWhitespaceChars).join("|"), "g");
+function htmlEncode(str, whitespace) {
+  return whitespace ? str.replace(htmlWhitespaceCharsRegexp, (c) => htmlWhitespaceChars[c]) : str.replace(htmlCharsRegexp, (c) => htmlChars[c]);
+}
+var diffDisplayFormatToString = {
+  ["RAW" /* Raw */]: "raw",
+  ["TIMELINE" /* Timeline */]: "timeline",
+  ["INLINE" /* Inline */]: "inline",
+  ["HORIZONTAL" /* Horizontal */]: "side by side",
+  ["VERTICAL" /* Vertical */]: "top by bottom"
+};
 var DEFAULT_SETTINGS = {
   minSecondsBetweenEdits: "60",
   maxEditAge: "0",
@@ -4470,6 +4496,8 @@ var DEFAULT_SETTINGS = {
   editHistoryRootFolder: "",
   extensionWhitelist: ".md, .txt, .csv, .htm, .html",
   showOnStatusBar: true,
+  diffDisplayFormat: "INLINE" /* Inline */,
+  showWhitespace: true,
   debugLevel: "warn"
 };
 var EDIT_HISTORY_FILE_EXT = ".edtz";
@@ -4503,11 +4531,26 @@ var EditHistory = class extends import_obsidian.Plugin {
   getEditHistoryFilepath(filepath) {
     return (0, import_obsidian.normalizePath)(this.editHistoryRootFolder + "/" + filepath + EDIT_HISTORY_FILE_EXT);
   }
+  getEditCompressedSize(zip, filepath) {
+    return zip.file(filepath)._data.compressedSize;
+  }
   getEditEpoch(editFilename) {
     return parseInt(editFilename, 36) * 1e3;
   }
+  getEditDate(editFilename) {
+    return new Date(this.getEditEpoch(editFilename));
+  }
+  getEditLocalDateStr(editFilename) {
+    return this.getEditDate(editFilename).toLocaleString();
+  }
+  getEditFileTime(editFilename) {
+    let d = this.getEditDate(editFilename);
+    d = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+    const t = d.getTime();
+    return t;
+  }
   getEditIsDiff(editFilename) {
-    return editFilename.endsWith("$");
+    return !editFilename.endsWith("$");
   }
   buildEditFilename(mtime, isDiff) {
     const utcepoch = Math.floor(mtime / 1e3);
@@ -4544,6 +4587,7 @@ var EditHistory = class extends import_obsidian.Plugin {
   }
   async onload() {
     await this.loadSettings();
+    let dmpobj = new import_diff_match_patch_ts.DiffMatchPatch();
     logInfo("onLoad");
     this.registerEvent(this.app.vault.on("modify", async (fileOrFolder, force = false) => {
       logInfo("vault modify", fileOrFolder.path);
@@ -4616,7 +4660,7 @@ var EditHistory = class extends import_obsidian.Plugin {
               this.maxEditHistoryFileSize
             );
             purge = true;
-            zipFileSize -= zip.file(filepath)._data.compressedSize;
+            zipFileSize -= this.getEditCompressedSize(zip, filepath);
           }
           if (!purge) {
             break;
@@ -4633,7 +4677,6 @@ var EditHistory = class extends import_obsidian.Plugin {
             logInfo("Delaying entry due to colliding epochs");
             return;
           }
-          let dmpobj = new import_diff_match_patch_ts.DiffMatchPatch();
           logInfo("unpacking " + mostRecentFilename);
           let prevFileData = await mostRecentFile.async("string");
           let diffs = dmpobj.patch_make(fileData, prevFileData.toString());
@@ -4785,93 +4828,482 @@ var EditHistoryModal = class extends import_obsidian.Modal {
     super(plugin.app);
     this.plugin = plugin;
   }
-  async onOpen() {
+  renderCalendar(calendarDiv, select, zipFile, zip, filepaths) {
     var _a;
+    const selectedEdit = select.getValue();
+    const year = this.plugin.getEditDate(selectedEdit).getFullYear();
+    let calendarHtml = '<table class="calendar">';
+    let fileTimes = /* @__PURE__ */ new Set();
+    let fileTimeToDiffCount = /* @__PURE__ */ new Map();
+    let fileSize = 0;
+    let numFiles = 0;
+    for (let fp of filepaths) {
+      let d2 = this.plugin.getEditDate(fp);
+      if (d2.getFullYear() == year) {
+        const t = this.plugin.getEditFileTime(fp);
+        fileTimes.add(t);
+        fileTimeToDiffCount.set(t, (fileTimeToDiffCount.get(t) || 0) + 1);
+        fileSize += this.plugin.getEditCompressedSize(zip, fp);
+        numFiles++;
+      } else if (d2.getFullYear() < year) {
+        break;
+      }
+    }
+    const diffCounts = Array.from(fileTimeToDiffCount.values());
+    const maxFileDiffCount = Math.max(...diffCounts);
+    const minFileDiffCount = Math.min(...diffCounts);
+    const diffCountRange = maxFileDiffCount - minFileDiffCount + 1;
+    const maxShades = 6;
+    const selectedFileTime = this.plugin.getEditFileTime(selectedEdit);
+    const firstDayOfYear = new Date(year, 0, 1);
+    const startDate = new Date(year, 0, 1 - firstDayOfYear.getDay());
+    const numRows = 7;
+    const leapDelta = new Date(year, 2, 0).getDate() - 28;
+    const numCols = Math.round((365 + firstDayOfYear.getDay() + leapDelta) / numRows);
+    let month = 0;
+    let monthColStart = 0;
+    calendarHtml += `<thead><tr><th>${year}</th>`;
+    let d = new Date(startDate);
+    d.setDate(d.getDate() + 6);
+    for (let col = 0; col < numCols; ++col) {
+      if (month != d.getMonth() || col == numCols - 1) {
+        const dd = new Date(d.getFullYear(), month, 1);
+        calendarHtml += `<th colspan="${col - monthColStart}">${dd.toLocaleDateString(void 0, { month: "short" })}</th>`;
+        monthColStart = col;
+        month = d.getMonth();
+      }
+      d.setDate(d.getDate() + 7);
+    }
+    calendarHtml += "</tr></thead><tbody>";
+    for (let row = 0; row < numRows; ++row) {
+      let d2 = new Date(startDate);
+      d2.setDate(d2.getDate() + row);
+      calendarHtml += `<tr><th>${d2.toLocaleDateString(void 0, { weekday: "short" })}</th>`;
+      for (let col = 0; col < numCols; ++col) {
+        const t = d2.getTime();
+        let count = 0;
+        let styleClass = "calendar-empty-" + (d2.getMonth() & 1 ? "odd" : "even");
+        if (d2.getFullYear() != year) {
+          styleClass = "calendar-black";
+        } else if (fileTimes.has(t)) {
+          count = fileTimeToDiffCount.get(t) || 0;
+          const shadeLevel = Math.round((count - minFileDiffCount) * maxShades / diffCountRange);
+          if (t == selectedFileTime) {
+            styleClass = "calendar-selected ";
+          } else {
+            styleClass = "calendar-level ";
+          }
+          styleClass += "clickable level-" + shadeLevel;
+        }
+        calendarHtml += `<td id="calendar-${t}" class="${styleClass}" title="${d2.toLocaleDateString()}${count == 0 ? "" : " (" + count + " edits)"}"></td>`;
+        d2.setDate(d2.getDate() + 7);
+      }
+      calendarHtml += "</tr>";
+    }
+    calendarHtml += "</tbody></table>";
+    calendarDiv.innerHTML = calendarHtml;
+    const calendarTable = calendarDiv.querySelector("table");
+    const cells = calendarTable.querySelectorAll("td.calendar-level, td.calendar-selected");
+    cells.forEach((cell) => {
+      cell.addEventListener("click", () => {
+        logDbg("Cell clicked:", cell);
+        const cellFileTime = parseInt(cell.id.slice(cell.id.indexOf("-") + 1));
+        const selectEl = select.selectEl;
+        const options = selectEl.options;
+        for (let i = 0; i < options.length; i++) {
+          let d2 = this.plugin.getEditDate(options[i].value);
+          d2 = new Date(d2.getFullYear(), d2.getMonth(), d2.getDate());
+          const optionFileTime = d2.getTime();
+          if (optionFileTime == cellFileTime) {
+            if (i != selectEl.selectedIndex) {
+              selectEl.selectedIndex = i;
+              selectEl.trigger("change");
+            }
+            break;
+          }
+        }
+      });
+    });
+    let revStats = calendarDiv.createEl("small");
+    revStats.setText(
+      `${numFiles}/${filepaths.length} edit${filepaths.length > 1 ? "s " : " "}${fileSize}/${zipFile.stat.size} bytes compressed, ${(_a = this.app.workspace.getActiveFile()) == null ? void 0 : _a.stat.size} note bytes`
+    );
+  }
+  async renderDiffsTimeline(zip, dmpobj, filepaths, selectedEdit, latestData, showWhitespace) {
+    let annots = [];
+    let lineToRefLine = [];
+    let lines = [];
+    let annotate = false;
+    let remainingAnnots = 0;
+    let data = latestData;
+    let newerData = latestData;
+    let prevFileDateStr = "";
+    for (let filepath of filepaths) {
+      const diff = await zip.file(filepath).async("string");
+      newerData = data;
+      if (this.plugin.getEditIsDiff(filepath)) {
+        const patch = dmpobj.patch_fromText(diff);
+        data = dmpobj.patch_apply(patch, data)[0];
+      } else {
+        data = diff;
+      }
+      if (!annotate && selectedEdit == filepath) {
+        lines = data.split("\n");
+        const numLines = lines.length;
+        annots = new Array(numLines).fill("");
+        lineToRefLine = Array.from({ length: numLines + 1 }, (_, i) => i);
+        annotate = true;
+        prevFileDateStr = this.plugin.getEditLocalDateStr(filepath);
+        remainingAnnots = annots.length;
+      } else if (annotate) {
+        const diffs = dmpobj.diff_lineMode(newerData, data);
+        let line = 0;
+        for (const [op, diffData] of diffs) {
+          const numLines = diffData.split("\n").length - 1;
+          for (let i = 0; i < numLines; ++i) {
+            const refLine = lineToRefLine[line];
+            switch (op) {
+              case -1 /* Delete */:
+                lineToRefLine.splice(line, 1);
+                if (refLine != -1 && annots[refLine] == "") {
+                  annots[refLine] = prevFileDateStr;
+                  remainingAnnots--;
+                }
+                break;
+              case 1 /* Insert */:
+                lineToRefLine.splice(line, 0, -1);
+                line++;
+                break;
+              case 0 /* Equal */:
+                line++;
+                break;
+            }
+            if (remainingAnnots == 0) {
+              break;
+            }
+          }
+          if (remainingAnnots == 0) {
+            break;
+          }
+        }
+        prevFileDateStr = this.plugin.getEditLocalDateStr(filepath);
+      }
+    }
+    let diffHtml = "<table>";
+    const fileDateStr = this.plugin.getEditLocalDateStr(selectedEdit);
+    for (let i = 0; i < lines.length; ++i) {
+      const hdata1 = htmlEncode(annots[i], false);
+      const hdata2 = htmlEncode(lines[i], showWhitespace);
+      if (annots[i] == fileDateStr) {
+        diffHtml += `<tr class="diff-line"><td class="clickable diff-time">${hdata1}</td><td class="mod-right">${hdata2}</td></tr>`;
+      } else {
+        diffHtml += `<tr><td class="clickable diff-time ${annots[i] == fileDateStr ? "diff-line" : ""}">${hdata1}</td><td>${hdata2}</td></tr>`;
+      }
+    }
+    diffHtml += "</table>";
+    return diffHtml;
+  }
+  renderDiffsInline(diffs, showWhitespace) {
+    let diffHtml = "";
+    for (const [op, data] of diffs) {
+      if (data == "") {
+        continue;
+      }
+      let hdata = htmlEncode(data, showWhitespace);
+      switch (op) {
+        case -1 /* Delete */:
+          diffHtml += `<del class="diff-line mod-left">${hdata}</del>`;
+          break;
+        case 1 /* Insert */:
+          diffHtml += `<ins class="diff-line mod-right">${hdata}</ins>`;
+          break;
+        case 0 /* Equal */:
+          diffHtml += `<span>${hdata}</span>`;
+          break;
+      }
+    }
+    return diffHtml;
+  }
+  renderDiffsSideOrTop(diffs, sideBySide, showWhitespace) {
+    let left = "";
+    let right = "";
+    let diffHtml = '<table width="100%"><tbody>';
+    for (const [op, data] of [...diffs, [0 /* Equal */, ""]]) {
+      if (data == "" && op != 0 /* Equal */) {
+        continue;
+      }
+      let hdata = htmlEncode(data, showWhitespace);
+      if (hdata == "") {
+        hdata = "\n";
+      }
+      switch (op) {
+        case -1 /* Delete */:
+          left += `<del>${hdata}</del>`;
+          break;
+        case 1 /* Insert */:
+          right += `<ins>${hdata}</ins>`;
+          if (hdata.endsWith("\n")) {
+            if (sideBySide) {
+              diffHtml += `<tr class="diff-line"><td class="mod-left">${left}</td><td class="mod-right">${right}</td></tr>`;
+            } else {
+              diffHtml += `<tr class="diff-line"><td><div class="mod-left">${left}</div><div class="mod-right">${right}</td></tr>`;
+            }
+            left = "";
+            right = "";
+          }
+          break;
+        case 0 /* Equal */:
+          let i;
+          i = hdata.indexOf("\n");
+          if (i != -1 && (left != "" || right != "")) {
+            let end = hdata.slice(0, i + 1);
+            left += end;
+            right += end;
+            hdata = hdata.slice(i + 1);
+            if (sideBySide) {
+              diffHtml += `<tr class="diff-line"><td width="50%" class="mod-left">${left}</td><td width="50%" class="mod-right">${right}</td></tr>`;
+            } else {
+              diffHtml += `<tr class="diff-line"><td><div class="mod-left">${left}</div><div class="mod-right">${right}</div></td></tr>`;
+            }
+            left = "";
+            right = "";
+          }
+          i = hdata.lastIndexOf("\n");
+          if (i != -1) {
+            let start = hdata.slice(0, i + 1);
+            if (sideBySide) {
+              diffHtml += `<tr><td>${start}</td><td>${start}</td></tr>`;
+            } else {
+              diffHtml += `<tr><td>${start}</td></tr>`;
+            }
+            hdata = hdata.slice(i + 1);
+          }
+          right += hdata;
+          left += hdata;
+          break;
+      }
+    }
+    diffHtml += "</tbody></table>";
+    return diffHtml;
+  }
+  async onOpen() {
+    const file = this.app.workspace.getActiveFile();
+    this.titleEl.setText("Edits for ");
+    this.titleEl.createEl("i", { text: file == null ? void 0 : file.name });
+    this.titleEl.createEl("span", { text: " " });
+    const calendarIcon = this.titleEl.createEl("span");
+    (0, import_obsidian.setIcon)(calendarIcon, "calendar-plus-2");
+    this.modalEl.addClass("edit-history-modal");
     const { contentEl } = this;
-    let file = this.app.workspace.getActiveFile();
+    contentEl.addClass("edit-history-modal-content");
     if (file == null || !this.plugin.keepEditHistoryForFile(file)) {
       logWarn("Edit history not allowed for active file");
-      return;
-    }
-    let latestData = await this.app.vault.read(file);
-    contentEl.addClass("edit-history-modal");
-    this.titleEl.setText("Edits for ");
-    this.titleEl.createEl("i", { text: file.name });
-    let zip = new import_jszip.default();
-    let zipFilepath = this.plugin.getEditHistoryFilepath(file.path);
-    logInfo("Opening zip file ", zipFilepath);
-    let zipFile = this.app.vault.getAbstractFileByPath(zipFilepath);
-    if (zipFile == null || !(zipFile instanceof import_obsidian.TFile)) {
-      logWarn("No history file or not a file", zipFilepath);
       contentEl.createEl("p", { text: "No edit history" });
       return;
     }
-    let zipData = await this.app.vault.readBinary(zipFile);
+    const latestData = await this.app.vault.read(file);
+    const zip = new import_jszip.default();
+    const zipFilepath = this.plugin.getEditHistoryFilepath(file.path);
+    logInfo("Opening zip file ", zipFilepath);
+    const zipFile = this.app.vault.getAbstractFileByPath(zipFilepath);
+    if (zipFile == null || !(zipFile instanceof import_obsidian.TFile)) {
+      logWarn("No history file or not a file", zipFilepath);
+      contentEl.createEl("p", { text: "No edit history file" });
+      return;
+    }
+    const zipData = await this.app.vault.readBinary(zipFile);
     if (zipData == null) {
       logWarn("Unable to read history file");
       contentEl.createEl("p", { text: "No edit history" });
       return;
     }
     await zip.loadAsync(zipData);
-    let filepaths = [];
+    const filepaths = [];
     zip.forEach(function(relativePath) {
       filepaths.push(relativePath);
     });
     if (filepaths.length == 0) {
       logWarn("Empty edit history file");
-      contentEl.createEl("p", { text: "No edit history" });
+      contentEl.createEl("p", { text: "Empty edit history" });
       return;
     }
-    let revStats = contentEl.createEl("p");
+    this.plugin.sortEdits(filepaths);
+    const dmpobj = new import_diff_match_patch_ts.DiffMatchPatch();
+    const calendarDiv = contentEl.createDiv();
+    calendarIcon.addEventListener("click", () => {
+      if (calendarDiv.style.display === "none") {
+        calendarDiv.style.display = "block";
+        (0, import_obsidian.setIcon)(calendarIcon, "calendar-minus-2");
+      } else {
+        calendarDiv.style.display = "none";
+        (0, import_obsidian.setIcon)(calendarIcon, "calendar-plus-2");
+      }
+    });
     const control = contentEl.createDiv("setting-item-control");
     control.style.justifyContent = "flex-start";
     const select = new import_obsidian.DropdownComponent(control);
     select.selectEl.focus();
+    const diffDisplaySelect = new import_obsidian.DropdownComponent(control).addOptions(diffDisplayFormatToString).setValue(this.plugin.settings.diffDisplayFormat).onChange(async () => {
+      select.selectEl.trigger("change");
+    });
     const diffInfo = control.createEl("span");
-    this.diffInfo = diffInfo;
-    new import_obsidian.ButtonComponent(control).setButtonText("Copy").setClass("mod-cta").onClick(() => {
+    const copyButton = new import_obsidian.ButtonComponent(control).setButtonText("Copy").setClass("mod-cta").onClick(() => {
       logInfo("Copied to clipboard");
       navigator.clipboard.writeText(this.currentVersionData);
     });
+    const prevButton = new import_obsidian.ButtonComponent(control).setButtonText("Previous").setClass("mod-cta").onClick(() => {
+      logInfo("Prev diff");
+      if (this.diffElements.length > 0) {
+        this.diffElements[this.curDiffIndex].removeClass("current");
+        this.curDiffIndex = (this.curDiffIndex + this.diffElements.length - 1) % this.diffElements.length;
+        this.diffElements[this.curDiffIndex].scrollIntoView({ block: "center" });
+        this.diffElements[this.curDiffIndex].addClass("current");
+        diffInfo.setText(this.curDiffIndex + 1 + "/" + this.diffElements.length + " diff" + (this.diffElements.length != 1 ? "s" : ""));
+      }
+    });
+    const nextButton = new import_obsidian.ButtonComponent(control).setButtonText("Next").setClass("mod-cta").onClick(() => {
+      logInfo("Next diff");
+      if (this.diffElements.length > 0) {
+        this.diffElements[this.curDiffIndex].removeClass("current");
+        this.curDiffIndex = (this.curDiffIndex + 1) % this.diffElements.length;
+        this.diffElements[this.curDiffIndex].scrollIntoView({ block: "center" });
+        this.diffElements[this.curDiffIndex].addClass("current");
+        diffInfo.setText(this.curDiffIndex + 1 + "/" + this.diffElements.length + " diff" + (this.diffElements.length != 1 ? "s" : ""));
+      }
+    });
+    control.createEl("span").setText("Whitespace");
+    const whitespaceCheckbox = new import_obsidian.ToggleComponent(control).setValue(this.plugin.settings.showWhitespace).onChange(async () => {
+      select.selectEl.trigger("change");
+    });
     contentEl.createEl("br");
     contentEl.createEl("br");
-    let diffDiv = contentEl.createDiv("diff-div");
+    contentEl.setAttr("tabindex", 0);
+    contentEl.addEventListener("keydown", (event) => {
+      logDbg("key", event);
+      const navigateDiff = event.ctrlKey && !event.shiftKey;
+      const navigateDate = event.ctrlKey && event.shiftKey;
+      if (event.key === "p" || navigateDiff && event.key === "ArrowUp") {
+        event.preventDefault();
+        prevButton.buttonEl.trigger("click");
+      } else if (event.key === "P" || navigateDate && event.key === "ArrowUp") {
+        event.preventDefault();
+        const nextIndex = select.selectEl.selectedIndex - 1;
+        if (nextIndex >= 0) {
+          select.selectEl.selectedIndex = nextIndex;
+          select.selectEl.trigger("change");
+        }
+      } else if (event.key === "n" || navigateDiff && event.key === "ArrowDown") {
+        event.preventDefault();
+        nextButton.buttonEl.trigger("click");
+      } else if (event.key === "N" || navigateDate && event.key === "ArrowDown") {
+        event.preventDefault();
+        const nextIndex = select.selectEl.selectedIndex + 1;
+        if (nextIndex < select.selectEl.options.length) {
+          select.selectEl.selectedIndex = nextIndex;
+          select.selectEl.trigger("change");
+        }
+      } else if (event.key === "c" && event.ctrlKey) {
+        event.preventDefault();
+        copyButton.buttonEl.trigger("click");
+      }
+    });
+    const diffDiv = contentEl.createDiv("diff-div");
+    let selectedDayCell = null;
     select.onChange(async () => {
-      var _a2;
-      let selectedEdit = select.getValue();
-      let dmpobj = new import_diff_match_patch_ts.DiffMatchPatch();
+      var _a, _b;
+      const selectedEdit = select.getValue();
+      const selectedFileTime = this.plugin.getEditFileTime(selectedEdit);
+      const dayCell = document.getElementById(`calendar-${selectedFileTime}`);
+      if (dayCell) {
+        if (selectedDayCell) {
+          selectedDayCell.addClass("calendar-level");
+          selectedDayCell.removeClass("calendar-selected");
+        }
+        selectedDayCell = dayCell;
+        selectedDayCell.addClass("calendar-selected");
+        selectedDayCell.removeClass("calendar-level");
+      } else {
+        this.renderCalendar(calendarDiv, select, zipFile, zip, filepaths);
+        selectedDayCell = document.getElementById(`calendar-${selectedFileTime}`);
+      }
       let data = latestData;
-      let previousData = latestData;
+      let currentData = latestData;
+      let currentDiff = null;
+      let found = false;
+      let previousFound = false;
       for (let filepath of filepaths) {
         let diff = await zip.file(filepath).async("string");
-        previousData = data;
         if (this.plugin.getEditIsDiff(filepath)) {
-          data = diff;
-        } else {
           let patch = dmpobj.patch_fromText(diff);
           data = dmpobj.patch_apply(patch, data)[0];
+        } else {
+          data = diff;
         }
-        if (selectedEdit == filepath) {
+        if (found) {
+          previousFound = true;
           break;
         }
+        found = selectedEdit == filepath;
+        currentDiff = diff;
+        currentData = data;
       }
-      this.currentVersionData = data;
-      let diffs = dmpobj.diff_main(data, previousData);
-      this.diffInfo.setText(diffs.length + " diff" + (diffs.length != 1 ? "s" : ""));
-      let diffHtml = dmpobj.diff_prettyHtml(diffs);
-      diffHtml = diffHtml.replace(/<ins [^>]*>/g, "<ins>");
-      diffHtml = diffHtml.replace(/<del [^>]*>/g, "<del>");
+      if (!previousFound) {
+        data = "";
+      }
+      let diffHtml = "";
+      this.currentVersionData = currentData;
+      const showWhitespace = whitespaceCheckbox.getValue();
+      const diffs = dmpobj.diff_main(data, currentData);
+      dmpobj.diff_cleanupSemantic(diffs);
+      const diffDisplayFormat = diffDisplaySelect.getValue();
+      switch (diffDisplayFormat) {
+        case "RAW" /* Raw */:
+          let hdata = htmlEncode(currentDiff, showWhitespace);
+          diffHtml = "<tt>" + hdata + "</tt>";
+          break;
+        case "TIMELINE" /* Timeline */:
+          diffHtml = await this.renderDiffsTimeline(zip, dmpobj, filepaths, selectedEdit, latestData, showWhitespace);
+          break;
+        case "INLINE" /* Inline */:
+          diffHtml = this.renderDiffsInline(diffs, showWhitespace);
+          break;
+        default:
+          const sideBySide = diffDisplayFormat == "HORIZONTAL" /* Horizontal */;
+          diffHtml = this.renderDiffsSideOrTop(diffs, sideBySide, showWhitespace);
+          break;
+      }
+      diffHtml = diffHtml.replace(/\n/g, "");
       diffDiv.innerHTML = diffHtml;
-      (_a2 = diffDiv.querySelector("ins,del")) == null ? void 0 : _a2.scrollIntoView();
+      this.curDiffIndex = 0;
+      const diffElements = diffDiv.querySelectorAll(".diff-line");
+      this.diffElements = diffElements;
+      (_a = this.diffElements[this.curDiffIndex]) == null ? void 0 : _a.scrollIntoView({ block: "center" });
+      (_b = this.diffElements[this.curDiffIndex]) == null ? void 0 : _b.addClass("current");
+      diffInfo.setText(this.curDiffIndex + 1 + "/" + this.diffElements.length + " diff" + (this.diffElements.length != 1 ? "s" : ""));
+      const table = diffDiv.querySelector("table");
+      const cells = table == null ? void 0 : table.querySelectorAll("td.diff-time");
+      cells == null ? void 0 : cells.forEach((cell) => {
+        cell.addEventListener("click", () => {
+          logDbg("Cell clicked:", cell);
+          const text = cell.textContent;
+          const selectEl = select.selectEl;
+          const options = selectEl.options;
+          for (let i = 0; i < options.length; i++) {
+            if (options[i].text == text) {
+              if (i != selectEl.selectedIndex) {
+                selectEl.selectedIndex = i;
+                selectEl.trigger("change");
+              }
+              break;
+            }
+          }
+        });
+      });
     });
-    this.plugin.sortEdits(filepaths);
     for (let filepath of filepaths) {
-      const utcepoch = this.plugin.getEditEpoch(filepath);
-      const date = new Date(utcepoch);
-      select.addOption(filepath, date.toLocaleString());
+      select.addOption(filepath, this.plugin.getEditLocalDateStr(filepath));
     }
     select.selectEl.trigger("change");
-    revStats.setText(filepaths.length + " edit" + (filepaths.length > 1 ? "s, " : ", ") + zipFile.stat.size + " bytes compressed, " + ((_a = this.app.workspace.getActiveFile()) == null ? void 0 : _a.stat.size) + " note bytes");
     this.plugin.statusBarItemEl.setText(filepaths.length + " edits");
   }
   onClose() {
@@ -4894,7 +5326,7 @@ var EditHistorySettingTab = class extends import_obsidian.PluginSettingTab {
     containerEl.empty();
     containerEl.createEl("small", { text: "Created by " }).appendChild(createEl("a", { text: "Antonio Tejada", href: "https://github.com/antoniotejada/" }));
     containerEl.createEl("h3", { text: "General" });
-    new import_obsidian.Setting(containerEl).setName("Minimum seconds between edits").setDesc("Minimum number of seconds that must pass from the previous edit to store a new edit. Modifications done between those seconds will be merged into the next edit, reducing the edit history file size at the expense of less history granularity.").addText((text) => text.setPlaceholder(DEFAULT_SETTINGS.minSecondsBetweenEdits).setValue(this.plugin.settings.minSecondsBetweenEdits).onChange(async (value) => {
+    new import_obsidian.Setting(containerEl).setName("Minimum seconds between edits").setDesc("Minimum number of seconds that must pass from the previous edit to store a new edit, set to 0 to disable. Modifications done between those seconds will be merged into the next edit, reducing the edit history file size at the expense of less history granularity.").addText((text) => text.setPlaceholder(DEFAULT_SETTINGS.minSecondsBetweenEdits).setValue(this.plugin.settings.minSecondsBetweenEdits).onChange(async (value) => {
       logInfo("Minimum seconds between edits: " + value);
       this.plugin.settings.minSecondsBetweenEdits = value;
       await this.plugin.saveSettings();
@@ -4925,6 +5357,16 @@ var EditHistorySettingTab = class extends import_obsidian.PluginSettingTab {
       this.plugin.settings.showOnStatusBar = value;
       await this.plugin.saveSettings();
       this.plugin.statusBarItemEl.toggle(this.plugin.settings.showOnStatusBar);
+    }));
+    new import_obsidian.Setting(containerEl).setName("Diff display type").setDesc("In the diff view, display the diff raw, timeline, inline, horizontally (side by side), or vertically (top by bottom).").addDropdown((dropdown) => dropdown.addOptions(diffDisplayFormatToString).setValue(this.plugin.settings.diffDisplayFormat).onChange(async (value) => {
+      logInfo("Diff display position: " + value);
+      this.plugin.settings.diffDisplayFormat = value;
+      await this.plugin.saveSettings();
+    }));
+    new import_obsidian.Setting(containerEl).setName("Show whitespace").setDesc("Show whitespace in the diff view.").addToggle((toggle) => toggle.setValue(this.plugin.settings.showWhitespace).onChange(async (value) => {
+      logInfo("Show whitespace: " + value);
+      this.plugin.settings.showWhitespace = value;
+      await this.plugin.saveSettings();
     }));
     containerEl.createEl("h3", { text: "Debugging" });
     new import_obsidian.Setting(containerEl).setName("Debug level").setDesc("Messages to show in the javascript console.").addDropdown((dropdown) => dropdown.addOption("error", "Errors").addOption("warn", "Warnings").addOption("info", "Information").addOption("debug", "Verbose").setValue(this.plugin.settings.debugLevel).onChange(async (value) => {

@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Dynamic Tags Based on Folder",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags Based on Folder/Dynamic Tags Based on Folder.md"
+    },
+    {
       "basename": "Using Tags",
       "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
     },
@@ -199,6 +203,7 @@
   ],
   "omittedPaths": [],
   "omittedTags": [],
+  "updateOn": "file-open",
   "omitBookmarks": false,
   "maxLength": null,
   "openType": "tab"

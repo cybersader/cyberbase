@@ -8,7 +8,7 @@ date modified: Saturday, March 15th 2025, 5:12 pm
 ---
 
 [Knowledge Organization](../../📁%2054%20-%20Obsidian%20Vault%20Organization/Knowledge%20Organization/Knowledge%20Organization.md)
-
+[Vault Folder & Tag Structure](../../📁%2054%20-%20Obsidian%20Vault%20Organization/Vault%20Folder%20&%20Tag%20Structure/Vault%20Folder%20&%20Tag%20Structure.md)
 # How you can use tags
 
 - Use tags for
@@ -42,7 +42,17 @@ date modified: Saturday, March 15th 2025, 5:12 pm
 - Zootelkeeper
 - My Thesaurus
 - TagFolder
+- Folder by tags distributor
 - Auto Note Mover
+- Frontmatter Tag Suggest
+- Base Tag Renderer
+- Tag Summary
+- TagMany
+- Tag Page
+- Quick Tagger
+- Tags Routes
+- Tags Overview
+- 
 
 - Breadcrumbs
 - Juggl

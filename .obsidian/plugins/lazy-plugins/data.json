@@ -973,6 +973,9 @@
       },
       "change-case": {
         "startupType": "instant"
+      },
+      "folder-by-tags-distributor": {
+        "startupType": "disabled"
       }
     }
   }

@@ -4,8 +4,10 @@ tags: []
 publish: true
 permalink:
 date created: Saturday, March 15th 2025, 7:17 pm
-date modified: Monday, March 17th 2025, 10:24 am
+date modified: Monday, March 17th 2025, 11:48 am
 ---
+
+[Using Tags](../../📁%2010%20-%20My%20Obsidian%20Stack/Using%20Tags/Using%20Tags.md)
 
 the workflow
 - ARC - add, relate, communicate
@@ -70,18 +72,17 @@ https://help.obsidian.md/tags
 tag case
 - just use snake-case since double clicking and programming with the tag names becomes easier
 
-## tag structure example
+## tag structure examples
 
-- _/unstructured categories or tags
-    - alphatical or automcomplete sorting can also help here
-- NUMBER-word_here/ontologies
+- `_/unstructured categories or tags`
+    - alphabetical or autocomplete sorting can also help here
+- `(number or emoji)_word_here/ontologies`
     - or structured strictly where the alphabetical or chronoglocial naming helps
-- words/stuff based on information process or KMS process or functionality (e.g. clippings)
+- `words/stuff` - based on information process or KMS process or functionality (e.g. clippings)
     - these have to be easy to remember
-- -/other purpose
+- `-/other_purpose`
+- `--/yet_another_section`
 
-if you need to use regular words for unstructured tags then you can hide some things in the underscore or - tags
+if you need to use regular words for unstructured tags then you can hide some things in the underscore or dash tags
 
 The first type of character helps with autocomplete
-
-
