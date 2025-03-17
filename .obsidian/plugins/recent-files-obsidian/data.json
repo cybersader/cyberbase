@@ -5,6 +5,14 @@
       "path": "⬇️ Clippings/ChatGPT/ChatGPT.md"
     },
     {
+      "basename": "Articles, Blogs",
+      "path": "⬇️ Clippings/Articles, Blogs/Articles, Blogs.md"
+    },
+    {
+      "basename": "News",
+      "path": "⬇️ Clippings/News/News.md"
+    },
+    {
       "basename": "Tag Examples",
       "path": "📁 54 - Obsidian Vault Organization/Tag Examples/Tag Examples.md"
     },
@@ -185,16 +193,8 @@
       "path": "📁 51 - Cyberbase/Cyberbase Tech Stack/Cyberbase Tech Stack.md"
     },
     {
-      "basename": "Articles, Blogs",
-      "path": "⬇️ Clippings/Articles, Blogs/Articles, Blogs.md"
-    },
-    {
       "basename": "GitHub Repos",
       "path": "⬇️ Clippings/GitHub Repos/GitHub Repos.md"
-    },
-    {
-      "basename": "News",
-      "path": "⬇️ Clippings/News/News.md"
     }
   ],
   "omittedPaths": [],
