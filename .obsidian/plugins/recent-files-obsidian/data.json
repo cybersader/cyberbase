@@ -195,10 +195,6 @@
     {
       "basename": "News",
       "path": "⬇️ Clippings/News/News.md"
-    },
-    {
-      "basename": "Reddit",
-      "path": "⬇️ Clippings/Reddit/Reddit.md"
     }
   ],
   "omittedPaths": [],
