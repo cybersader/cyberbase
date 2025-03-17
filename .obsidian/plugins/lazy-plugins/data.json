@@ -970,6 +970,9 @@
       },
       "quick-explorer": {
         "startupType": "disabled"
+      },
+      "change-case": {
+        "startupType": "instant"
       }
     }
   }
