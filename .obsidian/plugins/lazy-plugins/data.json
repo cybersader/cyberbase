@@ -498,7 +498,7 @@
         "startupType": "disabled"
       },
       "obsidian-advanced-uri": {
-        "startupType": "disabled"
+        "startupType": "instant"
       },
       "entity-linker": {
         "startupType": "disabled"
@@ -777,7 +777,7 @@
         "startupType": "short"
       },
       "obsidian-fuzzytag": {
-        "startupType": "disabled"
+        "startupType": "instant"
       },
       "paperless": {
         "startupType": "disabled"
@@ -963,7 +963,7 @@
         "startupType": "disabled"
       },
       "date-inserter": {
-        "startupType": "disabled"
+        "startupType": "instant"
       },
       "datepicker": {
         "startupType": "disabled"

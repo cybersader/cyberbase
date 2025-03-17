@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Dynamic Tags Based on Folder",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags Based on Folder/Dynamic Tags Based on Folder.md"
-    },
-    {
       "basename": "Using Tags",
       "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
+    },
+    {
+      "basename": "Dynamic Folders Based on Tags",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders Based on Tags/Dynamic Folders Based on Tags.md"
+    },
+    {
+      "basename": "Dynamic Tags Based on Folder",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags Based on Folder/Dynamic Tags Based on Folder.md"
     },
     {
       "basename": "Vault Folder & Tag Structure",
@@ -195,10 +199,6 @@
     {
       "basename": "Wikipedia",
       "path": "⬇️ Clippings/Wikipedia/Wikipedia.md"
-    },
-    {
-      "basename": "⬇️ Clippings",
-      "path": "⬇️ Clippings/⬇️ Clippings.md"
     }
   ],
   "omittedPaths": [],
