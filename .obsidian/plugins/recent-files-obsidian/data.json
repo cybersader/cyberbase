@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "Tag Examples",
+      "path": "📁 54 - Obsidian Vault Organization/Tag Examples/Tag Examples.md"
+    },
+    {
+      "basename": "Dynamic Tags Based on Folder",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags Based on Folder/Dynamic Tags Based on Folder.md"
+    },
+    {
+      "basename": "Dynamic Folders Based on Tags",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders Based on Tags/Dynamic Folders Based on Tags.md"
+    },
+    {
+      "basename": "Vault Folder & Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
+    },
+    {
+      "basename": "Knowledge Organization",
+      "path": "📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "Tag Pages",
+      "path": "📁 54 - Obsidian Vault Organization/Tag Pages/Tag Pages.md"
+    },
+    {
+      "basename": "Tag Bugs & Issues",
+      "path": "📁 54 - Obsidian Vault Organization/Tag Bugs & Issues/Tag Bugs & Issues.md"
+    },
+    {
       "basename": "Deepseek Ban Proposal",
       "path": "⬇️ Clippings/News/Deepseek Ban Proposal/Deepseek Ban Proposal.md"
     },
@@ -33,24 +61,8 @@
       "path": "⬇️ Clippings/ChatGPT/ChatGPT.md"
     },
     {
-      "basename": "Tag Examples",
-      "path": "📁 54 - Obsidian Vault Organization/Tag Examples/Tag Examples.md"
-    },
-    {
       "basename": "Using Tags",
       "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
-    },
-    {
-      "basename": "Dynamic Folders Based on Tags",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders Based on Tags/Dynamic Folders Based on Tags.md"
-    },
-    {
-      "basename": "Dynamic Tags Based on Folder",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags Based on Folder/Dynamic Tags Based on Folder.md"
-    },
-    {
-      "basename": "Vault Folder & Tag Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
     },
     {
       "basename": "Simplemind",
@@ -79,10 +91,6 @@
     {
       "basename": "📁 54 - Obsidian Vault Organization",
       "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md"
     },
     {
       "basename": "📁 10 - My Obsidian Stack",
@@ -191,14 +199,6 @@
     {
       "basename": "Cyber Frameworks, Ontologies",
       "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Cyber Frameworks, Ontologies/Cyber Frameworks, Ontologies.md"
-    },
-    {
-      "basename": "📁 50 - Cybersade",
-      "path": "📁 50 - Cybersade/📁 50 - Cybersade.md"
-    },
-    {
-      "basename": "Cyberbase Tech Stack",
-      "path": "📁 51 - Cyberbase/Cyberbase Tech Stack/Cyberbase Tech Stack.md"
     }
   ],
   "omittedPaths": [],

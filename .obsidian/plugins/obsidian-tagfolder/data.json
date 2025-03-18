@@ -13,7 +13,7 @@
   "ignoreFolders": "",
   "targetFolders": "",
   "scanDelay": 250,
-  "useTitle": true,
+  "useTitle": false,
   "reduceNestedParent": true,
   "frontmatterKey": "title",
   "useTagInfo": false,
