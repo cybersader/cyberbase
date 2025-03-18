@@ -170,6 +170,6 @@ If you enjoy my work or find value from it, then you can support me below by sha
 
 
 
-<a href="https://www.buymeacoffee.com/cybersader"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=cybersader&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" width="80%" /></a>
+<a href="https://www.buymeacoffee.com/cybersader"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=cybersader&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" width="70%" /></a>
 
 
