@@ -11,7 +11,7 @@ date modified: Monday, March 17th 2025, 9:24 pm
 
 the workflow
 - ARC - add, relate, communicate
-- M
+[📁 37 - Music](../../📁%2037%20-%20Music/📁%2037%20-%20Music.md)
 
 # folders
 
@@ -97,4 +97,4 @@ https://help.obsidian.md/tags
 
 if you need to use regular words for unstructured tags then you can hide some things in the underscore or dash tags
 
-The first type of character helps with autocomplet
+The first type of character helps with autocomplete
