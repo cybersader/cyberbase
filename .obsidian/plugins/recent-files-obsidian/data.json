@@ -1,24 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "Information Organization Systems",
-      "path": "📁 54 - Obsidian Vault Organization/Information Organization Systems/Information Organization Systems.md"
+      "basename": "Folder Structure Ideas",
+      "path": "📁 54 - Obsidian Vault Organization/Folder Structure Ideas/Folder Structure Ideas.md"
     },
     {
       "basename": "Folder Structure Examples",
       "path": "📁 54 - Obsidian Vault Organization/Folder Structure Examples/Folder Structure Examples.md"
     },
     {
+      "basename": "📁 54 - Obsidian Vault Organization",
+      "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
+    },
+    {
       "basename": "Tag Structure Examples",
       "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
     },
     {
-      "basename": "Vault Folder & Tag Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
+      "basename": "Knowledge Space Organization Framework",
+      "path": "📁 54 - Obsidian Vault Organization/Knowledge Space Organization Framework/Knowledge Space Organization Framework.md"
     },
     {
       "basename": "Knowledge Organization",
       "path": "📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "Information Organization Systems",
+      "path": "📁 54 - Obsidian Vault Organization/Information Organization Systems/Information Organization Systems.md"
+    },
+    {
+      "basename": "Vault Folder & Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
     },
     {
       "basename": "File Organization Systems",
@@ -105,10 +117,6 @@
       "path": "README.md"
     },
     {
-      "basename": "📁 54 - Obsidian Vault Organization",
-      "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
-    },
-    {
       "basename": "📁 10 - My Obsidian Stack",
       "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Query All The Things",
       "path": "📁 10 - My Obsidian Stack/Query All The Things/Query All The Things.md"
-    },
-    {
-      "basename": "2 - Vault Organization",
-      "path": "📁 52 - Obsidian Starters & Templates/2 - Vault Organization/2 - Vault Organization.md"
-    },
-    {
-      "basename": "Surf the Web in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Surf the Web in Obsidian/Surf the Web in Obsidian.md"
     }
   ],
   "omittedPaths": [],
