@@ -4,14 +4,14 @@ tags: []
 publish: true
 permalink:
 date created: Saturday, March 15th 2025, 7:17 pm
-date modified: Monday, March 17th 2025, 9:19 pm
+date modified: Monday, March 17th 2025, 9:24 pm
 ---
 
 [Using Tags](../../📁%2010%20-%20My%20Obsidian%20Stack/Using%20Tags/Using%20Tags.md)
 
 the workflow
 - ARC - add, relate, communicate
-- 
+- M
 
 # folders
 
@@ -48,9 +48,9 @@ the workflow
 
 - if you have to, leave shorts cuts to the consumable and deliverable parts
 - maps of content
-- docs output areas sorted for different audience
-- mocs for different audiences
-- theres always the search bar
+- docs output areas sorted for different audiences
+- MoCs for different audiences
+- there's always the search bar
 
 start simple then scale up or down as needed...srsly
 
@@ -97,4 +97,4 @@ https://help.obsidian.md/tags
 
 if you need to use regular words for unstructured tags then you can hide some things in the underscore or dash tags
 
-The first type of character helps with autocomplete
+The first type of character helps with autocomplet
