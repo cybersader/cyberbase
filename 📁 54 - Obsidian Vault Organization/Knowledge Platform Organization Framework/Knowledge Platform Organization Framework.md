@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: 
 date created: Tuesday, March 18th 2025, 12:21 pm
-date modified: Tuesday, March 18th 2025, 2:00 pm
+date modified: Tuesday, March 18th 2025, 3:00 pm
 ---
 
 [Tag Structure Examples](../Tag%20Structure%20Examples/Tag%20Structure%20Examples.md)
@@ -21,9 +21,15 @@ date modified: Tuesday, March 18th 2025, 2:00 pm
 
 **Effective knowledge platforms** like Obsidian, Notion, or a simple folder system work best when structured around your needs – not a one-size-fits-all template. As one knowledge manager noted, no single method fits everyone; your ideal setup is unique to the work you do and knowledge you manage ​[reddit.com](https://www.reddit.com/r/PKMS/comments/1f1og13/second_brain_recommendation/#:~:text=Unfortunately%2C%20one%20tool%20is%20not,usability). Instead of rigid rules, the WORCS (or COWS) framework encourages you to think from **first principles** – define your system based on its purpose and audience before deciding on folders, tags, or any tool-specific setup. WORCS stands for **Work, Output, Relation, Capture, System** (sometimes simplified to **COWS** without the “Relation” component) or COW for the core knowledge platform aspects. Each term represents a role that information can play in your “second brain.” By understanding these components, you can design a knowledge space that **fits your workflow** or maximizes on its purpose, whether it’s a personal notes vault, a team wiki, or a publishable knowledge base.
 
-## First Principles
+## Start with Purpose and Audience (First Principles)
 
-- 
+Begin by clarifying **why** you’re organizing knowledge and **who** it’s for. This will guide every structural decision:
+
+- **Purpose:** Are you organizing notes for personal learning, managing project documentation, writing a book, or curating content to share online? The purpose dictates what categories you need. 
+
+[reddit.com](https://www.reddit.com/r/PKMS/comments/1f1og13/second_brain_recommendation/#:~:text=choose%20tools%20that%20give%20you,usability)
+
+. Focus on structuring what will actually drive your work or learning.
 
 ## Framework Breakdown
 
