@@ -1,16 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "ChatGPT",
-      "path": "⬇️ Clippings/ChatGPT/ChatGPT.md"
+      "basename": "Deepseek Ban Proposal",
+      "path": "⬇️ Clippings/News/Deepseek Ban Proposal/Deepseek Ban Proposal.md"
+    },
+    {
+      "basename": "Tech",
+      "path": "⬇️ Clippings/Tech/Tech.md"
+    },
+    {
+      "basename": "YouTube",
+      "path": "⬇️ Clippings/YouTube/YouTube.md"
+    },
+    {
+      "basename": "Reddit",
+      "path": "⬇️ Clippings/Reddit/Reddit.md"
+    },
+    {
+      "basename": "Obsidian Plugins",
+      "path": "⬇️ Clippings/Obsidian Plugins/Obsidian Plugins.md"
+    },
+    {
+      "basename": "News",
+      "path": "⬇️ Clippings/News/News.md"
     },
     {
       "basename": "Articles, Blogs",
       "path": "⬇️ Clippings/Articles, Blogs/Articles, Blogs.md"
     },
     {
-      "basename": "News",
-      "path": "⬇️ Clippings/News/News.md"
+      "basename": "ChatGPT",
+      "path": "⬇️ Clippings/ChatGPT/ChatGPT.md"
     },
     {
       "basename": "Tag Examples",
@@ -41,16 +61,8 @@
       "path": "CLIPPI~1/YouTube/Custom PCs Australia - Steve Jobs perfect response to an insult. Worldwide developer conference 1997/Custom PCs Australia - Steve Jobs perfect response to an insult. Worldwide developer conference 1997.md"
     },
     {
-      "basename": "YouTube",
-      "path": "⬇️ Clippings/YouTube/YouTube.md"
-    },
-    {
       "basename": "S3 - 2025 The Dawn of Energy Abundance",
       "path": "⬇️ Clippings/YouTube/S3 - 2025 The Dawn of Energy Abundance/S3 - 2025 The Dawn of Energy Abundance.md"
-    },
-    {
-      "basename": "Tech",
-      "path": "⬇️ Clippings/Tech/Tech.md"
     },
     {
       "basename": "To Scale - To Scale TIME",
@@ -115,10 +127,6 @@
     {
       "basename": "Templater",
       "path": "📁 10 - My Obsidian Stack/Templater/Templater.md"
-    },
-    {
-      "basename": "Obsidian Plugins",
-      "path": "⬇️ Clippings/Obsidian Plugins/Obsidian Plugins.md"
     },
     {
       "basename": "Tasks Queries",
@@ -191,10 +199,6 @@
     {
       "basename": "Cyberbase Tech Stack",
       "path": "📁 51 - Cyberbase/Cyberbase Tech Stack/Cyberbase Tech Stack.md"
-    },
-    {
-      "basename": "GitHub Repos",
-      "path": "⬇️ Clippings/GitHub Repos/GitHub Repos.md"
     }
   ],
   "omittedPaths": [],

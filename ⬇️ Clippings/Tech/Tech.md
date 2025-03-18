@@ -10,7 +10,7 @@ date modified: Saturday, March 15th 2025, 2:52 pm
 # MoC
 
 ```dataview
-TABLE choice(favicon, "![favicon|100](" + favicon + ")", "") as Favicon, file.ctime as "Created", file.mtime as "Modified"
+TABLE choice(favicon, "![favicon|25](" + favicon + ")", "") as Favicon, file.ctime as "Created", file.mtime as "Modified"
 FROM ""
 WHERE (contains(file.folder, this.file.folder) or contains(file.tags, "#clippings/tech"))
   and file.path != this.file.path

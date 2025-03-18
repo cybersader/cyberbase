@@ -8,6 +8,6 @@ date modified: Saturday, March 15th 2025, 2:55 pm
 ---
 
 %% Begin Waypoint %%
-
+- **[[Deepseek Ban Proposal]]**
 
 %% End Waypoint %%
