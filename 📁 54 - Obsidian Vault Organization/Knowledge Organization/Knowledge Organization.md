@@ -4,7 +4,7 @@ aliases: [Obsidian Vault Structure]
 tags: [knowledge_management, wiki_organization, taxonomies, taxonomy, wiki_structure, library-science, wiki, kms]
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Saturday, March 15th 2025, 5:13 pm
+date modified: Monday, March 17th 2025, 9:36 pm
 ---
 
 [Obsidian Knowledge Management Workflows](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Obsidian%20Knowledge%20Management%20Workflows.md)
@@ -117,6 +117,8 @@ Here's the breakdown and ways I like to define it that works in personal or work
 
 - Zettelkasten
 	- [groepl/Take-Useful-Notes: eBook: "MAKE USEFUL NOTES. A simple guide to a complex skill by using Sketchnotes, Obsidian and Zettelkasten."](https://github.com/groepl/Take-Useful-Notes/tree/main)
+- Johnny Decimal
+	- [A system to organise your life • Johnny.Decimal](https://johnnydecimal.com/10-19-concepts/11-core/11.01-introduction/)
 - ARCO
 	- **A**tlas: Book of maps.
 	- **R**eference: Book of facts and external links.

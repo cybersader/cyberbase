@@ -10,6 +10,7 @@ date modified: Saturday, March 15th 2025, 5:46 pm
 %% Begin Waypoint %%
 - **[[Dynamic Folders Based on Tags]]**
 - **[[Dynamic Tags Based on Folder]]**
+- **[[Folders vs Tags vs Links vs Metadata]]**
 - **[[Knowledge Organization]]**
 - **[[Tag Bugs & Issues]]**
 - **[[Tag Pages]]**

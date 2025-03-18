@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Vault Folder & Tag Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
+      "basename": "Folders vs Tags vs Links vs Metadata",
+      "path": "📁 54 - Obsidian Vault Organization/Folders vs Tags vs Links vs Metadata/Folders vs Tags vs Links vs Metadata.md"
+    },
+    {
+      "basename": "Knowledge Organization",
+      "path": "📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md"
     },
     {
       "basename": "Tag Structure Examples",
       "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
+    },
+    {
+      "basename": "Vault Folder & Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
     },
     {
       "basename": "Dynamic Tags Based on Folder",
@@ -15,10 +23,6 @@
     {
       "basename": "Dynamic Folders Based on Tags",
       "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders Based on Tags/Dynamic Folders Based on Tags.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md"
     },
     {
       "basename": "Tag Pages",
@@ -195,10 +199,6 @@
     {
       "basename": "0 - Vault Basics",
       "path": "📁 52 - Obsidian Starters & Templates/0 - Vault Basics/0 - Vault Basics.md"
-    },
-    {
-      "basename": "Cyber Frameworks, Ontologies",
-      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Cyber Frameworks, Ontologies/Cyber Frameworks, Ontologies.md"
     }
   ],
   "omittedPaths": [],
