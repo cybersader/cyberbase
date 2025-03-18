@@ -1,20 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "Knowledge Organization",
-      "path": "📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md"
-    },
-    {
-      "basename": "Folders vs Tags vs Links vs Metadata",
-      "path": "📁 54 - Obsidian Vault Organization/Folders vs Tags vs Links vs Metadata/Folders vs Tags vs Links vs Metadata.md"
-    },
-    {
       "basename": "Tag Structure Examples",
       "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
     },
     {
+      "basename": "Information Organization Systems",
+      "path": "📁 54 - Obsidian Vault Organization/Information Organization Systems/Information Organization Systems.md"
+    },
+    {
       "basename": "Vault Folder & Tag Structure",
       "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
+    },
+    {
+      "basename": "Knowledge Organization",
+      "path": "📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "File Organization Systems",
+      "path": "📁 54 - Obsidian Vault Organization/File Organization Systems/File Organization Systems.md"
+    },
+    {
+      "basename": "Folders vs Tags vs Links vs Metadata",
+      "path": "📁 54 - Obsidian Vault Organization/Folders vs Tags vs Links vs Metadata/Folders vs Tags vs Links vs Metadata.md"
     },
     {
       "basename": "Dynamic Tags Based on Folder",
@@ -191,14 +199,6 @@
     {
       "basename": "📁 51 - Cyberbase",
       "path": "📁 51 - Cyberbase/📁 51 - Cyberbase.md"
-    },
-    {
-      "basename": "1 - Starting Your Vault",
-      "path": "📁 52 - Obsidian Starters & Templates/1 - Starting Your Vault/1 - Starting Your Vault.md"
-    },
-    {
-      "basename": "0 - Vault Basics",
-      "path": "📁 52 - Obsidian Starters & Templates/0 - Vault Basics/0 - Vault Basics.md"
     }
   ],
   "omittedPaths": [],

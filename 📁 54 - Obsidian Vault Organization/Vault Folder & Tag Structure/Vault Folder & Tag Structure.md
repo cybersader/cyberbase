@@ -12,9 +12,10 @@ date modified: Monday, March 17th 2025, 9:29 pm
 the workflow
 - ARC - add, relate, communicate
 
-# folders
+# Ideas
+## folders
 
-## good ways to structure folders
+### good ways to structure folders
 
 - most to least actionable (e.g. PARA)
 - meta folders before or after (e.g. obsidian utils)
@@ -25,25 +26,25 @@ the workflow
 - use folders to structure the knowledge work process and not the content
 - structure for recall
 
-## the high level structuring priorities
+### the high level structuring priorities
 
 - make sense for the audience
 - order of high level should mean something
     - based off of LATCH
         - Location Alphabet Time Category (cluster) Hierarchy (ontology)
 
-## root level folder ideas
+### root level folder ideas
 
 - para
 - ace
 - efforts, journal/time, knowledge (EJK)
 
-## folder notes or no?
+### folder notes or no?
 
 - without enforcing them you have images above the note files
 - enforcing them is hard though
 
-## outputs, docs, audience
+### outputs, docs, audience
 
 - if you have to, leave shorts cuts to the consumable and deliverable parts
 - maps of content
@@ -53,11 +54,11 @@ the workflow
 
 start simple then scale up or down as needed...srsly
 
-# tags
+## tags
 
 just as folders need structures so do tags, but they can overlap
 
-## good ways to structure tags
+### good ways to structure tags
 
 - by the content
 - with unique names
@@ -68,22 +69,22 @@ just as folders need structures so do tags, but they can overlap
 - by actionability
 - for recall - LATCH components
 
-## ideas for tag structures
+### ideas for tag structures
 
 - use underscore to auto complete into ontology or process focused tag structures
 - use meta tag categories
 - use a tag root for meta stuff for working in the vault
 - 
 
-## what's supported for tags?
+### what's supported for tags?
 
 https://help.obsidian.md/tags 
 
-## tag case
+### tag case
 
 - just use snake-case since double clicking and programming with the tag names becomes easier
 
-## tag structure examples
+### tag structure examples
 
 - `_/unstructured categories or tags`
     - alphabetical or autocomplete sorting can also help here

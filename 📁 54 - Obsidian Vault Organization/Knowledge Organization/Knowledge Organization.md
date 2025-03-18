@@ -4,12 +4,13 @@ aliases: [Obsidian Vault Structure]
 tags: [knowledge_management, wiki_organization, taxonomies, taxonomy, wiki_structure, library-science, wiki, kms]
 publish: true
 date created: Thursday, June 20th 2024, 2:16 pm
-date modified: Monday, March 17th 2025, 9:36 pm
+date modified: Tuesday, March 18th 2025, 10:02 am
 ---
 
 [Obsidian Knowledge Management Workflows](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Obsidian%20Knowledge%20Management%20Workflows.md)
 [Cyber Frameworks, Ontologies](../../📁%2005%20-%20Organizational%20Cyber/Frameworks,%20Standards/Cyber%20Frameworks,%20Ontologies/Cyber%20Frameworks,%20Ontologies.md)
 [Obsidian Frameworker](../../📁%2001%20-%20Projects/Obsidian%20Frameworker/Obsidian%20Frameworker.md)
+[File Organization Systems](../File%20Organization%20Systems/File%20Organization%20Systems.md)
 
 > [!important] This is a work in progress and always will be
 
