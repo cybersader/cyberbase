@@ -4,14 +4,13 @@ tags: []
 publish: true
 permalink:
 date created: Saturday, March 15th 2025, 7:17 pm
-date modified: Monday, March 17th 2025, 9:24 pm
+date modified: Monday, March 17th 2025, 9:29 pm
 ---
 
 [Using Tags](../../📁%2010%20-%20My%20Obsidian%20Stack/Using%20Tags/Using%20Tags.md)
 
 the workflow
 - ARC - add, relate, communicate
-- M
 
 # folders
 
@@ -22,7 +21,7 @@ the workflow
 - MoC files to link or map a tag based ontology
 - separate by the part of the workflow (ARC) (e.g. Inbox, MoCs, Hierachies/Docs)
 - dont organize time manually and granularly.  have an archive under time where you can throw those.  that means dont duplicate time based under some archived focused folder
-- do you duplicate ontologies under acrchives or no?
+- do you duplicate ontologies under archives or no?
 - use folders to structure the knowledge work process and not the content
 - structure for recall
 

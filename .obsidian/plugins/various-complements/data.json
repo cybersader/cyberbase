@@ -35,7 +35,15 @@
         "hideHotkeyGuide": false
       }
     ],
-    "select with custom alias": [],
+    "select with custom alias": [
+      {
+        "modifiers": [
+          "Shift"
+        ],
+        "key": "Tab",
+        "hideHotkeyGuide": false
+      }
+    ],
     "up": [
       {
         "modifiers": [],
