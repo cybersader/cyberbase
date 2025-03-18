@@ -16,7 +16,7 @@ date modified: Saturday, March 15th 2025, 5:46 pm
 - **[[Folders vs Tags vs Links vs Metadata]]**
 - **[[Information Organization Systems]]**
 - **[[Knowledge Organization]]**
-- **[[Knowledge Space Organization Framework]]**
+- **[[Knowledge Platform Organization Framework]]**
 - **[[Tag Bugs & Issues]]**
 - **[[Tag Pages]]**
 - **[[Tag Structure Examples]]**
