@@ -1,10 +1,10 @@
 ---
-aliases: [Tag Structure Examples]
+aliases: []
 tags: []
 publish: true
 permalink: 
 date created: Monday, March 17th 2025, 11:11 am
-date modified: Monday, March 17th 2025, 8:22 pm
+date modified: Monday, March 17th 2025, 9:19 pm
 ---
 
 [File Order](../../📁%2010%20-%20My%20Obsidian%20Stack/File%20Order/File%20Order.md) 
@@ -38,6 +38,6 @@ date modified: Monday, March 17th 2025, 8:22 pm
     - doesn't handle unstructured notes other than sending them to root
 - Folder Notes
 
-# Plugins that use structure
+# What needs to be in structure
 
 - 

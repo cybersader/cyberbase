@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Mon, Mar 17, 2025 - [[Tag Examples]]
+> Mon, Mar 17, 2025 - [[📁 54 - Obsidian Vault Organization/Tag Examples/Tag Structure Examples]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -102,7 +102,7 @@ SORT file.mtime DESC LIMIT 10
 
 | File                                                                                                                                  | Last modified             |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 54 - Obsidian Vault Organization/Tag Examples/Tag Examples.md\|Tag Examples]]                                                    | Mon - 3/17/2025, 12:18 PM |
+| [[📁 54 - Obsidian Vault Organization/Tag Examples/Tag Structure Examples|Tag Examples]]                                                    | Mon - 3/17/2025, 12:18 PM |
 | [[📁 54 - Obsidian Vault Organization/Dynamic Folders Based on Tags/Dynamic Folders Based on Tags.md\|Dynamic Folders Based on Tags]] | Mon - 3/17/2025, 11:53 AM |
 | [[📁 54 - Obsidian Vault Organization/Dynamic Tags Based on Folder/Dynamic Tags Based on Folder.md\|Dynamic Tags Based on Folder]]    | Mon - 3/17/2025, 11:52 AM |
 | [[📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md\|Vault Folder & Tag Structure]]    | Mon - 3/17/2025, 11:48 AM |

@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Saturday, March 15th 2025, 7:17 pm
-date modified: Monday, March 17th 2025, 11:48 am
+date modified: Monday, March 17th 2025, 9:19 pm
 ---
 
 [Using Tags](../../📁%2010%20-%20My%20Obsidian%20Stack/Using%20Tags/Using%20Tags.md)
@@ -15,7 +15,8 @@ the workflow
 
 # folders
 
-good ways to structure folders
+## good ways to structure folders
+
 - most to least actionable (e.g. PARA)
 - meta folders before or after (e.g. obsidian utils)
 - MoC files to link or map a tag based ontology
@@ -25,22 +26,26 @@ good ways to structure folders
 - use folders to structure the knowledge work process and not the content
 - structure for recall
 
-the high level structuring priorities
+## the high level structuring priorities
+
 - make sense for the audience
 - order of high level should mean something
     - based off of LATCH
         - Location Alphabet Time Category (cluster) Hierarchy (ontology)
 
-root level folder ideas
+## root level folder ideas
+
 - para
 - ace
 - efforts, journal/time, knowledge (EJK)
 
-folder notes or no?
+## folder notes or no?
+
 - without enforcing them you have images above the note files
 - enforcing them is hard though
 
-outputs, docs, audience
+## outputs, docs, audience
+
 - if you have to, leave shorts cuts to the consumable and deliverable parts
 - maps of content
 - docs output areas sorted for different audience
@@ -53,23 +58,30 @@ start simple then scale up or down as needed...srsly
 
 just as folders need structures so do tags, but they can overlap
 
-good ways to structure tags
+## good ways to structure tags
+
 - by the content
 - with unique names
 - ontology based
 - for clustering
 - for filtering with mocs
+- by the process
+- by actionability
+- for recall - LATCH components
 
-ideas for tag structures
+## ideas for tag structures
+
 - use underscore to auto complete into ontology or process focused tag structures
 - use meta tag categories
 - use a tag root for meta stuff for working in the vault
 - 
 
-what's supported for tags?
+## what's supported for tags?
+
 https://help.obsidian.md/tags 
 
-tag case
+## tag case
+
 - just use snake-case since double clicking and programming with the tag names becomes easier
 
 ## tag structure examples
