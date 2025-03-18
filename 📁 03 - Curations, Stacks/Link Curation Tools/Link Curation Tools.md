@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Tuesday, November 19th 2024, 7:14 pm
-date modified: Friday, January 31st 2025, 3:32 pm
+date modified: Tuesday, March 18th 2025, 4:55 pm
 ---
 
 # URL to Link Collection Curation
@@ -19,6 +19,8 @@ date modified: Friday, January 31st 2025, 3:32 pm
 - Any html, css, and JS template → Netlify hosting (turns all the files into a website with a link for free)
 - “Pastebins”
 - Glitch remixes
+- [linkstack.org > LinkStack - Self-hosted open-source Linktree alternative](https://linkstack.org/)
+- [ezbiolink.com > EZBiolink - Monetize your social following with a highly converting biolink site - EZBiolink - Monetize your social traffic](https://ezbiolink.com/)
 
 ## URL to Link Collection Curation
 

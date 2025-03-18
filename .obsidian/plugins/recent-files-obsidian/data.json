@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Link Curation Tools",
+      "path": "📁 03 - Curations, Stacks/Link Curation Tools/Link Curation Tools.md"
+    },
+    {
+      "basename": "Folder Structure Examples",
+      "path": "📁 54 - Obsidian Vault Organization/Folder Structure Examples/Folder Structure Examples.md"
+    },
+    {
       "basename": "Knowledge Platform Organization Framework",
       "path": "📁 54 - Obsidian Vault Organization/Knowledge Platform Organization Framework/Knowledge Platform Organization Framework.md"
     },
@@ -23,10 +31,6 @@
     {
       "basename": "Information Organization Systems",
       "path": "📁 54 - Obsidian Vault Organization/Information Organization Systems/Information Organization Systems.md"
-    },
-    {
-      "basename": "Folder Structure Examples",
-      "path": "📁 54 - Obsidian Vault Organization/Folder Structure Examples/Folder Structure Examples.md"
     },
     {
       "basename": "📁 54 - Obsidian Vault Organization",
@@ -195,10 +199,6 @@
     {
       "basename": "Project Management",
       "path": "📁 10 - My Obsidian Stack/Project Management/Project Management.md"
-    },
-    {
-      "basename": "Query All The Things",
-      "path": "📁 10 - My Obsidian Stack/Query All The Things/Query All The Things.md"
     }
   ],
   "omittedPaths": [],
