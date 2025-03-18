@@ -11,6 +11,7 @@ date modified: Saturday, March 15th 2025, 5:46 pm
 - **[[Dynamic Folders Based on Tags]]**
 - **[[Dynamic Tags Based on Folder]]**
 - **[[File Organization Systems]]**
+- **[[Folder Structure Examples]]**
 - **[[Folders vs Tags vs Links vs Metadata]]**
 - **[[Information Organization Systems]]**
 - **[[Knowledge Organization]]**

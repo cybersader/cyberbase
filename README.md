@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Mon, Mar 17, 2025 - [[📁 54 - Obsidian Vault Organization/Tag Examples/Tag Structure Examples]]
+> Tue, Mar 18, 2025 - [[Information Organization Systems]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                  | Last modified             |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 54 - Obsidian Vault Organization/Tag Examples/Tag Structure Examples|Tag Examples]]                                                    | Mon - 3/17/2025, 12:18 PM |
-| [[📁 54 - Obsidian Vault Organization/Dynamic Folders Based on Tags/Dynamic Folders Based on Tags.md\|Dynamic Folders Based on Tags]] | Mon - 3/17/2025, 11:53 AM |
-| [[📁 54 - Obsidian Vault Organization/Dynamic Tags Based on Folder/Dynamic Tags Based on Folder.md\|Dynamic Tags Based on Folder]]    | Mon - 3/17/2025, 11:52 AM |
-| [[📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md\|Vault Folder & Tag Structure]]    | Mon - 3/17/2025, 11:48 AM |
-| [[📁 54 - Obsidian Vault Organization/Tag Bugs & Issues/Tag Bugs & Issues.md\|Tag Bugs & Issues]]                                     | Mon - 3/17/2025, 11:44 AM |
-| [[📁 10 - My Obsidian Stack/Using Tags/Using Tags.md\|Using Tags]]                                                                    | Mon - 3/17/2025, 11:34 AM |
-| [[📁 54 - Obsidian Vault Organization/Tag Pages/Tag Pages.md\|Tag Pages]]                                                             | Mon - 3/17/2025, 10:46 AM |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                        | Mon - 3/17/2025, 10:20 AM |
-| [[⬇️ Clippings/Tech/Tech.md\|Tech]]                                                                                                   | Mon - 3/17/2025, 10:20 AM |
-| [[⬇️ Clippings/Tech/Simplemind/Simplemind.md\|Simplemind]]                                                                            | Mon - 3/17/2025, 10:20 AM |
+| File                                                                                                                                                       | Last modified             |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 54 - Obsidian Vault Organization/Information Organization Systems/Information Organization Systems.md\|Information Organization Systems]]             | Tue - 3/18/2025, 10:25 AM |
+| [[📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md\|📁 54 - Obsidian Vault Organization]]                                        | Tue - 3/18/2025, 10:25 AM |
+| [[📁 54 - Obsidian Vault Organization/File Organization Systems/File Organization Systems.md\|File Organization Systems]]                                  | Tue - 3/18/2025, 10:25 AM |
+| [[📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md\|Knowledge Organization]]                                           | Tue - 3/18/2025, 10:02 AM |
+| [[📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md\|Tag Structure Examples]]                                           | Tue - 3/18/2025, 9:59 AM  |
+| [[📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md\|Vault Folder & Tag Structure]]                         | Tue - 3/18/2025, 9:54 AM  |
+| [[📁 54 - Obsidian Vault Organization/Folders vs Tags vs Links vs Metadata/Folders vs Tags vs Links vs Metadata.md\|Folders vs Tags vs Links vs Metadata]] | Mon - 3/17/2025, 9:41 PM  |
+| [[📁 54 - Obsidian Vault Organization/Dynamic Tags Based on Folder/Dynamic Tags Based on Folder.md\|Dynamic Tags Based on Folder]]                         | Mon - 3/17/2025, 8:20 PM  |
+| [[📁 54 - Obsidian Vault Organization/Dynamic Folders Based on Tags/Dynamic Folders Based on Tags.md\|Dynamic Folders Based on Tags]]                      | Mon - 3/17/2025, 8:20 PM  |
+| [[⬇️ Clippings/Tech/Tech.md\|Tech]]                                                                                                                        | Mon - 3/17/2025, 8:00 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 

@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Folder Structure Examples",
+      "path": "📁 54 - Obsidian Vault Organization/Folder Structure Examples/Folder Structure Examples.md"
+    },
+    {
       "basename": "Tag Structure Examples",
       "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Surf the Web in Obsidian",
       "path": "📁 10 - My Obsidian Stack/Surf the Web in Obsidian/Surf the Web in Obsidian.md"
-    },
-    {
-      "basename": "📁 51 - Cyberbase",
-      "path": "📁 51 - Cyberbase/📁 51 - Cyberbase.md"
     }
   ],
   "omittedPaths": [],
