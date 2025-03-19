@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Wednesday, March 19th 2025, 12:50 pm
-date modified: Wednesday, March 19th 2025, 1:14 pm
+date modified: Wednesday, March 19th 2025, 1:15 pm
 ---
 
 # My Tagging Structure
@@ -19,7 +19,7 @@ Under **Activities**, we have four sub-components:
 - **C**apture – How you get knowledge into the system.
 - **O**utput – How you interface or communicate the knowledge to external systems, entities, or audiences.
 - **W**ork – How you derive utility or process knowledge toward a goal.
-- **r**elation – How you interlink knowledge or connect concepts (not a core component)
+- (**r**)elation – How you interlink knowledge or connect concepts (not a core component)
 
 <u>Obsidian Tagging and Limitations:</u>
 - Benefits:
