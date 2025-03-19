@@ -54,5 +54,7 @@
   "obsidian-advanced-uri",
   "date-inserter",
   "obsidian-fuzzytag",
-  "dataview-publisher"
+  "dataview-publisher",
+  "obsidian-tagfolder",
+  "tag-wrangler"
 ]

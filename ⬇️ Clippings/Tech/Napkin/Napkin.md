@@ -7,7 +7,7 @@ source: "https://www.napkin.ai/"
 published:
 created: 2025-03-12
 description: "Just type, copy-paste or generate your text and Napkin will instantly transform it into insightful visuals. Make your communication more effective with Napkin."
-tags: ["clippings"]
+tags: ["-clippings"]
 date created: Wednesday, March 12th 2025, 9:53 pm
 date modified: Saturday, March 15th 2025, 2:43 pm
 ---

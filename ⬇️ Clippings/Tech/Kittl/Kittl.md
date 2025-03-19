@@ -7,7 +7,7 @@ source: "https://www.kittl.com/"
 published:
 created: 2025-03-11
 description: "Kittl is the intuitive design platform for professionals, featuring real-time collaboration, advanced tools, and a vast library of fonts and assets. Design, deliver, and collaborate seamlessly."
-tags: ["clippings"]
+tags: ["-clippings"]
 date created: Tuesday, March 11th 2025, 10:07 pm
 date modified: Saturday, March 15th 2025, 2:43 pm
 ---

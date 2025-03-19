@@ -5,8 +5,8 @@ date created: Wednesday, March 19th 2025, 9:05 am
 domain: "chatgpt.com"
 source:
 tags:
-  - "clippings"
-  - "clippings/chatgpt"
+  - "-clippings"
+  - "-clippings/chatgpt"
 ai_model: "ChatGPT 4o"
 author:
   - "ChatGPT"

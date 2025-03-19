@@ -18,7 +18,7 @@ date modified: Friday, March 22nd 2024, 11:04 am
 
 - For more vulns - [SANS Internet Storm Center](https://isc.sans.edu/forums/diary/Microsoft+Patch+Tuesday+March+2024/30736/)
 
-- #Apple and #Microsoft released updates to fix dozens of vulns
+- #apple and #Microsoft released updates to fix dozens of vulns
 - Microsoft patched 60 vulns!
 - Apple's macOS Sonoma addresses 68 weaknesses, and update for iOS fixes two zero-days
 	- [Apple Blunts Zero-Day Attacks With iOS 17.4 Update - SecurityWeek](https://www.securityweek.com/apple-blunts-zero-day-attacks-with-ios-17-4-update/) 

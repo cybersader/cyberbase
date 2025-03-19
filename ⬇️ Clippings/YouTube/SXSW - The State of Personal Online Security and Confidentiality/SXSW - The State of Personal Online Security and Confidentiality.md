@@ -6,8 +6,8 @@ date created: Sunday, March 16th 2025, 6:01 pm
 rating: "9"
 interest: "9"
 tags:
-  - clippings
-  - clippings/youtube
+  - -clippings
+  - -clippings/youtube
   - sxsw
   - personal_online_security
   - digital_privacy

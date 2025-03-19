@@ -2,7 +2,7 @@
 aliases:
   - Audit Tools & Model
 tags:
-  - Auditing
+  - auditing
   - Compliance
   - Hardening
   - SCAP

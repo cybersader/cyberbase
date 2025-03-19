@@ -8,8 +8,8 @@ published:
 created: 2025-03-15
 description: Chatwoot is an open-source as well as cloud-based customer engagement platform. Manage all of your customer conversation channels from one place.
 tags:
-  - clippings
-  - clippings/tech
+  - -clippings
+  - -clippings/tech
 date created: Saturday, March 15th 2025, 1:21 pm
 date modified: Saturday, March 15th 2025, 2:43 pm
 ---

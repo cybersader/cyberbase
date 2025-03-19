@@ -6,8 +6,8 @@ date created: Sunday, March 16th 2025, 6:00 pm
 rating: "10"
 interest: "9"
 tags:
-  - clippings
-  - clippings/youtube
+  - -clippings
+  - -clippings/youtube
   - energy_abundance
   - future_technology
   - nuclear_energy

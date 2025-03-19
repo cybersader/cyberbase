@@ -7,7 +7,7 @@ source: https://readwise.io/
 published: 
 created: 2025-03-12
 description: "Grow wiser and retain books better: Readwise sends you a daily email resurfacing your best highlights from Kindle, Instapaper, iBooks, and more."
-tags: [clippings]
+tags: [-clippings]
 date created: Wednesday, March 12th 2025, 9:46 pm
 date modified: Saturday, March 15th 2025, 2:43 pm
 ---

@@ -6,8 +6,8 @@ date created: Sunday, March 16th 2025, 5:54 pm
 rating:
 interest:
 tags:
-  - "clippings"
-  - "clippings/youtube"
+  - "-clippings"
+  - "-clippings/youtube"
   - "cosmic_evolution"
   - "scale_model"
   - "time_scale"

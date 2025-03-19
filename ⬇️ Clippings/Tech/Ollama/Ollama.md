@@ -7,7 +7,7 @@ source: https://ollama.com/
 published: 
 created: 2025-03-12
 description: Get up and running with large language models.
-tags: [clippings]
+tags: [-clippings]
 date created: Wednesday, March 12th 2025, 9:43 pm
 date modified: Saturday, March 15th 2025, 2:43 pm
 ---

@@ -5,8 +5,8 @@ published:
 date created: Wednesday, March 19th 2025, 10:16 am
 description: "Finally, one place for all of your ideas, notes, highlights, and writing. Capture any idea, synthesize your workspace with AI, and write notes or documents quick."
 tags:
-  - "clippings"
-  - "clippings/tech"
+  - "-clippings"
+  - "-clippings/tech"
 favicon: "https://cdn.prod.website-files.com/66e2be2343a7c5501a5a7fe2/66eda605d155545da532ad77_Kortex%20Favicon.png"
 ---
 > [kortex.co > Kortex | The AI Powered Second Brain](https://www.kortex.co/)

@@ -7,7 +7,7 @@ source: "https://www.slido.com/"
 published:
 created: 2025-03-11
 description: "Slido is an easy to use Q&A and polling platform. Increase engagement at your meetings, events, and conferences."
-tags: ["clippings"]
+tags: ["-clippings"]
 date created: Tuesday, March 11th 2025, 10:15 pm
 date modified: Saturday, March 15th 2025, 2:43 pm
 ---

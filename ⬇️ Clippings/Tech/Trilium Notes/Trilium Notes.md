@@ -7,7 +7,7 @@ source: "https://github.com/zadam/trilium"
 published:
 created: 2025-03-12
 description: "Build your personal knowledge base with Trilium Notes - zadam/trilium"
-tags: ["clippings"]
+tags: ["-clippings"]
 date created: Wednesday, March 12th 2025, 9:50 pm
 date modified: Saturday, March 15th 2025, 2:43 pm
 ---

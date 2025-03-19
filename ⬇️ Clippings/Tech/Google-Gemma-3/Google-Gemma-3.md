@@ -7,7 +7,7 @@ source: https://blog.google/technology/developers/gemma-3/
 published: 2025-03-12
 created: 2025-03-12
 description: Today, we're introducing Gemma 3, our most capable, portable and responsible open model yet.
-tags: [clippings]
+tags: [-clippings]
 date created: Wednesday, March 12th 2025, 9:41 pm
 date modified: Saturday, March 15th 2025, 2:43 pm
 ---

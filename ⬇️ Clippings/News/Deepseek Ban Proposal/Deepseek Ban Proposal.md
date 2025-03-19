@@ -7,8 +7,8 @@ author:
 date created: Monday, March 17th 2025, 7:54 pm
 published: Thursday, March 13th 2025, 12:21 pm
 tags:
-  - "clippings"
-  - "clippings/news"
+  - "-clippings"
+  - "-clippings/news"
 domain: "techcrunch.com"
 source: "https://techcrunch.com/2025/03/13/openai-calls-deepseek-state-controlled-calls-for-bans-on-prc-produced-models/"
 ---

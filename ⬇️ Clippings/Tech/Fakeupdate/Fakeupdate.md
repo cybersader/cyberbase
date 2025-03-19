@@ -7,7 +7,7 @@ source: "https://fakeupdate.net/"
 published:
 created: 2025-03-11
 description: "Prank your friends and colleagues with fake update screens!"
-tags: ["clippings"]
+tags: ["-clippings"]
 date created: Tuesday, March 11th 2025, 9:59 pm
 date modified: Saturday, March 15th 2025, 2:43 pm
 ---

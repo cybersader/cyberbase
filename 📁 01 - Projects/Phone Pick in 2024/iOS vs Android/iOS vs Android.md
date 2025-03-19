@@ -7,7 +7,7 @@ tags:
   - iPhone
   - Android
   - iOS
-  - Apple
+  - apple
   - Samsung
   - OS
   - UX

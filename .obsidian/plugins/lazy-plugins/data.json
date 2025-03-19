@@ -417,10 +417,10 @@
         "startupType": "instant"
       },
       "tag-wrangler": {
-        "startupType": "disabled"
+        "startupType": "instant"
       },
       "obsidian-tagfolder": {
-        "startupType": "disabled"
+        "startupType": "instant"
       },
       "obsidian-tasks-plugin": {
         "startupType": "instant"

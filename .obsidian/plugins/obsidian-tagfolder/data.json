@@ -6,7 +6,7 @@
   "hideOnRootTags": "",
   "sortType": "DISPNAME_ASC",
   "sortExactFirst": false,
-  "sortTypeTag": "ITEMS_DESC",
+  "sortTypeTag": "NAME_ASC",
   "expandLimit": 2,
   "disableNestedTags": false,
   "hideItems": "NONE",

@@ -7,7 +7,7 @@ source: "https://notesnook.com/"
 published:
 created: 2025-03-12
 description: "Express yourself with freedom, no spying, no tracking — only private notes. Unlike Evernote and other note apps, your data is private — not open for everyone to see."
-tags: ["clippings"]
+tags: ["-clippings"]
 date created: Wednesday, March 12th 2025, 9:51 pm
 date modified: Saturday, March 15th 2025, 2:43 pm
 ---

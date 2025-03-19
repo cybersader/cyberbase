@@ -7,7 +7,7 @@ source: "https://crypt.ee/"
 published:
 created: 2025-03-12
 description: "Cryptee is an encrypted secure photo storage service, and an encrypted documents editor to write personal docs, notes, journals, store files and more."
-tags: ["clippings"]
+tags: ["-clippings"]
 date created: Wednesday, March 12th 2025, 9:57 pm
 date modified: Saturday, March 15th 2025, 2:43 pm
 ---

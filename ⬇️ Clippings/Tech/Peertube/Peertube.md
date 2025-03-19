@@ -7,7 +7,7 @@ source: "https://joinpeertube.org/"
 published:
 created: 2025-03-11
 description: "A free software to take back control of your videos! With more than 600,000 hosted videos, viewed more than 70 millions times and 150,000 users, PeerTube is the decentralized free software alternative to videos platforms developed by Framasoft"
-tags: ["clippings"]
+tags: ["-clippings"]
 date created: Tuesday, March 11th 2025, 10:13 pm
 date modified: Saturday, March 15th 2025, 2:43 pm
 ---
