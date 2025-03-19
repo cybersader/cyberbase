@@ -1,10 +1,10 @@
 ---
-aliases: 
-tags: 
+aliases: []
+tags: []
 publish: true
 permalink:
 date created: Wednesday, March 19th 2025, 11:04 am
-date modified: Wednesday, March 19th 2025, 11:04 am
+date modified: Wednesday, March 19th 2025, 11:34 am
 ---
 
 ## 1. Introduction
@@ -12,6 +12,29 @@ date modified: Wednesday, March 19th 2025, 11:04 am
 Obsidian tags provide a **flexible** way to group notes across multiple folders and contexts, creating **overlapping ontologies** impossible with a strict folder hierarchy alone. However, Obsidian has **some limitations** (e.g., disallowing periods in tags), and certain **Unicode-based** tagging conventions can be slower to type—particularly on Windows.
 
 Meanwhile, frameworks like **SEA(COWr)** can guide us to build **purposeful** structures—without necessarily _forcing_ “SEA,” “COW,” or “RELATION” directly into the tag names. Instead, we use SEA(COWr) to define rules about **what** goes into tags and **how** they serve the knowledge system.
+
+---
+
+## 2. Why Collation and Sorting Matter
+
+### 2.1 The Fundamental Nature of Sorting
+
+On a **fundamental** level, all knowledge platforms must apply **some** kind of sorting or collation to strings (filenames, tags, etc.). Typically:
+
+- **ASCII-based** sorting: Special characters (e.g., `!`, `#`, `-`, `_`) come before alphanumeric characters.
+- **Unicode** sorting: Emojis and fullwidth characters often have code points that place them in different “blocks,” which can cause them to appear _before_ or _after_ typical ASCII letters—depending on the environment.
+- **Obsidian** uses the underlying **Chromium or Electron** collation approach, which might not match the OS file explorer [exactly](../../📁%2010%20-%20My%20Obsidian%20Stack/File%20Order/File%20Order.md).
+
+### 2.2 Taking Advantage of Sorting
+
+Because these systems generally treat certain characters as “less” or “more” than letters, you can leverage that to **structure** your tag listing:
+
+- **Underscores** (`_`) typically appear before letters in ASCII.
+- **Hyphens** (`-`) often appear in a slightly different position.
+- **Emojis** might come even _earlier_ or _later_ in the sorted list, depending on the environment.
+- If you repeat certain characters (`--` or `___`), you can force them to appear at a certain order or to group them distinctly.
+
+By understanding these fundamentals, you can create systematic, predictable “clusters” of tags that appear in specific segments of the Tag Pane or in alphabetical auto-completion lists.  This is how you can create a practical and powerful tagging system.
 
 ---
 
@@ -29,12 +52,41 @@ Meanwhile, frameworks like **SEA(COWr)** can guide us to build **purposeful** st
 
 ### 2.2 Using SEA(COWr) as _Rules,_ Not a Naming Convention
 
-- **Key Insight:** You _don’t_ directly name tags with “SEA,” “COW,” or “RELATION.” Instead, **SEA(COWr)** is a **mental model** to ensure you address each knowledge activity in your system:
+- **Key Insight:** 
     - Example Rule: “Anything in `#capture_` is raw/unedited input, so we don’t nest or do deep linking below that.”
     - Example Rule: “Tags under `#output_` reflect final or shareable states. We keep them minimal.”
     - Example Rule: “For knowledge work, use tags like `#todo` or `#draft` to indicate tasks or in-progress states. We allow more granularity there.”
 
 This way, **SEA(COWr)** helps you define _when_ and _why_ to tag, rather than prescribing the tag names themselves.
+
+## 3. Applying the SEA(COWr) Meta-Framework
+
+### 3.1 Quick Recap of SEA(COWr)
+
+**SEA(COWr)** is a conceptual approach to ensure you address:
+
+1. **S**ystem – The environment or platform constraints (e.g., sorting, plugin compatibility).
+2. **E**ntity – Audience or user context (personal vs. team vs. public).
+3. **A**ctivities – The core knowledge operations:
+    - **C**apture
+    - **O**utput
+    - **W**ork
+    - (r) **Relation** (sometimes nested under “Work”)
+
+> [!important] You don’t literally name your tags “SEA/COW.” Instead, you define **rules** that reflect each concept—like how and where you store or name things associated with capture, output, work, etc.  **SEA(COWr)** is a **mental model** to ensure you address each knowledge activity in your system.
+
+### 3.2 Using SEA(COWr) as _Rules,_ Not a Naming Convention
+
+> [!hint] When defining SEACOWr rules, refer often to knowledge platform **structures** and **contexts**
+
+A frequent advanced approach is **restricting** how the knowledge activities can stack. For instance:
+
+1. **“We can add, but not remove, certain SEA(COWr) components in deeper levels.”**
+    - E.g., you can’t put an **Output** item **inside** Capture if you haven’t “upgraded” it to Work or related steps yet.
+2. **“You can’t do advanced ‘Work’ or ‘Output’ activities under a ‘Capture’ structure/context.”**
+    - So the tags (and sometimes folders) that start with a CAPTURE-related context _cannot_ have sub-tags for Work or Output-related contexts such as `#clippings/youtube/science/aerospace`.  Structuring like this counts as a form of knowledge WORK or knowledge OUTPUT (a consumable taxonomy).  
+
+The next section shows how that might look in practice.
 
 ---
 
@@ -122,6 +174,68 @@ This way, **SEA(COWr)** helps you define _when_ and _why_ to tag, rather than pr
 
 ---
 
+## 4. Advanced Example: SEA(COWr) Tag Hierarchy
+
+Below is an **example** of how you might label tags using **repeated dashes** or **underscores** to force sorting order, plus **slashed** subcategories. Notice how **Capture** tags come first in the ASCII sorting (due to `_` or `-` usage), while **Output** tags might be higher or lower, etc.
+
+### 4.1 Example “Lego Blocks” in a Tag Structure
+
+1. **`_/`** – Unstructured or “general categories” (top-level personal clusters)
+    - `#_/science`
+    - `#_/philosophy`
+    - `#_/unstructured/random`
+2. **`-/`** – Next-level category for “other purposes” or maybe “meta stuff”
+    - `#-/meta`
+    - `#-/dev` (for development)
+3. **`--/`** – Another deeper prefix indicating “system-level” topics or rare categories
+    - `#--/system_config`
+    - `#--/obsidian_plugins`
+
+#### Why Multiple Dashes?
+
+- Multiple dashes **push** these tags farther up or down in an alphabetical list. For instance, `--/` might appear before `-/` or after, depending on how your environment sorts double-dashes vs. single.
+
+### 4.2 Tying in SEA(COWr) Activities
+
+Imagine you define these rules:
+
+- **Capture** always sits under `#0_capture/…`
+- **Work** always sits under `#1_work/…`
+- **Output** always sits under `#2_output/…`
+- You can’t place “Output” inside the “Capture” hierarchy. Instead, you must create a new note or tag that’s in `#1_work` or `#2_output`.
+
+Then, within each major activity, you exploit sorting with underscores or repeated dashes:
+
+- `#0_capture/inbox`
+    
+- `#0_capture/web_clips`
+    
+- `#0_capture/bookmarks`
+    
+- `#1_work/todo`
+    
+- `#1_work/in_progress`
+    
+- `#1_work/review`
+    
+- `#1_work--deep_dive` (the double-dash might appear at the bottom or top depending on collation)
+    
+- `#2_output/final`
+    
+- `#2_output/published`
+    
+- `#2_output-handoffs` (using a hyphen to separate an additional state)
+    
+
+**Result**: If you open Obsidian’s Tag Pane and sort by name, you see:
+
+1. `#0_capture/...`
+2. `#1_work/...`
+3. `#2_output/...`
+
+…in a neat order, because numerals like **0, 1, 2** come before letters in ASCII. Inside each, your naming convention with underscores or repeated dashes can further cluster them.
+---
+
 ## 6. Handling Unicode & Typing Speed
 
 ### 6.1 Keyboard Shortcuts for Emojis
@@ -192,7 +306,6 @@ Below are a few **practical** examples to illustrate final naming patterns that 
 
 ### 8.4 SEA(COWr) Advanced
 
-
 ---
 
 ## 9. Final Thoughts
@@ -213,4 +326,4 @@ Below are a few **practical** examples to illustrate final naming patterns that 
 1. **Keep tags simple** for broad clusters (`#science`, `#history`).
 2. For more complex logic (versions, semver, advanced punctuation), consider **nested tags** (`#version/1/4/2`) or **properties** in YAML.
 3. Decide whether **emojis** or **Unicode** are worth the typing cost.
-4. Use a **framework** like SEA(COWr) to define guidelines about _why_ or _when_ to tag a note—don’t worry about forcing “SEA,” “COW,” or “RELATION” into the actual tag names.
+4. Use a **framework** like SEA(COWr) to define guidelines about how tagging should be structured.  
