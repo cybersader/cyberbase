@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Obsidian Tag Limitations & Unicode Order",
-      "path": "📁 54 - Obsidian Vault Organization/Obsidian Tag Limitations & Unicode Order/Obsidian Tag Limitations & Unicode Order.md"
+      "basename": "Choosing a Tag Structure in Obsidian",
+      "path": "📁 54 - Obsidian Vault Organization/Choosing a Tag Structure in Obsidian/Choosing a Tag Structure in Obsidian.md"
+    },
+    {
+      "basename": "Vault Folder & Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
     },
     {
       "basename": "Tag Pages",
       "path": "📁 54 - Obsidian Vault Organization/Tag Pages/Tag Pages.md"
+    },
+    {
+      "basename": "Obsidian Tag Limitations & Unicode Order",
+      "path": "📁 54 - Obsidian Vault Organization/Obsidian Tag Limitations & Unicode Order/Obsidian Tag Limitations & Unicode Order.md"
     },
     {
       "basename": "Folder Structure Examples",
@@ -31,10 +39,6 @@
     {
       "basename": "Information Organization Systems",
       "path": "📁 54 - Obsidian Vault Organization/Information Organization Systems/Information Organization Systems.md"
-    },
-    {
-      "basename": "Vault Folder & Tag Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
     },
     {
       "basename": "Meta-framework",
@@ -195,10 +199,6 @@
     {
       "basename": "Templater",
       "path": "📁 10 - My Obsidian Stack/Templater/Templater.md"
-    },
-    {
-      "basename": "Tasks Queries",
-      "path": "📁 17 - Knowledge Engineering/Tasks Queries/Tasks Queries.md"
     }
   ],
   "omittedPaths": [],

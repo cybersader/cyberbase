@@ -8,6 +8,7 @@ date modified: Saturday, March 15th 2025, 5:46 pm
 ---
 
 %% Begin Waypoint %%
+- **[[Choosing a Tag Structure in Obsidian]]**
 - **[[Dynamic Folders Based on Tags]]**
 - **[[Dynamic Tags Based on Folder]]**
 - **[[File Organization Systems]]**
