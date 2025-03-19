@@ -90,7 +90,7 @@ This is the harder part.  You have realize the implementation or design of the k
 There are two pieces:
 - **Platform Capabilities** – e.g., how Obsidian handles folders, tags, and links vs. how Notion uses databases.
 	- Understand the capabilities of the knowledge platform and how they can fulfill your goals for applicable conceptual components.
-- **Defined Rules** – consistent guidelines for how you name folders, create hierarchical tags, or handle references.
+- **Defined Rules** – consistent guidelines for components of your knowledge platform/system
 	- Define rules on the knowledge system/platform that involve the conceptual framework components
 
 ---
