@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Wednesday, March 19th 2025, 12:50 pm
-date modified: Wednesday, March 19th 2025, 2:12 pm
+date modified: Wednesday, March 19th 2025, 3:57 pm
 ---
 
 # My Tagging Structure
@@ -25,21 +25,33 @@ Under **Activities**, we have four sub-components:
 - Benefits:
 	- Can have overlapping ontologies w/nested tagging
 - Limitations:
-	- Collation or sorting of the tag names depends on what Obsidian uses for their collator
-	- Can't use special characters reserved for Obsidian Markdown
-	- Some things don't present well in live view - [Tag Bugs & Issues](../Tag%20Bugs%20&%20Issues/Tag%20Bugs%20&%20Issues.md)
+	- Sorting depends on Obsidian’s collator.
+	- Special characters reserved for Obsidian Markdown cannot be used.
+	- Some tags may not render well in live view - [Tag Bugs & Issues](../Tag%20Bugs%20&%20Issues/Tag%20Bugs%20&%20Issues.md)
 
 <u>SEACOW(r) Rule Definitions:</u>
-- CAPTURE tags logic/context/structure cannot house nested tags more than 2 deep
-- OUTPUT tags can have nested knowledge structures/tags but they can only RELATE to knowledge WORK and knowledge shall not be moved between them
-- All CAPTURE categories with the interface/ENTITY directly as the person (daily notes, encounters, etc.) must reside in a flat structure.
-- RELATION for CAPTURE content will be limited to flat tags and not nested ontologies unless being applicable to OUTPUT tag taxonomies in line with folders
+
+The SEACOW(r) Framework (System, Entity, Activities → Capture, Output, Work, (r)elation) serves as a _rule-setting blueprint_ rather than an ontology. Here’s an advanced take on how to apply these rules:
+
+- **CAPTURE Tags:**
+	- Represent logic, context, and structure.
+	- Must remain flat—no more than two levels deep.
+	- All CAPTURE tags tied directly to an interface (e.g., daily notes, encounters) should use a flat structure.
+- **OUTPUT Tags:**
+	- Can have nested structures.
+	- Nested OUTPUT tags may only relate to knowledge work; knowledge should not be shifted between them.
+- **RELATION Tags:**
+	- For CAPTURE content, RELATION tags are kept flat unless integrated within an OUTPUT taxonomy aligned with folder structures.
+- **Entity/Work Tags:**
+	- Used for knowledge work tied to individuals or groups.
+	- For example, instead of a slow-to-type `_ben/para/projects`, use a faster alternative like `--ben/projects`.
 
 <u>Goals of my Obsidian Tagging System:</u>
-- Easy to type what's accessed frequently
-- Consistent sorting
-- Explorable with clustered/keywords tags at the bottom
+- **Easy to type** for frequently accessed tags.
+- **Consistent sorting** across the platform.
+- **Explorable**, with clustered/keyword tags appearing toward the bottom.
 
+## Tagging Prefixes
 
 | **Tag Type**            | Applicable SEACOWr Mapping or Rules | **Examples**              | **Sorting Priority**               | **Typing Ease**         | **Usage/Notes**                                                                       |
 | ----------------------- | ----------------------------------- | ------------------------- | ---------------------------------- | ----------------------- | ------------------------------------------------------------------------------------- |
@@ -50,6 +62,25 @@ Under **Activities**, we have four sub-components:
 | **Hashtag-Word**        |                                     | `#word`                   | Lower                              | Very easy               | Great for relation tags or keyword cross-linking                                      |
 | **Entity/Group Tags**   |                                     | `#--group`, `#--projects` | Lower (similar to hashtag-word)    | Very easy               | For tagging entities or groups (multiple people/projects, folder-like categorization) |
 |                         |                                     |                           |                                    |                         |                                                                                       |
+
+## Tagging Example Structure
+
+Using SEA(COWr):
+
+Choice for sorting (which characters you use for prefix) should align with the goal of your vault.
+
+- `_clip/` - A(C) -
+	- `_clip/youtube`
+	- `_clip/articles`
+- `_inbox` - A(C) -
+- `-/` - A(O) - used to map directly and sync with the root folder structure in terms of the strict public-facing taxonomy 
+	- `-/01_projects` - A(O) + A(r) - children under the public-facing OUTPUT folder may relate to out CAPTURE structures or WORK structures
+		- `-/01_projects/cyber_tool_im_building` - example 
+- `#<word>` - A(r) - used to for clustering and keywords to help improve searching
+- `--/` - E - divides up for entities in the knowledge system/platform
+	- `--/cybersader` - E + A(W) - knowledge work structure for cybersader
+- `/` - S - system-related tagging structures (likely related to Obsidian or other interfacing systems like GitHub)
+	- `/templates` - S - templates for Obsidian vault
 
 # Ideas
 

@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: 
 date created: Wednesday, March 19th 2025, 12:44 pm
-date modified: Wednesday, March 19th 2025, 12:53 pm
+date modified: Wednesday, March 19th 2025, 3:58 pm
 ---
 
 [Knowledge Platform Organization Meta-Framework](../Knowledge%20Platform%20Organization%20Meta-Framework/Knowledge%20Platform%20Organization%20Meta-Framework.md)
@@ -14,3 +14,12 @@ To use the [SEACOWr Framework](../Knowledge%20Platform%20Organization%20Meta-Fra
 	1) Look at the [SEACOWr Framework](../Knowledge%20Platform%20Organization%20Meta-Framework/Knowledge%20Platform%20Organization%20Meta-Framework.md) for more details on the components (System, Entity, and Activities - Capture, Output, Work, and Relation)
 2) **A set of goals** for entities using the knowledge system or platform 
 3) Define **system context, components, logic, capabilities, or limitations** that need to be considered
+
+# SEACOW Rule Setting
+
+Useful or common SEACOWr rule definition components
+- structures/logic/context
+- direction or data structures (graph, hierarchical, nested)
+- length 
+- seacowr attributes/states/components (SEACOWr)
+	- (System, Entity, Activities → Capture, Output, Work, (r)elation)
