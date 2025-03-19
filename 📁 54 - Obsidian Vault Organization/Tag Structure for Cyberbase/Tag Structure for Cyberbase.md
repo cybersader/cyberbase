@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Wednesday, March 19th 2025, 12:50 pm
-date modified: Wednesday, March 19th 2025, 1:15 pm
+date modified: Wednesday, March 19th 2025, 2:12 pm
 ---
 
 # My Tagging Structure
@@ -30,21 +30,26 @@ Under **Activities**, we have four sub-components:
 	- Some things don't present well in live view - [Tag Bugs & Issues](../Tag%20Bugs%20&%20Issues/Tag%20Bugs%20&%20Issues.md)
 
 <u>SEACOW(r) Rule Definitions:</u>
-- 
+- CAPTURE tags logic/context/structure cannot house nested tags more than 2 deep
+- OUTPUT tags can have nested knowledge structures/tags but they can only RELATE to knowledge WORK and knowledge shall not be moved between them
+- All CAPTURE categories with the interface/ENTITY directly as the person (daily notes, encounters, etc.) must reside in a flat structure.
+- RELATION for CAPTURE content will be limited to flat tags and not nested ontologies unless being applicable to OUTPUT tag taxonomies in line with folders
 
 <u>Goals of my Obsidian Tagging System:</u>
-- 
+- Easy to type what's accessed frequently
+- Consistent sorting
+- Explorable with clustered/keywords tags at the bottom
 
 
-| **Tag Type**            | SEACOWr Mapping | **Examples**              | **Sorting Priority**               | **Typing Ease**         | **Usage/Notes**                                                                       |
-| ----------------------- | --------------- | ------------------------- | ---------------------------------- | ----------------------- | ------------------------------------------------------------------------------------- |
-| **Underscore-Prefixed** |                 | `_/`, `_ -`               | Very High (appears at top)         | Harder to type          | Ideal for CAPTURE tags (logic, context, flat structure)                               |
-| **Dash-Prefixed**       |                 | `-/`, `- /`               | Very High (right after underscore) | Easier than underscore  | Best for OUTPUT tags (system compatible, supports limited nesting for knowledge work) |
-| **Slash-Only**          |                 | `/`                       | Mid-to-Low                         | Very easy               | Suited for simple tags with minimal hierarchy                                         |
-| **Emoji Tags**          |                 | 😃, 🚀, etc.              | Low (after ASCII characters)       | Slower (emoji keyboard) | Use for secretive/rare tags relying on visual cues                                    |
-| **Hashtag-Word**        |                 | `#word`                   | Lower                              | Very easy               | Great for relation tags or keyword cross-linking                                      |
-| **Entity/Group Tags**   |                 | `#--group`, `#--projects` | Lower (similar to hashtag-word)    | Very easy               | For tagging entities or groups (multiple people/projects, folder-like categorization) |
-|                         |                 |                           |                                    |                         |                                                                                       |
+| **Tag Type**            | Applicable SEACOWr Mapping or Rules | **Examples**              | **Sorting Priority**               | **Typing Ease**         | **Usage/Notes**                                                                       |
+| ----------------------- | ----------------------------------- | ------------------------- | ---------------------------------- | ----------------------- | ------------------------------------------------------------------------------------- |
+| **Underscore-Prefixed** |                                     | `_/`, `_ -`               | Very High (appears at top)         | Harder to type          | Ideal for CAPTURE tags (logic, context, flat structure)                               |
+| **Dash-Prefixed**       |                                     | `-/`, `- /`               | Very High (right after underscore) | Easier than underscore  | Best for OUTPUT tags (system compatible, supports limited nesting for knowledge work) |
+| **Slash-Only**          |                                     | `/`                       | Mid-to-Low                         | Very easy               | Suited for simple tags with minimal hierarchy                                         |
+| **Emoji Tags**          |                                     | 😃, 🚀, etc.              | Low (after ASCII characters)       | Slower (emoji keyboard) | Use for secretive/rare tags relying on visual cues                                    |
+| **Hashtag-Word**        |                                     | `#word`                   | Lower                              | Very easy               | Great for relation tags or keyword cross-linking                                      |
+| **Entity/Group Tags**   |                                     | `#--group`, `#--projects` | Lower (similar to hashtag-word)    | Very easy               | For tagging entities or groups (multiple people/projects, folder-like categorization) |
+|                         |                                     |                           |                                    |                         |                                                                                       |
 
 # Ideas
 
