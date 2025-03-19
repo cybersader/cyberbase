@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Wednesday, March 19th 2025, 11:04 am
-date modified: Wednesday, March 19th 2025, 11:34 am
+date modified: Wednesday, March 19th 2025, 11:45 am
 ---
 
 ## 1. Introduction
@@ -38,27 +38,6 @@ By understanding these fundamentals, you can create systematic, predictable “c
 
 ---
 
-## 2. Context: SEA(COWr) as a Meta-Framework
-
-### 2.1 What Is SEA(COWr)?
-
-- **S**ystem (the platform or environment—Obsidian)
-- **E**ntity (the audience or user)
-- **A**ctivities (the main types of knowledge operations)
-    - **C**apture
-    - **O**utput
-    - **W**ork
-    - (r) **Relation** (sometimes considered part of Work)
-
-### 2.2 Using SEA(COWr) as _Rules,_ Not a Naming Convention
-
-- **Key Insight:** 
-    - Example Rule: “Anything in `#capture_` is raw/unedited input, so we don’t nest or do deep linking below that.”
-    - Example Rule: “Tags under `#output_` reflect final or shareable states. We keep them minimal.”
-    - Example Rule: “For knowledge work, use tags like `#todo` or `#draft` to indicate tasks or in-progress states. We allow more granularity there.”
-
-This way, **SEA(COWr)** helps you define _when_ and _why_ to tag, rather than prescribing the tag names themselves.
-
 ## 3. Applying the SEA(COWr) Meta-Framework
 
 ### 3.1 Quick Recap of SEA(COWr)
@@ -71,9 +50,9 @@ This way, **SEA(COWr)** helps you define _when_ and _why_ to tag, rather than pr
     - **C**apture
     - **O**utput
     - **W**ork
-    - (r) **Relation** (sometimes nested under “Work”)
+    - (r) **Relation** (debatably could be nested under “Work”)
 
-> [!important] You don’t literally name your tags “SEA/COW.” Instead, you define **rules** that reflect each concept—like how and where you store or name things associated with capture, output, work, etc.  **SEA(COWr)** is a **mental model** to ensure you address each knowledge activity in your system.
+> [!important] You don’t literally name your tags with SEACOW(r) components. Instead, you define **rules** that involve each concept—like what naming schemes and knowledge platform structures are allowed with relations between capture, output, work, etc.  **SEA(COWr)** is a **mental model** to ensure you address each knowledge activity in your system.
 
 ### 3.2 Using SEA(COWr) as _Rules,_ Not a Naming Convention
 
@@ -81,8 +60,8 @@ This way, **SEA(COWr)** helps you define _when_ and _why_ to tag, rather than pr
 
 A frequent advanced approach is **restricting** how the knowledge activities can stack. For instance:
 
-1. **“We can add, but not remove, certain SEA(COWr) components in deeper levels.”**
-    - E.g., you can’t put an **Output** item **inside** Capture if you haven’t “upgraded” it to Work or related steps yet.
+1. **“We can add, but not remove, certain SEA(COWr) conceptual components in deeper levels.”**
+    - E.g., you can’t using one logical level of tagging for capturing and then go down and leave out the original purpose of capturing from it.  If that structural space starts becoming a place for more than merely capturing, then it has lost its original prupose.
 2. **“You can’t do advanced ‘Work’ or ‘Output’ activities under a ‘Capture’ structure/context.”**
     - So the tags (and sometimes folders) that start with a CAPTURE-related context _cannot_ have sub-tags for Work or Output-related contexts such as `#clippings/youtube/science/aerospace`.  Structuring like this counts as a form of knowledge WORK or knowledge OUTPUT (a consumable taxonomy).  
 
@@ -93,84 +72,18 @@ The next section shows how that might look in practice.
 ## 3. Core Considerations When Choosing Your Tag Strategy
 
 1. **Ease of Typing vs. Visual Aesthetic**
-    
     - Typing special Unicode or emoji tags is _slower_, especially on Windows (requiring the emoji panel).
     - Some advanced or fancy tag symbols look great but can disrupt **flow** during quick note-taking.
 2. **Plugin Compatibility**
-    
     - Many Obsidian plugins assume your tags are “regular words” with no periods, colons, or advanced punctuation.
     - If you rely on plugins (e.g., Tag Wrangler, Dataview queries for tags), “simple” tags (letters, underscores, hyphens) often work best.
 3. **Clustering & Overlapping Ontologies**
-    
     - One big reason to use tags is the ability to assign multiple categories to a note (e.g., `#science` and `#client_project`).
     - Even if you create advanced hierarchical tags (e.g., `#science/biology`), you can still overlap them with other tags in the same note.
 4. **Auto-Completion and Alphabetical Sorting**
-    
     - Obsidian auto-completes tags in the editor. Clear, consistent naming improves your speed and reduces confusion.
     - Alphabetical sorting in the tag pane means you might want to standardize prefixes or group tags by category:
         - Example: `#cluster_science`, `#cluster_history`, `#cluster_biology`
-
----
-
-## 4. Common Tag Naming Approaches
-
-### 4.1 Plain Words (Recommended for “Clustering”)
-
-- **Examples**: `#science`, `#history`, `#research`, `#task`, `#todo`
-- **Pros**: Very easy to type and remember; best plugin compatibility.
-- **Cons**: Less visually distinct if you want fancy icons or advanced sorting.
-
-### 4.2 Underscores / Hyphens for Hierarchy or Separation
-
-- **Examples**: `#science_biology`, `#capture_inbox`, `#todo_done`, `#temp-note`
-- **Pros**: Great for grouping related tags without using `/` (nested tags). Easy to type, no special characters needed.
-- **Cons**: Doesn’t have the “collapsed” hierarchical look in the tag pane like slashes do.
-
-### 4.3 Nested Tags with Slashes
-
-- **Example**: `#science/biology`, `#todo/in_progress`, `#todo/completed`
-- **Pros**: In Obsidian’s **Tag Pane**, these show up as collapsible lists. Good for multi-level categories (like `#science/biology/humangenetics`).
-- **Cons**: Search gets more granular, sometimes leading to “tag explosion” if you overuse nesting.
-
-### 4.4 Emoji or Special Unicode Prefixes
-
-- **Examples**: `#🔍research`, `#📌pin`, `#⚠urgent`, `#→draft`
-- **Pros**: Visually appealing, easy to pick out in a large list of tags.
-- **Cons**: Slower to type (especially on Windows). Some plugins might not handle them gracefully. Sorting can be unpredictable if you mix emojis with standard tags.
-
----
-
-## 5. Balancing SEA(COWr) With Tag Design
-
-### 5.1 Capture-Related Tags
-
-- Typically represent raw or incoming info (images, web clippings, references).
-- **Rule**: “Don’t nest or get fancy; keep it simple.” (e.g., `#capture_inbox`)
-- **Why**: Because capture items are in flux, you don’t want overhead. You might do actual sorting or processing later.
-
-### 5.2 Output-Related Tags
-
-- Mark final or sharable artifacts (reports, published articles, or a note you plan to share).
-- **Rule**: “Use short, clear tags for anything that is ‘finished.’” e.g., `#output_final`, `#published`.
-- **Why**: You or your team can quickly filter for completed or public-ready content.
-
-### 5.3 Work-Related Tags
-
-- Indicate tasks, status, or processes (`#todo`, `#draft`, `#review`, `#in_progress`).
-- **Rule**: These tags can get more granular because your knowledge work is iterative (`#todo/research`, `#todo/writing`).
-- **Why**: It’s easier to see _what_ is in progress and _where_ you’re spending time.
-
-### 5.4 Relation (Optional)
-
-- Not always used as direct tags. You might rely on **links**, **metadata** fields, or MOCs for relationships.
-- **Rule**: You _can_ use bridging tags, like `#crosslink`, to remind yourself that a note ties multiple topics together.
-- **Why**: This can help you find “hub” notes that interrelate many ideas.
-
-### 5.5 System & Entity
-
-- SEA(COWr) also mentions **System** (platform constraints) and **Entity** (audiences).
-- **Rule**: If you have multiple audiences or contexts, you could adopt tags like `#team_only` or `#publish_public`.
-- **Why**: Distinguishes what can be shared externally vs. internal. This is especially handy if you use **Obsidian Publish** or share certain folders with a team.
 
 ---
 
@@ -199,41 +112,41 @@ Below is an **example** of how you might label tags using **repeated dashes** or
 
 Imagine you define these rules:
 
-- **Capture** always sits under `#0_capture/…`
-- **Work** always sits under `#1_work/…`
-- **Output** always sits under `#2_output/…`
-- You can’t place “Output” inside the “Capture” hierarchy. Instead, you must create a new note or tag that’s in `#1_work` or `#2_output`.
+- CAPTURE-related structures or context cannot use WORK or OUTPUT below them
+- WORK-related structures cannot have CAPTURE-related structures below them
+- RELATION structures can be used to bridge work and capture
+- CAPTURE-related structures can only be 2 logical levels deep
 
 Then, within each major activity, you exploit sorting with underscores or repeated dashes:
 
-- `#0_capture/inbox`
-    
-- `#0_capture/web_clips`
-    
-- `#0_capture/bookmarks`
-    
-- `#1_work/todo`
-    
-- `#1_work/in_progress`
-    
-- `#1_work/review`
-    
-- `#1_work--deep_dive` (the double-dash might appear at the bottom or top depending on collation)
-    
-- `#2_output/final`
-    
-- `#2_output/published`
-    
-- `#2_output-handoffs` (using a hyphen to separate an additional state)
-    
 
-**Result**: If you open Obsidian’s Tag Pane and sort by name, you see:
 
-1. `#0_capture/...`
-2. `#1_work/...`
-3. `#2_output/...`
+---
 
-…in a neat order, because numerals like **0, 1, 2** come before letters in ASCII. Inside each, your naming convention with underscores or repeated dashes can further cluster them.
+## 5. Collation Tricks & Frequency
+
+### 5.1 Emojis vs. ASCII
+
+- **Emoji** code points can appear _before_ or _after_ ASCII. On many systems, `#📌foo` might jump to the top or bottom.
+- Because it’s **slower** to type emojis, you might only reserve them for **low-frequency** tags (like a special “rare” or “archival” category).
+
+### 5.2 Repeated Characters & Sorting “Blocks”
+
+- If you prefix a tag with `_` or `-` multiple times (`--`, `---`) you create “groups” that forcibly appear in a consistent order.
+- Example:
+    - `#--myTag`
+    - `#---myTag`
+    - `#____something`
+- You can treat these like “lego blocks”—the more dashes, the deeper or more specialized the category is, ensuring it sorts either above or below single-dash items.
+
+### 5.3 Leading Numbers
+
+- Leading numbers (e.g., `0_`, `1_`, `2_`) create a straightforward linear hierarchy. Combining them with underscores or dashes can result in a robust structure:
+    - `#0_capture_inbox`
+    - `#1_work_in_progress`
+    - `#2_output_final`
+- This is simpler than relying on ASCII codes for punctuation because numeric ordering is **predictable**.
+
 ---
 
 ## 6. Handling Unicode & Typing Speed
@@ -276,7 +189,28 @@ Then, within each major activity, you exploit sorting with underscores or repeat
 - Dataview can also parse **YAML frontmatter**—so if you can’t use certain punctuation in tags, consider storing them as frontmatter fields.
 
 ---
+## 6. Further “Lego Block” Examples
 
+Below are some condensed sample patterns you can mix and match. Each bullet is a “lego block” that you can use to build your own system.
+
+1. **`#/words/stuff`**
+    - Slashes define nested tags.
+2. **`#(number_or_emoji)_word_here/ontologies`**
+    - Like `#1_todo/urgent`, `#2_todo/low`, or `#🎨_art/abstract`.
+3. **`#-/other_purpose`**
+    - Single-dash prefix for “less common” categories.
+4. **`#--/yet_another_section`**
+    - Double-dash prefix for “deep system” or “rare” categories.
+5. **`#_/unstructured`**
+    - Underscore prefix for capturing top-level unstructured items.
+
+Choose whichever combination keeps your tags:
+
+- **Intuitive** to you (and your team, if collaborative).
+- **Consistent** so you can quickly type or filter them.
+- **Well-sorted** in Obsidian’s Tag Pane or auto-complete.
+
+---
 ## 8. Example Tag Systems
 
 Below are a few **practical** examples to illustrate final naming patterns that align with SEA(COWr) logic (without _literally_ using “SEA” or “COW” in the tag).
