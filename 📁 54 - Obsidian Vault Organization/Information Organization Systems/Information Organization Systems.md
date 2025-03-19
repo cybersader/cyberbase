@@ -4,8 +4,10 @@ tags: []
 publish: true
 permalink:
 date created: Tuesday, March 18th 2025, 10:00 am
-date modified: Tuesday, March 18th 2025, 10:18 am
+date modified: Wednesday, March 19th 2025, 10:45 am
 ---
+
+[Knowledge Platform Organization Meta-Framework](../Knowledge%20Platform%20Organization%20Meta-Framework/Knowledge%20Platform%20Organization%20Meta-Framework.md)
 
 # Components of Organization
 
