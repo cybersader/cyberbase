@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "Tag Structure for Cyberbase",
+      "path": "📁 54 - Obsidian Vault Organization/Tag Structure for Cyberbase/Tag Structure for Cyberbase.md"
+    },
+    {
+      "basename": "Folder Structure Ideas",
+      "path": "📁 54 - Obsidian Vault Organization/Folder Structure Ideas/Folder Structure Ideas.md"
+    },
+    {
+      "basename": "SEACOWr Quick Start",
+      "path": "📁 54 - Obsidian Vault Organization/SEACOWr Quick Start/SEACOWr Quick Start.md"
+    },
+    {
+      "basename": "Folders vs Tags vs Links vs Metadata",
+      "path": "📁 54 - Obsidian Vault Organization/Folders vs Tags vs Links vs Metadata/Folders vs Tags vs Links vs Metadata.md"
+    },
+    {
+      "basename": "Obsidian Tag Limitations & Unicode Order",
+      "path": "📁 54 - Obsidian Vault Organization/Obsidian Tag Limitations & Unicode Order/Obsidian Tag Limitations & Unicode Order.md"
+    },
+    {
+      "basename": "Tag Structure Examples",
+      "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
+    },
+    {
+      "basename": "Knowledge Platform Organization Meta-Framework",
+      "path": "📁 54 - Obsidian Vault Organization/Knowledge Platform Organization Meta-Framework/Knowledge Platform Organization Meta-Framework.md"
+    },
+    {
+      "basename": "Folder Structure Examples",
+      "path": "📁 54 - Obsidian Vault Organization/Folder Structure Examples/Folder Structure Examples.md"
+    },
+    {
       "basename": "Choosing a Tag Structure in Obsidian",
       "path": "📁 54 - Obsidian Vault Organization/Choosing a Tag Structure in Obsidian/Choosing a Tag Structure in Obsidian.md"
     },
@@ -17,24 +49,12 @@
       "path": "📁 54 - Obsidian Vault Organization/Tag Pages/Tag Pages.md"
     },
     {
-      "basename": "Obsidian Tag Limitations & Unicode Order",
-      "path": "📁 54 - Obsidian Vault Organization/Obsidian Tag Limitations & Unicode Order/Obsidian Tag Limitations & Unicode Order.md"
-    },
-    {
-      "basename": "Folder Structure Examples",
-      "path": "📁 54 - Obsidian Vault Organization/Folder Structure Examples/Folder Structure Examples.md"
-    },
-    {
       "basename": "Unicode",
       "path": "🕸️ UNSTRUCTURED/Unicode/Unicode.md"
     },
     {
       "basename": "Obsidian File Names",
       "path": "📁 10 - My Obsidian Stack/Obsidian File Names/Obsidian File Names.md"
-    },
-    {
-      "basename": "Knowledge Platform Organization Meta-Framework",
-      "path": "📁 54 - Obsidian Vault Organization/Knowledge Platform Organization Meta-Framework/Knowledge Platform Organization Meta-Framework.md"
     },
     {
       "basename": "Information Organization Systems",
@@ -65,24 +85,12 @@
       "path": "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Digital Content Creation.md"
     },
     {
-      "basename": "Tag Structure Examples",
-      "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
-    },
-    {
       "basename": "Knowledge Organization",
       "path": "📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md"
     },
     {
       "basename": "Link Curation Tools",
       "path": "📁 03 - Curations, Stacks/Link Curation Tools/Link Curation Tools.md"
-    },
-    {
-      "basename": "Folder Structure Ideas",
-      "path": "📁 54 - Obsidian Vault Organization/Folder Structure Ideas/Folder Structure Ideas.md"
-    },
-    {
-      "basename": "Folders vs Tags vs Links vs Metadata",
-      "path": "📁 54 - Obsidian Vault Organization/Folders vs Tags vs Links vs Metadata/Folders vs Tags vs Links vs Metadata.md"
     },
     {
       "basename": "📁 54 - Obsidian Vault Organization",
@@ -191,14 +199,6 @@
     {
       "basename": "Linting & Formatting",
       "path": "📁 10 - My Obsidian Stack/Linting & Formatting/Linting & Formatting.md"
-    },
-    {
-      "basename": "Microsoft Graph API in Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Microsoft Graph API in Obsidian/Microsoft Graph API in Obsidian.md"
-    },
-    {
-      "basename": "Templater",
-      "path": "📁 10 - My Obsidian Stack/Templater/Templater.md"
     }
   ],
   "omittedPaths": [],

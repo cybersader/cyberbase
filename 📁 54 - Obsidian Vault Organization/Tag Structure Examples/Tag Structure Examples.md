@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: 
 date created: Monday, March 17th 2025, 11:11 am
-date modified: Tuesday, March 18th 2025, 5:13 pm
+date modified: Wednesday, March 19th 2025, 12:49 pm
 ---
 
 [File Order](../../📁%2010%20-%20My%20Obsidian%20Stack/File%20Order/File%20Order.md) 
@@ -16,7 +16,7 @@ date modified: Tuesday, March 18th 2025, 5:13 pm
 
 # My Current Tagging Structure
 
-> [!tldr] My tag structure uses my [SEA(CROW)](../Knowledge%20Platform%20Organization%20Framework/Knowledge%20Platform%20Organization%20Meta-Framework.md) knowledge platform organization framework
+> [!tldr] My tag structure uses my [SEACOW(r)](../Knowledge%20Platform%20Organization%20Framework/Knowledge%20Platform%20Organization%20Meta-Framework.md) knowledge platform organization framework
 
 # Problems in Tagging
 

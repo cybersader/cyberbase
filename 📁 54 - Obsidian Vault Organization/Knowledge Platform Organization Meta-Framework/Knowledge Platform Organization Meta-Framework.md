@@ -1,18 +1,16 @@
 ---
-aliases:
-  - Knowledge Space Organization Framework
-  - Organizing Your Second Brain from First Principles
-  - SEACOWr Framework
-tags: 
+aliases: [Knowledge Space Organization Framework, Organizing Your Second Brain from First Principles, SEACOWr Framework]
+tags: []
 publish: true
 permalink: 
 date created: Tuesday, March 18th 2025, 12:21 pm
-date modified: Wednesday, March 19th 2025, 10:42 am
+date modified: Wednesday, March 19th 2025, 12:49 pm
 ---
 
 [Tag Structure Examples](../Tag%20Structure%20Examples/Tag%20Structure%20Examples.md)
 [Information Organization Systems](../Information%20Organization%20Systems/Information%20Organization%20Systems.md)
 [Folder Structure Ideas](../Folder%20Structure%20Ideas/Folder%20Structure%20Ideas.md)
+[SEACOWr Quick Start](../SEACOWr%20Quick%20Start/SEACOWr%20Quick%20Start.md)
 
 > [!tldr] Building a framework for organizing is better than building the structure itself first
 
