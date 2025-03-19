@@ -25,6 +25,7 @@ LIMIT 1000
 - **[[Fakeupdate]]**
 - **[[Google-Gemma-3]]**
 - **[[Kittl]]**
+- **[[Kortex]]**
 - **[[Makemydrivefun]]**
 - **[[Napkin]]**
 - **[[Notesnook]]**

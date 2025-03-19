@@ -1,8 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "Meta-framework",
+      "path": "⬇️ Clippings/ChatGPT/Meta-framework/Meta-framework.md"
+    },
+    {
+      "basename": "Kortex",
+      "path": "⬇️ Clippings/Tech/Kortex/Kortex.md"
+    },
+    {
+      "basename": "ChatGPT",
+      "path": "⬇️ Clippings/ChatGPT/ChatGPT.md"
+    },
+    {
+      "basename": "Knowledge Platform Organization Meta-Framework",
+      "path": "📁 54 - Obsidian Vault Organization/Knowledge Platform Organization Meta-Framework/Knowledge Platform Organization Meta-Framework.md"
+    },
+    {
+      "basename": "Digital Content Creation",
+      "path": "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Digital Content Creation.md"
+    },
+    {
+      "basename": "Vault Folder & Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
+    },
+    {
       "basename": "Tag Structure Examples",
       "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
+    },
+    {
+      "basename": "Information Organization Systems",
+      "path": "📁 54 - Obsidian Vault Organization/Information Organization Systems/Information Organization Systems.md"
+    },
+    {
+      "basename": "Knowledge Organization",
+      "path": "📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md"
     },
     {
       "basename": "Folder Structure Examples",
@@ -13,10 +45,6 @@
       "path": "📁 03 - Curations, Stacks/Link Curation Tools/Link Curation Tools.md"
     },
     {
-      "basename": "Knowledge Platform Organization Framework",
-      "path": "📁 54 - Obsidian Vault Organization/Knowledge Platform Organization Framework/Knowledge Platform Organization Framework.md"
-    },
-    {
       "basename": "Folder Structure Ideas",
       "path": "📁 54 - Obsidian Vault Organization/Folder Structure Ideas/Folder Structure Ideas.md"
     },
@@ -25,20 +53,8 @@
       "path": "📁 54 - Obsidian Vault Organization/Folders vs Tags vs Links vs Metadata/Folders vs Tags vs Links vs Metadata.md"
     },
     {
-      "basename": "Knowledge Organization",
-      "path": "📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md"
-    },
-    {
-      "basename": "Information Organization Systems",
-      "path": "📁 54 - Obsidian Vault Organization/Information Organization Systems/Information Organization Systems.md"
-    },
-    {
       "basename": "📁 54 - Obsidian Vault Organization",
       "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
-    },
-    {
-      "basename": "Vault Folder & Tag Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
     },
     {
       "basename": "File Organization Systems",
@@ -87,10 +103,6 @@
     {
       "basename": "Articles, Blogs",
       "path": "⬇️ Clippings/Articles, Blogs/Articles, Blogs.md"
-    },
-    {
-      "basename": "ChatGPT",
-      "path": "⬇️ Clippings/ChatGPT/ChatGPT.md"
     },
     {
       "basename": "Using Tags",
@@ -187,18 +199,6 @@
     {
       "basename": "Obsidian-Related Bloggers",
       "path": "📁 10 - My Obsidian Stack/Obsidian-Related Bloggers/Obsidian-Related Bloggers.md"
-    },
-    {
-      "basename": "Plugin Development",
-      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
-    },
-    {
-      "basename": "Plugin Maintenance",
-      "path": "📁 10 - My Obsidian Stack/Plugin Maintenance/Plugin Maintenance.md"
-    },
-    {
-      "basename": "Project Management",
-      "path": "📁 10 - My Obsidian Stack/Project Management/Project Management.md"
     }
   ],
   "omittedPaths": [],

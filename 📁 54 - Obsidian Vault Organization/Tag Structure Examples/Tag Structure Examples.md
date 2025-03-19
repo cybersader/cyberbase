@@ -16,7 +16,7 @@ date modified: Tuesday, March 18th 2025, 5:13 pm
 
 # My Current Tagging Structure
 
-> [!tldr] My tag structure uses my [SEA(CROW)](../Knowledge%20Platform%20Organization%20Framework/Knowledge%20Platform%20Organization%20Framework.md) knowledge platform organization framework
+> [!tldr] My tag structure uses my [SEA(CROW)](../Knowledge%20Platform%20Organization%20Framework/Knowledge%20Platform%20Organization%20Meta-Framework.md) knowledge platform organization framework
 
 # Problems in Tagging
 
