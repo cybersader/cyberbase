@@ -4,12 +4,47 @@ tags: []
 publish: true
 permalink:
 date created: Wednesday, March 19th 2025, 12:50 pm
-date modified: Wednesday, March 19th 2025, 12:56 pm
+date modified: Wednesday, March 19th 2025, 1:14 pm
 ---
 
 # My Tagging Structure
 
-- `#<>` - 
+I'm using my [SEACOWr Framework](../Knowledge%20Platform%20Organization%20Meta-Framework/Knowledge%20Platform%20Organization%20Meta-Framework.md) to map this to a conceptual model
+
+<u>SEACOW(R) Categories:</u>
+1. **S**ystem – The platform or technology context (e.g., Obsidian, Notion, etc.).
+2. **E**ntity – The audience, user, or agent interacting with the knowledge.
+3. **A**ctivities – The main types of operations on your knowledge platform.
+Under **Activities**, we have four sub-components:
+- **C**apture – How you get knowledge into the system.
+- **O**utput – How you interface or communicate the knowledge to external systems, entities, or audiences.
+- **W**ork – How you derive utility or process knowledge toward a goal.
+- **r**elation – How you interlink knowledge or connect concepts (not a core component)
+
+<u>Obsidian Tagging and Limitations:</u>
+- Benefits:
+	- Can have overlapping ontologies w/nested tagging
+- Limitations:
+	- Collation or sorting of the tag names depends on what Obsidian uses for their collator
+	- Can't use special characters reserved for Obsidian Markdown
+	- Some things don't present well in live view - [Tag Bugs & Issues](../Tag%20Bugs%20&%20Issues/Tag%20Bugs%20&%20Issues.md)
+
+<u>SEACOW(r) Rule Definitions:</u>
+- 
+
+<u>Goals of my Obsidian Tagging System:</u>
+- 
+
+
+| **Tag Type**            | SEACOWr Mapping | **Examples**              | **Sorting Priority**               | **Typing Ease**         | **Usage/Notes**                                                                       |
+| ----------------------- | --------------- | ------------------------- | ---------------------------------- | ----------------------- | ------------------------------------------------------------------------------------- |
+| **Underscore-Prefixed** |                 | `_/`, `_ -`               | Very High (appears at top)         | Harder to type          | Ideal for CAPTURE tags (logic, context, flat structure)                               |
+| **Dash-Prefixed**       |                 | `-/`, `- /`               | Very High (right after underscore) | Easier than underscore  | Best for OUTPUT tags (system compatible, supports limited nesting for knowledge work) |
+| **Slash-Only**          |                 | `/`                       | Mid-to-Low                         | Very easy               | Suited for simple tags with minimal hierarchy                                         |
+| **Emoji Tags**          |                 | 😃, 🚀, etc.              | Low (after ASCII characters)       | Slower (emoji keyboard) | Use for secretive/rare tags relying on visual cues                                    |
+| **Hashtag-Word**        |                 | `#word`                   | Lower                              | Very easy               | Great for relation tags or keyword cross-linking                                      |
+| **Entity/Group Tags**   |                 | `#--group`, `#--projects` | Lower (similar to hashtag-word)    | Very easy               | For tagging entities or groups (multiple people/projects, folder-like categorization) |
+|                         |                 |                           |                                    |                         |                                                                                       |
 
 # Ideas
 
