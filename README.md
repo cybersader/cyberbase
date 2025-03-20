@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, March 9th 2024, 8:53 pm
-date modified: Wednesday, March 19th 2025, 5:50 pm
+date modified: Thursday, March 20th 2025, 4:14 pm
 title: Welcome to my Cyberbase
 cssclasses:
   - list-cards
@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Wed, Mar 19, 2025 - [[Tag Structure for Cyberbase]]
+> Thu, Mar 20, 2025 - [[Easy Schematic Workflow]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                                                                     | Last modified             |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 54 - Obsidian Vault Organization/Tag Structure for Cyberbase/Tag Structure for Cyberbase.md\|Tag Structure for Cyberbase]]                                                          | Wed - 3/19/2025, 5:48 PM  |
-| [[📁 54 - Obsidian Vault Organization/SEACOWr Quick Start/SEACOWr Quick Start.md\|SEACOWr Quick Start]]                                                                                  | Wed - 3/19/2025, 4:49 PM  |
-| [[📁 54 - Obsidian Vault Organization/Knowledge Platform Organization Meta-Framework/Knowledge Platform Organization Meta-Framework.md\|Knowledge Platform Organization Meta-Framework]] | Wed - 3/19/2025, 4:21 PM  |
-| [[📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md\|📁 54 - Obsidian Vault Organization]]                                                                      | Wed - 3/19/2025, 12:50 PM |
-| [[📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md\|Tag Structure Examples]]                                                                         | Wed - 3/19/2025, 12:49 PM |
-| [[📁 54 - Obsidian Vault Organization/Choosing a Tag Structure in Obsidian/Choosing a Tag Structure in Obsidian.md\|Choosing a Tag Structure in Obsidian]]                               | Wed - 3/19/2025, 11:50 AM |
-| [[📁 54 - Obsidian Vault Organization/Obsidian Tag Limitations & Unicode Order/Obsidian Tag Limitations & Unicode Order.md\|Obsidian Tag Limitations & Unicode Order]]                   | Wed - 3/19/2025, 10:52 AM |
-| [[📁 10 - My Obsidian Stack/Obsidian File Names/Obsidian File Names.md\|Obsidian File Names]]                                                                                            | Wed - 3/19/2025, 10:46 AM |
-| [[📁 54 - Obsidian Vault Organization/Information Organization Systems/Information Organization Systems.md\|Information Organization Systems]]                                           | Wed - 3/19/2025, 10:45 AM |
-| [[⬇️ Clippings/Tech/Kortex/Kortex.md\|Kortex]]                                                                                                                                           | Wed - 3/19/2025, 10:17 AM |
+| File                                                                                                                                   | Last modified            |
+| -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [[🕸️ UNSTRUCTURED/Easy Schematic Workflow/Easy Schematic Workflow.md\|Easy Schematic Workflow]]                                       | Thu - 3/20/2025, 4:15 PM |
+| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                             | Thu - 3/20/2025, 4:13 PM |
+| [[📁 12 - Content Creation/Screen Recording, Streaming Stack/Screen Recording, Streaming Stack.md\|Screen Recording, Streaming Stack]] | Thu - 3/20/2025, 3:48 PM |
+| [[⬇️ Clippings/YouTube/YouTube.md\|YouTube]]                                                                                           | Thu - 3/20/2025, 1:43 PM |
+| [[⬇️ Clippings/Tech/Tech.md\|Tech]]                                                                                                    | Thu - 3/20/2025, 1:43 PM |
+| [[⬇️ Clippings/Reddit/Reddit.md\|Reddit]]                                                                                              | Thu - 3/20/2025, 1:43 PM |
+| [[⬇️ Clippings/Obsidian Plugins/Obsidian Plugins.md\|Obsidian Plugins]]                                                                | Thu - 3/20/2025, 1:43 PM |
+| [[⬇️ Clippings/Obsidian/Obsidian.md\|Obsidian]]                                                                                        | Thu - 3/20/2025, 1:43 PM |
+| [[⬇️ Clippings/News/News.md\|News]]                                                                                                    | Thu - 3/20/2025, 1:42 PM |
+| [[⬇️ Clippings/GitHub Repos/GitHub Repos.md\|GitHub Repos]]                                                                            | Thu - 3/20/2025, 1:42 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 

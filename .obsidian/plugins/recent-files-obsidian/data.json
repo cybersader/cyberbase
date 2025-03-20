@@ -1,16 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "YouTube",
-      "path": "⬇️ Clippings/YouTube/YouTube.md"
+      "basename": "Cyberbase New Note Workflow",
+      "path": "📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md"
+    },
+    {
+      "basename": "Cyberbase Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Tag Structure/Cyberbase Tag Structure.md"
+    },
+    {
+      "basename": "Screen Recording, Streaming Stack",
+      "path": "📁 12 - Content Creation/Screen Recording, Streaming Stack/Screen Recording, Streaming Stack.md"
+    },
+    {
+      "basename": "Easy Schematic Workflow",
+      "path": "🕸️ UNSTRUCTURED/Easy Schematic Workflow/Easy Schematic Workflow.md"
+    },
+    {
+      "basename": "Web or Browser-Based Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Web or Browser-Based Obsidian/Web or Browser-Based Obsidian.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "AI Content Workflows",
+      "path": "📁 12 - Content Creation/Cybersader Content/AI Content Workflows/AI Content Workflows.md"
+    },
+    {
+      "basename": "Free SVG",
+      "path": "📁 12 - Content Creation/Free SVG/Free SVG.md"
     },
     {
       "basename": "Tech",
       "path": "⬇️ Clippings/Tech/Tech.md"
-    },
-    {
-      "basename": "Reddit",
-      "path": "⬇️ Clippings/Reddit/Reddit.md"
     },
     {
       "basename": "Obsidian Plugins",
@@ -21,6 +45,10 @@
       "path": "⬇️ Clippings/Obsidian/Obsidian.md"
     },
     {
+      "basename": "Reddit",
+      "path": "⬇️ Clippings/Reddit/Reddit.md"
+    },
+    {
       "basename": "News",
       "path": "⬇️ Clippings/News/News.md"
     },
@@ -29,16 +57,16 @@
       "path": "⬇️ Clippings/GitHub Repos/GitHub Repos.md"
     },
     {
+      "basename": "YouTube",
+      "path": "⬇️ Clippings/YouTube/YouTube.md"
+    },
+    {
       "basename": "ChatGPT",
       "path": "⬇️ Clippings/ChatGPT/ChatGPT.md"
     },
     {
       "basename": "Paul Dickson - Obsidian QuickAdd Plugin How to Create Better Notes in Seconds",
       "path": "⬇️ Clippings/YouTube/Paul Dickson - Obsidian QuickAdd Plugin How to Create Better Notes in Seconds/Paul Dickson - Obsidian QuickAdd Plugin How to Create Better Notes in Seconds.md"
-    },
-    {
-      "basename": "Cyberbase New Note Workflow",
-      "path": "📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md"
     },
     {
       "basename": "CB1 - Customize Publish",
@@ -51,10 +79,6 @@
     {
       "basename": "Dynamic Folders Based on Tags",
       "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders Based on Tags/Dynamic Folders Based on Tags.md"
-    },
-    {
-      "basename": "Cyberbase Tag Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Tag Structure/Cyberbase Tag Structure.md"
     },
     {
       "basename": "Vault Folder & Tag Structure",
@@ -103,10 +127,6 @@
     {
       "basename": "📁 17 - Knowledge Engineering",
       "path": "📁 17 - Knowledge Engineering/📁 17 - Knowledge Engineering.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "Tag Bugs & Issues",
@@ -179,26 +199,6 @@
     {
       "basename": "Link Curation Tools",
       "path": "📁 03 - Curations, Stacks/Link Curation Tools/Link Curation Tools.md"
-    },
-    {
-      "basename": "File Organization Systems",
-      "path": "📁 54 - Obsidian Vault Organization/File Organization Systems/File Organization Systems.md"
-    },
-    {
-      "basename": "Dynamic Tags Based on Folder",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags Based on Folder/Dynamic Tags Based on Folder.md"
-    },
-    {
-      "basename": "Deepseek Ban Proposal",
-      "path": "⬇️ Clippings/News/Deepseek Ban Proposal/Deepseek Ban Proposal.md"
-    },
-    {
-      "basename": "Articles, Blogs",
-      "path": "⬇️ Clippings/Articles, Blogs/Articles, Blogs.md"
-    },
-    {
-      "basename": "Using Tags",
-      "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
     }
   ],
   "omittedPaths": [],

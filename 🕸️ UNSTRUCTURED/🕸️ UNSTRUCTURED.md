@@ -38,6 +38,7 @@ date modified: Friday, January 31st 2025, 4:34 pm
 - [[Debugging Obsidian Plugins]]
 - [[Digital Garden]]
 - [[Documenting Activity]]
+- **[[Easy Schematic Workflow]]**
 - **[[Email Security]]**
 - **[[Endpoint Firewall]]**
 - **[[Favorite Fonts]]**

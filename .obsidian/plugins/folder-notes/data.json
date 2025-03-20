@@ -8,16 +8,16 @@
   "enableCollapsing": false,
   "excludeFolders": [
     {
-      "type": "folder",
-      "path": "_attachments",
+      "type": "pattern",
+      "string": "*_attachments*",
+      "position": 0,
       "subFolders": true,
       "disableSync": true,
       "disableAutoCreate": true,
-      "disableFolderNote": true,
+      "disableFolderNote": false,
       "enableCollapsing": false,
-      "position": 0,
       "excludeFromFolderOverview": false,
-      "string": "",
+      "path": "",
       "hideInSettings": false
     }
   ],
