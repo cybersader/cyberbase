@@ -55,5 +55,6 @@
   "date-inserter",
   "obsidian-fuzzytag",
   "obsidian-tagfolder",
-  "tag-wrangler"
+  "tag-wrangler",
+  "dataview-publisher"
 ]
