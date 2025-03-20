@@ -1,28 +1,21 @@
 ---
-aliases: 
+aliases: []
 tags: []
 publish: true
 permalink: 
 date created: Saturday, March 15th 2025, 2:25 pm
-date modified: Saturday, March 15th 2025, 2:55 pm
+date modified: Thursday, March 20th 2025, 1:43 pm
 ---
 
-# MoC
+# MOC
 
 ```dataview
 table choice(thumbnailUrl, "![thumb|100](" + thumbnailUrl + ")", "") as Thumbnail, file.ctime as "Created", file.mtime as "Modified"
 from ""
-where (file.folder = this.file.folder or contains(file.tags, "#clippings/youtube"))
+where (file.folder = this.file.folder or contains(file.tags, "-clippings/youtube"))
   and file.path != this.file.path
 sort file.mtime desc
 limit 1000
 ```
 
-
-%% Begin Waypoint %%
-- **[[S3 - 2025 The Dawn of Energy Abundance]]**
-- **[[SXSW - The State of Personal Online Security and Confidentiality]]**
-- **[[To Scale - To Scale TIME]]**
-
-%% End Waypoint %%
 

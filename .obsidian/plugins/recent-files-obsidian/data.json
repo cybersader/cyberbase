@@ -1,6 +1,42 @@
 {
   "recentFiles": [
     {
+      "basename": "YouTube",
+      "path": "⬇️ Clippings/YouTube/YouTube.md"
+    },
+    {
+      "basename": "Tech",
+      "path": "⬇️ Clippings/Tech/Tech.md"
+    },
+    {
+      "basename": "Reddit",
+      "path": "⬇️ Clippings/Reddit/Reddit.md"
+    },
+    {
+      "basename": "Obsidian Plugins",
+      "path": "⬇️ Clippings/Obsidian Plugins/Obsidian Plugins.md"
+    },
+    {
+      "basename": "Obsidian",
+      "path": "⬇️ Clippings/Obsidian/Obsidian.md"
+    },
+    {
+      "basename": "News",
+      "path": "⬇️ Clippings/News/News.md"
+    },
+    {
+      "basename": "GitHub Repos",
+      "path": "⬇️ Clippings/GitHub Repos/GitHub Repos.md"
+    },
+    {
+      "basename": "ChatGPT",
+      "path": "⬇️ Clippings/ChatGPT/ChatGPT.md"
+    },
+    {
+      "basename": "Paul Dickson - Obsidian QuickAdd Plugin How to Create Better Notes in Seconds",
+      "path": "⬇️ Clippings/YouTube/Paul Dickson - Obsidian QuickAdd Plugin How to Create Better Notes in Seconds/Paul Dickson - Obsidian QuickAdd Plugin How to Create Better Notes in Seconds.md"
+    },
+    {
       "basename": "Cyberbase New Note Workflow",
       "path": "📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md"
     },
@@ -53,16 +89,8 @@
       "path": "⬇️ Clippings/Tech/Raycast/Raycast.md"
     },
     {
-      "basename": "Tech",
-      "path": "⬇️ Clippings/Tech/Tech.md"
-    },
-    {
       "basename": "SEACOWr Quick Start",
       "path": "📁 54 - Obsidian Vault Organization/SEACOWr Quick Start/SEACOWr Quick Start.md"
-    },
-    {
-      "basename": "YouTube",
-      "path": "⬇️ Clippings/YouTube/YouTube.md"
     },
     {
       "basename": "Wikipedia",
@@ -141,10 +169,6 @@
       "path": "⬇️ Clippings/Tech/Napkin/Napkin.md"
     },
     {
-      "basename": "ChatGPT",
-      "path": "⬇️ Clippings/ChatGPT/ChatGPT.md"
-    },
-    {
       "basename": "Digital Content Creation",
       "path": "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Digital Content Creation.md"
     },
@@ -169,36 +193,12 @@
       "path": "⬇️ Clippings/News/Deepseek Ban Proposal/Deepseek Ban Proposal.md"
     },
     {
-      "basename": "Reddit",
-      "path": "⬇️ Clippings/Reddit/Reddit.md"
-    },
-    {
-      "basename": "Obsidian Plugins",
-      "path": "⬇️ Clippings/Obsidian Plugins/Obsidian Plugins.md"
-    },
-    {
-      "basename": "News",
-      "path": "⬇️ Clippings/News/News.md"
-    },
-    {
       "basename": "Articles, Blogs",
       "path": "⬇️ Clippings/Articles, Blogs/Articles, Blogs.md"
     },
     {
       "basename": "Using Tags",
       "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
-    },
-    {
-      "basename": "Simplemind",
-      "path": "⬇️ Clippings/Tech/Simplemind/Simplemind.md"
-    },
-    {
-      "basename": "Custom PCs Australia - Steve Jobs perfect response to an insult. Worldwide developer conference 1997",
-      "path": "CLIPPI~1/YouTube/Custom PCs Australia - Steve Jobs perfect response to an insult. Worldwide developer conference 1997/Custom PCs Australia - Steve Jobs perfect response to an insult. Worldwide developer conference 1997.md"
-    },
-    {
-      "basename": "S3 - 2025 The Dawn of Energy Abundance",
-      "path": "⬇️ Clippings/YouTube/S3 - 2025 The Dawn of Energy Abundance/S3 - 2025 The Dawn of Energy Abundance.md"
     }
   ],
   "omittedPaths": [],

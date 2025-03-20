@@ -1,13 +1,19 @@
 ---
-aliases: 
-tags: 
+aliases: []
+tags: []
 publish: true
 permalink:
 date created: Saturday, March 15th 2025, 2:54 pm
-date modified: Saturday, March 15th 2025, 2:55 pm
+date modified: Thursday, March 20th 2025, 1:41 pm
 ---
 
-%% Begin Waypoint %%
+# MOC
 
-
-%% End Waypoint %%
+```dataview
+TABLE choice(favicon, "![favicon|25](" + favicon + ")", "") as Favicon, file.ctime as "Created", file.mtime as "Modified"
+FROM ""
+WHERE (contains(file.folder, this.file.folder) or contains(file.tags, "-clippings/reddit"))
+  and file.path != this.file.path
+SORT file.ctime desc
+LIMIT 1000
+```
