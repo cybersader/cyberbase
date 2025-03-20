@@ -34,7 +34,6 @@ LIMIT 1000
 - **[[Opennote]]**
 - **[[Peertube]]**
 - **[[Printify]]**
-- **[[Raycast]]**
 - **[[Readdy]]**
 - **[[Readwise]]**
 - **[[Simplemind]]**
