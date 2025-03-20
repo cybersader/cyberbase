@@ -13,4 +13,5 @@ date modified: Thursday, March 20th 2025, 1:04 pm
 
 ## Community Scripts & Templates
 
+- [github.com > Clothesline Method with Quick Add · zsviczian/obsidian-excalidraw-plugin · Discussion #138](https://github.com/zsviczian/obsidian-excalidraw-plugin/discussions/138)
 - 
