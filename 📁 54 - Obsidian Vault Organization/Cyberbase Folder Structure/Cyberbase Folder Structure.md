@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: 
 date created: Wednesday, March 19th 2025, 6:10 pm
-date modified: Thursday, March 20th 2025, 12:25 pm
+date modified: Thursday, March 20th 2025, 1:02 pm
 ---
 
 [Inputs, Capture](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Inputs,%20Capture/Inputs,%20Capture.md)
@@ -29,4 +29,8 @@ Uses [SEACOW(r)](../SEACOWr%20Quick%20Start/SEACOWr%20Quick%20Start.md) - my met
 	📁 06 - Learning, Notes - (OUTPUT)
 	📅 Changelog - (OUTPUT)
 🕸️ UNSTRUCTURED - (CAPTURE, WORK)
+🕸️ Daily Notes - (CAPTURE, RELATION)
 
+# Ideas
+
+- [Dynamic Folders Based on Tags](../Dynamic%20Folders%20Based%20on%20Tags/Dynamic%20Folders%20Based%20on%20Tags.md)
