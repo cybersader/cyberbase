@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Saturday, March 15th 2025, 7:17 pm
-date modified: Monday, March 17th 2025, 9:29 pm
+date modified: Thursday, March 20th 2025, 12:11 pm
 ---
 
 [Using Tags](../../📁%2010%20-%20My%20Obsidian%20Stack/Using%20Tags/Using%20Tags.md)
@@ -13,6 +13,7 @@ the workflow
 - ARC - add, relate, communicate
 
 # Ideas
+
 ## folders
 
 ### good ways to structure folders

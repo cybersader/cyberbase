@@ -7,6 +7,7 @@
     "delayBetweenPlugins": 40,
     "defaultStartupType": null,
     "showDescriptions": true,
+    "enableDependencies": false,
     "plugins": {
       "obsidian-admonition": {
         "startupType": "disabled"
@@ -976,7 +977,11 @@
       },
       "folder-by-tags-distributor": {
         "startupType": "disabled"
+      },
+      "obsidian-sort-and-permute-lines": {
+        "startupType": "instant"
       }
-    }
+    },
+    "loadOrder": []
   }
 }
