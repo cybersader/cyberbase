@@ -1,20 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "Cyber Frameworks, Ontologies",
+      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Cyber Frameworks, Ontologies/Cyber Frameworks, Ontologies.md"
+    },
+    {
+      "basename": "Vault Folder & Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
+    },
+    {
+      "basename": "Cyberbase New Note Workflow",
+      "path": "📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md"
+    },
+    {
+      "basename": "Cyberbase Folder Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Folder Structure/Cyberbase Folder Structure.md"
+    },
+    {
+      "basename": "Inputs, Capture",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Inputs, Capture/Inputs, Capture.md"
+    },
+    {
+      "basename": "Obsidian Web Clipper",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Web Clipper/Obsidian Web Clipper.md"
+    },
+    {
+      "basename": "Cyberbase Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Tag Structure/Cyberbase Tag Structure.md"
+    },
+    {
       "basename": "Raycast",
       "path": "⬇️ Clippings/Tech/Raycast/Raycast.md"
     },
     {
       "basename": "Tech",
       "path": "⬇️ Clippings/Tech/Tech.md"
-    },
-    {
-      "basename": "Cyberbase Folder Structure & Operation Refactoring",
-      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Folder Structure & Operation Refactoring/Cyberbase Folder Structure & Operation Refactoring.md"
-    },
-    {
-      "basename": "Tag Structure for Cyberbase",
-      "path": "📁 54 - Obsidian Vault Organization/Tag Structure for Cyberbase/Tag Structure for Cyberbase.md"
     },
     {
       "basename": "SEACOWr Quick Start",
@@ -75,10 +95,6 @@
     {
       "basename": "File Order",
       "path": "📁 10 - My Obsidian Stack/File Order/File Order.md"
-    },
-    {
-      "basename": "Vault Folder & Tag Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
     },
     {
       "basename": "Tag Pages",
@@ -183,22 +199,6 @@
     {
       "basename": "To Scale - To Scale TIME",
       "path": "⬇️ Clippings/YouTube/To Scale - To Scale TIME/To Scale - To Scale TIME.md"
-    },
-    {
-      "basename": "SXSW - The State of Personal Online Security and Confidentiality",
-      "path": "⬇️ Clippings/YouTube/SXSW - The State of Personal Online Security and Confidentiality/SXSW - The State of Personal Online Security and Confidentiality.md"
-    },
-    {
-      "basename": "📁 10 - My Obsidian Stack",
-      "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
-    },
-    {
-      "basename": "Dataview",
-      "path": "📁 10 - My Obsidian Stack/Dataview/Dataview.md"
-    },
-    {
-      "basename": "📁 52 - Obsidian Starters & Templates",
-      "path": "📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md"
     }
   ],
   "omittedPaths": [],

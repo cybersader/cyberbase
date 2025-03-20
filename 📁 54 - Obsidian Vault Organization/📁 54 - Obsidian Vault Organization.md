@@ -9,7 +9,9 @@ date modified: Saturday, March 15th 2025, 5:46 pm
 
 %% Begin Waypoint %%
 - **[[Choosing a Tag Structure in Obsidian]]**
-- **[[Cyberbase Folder Structure & Operation Refactoring]]**
+- **[[Cyberbase Folder Structure]]**
+- **[[Cyberbase New Note Workflow]]**
+- **[[Cyberbase Tag Structure]]**
 - **[[Dynamic Folders Based on Tags]]**
 - **[[Dynamic Tags Based on Folder]]**
 - **[[File Organization Systems]]**
@@ -24,7 +26,6 @@ date modified: Saturday, March 15th 2025, 5:46 pm
 - **[[Tag Bugs & Issues]]**
 - **[[Tag Pages]]**
 - **[[Tag Structure Examples]]**
-- **[[Tag Structure for Cyberbase]]**
 - **[[Vault Folder & Tag Structure]]**
 
 %% End Waypoint %%

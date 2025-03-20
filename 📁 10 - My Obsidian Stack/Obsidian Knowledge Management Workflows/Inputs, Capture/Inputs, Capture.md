@@ -9,16 +9,13 @@ date modified: Sunday, December 22nd 2024, 1:26 pm
 
 [Browser Extensions](../../../📁%2003%20-%20Curations,%20Stacks/Browser%20Extensions/Browser%20Extensions.md)
 
-- [Memex](../../📦%20VAULT%20SANDBOX%20TESTING/Memex/Memex.md)
 - ChatGPT
 - QuickAdd
-- Web Clippings
-	- [Introduction to Obsidian Web Clipper - Obsidian Help](https://help.obsidian.md/web-clipper)
+- [Obsidian Web Clipper](../../Obsidian%20Web%20Clipper/Obsidian%20Web%20Clipper.md)
 - Browser Pasting
 - Daily Notes
 
 - [screenpi.pe > screenpipe | AI app store powered by 24/7 desktop history](https://screenpi.pe/)
-- 
 
 # Sync Between Mobile & Desktop? (Browsers)
 

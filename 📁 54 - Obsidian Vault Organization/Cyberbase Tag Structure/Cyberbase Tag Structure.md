@@ -1,8 +1,9 @@
 ---
-aliases: []
-tags: []
+aliases:
+  - Tag Structure for Cyberbase
+tags: 
 publish: true
-permalink:
+permalink: 
 date created: Wednesday, March 19th 2025, 12:50 pm
 date modified: Wednesday, March 19th 2025, 5:56 pm
 ---
