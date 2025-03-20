@@ -1,30 +1,29 @@
 ---
-title: "Raycast - Your shortcut to everything"
-source: "https://www.raycast.com/"
-published:
+title: Raycast - Your shortcut to everything
+source: https://www.raycast.com/
+published: 
 date created: Thursday, March 20th 2025, 11:22 am
-description: "A collection of powerful productivity tools all within an extendable launcher."
+description: A collection of powerful productivity tools all within an extendable launcher.
 tags:
-  - "clippings"
-  - "clippings/tech"
-  - "productivity"
-  - "launcher"
-  - "ai"
-  - "extensions"
-  - "macos"
-  - "raycast"
-  - "productivity_tools"
-  - "search"
-  - "file_types"
-  - "team_collaboration"
-  - "developers"
-  - "macos_12+"
-  - "homebrew"
-  - "ai_extensions"
-  - "shortcuts"
-  - "productivity"
-  - "raycast"
-favicon: "https://www.raycast.com/favicon-production.png"
+  - clippings
+  - clippings/tech
+  - productivity
+  - launcher
+  - ai
+  - extensions
+  - macos
+  - raycast
+  - productivity_tools
+  - search
+  - file_types
+  - team_collaboration
+  - developers
+  - homebrew
+  - ai_extensions
+  - shortcuts
+  - productivity
+  - raycast
+favicon: https://www.raycast.com/favicon-production.png
 ---
 > [raycast.com > Raycast - Your shortcut to everything](https://www.raycast.com/)
 
