@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Thursday, March 20th 2025, 11:42 am
-date modified: Friday, March 21st 2025, 10:41 am
+date modified: Friday, March 21st 2025, 10:58 am
 ---
 
 [Inputs, Capture](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Inputs,%20Capture/Inputs,%20Capture.md)
@@ -12,13 +12,24 @@ date modified: Friday, March 21st 2025, 10:41 am
 # QuickAdd
 
 - Docs -  [obsidian.guide > Getting Started | QuickAdd](https://quickadd.obsidian.guide/docs/)
-- 
+- [Paul Dickson - Obsidian QuickAdd Plugin How to Create Better Notes in Seconds](../../⬇️%20Clippings/YouTube/Paul%20Dickson%20-%20Obsidian%20QuickAdd%20Plugin%20How%20to%20Create%20Better%20Notes%20in%20Seconds/Paul%20Dickson%20-%20Obsidian%20QuickAdd%20Plugin%20How%20to%20Create%20Better%20Notes%20in%20Seconds.md)
 
 ## Community Scripts & Templates
 
 - [github.com > Clothesline Method with Quick Add · zsviczian/obsidian-excalidraw-plugin · Discussion #138](https://github.com/zsviczian/obsidian-excalidraw-plugin/discussions/138)
 - [obsidian.guide > Examples | QuickAdd](https://quickadd.obsidian.guide/docs/#be-inspired)
 - 
+
+## My QuickAdd Workflow
+
+This is dependent on my [Folder Structure](../Cyberbase%20Folder%20Structure/Cyberbase%20Folder%20Structure.md).  
+
+Automating New Notes with QuickAdd Templates:
+- Current folder
+	- This would be useful if adding to one of the [OUTPUT type (public facing)](../SEACOWr%20Quick%20Start/SEACOWr%20Quick%20Start.md) folders
+- Specific folders
+	- 🕸️ UNSTRUCTURED
+	- ⬇️ INBOX, DROPZONE
 
 ## QuickAdd Overview
 
