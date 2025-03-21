@@ -980,6 +980,12 @@
       },
       "obsidian-sort-and-permute-lines": {
         "startupType": "instant"
+      },
+      "obsidian-binary-file-manager-plugin": {
+        "startupType": "disabled"
+      },
+      "create-note-in-folder": {
+        "startupType": "disabled"
       }
     },
     "loadOrder": []
