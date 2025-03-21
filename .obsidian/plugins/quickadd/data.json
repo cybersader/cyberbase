@@ -120,6 +120,13 @@
       "type": "Macro",
       "command": false,
       "macroId": "6ce1769d-d153-47f3-92d4-bbb22f911e49"
+    },
+    {
+      "id": "eadc6931-b0a7-4cc1-b804-332a508f3702",
+      "name": "🏷️ Open Tag Modal",
+      "type": "Macro",
+      "command": false,
+      "macroId": "38df95f9-87dc-49b0-a96b-1b5a635e6caa"
     }
   ],
   "macros": [
@@ -180,6 +187,20 @@
             "fileExistsMode": "Increment the file name",
             "setFileExistsBehavior": false
           }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "🏷️ Open Tag Modal",
+      "id": "38df95f9-87dc-49b0-a96b-1b5a635e6caa",
+      "commands": [
+        {
+          "name": "modal_form_tag_selector",
+          "type": "UserScript",
+          "id": "efdf8741-005d-402e-b04a-357b60563540",
+          "path": "System/QuickAdd Scripts/modal_form_tag_selector.js",
+          "settings": {}
         }
       ],
       "runOnStartup": false
