@@ -352,7 +352,7 @@
         "startupType": "disabled"
       },
       "quickadd": {
-        "startupType": "disabled"
+        "startupType": "instant"
       },
       "obsidian-read-it-later": {
         "startupType": "disabled"

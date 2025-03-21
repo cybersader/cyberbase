@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: 
 date created: Tuesday, March 18th 2025, 10:26 am
-date modified: Thursday, March 20th 2025, 12:08 pm
+date modified: Friday, March 21st 2025, 10:14 am
 ---
 
 # WORKSPACE
@@ -21,6 +21,21 @@ date modified: Thursday, March 20th 2025, 12:08 pm
 	- Input
 	- Unsorted
 	- Unstructured
+
+## SecOps
+
+- 📥DROPZONE, Inbox
+- 🔎 Index, Navigator, Map, MOCs
+- 0 - Tasks, Planning
+- 1 - Workspaces, Projects
+- 2 - Areas, Initiatives
+- 3 - Docs, Intel, SOPs
+- 4 - Topics, Knowledge, External
+- 5 - Archive, Admin
+- 6 - Ideation, Sandbox
+- 7 - Vault Config & Management
+- 99 - ARCHIVE
+- 📄 WELCOME - Wiki Usage
 
 # OLD notes
 
