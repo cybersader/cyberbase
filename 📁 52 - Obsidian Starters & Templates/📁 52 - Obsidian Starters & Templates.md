@@ -14,7 +14,7 @@ date modified: Sunday, March 9th 2025, 6:37 pm
 - **[[0 - Vault Basics]]**
 - **[[1 - Starting Your Vault]]**
 - **[[2 - Vault Organization]]**
-- **[[SecOps Starter 1]]**
+- **[[Cyberbase Starter Vault]]**
 
 %% End Waypoint %%
 # Vault Starters
