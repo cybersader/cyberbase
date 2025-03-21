@@ -147,6 +147,39 @@
           "id": "8f40da37-940d-4173-8d51-6ebafce8a91c",
           "path": "System/QuickAdd Scripts/tag_selector.js",
           "settings": {}
+        },
+        {
+          "name": "New Note",
+          "type": "NestedChoice",
+          "id": "bedfcbab-c6d2-472f-bd1b-7cc6d5ba847e",
+          "choice": {
+            "id": "21dfa98e-2c11-4eeb-82d0-7fb3903d7d02",
+            "name": "New Note",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Templates/🕸️ NEW NOTE.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{name}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
         }
       ],
       "runOnStartup": false

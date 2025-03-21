@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "QuickAdd Tag Selector",
-      "path": "🕸️ UNSTRUCTURED/QuickAdd Tag Selector/QuickAdd Tag Selector.md"
-    },
-    {
       "basename": "Cyberbase New Note Workflow",
       "path": "📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md"
     },
     {
       "basename": "Dynamic Folders From Selected Tags",
       "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders From Selected Tags/Dynamic Folders From Selected Tags.md"
+    },
+    {
+      "basename": "🕸️ NEW NOTE",
+      "path": "Templates/🕸️ NEW NOTE.md"
+    },
+    {
+      "basename": "QuickAdd Tag Selector",
+      "path": "🕸️ UNSTRUCTURED/QuickAdd Tag Selector/QuickAdd Tag Selector.md"
     },
     {
       "basename": "Ideas for Knowledge Organization",
@@ -43,10 +47,6 @@
     {
       "basename": "Cyberbase Folder Structure",
       "path": "📁 54 - Obsidian Vault Organization/Cyberbase Folder Structure/Cyberbase Folder Structure.md"
-    },
-    {
-      "basename": "🕸️ NEW NOTE",
-      "path": "Templates/🕸️ NEW NOTE.md"
     },
     {
       "basename": "Cyberbase Starter Vault",
@@ -195,10 +195,6 @@
     {
       "basename": "Obsidian Tag Limitations & Unicode Order",
       "path": "📁 54 - Obsidian Vault Organization/Obsidian Tag Limitations & Unicode Order/Obsidian Tag Limitations & Unicode Order.md"
-    },
-    {
-      "basename": "Knowledge Platform Organization Meta-Framework",
-      "path": "📁 54 - Obsidian Vault Organization/Knowledge Platform Organization Meta-Framework/Knowledge Platform Organization Meta-Framework.md"
     }
   ],
   "omittedPaths": [],
