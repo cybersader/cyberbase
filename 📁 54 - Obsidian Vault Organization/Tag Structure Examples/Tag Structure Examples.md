@@ -21,7 +21,7 @@ date modified: Wednesday, March 19th 2025, 12:49 pm
 # Problems in Tagging
 
 - folders to tagging
-    - format to snake case for folder path and make a nested tag - [Dynamic Tags Based on Folder](../Dynamic%20Tags%20Based%20on%20Folder/Dynamic%20Tags%20Based%20on%20Folder.md)
+    - format to snake case for folder path and make a nested tag - [Dynamic Tags from Folder](../Dynamic%20Tags%20Based%20on%20Folder/Dynamic%20Tags%20from%20Folder.md)
 - where do untagged go?
 - how do we move to certain types of folders based on parent tags with nested tags (untagged go to unstructured section)?
 - How do folder notes affect this?

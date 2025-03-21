@@ -3,11 +3,39 @@
 - **[[ChatGPT]]**
 - **[[GitHub Repos]]**
 - **[[News]]**
+	- **[[Deepseek Ban Proposal]]**
 - **[[Obsidian]]**
 - **[[Obsidian Plugins]]**
 - **[[Reddit]]**
 - **[[Tech]]**
+	- **[[Chatwoot]]**
+	- **[[Cryptee]]**
+	- **[[Cryptomator]]**
+	- **[[Cryptpad]]**
+	- **[[Fakeupdate]]**
+	- **[[Google-Gemma-3]]**
+	- **[[Kittl]]**
+	- **[[Kortex]]**
+	- **[[Makemydrivefun]]**
+	- **[[Napkin]]**
+	- **[[Notesnook]]**
+	- **[[Ollama]]**
+	- **[[Openfhe]]**
+	- **[[Opennote]]**
+	- **[[Peertube]]**
+	- **[[Printify]]**
+	- **[[Raycast]]**
+	- **[[Readdy]]**
+	- **[[Readwise]]**
+	- **[[Simplemind]]**
+	- **[[Slido]]**
+	- **[[Trilium Notes]]**
+	- **[[Zivver Security]]**
 - **[[Wikipedia]]**
 - **[[YouTube]]**
+	- **[[Paul Dickson - Obsidian QuickAdd Plugin How to Create Better Notes in Seconds]]**
+	- **[[S3 - 2025 The Dawn of Energy Abundance]]**
+	- **[[SXSW - The State of Personal Online Security and Confidentiality]]**
+	- **[[To Scale - To Scale TIME]]**
 
 %% End Waypoint %%

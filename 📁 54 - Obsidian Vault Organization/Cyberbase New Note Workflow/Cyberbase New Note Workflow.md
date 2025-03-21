@@ -4,20 +4,32 @@ tags: []
 publish: true
 permalink:
 date created: Thursday, March 20th 2025, 11:42 am
-date modified: Friday, March 21st 2025, 2:58 pm
+date modified: Friday, March 21st 2025, 6:34 pm
 ---
 
 [Inputs, Capture](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Inputs,%20Capture/Inputs,%20Capture.md)
+
+- [ ] Use Templater instead? ➕ 2025-03-21
+
+# Links
+
+- [github.com > danielo515/obsidian-modal-form: Define forms for filling data that you will be able to open from anywhere you can run JS](https://github.com/danielo515/obsidian-modal-form)
+	- [danielorodriguez.com > Obsidian Modal Form docs](https://danielorodriguez.com/obsidian-modal-form/)
+- [obsidian.md > Getting rid of QuickAdd with Templater - Share & showcase](https://forum.obsidian.md/t/getting-rid-of-quickadd-with-templater/96161)
+- [obsidian.md > [New plugin] Modal form - integrate forms into QuickAdd](https://forum.obsidian.md/t/new-plugin-modal-form-integrate-forms-into-quickadd-templater-etc/67103/108)
+- 
 
 # QuickAdd
 
 - Docs -  [obsidian.guide > Getting Started | QuickAdd](https://quickadd.obsidian.guide/docs/)
 - [Paul Dickson - Obsidian QuickAdd Plugin How to Create Better Notes in Seconds](../../⬇️%20Clippings/YouTube/Paul%20Dickson%20-%20Obsidian%20QuickAdd%20Plugin%20How%20to%20Create%20Better%20Notes%20in%20Seconds/Paul%20Dickson%20-%20Obsidian%20QuickAdd%20Plugin%20How%20to%20Create%20Better%20Notes%20in%20Seconds.md)
 
-## Community Scripts & Templates
+## Community Scripts, Templates, Macros
 
 - [github.com > Clothesline Method with Quick Add · zsviczian/obsidian-excalidraw-plugin · Discussion #138](https://github.com/zsviczian/obsidian-excalidraw-plugin/discussions/138)
 - [obsidian.guide > Examples | QuickAdd](https://quickadd.obsidian.guide/docs/#be-inspired)
+- [QuickAdd Tag Selector](../../🕸️%20UNSTRUCTURED/QuickAdd%20Tag%20Selector/QuickAdd%20Tag%20Selector.md)
+- [obsidian.md > QuickAdd - Tasks User Guide - Obsidian Publish](https://publish.obsidian.md/tasks/Other+Plugins/QuickAdd)
 - 
 
 ## My QuickAdd Workflow

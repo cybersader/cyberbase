@@ -1,20 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "Cyberbase New Note Workflow",
-      "path": "📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md"
-    },
-    {
       "basename": "QuickAdd Tag Selector",
       "path": "🕸️ UNSTRUCTURED/QuickAdd Tag Selector/QuickAdd Tag Selector.md"
     },
     {
-      "basename": "Cyberbase Folder Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Folder Structure/Cyberbase Folder Structure.md"
+      "basename": "Cyberbase New Note Workflow",
+      "path": "📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md"
+    },
+    {
+      "basename": "Dynamic Folders From Selected Tags",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders From Selected Tags/Dynamic Folders From Selected Tags.md"
     },
     {
       "basename": "Ideas for Knowledge Organization",
       "path": "📁 54 - Obsidian Vault Organization/Ideas for Knowledge Organization/Ideas for Knowledge Organization.md"
+    },
+    {
+      "basename": "Dynamic Tags from Folder",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags from Folder/Dynamic Tags from Folder.md"
+    },
+    {
+      "basename": "Cryptpad",
+      "path": "⬇️ Clippings/Tech/Cryptpad/Cryptpad.md"
+    },
+    {
+      "basename": "Texas Outdoor Adventures",
+      "path": "⬇️ Clippings/ChatGPT/Texas Outdoor Adventures/Texas Outdoor Adventures.md"
+    },
+    {
+      "basename": "iPhone Alarm Settings Guide",
+      "path": "⬇️ Clippings/ChatGPT/iPhone Alarm Settings Guide/iPhone Alarm Settings Guide.md"
+    },
+    {
+      "basename": "Best Budget Mic Options",
+      "path": "⬇️ Clippings/ChatGPT/Best Budget Mic Options/Best Budget Mic Options.md"
+    },
+    {
+      "basename": "WPA2-PSK vs WPA2-Enterprise",
+      "path": "⬇️ Clippings/ChatGPT/WPA2-PSK vs WPA2-Enterprise/WPA2-PSK vs WPA2-Enterprise.md"
+    },
+    {
+      "basename": "Cyberbase Folder Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Folder Structure/Cyberbase Folder Structure.md"
     },
     {
       "basename": "🕸️ NEW NOTE",
@@ -117,10 +145,6 @@
       "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
     },
     {
-      "basename": "Dynamic Folders Based on Tags",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders Based on Tags/Dynamic Folders Based on Tags.md"
-    },
-    {
       "basename": "Vault Folder & Tag Structure",
       "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
     },
@@ -175,26 +199,6 @@
     {
       "basename": "Knowledge Platform Organization Meta-Framework",
       "path": "📁 54 - Obsidian Vault Organization/Knowledge Platform Organization Meta-Framework/Knowledge Platform Organization Meta-Framework.md"
-    },
-    {
-      "basename": "Folders vs Tags vs Links vs Metadata",
-      "path": "📁 54 - Obsidian Vault Organization/Folders vs Tags vs Links vs Metadata/Folders vs Tags vs Links vs Metadata.md"
-    },
-    {
-      "basename": "Tag Structure Examples",
-      "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
-    },
-    {
-      "basename": "Choosing a Tag Structure in Obsidian",
-      "path": "📁 54 - Obsidian Vault Organization/Choosing a Tag Structure in Obsidian/Choosing a Tag Structure in Obsidian.md"
-    },
-    {
-      "basename": "File Order",
-      "path": "📁 10 - My Obsidian Stack/File Order/File Order.md"
-    },
-    {
-      "basename": "Tag Pages",
-      "path": "📁 54 - Obsidian Vault Organization/Tag Pages/Tag Pages.md"
     }
   ],
   "omittedPaths": [],

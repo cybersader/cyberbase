@@ -116,10 +116,10 @@
     },
     {
       "id": "851cad12-27dd-4e18-89f3-73c3127a51bc",
-      "name": "Tag Selector",
+      "name": "🏷️ Tag Selector",
       "type": "Macro",
       "command": false,
-      "macroId": "947b9436-503d-45f8-b647-31d99d0b8e96"
+      "macroId": "6ce1769d-d153-47f3-92d4-bbb22f911e49"
     }
   ],
   "macros": [
@@ -131,6 +131,20 @@
           "name": "tag_selector",
           "type": "UserScript",
           "id": "c07a0e84-9757-428e-b934-d1dea9c1fd52",
+          "path": "System/QuickAdd Scripts/tag_selector.js",
+          "settings": {}
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "🏷️ Tag Selector",
+      "id": "6ce1769d-d153-47f3-92d4-bbb22f911e49",
+      "commands": [
+        {
+          "name": "tag_selector",
+          "type": "UserScript",
+          "id": "8f40da37-940d-4173-8d51-6ebafce8a91c",
           "path": "System/QuickAdd Scripts/tag_selector.js",
           "settings": {}
         }

@@ -33,4 +33,4 @@ Uses [SEACOW(r)](../SEACOWr%20Quick%20Start/SEACOWr%20Quick%20Start.md) - my met
 
 # Ideas
 
-- [Dynamic Folders Based on Tags](../Dynamic%20Folders%20Based%20on%20Tags/Dynamic%20Folders%20Based%20on%20Tags.md)
+- [Dynamic Folders From Selected Tags](../Dynamic%20Folders%20Based%20on%20Tags/Dynamic%20Folders%20From%20Selected%20Tags.md)
