@@ -113,9 +113,31 @@
       "openFileInMode": "default",
       "fileExistsMode": "Increment the file name",
       "setFileExistsBehavior": false
+    },
+    {
+      "id": "851cad12-27dd-4e18-89f3-73c3127a51bc",
+      "name": "Tag Selector",
+      "type": "Macro",
+      "command": false,
+      "macroId": "947b9436-503d-45f8-b647-31d99d0b8e96"
     }
   ],
-  "macros": [],
+  "macros": [
+    {
+      "name": "Tag Selector",
+      "id": "947b9436-503d-45f8-b647-31d99d0b8e96",
+      "commands": [
+        {
+          "name": "tag_selector",
+          "type": "UserScript",
+          "id": "c07a0e84-9757-428e-b934-d1dea9c1fd52",
+          "path": "System/QuickAdd Scripts/tag_selector.js",
+          "settings": {}
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
   "inputPrompt": "single-line",
   "devMode": false,
   "templateFolderPath": "Templates",
