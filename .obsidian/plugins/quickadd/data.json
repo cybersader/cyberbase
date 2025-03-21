@@ -1,9 +1,124 @@
 {
-  "choices": [],
+  "choices": [
+    {
+      "id": "bb11d38b-d459-4948-a7fa-e6ac90dc8e0c",
+      "name": " 🕸️ NEW NOTE",
+      "type": "Template",
+      "command": false,
+      "templatePath": "Templates/🕸️ NEW NOTE.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{NAME}}/{{NAME}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "🕸️ UNSTRUCTURED"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": true,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "horizontal",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": true
+    },
+    {
+      "id": "7a29c09a-d63d-4a73-a771-afcd7f17ea49",
+      "name": "📁 NOTE 2 CURRENT FOLDER ",
+      "type": "Template",
+      "command": false,
+      "templatePath": "Templates/🕸️ NEW NOTE.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{name}}/{{name}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": true,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": true
+    },
+    {
+      "id": "e7399f3f-b72c-40a6-a1de-838f0f23d664",
+      "name": "🔎 NEW FOLDER NOTE",
+      "type": "Template",
+      "command": false,
+      "templatePath": "Templates/🕸️ NEW NOTE.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{name}}/{{name}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [],
+        "chooseWhenCreatingNote": true,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": true
+      },
+      "appendLink": true,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": true
+    },
+    {
+      "id": "df424c2b-77d7-4332-b348-2c049b3eee1a",
+      "name": "⬇️ INBOX NOTE",
+      "type": "Template",
+      "command": false,
+      "templatePath": "Templates/🕸️ NEW NOTE.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{name}}/{{name}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
+    }
+  ],
   "macros": [],
   "inputPrompt": "single-line",
   "devMode": false,
-  "templateFolderPath": "",
+  "templateFolderPath": "Templates",
   "announceUpdates": true,
   "version": "1.13.1",
   "disableOnlineFeatures": true,

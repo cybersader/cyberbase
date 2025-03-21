@@ -252,5 +252,13 @@
       ],
       "key": "Q"
     }
+  ],
+  "quickadd:runQuickAdd": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "N"
+    }
   ]
 }

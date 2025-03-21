@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Thursday, March 20th 2025, 11:42 am
-date modified: Friday, March 21st 2025, 10:58 am
+date modified: Friday, March 21st 2025, 2:58 pm
 ---
 
 [Inputs, Capture](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Inputs,%20Capture/Inputs,%20Capture.md)
@@ -30,6 +30,17 @@ Automating New Notes with QuickAdd Templates:
 - Specific folders
 	- 🕸️ UNSTRUCTURED
 	- ⬇️ INBOX, DROPZONE
+
+### Folder Notes Compatibility
+
+- Automatically create folder notes
+	- This setting breaks the link appending feature with QuickAdd
+
+### Modal to Add Tags During Creation
+
+Creatin/created a macro for selecting tags - [QuickAdd Tag Selector](🕸️%20UNSTRUCTURED/QuickAdd%20Tag%20Selector/QuickAdd%20Tag%20Selector.md)
+
+- 
 
 ## QuickAdd Overview
 

@@ -4,7 +4,7 @@
   "altKey": false,
   "hideFolderNote": true,
   "templatePath": "",
-  "autoCreate": true,
+  "autoCreate": false,
   "enableCollapsing": false,
   "excludeFolders": [
     {
@@ -62,7 +62,7 @@
     "explorer": true,
     "path": true
   },
-  "settingsTab": "exclude_folders",
+  "settingsTab": "general",
   "supportedFileTypes": [
     "md",
     "canvas"

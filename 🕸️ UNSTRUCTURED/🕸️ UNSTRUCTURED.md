@@ -65,6 +65,7 @@ date modified: Friday, January 31st 2025, 4:34 pm
 - **[[Phones, Secure, Pentest]]**
 - **[[Photo Filtering, Color, LUTs]]**
 - **[[Prioritization Formulas]]**
+- **[[QuickAdd Tag Selector]]**
 - **[[RDP Client]]**
 - [[Reporting Phishing]]
 - **[[RSS]]**

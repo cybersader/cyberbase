@@ -1,8 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "Cyberbase Starter Vault",
-      "path": "📁 52 - Obsidian Starters & Templates/Cyberbase Starter Vault/Cyberbase Starter Vault.md"
+      "basename": "Cyberbase New Note Workflow",
+      "path": "📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md"
+    },
+    {
+      "basename": "QuickAdd Tag Selector",
+      "path": "🕸️ UNSTRUCTURED/QuickAdd Tag Selector/QuickAdd Tag Selector.md"
     },
     {
       "basename": "Cyberbase Folder Structure",
@@ -13,8 +17,12 @@
       "path": "📁 54 - Obsidian Vault Organization/Ideas for Knowledge Organization/Ideas for Knowledge Organization.md"
     },
     {
-      "basename": "Cyberbase New Note Workflow",
-      "path": "📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md"
+      "basename": "🕸️ NEW NOTE",
+      "path": "Templates/🕸️ NEW NOTE.md"
+    },
+    {
+      "basename": "Cyberbase Starter Vault",
+      "path": "📁 52 - Obsidian Starters & Templates/Cyberbase Starter Vault/Cyberbase Starter Vault.md"
     },
     {
       "basename": "1 - Starting Your Vault",
@@ -191,14 +199,6 @@
     {
       "basename": "Unicode",
       "path": "🕸️ UNSTRUCTURED/Unicode/Unicode.md"
-    },
-    {
-      "basename": "Obsidian File Names",
-      "path": "📁 10 - My Obsidian Stack/Obsidian File Names/Obsidian File Names.md"
-    },
-    {
-      "basename": "Information Organization Systems",
-      "path": "📁 54 - Obsidian Vault Organization/Information Organization Systems/Information Organization Systems.md"
     }
   ],
   "omittedPaths": [],
