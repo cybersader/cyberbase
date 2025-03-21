@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "SecOps Starter 1",
+      "path": "📁 52 - Obsidian Starters & Templates/SecOps Starter 1/SecOps Starter 1.md"
+    },
+    {
+      "basename": "2 - Vault Organization",
+      "path": "📁 52 - Obsidian Starters & Templates/2 - Vault Organization/2 - Vault Organization.md"
+    },
+    {
+      "basename": "1 - Starting Your Vault",
+      "path": "📁 52 - Obsidian Starters & Templates/1 - Starting Your Vault/1 - Starting Your Vault.md"
+    },
+    {
+      "basename": "0 - Vault Basics",
+      "path": "📁 52 - Obsidian Starters & Templates/0 - Vault Basics/0 - Vault Basics.md"
+    },
+    {
       "basename": "Cyberbase New Note Workflow",
       "path": "📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "Information Organization Systems",
       "path": "📁 54 - Obsidian Vault Organization/Information Organization Systems/Information Organization Systems.md"
-    },
-    {
-      "basename": "Meta-framework",
-      "path": "⬇️ Clippings/ChatGPT/Meta-framework/Meta-framework.md"
-    },
-    {
-      "basename": "Kortex",
-      "path": "⬇️ Clippings/Tech/Kortex/Kortex.md"
-    },
-    {
-      "basename": "Makemydrivefun",
-      "path": "⬇️ Clippings/Tech/Makemydrivefun/Makemydrivefun.md"
-    },
-    {
-      "basename": "Napkin",
-      "path": "⬇️ Clippings/Tech/Napkin/Napkin.md"
     }
   ],
   "omittedPaths": [],
