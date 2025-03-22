@@ -11,7 +11,7 @@ date modified: Friday, March 21st 2025, 6:34 pm
 
 - [ ] Use Templater instead? ➕ 2025-03-21
 
-
+[TEST](🕸️%20UNSTRUCTURED/TEST/TEST.md)
 # Links
 
 - [github.com > danielo515/obsidian-modal-form: Define forms for filling data that you will be able to open from anywhere you can run JS](https://github.com/danielo515/obsidian-modal-form)

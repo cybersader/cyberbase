@@ -1,11 +1,5 @@
 ---
-aliases: []
-publish: true
-permalink:
-date created:
-date modified:
----
----
+tags: 
 aliases: []
 publish: true
 permalink:
