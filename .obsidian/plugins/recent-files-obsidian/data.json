@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "test",
+      "path": "🕸️ UNSTRUCTURED/test/test.md"
+    },
+    {
       "basename": "Cyberbase New Note Workflow",
       "path": "📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md"
+    },
+    {
+      "basename": "🕸️ NEW NOTE",
+      "path": "Templates/🕸️ NEW NOTE.md"
     },
     {
       "basename": "Dynamic Tags from Folder",
@@ -19,10 +27,6 @@
     {
       "basename": "📁 36 - Personal Finance",
       "path": "📁 36 - Personal Finance/📁 36 - Personal Finance.md"
-    },
-    {
-      "basename": "🕸️ NEW NOTE",
-      "path": "Templates/🕸️ NEW NOTE.md"
     },
     {
       "basename": "QuickAdd Tag Selector",
