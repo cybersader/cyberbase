@@ -31,6 +31,34 @@
       "setFileExistsBehavior": true
     },
     {
+      "id": "4070a516-db45-491b-b1be-db326623415f",
+      "name": "🕸️ NEW NOTE w/TAGS",
+      "type": "Template",
+      "command": false,
+      "templatePath": "Templates/New Note - Tag Modal.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{name}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
+    },
+    {
       "id": "7a29c09a-d63d-4a73-a771-afcd7f17ea49",
       "name": "📁 NOTE 2 CURRENT FOLDER ",
       "type": "Template",
