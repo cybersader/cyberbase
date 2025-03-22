@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Friday, March 21st 2025, 2:58 pm
-date modified: Friday, March 21st 2025, 6:18 pm
+date modified: Saturday, March 22nd 2025, 1:38 pm
 ---
 
 # Related Macros
@@ -23,3 +23,7 @@ module.exports = async function select_tags(params) {
 }
 ```
 
+# Modal Forms Plugins - The Best Method
+
+- [(14) Obsidian Modal Forms Plugin: How to Transform your Data Entry in Obsidian - YouTube](https://www.youtube.com/watch?v=zVGyWaw3xZQ)
+- Frontmatter example f/ Modal Forms docs - [Advanced - Obsidian Modal Form docs](https://danielorodriguez.com/obsidian-modal-form/advanced-examples/#modifying-frontmatter-with-a-form)

@@ -4,7 +4,7 @@ tags: [test]
 publish: true
 permalink: 
 date created: Thursday, March 20th 2025, 11:42 am
-date modified: Saturday, March 22nd 2025, 1:19 pm
+date modified: Saturday, March 22nd 2025, 1:49 pm
 ---
 
 [Inputs, Capture](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Inputs,%20Capture/Inputs,%20Capture.md)
@@ -20,6 +20,7 @@ date modified: Saturday, March 22nd 2025, 1:19 pm
 - [github.com > Gather up tags and format for YAML frontmatter · SilentVoid13/Templater · Discussion #140 > Templater Showcase](https://github.com/SilentVoid13/Templater/discussions/categories/templates-showcase)
 - [github.com > Obsidian Snippets](https://gist.github.com/Mearman/ba5b1bcf746b4e04d12865dc09402016#file-mutate_frontmatter-js)
 - [youtube.com > Obsidian Modal Forms Plugin: How to Transform your Data Entry in Obsidian](https://www.youtube.com/watch?v=zVGyWaw3xZQ)
+- [danielorodriguez.com > Obsidian Modal Form docs](https://danielorodriguez.com/obsidian-modal-form/#usage-with-templater)
 - 
 
 # QuickAdd
@@ -51,10 +52,21 @@ Automating New Notes with QuickAdd Templates:
 - Automatically create folder notes
 	- This setting breaks the link appending feature with QuickAdd
 
-### Modal to Add Tags During Creation
+### Using Modal Forms Plugin to Add Tags During Creation
 
-Creatin/created a macro for selecting tags - [QuickAdd Tag Selector](../../🕸️%20UNSTRUCTURED/QuickAdd%20Tag%20Selector/QuickAdd%20Tag%20Selector.md)
+ - [QuickAdd Tag Selector](../../🕸️%20UNSTRUCTURED/QuickAdd%20Tag%20Selector/QuickAdd%20Tag%20Selector.md)
 
+### Using Active File Frontmatter with New Note (QuickAdd + Templater + Modal Forms)
+
+- [obsidian.md > QuickAdd - using active file frontmatter - Help](https://forum.obsidian.md/t/quickadd-using-active-file-frontmatter/78091/7)
+
+This essentially requires using **QuickAdd** format syntax from within **Templater**.
+- You have to then use a QuickAdd macro that [returns](https://quickadd.obsidian.guide/docs/FormatSyntax) the current active file tags as a life
+- Then, you could try to feed these into the Modal Form plugin builder API to allow you to select the tags or frontmatter combinations you want to keep
+- You could have exclusions from within the code too
+
+Related:
+- [QuickAdd - using active file frontmatter - Help - Obsidian Forum](https://forum.obsidian.md/t/quickadd-using-active-file-frontmatter/78091/6)
 - 
 
 ## QuickAdd Overview

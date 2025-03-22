@@ -1,0 +1,11 @@
+{
+	"id": "open-editors",
+	"name": "Open Editors",
+	"minAppVersion": "0.15.0",
+	"description": "Adds a view which shows the opened windows, groups, tabs and editors inside them. Makes managing the open editors easier.",
+	"author": "4Source",
+	"authorUrl": "https://github.com/4Source",
+	"isDesktopOnly": false,
+	"fundingUrl": "https://www.buymeacoffee.com/4Source",
+	"version": "0.2.0"
+}

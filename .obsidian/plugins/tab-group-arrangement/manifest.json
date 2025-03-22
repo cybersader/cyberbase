@@ -1,0 +1,11 @@
+{
+  "id": "tab-group-arrangement",
+  "name": "Tab Group Arrangement",
+  "version": "1.0.1",
+  "minAppVersion": "0.15.0",
+  "description": "Arrange the tab group in a more flexible way. For now, it supports arranging evenly and expanded like VSCode. User can make action and switch mode of arrangement by clicking the status bar or executing commands.",
+  "author": "situ2001",
+  "authorUrl": "https://situ2001.com",
+  "fundingUrl": "https://www.paypal.com/paypalme/situ2oo1",
+  "isDesktopOnly": true
+}
