@@ -6,11 +6,15 @@ date created:
 date modified:
 <%*
   // Show active file information
-  const activeFile = app.workspace.getActiveFile();
-  new Notice("Active file: " + (activeFile ? activeFile.basename : "none") + " | Path: " + (activeFile ? activeFile.path : "none"));
-  
+  //const activeFile = app.workspace.getActiveFile();
+  //new Notice("Active file: " + (activeFile ? activeFile.basename : "none") + " | Path: " + //(activeFile ? activeFile.path : "none"));
+
+  // Capture LINKCURRENT from QuickAdd's format syntax.
+  const linkCurrent = "{{LINKCURRENT}}";  
+  new Notice("LINKCURRENT value: " + linkCurrent);
+
   // 1. Capture active file tags using your captureActiveTags function.
-  const activeTags = await tp.user.captureActiveTags(tp);
+  const activeTags = await tp.user.captureActiveTags(tp, linkCurrent);
   new Notice("Active tags from file: " + activeTags);
   
   // 2. Build default values for your modal form.

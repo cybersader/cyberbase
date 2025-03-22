@@ -1,6 +1,36 @@
 {
   "choices": [
     {
+      "id": "39a9b33f-2d1a-49c3-96be-908185947653",
+      "name": "🕸️🕸️ Note (copy)",
+      "type": "Template",
+      "command": false,
+      "templatePath": "Templates/New Note - Copy Source Tags.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{name}}/{{name}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "🕸️ UNSTRUCTURED"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
+    },
+    {
       "id": "ad2f2f49-57e9-429f-b81b-575b8326c7fd",
       "name": "🕸️🕸️ Note",
       "type": "Template",

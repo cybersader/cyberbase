@@ -78,7 +78,6 @@ date modified: Friday, January 31st 2025, 4:34 pm
 - **[[Teaching Engagement Hacks]]**
 - **[[Tech Stacks from Tech Content Creators]]**
 - **[[test]]**
-	- [[test1]]
 - **[[The Four T's of Stewardship]]**
 - **[[Tmux]]**
 - **[[Todo List Apps]]**

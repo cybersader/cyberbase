@@ -78,7 +78,8 @@ Related:
 - [QuickAdd - using active file frontmatter - Help - Obsidian Forum](https://forum.obsidian.md/t/quickadd-using-active-file-frontmatter/78091/6)
 - [github.com > danielo515/obsidian-modal-form: Define forms for filling data that you will be able to open from anywhere you can run JS](https://github.com/danielo515/obsidian-modal-form/issues/269)
 - [Form builder API - Obsidian Modal Form docs](https://danielorodriguez.com/obsidian-modal-form/FormBuilder/)
-- 
+- [Inherit or pass on Metadata Values from Active File when creating New File - Help - Obsidian Forum](https://forum.obsidian.md/t/inherit-or-pass-on-metadata-values-from-active-file-when-creating-new-file/60522)
+- [How to pass data between QuickAdd and Templater? · chhoumann/quickadd · Discussion #78](https://github.com/chhoumann/quickadd/discussions/78)
 
 ## QuickAdd Overview
 

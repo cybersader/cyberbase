@@ -5,12 +5,24 @@
       "path": "📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md"
     },
     {
-      "basename": "New Note - Persist Tags",
-      "path": "Templates/New Note - Persist Tags.md"
+      "basename": "test",
+      "path": "🕸️ UNSTRUCTURED/test/test.md"
     },
     {
       "basename": "Dynamic Tags from Folder",
       "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags from Folder/Dynamic Tags from Folder.md"
+    },
+    {
+      "basename": "QuickAdd + Templater Example",
+      "path": "Templates/QuickAdd + Templater Example.md"
+    },
+    {
+      "basename": "New Note - Persist Tags",
+      "path": "Templates/New Note - Persist Tags.md"
+    },
+    {
+      "basename": "New Note - Copy Source Tags",
+      "path": "Templates/New Note - Copy Source Tags.md"
     },
     {
       "basename": "TEST - Active Tags",
@@ -187,14 +199,6 @@
     {
       "basename": "Inputs, Capture",
       "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Inputs, Capture/Inputs, Capture.md"
-    },
-    {
-      "basename": "Cyber Frameworks, Ontologies",
-      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Cyber Frameworks, Ontologies/Cyber Frameworks, Ontologies.md"
-    },
-    {
-      "basename": "Obsidian Web Clipper",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Web Clipper/Obsidian Web Clipper.md"
     }
   ],
   "omittedPaths": [],
