@@ -4,7 +4,7 @@ tags: [test]
 publish: true
 permalink: 
 date created: Thursday, March 20th 2025, 11:42 am
-date modified: Saturday, March 22nd 2025, 1:49 pm
+date modified: Saturday, March 22nd 2025, 2:20 pm
 ---
 
 [Inputs, Capture](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Inputs,%20Capture/Inputs,%20Capture.md)
@@ -64,6 +64,10 @@ This essentially requires using **QuickAdd** format syntax from within **Templat
 - You have to then use a QuickAdd macro that [returns](https://quickadd.obsidian.guide/docs/FormatSyntax) the current active file tags as a life
 - Then, you could try to feed these into the Modal Form plugin builder API to allow you to select the tags or frontmatter combinations you want to keep
 - You could have exclusions from within the code too
+
+Passing data from QuickAdd to Templater and Modal Forms may be hard.  Not sure how to do it at this point yet.
+
+
 
 Related:
 - [QuickAdd - using active file frontmatter - Help - Obsidian Forum](https://forum.obsidian.md/t/quickadd-using-active-file-frontmatter/78091/6)
