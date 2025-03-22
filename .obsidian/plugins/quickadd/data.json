@@ -1,104 +1,14 @@
 {
   "choices": [
     {
-      "id": "39a9b33f-2d1a-49c3-96be-908185947653",
-      "name": "🕸️🕸️ Note (copy)",
-      "type": "Template",
-      "command": false,
-      "templatePath": "Templates/New Note - Copy Source Tags.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "{{name}}/{{name}}"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "🕸️ UNSTRUCTURED"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": false
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": false
-    },
-    {
       "id": "ad2f2f49-57e9-429f-b81b-575b8326c7fd",
-      "name": "🕸️🕸️ Note",
+      "name": "🕸️ NEW Note",
       "type": "Template",
       "command": false,
-      "templatePath": "Templates/New Note - Persist Tags.md",
+      "templatePath": "Templates/New Note - Templater & Modal Form - Tag Picker.md",
       "fileNameFormat": {
         "enabled": true,
         "format": "{{name}}/{{name}}"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "🕸️ UNSTRUCTURED"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": false
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": false
-    },
-    {
-      "id": "fff7b754-f0b2-4827-8821-d0138793da38",
-      "name": "🕸️ NEW NOTE - TAG ADD",
-      "type": "Template",
-      "command": false,
-      "templatePath": "Templates/NEW NOTE - Tag Adder.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "{{name}}/{{name}}"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "🕸️ UNSTRUCTURED"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": false
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": false
-    },
-    {
-      "id": "bb11d38b-d459-4948-a7fa-e6ac90dc8e0c",
-      "name": " 🕸️ NEW NOTE",
-      "type": "Template",
-      "command": false,
-      "templatePath": "Templates/🕸️ NEW NOTE.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "{{NAME}}/{{NAME}}"
       },
       "folder": {
         "enabled": true,
@@ -112,20 +22,20 @@
       "appendLink": true,
       "openFileInNewTab": {
         "enabled": false,
-        "direction": "horizontal",
+        "direction": "vertical",
         "focus": true
       },
       "openFile": true,
       "openFileInMode": "default",
       "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": true
+      "setFileExistsBehavior": false
     },
     {
       "id": "4070a516-db45-491b-b1be-db326623415f",
-      "name": "🕸️ NEW NOTE w/TAGS",
+      "name": "🕸️ NEW + Current Note Tags",
       "type": "Template",
       "command": false,
-      "templatePath": "Templates/New Note - Tag Modal.md",
+      "templatePath": "Templates/New Note - Copy Source Tags.md",
       "fileNameFormat": {
         "enabled": true,
         "format": "{{name}}/{{name}}"

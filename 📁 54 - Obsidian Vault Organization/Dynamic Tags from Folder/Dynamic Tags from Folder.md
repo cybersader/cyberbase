@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: 
 date created: Monday, March 17th 2025, 11:39 am
-date modified: Monday, March 17th 2025, 8:19 pm
+date modified: Saturday, March 22nd 2025, 6:49 pm
 ---
 
 [Dynamic Folders Based on Tags](../Automate%20Folders%20Based%20on%20Tags/Dynamic%20Folders%20Based%20on%20Tags.md) - the opposite of this

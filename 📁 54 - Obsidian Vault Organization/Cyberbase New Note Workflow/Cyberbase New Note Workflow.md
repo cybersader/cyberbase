@@ -4,11 +4,10 @@ tags: [test, test2, test3]
 publish: true
 permalink: 
 date created: Thursday, March 20th 2025, 11:42 am
-date modified: Saturday, March 22nd 2025, 4:41 pm
+date modified: Saturday, March 22nd 2025, 6:46 pm
 ---
 
 [Inputs, Capture](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Inputs,%20Capture/Inputs,%20Capture.md)
-
 
 # Links
 
@@ -33,7 +32,6 @@ date modified: Saturday, March 22nd 2025, 4:41 pm
 - [obsidian.guide > Examples | QuickAdd](https://quickadd.obsidian.guide/docs/#be-inspired)
 - [QuickAdd Tag Selector](../../🕸️%20UNSTRUCTURED/QuickAdd%20Tag%20Selector/QuickAdd%20Tag%20Selector.md)
 - [obsidian.md > QuickAdd - Tasks User Guide - Obsidian Publish](https://publish.obsidian.md/tasks/Other+Plugins/QuickAdd)
-- 
 
 ## My QuickAdd Workflow
 
@@ -55,24 +53,11 @@ Automating New Notes with QuickAdd Templates:
 
  - [QuickAdd Tag Selector](../../🕸️%20UNSTRUCTURED/QuickAdd%20Tag%20Selector/QuickAdd%20Tag%20Selector.md)
 
-### Using Active File Frontmatter with New Note (QuickAdd + Templater + Modal Forms)
+### Using Current Note Frontmatter with New Note (QuickAdd + Templater + Modal Forms)
 
-- [obsidian.md > QuickAdd - using active file frontmatter - Help](https://forum.obsidian.md/t/quickadd-using-active-file-frontmatter/78091/7)
+Doing this required QuickAdd, Templater, and Modal Forms.
 
-This essentially requires using **QuickAdd** format syntax from within **Templater**.
-- You have to then use a QuickAdd macro that [returns](https://quickadd.obsidian.guide/docs/FormatSyntax) the current active file tags as a life
-- Then, you could try to feed these into the Modal Form builder API to allow you to select the tags or frontmatter combinations you want to keep
-- You could have exclusions from within the code too
-
-Passing data from QuickAdd to Templater and Modal Forms may be hard.  Not sure how to do it at this point yet.
-
-I may be able to do this with a QuickAdd Macro:
-- Use the QuickAdd macro to record the active file properties
-- Use a template to open the new note
-- Use a capture to feed in the potential values into the form builder api to have choices for frontmatter
-- Not sure how to use {{MACRO:}} or {{VALUE:}} in this case though.  
-
-
+You can see the code here - [New Note - Persist Tags](../../Templates/New%20Note%20-%20Persist%20Tags.md)
 
 Related:
 - [QuickAdd - using active file frontmatter - Help - Obsidian Forum](https://forum.obsidian.md/t/quickadd-using-active-file-frontmatter/78091/6)
@@ -80,6 +65,8 @@ Related:
 - [Form builder API - Obsidian Modal Form docs](https://danielorodriguez.com/obsidian-modal-form/FormBuilder/)
 - [Inherit or pass on Metadata Values from Active File when creating New File - Help - Obsidian Forum](https://forum.obsidian.md/t/inherit-or-pass-on-metadata-values-from-active-file-when-creating-new-file/60522)
 - [How to pass data between QuickAdd and Templater? · chhoumann/quickadd · Discussion #78](https://github.com/chhoumann/quickadd/discussions/78)
+- [How can I get the contents of an internally linked note - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/how-can-i-get-the-contents-of-an-internally-linked-note/97761/4)
+- [obsidian.md > QuickAdd - using active file frontmatter - Help](https://forum.obsidian.md/t/quickadd-using-active-file-frontmatter/78091/7)
 
 ## QuickAdd Overview
 

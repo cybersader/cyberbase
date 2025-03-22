@@ -4,8 +4,13 @@ tags: []
 publish: true
 permalink:
 date created: Friday, March 21st 2025, 2:58 pm
-date modified: Saturday, March 22nd 2025, 1:38 pm
+date modified: Saturday, March 22nd 2025, 6:49 pm
 ---
+
+# Scripts I Built for Use in Templater ("User Scripts")
+
+- [captureActiveTags](../../System/QuickAdd%20Scripts/captureActiveTags.js)
+- [tag_selector](../../System/QuickAdd%20Scripts/tag_selector.js)
 
 # Related Macros
 
