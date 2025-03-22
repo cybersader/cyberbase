@@ -1,10 +1,10 @@
 ---
 aliases: []
-tags: [test]
+tags: [test, test2, test3]
 publish: true
 permalink: 
 date created: Thursday, March 20th 2025, 11:42 am
-date modified: Saturday, March 22nd 2025, 3:30 pm
+date modified: Saturday, March 22nd 2025, 4:41 pm
 ---
 
 [Inputs, Capture](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Inputs,%20Capture/Inputs,%20Capture.md)
@@ -20,7 +20,7 @@ date modified: Saturday, March 22nd 2025, 3:30 pm
 - [github.com > Obsidian Snippets](https://gist.github.com/Mearman/ba5b1bcf746b4e04d12865dc09402016#file-mutate_frontmatter-js)
 - [youtube.com > Obsidian Modal Forms Plugin: How to Transform your Data Entry in Obsidian](https://www.youtube.com/watch?v=zVGyWaw3xZQ)
 - [danielorodriguez.com > Obsidian Modal Form docs](https://danielorodriguez.com/obsidian-modal-form/#usage-with-templater)
-- 
+- [Templater snippets](https://zachyoung.dev/posts/templater-snippets/)
 
 # QuickAdd
 

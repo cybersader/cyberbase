@@ -1,7 +1,9 @@
+// This was an old script that didn't quite work
+
 module.exports = async function captureAndSelectTags(tp) {
     // 1. Capture active file tags using your existing captureActiveTags macro.
     // This macro should return a comma-separated string (e.g., "work, personal")
-    let activeTagsString = await tp.user.captureActiveTags();
+    let activeTagsString = await tp.user.captureActiveTags(tp);
     // Convert the captured string into an array of tag values (trim and filter out empty strings)
     const defaultTagsArray = activeTagsString.split(",").map(t => t.trim()).filter(Boolean);
   
@@ -31,4 +33,3 @@ module.exports = async function captureAndSelectTags(tp) {
     // Return the YAML line so that QuickAdd capture can insert it.
     return `tags: ${tagsFormatted}`;
 };
-  
