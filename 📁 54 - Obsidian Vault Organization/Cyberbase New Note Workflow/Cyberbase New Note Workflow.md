@@ -1,23 +1,23 @@
 ---
-aliases: 
+aliases: []
 tags: []
 publish: true
 permalink: 
 date created: Thursday, March 20th 2025, 11:42 am
-date modified: Friday, March 21st 2025, 6:34 pm
+date modified: Saturday, March 22nd 2025, 9:52 am
 ---
 
 [Inputs, Capture](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Inputs,%20Capture/Inputs,%20Capture.md)
 
 - [ ] Use Templater instead? ➕ 2025-03-21
 
-[TEST](🕸️%20UNSTRUCTURED/TEST/TEST.md)
 # Links
 
 - [github.com > danielo515/obsidian-modal-form: Define forms for filling data that you will be able to open from anywhere you can run JS](https://github.com/danielo515/obsidian-modal-form)
 	- [danielorodriguez.com > Obsidian Modal Form docs](https://danielorodriguez.com/obsidian-modal-form/)
 - [obsidian.md > Getting rid of QuickAdd with Templater - Share & showcase](https://forum.obsidian.md/t/getting-rid-of-quickadd-with-templater/96161)
 - [obsidian.md > [New plugin] Modal form - integrate forms into QuickAdd](https://forum.obsidian.md/t/new-plugin-modal-form-integrate-forms-into-quickadd-templater-etc/67103/108)
+- [github.com > Gather up tags and format for YAML frontmatter · SilentVoid13/Templater · Discussion #140 > Templater Showcase](https://github.com/SilentVoid13/Templater/discussions/categories/templates-showcase)
 - 
 
 # QuickAdd

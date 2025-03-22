@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Thu, Mar 20, 2025 - [[Easy Schematic Workflow]]
+> Sat, Mar 22, 2025 - [[📁 54 - Obsidian Vault Organization/Cyberbase Note Workflow with Obsidian Templater/Cyberbase New Note Workflow]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                   | Last modified            |
-| -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[🕸️ UNSTRUCTURED/Easy Schematic Workflow/Easy Schematic Workflow.md\|Easy Schematic Workflow]]                                       | Thu - 3/20/2025, 4:15 PM |
-| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                             | Thu - 3/20/2025, 4:13 PM |
-| [[📁 12 - Content Creation/Screen Recording, Streaming Stack/Screen Recording, Streaming Stack.md\|Screen Recording, Streaming Stack]] | Thu - 3/20/2025, 3:48 PM |
-| [[⬇️ Clippings/YouTube/YouTube.md\|YouTube]]                                                                                           | Thu - 3/20/2025, 1:43 PM |
-| [[⬇️ Clippings/Tech/Tech.md\|Tech]]                                                                                                    | Thu - 3/20/2025, 1:43 PM |
-| [[⬇️ Clippings/Reddit/Reddit.md\|Reddit]]                                                                                              | Thu - 3/20/2025, 1:43 PM |
-| [[⬇️ Clippings/Obsidian Plugins/Obsidian Plugins.md\|Obsidian Plugins]]                                                                | Thu - 3/20/2025, 1:43 PM |
-| [[⬇️ Clippings/Obsidian/Obsidian.md\|Obsidian]]                                                                                        | Thu - 3/20/2025, 1:43 PM |
-| [[⬇️ Clippings/News/News.md\|News]]                                                                                                    | Thu - 3/20/2025, 1:42 PM |
-| [[⬇️ Clippings/GitHub Repos/GitHub Repos.md\|GitHub Repos]]                                                                            | Thu - 3/20/2025, 1:42 PM |
+| File                                                                                                                                                                                        | Last modified             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 54 - Obsidian Vault Organization/Cyberbase Note Workflow with Obsidian Templater/Cyberbase New Note Workflow|Cyberbase Note Workflow with Obsidian Templater]] | Sat - 3/22/2025, 9:39 AM  |
+| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                                                                                  | Fri - 3/21/2025, 10:42 PM |
+| [[Templates/🕸️ NEW NOTE.md\|🕸️ NEW NOTE]]                                                                                                                                                 | Fri - 3/21/2025, 10:38 PM |
+| [[📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md\|📁 54 - Obsidian Vault Organization]]                                                                         | Fri - 3/21/2025, 8:07 PM  |
+| [[🕸️ UNSTRUCTURED/QuickAdd Tag Selector/QuickAdd Tag Selector.md\|QuickAdd Tag Selector]]                                                                                                  | Fri - 3/21/2025, 6:51 PM  |
+| [[📁 54 - Obsidian Vault Organization/Dynamic Folders From Selected Tags/Dynamic Folders From Selected Tags.md\|Dynamic Folders From Selected Tags]]                                        | Fri - 3/21/2025, 6:16 PM  |
+| [[📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md\|Tag Structure Examples]]                                                                            | Fri - 3/21/2025, 6:15 PM  |
+| [[📁 54 - Obsidian Vault Organization/Cyberbase Folder Structure/Cyberbase Folder Structure.md\|Cyberbase Folder Structure]]                                                                | Fri - 3/21/2025, 6:15 PM  |
+| [[⬇️ Clippings/Tech/Cryptpad/Cryptpad.md\|Cryptpad]]                                                                                                                                        | Fri - 3/21/2025, 6:08 PM  |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                              | Fri - 3/21/2025, 6:08 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 
