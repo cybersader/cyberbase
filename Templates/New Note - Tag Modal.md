@@ -7,23 +7,21 @@ date modified:
 tags: <%*
   // Get Modal Forms API
   const modalForm = app.plugins.plugins.modalforms.api;
-  
-  // Open your tag-picker form
   const result = await modalForm.openForm('tag-picker');
   
-  // Initialize tagString as empty
   let tagString = "";
-  
   if(result) {
     const data = result.getData(); // e.g., {"Tags": ["test"]}
-    // Extract the value from "Tags" (using the first element if it's an array)
-    const tagValue = Array.isArray(data.Tags) ? data.Tags[0] : data.Tags;
-    // Build a comma-separated string; in this simple example, we only have one tag.
-    if(tagValue) {
-      tagString = `#${tagValue}`;
+    // Check if "Tags" exists and is an array; if not, trim it.
+    if (data.Tags && Array.isArray(data.Tags) && data.Tags.length > 0) {
+      // Join the tag values with a comma and a space
+      tagString = data.Tags.map(t => t.trim()).join(", ");
+    } else if(data.Tags) {
+      tagString = data.Tags.trim();
     }
   }
-  tR += tagString;
--%>
+  // Output the result in bracket notation.
+  tR += `[${tagString}]`;
+%>
 ---
 

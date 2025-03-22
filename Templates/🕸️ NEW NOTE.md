@@ -4,39 +4,34 @@ publish: true
 permalink:
 date created:
 date modified:
-tags: []  <!-- This will be updated -->
+tags: []
 ---
 
 <%*
-  // Get the Modal Forms API
+  // Get the Modal Forms API and open your "tag-picker" form
   const modalForm = app.plugins.plugins.modalforms.api;
-  
-  // Open your tag-picker form
   const result = await modalForm.openForm('tag-picker');
   
   if (result) {
-    // Our form returns { "Tags": ["test"] }
-    const data = result.getData();
-    // Use the correct key (capital T)
+    const data = result.getData();  // Expected: {"Tags": ["test"]}
+    // Extract tag value (if multiple, here we use the first)
     const tagValue = Array.isArray(data.Tags) ? data.Tags[0] : data.Tags;
     
-    // Debug: show what tagValue is
-    new Notice("Selected tag: " + tagValue);
+    new Notice("Selected tag: " + tagValue); // Debug output
+
+    // Get the current active file (note)
+    const currentFile = app.workspace.getActiveFile();
     
-    // Update the frontmatter tags
-    await app.fileManager.processFrontMatter(tp.config.target_file, frontmatter => {
-      // Ensure tags is an array
+    // Update the frontmatter to merge in the new tag
+    await app.fileManager.processFrontMatter(currentFile, frontmatter => {
+      // Ensure a tags array exists in frontmatter
       frontmatter.tags = frontmatter.tags || [];
-      const newTag = `#${tagValue}`;
-      if (tagValue && !frontmatter.tags.includes(newTag)) {
-        frontmatter.tags.push(newTag);
+      // Merge the new tag (as plain text, without any '#' symbol)
+      if (tagValue && !frontmatter.tags.includes(tagValue)) {
+        frontmatter.tags.push(tagValue);
       }
     });
   } else {
     new Notice("No tag selected");
   }
 _%>
-
-# New Note Title
-
-Your note content goes here...

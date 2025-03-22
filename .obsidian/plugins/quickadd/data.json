@@ -1,6 +1,36 @@
 {
   "choices": [
     {
+      "id": "fff7b754-f0b2-4827-8821-d0138793da38",
+      "name": "🕸️ NEW NOTE - TAG ADD",
+      "type": "Template",
+      "command": false,
+      "templatePath": "Templates/NEW NOTE - Tag Adder.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{name}}/{{name}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "🕸️ UNSTRUCTURED"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
+    },
+    {
       "id": "bb11d38b-d459-4948-a7fa-e6ac90dc8e0c",
       "name": " 🕸️ NEW NOTE",
       "type": "Template",
@@ -38,16 +68,18 @@
       "templatePath": "Templates/New Note - Tag Modal.md",
       "fileNameFormat": {
         "enabled": true,
-        "format": "{{name}}"
+        "format": "{{name}}/{{name}}"
       },
       "folder": {
         "enabled": true,
-        "folders": [],
+        "folders": [
+          "🕸️ UNSTRUCTURED"
+        ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
         "chooseFromSubfolders": false
       },
-      "appendLink": false,
+      "appendLink": true,
       "openFileInNewTab": {
         "enabled": false,
         "direction": "vertical",
@@ -141,20 +173,6 @@
       "openFileInMode": "default",
       "fileExistsMode": "Increment the file name",
       "setFileExistsBehavior": false
-    },
-    {
-      "id": "851cad12-27dd-4e18-89f3-73c3127a51bc",
-      "name": "🏷️ Tag Selector",
-      "type": "Macro",
-      "command": false,
-      "macroId": "6ce1769d-d153-47f3-92d4-bbb22f911e49"
-    },
-    {
-      "id": "eadc6931-b0a7-4cc1-b804-332a508f3702",
-      "name": "🏷️ Open Tag Modal",
-      "type": "Macro",
-      "command": false,
-      "macroId": "38df95f9-87dc-49b0-a96b-1b5a635e6caa"
     }
   ],
   "macros": [
@@ -167,67 +185,6 @@
           "type": "UserScript",
           "id": "c07a0e84-9757-428e-b934-d1dea9c1fd52",
           "path": "System/QuickAdd Scripts/tag_selector.js",
-          "settings": {}
-        }
-      ],
-      "runOnStartup": false
-    },
-    {
-      "name": "🏷️ Tag Selector",
-      "id": "6ce1769d-d153-47f3-92d4-bbb22f911e49",
-      "commands": [
-        {
-          "name": "tag_selector",
-          "type": "UserScript",
-          "id": "8f40da37-940d-4173-8d51-6ebafce8a91c",
-          "path": "System/QuickAdd Scripts/tag_selector.js",
-          "settings": {}
-        },
-        {
-          "name": "New Note",
-          "type": "NestedChoice",
-          "id": "bedfcbab-c6d2-472f-bd1b-7cc6d5ba847e",
-          "choice": {
-            "id": "21dfa98e-2c11-4eeb-82d0-7fb3903d7d02",
-            "name": "New Note",
-            "type": "Template",
-            "command": false,
-            "templatePath": "Templates/🕸️ NEW NOTE.md",
-            "fileNameFormat": {
-              "enabled": true,
-              "format": "{{name}}"
-            },
-            "folder": {
-              "enabled": true,
-              "folders": [],
-              "chooseWhenCreatingNote": false,
-              "createInSameFolderAsActiveFile": false,
-              "chooseFromSubfolders": false
-            },
-            "appendLink": false,
-            "openFileInNewTab": {
-              "enabled": false,
-              "direction": "vertical",
-              "focus": true
-            },
-            "openFile": true,
-            "openFileInMode": "default",
-            "fileExistsMode": "Increment the file name",
-            "setFileExistsBehavior": false
-          }
-        }
-      ],
-      "runOnStartup": false
-    },
-    {
-      "name": "🏷️ Open Tag Modal",
-      "id": "38df95f9-87dc-49b0-a96b-1b5a635e6caa",
-      "commands": [
-        {
-          "name": "modal_form_tag_selector",
-          "type": "UserScript",
-          "id": "efdf8741-005d-402e-b04a-357b60563540",
-          "path": "System/QuickAdd Scripts/modal_form_tag_selector.js",
           "settings": {}
         }
       ],
