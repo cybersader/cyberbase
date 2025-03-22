@@ -173,6 +173,13 @@
       "openFileInMode": "default",
       "fileExistsMode": "Increment the file name",
       "setFileExistsBehavior": false
+    },
+    {
+      "id": "b0dcb780-6223-4096-ba37-c96a6b9fed30",
+      "name": "🕸️🕸️ New Note",
+      "type": "Macro",
+      "command": false,
+      "macroId": "0a4c9e47-8dcd-4e23-a1b1-6ce5f652b2c1"
     }
   ],
   "macros": [
@@ -188,6 +195,94 @@
           "settings": {}
         }
       ],
+      "runOnStartup": false
+    },
+    {
+      "name": "🕸️🕸️ New Note",
+      "id": "0a4c9e47-8dcd-4e23-a1b1-6ce5f652b2c1",
+      "commands": [
+        {
+          "name": "New Blank Folder Note",
+          "type": "NestedChoice",
+          "id": "60bf468e-1cea-413c-98a3-0a70a2311e59",
+          "choice": {
+            "id": "ce5113ca-e8cf-4230-85e9-1995985d8dba",
+            "name": "New Blank Folder Note",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Templates/New Note Blank.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{name}}/{{name}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "🕸️ UNSTRUCTURED"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": true,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        },
+        {
+          "name": "Copy Over Tags & Activate Modal Forms",
+          "type": "NestedChoice",
+          "id": "97c670fe-916f-44f4-962d-3df1dd46e3a3",
+          "choice": {
+            "id": "873088a9-b62d-41f2-839e-5a3ff2af1ed9",
+            "name": "Copy Over Tags & Activate Modal Forms",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "{{value:<variable name>}}",
+            "captureToActiveFile": true,
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": ""
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": false,
+            "task": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default"
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "🕸️🕸️ New Note 2",
+      "id": "aa770124-5eb3-4492-b801-0b326b875d9c",
+      "commands": [],
       "runOnStartup": false
     }
   ],

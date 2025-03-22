@@ -1,6 +1,7 @@
 ---
 aliases: []
-tags: [test]
+tags:
+  - test
 publish: true
 permalink: 
 date created: Thursday, March 20th 2025, 11:42 am
@@ -11,6 +12,7 @@ date modified: Saturday, March 22nd 2025, 2:20 pm
 
 - [ ] Use Templater instead? ➕ 2025-03-21
 
+[test](🕸️%20UNSTRUCTURED/test/test.md)
 # Links
 
 - [github.com > danielo515/obsidian-modal-form: Define forms for filling data that you will be able to open from anywhere you can run JS](https://github.com/danielo515/obsidian-modal-form)
@@ -62,15 +64,23 @@ Automating New Notes with QuickAdd Templates:
 
 This essentially requires using **QuickAdd** format syntax from within **Templater**.
 - You have to then use a QuickAdd macro that [returns](https://quickadd.obsidian.guide/docs/FormatSyntax) the current active file tags as a life
-- Then, you could try to feed these into the Modal Form plugin builder API to allow you to select the tags or frontmatter combinations you want to keep
+- Then, you could try to feed these into the Modal Form builder API to allow you to select the tags or frontmatter combinations you want to keep
 - You could have exclusions from within the code too
 
 Passing data from QuickAdd to Templater and Modal Forms may be hard.  Not sure how to do it at this point yet.
+
+I may be able to do this with a QuickAdd Macro:
+- Use the QuickAdd macro to record the active file properties
+- Use a template to open the new note
+- Use a capture to feed in the potential values into the form builder api to have choices for frontmatter
+- Not sure how to use {{MACRO:}} or {{VALUE:}} in this case though.  
 
 
 
 Related:
 - [QuickAdd - using active file frontmatter - Help - Obsidian Forum](https://forum.obsidian.md/t/quickadd-using-active-file-frontmatter/78091/6)
+- [github.com > danielo515/obsidian-modal-form: Define forms for filling data that you will be able to open from anywhere you can run JS](https://github.com/danielo515/obsidian-modal-form/issues/269)
+- [Form builder API - Obsidian Modal Form docs](https://danielorodriguez.com/obsidian-modal-form/FormBuilder/)
 - 
 
 ## QuickAdd Overview

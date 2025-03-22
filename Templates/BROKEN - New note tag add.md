@@ -2,10 +2,12 @@
 aliases: []
 publish: true
 permalink:
-date created:
-date modified:
+date created: Friday, March 21st 2025, 2:30 pm
+date modified: Saturday, March 22nd 2025, 2:37 pm
 tags: []
 ---
+
+> [!abstract] This has a bug where QuickAdd causes the source file's frontmatter/the active file to get edited instead
 
 <%*
   // Get the Modal Forms API and open your "tag-picker" form
