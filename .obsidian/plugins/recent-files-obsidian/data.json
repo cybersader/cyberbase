@@ -5,16 +5,16 @@
       "path": "📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md"
     },
     {
+      "basename": "New Note - Persist Tags",
+      "path": "Templates/New Note - Persist Tags.md"
+    },
+    {
       "basename": "Dynamic Tags from Folder",
       "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags from Folder/Dynamic Tags from Folder.md"
     },
     {
       "basename": "TEST - Active Tags",
       "path": "Templates/TEST - Active Tags.md"
-    },
-    {
-      "basename": "New Note - Persist Tags",
-      "path": "Templates/New Note - Persist Tags.md"
     },
     {
       "basename": "New Note - Templater & Modal Form - Tag Picker",
