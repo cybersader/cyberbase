@@ -133,15 +133,6 @@
     }
   ],
   "obsidian-excalidraw-plugin:insert-link-to-element": [],
-  "fileorganizer2000:add-to-inbox": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "I"
-    }
-  ],
   "quick-explorer:browse-vault": [
     {
       "modifiers": [
@@ -253,6 +244,7 @@
       "key": "Q"
     }
   ],
+  "file-explorer:new-file": [],
   "quickadd:runQuickAdd": [
     {
       "modifiers": [

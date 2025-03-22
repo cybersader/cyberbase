@@ -10,7 +10,7 @@ date modified: Saturday, March 15th 2025, 5:46 pm
 %% Begin Waypoint %%
 - **[[Choosing a Tag Structure in Obsidian]]**
 - **[[Cyberbase Folder Structure]]**
-- **[[Cyberbase New Note Workflow]]**
+- **[[Cyberbase Note Workflow with Obsidian Templater]]**
 - **[[Cyberbase Tag Structure]]**
 - **[[Dynamic Folders From Selected Tags]]**
 - **[[Dynamic Tags from Folder]]**

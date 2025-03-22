@@ -1,8 +1,8 @@
 ---
-aliases: []
+aliases: 
 tags: []
 publish: true
-permalink:
+permalink: 
 date created: Thursday, March 20th 2025, 11:42 am
 date modified: Friday, March 21st 2025, 6:34 pm
 ---
@@ -11,7 +11,7 @@ date modified: Friday, March 21st 2025, 6:34 pm
 
 - [ ] Use Templater instead? ➕ 2025-03-21
 
-[test](🕸️%20UNSTRUCTURED/test/test.md)
+
 # Links
 
 - [github.com > danielo515/obsidian-modal-form: Define forms for filling data that you will be able to open from anywhere you can run JS](https://github.com/danielo515/obsidian-modal-form)
@@ -51,7 +51,7 @@ Automating New Notes with QuickAdd Templates:
 
 ### Modal to Add Tags During Creation
 
-Creatin/created a macro for selecting tags - [QuickAdd Tag Selector](🕸️%20UNSTRUCTURED/QuickAdd%20Tag%20Selector/QuickAdd%20Tag%20Selector.md)
+Creatin/created a macro for selecting tags - [QuickAdd Tag Selector](../../🕸️%20UNSTRUCTURED/QuickAdd%20Tag%20Selector/QuickAdd%20Tag%20Selector.md)
 
 - 
 
