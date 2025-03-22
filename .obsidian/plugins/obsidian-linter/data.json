@@ -278,7 +278,9 @@
   "settingsConvertedToConfigKeyValues": true,
   "foldersToIgnore": [
     "CybersaderNotion",
-    "📁 99 - Changelog"
+    "📁 99 - Changelog",
+    "Templates",
+    "System"
   ],
   "filesToIgnore": [
     {

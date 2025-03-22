@@ -1,18 +1,15 @@
 ---
 aliases: []
-tags:
-  - test
+tags: [test]
 publish: true
 permalink: 
 date created: Thursday, March 20th 2025, 11:42 am
-date modified: Saturday, March 22nd 2025, 2:20 pm
+date modified: Saturday, March 22nd 2025, 3:30 pm
 ---
 
 [Inputs, Capture](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Knowledge%20Management%20Workflows/Inputs,%20Capture/Inputs,%20Capture.md)
 
-- [ ] Use Templater instead? ➕ 2025-03-21
 
-[test](🕸️%20UNSTRUCTURED/test/test.md)
 # Links
 
 - [github.com > danielo515/obsidian-modal-form: Define forms for filling data that you will be able to open from anywhere you can run JS](https://github.com/danielo515/obsidian-modal-form)

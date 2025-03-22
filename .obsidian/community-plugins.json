@@ -20,7 +20,6 @@
   "chronos",
   "obsidian-mstodo-sync",
   "file-explorer-note-count",
-  "obsidian-wakatime",
   "change-case",
   "dataview",
   "folder-notes",
@@ -59,5 +58,6 @@
   "obsidian-sort-and-permute-lines",
   "quickadd",
   "modalforms",
-  "obsidian-version-history-diff"
+  "obsidian-version-history-diff",
+  "vconsole"
 ]

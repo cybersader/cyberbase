@@ -1,6 +1,36 @@
 {
   "choices": [
     {
+      "id": "ad2f2f49-57e9-429f-b81b-575b8326c7fd",
+      "name": "🕸️🕸️ Note",
+      "type": "Template",
+      "command": false,
+      "templatePath": "Templates/New Note - Persist Tags.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{name}}/{{name}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "🕸️ UNSTRUCTURED"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
+    },
+    {
       "id": "fff7b754-f0b2-4827-8821-d0138793da38",
       "name": "🕸️ NEW NOTE - TAG ADD",
       "type": "Template",
@@ -173,119 +203,9 @@
       "openFileInMode": "default",
       "fileExistsMode": "Increment the file name",
       "setFileExistsBehavior": false
-    },
-    {
-      "id": "b0dcb780-6223-4096-ba37-c96a6b9fed30",
-      "name": "🕸️🕸️ New Note",
-      "type": "Macro",
-      "command": false,
-      "macroId": "0a4c9e47-8dcd-4e23-a1b1-6ce5f652b2c1"
     }
   ],
-  "macros": [
-    {
-      "name": "Tag Selector",
-      "id": "947b9436-503d-45f8-b647-31d99d0b8e96",
-      "commands": [
-        {
-          "name": "tag_selector",
-          "type": "UserScript",
-          "id": "c07a0e84-9757-428e-b934-d1dea9c1fd52",
-          "path": "System/QuickAdd Scripts/tag_selector.js",
-          "settings": {}
-        }
-      ],
-      "runOnStartup": false
-    },
-    {
-      "name": "🕸️🕸️ New Note",
-      "id": "0a4c9e47-8dcd-4e23-a1b1-6ce5f652b2c1",
-      "commands": [
-        {
-          "name": "New Blank Folder Note",
-          "type": "NestedChoice",
-          "id": "60bf468e-1cea-413c-98a3-0a70a2311e59",
-          "choice": {
-            "id": "ce5113ca-e8cf-4230-85e9-1995985d8dba",
-            "name": "New Blank Folder Note",
-            "type": "Template",
-            "command": false,
-            "templatePath": "Templates/New Note Blank.md",
-            "fileNameFormat": {
-              "enabled": true,
-              "format": "{{name}}/{{name}}"
-            },
-            "folder": {
-              "enabled": true,
-              "folders": [
-                "🕸️ UNSTRUCTURED"
-              ],
-              "chooseWhenCreatingNote": false,
-              "createInSameFolderAsActiveFile": false,
-              "chooseFromSubfolders": false
-            },
-            "appendLink": true,
-            "openFileInNewTab": {
-              "enabled": false,
-              "direction": "vertical",
-              "focus": true
-            },
-            "openFile": true,
-            "openFileInMode": "default",
-            "fileExistsMode": "Increment the file name",
-            "setFileExistsBehavior": false
-          }
-        },
-        {
-          "name": "Copy Over Tags & Activate Modal Forms",
-          "type": "NestedChoice",
-          "id": "97c670fe-916f-44f4-962d-3df1dd46e3a3",
-          "choice": {
-            "id": "873088a9-b62d-41f2-839e-5a3ff2af1ed9",
-            "name": "Copy Over Tags & Activate Modal Forms",
-            "type": "Capture",
-            "command": false,
-            "appendLink": false,
-            "captureTo": "{{value:<variable name>}}",
-            "captureToActiveFile": true,
-            "createFileIfItDoesntExist": {
-              "enabled": false,
-              "createWithTemplate": false,
-              "template": ""
-            },
-            "format": {
-              "enabled": true,
-              "format": ""
-            },
-            "insertAfter": {
-              "enabled": false,
-              "after": "",
-              "insertAtEnd": false,
-              "considerSubsections": false,
-              "createIfNotFound": false,
-              "createIfNotFoundLocation": "top"
-            },
-            "prepend": false,
-            "task": false,
-            "openFileInNewTab": {
-              "enabled": false,
-              "direction": "vertical",
-              "focus": true
-            },
-            "openFile": true,
-            "openFileInMode": "default"
-          }
-        }
-      ],
-      "runOnStartup": false
-    },
-    {
-      "name": "🕸️🕸️ New Note 2",
-      "id": "aa770124-5eb3-4492-b801-0b326b875d9c",
-      "commands": [],
-      "runOnStartup": false
-    }
-  ],
+  "macros": [],
   "inputPrompt": "single-line",
   "devMode": false,
   "templateFolderPath": "Templates",
