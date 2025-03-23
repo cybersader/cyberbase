@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Divide & Conquer Plugin Testing",
+      "path": "🕸️ UNSTRUCTURED/Divide & Conquer Plugin Testing/Divide & Conquer Plugin Testing.md"
+    },
+    {
       "basename": "Plugin Development",
       "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "ChatGPT",
       "path": "⬇️ Clippings/ChatGPT/ChatGPT.md"
-    },
-    {
-      "basename": "Vault Folder & Tag Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
     }
   ],
   "omittedPaths": [],
