@@ -2,6 +2,8 @@
 - **[[Articles, Blogs]]**
 - **[[ChatGPT]]**
 - **[[GitHub Repos]]**
+- **[[Manually Entered Links]]**
+	- **[[Characters That Sort After Z]]**
 - **[[News]]**
 	- **[[Deepseek Ban Proposal]]**
 - **[[Obsidian]]**

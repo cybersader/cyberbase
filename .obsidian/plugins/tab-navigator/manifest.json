@@ -1,0 +1,9 @@
+{
+  "id": "tab-navigator",
+  "name": "Tab Navigator",
+  "version": "0.7.3",
+  "minAppVersion": "1.5.12",
+  "description": "Simple Tab Switcher, search open tabs.",
+  "author": "o02c",
+  "isDesktopOnly": true
+}

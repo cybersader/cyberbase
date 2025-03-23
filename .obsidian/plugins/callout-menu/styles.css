@@ -1,0 +1,14 @@
+
+
+
+body:has(.menu.callout-menu) .menu:not(.callout-menu):has([data-section="edit"]) {
+    display: none;
+}
+
+.callout[data-callout-metadata*="no-icon"] .callout-icon {
+    display: none;
+}
+
+.callout[data-callout-metadata*="no-title"] .callout-title {
+    display: none;
+}
