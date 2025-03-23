@@ -105,7 +105,7 @@ SORT file.mtime DESC LIMIT 10
 | [[📁 54 - Obsidian Vault Organization/Dynamic Tags from Folder/Dynamic Tags from Folder.md\|Dynamic Tags from Folder]]                                           | Sun - 3/23/2025, 11:54 AM |
 | [[📁 10 - My Obsidian Stack/Dataview/Dataview.md\|Dataview]]                                                                                                     | Sun - 3/23/2025, 11:31 AM |
 | [[📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md\|📁 54 - Obsidian Vault Organization]]                                              | Sun - 3/23/2025, 11:31 AM |
-| [[📁 54 - Obsidian Vault Organization/Dynamic Folders From Hierarchical Tags/Dynamic Folders From Hierarchical Tags.md\|Dynamic Folders From Hierarchical Tags]] | Sun - 3/23/2025, 11:31 AM |
+| [[📁 54 - Obsidian Vault Organization/Dynamic Folders From Hierarchical Tags/Dynamic Folders & Tags|Dynamic Folders From Hierarchical Tags]] | Sun - 3/23/2025, 11:31 AM |
 | [[⬇️ Clippings/ChatGPT/Tag Selection Workflow Options/Tag Selection Workflow Options.md\|Tag Selection Workflow Options]]                                        | Sat - 3/22/2025, 6:51 PM  |
 | [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                   | Sat - 3/22/2025, 6:50 PM  |
 | [[⬇️ Clippings/ChatGPT/ChatGPT.md\|ChatGPT]]                                                                                                                     | Sat - 3/22/2025, 6:50 PM  |
