@@ -4,11 +4,12 @@ tags: []
 publish: true
 permalink:
 date created: Monday, December 16th 2024, 8:37 am
-date modified: Sunday, March 23rd 2025, 3:06 pm
+date modified: Sunday, March 23rd 2025, 3:49 pm
 ---
 
 [Obsidian Plugins and Ideas for Contributions](../../📁%2051%20-%20Cyberbase/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions.md)
 [⬇️ Obsidian Ideas Drop](../⬇️%20Obsidian%20Ideas%20Drop/⬇️%20Obsidian%20Ideas%20Drop.md)
+[Divide & Conquer Plugin Testing](../../🕸️%20UNSTRUCTURED/Divide%20&%20Conquer%20Plugin%20Testing/Divide%20&%20Conquer%20Plugin%20Testing.md)
 
 - [How to get started with developing a custom Plugin? - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/how-to-get-started-with-developing-a-custom-plugin/8157/3)
 - [Leaving the Comfort Zone Behind: The Journey to Developing a Plugin for Obsidian.md - DEV Community](https://dev.to/dariocasciato/leaving-the-comfort-zone-behind-the-journey-to-developing-a-plugin-for-obsidianmd-53hi)
@@ -56,22 +57,33 @@ Prerequisites:
 4. **Install Dependencies:**  
 	Use Bun to install required packages:
 	
-	```
+```
 	bun install
-	```
+```
 
 5. **Set Up Git (if not already):**  
 	Initialize your repo and commit the changes:
 	
-	```
+```
 	git init
 	git add .
 	git commit -m "Initial commit for my Obsidian plugin"
 	git push origin main
-	```
+```
+
+6. Build the plugin files from code
+
+	The plugin code must be compiled into a `main.js` file that is consumed and ran by the Obsidian application.  
+
+	Run the below commands to build you `main.js`:
 	
-6. **Test Locally:**  
-	Open Obsidian, enable Community Plugins, and load your plugin from the development vault.
+```
+	bun run build
+```
+
+7. **Test Locally:**  
+
+	Open Obsidian, enable Community Plugins, and enable your plugin from the development vault.
 
 This method leverages the sample plugin to quickly scaffold your project, allowing you to focus on updating your plugin’s logic and details. For more detailed guidance, refer to the [Obsidian Plugin 101 guide](https://yomaru.dev/obsidian-plugin-101) which outlines the full process.
 
@@ -81,7 +93,7 @@ This method leverages the sample plugin to quickly scaffold your project, allowi
 - [obsidianmd/obsidian-api: Type definitions for the latest Obsidian API.](https://github.com/obsidianmd/obsidian-api)
 - [2 Obsidian Plugin 101 - Hananoshika Yomaru](https://yomaru.dev/obsidian-plugin-101)
 - [Build a plugin - Developer Documentation](https://docs.obsidian.md/Plugins/Getting+started/Build+a+plugin)
-- -
+- 
 
 # Workflows
 
