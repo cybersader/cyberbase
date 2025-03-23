@@ -989,6 +989,24 @@
       },
       "modalforms": {
         "startupType": "instant"
+      },
+      "index-notes": {
+        "startupType": "disabled"
+      },
+      "lineage": {
+        "startupType": "disabled"
+      },
+      "obsidian-map-view": {
+        "startupType": "disabled"
+      },
+      "open-editors": {
+        "startupType": "disabled"
+      },
+      "tab-group-arrangement": {
+        "startupType": "disabled"
+      },
+      "vconsole": {
+        "startupType": "instant"
       }
     },
     "loadOrder": []

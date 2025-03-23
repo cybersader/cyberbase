@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sat, Mar 22, 2025 - [[📁 54 - Obsidian Vault Organization/Cyberbase Note Workflow with Obsidian Templater/Cyberbase New Note Workflow]]
+> Sun, Mar 23, 2025 - [[Dynamic Tags from Folder]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                                                                        | Last modified             |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 54 - Obsidian Vault Organization/Cyberbase Note Workflow with Obsidian Templater/Cyberbase New Note Workflow|Cyberbase Note Workflow with Obsidian Templater]] | Sat - 3/22/2025, 9:39 AM  |
-| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                                                                                  | Fri - 3/21/2025, 10:42 PM |
-| [[Templates/BROKEN -🕸️ NEW NOTE|🕸️ NEW NOTE]]                                                                                                                                                 | Fri - 3/21/2025, 10:38 PM |
-| [[📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md\|📁 54 - Obsidian Vault Organization]]                                                                         | Fri - 3/21/2025, 8:07 PM  |
-| [[🕸️ UNSTRUCTURED/QuickAdd Tag Selector/QuickAdd Tag Selector.md\|QuickAdd Tag Selector]]                                                                                                  | Fri - 3/21/2025, 6:51 PM  |
-| [[📁 54 - Obsidian Vault Organization/Dynamic Folders From Selected Tags/Dynamic Folders From Hierarchical Tags|Dynamic Folders From Selected Tags]]                                        | Fri - 3/21/2025, 6:16 PM  |
-| [[📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md\|Tag Structure Examples]]                                                                            | Fri - 3/21/2025, 6:15 PM  |
-| [[📁 54 - Obsidian Vault Organization/Cyberbase Folder Structure/Cyberbase Folder Structure.md\|Cyberbase Folder Structure]]                                                                | Fri - 3/21/2025, 6:15 PM  |
-| [[⬇️ Clippings/Tech/Cryptpad/Cryptpad.md\|Cryptpad]]                                                                                                                                        | Fri - 3/21/2025, 6:08 PM  |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                              | Fri - 3/21/2025, 6:08 PM  |
+| File                                                                                                                                                             | Last modified             |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 54 - Obsidian Vault Organization/Dynamic Tags from Folder/Dynamic Tags from Folder.md\|Dynamic Tags from Folder]]                                           | Sun - 3/23/2025, 11:54 AM |
+| [[📁 10 - My Obsidian Stack/Dataview/Dataview.md\|Dataview]]                                                                                                     | Sun - 3/23/2025, 11:31 AM |
+| [[📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md\|📁 54 - Obsidian Vault Organization]]                                              | Sun - 3/23/2025, 11:31 AM |
+| [[📁 54 - Obsidian Vault Organization/Dynamic Folders From Hierarchical Tags/Dynamic Folders From Hierarchical Tags.md\|Dynamic Folders From Hierarchical Tags]] | Sun - 3/23/2025, 11:31 AM |
+| [[⬇️ Clippings/ChatGPT/Tag Selection Workflow Options/Tag Selection Workflow Options.md\|Tag Selection Workflow Options]]                                        | Sat - 3/22/2025, 6:51 PM  |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                   | Sat - 3/22/2025, 6:50 PM  |
+| [[⬇️ Clippings/ChatGPT/ChatGPT.md\|ChatGPT]]                                                                                                                     | Sat - 3/22/2025, 6:50 PM  |
+| [[🕸️ UNSTRUCTURED/QuickAdd Tag Selector/QuickAdd Tag Selector.md\|QuickAdd Tag Selector]]                                                                       | Sat - 3/22/2025, 6:49 PM  |
+| [[📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md\|Cyberbase New Note Workflow]]                                  | Sat - 3/22/2025, 6:46 PM  |
+| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                                                       | Sat - 3/22/2025, 6:35 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 
