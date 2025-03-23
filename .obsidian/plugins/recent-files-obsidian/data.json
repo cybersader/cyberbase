@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "Plugin Development",
+      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
+    },
+    {
+      "basename": "Dynamic Tags & Folders Plugin Development",
+      "path": "🕸️ UNSTRUCTURED/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
+    },
+    {
       "basename": "Dynamic Folders & Tags",
       "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
+    },
+    {
+      "basename": "Obsidian Plugin Development Quickstart",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Plugin Development Quickstart/Obsidian Plugin Development Quickstart.md"
+    },
+    {
+      "basename": "CB1 - Customize Publish",
+      "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
     },
     {
       "basename": "Ideas for Knowledge Organization",
@@ -181,20 +197,8 @@
       "path": "⬇️ Clippings/ChatGPT/ChatGPT.md"
     },
     {
-      "basename": "CB1 - Customize Publish",
-      "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
-    },
-    {
       "basename": "Vault Folder & Tag Structure",
       "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
-    },
-    {
-      "basename": "Folder Structure Ideas",
-      "path": "📁 54 - Obsidian Vault Organization/Folder Structure Ideas/Folder Structure Ideas.md"
-    },
-    {
-      "basename": "📁 54 - Obsidian Vault Organization",
-      "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
     }
   ],
   "omittedPaths": [],

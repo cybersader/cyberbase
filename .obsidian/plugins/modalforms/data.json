@@ -11,7 +11,7 @@
           "name": "Tags",
           "label": "",
           "description": "Tags for this note",
-          "isRequired": true,
+          "isRequired": false,
           "input": {
             "type": "tag",
             "hidden": false

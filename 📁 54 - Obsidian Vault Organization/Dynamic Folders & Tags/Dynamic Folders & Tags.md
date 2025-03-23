@@ -20,6 +20,8 @@ Add a system that decides when to dynamically move something to a different fold
 
 # Make my own plugin?
 
+[Dynamic Tags & Folders Plugin Development](🕸️%20UNSTRUCTURED/Dynamic%20Tags%20&%20Folders%20Plugin%20Development/Dynamic%20Tags%20&%20Folders%20Plugin%20Development.md)
+
 Be awesome if I could say anything the regex matches this in folder path gets a converted tag based on the path to snake case.
 
 I want to create automatic tags based on folder paths in obsidian so that the folder hierarchy is represented in the tags
@@ -129,4 +131,4 @@ The options will be similar to Tag to Folders:
 - handling for folder note based systems (move the folder).  use a function to look at the vault and figure out if you're using folder notes by looking at how many folder notes you have (folder matching note name). would still need to account for attachments being stored adjacent to parent folder instead of in it (specific settings for this)
 - Folder exclusions to ignore allow regex here too
 - ability to export settings as json or import them with copy and paste
--
+- 

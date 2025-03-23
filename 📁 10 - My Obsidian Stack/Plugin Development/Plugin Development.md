@@ -57,8 +57,8 @@ The sample plugin you'll use in this tutorial is available in a [GitHub reposit
 
 - `cd` into the vault
 - `code .` - to open in VS Code
+- `cd` into the folder for the plugin
 - `bun install` to install all of the dependencies
-- 
 
 ## 2) Bun and Obsidian Typings
 
@@ -89,4 +89,3 @@ The sample plugin you'll use in this tutorial is available in a [GitHub reposit
 
 - [(14) Obsidian Plugin Development 101 - YouTube](https://www.youtube.com/watch?v=kQCc7HYOfpY&t=516s)
 	- Using Bun
-- (OLD) [(14) Create Your Own Obsidian Plugin | How To Get Started - YouTube](https://www.youtube.com/watch?v=9lA-jaMNS0k)

@@ -38,6 +38,8 @@ date modified: Friday, January 31st 2025, 4:34 pm
 - [[Debugging Obsidian Plugins]]
 - [[Digital Garden]]
 - [[Documenting Activity]]
+- **[[Dynamic Tags & Folders Plugin]]**
+- **[[Dynamic Tags & Folders Plugin Development]]**
 - **[[Easy Schematic Workflow]]**
 - **[[Email Security]]**
 - **[[Endpoint Firewall]]**
@@ -58,6 +60,7 @@ date modified: Friday, January 31st 2025, 4:34 pm
 - **[[Metals]]**
 - **[[Microsoft Outlook]]**
 - **[[Misc Web Dev]]**
+- **[[Obsidian Plugin Development Quickstart]]**
 - **[[Obsidian Vaults with Cybersecurity]]**
 - **[[OSINT]]**
 - **[[Personal Devices]]**
