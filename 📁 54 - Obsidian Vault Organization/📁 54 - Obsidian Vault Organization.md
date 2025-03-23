@@ -12,7 +12,7 @@ date modified: Saturday, March 15th 2025, 5:46 pm
 - **[[Cyberbase Folder Structure]]**
 - **[[Cyberbase New Note Workflow]]**
 - **[[Cyberbase Tag Structure]]**
-- **[[Dynamic Folders From Selected Tags]]**
+- **[[Dynamic Folders From Hierarchical Tags]]**
 - **[[Dynamic Tags from Folder]]**
 - **[[File Organization Systems]]**
 - **[[Folder Structure Ideas]]**

@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Dynamic Folders From Selected Tags",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders From Selected Tags/Dynamic Folders From Selected Tags.md"
+      "basename": "Dynamic Tags from Folder",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags from Folder/Dynamic Tags from Folder.md"
+    },
+    {
+      "basename": "Dataview",
+      "path": "📁 10 - My Obsidian Stack/Dataview/Dataview.md"
+    },
+    {
+      "basename": "Dynamic Folders From Hierarchical Tags",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders From Hierarchical Tags/Dynamic Folders From Hierarchical Tags.md"
     },
     {
       "basename": "Tag Selection Workflow Options",
       "path": "⬇️ Clippings/ChatGPT/Tag Selection Workflow Options/Tag Selection Workflow Options.md"
-    },
-    {
-      "basename": "Dynamic Tags from Folder",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags from Folder/Dynamic Tags from Folder.md"
     },
     {
       "basename": "QuickAdd Tag Selector",
@@ -195,10 +199,6 @@
     {
       "basename": "📁 54 - Obsidian Vault Organization",
       "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
-    },
-    {
-      "basename": "Inputs, Capture",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Knowledge Management Workflows/Inputs, Capture/Inputs, Capture.md"
     }
   ],
   "omittedPaths": [],

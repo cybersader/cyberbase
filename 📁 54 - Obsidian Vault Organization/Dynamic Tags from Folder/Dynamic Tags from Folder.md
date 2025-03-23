@@ -15,4 +15,4 @@ date modified: Saturday, March 22nd 2025, 6:49 pm
 
 Be awesome if I could say anything the regex matches this in folder path gets a converted tag based on the path to snake case.
 
-Could use a dataView query at the top of the page?  Potentially or the bottom with a template for it when it matches that regex I talked about.  That would be dangerous to run often.  Not really an option.  Should only change when changes to folder structure are made.
+Could use a DataView query at the top of the page?  Potentially or the bottom with a template for it when it matches that regex I talked about.  That would be dangerous to run often.  Not really an option.  Should only change when changes to folder structure are made.

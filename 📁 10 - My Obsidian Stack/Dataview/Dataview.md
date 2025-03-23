@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Thursday, April 25th 2024, 5:04 pm
-date modified: Saturday, March 15th 2025, 4:42 pm
+date modified: Sunday, March 23rd 2025, 11:31 am
 ---
 
 [Obsidian Frameworker](../../📁%2001%20-%20Projects/Obsidian%20Frameworker/Obsidian%20Frameworker.md)
@@ -12,6 +12,8 @@ date modified: Saturday, March 15th 2025, 4:42 pm
 
 - [s-blu/obsidian_dataview_example_vault: A example vault to collect and showcase various dataview queries. Created on behalf of AB1908](https://github.com/s-blu/obsidian_dataview_example_vault) 
 - [DQL, JS and Inlines - Dataview](https://blacksmithgu.github.io/obsidian-dataview/queries/dql-js-inline/)
+
+- [github.io > Basic Dataview Query Builder](https://s-blu.github.io/basic-dataview-query-builder/)
 
 # DataviewJS Docs & Examples
 
