@@ -35,6 +35,7 @@
 	- **[[Zivver Security]]**
 - **[[Wikipedia]]**
 - **[[YouTube]]**
+	- **[[Mike Schmitz - The People Note The Key to Rolling Up Tasks & Project in Obsidian]]**
 	- **[[Paul Dickson - Obsidian Modal Forms Plugin How to Transform your Data Entry in Obsidian]]**
 	- **[[Paul Dickson - Obsidian QuickAdd Plugin How to Create Better Notes in Seconds]]**
 	- **[[S3 - 2025 The Dawn of Energy Abundance]]**

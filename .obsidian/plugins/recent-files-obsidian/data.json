@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Dynamic Tags & Folders Plugin Development",
+      "path": "🕸️ UNSTRUCTURED/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
+    },
+    {
+      "basename": "Mike Schmitz - The People Note The Key to Rolling Up Tasks & Project in Obsidian",
+      "path": "⬇️ Clippings/YouTube/Mike Schmitz - The People Note The Key to Rolling Up Tasks & Project in Obsidian/Mike Schmitz - The People Note The Key to Rolling Up Tasks & Project in Obsidian.md"
+    },
+    {
       "basename": "Tag Structure Examples",
       "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
     },
@@ -27,10 +35,6 @@
     {
       "basename": "📁 54 - Obsidian Vault Organization",
       "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
-    },
-    {
-      "basename": "Dynamic Tags & Folders Plugin Development",
-      "path": "🕸️ UNSTRUCTURED/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
     },
     {
       "basename": "2025-03-23-Sunday",
@@ -195,10 +199,6 @@
     {
       "basename": "Obsidian Plugins",
       "path": "⬇️ Clippings/Obsidian Plugins/Obsidian Plugins.md"
-    },
-    {
-      "basename": "Obsidian",
-      "path": "⬇️ Clippings/Obsidian/Obsidian.md"
     }
   ],
   "omittedPaths": [],
