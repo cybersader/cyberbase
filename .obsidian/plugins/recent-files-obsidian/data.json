@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "2025-03-23-Sunday",
+      "path": "🕸️ Daily Notes/2025/03/2025-03-23-Sunday/2025-03-23-Sunday.md"
+    },
+    {
+      "basename": "Ideas for Knowledge Organization",
+      "path": "📁 54 - Obsidian Vault Organization/Ideas for Knowledge Organization/Ideas for Knowledge Organization.md"
+    },
+    {
       "basename": "Dynamic Tags & Folders Plugin Development",
       "path": "🕸️ UNSTRUCTURED/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
     },
@@ -23,10 +31,6 @@
     {
       "basename": "CB1 - Customize Publish",
       "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
-    },
-    {
-      "basename": "Ideas for Knowledge Organization",
-      "path": "📁 54 - Obsidian Vault Organization/Ideas for Knowledge Organization/Ideas for Knowledge Organization.md"
     },
     {
       "basename": "Dataview",
@@ -195,10 +199,6 @@
     {
       "basename": "YouTube",
       "path": "⬇️ Clippings/YouTube/YouTube.md"
-    },
-    {
-      "basename": "ChatGPT",
-      "path": "⬇️ Clippings/ChatGPT/ChatGPT.md"
     }
   ],
   "omittedPaths": [],
