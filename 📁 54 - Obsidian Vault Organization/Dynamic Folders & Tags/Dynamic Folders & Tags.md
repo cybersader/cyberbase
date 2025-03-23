@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: 
 date created: Monday, March 17th 2025, 11:51 am
-date modified: Sunday, March 23rd 2025, 1:45 pm
+date modified: Sunday, March 23rd 2025, 4:09 pm
 ---
 
 [Plugin Development](../../📁%2010%20-%20My%20Obsidian%20Stack/Plugin%20Development/Plugin%20Development.md) - could develop a plugin for it
@@ -12,9 +12,10 @@ date modified: Sunday, March 23rd 2025, 1:45 pm
 [QuickAdd Tag Selector](../../🕸️%20UNSTRUCTURED/QuickAdd%20Tag%20Selector/QuickAdd%20Tag%20Selector.md) - select tags while adding new notes with QuickAdd
 [Using Tags](../../📁%2010%20-%20My%20Obsidian%20Stack/Using%20Tags/Using%20Tags.md)
 
+Related plugins:
 - Automatic Tags plugin
 - [github.com > adanielnoel/obsidian-index-notes: Plugin that automatically generates index blocks based on tags](https://github.com/adanielnoel/obsidian-index-notes) - interesting related tag
-- Auto Note Mover does this but not in a smart way
+- [github.com > farux/obsidian-auto-note-mover: This is a plugin for Obsidian (https://obsidian.md).](https://github.com/farux/obsidian-auto-note-mover/tree/main)
 
 Add a system that decides when to dynamically move something to a different folder based on tags.  The system could have a priority structure or could even duplicate links or leave behind embedding versions in folders that they leave.  This would help solve the problem of strict hierarchies that you get with a hierarchical system like folders versus and emulated graph system like overlapping tag paths or links (pretty much a graph edge representation).  Ultimately, the problem still becomes that you need folders.
 
