@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Ideas for Knowledge Organization",
+      "path": "📁 54 - Obsidian Vault Organization/Ideas for Knowledge Organization/Ideas for Knowledge Organization.md"
+    },
+    {
+      "basename": "Cyberbase Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Tag Structure/Cyberbase Tag Structure.md"
+    },
+    {
+      "basename": "VoidZero",
+      "path": "⬇️ Clippings/Tech/VoidZero/VoidZero.md"
+    },
+    {
       "basename": "Dynamic Tags & Folders Plugin Development",
       "path": "🕸️ UNSTRUCTURED/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
     },
@@ -23,14 +35,6 @@
     {
       "basename": "Cyberbase Folder Structure",
       "path": "📁 54 - Obsidian Vault Organization/Cyberbase Folder Structure/Cyberbase Folder Structure.md"
-    },
-    {
-      "basename": "Cyberbase Tag Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Tag Structure/Cyberbase Tag Structure.md"
-    },
-    {
-      "basename": "Ideas for Knowledge Organization",
-      "path": "📁 54 - Obsidian Vault Organization/Ideas for Knowledge Organization/Ideas for Knowledge Organization.md"
     },
     {
       "basename": "📁 54 - Obsidian Vault Organization",
@@ -195,10 +199,6 @@
     {
       "basename": "Tech",
       "path": "⬇️ Clippings/Tech/Tech.md"
-    },
-    {
-      "basename": "Obsidian Plugins",
-      "path": "⬇️ Clippings/Obsidian Plugins/Obsidian Plugins.md"
     }
   ],
   "omittedPaths": [],

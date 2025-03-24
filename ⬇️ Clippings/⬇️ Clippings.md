@@ -32,6 +32,7 @@
 	- **[[Simplemind]]**
 	- **[[Slido]]**
 	- **[[Trilium Notes]]**
+	- **[[VoidZero]]**
 	- **[[Zivver Security]]**
 - **[[Wikipedia]]**
 - **[[YouTube]]**
