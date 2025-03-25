@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Websites",
+      "path": "⬇️ Clippings/Websites/Websites.md"
+    },
+    {
+      "basename": "Tertulia",
+      "path": "⬇️ Clippings/Websites/Tertulia/Tertulia.md"
+    },
+    {
       "basename": "Ideas for Knowledge Organization",
       "path": "📁 54 - Obsidian Vault Organization/Ideas for Knowledge Organization/Ideas for Knowledge Organization.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "AI Content Workflows",
       "path": "📁 12 - Content Creation/Cybersader Content/AI Content Workflows/AI Content Workflows.md"
-    },
-    {
-      "basename": "Free SVG",
-      "path": "📁 12 - Content Creation/Free SVG/Free SVG.md"
-    },
-    {
-      "basename": "Tech",
-      "path": "⬇️ Clippings/Tech/Tech.md"
     }
   ],
   "omittedPaths": [],

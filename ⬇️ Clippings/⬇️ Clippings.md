@@ -34,6 +34,8 @@
 	- **[[Trilium Notes]]**
 	- **[[VoidZero]]**
 	- **[[Zivver Security]]**
+- **[[Websites]]**
+	- **[[Tertulia]]**
 - **[[Wikipedia]]**
 - **[[YouTube]]**
 	- **[[Mike Schmitz - The People Note The Key to Rolling Up Tasks & Project in Obsidian]]**
