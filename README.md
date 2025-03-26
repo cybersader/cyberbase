@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sun, Mar 23, 2025 - [[Dynamic Tags from Folder]]
+> Mon, Mar 24, 2025 - [[⬇️ Clippings]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                                             | Last modified             |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 54 - Obsidian Vault Organization/Dynamic Tags from Folder/Dynamic Tags from Folder.md\|Dynamic Tags from Folder]]                                           | Sun - 3/23/2025, 11:54 AM |
-| [[📁 10 - My Obsidian Stack/Dataview/Dataview.md\|Dataview]]                                                                                                     | Sun - 3/23/2025, 11:31 AM |
-| [[📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md\|📁 54 - Obsidian Vault Organization]]                                              | Sun - 3/23/2025, 11:31 AM |
-| [[📁 54 - Obsidian Vault Organization/Dynamic Folders From Hierarchical Tags/Dynamic Folders & Tags|Dynamic Folders From Hierarchical Tags]] | Sun - 3/23/2025, 11:31 AM |
-| [[⬇️ Clippings/ChatGPT/Tag Selection Workflow Options/Tag Selection Workflow Options.md\|Tag Selection Workflow Options]]                                        | Sat - 3/22/2025, 6:51 PM  |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                   | Sat - 3/22/2025, 6:50 PM  |
-| [[⬇️ Clippings/ChatGPT/ChatGPT.md\|ChatGPT]]                                                                                                                     | Sat - 3/22/2025, 6:50 PM  |
-| [[🕸️ UNSTRUCTURED/QuickAdd Tag Selector/QuickAdd Tag Selector.md\|QuickAdd Tag Selector]]                                                                       | Sat - 3/22/2025, 6:49 PM  |
-| [[📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md\|Cyberbase New Note Workflow]]                                  | Sat - 3/22/2025, 6:46 PM  |
-| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                                                       | Sat - 3/22/2025, 6:35 PM  |
+| File                                                                                                                                                                                                                                                                            | Last modified            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                                                                                                                  | Mon - 3/24/2025, 9:20 PM |
+| [[⬇️ Clippings/Websites/Websites.md\|Websites]]                                                                                                                                                                                                                                 | Mon - 3/24/2025, 9:20 PM |
+| [[⬇️ Clippings/Websites/Tertulia/Tertulia.md\|Tertulia]]                                                                                                                                                                                                                        | Mon - 3/24/2025, 9:19 PM |
+| [[⬇️ Clippings/Tech/VoidZero/VoidZero.md\|VoidZero]]                                                                                                                                                                                                                            | Mon - 3/24/2025, 8:20 AM |
+| [[⬇️ Clippings/YouTube/Mike Schmitz - The People Note The Key to Rolling Up Tasks & Project in Obsidian/Mike Schmitz - The People Note The Key to Rolling Up Tasks & Project in Obsidian.md\|Mike Schmitz - The People Note The Key to Rolling Up Tasks & Project in Obsidian]] | Sun - 3/23/2025, 7:15 PM |
+| [[⬇️ Clippings/Manually Entered Links/Characters That Sort After Z/Characters That Sort After Z.md\|Characters That Sort After Z]]                                                                                                                                              | Sun - 3/23/2025, 7:03 PM |
+| [[⬇️ Clippings/Manually Entered Links/Manually Entered Links.md\|Manually Entered Links]]                                                                                                                                                                                       | Sun - 3/23/2025, 7:02 PM |
+| [[🕸️ UNSTRUCTURED/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md\|Dynamic Tags & Folders Plugin Development]]                                                                                                                          | Sun - 3/23/2025, 5:06 PM |
+| [[🕸️ Daily Notes/2025/03/2025-03-23-Sunday/2025-03-23-Sunday.md\|2025-03-23-Sunday]]                                                                                                                                                                                           | Sun - 3/23/2025, 4:42 PM |
+| [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                                                                                                                                                         | Sun - 3/23/2025, 4:42 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 

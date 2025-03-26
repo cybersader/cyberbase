@@ -1007,6 +1007,27 @@
       },
       "vconsole": {
         "startupType": "instant"
+      },
+      "auto-mover": {
+        "startupType": "disabled"
+      },
+      "beautitab": {
+        "startupType": "disabled"
+      },
+      "callout-menu": {
+        "startupType": "disabled"
+      },
+      "pane-relief": {
+        "startupType": "disabled"
+      },
+      "share-note": {
+        "startupType": "disabled"
+      },
+      "tab-navigator": {
+        "startupType": "disabled"
+      },
+      "cycle-through-panes": {
+        "startupType": "instant"
       }
     },
     "loadOrder": []
