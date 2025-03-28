@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Mon, Mar 24, 2025 - [[⬇️ Clippings]]
+> Fri, Mar 28, 2025 - [[⬇️ Clippings]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -102,16 +102,16 @@ SORT file.mtime DESC LIMIT 10
 
 | File                                                                                                                                                                                                                                                                            | Last modified            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                                                                                                                  | Mon - 3/24/2025, 9:20 PM |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                                                                                                                  | Fri - 3/28/2025, 8:13 AM |
+| [[⬇️ Clippings/Obsidian Plugins/Manual Sorting/Manual Sorting.md\|Manual Sorting]]                                                                                                                                                                                              | Fri - 3/28/2025, 8:13 AM |
+| [[⬇️ Clippings/Obsidian Plugins/File Manager/File Manager.md\|File Manager]]                                                                                                                                                                                                    | Fri - 3/28/2025, 8:12 AM |
+| [[⬇️ Clippings/Obsidian Plugins/GitHub Gitless Sync/GitHub Gitless Sync.md\|GitHub Gitless Sync]]                                                                                                                                                                               | Fri - 3/28/2025, 8:09 AM |
 | [[⬇️ Clippings/Websites/Websites.md\|Websites]]                                                                                                                                                                                                                                 | Mon - 3/24/2025, 9:20 PM |
 | [[⬇️ Clippings/Websites/Tertulia/Tertulia.md\|Tertulia]]                                                                                                                                                                                                                        | Mon - 3/24/2025, 9:19 PM |
 | [[⬇️ Clippings/Tech/VoidZero/VoidZero.md\|VoidZero]]                                                                                                                                                                                                                            | Mon - 3/24/2025, 8:20 AM |
 | [[⬇️ Clippings/YouTube/Mike Schmitz - The People Note The Key to Rolling Up Tasks & Project in Obsidian/Mike Schmitz - The People Note The Key to Rolling Up Tasks & Project in Obsidian.md\|Mike Schmitz - The People Note The Key to Rolling Up Tasks & Project in Obsidian]] | Sun - 3/23/2025, 7:15 PM |
 | [[⬇️ Clippings/Manually Entered Links/Characters That Sort After Z/Characters That Sort After Z.md\|Characters That Sort After Z]]                                                                                                                                              | Sun - 3/23/2025, 7:03 PM |
 | [[⬇️ Clippings/Manually Entered Links/Manually Entered Links.md\|Manually Entered Links]]                                                                                                                                                                                       | Sun - 3/23/2025, 7:02 PM |
-| [[🕸️ UNSTRUCTURED/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md\|Dynamic Tags & Folders Plugin Development]]                                                                                                                          | Sun - 3/23/2025, 5:06 PM |
-| [[🕸️ Daily Notes/2025/03/2025-03-23-Sunday/2025-03-23-Sunday.md\|2025-03-23-Sunday]]                                                                                                                                                                                           | Sun - 3/23/2025, 4:42 PM |
-| [[🕸️ Daily Notes/🕸️ Daily Notes.md\|🕸️ Daily Notes]]                                                                                                                                                                                                                         | Sun - 3/23/2025, 4:42 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 

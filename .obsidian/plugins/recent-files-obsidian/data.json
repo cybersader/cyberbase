@@ -1,24 +1,44 @@
 {
   "recentFiles": [
     {
-      "basename": "Awesome Cyber Resource Curations",
-      "path": "📁 03 - Curations, Stacks/Awesome Cyber Resource Curations/Awesome Cyber Resource Curations.md"
-    },
-    {
-      "basename": "Websites",
-      "path": "⬇️ Clippings/Websites/Websites.md"
-    },
-    {
-      "basename": "Tertulia",
-      "path": "⬇️ Clippings/Websites/Tertulia/Tertulia.md"
+      "basename": "Cyberbase Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Tag Structure/Cyberbase Tag Structure.md"
     },
     {
       "basename": "Ideas for Knowledge Organization",
       "path": "📁 54 - Obsidian Vault Organization/Ideas for Knowledge Organization/Ideas for Knowledge Organization.md"
     },
     {
-      "basename": "Cyberbase Tag Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Tag Structure/Cyberbase Tag Structure.md"
+      "basename": "Websites",
+      "path": "⬇️ Clippings/Websites/Websites.md"
+    },
+    {
+      "basename": "GitHub Gitless Sync",
+      "path": "⬇️ Clippings/Obsidian Plugins/GitHub Gitless Sync/GitHub Gitless Sync.md"
+    },
+    {
+      "basename": "Self-hosted LiveSync",
+      "path": "⬇️ Clippings/Obsidian Plugins/Self-hosted LiveSync/Self-hosted LiveSync.md"
+    },
+    {
+      "basename": "Manual Sorting",
+      "path": "⬇️ Clippings/Obsidian Plugins/Manual Sorting/Manual Sorting.md"
+    },
+    {
+      "basename": "File Manager",
+      "path": "⬇️ Clippings/Obsidian Plugins/File Manager/File Manager.md"
+    },
+    {
+      "basename": "Obsidian Plugins",
+      "path": "⬇️ Clippings/Obsidian Plugins/Obsidian Plugins.md"
+    },
+    {
+      "basename": "Awesome Cyber Resource Curations",
+      "path": "📁 03 - Curations, Stacks/Awesome Cyber Resource Curations/Awesome Cyber Resource Curations.md"
+    },
+    {
+      "basename": "Tertulia",
+      "path": "⬇️ Clippings/Websites/Tertulia/Tertulia.md"
     },
     {
       "basename": "VoidZero",
@@ -179,26 +199,6 @@
     {
       "basename": "brave_r7N2m1yUFy",
       "path": "🕸️ UNSTRUCTURED/Easy Schematic Workflow/_attachments/brave_r7N2m1yUFy.gif"
-    },
-    {
-      "basename": "keyviz_rU3TUOwmNZ",
-      "path": "🕸️ UNSTRUCTURED/Easy Schematic Workflow/_attachments/keyviz_rU3TUOwmNZ.gif"
-    },
-    {
-      "basename": "Screen Recording, Streaming Stack",
-      "path": "📁 12 - Content Creation/Screen Recording, Streaming Stack/Screen Recording, Streaming Stack.md"
-    },
-    {
-      "basename": "Easy Schematic Workflow",
-      "path": "🕸️ UNSTRUCTURED/Easy Schematic Workflow/Easy Schematic Workflow.md"
-    },
-    {
-      "basename": "Web or Browser-Based Obsidian",
-      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Web or Browser-Based Obsidian/Web or Browser-Based Obsidian.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     }
   ],
   "omittedPaths": [],

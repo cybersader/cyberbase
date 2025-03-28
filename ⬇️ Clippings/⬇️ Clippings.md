@@ -8,6 +8,10 @@
 	- **[[Deepseek Ban Proposal]]**
 - **[[Obsidian]]**
 - **[[Obsidian Plugins]]**
+	- **[[File Manager]]**
+	- **[[GitHub Gitless Sync]]**
+	- **[[Manual Sorting]]**
+	- **[[Self-hosted LiveSync]]**
 - **[[Reddit]]**
 - **[[Tech]]**
 	- **[[Chatwoot]]**
