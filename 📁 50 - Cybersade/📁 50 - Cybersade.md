@@ -12,7 +12,6 @@ date modified: Sunday, January 5th 2025, 9:20 pm
 
 %% Begin Waypoint %%
 - **[[⬇️ Statistics]]**
-- **[[Home-Ec 2025]]**
 - **[[YLC 2024 Presentation]]**
 
 %% End Waypoint %%
