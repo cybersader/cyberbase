@@ -15,6 +15,8 @@ date modified: Saturday, March 29th 2025, 10:56 am
 	- What really is cybersecurity and data privacy?
 	- Why do they actually matter?
 	- How it applies to the family and faith
+		- As Christians, we put have to understand the brokenness of humanity
+						- 
 	- Where you're responsible
 	- What you can do
 - 
