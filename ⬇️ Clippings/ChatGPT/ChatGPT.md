@@ -9,6 +9,7 @@ date modified: Saturday, March 15th 2025, 2:56 pm
 
 %% Begin Waypoint %%
 - **[[Best Budget Mic Options]]**
+- **[[Hacking Motivations and Shifts]]**
 - **[[iPhone Alarm Settings Guide]]**
 - **[[Meta-framework]]**
 - **[[Tag Selection Workflow Options]]**
