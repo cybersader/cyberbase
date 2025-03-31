@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Fri, Mar 28, 2025 - [[⬇️ Clippings]]
+> Sun, Mar 30, 2025 - [[ChatGPT]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                                                                                                                                                            | Last modified            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                                                                                                                  | Fri - 3/28/2025, 8:13 AM |
-| [[⬇️ Clippings/Obsidian Plugins/Manual Sorting/Manual Sorting.md\|Manual Sorting]]                                                                                                                                                                                              | Fri - 3/28/2025, 8:13 AM |
-| [[⬇️ Clippings/Obsidian Plugins/File Manager/File Manager.md\|File Manager]]                                                                                                                                                                                                    | Fri - 3/28/2025, 8:12 AM |
-| [[⬇️ Clippings/Obsidian Plugins/GitHub Gitless Sync/GitHub Gitless Sync.md\|GitHub Gitless Sync]]                                                                                                                                                                               | Fri - 3/28/2025, 8:09 AM |
-| [[⬇️ Clippings/Websites/Websites.md\|Websites]]                                                                                                                                                                                                                                 | Mon - 3/24/2025, 9:20 PM |
-| [[⬇️ Clippings/Websites/Tertulia/Tertulia.md\|Tertulia]]                                                                                                                                                                                                                        | Mon - 3/24/2025, 9:19 PM |
-| [[⬇️ Clippings/Tech/VoidZero/VoidZero.md\|VoidZero]]                                                                                                                                                                                                                            | Mon - 3/24/2025, 8:20 AM |
-| [[⬇️ Clippings/YouTube/Mike Schmitz - The People Note The Key to Rolling Up Tasks & Project in Obsidian/Mike Schmitz - The People Note The Key to Rolling Up Tasks & Project in Obsidian.md\|Mike Schmitz - The People Note The Key to Rolling Up Tasks & Project in Obsidian]] | Sun - 3/23/2025, 7:15 PM |
-| [[⬇️ Clippings/Manually Entered Links/Characters That Sort After Z/Characters That Sort After Z.md\|Characters That Sort After Z]]                                                                                                                                              | Sun - 3/23/2025, 7:03 PM |
-| [[⬇️ Clippings/Manually Entered Links/Manually Entered Links.md\|Manually Entered Links]]                                                                                                                                                                                       | Sun - 3/23/2025, 7:02 PM |
+| File                                                                                                                      | Last modified             |
+| ------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[⬇️ Clippings/ChatGPT/ChatGPT.md\|ChatGPT]]                                                                              | Sun - 3/30/2025, 7:51 PM  |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                            | Sun - 3/30/2025, 7:51 PM  |
+| [[⬇️ Clippings/ChatGPT/Hacking Motivations and Shifts/Hacking Motivations and Shifts.md\|Hacking Motivations and Shifts]] | Sun - 3/30/2025, 7:51 PM  |
+| [[📁 50 - Cybersade/📁 50 - Cybersade.md\|📁 50 - Cybersade]]                                                             | Sat - 3/29/2025, 11:48 AM |
+| [[⬇️ Clippings/Obsidian Plugins/Self-hosted LiveSync/Self-hosted LiveSync.md\|Self-hosted LiveSync]]                      | Fri - 3/28/2025, 8:18 AM  |
+| [[⬇️ Clippings/Obsidian Plugins/Manual Sorting/Manual Sorting.md\|Manual Sorting]]                                        | Fri - 3/28/2025, 8:13 AM  |
+| [[⬇️ Clippings/Obsidian Plugins/File Manager/File Manager.md\|File Manager]]                                              | Fri - 3/28/2025, 8:12 AM  |
+| [[⬇️ Clippings/Obsidian Plugins/GitHub Gitless Sync/GitHub Gitless Sync.md\|GitHub Gitless Sync]]                         | Fri - 3/28/2025, 8:09 AM  |
+| [[⬇️ Clippings/Websites/Websites.md\|Websites]]                                                                           | Mon - 3/24/2025, 9:20 PM  |
+| [[⬇️ Clippings/Websites/Tertulia/Tertulia.md\|Tertulia]]                                                                  | Mon - 3/24/2025, 9:19 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 
