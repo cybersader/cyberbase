@@ -9,6 +9,7 @@ date modified: Saturday, March 15th 2025, 2:56 pm
 
 %% Begin Waypoint %%
 - **[[Best Budget Mic Options]]**
+- **[[Display Android on Windows]]**
 - **[[Hacking Motivations and Shifts]]**
 - **[[iPhone Alarm Settings Guide]]**
 - **[[Meta-framework]]**
