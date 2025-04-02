@@ -1,12 +1,10 @@
 ---
-aliases: 
-tags:
-  - world_conflict
-  - world_war
-  - crisis_management
+permalink:
+aliases: []
+tags: [world_conflict, world_war, crisis_management]
 publish: true
 date created: Sunday, July 14th 2024, 6:02 pm
-date modified: Sunday, July 14th 2024, 7:31 pm
+date modified: Wednesday, April 2nd 2025, 7:06 pm
 ---
 
 # Sacraments During Conflict
@@ -57,3 +55,7 @@ In summary, the Catholic Church's teachings affirm that the sacrament of Holy Or
 [^7] [CCC 1598](http://www.vatican.va/archive/ENG0015/__P4Z.HTM)
 [^8] [From the Diakonia of Christ to the Diakonia of the Apostles Ch. VII - III.2](https://www.vatican.va/roman_curia/congregations/cfaith/cti_documents/rc_con_cfaith_pro_05072004_diaconate_en.html)
 [^9] [24 June 1979: Priestly Ordination in St Peter's 2](https://www.vatican.va/content/john-paul-ii/en/homilies/1979/documents/hf_jp-ii_hom_19790624_ordinazioni-sacerd.html)
+
+# Communion During Conflict
+
+- [What Counts as Valid Wine for the Eucharist? | Catholic Answers Magazine](https://www.catholic.com/magazine/online-edition/what-counts-as-valid-wine-for-the-eucharist)
