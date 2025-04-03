@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sun, Mar 30, 2025 - [[ChatGPT]]
+> Wed, Apr 2, 2025 - [[Church Operations During Conflict]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                      | Last modified             |
-| ------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[⬇️ Clippings/ChatGPT/ChatGPT.md\|ChatGPT]]                                                                              | Sun - 3/30/2025, 7:51 PM  |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                            | Sun - 3/30/2025, 7:51 PM  |
-| [[⬇️ Clippings/ChatGPT/Hacking Motivations and Shifts/Hacking Motivations and Shifts.md\|Hacking Motivations and Shifts]] | Sun - 3/30/2025, 7:51 PM  |
-| [[📁 50 - Cybersade/📁 50 - Cybersade.md\|📁 50 - Cybersade]]                                                             | Sat - 3/29/2025, 11:48 AM |
-| [[⬇️ Clippings/Obsidian Plugins/Self-hosted LiveSync/Self-hosted LiveSync.md\|Self-hosted LiveSync]]                      | Fri - 3/28/2025, 8:18 AM  |
-| [[⬇️ Clippings/Obsidian Plugins/Manual Sorting/Manual Sorting.md\|Manual Sorting]]                                        | Fri - 3/28/2025, 8:13 AM  |
-| [[⬇️ Clippings/Obsidian Plugins/File Manager/File Manager.md\|File Manager]]                                              | Fri - 3/28/2025, 8:12 AM  |
-| [[⬇️ Clippings/Obsidian Plugins/GitHub Gitless Sync/GitHub Gitless Sync.md\|GitHub Gitless Sync]]                         | Fri - 3/28/2025, 8:09 AM  |
-| [[⬇️ Clippings/Websites/Websites.md\|Websites]]                                                                           | Mon - 3/24/2025, 9:20 PM  |
-| [[⬇️ Clippings/Websites/Tertulia/Tertulia.md\|Tertulia]]                                                                  | Mon - 3/24/2025, 9:19 PM  |
+| File                                                                                                                                                 | Last modified             |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 13 - Religion, Ontology, Philosophy/Church Operations During Conflict/Church Operations During Conflict.md\|Church Operations During Conflict]] | Wed - 4/2/2025, 7:06 PM   |
+| [[⬇️ Clippings/ChatGPT/ChatGPT.md\|ChatGPT]]                                                                                                         | Mon - 3/31/2025, 5:32 PM  |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                       | Mon - 3/31/2025, 5:32 PM  |
+| [[⬇️ Clippings/ChatGPT/Display Android on Windows/Display Android on Windows.md\|Display Android on Windows]]                                        | Mon - 3/31/2025, 5:32 PM  |
+| [[⬇️ Clippings/ChatGPT/Hacking Motivations and Shifts/Hacking Motivations and Shifts.md\|Hacking Motivations and Shifts]]                            | Sun - 3/30/2025, 7:51 PM  |
+| [[📁 50 - Cybersade/📁 50 - Cybersade.md\|📁 50 - Cybersade]]                                                                                        | Sat - 3/29/2025, 11:48 AM |
+| [[⬇️ Clippings/Obsidian Plugins/Self-hosted LiveSync/Self-hosted LiveSync.md\|Self-hosted LiveSync]]                                                 | Fri - 3/28/2025, 8:18 AM  |
+| [[⬇️ Clippings/Obsidian Plugins/Manual Sorting/Manual Sorting.md\|Manual Sorting]]                                                                   | Fri - 3/28/2025, 8:13 AM  |
+| [[⬇️ Clippings/Obsidian Plugins/File Manager/File Manager.md\|File Manager]]                                                                         | Fri - 3/28/2025, 8:12 AM  |
+| [[⬇️ Clippings/Obsidian Plugins/GitHub Gitless Sync/GitHub Gitless Sync.md\|GitHub Gitless Sync]]                                                    | Fri - 3/28/2025, 8:09 AM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 
