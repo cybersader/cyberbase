@@ -23,6 +23,7 @@ date modified: Saturday, February 15th 2025, 3:04 pm
 - **[[Free SVG]]**
 - **[[Mic Setup Audio 2024]]**
 - **[[Persona Creation]]**
+- **[[Prepping Devices for Demos]]**
 - **[[Presentation Tools & Tech]]**
 - **[[Screen Recording, Streaming Stack]]**
 - **[[Sync Video and Audio]]**
