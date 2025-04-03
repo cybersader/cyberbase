@@ -102,7 +102,7 @@ SORT file.mtime DESC LIMIT 10
 
 | File                                                                                                                                                 | Last modified            |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[🕸️ UNSTRUCTURED/Home-Ec 2025/Home-Ec 2025.md\|Home-Ec 2025]]                                                                                      | Thu - 4/3/2025, 2:24 PM  |
+| [[🕸️ UNSTRUCTURED/Home-Ec 2025/Home-Ec 2025.md\|Home-Ec 2025]]                                                                                      | Thu - 4/3/2025, 4:12 PM  |
 | [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                                           | Thu - 4/3/2025, 2:21 PM  |
 | [[📁 12 - Content Creation/Prepping Devices for Demos/Prepping Devices for Demos.md\|Prepping Devices for Demos]]                                    | Thu - 4/3/2025, 1:49 PM  |
 | [[📁 12 - Content Creation/📁 12 - Content Creation.md\|📁 12 - Content Creation]]                                                                   | Thu - 4/3/2025, 1:21 PM  |
