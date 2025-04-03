@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Wed, Apr 2, 2025 - [[Church Operations During Conflict]]
+> Thu, Apr 3, 2025 - [[Home-Ec 2025]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                                 | Last modified             |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 13 - Religion, Ontology, Philosophy/Church Operations During Conflict/Church Operations During Conflict.md\|Church Operations During Conflict]] | Wed - 4/2/2025, 7:06 PM   |
-| [[⬇️ Clippings/ChatGPT/ChatGPT.md\|ChatGPT]]                                                                                                         | Mon - 3/31/2025, 5:32 PM  |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                       | Mon - 3/31/2025, 5:32 PM  |
-| [[⬇️ Clippings/ChatGPT/Display Android on Windows/Display Android on Windows.md\|Display Android on Windows]]                                        | Mon - 3/31/2025, 5:32 PM  |
-| [[⬇️ Clippings/ChatGPT/Hacking Motivations and Shifts/Hacking Motivations and Shifts.md\|Hacking Motivations and Shifts]]                            | Sun - 3/30/2025, 7:51 PM  |
-| [[📁 50 - Cybersade/📁 50 - Cybersade.md\|📁 50 - Cybersade]]                                                                                        | Sat - 3/29/2025, 11:48 AM |
-| [[⬇️ Clippings/Obsidian Plugins/Self-hosted LiveSync/Self-hosted LiveSync.md\|Self-hosted LiveSync]]                                                 | Fri - 3/28/2025, 8:18 AM  |
-| [[⬇️ Clippings/Obsidian Plugins/Manual Sorting/Manual Sorting.md\|Manual Sorting]]                                                                   | Fri - 3/28/2025, 8:13 AM  |
-| [[⬇️ Clippings/Obsidian Plugins/File Manager/File Manager.md\|File Manager]]                                                                         | Fri - 3/28/2025, 8:12 AM  |
-| [[⬇️ Clippings/Obsidian Plugins/GitHub Gitless Sync/GitHub Gitless Sync.md\|GitHub Gitless Sync]]                                                    | Fri - 3/28/2025, 8:09 AM  |
+| File                                                                                                                                                 | Last modified            |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [[🕸️ UNSTRUCTURED/Home-Ec 2025/Home-Ec 2025.md\|Home-Ec 2025]]                                                                                      | Thu - 4/3/2025, 2:24 PM  |
+| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                                           | Thu - 4/3/2025, 2:21 PM  |
+| [[📁 12 - Content Creation/Prepping Devices for Demos/Prepping Devices for Demos.md\|Prepping Devices for Demos]]                                    | Thu - 4/3/2025, 1:49 PM  |
+| [[📁 12 - Content Creation/📁 12 - Content Creation.md\|📁 12 - Content Creation]]                                                                   | Thu - 4/3/2025, 1:21 PM  |
+| [[📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Drawing 2023-12-13 14.04.56.excalidraw.md\|Drawing 2023-12-13 14.04.56.excalidraw]]              | Thu - 4/3/2025, 10:40 AM |
+| [[📁 98 - ARCHIVE/📁 98 - ARCHIVE.md\|📁 98 - ARCHIVE]]                                                                                              | Thu - 4/3/2025, 10:40 AM |
+| [[📁 98 - ARCHIVE/GradSchoolProjects/GradSchoolProjects.md\|GradSchoolProjects]]                                                                     | Thu - 4/3/2025, 10:40 AM |
+| [[📁 98 - ARCHIVE/GradSchoolProjects/Excalidraw/Drawing 2023-12-01 16.33.48.excalidraw.md\|Drawing 2023-12-01 16.33.48.excalidraw]]                  | Thu - 4/3/2025, 10:40 AM |
+| [[📁 13 - Religion, Ontology, Philosophy/Church Operations During Conflict/Church Operations During Conflict.md\|Church Operations During Conflict]] | Wed - 4/2/2025, 7:06 PM  |
+| [[⬇️ Clippings/ChatGPT/ChatGPT.md\|ChatGPT]]                                                                                                         | Mon - 3/31/2025, 5:32 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
