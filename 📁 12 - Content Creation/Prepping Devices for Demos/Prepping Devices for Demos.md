@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Thursday, April 3rd 2025, 1:21 pm
-date modified: Thursday, April 3rd 2025, 1:22 pm
+date modified: Thursday, April 3rd 2025, 1:49 pm
 ---
 
 [Display Android on Windows](../../⬇️%20Clippings/ChatGPT/Display%20Android%20on%20Windows/Display%20Android%20on%20Windows.md)
@@ -20,4 +20,5 @@ date modified: Thursday, April 3rd 2025, 1:22 pm
 	- Tools
 		- PowerToys
 			- ZoomIt
-			- 
+	- Get rid of autorun/autostart settings for some apps if need be
+	- 
