@@ -4,7 +4,7 @@ aliases: []
 publish: true
 permalink: homeec25
 date created: Thursday, April 3rd 2025, 2:21 pm
-date modified: Thursday, April 3rd 2025, 4:12 pm
+date modified: Thursday, April 3rd 2025, 4:57 pm
 ---
 
 # Open Lab Agenda
@@ -115,7 +115,7 @@ A password needs to be:
 	- Bank Account apps
 	- Credit card apps
 
-## 4) Defending against scams
+## 4) Defending against scams and "phishing" attacks
 
 - Email and Text are untrustworthy - be skeptical
 - Videos:
