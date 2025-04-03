@@ -23,7 +23,7 @@ date modified: Thursday, April 3rd 2025, 4:12 pm
 		- [cisa.gov > Turn On MFA | CISA](https://www.cisa.gov/secure-our-world/turn-mfa)
 		- [google.com > Turn on 2-Step Verification - Computer - Google Account Help](https://support.google.com/accounts/answer/185839)
 		- [apple.com > Use two-factor authentication for your Apple Account on iPhone](https://support.apple.com/guide/iphone/use-two-factor-authentication-iphd709a3c46/ios)
-4. Discussion & Open Lab
+4. Discussions
 
 # Steps to Securing Your Digital Life
 
