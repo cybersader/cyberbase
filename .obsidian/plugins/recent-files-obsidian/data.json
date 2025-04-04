@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "My Media Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
+    },
+    {
       "basename": "Home-Ec 2025",
       "path": "🕸️ UNSTRUCTURED/Home-Ec 2025/Home-Ec 2025.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "New Note - Templater & Modal Form - Tag Picker",
       "path": "Templates/New Note - Templater & Modal Form - Tag Picker.md"
-    },
-    {
-      "basename": "New Note Blank",
-      "path": "Templates/New Note Blank.md"
     }
   ],
   "omittedPaths": [],

@@ -21,7 +21,7 @@ date modified: Monday, May 27th 2024, 1:14 pm
 	- **[[Immich vs Photoprism]]**
 	- **[[Rsync Related]]**
 	- **[[TrueNAS Drive Data Recovery]]**
-- **[[Plex Media Server]]**
+- **[[My Media Server]]**
 - **[[Portainer in TrueNAS]]**
 - **[[Scheduled Backups, Scheduled Downtime]]**
 - **[[TrueNAS Cloud Backups]]**
