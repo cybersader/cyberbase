@@ -4,7 +4,7 @@ aliases: []
 publish: true
 permalink: homeec25
 date created: Thursday, April 3rd 2025, 2:21 pm
-date modified: Thursday, April 3rd 2025, 4:57 pm
+date modified: Friday, April 4th 2025, 9:41 am
 ---
 
 # Open Lab Agenda
@@ -22,8 +22,11 @@ date modified: Thursday, April 3rd 2025, 4:57 pm
 	- Guides:
 		- [cisa.gov > Turn On MFA | CISA](https://www.cisa.gov/secure-our-world/turn-mfa)
 		- [google.com > Turn on 2-Step Verification - Computer - Google Account Help](https://support.google.com/accounts/answer/185839)
-		- [apple.com > Use two-factor authentication for your Apple Account on iPhone](https://support.apple.com/guide/iphone/use-two-factor-authentication-iphd709a3c46/ios)
-4. Discussions
+	- [apple.com > Use two-factor authentication for your Apple Account on iPhone](https://support.apple.com/guide/iphone/use-two-factor-authentication-iphd709a3c46/ios)
+4. Data Privacy
+	- Change your Google/Android or iCloud/Apple settings to give you more privacy
+	- 
+5. Discussions
 
 # Steps to Securing Your Digital Life
 
