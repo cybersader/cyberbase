@@ -14,18 +14,23 @@
 	- **[[Self-hosted LiveSync]]**
 - **[[Reddit]]**
 - **[[Tech]]**
+	- **[[Castopod]]**
 	- **[[Chatwoot]]**
 	- **[[Cryptee]]**
 	- **[[Cryptomator]]**
 	- **[[Cryptpad]]**
 	- **[[Fakeupdate]]**
 	- **[[Google-Gemma-3]]**
+	- **[[Invidious]]**
 	- **[[Kittl]]**
 	- **[[Kortex]]**
 	- **[[Makemydrivefun]]**
+	- **[[Metube - self-hosted youtube downloader]]**
+	- **[[n8n]]**
 	- **[[Napkin]]**
 	- **[[Notesnook]]**
 	- **[[Ollama]]**
+	- **[[Open WebUI]]**
 	- **[[Openfhe]]**
 	- **[[Opennote]]**
 	- **[[Peertube]]**
@@ -33,6 +38,7 @@
 	- **[[Raycast]]**
 	- **[[Readdy]]**
 	- **[[Readwise]]**
+	- **[[Scrypted]]**
 	- **[[Simplemind]]**
 	- **[[Slido]]**
 	- **[[Trilium Notes]]**

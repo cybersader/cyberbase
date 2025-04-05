@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Saturday, April 5th 2025, 2:08 pm
+date modified: Saturday, April 5th 2025, 2:43 pm
 ---
 
 # Links
@@ -156,6 +156,12 @@ Click Install!
 
 - Once deployed, go to the app and click the `Web UI` button to get redirect and attach it
 - If that doesn't work, you can add `/manage` to the end of the URL from the app settings for Plex in TrueNAS Apps
+
+## 5) More Plex
+
+- [substack.com > Plex workflow](https://fsconotes.substack.com/p/plex-workflow-the-fs-co-way-2024)
+- [plex.tv > Parental Controls](https://support.plex.tv/articles/parental-controls/)
+- 
 
 # Jellyfin on TrueNAS Scale
 
@@ -333,6 +339,8 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 - Related videos
 	- [youtube.com > Time to UNSUBSCRIBE from Disney+ > Jeff Geerling](https://www.youtube.com/watch?v=RZ8ijmy3qPo)
 	- [youtube.com > Media Ripping Explained](https://www.youtube.com/watch?v=GdQ5bClEgHg)
+	- [youtube.com > Better than Disney+: Jellyfin on my NAS](https://www.youtube.com/watch?v=4VkY1vTpCJY)
+	- 
 
 - Where to buy discs
 	- Movie stores - if they still exist around you
@@ -345,14 +353,39 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 	- [Shakil-Shahadat/awesome-piracy: A curated list of awesome warez and piracy links.](https://github.com/Shakil-Shahadat/awesome-piracy)
 	- [servarr.com > Prowlarr](https://wiki.servarr.com/prowlarr)
 	- [github.com > Sonarr/Sonarr: Smart PVR for newsgroup and bittorrent users.](https://github.com/Sonarr/Sonarr)
+	- [freshrss.org > FreshRSS](https://freshrss.org/index.html)
+	- [github.com > media-stack/README.md at main · navilg/media-stack](https://github.com/navilg/media-stack/blob/main/README.md)
+	- [medium.com > Self-host media stack (Jellyfin+Radarr+Sonarr+Jackett+Transmission)](https://medium.com/linux-shots/self-host-media-stack-jellyfin-radarr-sonarr-jackett-transmission-3e6a0adf716e)
+	- 
 	- VPN
 		- Use a good VPN
+	- Manually via your own desktop
+		- [qbittorrent.org > qBittorrent Official Website](https://www.qbittorrent.org/)
+		- 
+	- Automated in TrueNAS Scale
+		- [truenas.com > Guide: How to install qbittorrent (or any app) with vpn on Truenas Electric Eel - TrueNAS General](https://forums.truenas.com/t/guide-how-to-install-qbittorrent-or-any-app-with-vpn-on-truenas-electric-eel/12677)
+		- [truenas.com > TrueNAS Scale and Qbit torrent (CIFS share access) - TrueNAS General](https://forums.truenas.com/t/truenas-scale-and-qbit-torrent-cifs-share-access/6848)
+		- [truenas.com > Help: Setting up a VPN client on (TrueNAS-SCALE-23.10.2) for torrenting - TrueNAS General](https://forums.truenas.com/t/help-setting-up-a-vpn-client-on-truenas-scale-23-10-2-for-torrenting/1610)
+		- [linustechtips.com > Need help: torrenting with VPN in TrueNAS Scale](https://linustechtips.com/topic/1603061-need-help-torrenting-with-vpn-in-truenas-scale/)
+		- [reddit.com > How to setup qBittorrent with a VPN now that TrueCHARTS is dead?](https://www.reddit.com/r/truenas/comments/1e5vgvg/how_to_setup_qbittorrent_with_a_vpn_now_that/)
+		- [truenas.com > TrueNAS Scale: Setting up qBitTorrent (including finding the login password) - Apps and Virtualization](https://forums.truenas.com/t/truenas-scale-setting-up-qbittorrent-including-finding-the-login-password/544)
+		- 
+
+- Automating YouTube
+	- [reddit.com > Automatic YouTube Video downloads to Jellyfin](https://www.reddit.com/r/selfhosted/comments/10wy7wl/automatic_youtube_video_downloads_to_jellyfin/)
+	- [reddit.com > Is there a way to get jellyfin to automatically download youtibe videos from specific creators?](https://www.reddit.com/r/jellyfin/comments/wdhu36/is_there_a_way_to_get_jellyfin_to_automatically/)
+	- 
 
 - Avoiding Piracy
 	- You have 2 options that are somewhat more "legitimate"
 		- Ripping discs
 		- Record live TV
-- 
+			- [youtube.com > Build your own DVR with Plex Server!  #plex #homeserver #antenna](https://www.youtube.com/watch?app=desktop&v=0HxtccUFtm8)
+			- 
+
+- Jellyfin plugins
+	- [youtube.com > ULTIMATE Jellyfin Media Server Guide - Plugins and Themes! (PART 3)](https://www.youtube.com/watch?v=DivZcyoY6bs)
+	- 
 
 - Ripping discs
 	- [youtube.com > Time to UNSUBSCRIBE from Disney+ > Jeff Geerling](https://www.youtube.com/watch?v=RZ8ijmy3qPo)
@@ -362,3 +395,11 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 		- [makemkv.com > MakeMKV - Make MKV from Blu-ray and DVD](https://www.makemkv.com/)
 		- VLC
 	- [Amazon.com: Pioneer Electronics BDR-XS07UHD 6x Slot Loading CD DVD BluRay Portable USB 3.1 BD/DVD/CD Burner Supports Blu-Ray](https://www.amazon.com/Pioneer-Electronics-BDR-XS07UHD-Portable-Supports/dp/B00FGVPTHW) - $174.99
+
+## 5) Music, Books, and More
+
+- [f-droid.org > Subtracks | F-Droid - Free and Open Source Android App Repository](https://f-droid.org/en/packages/com.subtracks/)
+- [navidrome.org > Navidrome](https://www.navidrome.org/)
+- [lidarr.audio > Lidarr](https://lidarr.audio/)
+- [github.com > snuffyDev/Beatbump: Alternative YouTube Music frontend built with Svelte/SvelteKit 🎧](https://github.com/snuffyDev/Beatbump)
+- 
