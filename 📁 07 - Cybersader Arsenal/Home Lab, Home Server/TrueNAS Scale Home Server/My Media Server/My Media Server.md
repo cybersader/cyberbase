@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Saturday, April 5th 2025, 1:51 pm
+date modified: Saturday, April 5th 2025, 2:08 pm
 ---
 
 # Links
@@ -338,21 +338,27 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 	- Movie stores - if they still exist around you
 	- Amazon
 
-- 
+- Organization and renaming
+	- [filebot.net > FileBot](https://www.filebot.net/)
 
 - Torrenting workflow
 	- [Shakil-Shahadat/awesome-piracy: A curated list of awesome warez and piracy links.](https://github.com/Shakil-Shahadat/awesome-piracy)
+	- [servarr.com > Prowlarr](https://wiki.servarr.com/prowlarr)
+	- [github.com > Sonarr/Sonarr: Smart PVR for newsgroup and bittorrent users.](https://github.com/Sonarr/Sonarr)
 	- VPN
 		- Use a good VPN
 
 - Avoiding Piracy
-	- The answer is simple.  Rip Blueray discs.
+	- You have 2 options that are somewhat more "legitimate"
+		- Ripping discs
+		- Record live TV
+- 
 
 - Ripping discs
 	- [youtube.com > Time to UNSUBSCRIBE from Disney+ > Jeff Geerling](https://www.youtube.com/watch?v=RZ8ijmy3qPo)
 	- [youtube.com > Media Ripping Explained](https://www.youtube.com/watch?v=GdQ5bClEgHg)
 	- Required tools
-		- MakeMKV
+		- [handbrake.fr > HandBrake: Open Source Video Transcoder](https://handbrake.fr/)
+		- [makemkv.com > MakeMKV - Make MKV from Blu-ray and DVD](https://www.makemkv.com/)
 		- VLC
-		- HandBrake
 	- [Amazon.com: Pioneer Electronics BDR-XS07UHD 6x Slot Loading CD DVD BluRay Portable USB 3.1 BD/DVD/CD Burner Supports Blu-Ray](https://www.amazon.com/Pioneer-Electronics-BDR-XS07UHD-Portable-Supports/dp/B00FGVPTHW) - $174.99
