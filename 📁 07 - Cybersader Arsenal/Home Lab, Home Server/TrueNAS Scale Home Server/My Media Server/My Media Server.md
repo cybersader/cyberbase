@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Friday, April 4th 2025, 7:49 pm
+date modified: Saturday, April 5th 2025, 10:13 am
 ---
 
 # Links
@@ -325,3 +325,8 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 
 - Once deployed, go to the app and click the `Web UI` button to get redirect and attach it
 - If that doesn't work, you can add `/manage` to the end of the URL from the app settings for Plex in TrueNAS Apps
+
+## 4) Downloading Media
+
+> [!attention] Yes...this is where we get into a dicey moral grey area
+
