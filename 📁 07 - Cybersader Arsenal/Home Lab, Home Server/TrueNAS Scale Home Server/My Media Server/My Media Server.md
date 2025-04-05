@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Saturday, April 5th 2025, 2:43 pm
+date modified: Saturday, April 5th 2025, 3:18 pm
 ---
 
 # Links
@@ -359,8 +359,12 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 	- 
 	- VPN
 		- Use a good VPN
+		- [github.com > Chillsmeit/qBittorrent-ProtonVPN-Guide: Guide for setting up qBittorrent with ProtonVPN](https://github.com/Chillsmeit/qBittorrent-ProtonVPN-Guide)
+		- 
 	- Manually via your own desktop
 		- [qbittorrent.org > qBittorrent Official Website](https://www.qbittorrent.org/)
+		- [rapidseedbox.com > Best qBittorrent Settings [+ Port Forwarding]](https://www.rapidseedbox.com/blog/qbittorrent-settings#03)
+		- [reddit.com > Best settings for qbittorrent?](https://www.reddit.com/r/qBittorrent/comments/96s7v3/best_settings_for_qbittorrent/)
 		- 
 	- Automated in TrueNAS Scale
 		- [truenas.com > Guide: How to install qbittorrent (or any app) with vpn on Truenas Electric Eel - TrueNAS General](https://forums.truenas.com/t/guide-how-to-install-qbittorrent-or-any-app-with-vpn-on-truenas-electric-eel/12677)
@@ -369,7 +373,7 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 		- [linustechtips.com > Need help: torrenting with VPN in TrueNAS Scale](https://linustechtips.com/topic/1603061-need-help-torrenting-with-vpn-in-truenas-scale/)
 		- [reddit.com > How to setup qBittorrent with a VPN now that TrueCHARTS is dead?](https://www.reddit.com/r/truenas/comments/1e5vgvg/how_to_setup_qbittorrent_with_a_vpn_now_that/)
 		- [truenas.com > TrueNAS Scale: Setting up qBitTorrent (including finding the login password) - Apps and Virtualization](https://forums.truenas.com/t/truenas-scale-setting-up-qbittorrent-including-finding-the-login-password/544)
-		- 
+		- [github.com > Chillsmeit/qBittorrent-ProtonVPN-Guide: Guide for setting up qBittorrent with ProtonVPN](https://github.com/Chillsmeit/qBittorrent-ProtonVPN-Guide)
 
 - Automating YouTube
 	- [reddit.com > Automatic YouTube Video downloads to Jellyfin](https://www.reddit.com/r/selfhosted/comments/10wy7wl/automatic_youtube_video_downloads_to_jellyfin/)
@@ -402,4 +406,8 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 - [navidrome.org > Navidrome](https://www.navidrome.org/)
 - [lidarr.audio > Lidarr](https://lidarr.audio/)
 - [github.com > snuffyDev/Beatbump: Alternative YouTube Music frontend built with Svelte/SvelteKit 🎧](https://github.com/snuffyDev/Beatbump)
-- 
+
+> I do not **condone or encourage** downloading, sharing, seeding, or peering of **copyrighted material**.  
+> Such activities are **illegal** under international laws.
+> 
+> This project is intended for **educational purposes only**.
