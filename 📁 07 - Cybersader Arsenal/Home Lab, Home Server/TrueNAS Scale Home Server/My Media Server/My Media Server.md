@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Saturday, April 5th 2025, 3:18 pm
+date modified: Saturday, April 5th 2025, 5:23 pm
 ---
 
 # Links
@@ -400,7 +400,7 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 		- VLC
 	- [Amazon.com: Pioneer Electronics BDR-XS07UHD 6x Slot Loading CD DVD BluRay Portable USB 3.1 BD/DVD/CD Burner Supports Blu-Ray](https://www.amazon.com/Pioneer-Electronics-BDR-XS07UHD-Portable-Supports/dp/B00FGVPTHW) - $174.99
 
-## 5) Music, Books, and More
+### Music, Books, and More
 
 - [f-droid.org > Subtracks | F-Droid - Free and Open Source Android App Repository](https://f-droid.org/en/packages/com.subtracks/)
 - [navidrome.org > Navidrome](https://www.navidrome.org/)
@@ -411,3 +411,18 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 > Such activities are **illegal** under international laws.
 > 
 > This project is intended for **educational purposes only**.
+
+## 5) Transcoding Acceleration w/GPU
+
+- You can run `lspci | grep -i vga` in the TrueNAS Scale Shell to see if it has a GPU and what kind.
+	- I had Intel which used Quicksync
+- Enable GPU passthrough on the Jellyfin app (bottom of the settings for the app)
+- Jellyfin > Admin > Playback > Transcoding > Hardware acceleration
+	- Select the applicable type of acceleration
+
+## 6) Networking and NPM (Nginx Proxy Manager)
+
+- Got my DNS set up
+- Made entries in Nginx proxy manager and used some additional settings outlined in the below link
+	- [jellyfin.org > Nginx | Jellyfin](https://jellyfin.org/docs/general/networking/nginx/)
+- 
