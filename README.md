@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                    | Last modified            |
-| --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md\|My Media Server]]      | Sat - 4/5/2025, 12:08 PM |
-| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                | Fri - 4/4/2025, 7:46 PM  |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md\|Home Lab, Home Server]]                                    | Fri - 4/4/2025, 7:46 PM  |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md\|TrueNAS Scale Home Server]]  | Fri - 4/4/2025, 7:46 PM  |
-| [[🕸️ UNSTRUCTURED/Home-Ec 2025/Home-Ec 2025.md\|Home-Ec 2025]]                                                                         | Fri - 4/4/2025, 9:41 AM  |
-| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                              | Thu - 4/3/2025, 2:21 PM  |
-| [[📁 12 - Content Creation/Prepping Devices for Demos/Prepping Devices for Demos.md\|Prepping Devices for Demos]]                       | Thu - 4/3/2025, 1:49 PM  |
-| [[📁 12 - Content Creation/📁 12 - Content Creation.md\|📁 12 - Content Creation]]                                                      | Thu - 4/3/2025, 1:21 PM  |
-| [[📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Drawing 2023-12-13 14.04.56.excalidraw.md\|Drawing 2023-12-13 14.04.56.excalidraw]] | Thu - 4/3/2025, 10:40 AM |
-| [[📁 98 - ARCHIVE/📁 98 - ARCHIVE.md\|📁 98 - ARCHIVE]]                                                                                 | Thu - 4/3/2025, 10:40 AM |
+| File                                                                                                                                              | Last modified           |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md\|My Media Server]]                | Sat - 4/5/2025, 5:24 PM |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                    | Sat - 4/5/2025, 2:55 PM |
+| [[⬇️ Clippings/Tech/Castopod/Castopod.md\|Castopod]]                                                                                              | Sat - 4/5/2025, 2:55 PM |
+| [[⬇️ Clippings/Tech/Invidious/Invidious.md\|Invidious]]                                                                                           | Sat - 4/5/2025, 2:54 PM |
+| [[⬇️ Clippings/Tech/Open WebUI/Open WebUI.md\|Open WebUI]]                                                                                        | Sat - 4/5/2025, 2:52 PM |
+| [[⬇️ Clippings/Tech/n8n/n8n.md\|n8n]]                                                                                                             | Sat - 4/5/2025, 2:51 PM |
+| [[⬇️ Clippings/Tech/Metube - self-hosted youtube downloader/Metube - self-hosted youtube downloader.md\|Metube - self-hosted youtube downloader]] | Sat - 4/5/2025, 2:49 PM |
+| [[⬇️ Clippings/Tech/Scrypted/Scrypted.md\|Scrypted]]                                                                                              | Sat - 4/5/2025, 2:45 PM |
+| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                          | Fri - 4/4/2025, 7:46 PM |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md\|Home Lab, Home Server]]                                              | Fri - 4/4/2025, 7:46 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
