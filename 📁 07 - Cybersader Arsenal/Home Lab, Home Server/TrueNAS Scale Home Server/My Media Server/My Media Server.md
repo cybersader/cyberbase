@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Saturday, April 5th 2025, 10:13 am
+date modified: Saturday, April 5th 2025, 1:51 pm
 ---
 
 # Links
@@ -340,9 +340,10 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 
 - 
 
-- Torrenting
+- Torrenting workflow
 	- [Shakil-Shahadat/awesome-piracy: A curated list of awesome warez and piracy links.](https://github.com/Shakil-Shahadat/awesome-piracy)
-	- .
+	- VPN
+		- Use a good VPN
 
 - Avoiding Piracy
 	- The answer is simple.  Rip Blueray discs.
@@ -354,4 +355,4 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 		- MakeMKV
 		- VLC
 		- HandBrake
-	- 
+	- [Amazon.com: Pioneer Electronics BDR-XS07UHD 6x Slot Loading CD DVD BluRay Portable USB 3.1 BD/DVD/CD Burner Supports Blu-Ray](https://www.amazon.com/Pioneer-Electronics-BDR-XS07UHD-Portable-Supports/dp/B00FGVPTHW) - $174.99
