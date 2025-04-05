@@ -356,7 +356,7 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 	- [freshrss.org > FreshRSS](https://freshrss.org/index.html)
 	- [github.com > media-stack/README.md at main · navilg/media-stack](https://github.com/navilg/media-stack/blob/main/README.md)
 	- [medium.com > Self-host media stack (Jellyfin+Radarr+Sonarr+Jackett+Transmission)](https://medium.com/linux-shots/self-host-media-stack-jellyfin-radarr-sonarr-jackett-transmission-3e6a0adf716e)
-	- 
+	- https://github.com/qbittorrent/search-plugins/wiki/Unofficial-search-plugins
 	- VPN
 		- Use a good VPN
 		- [github.com > Chillsmeit/qBittorrent-ProtonVPN-Guide: Guide for setting up qBittorrent with ProtonVPN](https://github.com/Chillsmeit/qBittorrent-ProtonVPN-Guide)
