@@ -326,7 +326,32 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 - Once deployed, go to the app and click the `Web UI` button to get redirect and attach it
 - If that doesn't work, you can add `/manage` to the end of the URL from the app settings for Plex in TrueNAS Apps
 
-## 4) Downloading Media
+## 4) Media Curation Workflow
 
 > [!attention] Yes...this is where we get into a dicey moral grey area
 
+- Related videos
+	- [youtube.com > Time to UNSUBSCRIBE from Disney+ > Jeff Geerling](https://www.youtube.com/watch?v=RZ8ijmy3qPo)
+	- [youtube.com > Media Ripping Explained](https://www.youtube.com/watch?v=GdQ5bClEgHg)
+
+- Where to buy discs
+	- Movie stores - if they still exist around you
+	- Amazon
+
+- 
+
+- Torrenting
+	- [Shakil-Shahadat/awesome-piracy: A curated list of awesome warez and piracy links.](https://github.com/Shakil-Shahadat/awesome-piracy)
+	- .
+
+- Avoiding Piracy
+	- The answer is simple.  Rip Blueray discs.
+
+- Ripping discs
+	- [youtube.com > Time to UNSUBSCRIBE from Disney+ > Jeff Geerling](https://www.youtube.com/watch?v=RZ8ijmy3qPo)
+	- [youtube.com > Media Ripping Explained](https://www.youtube.com/watch?v=GdQ5bClEgHg)
+	- Required tools
+		- MakeMKV
+		- VLC
+		- HandBrake
+	- 
