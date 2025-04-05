@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Saturday, April 5th 2025, 5:23 pm
+date modified: Saturday, April 5th 2025, 7:00 pm
 ---
 
 # Links
@@ -425,4 +425,12 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 - Got my DNS set up
 - Made entries in Nginx proxy manager and used some additional settings outlined in the below link
 	- [jellyfin.org > Nginx | Jellyfin](https://jellyfin.org/docs/general/networking/nginx/)
-- 
+- Had to use HTTP with nginx proxy manager
+
+## 7) Custom Plugins
+
+- [jellyfin.org > Plugins | Jellyfin](https://jellyfin.org/docs/general/server/plugins/)
+
+- To install:
+	- 
+

@@ -5,6 +5,14 @@
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
     },
     {
+      "basename": "Desktop (mostly Windows)",
+      "path": "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Desktop (mostly Windows).md"
+    },
+    {
+      "basename": "Content Curation",
+      "path": "📁 12 - Content Creation/Content Curation/Content Curation.md"
+    },
+    {
       "basename": "Castopod",
       "path": "⬇️ Clippings/Tech/Castopod/Castopod.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Dataview",
       "path": "📁 10 - My Obsidian Stack/Dataview/Dataview.md"
-    },
-    {
-      "basename": "Tag Selection Workflow Options",
-      "path": "⬇️ Clippings/ChatGPT/Tag Selection Workflow Options/Tag Selection Workflow Options.md"
-    },
-    {
-      "basename": "QuickAdd Tag Selector",
-      "path": "🕸️ UNSTRUCTURED/QuickAdd Tag Selector/QuickAdd Tag Selector.md"
     }
   ],
   "omittedPaths": [],
