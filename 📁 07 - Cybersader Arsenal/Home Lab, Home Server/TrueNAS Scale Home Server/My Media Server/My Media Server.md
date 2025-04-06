@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Sunday, April 6th 2025, 11:56 am
+date modified: Sunday, April 6th 2025, 12:11 pm
 ---
 
 # Links
@@ -452,3 +452,17 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 		- `{ jellyfin.id }`
 	- [filebot.net > Format Expressions](https://www.filebot.net/naming.html)
 		- Right click the file names to changes the format expression
+
+## 9) Testing "arr" Locally
+
+- Download Radarr or Sonarr for something like Windows
+	- https://wiki.servarr.com/radarr/installation/windows
+	- https://wiki.servarr.com/sonarr/installation/windows
+- Test it locally
+- Check the option to not start automatically
+- In your qbittorrent client:
+	- Go to **Tools > Options > Web UI**.
+	- Enable the Web UI by checking **"Enable Web User Interface (Remote control)"**.
+	- Set a port (default is 8080) and create a username and password for authentication.
+	- You could do Bypass authentication for clients on localhost if you want
+- 
