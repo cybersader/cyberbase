@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Sunday, April 6th 2025, 12:55 pm
+date modified: Sunday, April 6th 2025, 1:39 pm
 ---
 
 # Links
@@ -472,4 +472,9 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 - Change the renaming based on trash guides recommendations
 	- https://trash-guides.info/Radarr/Radarr-recommended-naming-scheme/#optional-jellyfin
 - Sync app indexers to sync Prowlarr to the other apps
+
+## 10) Using RSS Feeds
+
+- You can do this from your bittorrent client
+- Put the RSS feed URL in and it will allow you to add things as they come
 - 
