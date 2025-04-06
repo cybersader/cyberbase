@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Saturday, April 5th 2025, 7:20 pm
+date modified: Sunday, April 6th 2025, 11:56 am
 ---
 
 # Links
@@ -430,18 +430,25 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 ## 7) Custom Plugins
 
 - [jellyfin.org > Plugins | Jellyfin](https://jellyfin.org/docs/general/server/plugins/)
+- [github.com > awesome-jellyfin/awesome-jellyfin: A Collection of Awesome Jellyfin Plugins](https://github.com/awesome-jellyfin/awesome-jellyfin)
 
 - Go to Plugins > Catalog
 - Install
 
+- Installing ones not in the catalog
+	- Click the ⚙️ (gear) button next to "Catalog"
+	- Click the "+" next to "Repositories"
+	- Look through a plugins list and find the `manifest.json` link
+	- Copy it
+	- Past for the repo link in Jellyfin
+	- Add it
+
 ## 8) Renaming Shows
 
-- 
-- Install the "AniDB" plugin to Jellyfin
+- Install the "AniDB", TvDB, and other DB plugins to Jellyfin
 	- [Custom Plugins (above)](📁%2007%20-%20Cybersader%20Arsenal/Home%20Lab,%20Home%20Server/TrueNAS%20Scale%20Home%20Server/My%20Media%20Server/My%20Media%20Server.md#7%20Custom%20Plugins)
-	- ![](_attachments/file-20250405191857235.png)
 - Using naming schemes from FileBot
 	- [filebot.net > Plex / Kodi / Emby / Jellyfin Naming Schemes - FileBot](https://www.filebot.net/forums/viewtopic.php?t=4116#jellyfin)
 		- `{ jellyfin.id }`
 	- [filebot.net > Format Expressions](https://www.filebot.net/naming.html)
-		- 
+		- Right click the file names to changes the format expression
