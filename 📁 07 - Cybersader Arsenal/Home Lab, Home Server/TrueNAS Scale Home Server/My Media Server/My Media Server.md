@@ -471,4 +471,5 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 - You can hook up Radarr and Sonarr to Prowlarr via their API keys into the "Apps" settings for Prowlarr
 - Change the renaming based on trash guides recommendations
 	- https://trash-guides.info/Radarr/Radarr-recommended-naming-scheme/#optional-jellyfin
+- Sync app indexers to sync Prowlarr to the other apps
 - 
