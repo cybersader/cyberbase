@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Sunday, April 6th 2025, 12:11 pm
+date modified: Sunday, April 6th 2025, 12:55 pm
 ---
 
 # Links
@@ -465,4 +465,10 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 	- Enable the Web UI by checking **"Enable Web User Interface (Remote control)"**.
 	- Set a port (default is 8080) and create a username and password for authentication.
 	- You could do Bypass authentication for clients on localhost if you want
+- To be safe
+	- make sure they don't autorun off VPN
+	- use Portmaster or another app firewall to block connections or limit them
+- You can hook up Radarr and Sonarr to Prowlarr via their API keys into the "Apps" settings for Prowlarr
+- Change the renaming based on trash guides recommendations
+	- https://trash-guides.info/Radarr/Radarr-recommended-naming-scheme/#optional-jellyfin
 - 
