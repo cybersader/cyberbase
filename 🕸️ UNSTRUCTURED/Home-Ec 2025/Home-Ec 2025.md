@@ -4,7 +4,7 @@ aliases: []
 publish: true
 permalink: homeec25
 date created: Thursday, April 3rd 2025, 2:21 pm
-date modified: Friday, April 4th 2025, 9:41 am
+date modified: Monday, April 7th 2025, 5:48 pm
 ---
 
 # Open Lab Agenda
@@ -13,8 +13,17 @@ date modified: Friday, April 4th 2025, 9:41 am
 	- [haveibeenpwned.com > Check if your email has been compromised in a data breach](https://haveibeenpwned.com/)
 	- [npdbreach.com > National Public Data (NPD) Breach Check & Search](https://npdbreach.com/)
 2. Password manager setup (if possible)
-	- [Bitwarden: Password Manager](https://get.bitwarden.com/)
-	- [proton.me > Proton Pass: Password manager download](https://proton.me/pass/download)
+	- Download Bitwarden Password Manager -> https://get.bitwarden.com/
+	- Learning center link (guides and how-to's)
+		- https://bitwarden.com/help/learning-center/
+	- Set up biometric unlock (thumbprint or face), so it's easier to login
+		- https://bitwarden.com/help/biometrics/#enable-unlock-with-biometrics
+	- You should have to only memorize 2 passwords now:
+		- Email login
+		- Bitwarden login
+	- Download, fill-out, and print the emergency readiness kit
+		- Store this somewhere safe and/or fireproof
+		- https://bitwarden.com/resources/bitwarden-security-readiness-kit/
 3. Get MFA set up on an important account - 2 step verification
 	- Accounts to do it for:
 		- Email account
