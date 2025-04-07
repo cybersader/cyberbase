@@ -4,7 +4,7 @@ aliases: []
 publish: true
 permalink: homeec25
 date created: Thursday, April 3rd 2025, 2:21 pm
-date modified: Monday, April 7th 2025, 5:48 pm
+date modified: Monday, April 7th 2025, 7:21 pm
 ---
 
 # Open Lab Agenda
@@ -19,7 +19,7 @@ date modified: Monday, April 7th 2025, 5:48 pm
 	- Set up biometric unlock (thumbprint or face), so it's easier to login
 		- https://bitwarden.com/help/biometrics/#enable-unlock-with-biometrics
 	- You should have to only memorize 2 passwords now:
-		- Email login
+		- Email login - if you are using for 2-step verification
 		- Bitwarden login
 	- Download, fill-out, and print the emergency readiness kit
 		- Store this somewhere safe and/or fireproof
@@ -70,7 +70,7 @@ If you want your data removed from these websites then you may do so, but it's n
 > - Only need ONE good password
 > - Your passwords autofill into login pages
 
-> [!warning] Reuse of passwords is incredibly dangerous.  If one gets breached, then they all do.
+> [!warning] Reuse of passwords is incredibly dangerous.  If one gets breached, then they all do.  If you've been reusing passwords and not using a password manager, then that's another reason you should start using one.
 
 - Both of the below options are good:
 	- [Bitwarden: Password Manager](https://get.bitwarden.com/)
@@ -91,6 +91,13 @@ If you want your data removed from these websites then you may do so, but it's n
 ### Using Bitwarden for Passwords
 
 - [bitwarden.com > Bitwarden Learning Center](https://bitwarden.com/help/learning-center/)
+
+- You should have to only memorize 2 passwords now:
+	- Email login - if you are using for 2-step verification
+	- Bitwarden login
+- Download, fill-out, and print the emergency readiness kit
+	- Store this somewhere safe and/or fireproof
+	- https://bitwarden.com/resources/bitwarden-security-readiness-kit/
 
 > [!info] Random tips for Bitwarden:
 > - Set up an "[organization](https://bitwarden.com/help/getting-started-organizations/)" in the app so you and your family can have shared passwords for things like streaming services, groceries, etc.
