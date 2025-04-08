@@ -5,6 +5,26 @@
       "path": "🕸️ UNSTRUCTURED/Home-Ec 2025/Home-Ec 2025.md"
     },
     {
+      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
+      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
+    },
+    {
+      "basename": "Personal Privacy & Identity Handling",
+      "path": "📁 07 - Cybersader Arsenal/Personal Privacy & Identity Handling/Personal Privacy & Identity Handling.md"
+    },
+    {
+      "basename": "Personal Privacy Tools",
+      "path": "📁 07 - Cybersader Arsenal/Personal Privacy Tools/Personal Privacy Tools.md"
+    },
+    {
+      "basename": "📁 07 - Cybersader Arsenal",
+      "path": "📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md"
+    },
+    {
+      "basename": "Extreme Privacy",
+      "path": "📁 07 - Cybersader Arsenal/Extreme Privacy/Extreme Privacy.md"
+    },
+    {
       "basename": "Awesome Anime",
       "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
     },
@@ -179,26 +199,6 @@
     {
       "basename": "📁 54 - Obsidian Vault Organization",
       "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
-    },
-    {
-      "basename": "2025-03-23-Sunday",
-      "path": "🕸️ Daily Notes/2025/03/2025-03-23-Sunday/2025-03-23-Sunday.md"
-    },
-    {
-      "basename": "Dynamic Folders & Tags",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
-    },
-    {
-      "basename": "Plugin Development",
-      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
-    },
-    {
-      "basename": "Divide & Conquer Plugin Testing",
-      "path": "🕸️ UNSTRUCTURED/Divide & Conquer Plugin Testing/Divide & Conquer Plugin Testing.md"
-    },
-    {
-      "basename": "Obsidian Plugin Development Quickstart",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Plugin Development Quickstart/Obsidian Plugin Development Quickstart.md"
     }
   ],
   "omittedPaths": [],
