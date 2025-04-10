@@ -4,7 +4,7 @@ aliases: []
 tags: ["#cybersecurity", "#privacy", "#cyber-resilience", "#guide"]
 publish: true
 date created: Saturday, September 7th 2024, 9:37 pm
-date modified: Sunday, December 8th 2024, 6:33 pm
+date modified: Monday, April 7th 2025, 8:17 pm
 ---
 
  
@@ -24,7 +24,7 @@ TOTAL WORK IN PROGRESS HERE - just jotted down randomness for now
 - [Operation Privacy](https://www.operationprivacy.com/) 
 - [Resources | Techlore - Digital Rights for All](https://www.techlore.tech/resources#webhosting-vps)
 - [Tips to Take Control of Your Tech Use - Center for Humane Technology](https://www.humanetech.com/take-control)
-- 
+- https://www.privacyguides.org/en/
 
 # Privacy & Security Workflow Examples
 
