@@ -14,7 +14,7 @@ date modified: Saturday, February 15th 2025, 3:04 pm
 - **[[Awesome Streaming]]**
 - **[[Camera Lenses]]**
 - **[[Content Analytics]]**
-- [[Content Analytics & Recon]]
+- **[[Content Analytics & Recon]]**
 - **[[Content Curation]]**
 - **[[Cybersader Content]]**
 	- **[[AI Content Workflows]]**
@@ -26,6 +26,7 @@ date modified: Saturday, February 15th 2025, 3:04 pm
 - **[[Prepping Devices for Demos]]**
 - **[[Presentation Tools & Tech]]**
 - **[[Screen Recording, Streaming Stack]]**
+- **[[Stock Resources]]**
 - **[[Sync Video and Audio]]**
 - **[[Webcams]]**
 - **[[YouTube Transcription]]**

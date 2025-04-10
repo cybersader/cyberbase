@@ -12,8 +12,10 @@
 	- **[[GitHub Gitless Sync]]**
 	- **[[Manual Sorting]]**
 	- **[[Self-hosted LiveSync]]**
+	- **[[Simple Archiver]]**
 - **[[Reddit]]**
 - **[[Tech]]**
+	- **[[Actions For Obsidian]]**
 	- **[[Castopod]]**
 	- **[[Chatwoot]]**
 	- **[[Cryptee]]**

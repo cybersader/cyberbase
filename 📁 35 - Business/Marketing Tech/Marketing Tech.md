@@ -9,7 +9,7 @@ date modified: Monday, February 3rd 2025, 8:56 pm
 
 [⬇️ New Tools](../../⬇%20INBOX,%20DROPZONE/⬇️%20New%20Tools/⬇️%20New%20Tools.md)
 [📁 12 - Content Creation](../../📁%2012%20-%20Content%20Creation/📁%2012%20-%20Content%20Creation.md)
-[Content Analytics & Recon](../../📁%2012%20-%20Content%20Creation/Content%20Analytics%20&%20Recon.md)
+[Content Analytics & Recon](../../📁%2012%20-%20Content%20Creation/Content%20Analytics%20&%20Recon/Content%20Analytics%20&%20Recon.md)
 
 # DROP
 
