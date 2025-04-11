@@ -22,5 +22,6 @@ date modified: Tuesday, November 12th 2024, 10:06 pm
 - **[[Parenthood]]**
 	- **[[Parenthood Discernment and Prep]]**
 - **[[Responsibilities & Coldening]]**
+- **[[Role of the Laity]]**
 
 %% End Waypoint %%
