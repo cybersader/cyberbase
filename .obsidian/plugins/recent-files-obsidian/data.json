@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Gruv",
-      "path": "⬇️ Clippings/Websites/Gruv/Gruv.md"
-    },
-    {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
+    },
+    {
+      "basename": "Awesome Anime",
+      "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
+    },
+    {
+      "basename": "📁 03 - Curations, Stacks",
+      "path": "📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md"
+    },
+    {
+      "basename": "Gruv",
+      "path": "⬇️ Clippings/Websites/Gruv/Gruv.md"
     },
     {
       "basename": "Personal Privacy & Identity Handling",
@@ -83,10 +91,6 @@
     {
       "basename": "Extreme Privacy",
       "path": "📁 07 - Cybersader Arsenal/Extreme Privacy/Extreme Privacy.md"
-    },
-    {
-      "basename": "Awesome Anime",
-      "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
     },
     {
       "basename": "Display Android on Windows",
@@ -195,10 +199,6 @@
     {
       "basename": "GitHub Gitless Sync",
       "path": "⬇️ Clippings/Obsidian Plugins/GitHub Gitless Sync/GitHub Gitless Sync.md"
-    },
-    {
-      "basename": "Self-hosted LiveSync",
-      "path": "⬇️ Clippings/Obsidian Plugins/Self-hosted LiveSync/Self-hosted LiveSync.md"
     }
   ],
   "omittedPaths": [],

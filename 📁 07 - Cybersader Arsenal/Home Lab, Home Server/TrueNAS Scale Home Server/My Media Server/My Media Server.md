@@ -4,11 +4,12 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Sunday, April 6th 2025, 1:39 pm
+date modified: Monday, April 14th 2025, 11:05 am
 ---
 
 # Links
 
+- [r/youtubedl Wiki: yt-dlp GUI Guide](https://www.reddit.com/r/youtubedl/wiki/info-guis/)
 - [3 Ways to Start Your Own Plex Server - YouTube](https://www.youtube.com/watch?v=XKDSld-CrHU)
 - [Important information for users running Plex Media Server on Nvidia Shield devices - Announcements - Plex Forum](https://forums.plex.tv/t/important-information-for-users-running-plex-media-server-on-nvidia-shield-devices/883484 "Important information for users running Plex Media Server on Nvidia Shield devices - Announcements - Plex Forum")
 - [Prowlarr](https://prowlarr.com/ "Prowlarr")
