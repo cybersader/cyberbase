@@ -15,4 +15,4 @@ date modified: Wednesday, April 16th 2025, 11:44 am
 	- [Azure-Sentinel/Solutions/Microsoft Entra ID/Analytic Rules/SigninPasswordSpray.yaml at master · Azure/Azure-Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID/Analytic%20Rules/SigninPasswordSpray.yaml?utm_source=chatgpt.com)
 
 - Sysmon is way better than Windows itself
-- 
+

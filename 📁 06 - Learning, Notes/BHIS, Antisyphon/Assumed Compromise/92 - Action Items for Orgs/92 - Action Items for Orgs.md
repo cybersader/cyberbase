@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Wednesday, April 16th 2025, 10:32 am
-date modified: Wednesday, April 16th 2025, 11:51 am
+date modified: Wednesday, April 16th 2025, 1:47 pm
 ---
 
 - Talk about cyber deception with HR for awareness
@@ -18,4 +18,11 @@ date modified: Wednesday, April 16th 2025, 11:51 am
 	- Browser abuse, DP API, WPAD
 - Clearing event logs is common - do you have detections for it?
 - Does our SIEM cover what Sysmon does?
+- lnk file exploit with file shares
+	- The defense for this is not having SMB outbound to the internet
+	- FSRM is a great defense for this too
+- Shrink your egress aperture - ports
+- Review DPI capabilities on firewalls
+- PowerAutomate - used for exfil by hackers
+	- Hackers are good at getting around DLP by avoiding UI interactions
 - 
