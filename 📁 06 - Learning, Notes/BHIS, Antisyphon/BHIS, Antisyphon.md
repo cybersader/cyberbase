@@ -12,6 +12,7 @@ tags: [BHIS, AntisyphonTraining]
 %% Begin Landmark %%
 - **[[Active Defense & Cyber Deception]]**
 - **[[Adversarial Emulation Extravaganza w Kent & Jordan]]**
+- **[[Assumed Compromise]]**
 - **[[DNS Deep Diving - Serena DiPenti]]**
 - **[[Five Things We Will Ignore 2025]]**
 - **[[Getting Started in Security with BHIS and MITRE ATT&CK]]**

@@ -1,8 +1,18 @@
+---
+aliases: 
+tags: 
+publish: true
+permalink:
+date created: Saturday, April 12th 2025, 2:36 pm
+date modified: Wednesday, April 16th 2025, 8:11 am
+---
 
 # Links
+
 - https://www.youtube.com/watch?v=q_RaGxkcHeE
 
 # Notes
+
 - Venom vs Poison - poison is moral and better
 - One guy had a website that would have Clippy pop up and send them to OWASP to show them how to actually hack.
 - Annoyance
@@ -15,6 +25,7 @@
     - This makes vulnerability profiling hard for attackers
 
 ## Setting up Cyber Deception Technology SAFELY and/or AT WORK
+
 - Direct connections are a big no-no
     - If you do, then use proxies or chains of them
     - You are dealing with drug dealers, mafia, and tough guys
