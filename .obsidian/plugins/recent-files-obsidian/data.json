@@ -1,16 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "91 - Q&A",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/91 - Q&A/91 - Q&A.md"
+    },
+    {
+      "basename": "BHIS, Antisyphon",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/BHIS, Antisyphon.md"
+    },
+    {
+      "basename": "10 - Azure & AD Environment Takeaways",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/10 - Azure & AD Environment Takeaways/10 - Azure & AD Environment Takeaways.md"
+    },
+    {
       "basename": "20 - Cyber Deception",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/20 - Cyber Deception/20 - Cyber Deception.md"
+    },
+    {
+      "basename": "30 - Initial Recon & Checks",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/30 - Initial Recon & Checks/30 - Initial Recon & Checks.md"
+    },
+    {
+      "basename": "31 - Sentinel & Sysmon",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/31 - Sentinel & Sysmon/31 - Sentinel & Sysmon.md"
+    },
+    {
+      "basename": "90 - Key Takeaways",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/90 - Key Takeaways/90 - Key Takeaways.md"
     },
     {
       "basename": "92 - Action Items for Orgs",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/92 - Action Items for Orgs/92 - Action Items for Orgs.md"
     },
     {
-      "basename": "90 - Key Takeaways",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/90 - Key Takeaways/90 - Key Takeaways.md"
+      "basename": "Assumed Compromise",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/Assumed Compromise.md"
     },
     {
       "basename": "PowerShell for InfoSec",
@@ -35,18 +59,6 @@
     {
       "basename": "Honey Accounts in Windows AD",
       "path": "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Honey Accounts in Windows AD.md"
-    },
-    {
-      "basename": "Assumed Compromise",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/Assumed Compromise.md"
-    },
-    {
-      "basename": "10 - Azure & AD Environment Takeaways",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/10 - Azure & AD Environment Takeaways/10 - Azure & AD Environment Takeaways.md"
-    },
-    {
-      "basename": "91 - Q&A",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/91 - Q&A/91 - Q&A.md"
     },
     {
       "basename": "Copy & Paste Nuance - CLI & Virtualization",
@@ -187,18 +199,6 @@
     {
       "basename": "Open WebUI",
       "path": "⬇️ Clippings/Tech/Open WebUI/Open WebUI.md"
-    },
-    {
-      "basename": "Prepping Devices for Demos",
-      "path": "📁 12 - Content Creation/Prepping Devices for Demos/Prepping Devices for Demos.md"
-    },
-    {
-      "basename": "n8n",
-      "path": "⬇️ Clippings/Tech/n8n/n8n.md"
-    },
-    {
-      "basename": "Metube - self-hosted youtube downloader",
-      "path": "⬇️ Clippings/Tech/Metube - self-hosted youtube downloader/Metube - self-hosted youtube downloader.md"
     }
   ],
   "omittedPaths": [],

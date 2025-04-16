@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Wednesday, April 16th 2025, 8:44 am
-date modified: Wednesday, April 16th 2025, 10:53 am
+date modified: Wednesday, April 16th 2025, 11:12 am
 ---
 
 # 1) Free One-Click AD Testing Environment in Azure
@@ -33,7 +33,10 @@ date modified: Wednesday, April 16th 2025, 10:53 am
 # 3) Cyber Deception
 
 - Deception is awesome but you have to keep track, so that you and others know what's deception during audits (i.e. auditors might see vulnerable fake systems and assume you have bad security practices)
-- 
+
+# 4) Defenses from Lab
+
+- [92 - Action Items for Orgs](../92%20-%20Action%20Items%20for%20Orgs/92%20-%20Action%20Items%20for%20Orgs.md)
 
 # 99) Random
 
