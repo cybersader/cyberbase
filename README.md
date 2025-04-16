@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Mon, Apr 7, 2025 - [[Home-Ec 2025]]
+> Tue, Apr 15, 2025 - [[My Media Server]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -102,16 +102,16 @@ SORT file.mtime DESC LIMIT 10
 
 | File                                                                                                                                   | Last modified            |
 | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[🕸️ UNSTRUCTURED/Home-Ec 2025/Home-Ec 2025.md\|Home-Ec 2025]]                                                                        | Mon - 4/7/2025, 8:17 PM  |
-| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                             | Mon - 4/7/2025, 7:48 PM  |
-| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                          | Mon - 4/7/2025, 9:45 AM  |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md\|My Media Server]]     | Sun - 4/6/2025, 1:39 PM  |
-| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                               | Sun - 4/6/2025, 11:47 AM |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md\|Home Lab, Home Server]]                                   | Sun - 4/6/2025, 11:47 AM |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md\|TrueNAS Scale Home Server]] | Sun - 4/6/2025, 11:47 AM |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                         | Sat - 4/5/2025, 2:55 PM  |
-| [[⬇️ Clippings/Tech/Castopod/Castopod.md\|Castopod]]                                                                                   | Sat - 4/5/2025, 2:55 PM  |
-| [[⬇️ Clippings/Tech/Invidious/Invidious.md\|Invidious]]                                                                                | Sat - 4/5/2025, 2:54 PM  |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md\|My Media Server]]     | Tue - 4/15/2025, 9:39 PM |
+| [[⬇️ Clippings/Websites/Gruv/Gruv.md\|Gruv]]                                                                                           | Sun - 4/13/2025, 5:46 PM |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                         | Sun - 4/13/2025, 5:46 PM |
+| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                               | Sun - 4/13/2025, 5:44 PM |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md\|Home Lab, Home Server]]                                   | Sun - 4/13/2025, 5:44 PM |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md\|TrueNAS Scale Home Server]] | Sun - 4/13/2025, 5:44 PM |
+| [[_NoteCompanion/Templates/youtube_video.md\|youtube_video]]                                                                           | Sun - 4/13/2025, 5:01 PM |
+| [[_NoteCompanion/Templates/research_paper.md\|research_paper]]                                                                         | Sun - 4/13/2025, 5:01 PM |
+| [[_NoteCompanion/Templates/enhance.md\|enhance]]                                                                                       | Sun - 4/13/2025, 5:01 PM |
+| [[_NoteCompanion/Templates/meeting_note.md\|meeting_note]]                                                                             | Sun - 4/13/2025, 5:01 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 

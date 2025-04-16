@@ -12,6 +12,8 @@ date modified: Tuesday, April 15th 2025, 9:36 pm
 - [handbrake.fr > HandBrake: Open Source Video Transcoder](https://handbrake.fr/)
 - [github.com > HaveAGitGat/Tdarr: Tdarr - Distributed transcode automation using FFmpeg/HandBrake + Audio/Video library analytics + video health checking (Windows](https://github.com/HaveAGitGat/Tdarr)
 - [github.com > Media Workflow for Jellyfin](https://gist.github.com/Tuetenk0pp/516dce7aa4951e029ee64403191ac6f2)
+- [awesome-jellyfin/awesome-jellyfin: A Collection of Awesome Jellyfin Plugins, Themes, Guides and More!](https://github.com/awesome-jellyfin/awesome-jellyfin)
+- 
 - YouTube
 	- [r/youtubedl Wiki: yt-dlp GUI Guide](https://www.reddit.com/r/youtubedl/wiki/info-guis/)
 	- [ankenyr/jellyfin-youtube-metadata-plugin: Youtube Metadata Plugin for Jellyfin](https://github.com/ankenyr/jellyfin-youtube-metadata-plugin)
