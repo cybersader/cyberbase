@@ -17,6 +17,7 @@ publish: true
 - **[[BCDR, DFIR]]**
 - **[[Company Security Strategy from Zero]]**
 - **[[Content Link Downloader]]**
+- **[[Copy & Paste Nuance - CLI & Virtualization]]**
 - **[[Financial Cyber]]**
 - **[[From Other Wiki]]**
 - **[[Go Pro as a Webcam]]**

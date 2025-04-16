@@ -1,8 +1,0 @@
----
-aliases: 
-tags: 
-publish: true
-permalink:
-date created: Wednesday, April 16th 2025, 8:44 am
-date modified: Wednesday, April 16th 2025, 8:44 am
----

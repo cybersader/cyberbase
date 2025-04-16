@@ -93,7 +93,7 @@
       "name": "🔎 NEW FOLDER NOTE",
       "type": "Template",
       "command": false,
-      "templatePath": "Templates/🕸️ NEW NOTE.md",
+      "templatePath": "Templates/New Note Blank.md",
       "fileNameFormat": {
         "enabled": true,
         "format": "{{name}}/{{name}}"
