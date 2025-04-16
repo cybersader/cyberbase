@@ -28,4 +28,6 @@ date modified: Wednesday, April 16th 2025, 1:47 pm
 - Review 3rd party printer management - toner and paper and such
 	- Printers sometimes have access to everything (shares and email)
 	- 3rd parties should change default creds on these
+- Write a detection for reflection.assembly or get rid of PowerShell ISE and the module if users don't need it
+	- C# code is integral to Windows pentesting
 - 
