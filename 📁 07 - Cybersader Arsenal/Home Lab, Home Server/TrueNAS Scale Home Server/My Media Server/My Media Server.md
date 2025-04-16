@@ -4,12 +4,17 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Monday, April 14th 2025, 11:05 am
+date modified: Tuesday, April 15th 2025, 9:36 pm
 ---
 
 # Links
 
-- [r/youtubedl Wiki: yt-dlp GUI Guide](https://www.reddit.com/r/youtubedl/wiki/info-guis/)
+- [handbrake.fr > HandBrake: Open Source Video Transcoder](https://handbrake.fr/)
+- [github.com > HaveAGitGat/Tdarr: Tdarr - Distributed transcode automation using FFmpeg/HandBrake + Audio/Video library analytics + video health checking (Windows](https://github.com/HaveAGitGat/Tdarr)
+- [github.com > Media Workflow for Jellyfin](https://gist.github.com/Tuetenk0pp/516dce7aa4951e029ee64403191ac6f2)
+- YouTube
+	- [r/youtubedl Wiki: yt-dlp GUI Guide](https://www.reddit.com/r/youtubedl/wiki/info-guis/)
+	- [ankenyr/jellyfin-youtube-metadata-plugin: Youtube Metadata Plugin for Jellyfin](https://github.com/ankenyr/jellyfin-youtube-metadata-plugin)
 - [3 Ways to Start Your Own Plex Server - YouTube](https://www.youtube.com/watch?v=XKDSld-CrHU)
 - [Important information for users running Plex Media Server on Nvidia Shield devices - Announcements - Plex Forum](https://forums.plex.tv/t/important-information-for-users-running-plex-media-server-on-nvidia-shield-devices/883484 "Important information for users running Plex Media Server on Nvidia Shield devices - Announcements - Plex Forum")
 - [Prowlarr](https://prowlarr.com/ "Prowlarr")
