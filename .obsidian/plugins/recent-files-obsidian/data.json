@@ -1,28 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "91 - Q&A",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/91 - Q&A/91 - Q&A.md"
-    },
-    {
-      "basename": "92 - Action Items for Orgs",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/92 - Action Items for Orgs/92 - Action Items for Orgs.md"
-    },
-    {
-      "basename": "33 - Egress",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/33 - Egress/33 - Egress.md"
+      "basename": "34 - Pentest Tooling",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/34 - Pentest Tooling/34 - Pentest Tooling.md"
     },
     {
       "basename": "90 - Key Takeaways",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/90 - Key Takeaways/90 - Key Takeaways.md"
     },
     {
-      "basename": "31 - Sentinel, Sysmon",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/31 - Sentinel, Sysmon/31 - Sentinel, Sysmon.md"
-    },
-    {
       "basename": "BHIS, Antisyphon",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/BHIS, Antisyphon.md"
+    },
+    {
+      "basename": "33 - Egress",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/33 - Egress/33 - Egress.md"
+    },
+    {
+      "basename": "92 - Action Items for Orgs",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/92 - Action Items for Orgs/92 - Action Items for Orgs.md"
+    },
+    {
+      "basename": "91 - Q&A",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/91 - Q&A/91 - Q&A.md"
+    },
+    {
+      "basename": "31 - Sentinel, Sysmon",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/31 - Sentinel, Sysmon/31 - Sentinel, Sysmon.md"
     },
     {
       "basename": "10 - Azure & AD Environment Takeaways",
@@ -195,10 +199,6 @@
     {
       "basename": "Invidious",
       "path": "⬇️ Clippings/Tech/Invidious/Invidious.md"
-    },
-    {
-      "basename": "Ideas for Knowledge Organization",
-      "path": "📁 54 - Obsidian Vault Organization/Ideas for Knowledge Organization/Ideas for Knowledge Organization.md"
     }
   ],
   "omittedPaths": [],

@@ -25,4 +25,7 @@ date modified: Wednesday, April 16th 2025, 1:47 pm
 - Review DPI capabilities on firewalls
 - PowerAutomate - used for exfil by hackers
 	- Hackers are good at getting around DLP by avoiding UI interactions
+- Review 3rd party printer management - toner and paper and such
+	- Printers sometimes have access to everything (shares and email)
+	- 3rd parties should change default creds on these
 - 
