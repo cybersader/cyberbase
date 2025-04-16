@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Framework Mapping",
+      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md"
+    },
+    {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Websites",
       "path": "⬇️ Clippings/Websites/Websites.md"
-    },
-    {
-      "basename": "GitHub Gitless Sync",
-      "path": "⬇️ Clippings/Obsidian Plugins/GitHub Gitless Sync/GitHub Gitless Sync.md"
     }
   ],
   "omittedPaths": [],
