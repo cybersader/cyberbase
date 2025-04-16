@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Wednesday, April 16th 2025, 8:44 am
-date modified: Wednesday, April 16th 2025, 9:37 am
+date modified: Wednesday, April 16th 2025, 10:53 am
 ---
 
 # 1) Free One-Click AD Testing Environment in Azure
@@ -29,6 +29,11 @@ date modified: Wednesday, April 16th 2025, 9:37 am
 	- 🎦 [Optional: Coercion & msds_KeyCredentialLink (Detect Logic)](https://www.youtube.com/watch?v=q_y05SOZvPY)  
 	- 🎦 [Optional: Designing AD Job Functional Security: One Group for Least Privilege](https://www.youtube.com/watch?v=MtKxZU9RV_I)  
 	- 🎦 [Optional: Attack Tactics 9: Shadow Creds for PrivEsc w/ Kent & Jordan](https://www.youtube.com/watch?v=3Tg70DRgZ4w)
+
+# 3) Cyber Deception
+
+- Deception is awesome but you have to keep track, so that you and others know what's deception during audits (i.e. auditors might see vulnerable fake systems and assume you have bad security practices)
+- 
 
 # 99) Random
 

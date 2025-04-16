@@ -25,4 +25,16 @@ date modified: Wednesday, April 16th 2025, 9:51 am
 	- Don't run in prod - would be catastrophic
 	- Will make the AD look like an old and realistic mess
 - AD is easy out-of-the-box, but that creates issues long-term
-- 
+
+- AD Schema
+	- How many enterprise admins that should be actual users? 0
+	- To change the AD schema, you can use LAPs to become the schema admin
+	- AD schema defines the rules and regulations of your AD environment
+	- The schema is at the top of the domain
+	- Attackers steal the AD Schema via the VSS version of it
+
+- AD Auditing
+	- PingCastle is a great tool
+	- PurpleKnight
+	- Bloodhount into Plumhound
+	- 

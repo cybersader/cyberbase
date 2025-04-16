@@ -1,24 +1,56 @@
 {
   "recentFiles": [
     {
-      "basename": "91 - Q&A",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/91 - Q&A/91 - Q&A.md"
+      "basename": "20 - Cyber Deception",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/20 - Cyber Deception/20 - Cyber Deception.md"
     },
     {
-      "basename": "10 - Azure & AD Environment Takeaways",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/10 - Azure & AD Environment Takeaways/10 - Azure & AD Environment Takeaways.md"
+      "basename": "92 - Action Items for Orgs",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/92 - Action Items for Orgs/92 - Action Items for Orgs.md"
     },
     {
       "basename": "90 - Key Takeaways",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/90 - Key Takeaways/90 - Key Takeaways.md"
     },
     {
-      "basename": "Copy & Paste Nuance - CLI & Virtualization",
-      "path": "⬇ INBOX, DROPZONE/Copy & Paste Nuance - CLI & Virtualization/Copy & Paste Nuance - CLI & Virtualization.md"
+      "basename": "PowerShell for InfoSec",
+      "path": "📁 06 - Learning, Notes/Cyber Classes/PowerShell for InfoSec/PowerShell for InfoSec.md"
+    },
+    {
+      "basename": "5 - Cyber Deception",
+      "path": "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Project Workspace/5 - Cyber Deception.md"
+    },
+    {
+      "basename": "Password Research and Stuff",
+      "path": "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Complementary Research/Password Research and Stuff.md"
+    },
+    {
+      "basename": "Curated Papers, Research, Content, Tools",
+      "path": "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Complementary Research/Curated Papers, Research, Content, Tools.md"
+    },
+    {
+      "basename": "GradSchoolProjects",
+      "path": "📁 98 - ARCHIVE/GradSchoolProjects/GradSchoolProjects.md"
+    },
+    {
+      "basename": "Honey Accounts in Windows AD",
+      "path": "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Honey Accounts in Windows AD.md"
     },
     {
       "basename": "Assumed Compromise",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/Assumed Compromise.md"
+    },
+    {
+      "basename": "10 - Azure & AD Environment Takeaways",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/10 - Azure & AD Environment Takeaways/10 - Azure & AD Environment Takeaways.md"
+    },
+    {
+      "basename": "91 - Q&A",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/91 - Q&A/91 - Q&A.md"
+    },
+    {
+      "basename": "Copy & Paste Nuance - CLI & Virtualization",
+      "path": "⬇ INBOX, DROPZONE/Copy & Paste Nuance - CLI & Virtualization/Copy & Paste Nuance - CLI & Virtualization.md"
     },
     {
       "basename": "Adversarial Emulation Extravaganza w Kent & Jordan",
@@ -167,38 +199,6 @@
     {
       "basename": "Metube - self-hosted youtube downloader",
       "path": "⬇️ Clippings/Tech/Metube - self-hosted youtube downloader/Metube - self-hosted youtube downloader.md"
-    },
-    {
-      "basename": "Scrypted",
-      "path": "⬇️ Clippings/Tech/Scrypted/Scrypted.md"
-    },
-    {
-      "basename": "Drawing 2025-01-03 15.58.52.excalidraw",
-      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Drawing 2025-01-03 15.58.52.excalidraw.svg"
-    },
-    {
-      "basename": "Email Aliasing",
-      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Email Aliasing/Email Aliasing.md"
-    },
-    {
-      "basename": "Identity & Cybersecurity Basics",
-      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Identity & Cybersecurity Basics/Identity & Cybersecurity Basics.md"
-    },
-    {
-      "basename": "YLC 2024 Presentation",
-      "path": "📁 50 - Cybersade/YLC 2024 Presentation/YLC 2024 Presentation.md"
-    },
-    {
-      "basename": "Drawing 2024-09-28 18.39.28.excalidraw",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/Drawing 2024-09-28 18.39.28.excalidraw.md"
-    },
-    {
-      "basename": "Drawing 2023-12-13 14.04.56.excalidraw",
-      "path": "📁 98 - ARCHIVE/GradSchoolProjects/SIEM Framework/Drawing 2023-12-13 14.04.56.excalidraw.md"
-    },
-    {
-      "basename": "Drawing 2023-12-01 16.33.48.excalidraw",
-      "path": "📁 98 - ARCHIVE/GradSchoolProjects/Excalidraw/Drawing 2023-12-01 16.33.48.excalidraw.md"
     }
   ],
   "omittedPaths": [],
