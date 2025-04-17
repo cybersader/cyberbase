@@ -43,4 +43,3 @@ date modified: Thursday, April 17th 2025, 2:18 pm
 - SSIDs shouldn't be too unique to pinpoint where your employees work
 
 - How to play backdoors and breaches well
-	- 

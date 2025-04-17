@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Backdoors & Breaches",
-      "path": "📁 05 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md"
+      "basename": "43 - Atomic Red Team & Scheduled Tasks",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/43 - Atomic Red Team & Scheduled Tasks/43 - Atomic Red Team & Scheduled Tasks.md"
     },
     {
       "basename": "42 - Attacker Attribution",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/42 - Attacker Attribution/42 - Attacker Attribution.md"
+    },
+    {
+      "basename": "Backdoors & Breaches",
+      "path": "📁 05 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md"
     },
     {
       "basename": "10.X Password Spray & Detections",
@@ -195,10 +199,6 @@
     {
       "basename": "Content Analytics",
       "path": "📁 12 - Content Creation/Content Analytics/Content Analytics.md"
-    },
-    {
-      "basename": "📁 54 - Obsidian Vault Organization",
-      "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
     }
   ],
   "omittedPaths": [],
