@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Tue, Apr 15, 2025 - [[My Media Server]]
+> Wed, Apr 16, 2025 - [[📁 06 - Learning, Notes]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                   | Last modified            |
-| -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md\|My Media Server]]     | Tue - 4/15/2025, 9:39 PM |
-| [[⬇️ Clippings/Websites/Gruv/Gruv.md\|Gruv]]                                                                                           | Sun - 4/13/2025, 5:46 PM |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                         | Sun - 4/13/2025, 5:46 PM |
-| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                               | Sun - 4/13/2025, 5:44 PM |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md\|Home Lab, Home Server]]                                   | Sun - 4/13/2025, 5:44 PM |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md\|TrueNAS Scale Home Server]] | Sun - 4/13/2025, 5:44 PM |
-| [[_NoteCompanion/Templates/youtube_video.md\|youtube_video]]                                                                           | Sun - 4/13/2025, 5:01 PM |
-| [[_NoteCompanion/Templates/research_paper.md\|research_paper]]                                                                         | Sun - 4/13/2025, 5:01 PM |
-| [[_NoteCompanion/Templates/enhance.md\|enhance]]                                                                                       | Sun - 4/13/2025, 5:01 PM |
-| [[_NoteCompanion/Templates/meeting_note.md\|meeting_note]]                                                                             | Sun - 4/13/2025, 5:01 PM |
+| File                                                                                                                                                 | Last modified            |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                                                                      | Wed - 4/16/2025, 9:00 PM |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/BHIS, Antisyphon.md\|BHIS, Antisyphon]]                                                                   | Wed - 4/16/2025, 9:00 PM |
+| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                                        | Wed - 4/16/2025, 9:00 PM |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/Assumed Compromise.md\|Assumed Compromise]]                                            | Wed - 4/16/2025, 9:00 PM |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/90 - Key Takeaways/90 - Key Takeaways.md\|90 - Key Takeaways]]                         | Wed - 4/16/2025, 9:00 PM |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/91 - Q&A/91 - Q&A.md\|91 - Q&A]]                                                       | Wed - 4/16/2025, 9:00 PM |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/92 - Action Items for Orgs/92 - Action Items for Orgs.md\|92 - Action Items for Orgs]] | Wed - 4/16/2025, 9:00 PM |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/31 - Sentinel, Sysmon/31 - Sentinel, Sysmon.md\|31 - Sentinel, Sysmon]]                | Wed - 4/16/2025, 9:00 PM |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/33 - Egress/33 - Egress.md\|33 - Egress]]                                              | Wed - 4/16/2025, 9:00 PM |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/34 - Pentest Tooling/34 - Pentest Tooling.md\|34 - Pentest Tooling]]                   | Wed - 4/16/2025, 9:00 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
