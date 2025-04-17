@@ -32,4 +32,5 @@ date modified: Wednesday, April 16th 2025, 1:47 pm
 	- C# code is integral to Windows pentesting
 - Review host-based firewall rules and policies
 - Check machine account quotas
+- Check RemoteRegistry detection
 - 
