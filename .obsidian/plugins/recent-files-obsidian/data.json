@@ -1,12 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "39 - C2 SSH",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/39 - C2 SSH/39 - C2 SSH.md"
+      "basename": "41 - LNK Droppers & Forced Auth",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/41 - LNK Droppers & Forced Auth/41 - LNK Droppers & Forced Auth.md"
     },
     {
       "basename": "92 - Action Items for Orgs",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/92 - Action Items for Orgs/92 - Action Items for Orgs.md"
+    },
+    {
+      "basename": "40 - Credential Coercion, Relay & Coercion",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/40 - Credential Coercion, Relay & Coercion/40 - Credential Coercion, Relay & Coercion.md"
+    },
+    {
+      "basename": "91 - Q&A",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/91 - Q&A/91 - Q&A.md"
+    },
+    {
+      "basename": "90 - Key Takeaways",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/90 - Key Takeaways/90 - Key Takeaways.md"
+    },
+    {
+      "basename": "39 - C2 SSH",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/39 - C2 SSH/39 - C2 SSH.md"
+    },
+    {
+      "basename": "10.X Password Spray & Detections",
+      "path": "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Project Workspace/10.X Password Spray & Detections.md"
     },
     {
       "basename": "Assumed Compromise",
@@ -15,10 +35,6 @@
     {
       "basename": "38 - Pre2k Computer Spray",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/38 - Pre2k Computer Spray/38 - Pre2k Computer Spray.md"
-    },
-    {
-      "basename": "10.X Password Spray & Detections",
-      "path": "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Project Workspace/10.X Password Spray & Detections.md"
     },
     {
       "basename": "37 - Kerberos Spray & REP Roast",
@@ -51,14 +67,6 @@
     {
       "basename": "Home-Ec 2025",
       "path": "🕸️ UNSTRUCTURED/Home-Ec 2025/Home-Ec 2025.md"
-    },
-    {
-      "basename": "91 - Q&A",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/91 - Q&A/91 - Q&A.md"
-    },
-    {
-      "basename": "90 - Key Takeaways",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/90 - Key Takeaways/90 - Key Takeaways.md"
     },
     {
       "basename": "BHIS, Antisyphon",
@@ -191,14 +199,6 @@
     {
       "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
       "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
-    },
-    {
-      "basename": "📁 07 - Cybersader Arsenal",
-      "path": "📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md"
-    },
-    {
-      "basename": "Extreme Privacy",
-      "path": "📁 07 - Cybersader Arsenal/Extreme Privacy/Extreme Privacy.md"
     }
   ],
   "omittedPaths": [],

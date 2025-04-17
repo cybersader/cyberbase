@@ -47,6 +47,7 @@ date modified: Thursday, April 17th 2025, 11:34 am
 - Do we disable accounts even if they're computer accounts
 - HR relationship is CRUCIAL for InfoSec team!
 - Do we manage our IPv6 space well?
+- Test LNK droppers on an engagement
 - 
 
 - Other test types

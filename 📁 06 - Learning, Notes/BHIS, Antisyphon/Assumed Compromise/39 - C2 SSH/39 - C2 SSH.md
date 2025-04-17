@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Thursday, April 17th 2025, 11:34 am
-date modified: Thursday, April 17th 2025, 12:02 pm
+date modified: Thursday, April 17th 2025, 1:17 pm
 ---
 
 - Proxychains
@@ -18,3 +18,11 @@ date modified: Thursday, April 17th 2025, 12:02 pm
 	- Enforcing signing and integrity checks can be a problem if you push around huge files - isolate the systems where you are going to do so
 - If you aren't managing IPv6 well, then you can do WPAD poisoning and other stuff
 - Once they have a C2 working, they are quickly figuring out the security posture of your network
+
+- Purview
+	- You can see nearly everything
+	- Purview logs are in UTC
+
+- Geo2Ip is confusing because ASNs map to the origin server even though the edge servers or duplicated ones can literally be anywhere on the planet
+
+- If you use application whitelisting, you can protect a bit more, but you really have to look at protocols with deep inspection on your firewall

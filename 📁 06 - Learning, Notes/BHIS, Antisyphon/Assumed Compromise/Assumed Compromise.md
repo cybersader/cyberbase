@@ -19,6 +19,8 @@ date modified: Wednesday, April 16th 2025, 8:11 am
 - **[[37 - Kerberos Spray & REP Roast]]**
 - **[[38 - Pre2k Computer Spray]]**
 - **[[39 - C2 SSH]]**
+- **[[40 - Credential Coercion, Relay & Coercion]]**
+- **[[41 - LNK Droppers & Forced Auth]]**
 - **[[90 - Key Takeaways]]**
 - **[[91 - Q&A]]**
 - **[[92 - Action Items for Orgs]]**
