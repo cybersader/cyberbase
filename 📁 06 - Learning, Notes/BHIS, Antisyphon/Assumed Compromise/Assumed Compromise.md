@@ -21,6 +21,7 @@ date modified: Wednesday, April 16th 2025, 8:11 am
 - **[[39 - C2 SSH]]**
 - **[[40 - Credential Coercion, Relay & Coercion]]**
 - **[[41 - LNK Droppers & Forced Auth]]**
+- **[[42 - Attacker Attribution]]**
 - **[[90 - Key Takeaways]]**
 - **[[91 - Q&A]]**
 - **[[92 - Action Items for Orgs]]**

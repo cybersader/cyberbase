@@ -56,7 +56,8 @@ date modified: Thursday, April 17th 2025, 1:54 pm
 - Do we have a bastion domain?
 - No automated systems should use RemoteRegistry
 - We use RSAT primarily...yes?
-- 
+- Entra Password Protection
+- Management and bastion forest
 
 - Other test types
 	- AR Architecture Review
