@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Wednesday, April 16th 2025, 10:32 am
-date modified: Thursday, April 17th 2025, 1:54 pm
+date modified: Thursday, April 17th 2025, 4:35 pm
 ---
 
 - Talk about cyber deception with HR for awareness
@@ -58,6 +58,12 @@ date modified: Thursday, April 17th 2025, 1:54 pm
 - We use RSAT primarily...yes?
 - Entra Password Protection
 - Management and bastion forest
+- Stop using work email on non-work-related 3rd party sites
+	- Infostealers work 70+% of the time for this pentesting firm
+- How do we reset MFA
+- Use the LoginData detection for DPAPI
+- [Stealer Malware 101: Understanding the Different Variants and Families - SOCRadar® Cyber Intelligence Inc.](https://socradar.io/stealer-malware-101-understanding-the-different-variants-and-families/)
+- 
 
 - Other test types
 	- AR Architecture Review
