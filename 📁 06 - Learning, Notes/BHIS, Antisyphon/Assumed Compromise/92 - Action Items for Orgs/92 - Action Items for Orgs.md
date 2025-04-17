@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Wednesday, April 16th 2025, 10:32 am
-date modified: Wednesday, April 16th 2025, 1:47 pm
+date modified: Thursday, April 17th 2025, 10:59 am
 ---
 
 - Talk about cyber deception with HR for awareness
@@ -36,4 +36,13 @@ date modified: Wednesday, April 16th 2025, 1:47 pm
 - Indefinite lockout periods and a small number of tries is a vulnerability and not a defense
 - With Microsoft, use automated actions with MS ASR and other features - smart lockouts - helps against password sprays
 - Check for NTLM auth dangling off the edge of the network
+
+- Roles and job functional security
+	- POS_SEC and POS_DIST
+	- Name computers same as usernames to use "percent trick"
+	- Role groups all the way down to resources
+	- HR has to have job descriptions
+	- HR should have authority and define job functions
+
+- Do we disable accounts even if they're computer accounts
 - 

@@ -17,4 +17,9 @@ date modified: Thursday, April 17th 2025, 10:00 am
 - Check for NTLM auth dangling off the edge of the network
 - Check in the password spray span by checking the user accounts and their behavior (geo, IP, etc.)
 - You can use STL decomposition or standard deviation to threshold for alerts
+
+- Will machine account quota affect things like banks with branches?
+	- In a perfect world, you don't use admin accounts and really an svc account that is domain joined
+	- This is the quota for joining computers to the domain
+	- Provide some AD delegation - members of a group have privilege to join computers to the domain.  This means the creation of a computer account.
 - 
