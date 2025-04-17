@@ -63,7 +63,6 @@ date modified: Thursday, April 17th 2025, 4:35 pm
 - How do we reset MFA
 - Use the LoginData detection for DPAPI
 - [Stealer Malware 101: Understanding the Different Variants and Families - SOCRadar® Cyber Intelligence Inc.](https://socradar.io/stealer-malware-101-understanding-the-different-variants-and-families/)
-- 
 
 - Other test types
 	- AR Architecture Review
