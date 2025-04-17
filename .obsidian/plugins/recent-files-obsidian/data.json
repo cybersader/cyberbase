@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "36 - Password Sprays",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/36 - Password Sprays/36 - Password Sprays.md"
+    },
+    {
+      "basename": "92 - Action Items for Orgs",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/92 - Action Items for Orgs/92 - Action Items for Orgs.md"
+    },
+    {
       "basename": "35 - Sentinel Detections",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/35 - Sentinel Detections/35 - Sentinel Detections.md"
     },
     {
       "basename": "34 - Pentest Tooling",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/34 - Pentest Tooling/34 - Pentest Tooling.md"
-    },
-    {
-      "basename": "92 - Action Items for Orgs",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/92 - Action Items for Orgs/92 - Action Items for Orgs.md"
     },
     {
       "basename": "Personal Privacy & Identity Handling",
@@ -195,10 +199,6 @@
     {
       "basename": "Content Curation",
       "path": "📁 12 - Content Creation/Content Curation/Content Curation.md"
-    },
-    {
-      "basename": "Castopod",
-      "path": "⬇️ Clippings/Tech/Castopod/Castopod.md"
     }
   ],
   "omittedPaths": [],

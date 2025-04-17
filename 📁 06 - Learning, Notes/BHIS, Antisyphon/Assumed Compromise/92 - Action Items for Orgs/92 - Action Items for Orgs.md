@@ -33,4 +33,7 @@ date modified: Wednesday, April 16th 2025, 1:47 pm
 - Review host-based firewall rules and policies
 - Check machine account quotas
 - Check RemoteRegistry detection
+- Indefinite lockout periods and a small number of tries is a vulnerability and not a defense
+- With Microsoft, use automated actions with MS ASR and other features - smart lockouts - helps against password sprays
+- Check for NTLM auth dangling off the edge of the network
 - 
