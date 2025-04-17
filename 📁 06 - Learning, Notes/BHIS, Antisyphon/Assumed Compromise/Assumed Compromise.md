@@ -23,6 +23,7 @@ date modified: Wednesday, April 16th 2025, 8:11 am
 - **[[41 - LNK Droppers & Forced Auth]]**
 - **[[42 - Attacker Attribution]]**
 - **[[43 - Atomic Red Team & Scheduled Tasks]]**
+- **[[44 - DPAPI & Stealing Browser Data]]**
 - **[[90 - Key Takeaways]]**
 - **[[91 - Q&A]]**
 - **[[92 - Action Items for Orgs]]**

@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "44 - DPAPI & Stealing Browser Data",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/44 - DPAPI & Stealing Browser Data/44 - DPAPI & Stealing Browser Data.md"
+    },
+    {
       "basename": "43 - Atomic Red Team & Scheduled Tasks",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/43 - Atomic Red Team & Scheduled Tasks/43 - Atomic Red Team & Scheduled Tasks.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Screen Recording, Streaming Stack",
       "path": "📁 12 - Content Creation/Screen Recording, Streaming Stack/Screen Recording, Streaming Stack.md"
-    },
-    {
-      "basename": "Content Analytics",
-      "path": "📁 12 - Content Creation/Content Analytics/Content Analytics.md"
     }
   ],
   "omittedPaths": [],
