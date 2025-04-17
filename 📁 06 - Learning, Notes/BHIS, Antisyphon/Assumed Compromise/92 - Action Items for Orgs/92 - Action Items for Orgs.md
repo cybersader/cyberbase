@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Wednesday, April 16th 2025, 10:32 am
-date modified: Thursday, April 17th 2025, 10:59 am
+date modified: Thursday, April 17th 2025, 11:34 am
 ---
 
 - Talk about cyber deception with HR for awareness
@@ -45,4 +45,10 @@ date modified: Thursday, April 17th 2025, 10:59 am
 	- HR should have authority and define job functions
 
 - Do we disable accounts even if they're computer accounts
+- HR relationship is CRUCIAL for InfoSec team!
+- Do we manage our IPv6 space well?
 - 
+
+- Other test types
+	- AR Architecture Review
+	- 

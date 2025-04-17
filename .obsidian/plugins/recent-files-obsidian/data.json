@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "39 - C2 SSH",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/39 - C2 SSH/39 - C2 SSH.md"
+    },
+    {
       "basename": "92 - Action Items for Orgs",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/92 - Action Items for Orgs/92 - Action Items for Orgs.md"
     },
     {
-      "basename": "10.X Password Spray & Detections",
-      "path": "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Project Workspace/10.X Password Spray & Detections.md"
+      "basename": "Assumed Compromise",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/Assumed Compromise.md"
     },
     {
       "basename": "38 - Pre2k Computer Spray",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/38 - Pre2k Computer Spray/38 - Pre2k Computer Spray.md"
+    },
+    {
+      "basename": "10.X Password Spray & Detections",
+      "path": "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Project Workspace/10.X Password Spray & Detections.md"
     },
     {
       "basename": "37 - Kerberos Spray & REP Roast",
@@ -75,10 +83,6 @@
     {
       "basename": "30 - Initial Recon & Checks",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/30 - Initial Recon & Checks/30 - Initial Recon & Checks.md"
-    },
-    {
-      "basename": "Assumed Compromise",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/Assumed Compromise.md"
     },
     {
       "basename": "PowerShell for InfoSec",
@@ -195,10 +199,6 @@
     {
       "basename": "Extreme Privacy",
       "path": "📁 07 - Cybersader Arsenal/Extreme Privacy/Extreme Privacy.md"
-    },
-    {
-      "basename": "Display Android on Windows",
-      "path": "⬇️ Clippings/ChatGPT/Display Android on Windows/Display Android on Windows.md"
     }
   ],
   "omittedPaths": [],
