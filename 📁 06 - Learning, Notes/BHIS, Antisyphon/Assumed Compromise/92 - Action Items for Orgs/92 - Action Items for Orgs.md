@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Wednesday, April 16th 2025, 10:32 am
-date modified: Thursday, April 17th 2025, 11:34 am
+date modified: Thursday, April 17th 2025, 1:54 pm
 ---
 
 - Talk about cyber deception with HR for awareness
@@ -48,6 +48,14 @@ date modified: Thursday, April 17th 2025, 11:34 am
 - HR relationship is CRUCIAL for InfoSec team!
 - Do we manage our IPv6 space well?
 - Test LNK droppers on an engagement
+- FSRM - audit your file servers
+	- Allows you to understand inventory better
+	- https://learn.microsoft.com/en-us/windows-server/storage/fsrm/file-screening-management
+- You need cold storage that ISN'T HOT
+- Do certificate auth for wireless (RADIUS)
+- Do we have a bastion domain?
+- No automated systems should use RemoteRegistry
+- We use RSAT primarily...yes?
 - 
 
 - Other test types
