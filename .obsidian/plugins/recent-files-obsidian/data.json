@@ -1,78 +1,6 @@
 {
   "recentFiles": [
     {
-      "basename": "92 - Action Items for Orgs",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/92 - Action Items for Orgs/92 - Action Items for Orgs.md"
-    },
-    {
-      "basename": "44 - DPAPI & Stealing Browser Data",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/44 - DPAPI & Stealing Browser Data/44 - DPAPI & Stealing Browser Data.md"
-    },
-    {
-      "basename": "43 - Atomic Red Team & Scheduled Tasks",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/43 - Atomic Red Team & Scheduled Tasks/43 - Atomic Red Team & Scheduled Tasks.md"
-    },
-    {
-      "basename": "42 - Attacker Attribution",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/42 - Attacker Attribution/42 - Attacker Attribution.md"
-    },
-    {
-      "basename": "Backdoors & Breaches",
-      "path": "📁 05 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md"
-    },
-    {
-      "basename": "10.X Password Spray & Detections",
-      "path": "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Project Workspace/10.X Password Spray & Detections.md"
-    },
-    {
-      "basename": "90 - Key Takeaways",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/90 - Key Takeaways/90 - Key Takeaways.md"
-    },
-    {
-      "basename": "41 - LNK Droppers & Forced Auth",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/41 - LNK Droppers & Forced Auth/41 - LNK Droppers & Forced Auth.md"
-    },
-    {
-      "basename": "91 - Q&A",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/91 - Q&A/91 - Q&A.md"
-    },
-    {
-      "basename": "40 - Credential Coercion, Relay & Coercion",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/40 - Credential Coercion, Relay & Coercion/40 - Credential Coercion, Relay & Coercion.md"
-    },
-    {
-      "basename": "39 - C2 SSH",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/39 - C2 SSH/39 - C2 SSH.md"
-    },
-    {
-      "basename": "Assumed Compromise",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/Assumed Compromise.md"
-    },
-    {
-      "basename": "38 - Pre2k Computer Spray",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/38 - Pre2k Computer Spray/38 - Pre2k Computer Spray.md"
-    },
-    {
-      "basename": "37 - Kerberos Spray & REP Roast",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/37 - Kerberos Spray & REP Roast/37 - Kerberos Spray & REP Roast.md"
-    },
-    {
-      "basename": "36 - Password Sprays",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/36 - Password Sprays/36 - Password Sprays.md"
-    },
-    {
-      "basename": "Honey Accounts in Windows AD",
-      "path": "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Honey Accounts in Windows AD.md"
-    },
-    {
-      "basename": "35 - Sentinel Detections",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/35 - Sentinel Detections/35 - Sentinel Detections.md"
-    },
-    {
-      "basename": "34 - Pentest Tooling",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/34 - Pentest Tooling/34 - Pentest Tooling.md"
-    },
-    {
       "basename": "Personal Privacy & Identity Handling",
       "path": "📁 07 - Cybersader Arsenal/Personal Privacy & Identity Handling/Personal Privacy & Identity Handling.md"
     },
@@ -83,6 +11,22 @@
     {
       "basename": "Home-Ec 2025",
       "path": "🕸️ UNSTRUCTURED/Home-Ec 2025/Home-Ec 2025.md"
+    },
+    {
+      "basename": "34 - Pentest Tooling",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/34 - Pentest Tooling/34 - Pentest Tooling.md"
+    },
+    {
+      "basename": "91 - Q&A",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/91 - Q&A/91 - Q&A.md"
+    },
+    {
+      "basename": "92 - Action Items for Orgs",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/92 - Action Items for Orgs/92 - Action Items for Orgs.md"
+    },
+    {
+      "basename": "90 - Key Takeaways",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/90 - Key Takeaways/90 - Key Takeaways.md"
     },
     {
       "basename": "BHIS, Antisyphon",
@@ -109,6 +53,10 @@
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/30 - Initial Recon & Checks/30 - Initial Recon & Checks.md"
     },
     {
+      "basename": "Assumed Compromise",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/Assumed Compromise.md"
+    },
+    {
       "basename": "PowerShell for InfoSec",
       "path": "📁 06 - Learning, Notes/Cyber Classes/PowerShell for InfoSec/PowerShell for InfoSec.md"
     },
@@ -127,6 +75,10 @@
     {
       "basename": "GradSchoolProjects",
       "path": "📁 98 - ARCHIVE/GradSchoolProjects/GradSchoolProjects.md"
+    },
+    {
+      "basename": "Honey Accounts in Windows AD",
+      "path": "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Honey Accounts in Windows AD.md"
     },
     {
       "basename": "Copy & Paste Nuance - CLI & Virtualization",
@@ -199,6 +151,54 @@
     {
       "basename": "Screen Recording, Streaming Stack",
       "path": "📁 12 - Content Creation/Screen Recording, Streaming Stack/Screen Recording, Streaming Stack.md"
+    },
+    {
+      "basename": "Content Analytics",
+      "path": "📁 12 - Content Creation/Content Analytics/Content Analytics.md"
+    },
+    {
+      "basename": "📁 54 - Obsidian Vault Organization",
+      "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
+    },
+    {
+      "basename": "Actions For Obsidian",
+      "path": "⬇️ Clippings/Tech/Actions For Obsidian/Actions For Obsidian.md"
+    },
+    {
+      "basename": "THE PERSONAL CYBER RESILIENCE GUIDE",
+      "path": "📁 07 - Cybersader Arsenal/THE PERSONAL CYBER RESILIENCE GUIDE/THE PERSONAL CYBER RESILIENCE GUIDE.md"
+    },
+    {
+      "basename": "📁 07 - Cybersader Arsenal",
+      "path": "📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md"
+    },
+    {
+      "basename": "Extreme Privacy",
+      "path": "📁 07 - Cybersader Arsenal/Extreme Privacy/Extreme Privacy.md"
+    },
+    {
+      "basename": "Display Android on Windows",
+      "path": "⬇️ Clippings/ChatGPT/Display Android on Windows/Display Android on Windows.md"
+    },
+    {
+      "basename": "file-20241223193904241",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/_attachments/file-20241223193904241.png"
+    },
+    {
+      "basename": "Desktop (mostly Windows)",
+      "path": "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Desktop (mostly Windows).md"
+    },
+    {
+      "basename": "Content Curation",
+      "path": "📁 12 - Content Creation/Content Curation/Content Curation.md"
+    },
+    {
+      "basename": "Castopod",
+      "path": "⬇️ Clippings/Tech/Castopod/Castopod.md"
+    },
+    {
+      "basename": "Invidious",
+      "path": "⬇️ Clippings/Tech/Invidious/Invidious.md"
     }
   ],
   "omittedPaths": [],
