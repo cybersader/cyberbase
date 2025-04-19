@@ -5,6 +5,10 @@
       "path": "📁 07 - Cybersader Arsenal/Personal Privacy & Identity Handling/Personal Privacy & Identity Handling.md"
     },
     {
+      "basename": "Personal Info Breach Response",
+      "path": "📁 07 - Cybersader Arsenal/Personal Info Breach Response/Personal Info Breach Response.md"
+    },
+    {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Castopod",
       "path": "⬇️ Clippings/Tech/Castopod/Castopod.md"
-    },
-    {
-      "basename": "Invidious",
-      "path": "⬇️ Clippings/Tech/Invidious/Invidious.md"
     }
   ],
   "omittedPaths": [],
