@@ -9,6 +9,7 @@ date modified: Saturday, March 15th 2025, 2:56 pm
 
 %% Begin Waypoint %%
 - **[[Best Budget Mic Options]]**
+- **[[Credit Freeze vs Fraud Alert]]**
 - **[[Display Android on Windows]]**
 - **[[Hacking Motivations and Shifts]]**
 - **[[iPhone Alarm Settings Guide]]**
