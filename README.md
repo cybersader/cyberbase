@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Wed, Apr 16, 2025 - [[📁 06 - Learning, Notes]]
+> Sat, Apr 19, 2025 - [[📁 06 - Learning, Notes]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                                 | Last modified            |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                                                                      | Wed - 4/16/2025, 9:00 PM |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/BHIS, Antisyphon.md\|BHIS, Antisyphon]]                                                                   | Wed - 4/16/2025, 9:00 PM |
-| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                                        | Wed - 4/16/2025, 9:00 PM |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/Assumed Compromise.md\|Assumed Compromise]]                                            | Wed - 4/16/2025, 9:00 PM |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/90 - Key Takeaways/90 - Key Takeaways.md\|90 - Key Takeaways]]                         | Wed - 4/16/2025, 9:00 PM |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/91 - Q&A/91 - Q&A.md\|91 - Q&A]]                                                       | Wed - 4/16/2025, 9:00 PM |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/92 - Action Items for Orgs/92 - Action Items for Orgs.md\|92 - Action Items for Orgs]] | Wed - 4/16/2025, 9:00 PM |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/31 - Sentinel, Sysmon/31 - Sentinel, Sysmon.md\|31 - Sentinel, Sysmon]]                | Wed - 4/16/2025, 9:00 PM |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/33 - Egress/33 - Egress.md\|33 - Egress]]                                              | Wed - 4/16/2025, 9:00 PM |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/34 - Pentest Tooling/34 - Pentest Tooling.md\|34 - Pentest Tooling]]                   | Wed - 4/16/2025, 9:00 PM |
+| File                                                                                                                                                                                                 | Last modified            |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                                                                                                                      | Fri - 4/18/2025, 8:27 AM |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/BHIS, Antisyphon.md\|BHIS, Antisyphon]]                                                                                                                   | Fri - 4/18/2025, 8:27 AM |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/Assumed Compromise.md\|Assumed Compromise]]                                                                                            | Fri - 4/18/2025, 8:27 AM |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/92 - Action Items for Orgs/92 - Action Items for Orgs.md\|92 - Action Items for Orgs]]                                                 | Fri - 4/18/2025, 8:27 AM |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/44 - DPAPI & Stealing Browser Data/44 - DPAPI & Stealing Browser Data.md\|44 - DPAPI & Stealing Browser Data]]                         | Fri - 4/18/2025, 8:27 AM |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/43 - Atomic Red Team & Scheduled Tasks/43 - Atomic Red Team & Scheduled Tasks.md\|43 - Atomic Red Team & Scheduled Tasks]]             | Fri - 4/18/2025, 8:27 AM |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/42 - Attacker Attribution/42 - Attacker Attribution.md\|42 - Attacker Attribution]]                                                    | Fri - 4/18/2025, 8:27 AM |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/40 - Credential Coercion, Relay & Coercion/40 - Credential Coercion, Relay & Coercion.md\|40 - Credential Coercion, Relay & Coercion]] | Fri - 4/18/2025, 8:27 AM |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/41 - LNK Droppers & Forced Auth/41 - LNK Droppers & Forced Auth.md\|41 - LNK Droppers & Forced Auth]]                                  | Fri - 4/18/2025, 8:27 AM |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/37 - Kerberos Spray & REP Roast/37 - Kerberos Spray & REP Roast.md\|37 - Kerberos Spray & REP Roast]]                                  | Fri - 4/18/2025, 8:27 AM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
