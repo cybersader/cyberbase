@@ -30,6 +30,7 @@
 	- **[[Metube - self-hosted youtube downloader]]**
 	- **[[n8n]]**
 	- **[[Napkin]]**
+	- **[[Nomorobo]]**
 	- **[[Notesnook]]**
 	- **[[Ollama]]**
 	- **[[Open WebUI]]**
@@ -43,6 +44,7 @@
 	- **[[Scrypted]]**
 	- **[[Simplemind]]**
 	- **[[Slido]]**
+	- **[[Thinkst Canary]]**
 	- **[[Toggl Track]]**
 	- **[[Trilium Notes]]**
 	- **[[VoidZero]]**

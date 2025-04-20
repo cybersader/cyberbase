@@ -25,6 +25,7 @@ publish: true
 - **[[Lookalike Domain Defenses]]**
 - **[[Malware Sandboxing]]**
 - **[[Public Threat Actor Reporting, Blacklists]]**
+- **[[Store Now Decrypt Later]]**
 - **[[Team Resource Management]]**
 - **[[Video Ideas]]**
 - **[[Windows 11 UI Stuff]]**
