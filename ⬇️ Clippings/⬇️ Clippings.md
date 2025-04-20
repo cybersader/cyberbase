@@ -43,8 +43,10 @@
 	- **[[Scrypted]]**
 	- **[[Simplemind]]**
 	- **[[Slido]]**
+	- **[[Toggl Track]]**
 	- **[[Trilium Notes]]**
 	- **[[VoidZero]]**
+	- **[[Wakatime]]**
 	- **[[Zivver Security]]**
 - **[[Websites]]**
 	- **[[Gruv]]**
