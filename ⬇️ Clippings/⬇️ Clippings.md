@@ -22,8 +22,10 @@
 	- **[[Cryptomator]]**
 	- **[[Cryptpad]]**
 	- **[[Fakeupdate]]**
+	- **[[Formance]]**
 	- **[[Google-Gemma-3]]**
 	- **[[Invidious]]**
+	- **[[Khoj]]**
 	- **[[Kittl]]**
 	- **[[Kortex]]**
 	- **[[Makemydrivefun]]**
@@ -41,6 +43,7 @@
 	- **[[Raycast]]**
 	- **[[Readdy]]**
 	- **[[Readwise]]**
+	- **[[Screenpipe]]**
 	- **[[Scrypted]]**
 	- **[[Simplemind]]**
 	- **[[Slido]]**
@@ -49,8 +52,10 @@
 	- **[[Trilium Notes]]**
 	- **[[VoidZero]]**
 	- **[[Wakatime]]**
+	- **[[Webstudio_website_builder]]**
 	- **[[Zivver Security]]**
 - **[[Websites]]**
+	- **[[Algorа]]**
 	- **[[Gruv]]**
 	- **[[Tertulia]]**
 - **[[Wikipedia]]**
