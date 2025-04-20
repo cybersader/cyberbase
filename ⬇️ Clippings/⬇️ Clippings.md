@@ -38,6 +38,7 @@
 	- **[[Open WebUI]]**
 	- **[[Openfhe]]**
 	- **[[Opennote]]**
+	- **[[OperationPrivacy]]**
 	- **[[Peertube]]**
 	- **[[Printify]]**
 	- **[[Raycast]]**
@@ -57,6 +58,7 @@
 - **[[Websites]]**
 	- **[[Algorа]]**
 	- **[[Gruv]]**
+	- **[[Techlore]]**
 	- **[[Tertulia]]**
 - **[[Wikipedia]]**
 - **[[YouTube]]**

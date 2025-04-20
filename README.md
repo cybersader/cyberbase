@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sat, Apr 19, 2025 - [[📁 06 - Learning, Notes]]
+> Sun, Apr 20, 2025 - [[Formance]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                                                                                 | Last modified            |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                                                                                                                      | Fri - 4/18/2025, 8:27 AM |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/BHIS, Antisyphon.md\|BHIS, Antisyphon]]                                                                                                                   | Fri - 4/18/2025, 8:27 AM |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/Assumed Compromise.md\|Assumed Compromise]]                                                                                            | Fri - 4/18/2025, 8:27 AM |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/92 - Action Items for Orgs/92 - Action Items for Orgs.md\|92 - Action Items for Orgs]]                                                 | Fri - 4/18/2025, 8:27 AM |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/44 - DPAPI & Stealing Browser Data/44 - DPAPI & Stealing Browser Data.md\|44 - DPAPI & Stealing Browser Data]]                         | Fri - 4/18/2025, 8:27 AM |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/43 - Atomic Red Team & Scheduled Tasks/43 - Atomic Red Team & Scheduled Tasks.md\|43 - Atomic Red Team & Scheduled Tasks]]             | Fri - 4/18/2025, 8:27 AM |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/42 - Attacker Attribution/42 - Attacker Attribution.md\|42 - Attacker Attribution]]                                                    | Fri - 4/18/2025, 8:27 AM |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/40 - Credential Coercion, Relay & Coercion/40 - Credential Coercion, Relay & Coercion.md\|40 - Credential Coercion, Relay & Coercion]] | Fri - 4/18/2025, 8:27 AM |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/41 - LNK Droppers & Forced Auth/41 - LNK Droppers & Forced Auth.md\|41 - LNK Droppers & Forced Auth]]                                  | Fri - 4/18/2025, 8:27 AM |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/37 - Kerberos Spray & REP Roast/37 - Kerberos Spray & REP Roast.md\|37 - Kerberos Spray & REP Roast]]                                  | Fri - 4/18/2025, 8:27 AM |
+| File                                                                                                                                                                                                                        | Last modified             |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[⬇️ Clippings/Tech/Formance/Formance.md\|Formance]]                                                                                                                                                                        | Sun - 4/20/2025, 1:28 PM  |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                                                              | Sun - 4/20/2025, 1:28 PM  |
+| [[⬇️ Clippings/Tech/Webstudio_website_builder/Webstudio_website_builder.md\|Webstudio_website_builder]]                                                                                                                     | Sun - 4/20/2025, 1:25 PM  |
+| [[⬇️ Clippings/Tech/Khoj/Khoj.md\|Khoj]]                                                                                                                                                                                    | Sun - 4/20/2025, 1:24 PM  |
+| [[⬇️ Clippings/Websites/Algorа/Algorа.md\|Algorа]]                                                                                                                                                                          | Sun - 4/20/2025, 1:19 PM  |
+| [[⬇️ Clippings/Tech/Screenpipe/Screenpipe.md\|Screenpipe]]                                                                                                                                                                  | Sun - 4/20/2025, 1:18 PM  |
+| [[⬇️ Clippings/Articles, Blogs/The Value of Christian Principles in Cybersecurity Education/The Value of Christian Principles in Cybersecurity Education.md\|The Value of Christian Principles in Cybersecurity Education]] | Sun - 4/20/2025, 1:15 PM  |
+| [[⬇️ Clippings/Articles, Blogs/Articles, Blogs.md\|Articles, Blogs]]                                                                                                                                                        | Sun - 4/20/2025, 1:14 PM  |
+| [[⬇ INBOX, DROPZONE/Store Now Decrypt Later/Store Now Decrypt Later.md\|Store Now Decrypt Later]]                                                                                                                           | Sun - 4/20/2025, 12:21 PM |
+| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                                                                                                               | Sun - 4/20/2025, 12:21 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
