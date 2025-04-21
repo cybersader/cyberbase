@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sun, Apr 20, 2025 - [[Formance]]
+> Sun, Apr 20, 2025 - [[⬇️ Clippings]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                                                                                                        | Last modified             |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[⬇️ Clippings/Tech/Formance/Formance.md\|Formance]]                                                                                                                                                                        | Sun - 4/20/2025, 1:28 PM  |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                                                              | Sun - 4/20/2025, 1:28 PM  |
-| [[⬇️ Clippings/Tech/Webstudio_website_builder/Webstudio_website_builder.md\|Webstudio_website_builder]]                                                                                                                     | Sun - 4/20/2025, 1:25 PM  |
-| [[⬇️ Clippings/Tech/Khoj/Khoj.md\|Khoj]]                                                                                                                                                                                    | Sun - 4/20/2025, 1:24 PM  |
-| [[⬇️ Clippings/Websites/Algorа/Algorа.md\|Algorа]]                                                                                                                                                                          | Sun - 4/20/2025, 1:19 PM  |
-| [[⬇️ Clippings/Tech/Screenpipe/Screenpipe.md\|Screenpipe]]                                                                                                                                                                  | Sun - 4/20/2025, 1:18 PM  |
-| [[⬇️ Clippings/Articles, Blogs/The Value of Christian Principles in Cybersecurity Education/The Value of Christian Principles in Cybersecurity Education.md\|The Value of Christian Principles in Cybersecurity Education]] | Sun - 4/20/2025, 1:15 PM  |
-| [[⬇️ Clippings/Articles, Blogs/Articles, Blogs.md\|Articles, Blogs]]                                                                                                                                                        | Sun - 4/20/2025, 1:14 PM  |
-| [[⬇ INBOX, DROPZONE/Store Now Decrypt Later/Store Now Decrypt Later.md\|Store Now Decrypt Later]]                                                                                                                           | Sun - 4/20/2025, 12:21 PM |
-| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                                                                                                               | Sun - 4/20/2025, 12:21 PM |
+| File                                                                                                                                                                                                                        | Last modified            |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                                                              | Sun - 4/20/2025, 1:38 PM |
+| [[⬇️ Clippings/Websites/Techlore/Techlore.md\|Techlore]]                                                                                                                                                                    | Sun - 4/20/2025, 1:38 PM |
+| [[⬇️ Clippings/Tech/OperationPrivacy/OperationPrivacy.md\|OperationPrivacy]]                                                                                                                                                | Sun - 4/20/2025, 1:37 PM |
+| [[📁 33 - Diving/📁 33 - Diving.md\|📁 33 - Diving]]                                                                                                                                                                        | Sun - 4/20/2025, 1:33 PM |
+| [[⬇️ Clippings/Tech/Formance/Formance.md\|Formance]]                                                                                                                                                                        | Sun - 4/20/2025, 1:28 PM |
+| [[⬇️ Clippings/Tech/Webstudio_website_builder/Webstudio_website_builder.md\|Webstudio_website_builder]]                                                                                                                     | Sun - 4/20/2025, 1:25 PM |
+| [[⬇️ Clippings/Tech/Khoj/Khoj.md\|Khoj]]                                                                                                                                                                                    | Sun - 4/20/2025, 1:24 PM |
+| [[⬇️ Clippings/Websites/Algorа/Algorа.md\|Algorа]]                                                                                                                                                                          | Sun - 4/20/2025, 1:19 PM |
+| [[⬇️ Clippings/Tech/Screenpipe/Screenpipe.md\|Screenpipe]]                                                                                                                                                                  | Sun - 4/20/2025, 1:18 PM |
+| [[⬇️ Clippings/Articles, Blogs/The Value of Christian Principles in Cybersecurity Education/The Value of Christian Principles in Cybersecurity Education.md\|The Value of Christian Principles in Cybersecurity Education]] | Sun - 4/20/2025, 1:15 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
