@@ -5,6 +5,14 @@
       "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalks/Framework Crosswalks.md"
     },
     {
+      "basename": "Framework Crosswalker - TLDR",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalker - TLDR/Framework Crosswalker - TLDR.md"
+    },
+    {
+      "basename": "Framework Crosswalker - GPT Intro",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalker - GPT Intro/Framework Crosswalker - GPT Intro.md"
+    },
+    {
       "basename": "Mapping Frameworks to Obsidian",
       "path": "📁 01 - Projects/Obsidian Frameworker/Mapping Frameworks to Obsidian/Mapping Frameworks to Obsidian.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "GradSchoolProjects",
       "path": "📁 98 - ARCHIVE/GradSchoolProjects/GradSchoolProjects.md"
-    },
-    {
-      "basename": "Honey Accounts in Windows AD",
-      "path": "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Honey Accounts in Windows AD.md"
-    },
-    {
-      "basename": "Copy & Paste Nuance - CLI & Virtualization",
-      "path": "⬇ INBOX, DROPZONE/Copy & Paste Nuance - CLI & Virtualization/Copy & Paste Nuance - CLI & Virtualization.md"
     }
   ],
   "omittedPaths": [],

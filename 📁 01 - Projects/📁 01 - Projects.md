@@ -20,6 +20,8 @@ date modified: Saturday, March 23rd 2024, 3:05 pm
 - **[[NocoDB]]**
 - **[[Obsidian Frameworker]]**
 	- **[[About Frameworker]]**
+	- **[[Framework Crosswalker - GPT Intro]]**
+	- **[[Framework Crosswalker - TLDR]]**
 	- **[[Framework Crosswalks]]**
 	- **[[frameworker_diagram]]**
 
