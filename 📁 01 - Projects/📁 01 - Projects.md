@@ -20,12 +20,13 @@ date modified: Saturday, March 23rd 2024, 3:05 pm
 - **[[NocoDB]]**
 - **[[Obsidian Frameworker]]**
 	- **[[About Frameworker]]**
+	- **[[Framework Crosswalks]]**
 	- **[[frameworker_diagram]]**
 
 	- **[[frameworker_linking]]**
 
 	- **[[Linking to Frameworks]]**
-	- **[[Mapped Frameworks]]**
+	- **[[Mapping Frameworks to Obsidian]]**
 - **[[Phone Pick in 2024]]**
 - **[[Podman Setup & Container Usage]]**
 - **[[Python Projects]]**
