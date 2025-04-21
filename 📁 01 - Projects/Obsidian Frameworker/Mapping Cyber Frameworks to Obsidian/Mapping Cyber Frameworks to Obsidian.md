@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Sunday, April 20th 2025, 10:06 pm
-date modified: Monday, April 21st 2025, 3:42 pm
+date modified: Monday, April 21st 2025, 4:06 pm
 ---
 
 [Framework Crosswalks](../Framework%20Crosswalks/Framework%20Crosswalks.md)
@@ -21,6 +21,15 @@ date modified: Monday, April 21st 2025, 3:42 pm
 |     |                          | `df_defend` (D3FEND)                  | **ID**                        | `D3‑PUBS` style (e.g. `D3-IMAGERY`)           | ATT&CK “T‑codes” ≠ D3FEND IDs → no hits with **exact**                                                        |
 | 5   | **CSF2 ↔ CIS v8**        | `df_csf2`                             | **CSF ID**                    | `DE.AE‑02.01` etc.                            | ——                                                                                                            |
 |     |                          | `df_cis_controls` (CIS v8)            | **CIS ID** (generated column) | `1.1`, `3.5` (controls) **or** `1` …          | dot in safeguards removed later (`replace(".", "_")`) so file‑name and YAML differ                            |
+
+# Merging Style
+
+| want to…                                              | set `premerge` | supply `map_df` | pros & cons                                                                     |
+| ----------------------------------------------------- | -------------- | --------------- | ------------------------------------------------------------------------------- |
+| **A)** _join once, then treat like normal_            | `True`         | required        | fastest at runtime; but duplicates mapping columns in the core DF you pre‑merge |
+| **B)** _keep tables separate; look up IDs on the fly_ | `False`        | required        | keeps core DFs pristine; slightly slower (dictionary lookup)                    |
+| **C)** _ignore mapping table – direct compare_        | `False`        | `None`          | original behaviour                                                              |
+|                                                       |                |                 |                                                                                 |
 
 # Transformations/Normalizing Columns
 
