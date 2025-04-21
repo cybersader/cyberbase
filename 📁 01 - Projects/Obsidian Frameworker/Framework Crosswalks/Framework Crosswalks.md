@@ -8,7 +8,7 @@ date modified: Sunday, April 20th 2025, 10:08 pm
 ---
 
 [Framework Mapping](../../../📁%2005%20-%20Organizational%20Cyber/Frameworks,%20Standards/Framework%20Mapping/Framework%20Mapping.md)
-[Mapping Frameworks to Obsidian](../Mapping%20Frameworks%20to%20Obsidian/Mapping%20Frameworks%20to%20Obsidian.md)
+[Mapping Cyber Frameworks to Obsidian](../Mapping%20Frameworks%20to%20Obsidian/Mapping%20Cyber%20Frameworks%20to%20Obsidian.md)
 
 # NIST CSF 2.0 Community Profiles
 

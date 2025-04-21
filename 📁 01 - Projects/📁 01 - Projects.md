@@ -28,7 +28,7 @@ date modified: Saturday, March 23rd 2024, 3:05 pm
 	- **[[frameworker_linking]]**
 
 	- **[[Linking to Frameworks]]**
-	- **[[Mapping Frameworks to Obsidian]]**
+	- **[[Mapping Cyber Frameworks to Obsidian]]**
 - **[[Phone Pick in 2024]]**
 - **[[Podman Setup & Container Usage]]**
 - **[[Python Projects]]**
