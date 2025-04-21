@@ -4,7 +4,7 @@ aliases: [Key Control Catalog]
 tags: ["#data-integration", "#data_mapping", RCSA, risk-management, risk-assessment]
 publish: true
 date created: Monday, September 23rd 2024, 11:50 am
-date modified: Friday, January 17th 2025, 2:29 pm
+date modified: Sunday, April 20th 2025, 8:46 pm
 ---
 
 [Data Entry Tools](../../../📁%2003%20-%20Curations,%20Stacks/⬇%20Tech%20Dropzone/Data%20Entry%20Tools/Data%20Entry%20Tools.md)
@@ -28,10 +28,6 @@ date modified: Friday, January 17th 2025, 2:29 pm
 - Att&ck
 	- [External Mappings Home – Mappings Explorer](https://center-for-threat-informed-defense.github.io/mappings-explorer/external/)
 	- 
-
-# Discussions/Opinions Online?
-
-- 
 
 # Database Schema Files?
 
