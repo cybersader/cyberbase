@@ -35,15 +35,9 @@ date modified: Monday, April 21st 2025, 4:06 pm
 
 - **CRI ↔ CSF2**
 	- CRI
-		- Profile 
-			- GV.OC-05
-			- GV.OC
-			- GV
+		- Profile
 	- CSF2
 		- CSF ID
-			- GV
-			- GV.OC
-			- GV.OC-01
 - **NIST‑800‑53 ↔ ATT&CK**
 	- NIST‑800‑53
 		- Control Identifier
@@ -60,4 +54,9 @@ date modified: Monday, April 21st 2025, 4:06 pm
 	- CSF2
 		- 
 	- CIS v8
+		- .
+- **NIST-800-53 ↔ D3FEND**
+	- NIST-800-53
+		- 
+	- D3FEND
 		- 
