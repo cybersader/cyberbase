@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink:
 date created: Friday, March 14th 2025, 12:18 pm
-date modified: Friday, March 14th 2025, 12:19 pm
+date modified: Tuesday, April 22nd 2025, 7:14 pm
 ---
 
 [Lucidchart for Data Governance](../📁%2005%20-%20Organizational%20Cyber/Lucidchart%20for%20Data%20Governance/Lucidchart%20for%20Data%20Governance.md)
@@ -12,3 +12,5 @@ date modified: Friday, March 14th 2025, 12:19 pm
 
 - IR Tabletop stuff
 - Awareness content creation tools
+- [Framework Crosswalker - TLDR](../📁%2001%20-%20Projects/Obsidian%20Frameworker/Framework%20Crosswalker%20-%20TLDR/Framework%20Crosswalker%20-%20TLDR.md)
+- 

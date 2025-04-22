@@ -1018,7 +1018,7 @@
         "startupType": "disabled"
       },
       "pane-relief": {
-        "startupType": "disabled"
+        "startupType": "instant"
       },
       "share-note": {
         "startupType": "disabled"

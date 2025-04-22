@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "Auto - Tagging, Linking, Dropzones & Organizers",
+      "path": "📁 10 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md"
+    },
+    {
+      "basename": "Dynamic Folders & Tags",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
+    },
+    {
+      "basename": "Using Tags",
+      "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
+    },
+    {
+      "basename": "📁 54 - Obsidian Vault Organization",
+      "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
+    },
+    {
+      "basename": "📁 52 - Obsidian Starters & Templates",
+      "path": "📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md"
+    },
+    {
+      "basename": "📁 53 - Cybersader GRC Tools",
+      "path": "📁 53 - Cybersader GRC Tools/📁 53 - Cybersader GRC Tools.md"
+    },
+    {
       "basename": "Mapping Cyber Frameworks to Obsidian",
       "path": "📁 01 - Projects/Obsidian Frameworker/Mapping Cyber Frameworks to Obsidian/Mapping Cyber Frameworks to Obsidian.md"
     },
@@ -9,16 +33,16 @@
       "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
     },
     {
-      "basename": "Framework Crosswalks",
-      "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalks/Framework Crosswalks.md"
-    },
-    {
       "basename": "Framework Crosswalker - TLDR",
       "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalker - TLDR/Framework Crosswalker - TLDR.md"
     },
     {
       "basename": "Framework Mapping",
       "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md"
+    },
+    {
+      "basename": "Framework Crosswalks",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalks/Framework Crosswalks.md"
     },
     {
       "basename": "Framework Crosswalker - GPT Intro",
@@ -175,30 +199,6 @@
     {
       "basename": "30 - Initial Recon & Checks",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/30 - Initial Recon & Checks/30 - Initial Recon & Checks.md"
-    },
-    {
-      "basename": "Assumed Compromise",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/Assumed Compromise.md"
-    },
-    {
-      "basename": "PowerShell for InfoSec",
-      "path": "📁 06 - Learning, Notes/Cyber Classes/PowerShell for InfoSec/PowerShell for InfoSec.md"
-    },
-    {
-      "basename": "5 - Cyber Deception",
-      "path": "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Project Workspace/5 - Cyber Deception.md"
-    },
-    {
-      "basename": "Password Research and Stuff",
-      "path": "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Complementary Research/Password Research and Stuff.md"
-    },
-    {
-      "basename": "Curated Papers, Research, Content, Tools",
-      "path": "📁 98 - ARCHIVE/GradSchoolProjects/Honey Accounts in Windows AD/Complementary Research/Curated Papers, Research, Content, Tools.md"
-    },
-    {
-      "basename": "GradSchoolProjects",
-      "path": "📁 98 - ARCHIVE/GradSchoolProjects/GradSchoolProjects.md"
     }
   ],
   "omittedPaths": [],
