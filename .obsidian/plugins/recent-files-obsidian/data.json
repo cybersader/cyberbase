@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Tag Structure Examples",
+      "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
+    },
+    {
+      "basename": "Tag Pages",
+      "path": "📁 54 - Obsidian Vault Organization/Tag Pages/Tag Pages.md"
+    },
+    {
+      "basename": "Vault Folder & Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
+    },
+    {
+      "basename": "📁 54 - Obsidian Vault Organization",
+      "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
+    },
+    {
       "basename": "Auto - Tagging, Linking, Dropzones & Organizers",
       "path": "📁 10 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md"
     },
@@ -11,10 +27,6 @@
     {
       "basename": "Using Tags",
       "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
-    },
-    {
-      "basename": "📁 54 - Obsidian Vault Organization",
-      "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
     },
     {
       "basename": "📁 52 - Obsidian Starters & Templates",
@@ -187,18 +199,6 @@
     {
       "basename": "31 - Sentinel, Sysmon",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/31 - Sentinel, Sysmon/31 - Sentinel, Sysmon.md"
-    },
-    {
-      "basename": "10 - Azure & AD Environment Takeaways",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/10 - Azure & AD Environment Takeaways/10 - Azure & AD Environment Takeaways.md"
-    },
-    {
-      "basename": "20 - Cyber Deception",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/20 - Cyber Deception/20 - Cyber Deception.md"
-    },
-    {
-      "basename": "30 - Initial Recon & Checks",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/30 - Initial Recon & Checks/30 - Initial Recon & Checks.md"
     }
   ],
   "omittedPaths": [],

@@ -35,7 +35,7 @@ __export(main_exports, {
 
 module.exports = __toCommonJS(main_exports);
 
-var import_obsidian8 = require("obsidian"), enumShowListIn = {
+var _a, _b, import_obsidian8 = require("obsidian"), enumShowListIn = {
   "": "Sidebar",
   CURRENT_PANE: "Current pane",
   SPLIT_PANE: "New pane"
@@ -104,168 +104,39 @@ var import_obsidian8 = require("obsidian"), enumShowListIn = {
   MTIME: "Modified time",
   CTIME: "Created time",
   FULLPATH: "Fullpath of the file"
-}, is_array = Array.isArray, array_from = Array.from, object_keys = Object.keys, define_property = Object.defineProperty, get_descriptor = Object.getOwnPropertyDescriptor, get_descriptors = Object.getOwnPropertyDescriptors, object_prototype = Object.prototype, array_prototype = Array.prototype, get_prototype_of = Object.getPrototypeOf, noop = () => {};
+}, node_env = null == (_b = null == (_a = globalThis.process) ? void 0 : _a.env) ? void 0 : _b.NODE_ENV, dev_fallback_default = node_env && !node_env.toLowerCase().startsWith("prod"), is_array = Array.isArray, index_of = Array.prototype.indexOf, array_from = Array.from, object_keys = Object.keys, define_property = Object.defineProperty, get_descriptor = Object.getOwnPropertyDescriptor, get_descriptors = Object.getOwnPropertyDescriptors, object_prototype = Object.prototype, array_prototype = Array.prototype, get_prototype_of = Object.getPrototypeOf, is_extensible = Object.isExtensible, noop = () => {};
 
 function run_all(arr) {
   for (var i = 0; i < arr.length; i++) arr[i]();
 }
 
-var DEV = false, DERIVED = 2, EFFECT = 4, RENDER_EFFECT = 8, BLOCK_EFFECT = 16, BRANCH_EFFECT = 32, ROOT_EFFECT = 64, UNOWNED = 128, DISCONNECTED = 256, CLEAN = 512, DIRTY = 1024, MAYBE_DIRTY = 2048, INERT = 4096, DESTROYED = 8192, EFFECT_RAN = 16384, EFFECT_TRANSPARENT = 32768, LEGACY_DERIVED_PROP = 65536, INSPECT_EFFECT = 1 << 17, HEAD_EFFECT = 1 << 18, EFFECT_HAS_DERIVED = 1 << 19, STATE_SYMBOL = Symbol("$state"), STATE_SYMBOL_METADATA = Symbol("$state metadata"), LOADING_ATTR_SYMBOL = Symbol(""), request_idle_callback = "undefined" == typeof requestIdleCallback ? cb => setTimeout(cb, 1) : requestIdleCallback, is_micro_task_queued = false, is_idle_task_queued = false, current_queued_micro_tasks = [], current_queued_idle_tasks = [];
+var DERIVED = 2, EFFECT = 4, RENDER_EFFECT = 8, BLOCK_EFFECT = 16, BRANCH_EFFECT = 32, ROOT_EFFECT = 64, BOUNDARY_EFFECT = 128, UNOWNED = 256, DISCONNECTED = 512, CLEAN = 1024, DIRTY = 2048, MAYBE_DIRTY = 4096, INERT = 8192, DESTROYED = 16384, EFFECT_RAN = 32768, EFFECT_TRANSPARENT = 65536, LEGACY_DERIVED_PROP = 1 << 17, INSPECT_EFFECT = 1 << 18, HEAD_EFFECT = 1 << 19, EFFECT_HAS_DERIVED = 1 << 20, EFFECT_IS_UPDATING = 1 << 21, STATE_SYMBOL = Symbol("$state"), LEGACY_PROPS = Symbol("legacy props"), LOADING_ATTR_SYMBOL = Symbol(""), request_idle_callback = "undefined" == typeof requestIdleCallback ? cb => setTimeout(cb, 1) : requestIdleCallback, micro_tasks = [], idle_tasks = [];
 
-function process_micro_tasks() {
-  is_micro_task_queued = false;
-  const tasks = current_queued_micro_tasks.slice();
-  current_queued_micro_tasks = [];
+function run_micro_tasks() {
+  var tasks = micro_tasks;
+  micro_tasks = [];
   run_all(tasks);
 }
 
-function process_idle_tasks() {
-  is_idle_task_queued = false;
-  const tasks = current_queued_idle_tasks.slice();
-  current_queued_idle_tasks = [];
+function run_idle_tasks() {
+  var tasks = idle_tasks;
+  idle_tasks = [];
   run_all(tasks);
 }
 
 function queue_micro_task(fn) {
-  if (!is_micro_task_queued) {
-    is_micro_task_queued = true;
-    queueMicrotask(process_micro_tasks);
-  }
-  current_queued_micro_tasks.push(fn);
+  if (0 === micro_tasks.length) queueMicrotask(run_micro_tasks);
+  micro_tasks.push(fn);
 }
 
 function queue_idle_task(fn) {
-  if (!is_idle_task_queued) {
-    is_idle_task_queued = true;
-    request_idle_callback(process_idle_tasks);
-  }
-  current_queued_idle_tasks.push(fn);
+  if (0 === idle_tasks.length) request_idle_callback(run_idle_tasks);
+  idle_tasks.push(fn);
 }
 
 function flush_tasks() {
-  if (is_micro_task_queued) process_micro_tasks();
-  if (is_idle_task_queued) process_idle_tasks();
-}
-
-var bold = "font-weight: bold", normal = "font-weight: normal";
-
-function hydration_attribute_changed(attribute, html2, value) {
-  if (DEV) console.warn(`%c[svelte] hydration_attribute_changed\n%cThe \`${attribute}\` attribute on \`${html2}\` changed its value between server and client renders. The client value, \`${value}\`, will be ignored in favour of the server value`, bold, normal); else console.warn("hydration_attribute_changed");
-}
-
-function hydration_html_changed(location) {
-  if (DEV) console.warn("%c[svelte] hydration_html_changed\n%c" + (location ? `The value of an \`{@html ...}\` block ${location} changed between server and client renders. The client value will be ignored in favour of the server value` : "The value of an `{@html ...}` block changed between server and client renders. The client value will be ignored in favour of the server value"), bold, normal); else console.warn("hydration_html_changed");
-}
-
-function hydration_mismatch(location) {
-  if (DEV) console.warn("%c[svelte] hydration_mismatch\n%c" + (location ? `Hydration failed because the initial UI does not match what was rendered on the server. The error occurred near ${location}` : "Hydration failed because the initial UI does not match what was rendered on the server"), bold, normal); else console.warn("hydration_mismatch");
-}
-
-function lifecycle_double_unmount() {
-  if (DEV) console.warn("%c[svelte] lifecycle_double_unmount\n%cTried to unmount a component that was not mounted", bold, normal); else console.warn("lifecycle_double_unmount");
-}
-
-function ownership_invalid_binding(parent, child2, owner) {
-  if (DEV) console.warn(`%c[svelte] ownership_invalid_binding\n%c${parent} passed a value to ${child2} with \`bind:\`, but the value is owned by ${owner}. Consider creating a binding between ${owner} and ${parent}`, bold, normal); else console.warn("ownership_invalid_binding");
-}
-
-function ownership_invalid_mutation(component2, owner) {
-  if (DEV) console.warn("%c[svelte] ownership_invalid_mutation\n%c" + (component2 ? `${component2} mutated a value owned by ${owner}. This is strongly discouraged. Consider passing values to child components with \`bind:\`, or use a callback instead` : "Mutating a value outside the component that created it is strongly discouraged. Consider passing values to child components with `bind:`, or use a callback instead"), bold, normal); else console.warn("ownership_invalid_mutation");
-}
-
-function state_proxy_equality_mismatch(operator) {
-  if (DEV) console.warn(`%c[svelte] state_proxy_equality_mismatch\n%cReactive \`$state(...)\` proxies and the values they proxy have different identities. Because of this, comparisons with \`${operator}\` will produce unexpected results`, bold, normal); else console.warn("state_proxy_equality_mismatch");
-}
-
-var EACH_ITEM_REACTIVE = 1, EACH_INDEX_REACTIVE = 2, EACH_IS_CONTROLLED = 4, EACH_IS_ANIMATED = 8, EACH_ITEM_IMMUTABLE = 16, PROPS_IS_IMMUTABLE = 1, PROPS_IS_RUNES = 2, PROPS_IS_UPDATED = 4, PROPS_IS_BINDABLE = 8, PROPS_IS_LAZY_INITIAL = 16, TRANSITION_OUT = 2, TRANSITION_GLOBAL = 4, TEMPLATE_FRAGMENT = 1, TEMPLATE_USE_IMPORT_NODE = 2, HYDRATION_START = "[", HYDRATION_START_ELSE = "[!", HYDRATION_END = "]", HYDRATION_ERROR = {}, ELEMENT_PRESERVE_ATTRIBUTE_CASE = 2, UNINITIALIZED = Symbol(), FILENAME = Symbol("filename"), HMR = Symbol("hmr"), boundaries = {}, chrome_pattern = /at (?:.+ \()?(.+):(\d+):(\d+)\)?$/, firefox_pattern = /@(.+):(\d+):(\d+)$/;
-
-function get_stack() {
-  var _a;
-  const stack2 = (new Error).stack;
-  if (!stack2) return null;
-  const entries = [];
-  for (const line of stack2.split("\n")) {
-    let match = null != (_a = chrome_pattern.exec(line)) ? _a : firefox_pattern.exec(line);
-    if (match) entries.push({
-      file: match[1],
-      line: +match[2],
-      column: +match[3]
-    });
-  }
-  return entries;
-}
-
-function get_component() {
-  var _a;
-  const stack2 = null == (_a = get_stack()) ? void 0 : _a.slice(4);
-  if (!stack2) return null;
-  for (let i = 0; i < stack2.length; i++) {
-    const entry = stack2[i], modules = boundaries[entry.file];
-    if (modules) {
-      for (const module2 of modules) if (module2.start.line < entry.line && module2.end.line > entry.line) return module2.component;
-    } else if (0 === i) return null;
-  }
-  return null;
-}
-
-var ADD_OWNER = Symbol("ADD_OWNER");
-
-function add_owner(object, owner, global = false, skip_warning = false) {
-  if (object && !global) {
-    const component2 = dev_current_component_function, metadata = object[STATE_SYMBOL_METADATA];
-    if (metadata && !has_owner(metadata, component2)) {
-      let original = get_owner(metadata);
-      if (owner[FILENAME] !== component2[FILENAME] && !skip_warning) ownership_invalid_binding(component2[FILENAME], owner[FILENAME], original[FILENAME]);
-    }
-  }
-  add_owner_to_object(object, owner, new Set);
-}
-
-function widen_ownership(from, to) {
-  if (null !== to.owners) for (;from; ) {
-    if (null === from.owners) {
-      to.owners = null;
-      break;
-    }
-    for (const owner of from.owners) to.owners.add(owner);
-    from = from.parent;
-  }
-}
-
-function add_owner_to_object(object, owner, seen) {
-  const metadata = null == object ? void 0 : object[STATE_SYMBOL_METADATA];
-  if (metadata) {
-    if ("owners" in metadata && null != metadata.owners) metadata.owners.add(owner);
-  } else if (object && "object" == typeof object) {
-    if (seen.has(object)) return;
-    seen.add(object);
-    if (ADD_OWNER in object && object[ADD_OWNER]) render_effect((() => {
-      object[ADD_OWNER](owner);
-    })); else {
-      var proto = get_prototype_of(object);
-      if (proto === Object.prototype) for (const key in object) add_owner_to_object(object[key], owner, seen); else if (proto === Array.prototype) for (let i = 0; i < object.length; i += 1) add_owner_to_object(object[i], owner, seen);
-    }
-  }
-}
-
-function has_owner(metadata, component2) {
-  if (null === metadata.owners) return true; else return metadata.owners.has(component2) || null !== metadata.parent && has_owner(metadata.parent, component2);
-}
-
-function get_owner(metadata) {
-  var _a, _b;
-  return null != (_b = null == (_a = null == metadata ? void 0 : metadata.owners) ? void 0 : _a.values().next().value) ? _b : get_owner(metadata.parent);
-}
-
-var skip = false;
-
-function check_ownership(metadata) {
-  if (skip) return;
-  const component2 = get_component();
-  if (component2 && !has_owner(metadata, component2)) {
-    let original = get_owner(metadata);
-    if (original[FILENAME] !== component2[FILENAME]) ownership_invalid_mutation(component2[FILENAME], original[FILENAME]); else ownership_invalid_mutation();
-  }
+  if (micro_tasks.length > 0) run_micro_tasks();
+  if (idle_tasks.length > 0) run_idle_tasks();
 }
 
 function equals(value) {
@@ -281,648 +152,156 @@ function safe_equals(value) {
 }
 
 function bind_invalid_checkbox_value() {
-  if (DEV) {
-    const error = new Error("bind_invalid_checkbox_value\nUsing `bind:value` together with a checkbox input is not allowed. Use `bind:checked` instead");
+  if (dev_fallback_default) {
+    const error = new Error("bind_invalid_checkbox_value\nUsing `bind:value` together with a checkbox input is not allowed. Use `bind:checked` instead\nhttps://svelte.dev/e/bind_invalid_checkbox_value");
     error.name = "Svelte error";
     throw error;
-  } else throw new Error("bind_invalid_checkbox_value");
+  } else throw new Error("https://svelte.dev/e/bind_invalid_checkbox_value");
 }
 
 function derived_references_self() {
-  if (DEV) {
-    const error = new Error("derived_references_self\nA derived value cannot reference itself recursively");
+  if (dev_fallback_default) {
+    const error = new Error("derived_references_self\nA derived value cannot reference itself recursively\nhttps://svelte.dev/e/derived_references_self");
     error.name = "Svelte error";
     throw error;
-  } else throw new Error("derived_references_self");
+  } else throw new Error("https://svelte.dev/e/derived_references_self");
 }
 
 function effect_in_teardown(rune) {
-  if (DEV) {
-    const error = new Error(`effect_in_teardown\n\`${rune}\` cannot be used inside an effect cleanup function`);
+  if (dev_fallback_default) {
+    const error = new Error(`effect_in_teardown\n\`${rune}\` cannot be used inside an effect cleanup function\nhttps://svelte.dev/e/effect_in_teardown`);
     error.name = "Svelte error";
     throw error;
-  } else throw new Error("effect_in_teardown");
+  } else throw new Error("https://svelte.dev/e/effect_in_teardown");
 }
 
 function effect_in_unowned_derived() {
-  if (DEV) {
-    const error = new Error("effect_in_unowned_derived\nEffect cannot be created inside a `$derived` value that was not itself created inside an effect");
+  if (dev_fallback_default) {
+    const error = new Error("effect_in_unowned_derived\nEffect cannot be created inside a `$derived` value that was not itself created inside an effect\nhttps://svelte.dev/e/effect_in_unowned_derived");
     error.name = "Svelte error";
     throw error;
-  } else throw new Error("effect_in_unowned_derived");
+  } else throw new Error("https://svelte.dev/e/effect_in_unowned_derived");
 }
 
 function effect_orphan(rune) {
-  if (DEV) {
-    const error = new Error(`effect_orphan\n\`${rune}\` can only be used inside an effect (e.g. during component initialisation)`);
+  if (dev_fallback_default) {
+    const error = new Error(`effect_orphan\n\`${rune}\` can only be used inside an effect (e.g. during component initialisation)\nhttps://svelte.dev/e/effect_orphan`);
     error.name = "Svelte error";
     throw error;
-  } else throw new Error("effect_orphan");
+  } else throw new Error("https://svelte.dev/e/effect_orphan");
 }
 
 function effect_update_depth_exceeded() {
-  if (DEV) {
-    const error = new Error("effect_update_depth_exceeded\nMaximum update depth exceeded. This can happen when a reactive block or effect repeatedly sets a new value. Svelte limits the number of nested updates to prevent infinite loops");
+  if (dev_fallback_default) {
+    const error = new Error("effect_update_depth_exceeded\nMaximum update depth exceeded. This can happen when a reactive block or effect repeatedly sets a new value. Svelte limits the number of nested updates to prevent infinite loops\nhttps://svelte.dev/e/effect_update_depth_exceeded");
     error.name = "Svelte error";
     throw error;
-  } else throw new Error("effect_update_depth_exceeded");
+  } else throw new Error("https://svelte.dev/e/effect_update_depth_exceeded");
 }
 
 function hydration_failed() {
-  if (DEV) {
-    const error = new Error("hydration_failed\nFailed to hydrate the application");
+  if (dev_fallback_default) {
+    const error = new Error("hydration_failed\nFailed to hydrate the application\nhttps://svelte.dev/e/hydration_failed");
     error.name = "Svelte error";
     throw error;
-  } else throw new Error("hydration_failed");
+  } else throw new Error("https://svelte.dev/e/hydration_failed");
 }
 
 function invalid_snippet() {
-  if (DEV) {
-    const error = new Error("invalid_snippet\nCould not `{@render}` snippet due to the expression being `null` or `undefined`. Consider using optional chaining `{@render snippet?.()}`");
+  if (dev_fallback_default) {
+    const error = new Error("invalid_snippet\nCould not `{@render}` snippet due to the expression being `null` or `undefined`. Consider using optional chaining `{@render snippet?.()}`\nhttps://svelte.dev/e/invalid_snippet");
     error.name = "Svelte error";
     throw error;
-  } else throw new Error("invalid_snippet");
+  } else throw new Error("https://svelte.dev/e/invalid_snippet");
 }
 
 function props_invalid_value(key) {
-  if (DEV) {
-    const error = new Error(`props_invalid_value\nCannot do \`bind:${key}={undefined}\` when \`${key}\` has a fallback value`);
+  if (dev_fallback_default) {
+    const error = new Error(`props_invalid_value\nCannot do \`bind:${key}={undefined}\` when \`${key}\` has a fallback value\nhttps://svelte.dev/e/props_invalid_value`);
     error.name = "Svelte error";
     throw error;
-  } else throw new Error("props_invalid_value");
+  } else throw new Error("https://svelte.dev/e/props_invalid_value");
 }
 
 function rune_outside_svelte(rune) {
-  if (DEV) {
-    const error = new Error(`rune_outside_svelte\nThe \`${rune}\` rune is only available inside \`.svelte\` and \`.svelte.js/ts\` files`);
+  if (dev_fallback_default) {
+    const error = new Error(`rune_outside_svelte\nThe \`${rune}\` rune is only available inside \`.svelte\` and \`.svelte.js/ts\` files\nhttps://svelte.dev/e/rune_outside_svelte`);
     error.name = "Svelte error";
     throw error;
-  } else throw new Error("rune_outside_svelte");
+  } else throw new Error("https://svelte.dev/e/rune_outside_svelte");
 }
 
 function state_descriptors_fixed() {
-  if (DEV) {
-    const error = new Error("state_descriptors_fixed\nProperty descriptors defined on `$state` objects must contain `value` and always be `enumerable`, `configurable` and `writable`.");
+  if (dev_fallback_default) {
+    const error = new Error("state_descriptors_fixed\nProperty descriptors defined on `$state` objects must contain `value` and always be `enumerable`, `configurable` and `writable`.\nhttps://svelte.dev/e/state_descriptors_fixed");
     error.name = "Svelte error";
     throw error;
-  } else throw new Error("state_descriptors_fixed");
+  } else throw new Error("https://svelte.dev/e/state_descriptors_fixed");
 }
 
 function state_prototype_fixed() {
-  if (DEV) {
-    const error = new Error("state_prototype_fixed\nCannot set prototype of `$state` object");
+  if (dev_fallback_default) {
+    const error = new Error("state_prototype_fixed\nCannot set prototype of `$state` object\nhttps://svelte.dev/e/state_prototype_fixed");
     error.name = "Svelte error";
     throw error;
-  } else throw new Error("state_prototype_fixed");
-}
-
-function state_unsafe_local_read() {
-  if (DEV) {
-    const error = new Error("state_unsafe_local_read\nReading state that was created inside the same derived is forbidden. Consider using `untrack` to read locally created state");
-    error.name = "Svelte error";
-    throw error;
-  } else throw new Error("state_unsafe_local_read");
+  } else throw new Error("https://svelte.dev/e/state_prototype_fixed");
 }
 
 function state_unsafe_mutation() {
-  if (DEV) {
-    const error = new Error("state_unsafe_mutation\nUpdating state inside a derived or a template expression is forbidden. If the value should not be reactive, declare it without `$state`");
+  if (dev_fallback_default) {
+    const error = new Error("state_unsafe_mutation\nUpdating state inside a derived or a template expression is forbidden. If the value should not be reactive, declare it without `$state`\nhttps://svelte.dev/e/state_unsafe_mutation");
     error.name = "Svelte error";
     throw error;
-  } else throw new Error("state_unsafe_mutation");
+  } else throw new Error("https://svelte.dev/e/state_unsafe_mutation");
 }
 
-var inspect_effects = new Set;
+var legacy_mode_flag = false, tracing_mode_flag = false, EACH_ITEM_REACTIVE = 1, EACH_INDEX_REACTIVE = 2, EACH_IS_CONTROLLED = 4, EACH_IS_ANIMATED = 8, EACH_ITEM_IMMUTABLE = 16, PROPS_IS_IMMUTABLE = 1, PROPS_IS_RUNES = 2, PROPS_IS_UPDATED = 4, PROPS_IS_BINDABLE = 8, PROPS_IS_LAZY_INITIAL = 16, TRANSITION_OUT = 2, TRANSITION_GLOBAL = 4, TEMPLATE_FRAGMENT = 1, TEMPLATE_USE_IMPORT_NODE = 2, HYDRATION_START = "[", HYDRATION_START_ELSE = "[!", HYDRATION_END = "]", HYDRATION_ERROR = {}, ELEMENT_PRESERVE_ATTRIBUTE_CASE = 2, UNINITIALIZED = Symbol(), FILENAME = Symbol("filename"), HMR = Symbol("hmr"), NAMESPACE_HTML = "http://www.w3.org/1999/xhtml", tracing_expressions = null;
 
-function set_inspect_effects(v) {
-  inspect_effects = v;
-}
-
-function source(v) {
-  return {
-    f: 0,
-    v,
-    reactions: null,
-    equals,
-    version: 0
-  };
-}
-
-function state(v) {
-  return push_derived_source(source(v));
-}
-
-function mutable_source(initial_value, immutable = false) {
-  var _a, _b;
-  const s = source(initial_value);
-  if (!immutable) s.equals = safe_equals;
-  if (null !== component_context && null !== component_context.l) (null != (_b = (_a = component_context.l).s) ? _b : _a.s = []).push(s);
-  return s;
-}
-
-function push_derived_source(source2) {
-  if (null !== active_reaction && !!(active_reaction.f & DERIVED)) if (null === derived_sources) set_derived_sources([ source2 ]); else derived_sources.push(source2);
-  return source2;
-}
-
-function set(source2, value) {
-  if (null !== active_reaction && is_runes() && !!(active_reaction.f & (DERIVED | BLOCK_EFFECT)) && (null === derived_sources || !derived_sources.includes(source2))) state_unsafe_mutation();
-  return internal_set(source2, value);
-}
-
-function internal_set(source2, value) {
-  if (!source2.equals(value)) {
-    source2.v = value;
-    source2.version = increment_version();
-    mark_reactions(source2, DIRTY);
-    if (is_runes() && null !== active_effect && !!(active_effect.f & CLEAN) && !(active_effect.f & BRANCH_EFFECT)) if (null !== new_deps && new_deps.includes(source2)) {
-      set_signal_status(active_effect, DIRTY);
-      schedule_effect(active_effect);
-    } else if (null === untracked_writes) set_untracked_writes([ source2 ]); else untracked_writes.push(source2);
-    if (DEV && inspect_effects.size > 0) {
-      const inspects = Array.from(inspect_effects);
-      var previously_flushing_effect = is_flushing_effect;
-      set_is_flushing_effect(true);
-      try {
-        for (const effect2 of inspects) {
-          if (!!(effect2.f & CLEAN)) set_signal_status(effect2, MAYBE_DIRTY);
-          if (check_dirtiness(effect2)) update_effect(effect2);
-        }
-      } finally {
-        set_is_flushing_effect(previously_flushing_effect);
+function get_stack(label) {
+  let error = Error();
+  const stack2 = error.stack;
+  if (stack2) {
+    const lines = stack2.split("\n"), new_lines = [ "\n" ];
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+      if ("Error" !== line) {
+        if (line.includes("validate_each_keys")) return null;
+        if (!line.includes("svelte/src/internal")) new_lines.push(line);
       }
-      inspect_effects.clear();
     }
+    if (1 === new_lines.length) return null;
+    define_property(error, "stack", {
+      value: new_lines.join("\n")
+    });
+    define_property(error, "name", {
+      value: `${label}Error`
+    });
   }
-  return value;
-}
-
-function mark_reactions(signal, status) {
-  var reactions = signal.reactions;
-  if (null !== reactions) for (var runes = is_runes(), length = reactions.length, i = 0; i < length; i++) {
-    var reaction = reactions[i], flags = reaction.f;
-    if (!(flags & DIRTY)) if (runes || reaction !== active_effect) if (!(DEV && flags & INSPECT_EFFECT)) {
-      set_signal_status(reaction, status);
-      if (!!(flags & (CLEAN | UNOWNED))) if (!!(flags & DERIVED)) mark_reactions(reaction, MAYBE_DIRTY); else schedule_effect(reaction);
-    } else inspect_effects.add(reaction);
-  }
-}
-
-function derived(fn) {
-  var _a, flags = DERIVED | DIRTY;
-  if (null === active_effect) flags |= UNOWNED; else active_effect.f |= EFFECT_HAS_DERIVED;
-  const signal = {
-    children: null,
-    ctx: component_context,
-    deps: null,
-    equals,
-    f: flags,
-    fn,
-    reactions: null,
-    v: null,
-    version: 0,
-    parent: active_effect
-  };
-  if (null !== active_reaction && !!(active_reaction.f & DERIVED)) {
-    var derived3 = active_reaction;
-    (null != (_a = derived3.children) ? _a : derived3.children = []).push(signal);
-  }
-  return signal;
-}
-
-function derived_safe_equal(fn) {
-  const signal = derived(fn);
-  signal.equals = safe_equals;
-  return signal;
-}
-
-function destroy_derived_children(derived3) {
-  var children = derived3.children;
-  if (null !== children) {
-    derived3.children = null;
-    for (var i = 0; i < children.length; i += 1) {
-      var child2 = children[i];
-      if (!!(child2.f & DERIVED)) destroy_derived(child2); else destroy_effect(child2);
-    }
-  }
-}
-
-var stack = [];
-
-function execute_derived(derived3) {
-  var value, prev_active_effect = active_effect;
-  set_active_effect(derived3.parent);
-  if (DEV) {
-    let prev_inspect_effects = inspect_effects;
-    set_inspect_effects(new Set);
-    try {
-      if (stack.includes(derived3)) derived_references_self();
-      stack.push(derived3);
-      destroy_derived_children(derived3);
-      value = update_reaction(derived3);
-    } finally {
-      set_active_effect(prev_active_effect);
-      set_inspect_effects(prev_inspect_effects);
-      stack.pop();
-    }
-  } else try {
-    destroy_derived_children(derived3);
-    value = update_reaction(derived3);
-  } finally {
-    set_active_effect(prev_active_effect);
-  }
-  return value;
-}
-
-function update_derived(derived3) {
-  var value = execute_derived(derived3);
-  set_signal_status(derived3, (skip_reaction || !!(derived3.f & UNOWNED)) && null !== derived3.deps ? MAYBE_DIRTY : CLEAN);
-  if (!derived3.equals(value)) {
-    derived3.v = value;
-    derived3.version = increment_version();
-  }
-}
-
-function destroy_derived(signal) {
-  destroy_derived_children(signal);
-  remove_reactions(signal, 0);
-  set_signal_status(signal, DESTROYED);
-  signal.v = signal.children = signal.deps = signal.ctx = signal.reactions = null;
+  return error;
 }
 
 function lifecycle_outside_component(name) {
-  if (DEV) {
-    const error = new Error(`lifecycle_outside_component\n\`${name}(...)\` can only be used during component initialisation`);
+  if (dev_fallback_default) {
+    const error = new Error(`lifecycle_outside_component\n\`${name}(...)\` can only be used during component initialisation\nhttps://svelte.dev/e/lifecycle_outside_component`);
     error.name = "Svelte error";
     throw error;
-  } else throw new Error("lifecycle_outside_component");
+  } else throw new Error("https://svelte.dev/e/lifecycle_outside_component");
 }
 
-var FLUSH_MICROTASK = 0, FLUSH_SYNC = 1, handled_errors = new WeakSet, scheduler_mode = FLUSH_MICROTASK, is_micro_task_queued2 = false, is_flushing_effect = false, is_destroying_effect = false;
+var component_context = null;
 
-function set_is_flushing_effect(value) {
-  is_flushing_effect = value;
+function set_component_context(context) {
+  component_context = context;
 }
 
-function set_is_destroying_effect(value) {
-  is_destroying_effect = value;
-}
+var dev_current_component_function = null;
 
-var queued_root_effects = [], flush_count = 0, dev_effect_stack = [], active_reaction = null;
-
-function set_active_reaction(reaction) {
-  active_reaction = reaction;
-}
-
-var active_effect = null;
-
-function set_active_effect(effect2) {
-  active_effect = effect2;
-}
-
-var derived_sources = null;
-
-function set_derived_sources(sources) {
-  derived_sources = sources;
-}
-
-var new_deps = null, skipped_deps = 0, untracked_writes = null;
-
-function set_untracked_writes(value) {
-  untracked_writes = value;
-}
-
-var current_version = 0, skip_reaction = false, is_signals_recorded = false, captured_signals = new Set, component_context = null, dev_current_component_function = null;
-
-function increment_version() {
-  return ++current_version;
-}
-
-function is_runes() {
-  return null !== component_context && null === component_context.l;
-}
-
-function check_dirtiness(reaction) {
-  var _a, _b, _c, _d, flags = reaction.f;
-  if (!!(flags & DIRTY)) return true;
-  if (!!(flags & MAYBE_DIRTY)) {
-    var dependencies = reaction.deps, is_unowned = !!(flags & UNOWNED);
-    if (null !== dependencies) {
-      var i;
-      if (!!(flags & DISCONNECTED)) {
-        for (i = 0; i < dependencies.length; i++) (null != (_b = (_a = dependencies[i]).reactions) ? _b : _a.reactions = []).push(reaction);
-        reaction.f ^= DISCONNECTED;
-      }
-      for (i = 0; i < dependencies.length; i++) {
-        var dependency = dependencies[i];
-        if (check_dirtiness(dependency)) update_derived(dependency);
-        if (is_unowned && null !== active_effect && !skip_reaction && !(null == (_c = null == dependency ? void 0 : dependency.reactions) ? void 0 : _c.includes(reaction))) (null != (_d = dependency.reactions) ? _d : dependency.reactions = []).push(reaction);
-        if (dependency.version > reaction.version) return true;
-      }
-    }
-    if (!is_unowned) set_signal_status(reaction, CLEAN);
-  }
-  return false;
-}
-
-function handle_error(error, effect2, component_context2) {
-  var _a, _b;
-  if (!DEV || handled_errors.has(error) || null === component_context2) throw error;
-  const component_stack = [], effect_name = null == (_a = effect2.fn) ? void 0 : _a.name;
-  if (effect_name) component_stack.push(effect_name);
-  let current_context = component_context2;
-  for (;null !== current_context; ) {
-    if (DEV) {
-      var filename = null == (_b = current_context.function) ? void 0 : _b[FILENAME];
-      if (filename) {
-        const file = filename.split("/").pop();
-        component_stack.push(file);
-      }
-    }
-    current_context = current_context.p;
-  }
-  const indent = /Firefox/.test(navigator.userAgent) ? "  " : "\t";
-  define_property(error, "message", {
-    value: error.message + `\n${component_stack.map((name => `\n${indent}in ${name}`)).join("")}\n`
-  });
-  const stack2 = error.stack;
-  if (stack2) {
-    const lines = stack2.split("\n"), new_lines = [];
-    for (let i = 0; i < lines.length; i++) {
-      const line = lines[i];
-      if (!line.includes("svelte/src/internal")) new_lines.push(line);
-    }
-    define_property(error, "stack", {
-      value: error.stack + new_lines.join("\n")
-    });
-  }
-  handled_errors.add(error);
-  throw error;
-}
-
-function update_reaction(reaction) {
-  var _a, _b, previous_deps = new_deps, previous_skipped_deps = skipped_deps, previous_untracked_writes = untracked_writes, previous_reaction = active_reaction, previous_skip_reaction = skip_reaction, prev_derived_sources = derived_sources, previous_component_context = component_context, flags = reaction.f;
-  new_deps = null;
-  skipped_deps = 0;
-  untracked_writes = null;
-  active_reaction = !(flags & (BRANCH_EFFECT | ROOT_EFFECT)) ? reaction : null;
-  skip_reaction = !is_flushing_effect && !!(flags & UNOWNED);
-  derived_sources = null;
-  component_context = reaction.ctx;
-  try {
-    var result = (0, reaction.fn)(), deps = reaction.deps;
-    if (null !== new_deps) {
-      var i;
-      remove_reactions(reaction, skipped_deps);
-      if (null !== deps && skipped_deps > 0) {
-        deps.length = skipped_deps + new_deps.length;
-        for (i = 0; i < new_deps.length; i++) deps[skipped_deps + i] = new_deps[i];
-      } else reaction.deps = deps = new_deps;
-      if (!skip_reaction) for (i = skipped_deps; i < deps.length; i++) (null != (_b = (_a = deps[i]).reactions) ? _b : _a.reactions = []).push(reaction);
-    } else if (null !== deps && skipped_deps < deps.length) {
-      remove_reactions(reaction, skipped_deps);
-      deps.length = skipped_deps;
-    }
-    return result;
-  } finally {
-    new_deps = previous_deps;
-    skipped_deps = previous_skipped_deps;
-    untracked_writes = previous_untracked_writes;
-    active_reaction = previous_reaction;
-    skip_reaction = previous_skip_reaction;
-    derived_sources = prev_derived_sources;
-    component_context = previous_component_context;
-  }
-}
-
-function remove_reaction(signal, dependency) {
-  let reactions = dependency.reactions;
-  if (null !== reactions) {
-    var index2 = reactions.indexOf(signal);
-    if (-1 !== index2) {
-      var new_length = reactions.length - 1;
-      if (0 === new_length) reactions = dependency.reactions = null; else {
-        reactions[index2] = reactions[new_length];
-        reactions.pop();
-      }
-    }
-  }
-  if (!(null !== reactions || !(dependency.f & DERIVED) || null !== new_deps && new_deps.includes(dependency))) {
-    set_signal_status(dependency, MAYBE_DIRTY);
-    if (!(dependency.f & (UNOWNED | DISCONNECTED))) dependency.f ^= DISCONNECTED;
-    remove_reactions(dependency, 0);
-  }
-}
-
-function remove_reactions(signal, start_index) {
-  var dependencies = signal.deps;
-  if (null !== dependencies) for (var i = start_index; i < dependencies.length; i++) remove_reaction(signal, dependencies[i]);
-}
-
-function update_effect(effect2) {
-  var flags = effect2.f;
-  if (!(flags & DESTROYED)) {
-    set_signal_status(effect2, CLEAN);
-    var previous_effect = active_effect, previous_component_context = component_context;
-    active_effect = effect2;
-    if (DEV) {
-      var previous_component_fn = dev_current_component_function;
-      dev_current_component_function = effect2.component_function;
-    }
-    try {
-      destroy_effect_deriveds(effect2);
-      if (!!(flags & BLOCK_EFFECT)) destroy_block_effect_children(effect2); else destroy_effect_children(effect2);
-      execute_effect_teardown(effect2);
-      var teardown2 = update_reaction(effect2);
-      effect2.teardown = "function" == typeof teardown2 ? teardown2 : null;
-      effect2.version = current_version;
-      if (DEV) dev_effect_stack.push(effect2);
-    } catch (error) {
-      handle_error(error, effect2, previous_component_context);
-    } finally {
-      active_effect = previous_effect;
-      if (DEV) dev_current_component_function = previous_component_fn;
-    }
-  }
-}
-
-function infinite_loop_guard() {
-  if (flush_count > 1e3) {
-    flush_count = 0;
-    if (DEV) try {
-      effect_update_depth_exceeded();
-    } catch (error) {
-      define_property(error, "stack", {
-        value: ""
-      });
-      console.error("Last ten effects were: ", dev_effect_stack.slice(-10).map((d => d.fn)));
-      dev_effect_stack = [];
-      throw error;
-    } else effect_update_depth_exceeded();
-  }
-  flush_count++;
-}
-
-function flush_queued_root_effects(root_effects) {
-  var length = root_effects.length;
-  if (0 !== length) {
-    infinite_loop_guard();
-    var previously_flushing_effect = is_flushing_effect;
-    is_flushing_effect = true;
-    try {
-      for (var i = 0; i < length; i++) {
-        var effect2 = root_effects[i];
-        if (!(effect2.f & CLEAN)) effect2.f ^= CLEAN;
-        var collected_effects = [];
-        process_effects(effect2, collected_effects);
-        flush_queued_effects(collected_effects);
-      }
-    } finally {
-      is_flushing_effect = previously_flushing_effect;
-    }
-  }
-}
-
-function flush_queued_effects(effects) {
-  var length = effects.length;
-  if (0 !== length) for (var i = 0; i < length; i++) {
-    var effect2 = effects[i];
-    if (!(effect2.f & (DESTROYED | INERT)) && check_dirtiness(effect2)) {
-      update_effect(effect2);
-      if (null === effect2.deps && null === effect2.first && null === effect2.nodes_start) if (null === effect2.teardown) unlink_effect(effect2); else effect2.fn = null;
-    }
-  }
-}
-
-function process_deferred() {
-  is_micro_task_queued2 = false;
-  if (flush_count > 1001) return;
-  const previous_queued_root_effects = queued_root_effects;
-  queued_root_effects = [];
-  flush_queued_root_effects(previous_queued_root_effects);
-  if (!is_micro_task_queued2) {
-    flush_count = 0;
-    if (DEV) dev_effect_stack = [];
-  }
-}
-
-function schedule_effect(signal) {
-  if (scheduler_mode === FLUSH_MICROTASK) if (!is_micro_task_queued2) {
-    is_micro_task_queued2 = true;
-    queueMicrotask(process_deferred);
-  }
-  for (var effect2 = signal; null !== effect2.parent; ) {
-    var flags = (effect2 = effect2.parent).f;
-    if (!!(flags & (ROOT_EFFECT | BRANCH_EFFECT))) {
-      if (!(flags & CLEAN)) return;
-      effect2.f ^= CLEAN;
-    }
-  }
-  queued_root_effects.push(effect2);
-}
-
-function process_effects(effect2, collected_effects) {
-  var current_effect = effect2.first, effects = [];
-  main_loop: for (;null !== current_effect; ) {
-    var flags = current_effect.f, is_branch = !!(flags & BRANCH_EFFECT);
-    if (!(is_branch && !!(flags & CLEAN) || flags & INERT)) if (!!(flags & RENDER_EFFECT)) {
-      if (is_branch) current_effect.f ^= CLEAN; else if (check_dirtiness(current_effect)) update_effect(current_effect);
-      var child2 = current_effect.first;
-      if (null !== child2) {
-        current_effect = child2;
-        continue;
-      }
-    } else if (!!(flags & EFFECT)) effects.push(current_effect);
-    var sibling2 = current_effect.next;
-    if (null === sibling2) {
-      let parent = current_effect.parent;
-      for (;null !== parent; ) {
-        if (effect2 === parent) break main_loop;
-        var parent_sibling = parent.next;
-        if (null !== parent_sibling) {
-          current_effect = parent_sibling;
-          continue main_loop;
-        }
-        parent = parent.parent;
-      }
-    }
-    current_effect = sibling2;
-  }
-  for (var i = 0; i < effects.length; i++) {
-    child2 = effects[i];
-    collected_effects.push(child2);
-    process_effects(child2, collected_effects);
-  }
-}
-
-function flush_sync(fn) {
-  var previous_scheduler_mode = scheduler_mode, previous_queued_root_effects = queued_root_effects;
-  try {
-    infinite_loop_guard();
-    const root_effects = [];
-    scheduler_mode = FLUSH_SYNC;
-    queued_root_effects = root_effects;
-    is_micro_task_queued2 = false;
-    flush_queued_root_effects(previous_queued_root_effects);
-    var result = null == fn ? void 0 : fn();
-    flush_tasks();
-    if (queued_root_effects.length > 0 || root_effects.length > 0) flush_sync();
-    flush_count = 0;
-    if (DEV) dev_effect_stack = [];
-    return result;
-  } finally {
-    scheduler_mode = previous_scheduler_mode;
-    queued_root_effects = previous_queued_root_effects;
-  }
-}
-
-function get(signal) {
-  var _a, _b, flags = signal.f, is_derived = !!(flags & DERIVED);
-  if (is_derived && !!(flags & DESTROYED)) {
-    var value = execute_derived(signal);
-    destroy_derived(signal);
-    return value;
-  }
-  if (is_signals_recorded) captured_signals.add(signal);
-  if (null !== active_reaction) {
-    if (null !== derived_sources && derived_sources.includes(signal)) state_unsafe_local_read();
-    var deps = active_reaction.deps;
-    if (null === new_deps && null !== deps && deps[skipped_deps] === signal) skipped_deps++; else if (null === new_deps) new_deps = [ signal ]; else new_deps.push(signal);
-    if (null !== untracked_writes && null !== active_effect && !!(active_effect.f & CLEAN) && !(active_effect.f & BRANCH_EFFECT) && untracked_writes.includes(signal)) {
-      set_signal_status(active_effect, DIRTY);
-      schedule_effect(active_effect);
-    }
-  } else if (is_derived && null === signal.deps) {
-    var derived3 = signal, parent = derived3.parent;
-    if (null !== parent && !(null == (_a = parent.deriveds) ? void 0 : _a.includes(derived3))) (null != (_b = parent.deriveds) ? _b : parent.deriveds = []).push(derived3);
-  }
-  if (is_derived) if (check_dirtiness(derived3 = signal)) update_derived(derived3);
-  return signal.v;
-}
-
-function untrack(fn) {
-  const previous_reaction = active_reaction;
-  try {
-    active_reaction = null;
-    return fn();
-  } finally {
-    active_reaction = previous_reaction;
-  }
-}
-
-var STATUS_MASK = ~(DIRTY | MAYBE_DIRTY | CLEAN);
-
-function set_signal_status(signal, status) {
-  signal.f = signal.f & STATUS_MASK | status;
+function set_dev_current_component_function(fn) {
+  dev_current_component_function = fn;
 }
 
 function getContext(key) {
-  const result = get_or_init_context_map("getContext").get(key);
-  if (DEV) {
-    const fn = component_context.function;
-    if (fn) add_owner(result, fn, true);
-  }
-  return result;
+  return get_or_init_context_map("getContext").get(key);
 }
 
 function setContext(key, context) {
@@ -930,46 +309,34 @@ function setContext(key, context) {
   return context;
 }
 
-function get_or_init_context_map(name) {
-  var _a;
-  if (null === component_context) lifecycle_outside_component(name);
-  return null != (_a = component_context.c) ? _a : component_context.c = new Map(get_parent_context(component_context) || void 0);
-}
-
-function get_parent_context(component_context2) {
-  let parent = component_context2.p;
-  for (;null !== parent; ) {
-    const context_map = parent.c;
-    if (null !== context_map) return context_map;
-    parent = parent.p;
-  }
-  return null;
-}
-
 function push(props, runes = false, fn) {
-  component_context = {
+  var ctx = component_context = {
     p: component_context,
     c: null,
+    d: false,
     e: null,
     m: false,
     s: props,
     x: null,
     l: null
   };
-  if (!runes) component_context.l = {
+  if (legacy_mode_flag && !runes) component_context.l = {
     s: null,
     u: null,
     r1: [],
     r2: source(false)
   };
-  if (DEV) {
+  teardown((() => {
+    ctx.d = true;
+  }));
+  if (dev_fallback_default) {
     component_context.function = fn;
     dev_current_component_function = fn;
   }
 }
 
 function pop(component2) {
-  var _a, _b;
+  var _a3, _b3;
   const context_stack_item = component_context;
   if (null !== context_stack_item) {
     if (void 0 !== component2) context_stack_item.x = component2;
@@ -990,37 +357,357 @@ function pop(component2) {
       }
     }
     component_context = context_stack_item.p;
-    if (DEV) dev_current_component_function = null != (_b = null == (_a = context_stack_item.p) ? void 0 : _a.function) ? _b : null;
+    if (dev_fallback_default) dev_current_component_function = null != (_b3 = null == (_a3 = context_stack_item.p) ? void 0 : _a3.function) ? _b3 : null;
     context_stack_item.m = true;
   }
   return component2 || {};
 }
 
-if (DEV) {
-  let throw_rune_error = function(rune) {
-    if (!(rune in globalThis)) {
-      let value;
-      Object.defineProperty(globalThis, rune, {
-        configurable: true,
-        get: () => {
-          if (void 0 !== value) return value;
-          rune_outside_svelte(rune);
-        },
-        set: v => {
-          value = v;
-        }
-      });
-    }
-  };
-  throw_rune_error("$state");
-  throw_rune_error("$effect");
-  throw_rune_error("$derived");
-  throw_rune_error("$inspect");
-  throw_rune_error("$props");
-  throw_rune_error("$bindable");
+function is_runes() {
+  return !legacy_mode_flag || null !== component_context && null === component_context.l;
 }
 
-var hydrate_node, $window, $document, first_child_getter, next_sibling_getter, hydrating = false;
+function get_or_init_context_map(name) {
+  var _a3;
+  if (null === component_context) lifecycle_outside_component(name);
+  return null != (_a3 = component_context.c) ? _a3 : component_context.c = new Map(get_parent_context(component_context) || void 0);
+}
+
+function get_parent_context(component_context2) {
+  let parent = component_context2.p;
+  for (;null !== parent; ) {
+    const context_map = parent.c;
+    if (null !== context_map) return context_map;
+    parent = parent.p;
+  }
+  return null;
+}
+
+function proxy(value) {
+  if ("object" != typeof value || null === value || STATE_SYMBOL in value) return value;
+  const prototype = get_prototype_of(value);
+  if (prototype !== object_prototype && prototype !== array_prototype) return value;
+  var sources = new Map, is_proxied_array = is_array(value), version = state(0), stack2 = dev_fallback_default && tracing_mode_flag ? get_stack("CreatedAt") : null, reaction = active_reaction, with_parent = fn => {
+    var previous_reaction = active_reaction;
+    set_active_reaction(reaction);
+    var result = fn();
+    set_active_reaction(previous_reaction);
+    return result;
+  };
+  if (is_proxied_array) sources.set("length", state(value.length, stack2));
+  return new Proxy(value, {
+    defineProperty(_, prop2, descriptor) {
+      if (!("value" in descriptor) || false === descriptor.configurable || false === descriptor.enumerable || false === descriptor.writable) state_descriptors_fixed();
+      var s = sources.get(prop2);
+      if (void 0 === s) {
+        s = with_parent((() => state(descriptor.value, stack2)));
+        sources.set(prop2, s);
+      } else set(s, with_parent((() => proxy(descriptor.value))));
+      return true;
+    },
+    deleteProperty(target, prop2) {
+      var s = sources.get(prop2);
+      if (void 0 === s) {
+        if (prop2 in target) sources.set(prop2, with_parent((() => state(UNINITIALIZED, stack2))));
+      } else {
+        if (is_proxied_array && "string" == typeof prop2) {
+          var ls = sources.get("length"), n = Number(prop2);
+          if (Number.isInteger(n) && n < ls.v) set(ls, n);
+        }
+        set(s, UNINITIALIZED);
+        update_version(version);
+      }
+      return true;
+    },
+    get(target, prop2, receiver) {
+      var _a3;
+      if (prop2 === STATE_SYMBOL) return value;
+      var s = sources.get(prop2), exists = prop2 in target;
+      if (void 0 === s && (!exists || (null == (_a3 = get_descriptor(target, prop2)) ? void 0 : _a3.writable))) {
+        s = with_parent((() => state(proxy(exists ? target[prop2] : UNINITIALIZED), stack2)));
+        sources.set(prop2, s);
+      }
+      if (void 0 !== s) {
+        var v = get(s);
+        return v === UNINITIALIZED ? void 0 : v;
+      }
+      return Reflect.get(target, prop2, receiver);
+    },
+    getOwnPropertyDescriptor(target, prop2) {
+      var descriptor = Reflect.getOwnPropertyDescriptor(target, prop2);
+      if (descriptor && "value" in descriptor) {
+        var s = sources.get(prop2);
+        if (s) descriptor.value = get(s);
+      } else if (void 0 === descriptor) {
+        var source2 = sources.get(prop2), value2 = null == source2 ? void 0 : source2.v;
+        if (void 0 !== source2 && value2 !== UNINITIALIZED) return {
+          enumerable: true,
+          configurable: true,
+          value: value2,
+          writable: true
+        };
+      }
+      return descriptor;
+    },
+    has(target, prop2) {
+      var _a3;
+      if (prop2 === STATE_SYMBOL) return true;
+      var s = sources.get(prop2), has = void 0 !== s && s.v !== UNINITIALIZED || Reflect.has(target, prop2);
+      if (void 0 !== s || null !== active_effect && (!has || (null == (_a3 = get_descriptor(target, prop2)) ? void 0 : _a3.writable))) {
+        if (void 0 === s) {
+          s = with_parent((() => state(has ? proxy(target[prop2]) : UNINITIALIZED, stack2)));
+          sources.set(prop2, s);
+        }
+        if (get(s) === UNINITIALIZED) return false;
+      }
+      return has;
+    },
+    set(target, prop2, value2, receiver) {
+      var _a3, s = sources.get(prop2), has = prop2 in target;
+      if (is_proxied_array && "length" === prop2) for (var i = value2; i < s.v; i += 1) {
+        var other_s = sources.get(i + "");
+        if (void 0 !== other_s) set(other_s, UNINITIALIZED); else if (i in target) {
+          other_s = with_parent((() => state(UNINITIALIZED, stack2)));
+          sources.set(i + "", other_s);
+        }
+      }
+      if (void 0 === s) {
+        if (!has || (null == (_a3 = get_descriptor(target, prop2)) ? void 0 : _a3.writable)) {
+          set(s = with_parent((() => state(void 0, stack2))), with_parent((() => proxy(value2))));
+          sources.set(prop2, s);
+        }
+      } else {
+        has = s.v !== UNINITIALIZED;
+        set(s, with_parent((() => proxy(value2))));
+      }
+      var descriptor = Reflect.getOwnPropertyDescriptor(target, prop2);
+      if (null == descriptor ? void 0 : descriptor.set) descriptor.set.call(receiver, value2);
+      if (!has) {
+        if (is_proxied_array && "string" == typeof prop2) {
+          var ls = sources.get("length"), n = Number(prop2);
+          if (Number.isInteger(n) && n >= ls.v) set(ls, n + 1);
+        }
+        update_version(version);
+      }
+      return true;
+    },
+    ownKeys(target) {
+      get(version);
+      var own_keys = Reflect.ownKeys(target).filter((key2 => {
+        var source3 = sources.get(key2);
+        return void 0 === source3 || source3.v !== UNINITIALIZED;
+      }));
+      for (var [key, source2] of sources) if (source2.v !== UNINITIALIZED && !(key in target)) own_keys.push(key);
+      return own_keys;
+    },
+    setPrototypeOf() {
+      state_prototype_fixed();
+    }
+  });
+}
+
+function update_version(signal, d = 1) {
+  set(signal, signal.v + d);
+}
+
+function get_proxied_value(value) {
+  try {
+    if (null !== value && "object" == typeof value && STATE_SYMBOL in value) return value[STATE_SYMBOL];
+  } catch (e) {}
+  return value;
+}
+
+function derived(fn) {
+  var flags = DERIVED | DIRTY, parent_derived = null !== active_reaction && !!(active_reaction.f & DERIVED) ? active_reaction : null;
+  if (null === active_effect || null !== parent_derived && !!(parent_derived.f & UNOWNED)) flags |= UNOWNED; else active_effect.f |= EFFECT_HAS_DERIVED;
+  const signal = {
+    ctx: component_context,
+    deps: null,
+    effects: null,
+    equals,
+    f: flags,
+    fn,
+    reactions: null,
+    rv: 0,
+    v: null,
+    wv: 0,
+    parent: null != parent_derived ? parent_derived : active_effect
+  };
+  if (dev_fallback_default && tracing_mode_flag) signal.created = get_stack("CreatedAt");
+  return signal;
+}
+
+function user_derived(fn) {
+  const d = derived(fn);
+  push_reaction_value(d);
+  return d;
+}
+
+function derived_safe_equal(fn) {
+  const signal = derived(fn);
+  signal.equals = safe_equals;
+  return signal;
+}
+
+function destroy_derived_effects(derived3) {
+  var effects = derived3.effects;
+  if (null !== effects) {
+    derived3.effects = null;
+    for (var i = 0; i < effects.length; i += 1) destroy_effect(effects[i]);
+  }
+}
+
+var stack = [];
+
+function get_derived_parent_effect(derived3) {
+  for (var parent = derived3.parent; null !== parent; ) {
+    if (!(parent.f & DERIVED)) return parent;
+    parent = parent.parent;
+  }
+  return null;
+}
+
+function execute_derived(derived3) {
+  var value, prev_active_effect = active_effect;
+  set_active_effect(get_derived_parent_effect(derived3));
+  if (dev_fallback_default) {
+    let prev_inspect_effects = inspect_effects;
+    set_inspect_effects(new Set);
+    try {
+      if (stack.includes(derived3)) derived_references_self();
+      stack.push(derived3);
+      destroy_derived_effects(derived3);
+      value = update_reaction(derived3);
+    } finally {
+      set_active_effect(prev_active_effect);
+      set_inspect_effects(prev_inspect_effects);
+      stack.pop();
+    }
+  } else try {
+    destroy_derived_effects(derived3);
+    value = update_reaction(derived3);
+  } finally {
+    set_active_effect(prev_active_effect);
+  }
+  return value;
+}
+
+function update_derived(derived3) {
+  var value = execute_derived(derived3);
+  set_signal_status(derived3, (skip_reaction || !!(derived3.f & UNOWNED)) && null !== derived3.deps ? MAYBE_DIRTY : CLEAN);
+  if (!derived3.equals(value)) {
+    derived3.v = value;
+    derived3.wv = increment_write_version();
+  }
+}
+
+var inspect_effects = new Set, old_values = new Map;
+
+function set_inspect_effects(v) {
+  inspect_effects = v;
+}
+
+function source(v, stack2) {
+  var signal = {
+    f: 0,
+    v,
+    reactions: null,
+    equals,
+    rv: 0,
+    wv: 0
+  };
+  if (dev_fallback_default && tracing_mode_flag) {
+    signal.created = null != stack2 ? stack2 : get_stack("CreatedAt");
+    signal.debug = null;
+  }
+  return signal;
+}
+
+function state(v, stack2) {
+  const s = source(v, stack2);
+  push_reaction_value(s);
+  return s;
+}
+
+function mutable_source(initial_value, immutable = false) {
+  var _a3, _b3;
+  const s = source(initial_value);
+  if (!immutable) s.equals = safe_equals;
+  if (legacy_mode_flag && null !== component_context && null !== component_context.l) (null != (_b3 = (_a3 = component_context.l).s) ? _b3 : _a3.s = []).push(s);
+  return s;
+}
+
+function set(source2, value, should_proxy = false) {
+  var _a3;
+  if (null !== active_reaction && !untracking && is_runes() && !!(active_reaction.f & (DERIVED | BLOCK_EFFECT)) && !(null == (_a3 = reaction_sources) ? void 0 : _a3.includes(source2))) state_unsafe_mutation();
+  return internal_set(source2, should_proxy ? proxy(value) : value);
+}
+
+function internal_set(source2, value) {
+  if (!source2.equals(value)) {
+    var old_value = source2.v;
+    if (is_destroying_effect) old_values.set(source2, value); else old_values.set(source2, old_value);
+    source2.v = value;
+    if (dev_fallback_default && tracing_mode_flag) {
+      source2.updated = get_stack("UpdatedAt");
+      if (null != active_effect) {
+        source2.trace_need_increase = true;
+        null != source2.trace_v || (source2.trace_v = old_value);
+      }
+    }
+    if (!!(source2.f & DERIVED)) {
+      if (!!(source2.f & DIRTY)) execute_derived(source2);
+      set_signal_status(source2, !(source2.f & UNOWNED) ? CLEAN : MAYBE_DIRTY);
+    }
+    source2.wv = increment_write_version();
+    mark_reactions(source2, DIRTY);
+    if (is_runes() && null !== active_effect && !!(active_effect.f & CLEAN) && !(active_effect.f & (BRANCH_EFFECT | ROOT_EFFECT))) if (null === untracked_writes) set_untracked_writes([ source2 ]); else untracked_writes.push(source2);
+    if (dev_fallback_default && inspect_effects.size > 0) {
+      const inspects = Array.from(inspect_effects);
+      for (const effect2 of inspects) {
+        if (!!(effect2.f & CLEAN)) set_signal_status(effect2, MAYBE_DIRTY);
+        if (check_dirtiness(effect2)) update_effect(effect2);
+      }
+      inspect_effects.clear();
+    }
+  }
+  return value;
+}
+
+function mark_reactions(signal, status) {
+  var reactions = signal.reactions;
+  if (null !== reactions) for (var runes = is_runes(), length = reactions.length, i = 0; i < length; i++) {
+    var reaction = reactions[i], flags = reaction.f;
+    if (!(flags & DIRTY)) if (runes || reaction !== active_effect) if (!(dev_fallback_default && flags & INSPECT_EFFECT)) {
+      set_signal_status(reaction, status);
+      if (!!(flags & (CLEAN | UNOWNED))) if (!!(flags & DERIVED)) mark_reactions(reaction, MAYBE_DIRTY); else schedule_effect(reaction);
+    } else inspect_effects.add(reaction);
+  }
+}
+
+var bold = "font-weight: bold", normal = "font-weight: normal";
+
+function hydration_attribute_changed(attribute, html2, value) {
+  if (dev_fallback_default) console.warn(`%c[svelte] hydration_attribute_changed\n%cThe \`${attribute}\` attribute on \`${html2}\` changed its value between server and client renders. The client value, \`${value}\`, will be ignored in favour of the server value\nhttps://svelte.dev/e/hydration_attribute_changed`, bold, normal); else console.warn("https://svelte.dev/e/hydration_attribute_changed");
+}
+
+function hydration_html_changed(location) {
+  if (dev_fallback_default) console.warn(`%c[svelte] hydration_html_changed\n%c${location ? `The value of an \`{@html ...}\` block ${location} changed between server and client renders. The client value will be ignored in favour of the server value` : "The value of an `{@html ...}` block changed between server and client renders. The client value will be ignored in favour of the server value"}\nhttps://svelte.dev/e/hydration_html_changed`, bold, normal); else console.warn("https://svelte.dev/e/hydration_html_changed");
+}
+
+function hydration_mismatch(location) {
+  if (dev_fallback_default) console.warn(`%c[svelte] hydration_mismatch\n%c${location ? `Hydration failed because the initial UI does not match what was rendered on the server. The error occurred near ${location}` : "Hydration failed because the initial UI does not match what was rendered on the server"}\nhttps://svelte.dev/e/hydration_mismatch`, bold, normal); else console.warn("https://svelte.dev/e/hydration_mismatch");
+}
+
+function lifecycle_double_unmount() {
+  if (dev_fallback_default) console.warn("%c[svelte] lifecycle_double_unmount\n%cTried to unmount a component that was not mounted\nhttps://svelte.dev/e/lifecycle_double_unmount", bold, normal); else console.warn("https://svelte.dev/e/lifecycle_double_unmount");
+}
+
+function state_proxy_equality_mismatch(operator) {
+  if (dev_fallback_default) console.warn(`%c[svelte] state_proxy_equality_mismatch\n%cReactive \`$state(...)\` proxies and the values they proxy have different identities. Because of this, comparisons with \`${operator}\` will produce unexpected results\nhttps://svelte.dev/e/state_proxy_equality_mismatch`, bold, normal); else console.warn("https://svelte.dev/e/state_proxy_equality_mismatch");
+}
+
+var hydrate_node, $window, $document, is_firefox, first_child_getter, next_sibling_getter, hydrating = false;
 
 function set_hydrating(value) {
   hydrating = value;
@@ -1070,170 +757,32 @@ function remove_nodes() {
   }
 }
 
-function proxy(value, parent = null, prev) {
-  var _a, _b;
-  if ("object" != typeof value || null === value || STATE_SYMBOL in value) return value;
-  const prototype = get_prototype_of(value);
-  if (prototype !== object_prototype && prototype !== array_prototype) return value;
-  var metadata, sources = new Map, is_proxied_array = is_array(value), version = source(0);
-  if (is_proxied_array) sources.set("length", source(value.length));
-  if (DEV) {
-    metadata = {
-      parent,
-      owners: null
-    };
-    if (prev) {
-      const prev_owners = null == (_b = null == (_a = prev.v) ? void 0 : _a[STATE_SYMBOL_METADATA]) ? void 0 : _b.owners;
-      metadata.owners = prev_owners ? new Set(prev_owners) : null;
-    } else metadata.owners = null === parent ? null !== component_context ? new Set([ component_context.function ]) : null : new Set;
-  }
-  return new Proxy(value, {
-    defineProperty(_, prop2, descriptor) {
-      if (!("value" in descriptor) || false === descriptor.configurable || false === descriptor.enumerable || false === descriptor.writable) state_descriptors_fixed();
-      var s = sources.get(prop2);
-      if (void 0 === s) {
-        s = source(descriptor.value);
-        sources.set(prop2, s);
-      } else set(s, proxy(descriptor.value, metadata));
-      return true;
-    },
-    deleteProperty(target, prop2) {
-      var s = sources.get(prop2);
-      if (void 0 === s) {
-        if (prop2 in target) sources.set(prop2, source(UNINITIALIZED));
-      } else {
-        if (is_proxied_array && "string" == typeof prop2) {
-          var ls = sources.get("length"), n = Number(prop2);
-          if (Number.isInteger(n) && n < ls.v) set(ls, n);
-        }
-        set(s, UNINITIALIZED);
-        update_version(version);
-      }
-      return true;
-    },
-    get(target, prop2, receiver) {
-      var _a2;
-      if (DEV && prop2 === STATE_SYMBOL_METADATA) return metadata;
-      if (prop2 === STATE_SYMBOL) return value;
-      var s = sources.get(prop2), exists = prop2 in target;
-      if (void 0 === s && (!exists || (null == (_a2 = get_descriptor(target, prop2)) ? void 0 : _a2.writable))) {
-        s = source(proxy(exists ? target[prop2] : UNINITIALIZED, metadata));
-        sources.set(prop2, s);
-      }
-      if (void 0 !== s) {
-        var v = get(s);
-        if (DEV) {
-          var prop_metadata = null == v ? void 0 : v[STATE_SYMBOL_METADATA];
-          if (prop_metadata && (null == prop_metadata ? void 0 : prop_metadata.parent) !== metadata) widen_ownership(metadata, prop_metadata);
-        }
-        return v === UNINITIALIZED ? void 0 : v;
-      }
-      return Reflect.get(target, prop2, receiver);
-    },
-    getOwnPropertyDescriptor(target, prop2) {
-      var descriptor = Reflect.getOwnPropertyDescriptor(target, prop2);
-      if (descriptor && "value" in descriptor) {
-        var s = sources.get(prop2);
-        if (s) descriptor.value = get(s);
-      } else if (void 0 === descriptor) {
-        var source2 = sources.get(prop2), value2 = null == source2 ? void 0 : source2.v;
-        if (void 0 !== source2 && value2 !== UNINITIALIZED) return {
-          enumerable: true,
-          configurable: true,
-          value: value2,
-          writable: true
-        };
-      }
-      return descriptor;
-    },
-    has(target, prop2) {
-      var _a2;
-      if (DEV && prop2 === STATE_SYMBOL_METADATA) return true;
-      if (prop2 === STATE_SYMBOL) return true;
-      var s = sources.get(prop2), has = void 0 !== s && s.v !== UNINITIALIZED || Reflect.has(target, prop2);
-      if (void 0 !== s || null !== active_effect && (!has || (null == (_a2 = get_descriptor(target, prop2)) ? void 0 : _a2.writable))) {
-        if (void 0 === s) {
-          s = source(has ? proxy(target[prop2], metadata) : UNINITIALIZED);
-          sources.set(prop2, s);
-        }
-        if (get(s) === UNINITIALIZED) return false;
-      }
-      return has;
-    },
-    set(target, prop2, value2, receiver) {
-      var _a2, s = sources.get(prop2), has = prop2 in target;
-      if (is_proxied_array && "length" === prop2) for (var i = value2; i < s.v; i += 1) {
-        var other_s = sources.get(i + "");
-        if (void 0 !== other_s) set(other_s, UNINITIALIZED); else if (i in target) {
-          other_s = source(UNINITIALIZED);
-          sources.set(i + "", other_s);
-        }
-      }
-      if (void 0 === s) {
-        if (!has || (null == (_a2 = get_descriptor(target, prop2)) ? void 0 : _a2.writable)) {
-          set(s = source(void 0), proxy(value2, metadata));
-          sources.set(prop2, s);
-        }
-      } else {
-        has = s.v !== UNINITIALIZED;
-        set(s, proxy(value2, metadata));
-      }
-      if (DEV) {
-        var prop_metadata = null == value2 ? void 0 : value2[STATE_SYMBOL_METADATA];
-        if (prop_metadata && (null == prop_metadata ? void 0 : prop_metadata.parent) !== metadata) widen_ownership(metadata, prop_metadata);
-        check_ownership(metadata);
-      }
-      var descriptor = Reflect.getOwnPropertyDescriptor(target, prop2);
-      if (null == descriptor ? void 0 : descriptor.set) descriptor.set.call(receiver, value2);
-      if (!has) {
-        if (is_proxied_array && "string" == typeof prop2) {
-          var ls = sources.get("length"), n = Number(prop2);
-          if (Number.isInteger(n) && n >= ls.v) set(ls, n + 1);
-        }
-        update_version(version);
-      }
-      return true;
-    },
-    ownKeys(target) {
-      get(version);
-      var own_keys = Reflect.ownKeys(target).filter((key2 => {
-        var source3 = sources.get(key2);
-        return void 0 === source3 || source3.v !== UNINITIALIZED;
-      }));
-      for (var [key, source2] of sources) if (source2.v !== UNINITIALIZED && !(key in target)) own_keys.push(key);
-      return own_keys;
-    },
-    setPrototypeOf() {
-      state_prototype_fixed();
-    }
-  });
-}
-
-function update_version(signal, d = 1) {
-  set(signal, signal.v + d);
-}
-
-function get_proxied_value(value) {
-  if (null !== value && "object" == typeof value && STATE_SYMBOL in value) return value[STATE_SYMBOL]; else return value;
-}
-
 function init_array_prototype_warnings() {
   const array_prototype2 = Array.prototype, cleanup = Array.__svelte_cleanup;
   if (cleanup) cleanup();
   const {indexOf, lastIndexOf, includes} = array_prototype2;
   array_prototype2.indexOf = function(item, from_index) {
     const index2 = indexOf.call(this, item, from_index);
-    if (-1 === index2) if (-1 !== indexOf.call(get_proxied_value(this), get_proxied_value(item), from_index)) state_proxy_equality_mismatch("array.indexOf(...)");
+    if (-1 === index2) for (let i = null != from_index ? from_index : 0; i < this.length; i += 1) if (get_proxied_value(this[i]) === item) {
+      state_proxy_equality_mismatch("array.indexOf(...)");
+      break;
+    }
     return index2;
   };
   array_prototype2.lastIndexOf = function(item, from_index) {
     const index2 = lastIndexOf.call(this, item, null != from_index ? from_index : this.length - 1);
-    if (-1 === index2) if (-1 !== lastIndexOf.call(get_proxied_value(this), get_proxied_value(item), null != from_index ? from_index : this.length - 1)) state_proxy_equality_mismatch("array.lastIndexOf(...)");
+    if (-1 === index2) for (let i = 0; i <= (null != from_index ? from_index : this.length - 1); i += 1) if (get_proxied_value(this[i]) === item) {
+      state_proxy_equality_mismatch("array.lastIndexOf(...)");
+      break;
+    }
     return index2;
   };
   array_prototype2.includes = function(item, from_index) {
     const has = includes.call(this, item, from_index);
-    if (!has) if (includes.call(get_proxied_value(this), get_proxied_value(item), from_index)) state_proxy_equality_mismatch("array.includes(...)");
+    if (!has) for (let i = 0; i < this.length; i += 1) if (get_proxied_value(this[i]) === item) {
+      state_proxy_equality_mismatch("array.includes(...)");
+      break;
+    }
     return has;
   };
   Array.__svelte_cleanup = () => {
@@ -1247,16 +796,19 @@ function init_operations() {
   if (void 0 === $window) {
     $window = window;
     $document = document;
-    var element_prototype = Element.prototype, node_prototype = Node.prototype;
+    is_firefox = /Firefox/.test(navigator.userAgent);
+    var element_prototype = Element.prototype, node_prototype = Node.prototype, text_prototype = Text.prototype;
     first_child_getter = get_descriptor(node_prototype, "firstChild").get;
     next_sibling_getter = get_descriptor(node_prototype, "nextSibling").get;
-    element_prototype.__click = void 0;
-    element_prototype.__className = "";
-    element_prototype.__attributes = null;
-    element_prototype.__styles = null;
-    element_prototype.__e = void 0;
-    Text.prototype.__t = void 0;
-    if (DEV) {
+    if (is_extensible(element_prototype)) {
+      element_prototype.__click = void 0;
+      element_prototype.__className = void 0;
+      element_prototype.__attributes = null;
+      element_prototype.__style = void 0;
+      element_prototype.__e = void 0;
+    }
+    if (is_extensible(text_prototype)) text_prototype.__t = void 0;
+    if (dev_fallback_default) {
       element_prototype.__svelte_meta = null;
       init_array_prototype_warnings();
     }
@@ -1289,14 +841,14 @@ function child(node, is_text) {
 }
 
 function first_child(fragment, is_text) {
-  var _a, _b;
+  var _a3, _b3;
   if (!hydrating) {
     var first = get_first_child(fragment);
     if (first instanceof Comment && "" === first.data) return get_next_sibling(first); else return first;
   }
-  if (is_text && 3 !== (null == (_a = hydrate_node) ? void 0 : _a.nodeType)) {
+  if (is_text && 3 !== (null == (_a3 = hydrate_node) ? void 0 : _a3.nodeType)) {
     var text2 = create_text();
-    null == (_b = hydrate_node) || _b.before(text2);
+    null == (_b3 = hydrate_node) || _b3.before(text2);
     set_hydrate_node(text2);
     return text2;
   }
@@ -1305,12 +857,15 @@ function first_child(fragment, is_text) {
 
 function sibling(node, count = 1, is_text = false) {
   let next_sibling = hydrating ? hydrate_node : node;
-  for (;count--; ) next_sibling = get_next_sibling(next_sibling);
+  for (var last_sibling; count--; ) {
+    last_sibling = next_sibling;
+    next_sibling = get_next_sibling(next_sibling);
+  }
   if (!hydrating) return next_sibling;
-  var type = next_sibling.nodeType;
+  var type = null == next_sibling ? void 0 : next_sibling.nodeType;
   if (is_text && 3 !== type) {
     var text2 = create_text();
-    null == next_sibling || next_sibling.before(text2);
+    if (null === next_sibling) null == last_sibling || last_sibling.after(text2); else next_sibling.before(text2);
     set_hydrate_node(text2);
     return text2;
   }
@@ -1322,9 +877,421 @@ function clear_text_content(node) {
   node.textContent = "";
 }
 
+var handled_errors = new WeakSet, is_throwing_error = false, is_flushing = false, last_scheduled_effect = null, is_updating_effect = false, is_destroying_effect = false;
+
+function set_is_destroying_effect(value) {
+  is_destroying_effect = value;
+}
+
+var queued_root_effects = [], dev_effect_stack = [], active_reaction = null, untracking = false;
+
+function set_active_reaction(reaction) {
+  active_reaction = reaction;
+}
+
+var active_effect = null;
+
+function set_active_effect(effect2) {
+  active_effect = effect2;
+}
+
+var reaction_sources = null;
+
+function push_reaction_value(value) {
+  if (null !== active_reaction && active_reaction.f & EFFECT_IS_UPDATING) if (null === reaction_sources) reaction_sources = [ value ]; else reaction_sources.push(value);
+}
+
+var new_deps = null, skipped_deps = 0, untracked_writes = null;
+
+function set_untracked_writes(value) {
+  untracked_writes = value;
+}
+
+var write_version = 1, read_version = 0, skip_reaction = false, captured_signals = null;
+
+function increment_write_version() {
+  return ++write_version;
+}
+
+function check_dirtiness(reaction) {
+  var _a3, _b3, flags = reaction.f;
+  if (!!(flags & DIRTY)) return true;
+  if (!!(flags & MAYBE_DIRTY)) {
+    var dependencies = reaction.deps, is_unowned = !!(flags & UNOWNED);
+    if (null !== dependencies) {
+      var i, dependency, is_disconnected = !!(flags & DISCONNECTED), is_unowned_connected = is_unowned && null !== active_effect && !skip_reaction, length = dependencies.length;
+      if (is_disconnected || is_unowned_connected) {
+        var derived3 = reaction, parent = derived3.parent;
+        for (i = 0; i < length; i++) {
+          dependency = dependencies[i];
+          if (is_disconnected || !(null == (_a3 = null == dependency ? void 0 : dependency.reactions) ? void 0 : _a3.includes(derived3))) (null != (_b3 = dependency.reactions) ? _b3 : dependency.reactions = []).push(derived3);
+        }
+        if (is_disconnected) derived3.f ^= DISCONNECTED;
+        if (is_unowned_connected && null !== parent && !(parent.f & UNOWNED)) derived3.f ^= UNOWNED;
+      }
+      for (i = 0; i < length; i++) {
+        if (check_dirtiness(dependency = dependencies[i])) update_derived(dependency);
+        if (dependency.wv > reaction.wv) return true;
+      }
+    }
+    if (!is_unowned || null !== active_effect && !skip_reaction) set_signal_status(reaction, CLEAN);
+  }
+  return false;
+}
+
+function propagate_error(error, effect2) {
+  for (var current = effect2; null !== current; ) {
+    if (!!(current.f & BOUNDARY_EFFECT)) try {
+      current.fn(error);
+      return;
+    } catch (e) {
+      current.f ^= BOUNDARY_EFFECT;
+    }
+    current = current.parent;
+  }
+  is_throwing_error = false;
+  throw error;
+}
+
+function should_rethrow_error(effect2) {
+  return !(effect2.f & DESTROYED || null !== effect2.parent && effect2.parent.f & BOUNDARY_EFFECT);
+}
+
+function handle_error(error, effect2, previous_effect, component_context2) {
+  var _a3, _b3;
+  if (is_throwing_error) {
+    if (null === previous_effect) is_throwing_error = false;
+    if (should_rethrow_error(effect2)) throw error;
+    return;
+  }
+  if (null !== previous_effect) is_throwing_error = true;
+  if (!dev_fallback_default || null === component_context2 || !(error instanceof Error) || handled_errors.has(error)) {
+    propagate_error(error, effect2);
+    return;
+  }
+  handled_errors.add(error);
+  const component_stack = [], effect_name = null == (_a3 = effect2.fn) ? void 0 : _a3.name;
+  if (effect_name) component_stack.push(effect_name);
+  let current_context = component_context2;
+  for (;null !== current_context; ) {
+    if (dev_fallback_default) {
+      var filename = null == (_b3 = current_context.function) ? void 0 : _b3[FILENAME];
+      if (filename) {
+        const file = filename.split("/").pop();
+        component_stack.push(file);
+      }
+    }
+    current_context = current_context.p;
+  }
+  const indent = is_firefox ? "  " : "\t";
+  define_property(error, "message", {
+    value: error.message + `\n${component_stack.map((name => `\n${indent}in ${name}`)).join("")}\n`
+  });
+  define_property(error, "component_stack", {
+    value: component_stack
+  });
+  const stack2 = error.stack;
+  if (stack2) {
+    const lines = stack2.split("\n"), new_lines = [];
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+      if (!line.includes("svelte/src/internal")) new_lines.push(line);
+    }
+    define_property(error, "stack", {
+      value: new_lines.join("\n")
+    });
+  }
+  propagate_error(error, effect2);
+  if (should_rethrow_error(effect2)) throw error;
+}
+
+function schedule_possible_effect_self_invalidation(signal, effect2, root6 = true) {
+  var reactions = signal.reactions;
+  if (null !== reactions) for (var i = 0; i < reactions.length; i++) {
+    var reaction = reactions[i];
+    if (!(null == reaction_sources ? void 0 : reaction_sources.includes(signal))) if (!!(reaction.f & DERIVED)) schedule_possible_effect_self_invalidation(reaction, effect2, false); else if (effect2 === reaction) {
+      if (root6) set_signal_status(reaction, DIRTY); else if (!!(reaction.f & CLEAN)) set_signal_status(reaction, MAYBE_DIRTY);
+      schedule_effect(reaction);
+    }
+  }
+}
+
+function update_reaction(reaction) {
+  var _a3, _b3, previous_deps = new_deps, previous_skipped_deps = skipped_deps, previous_untracked_writes = untracked_writes, previous_reaction = active_reaction, previous_skip_reaction = skip_reaction, previous_reaction_sources = reaction_sources, previous_component_context = component_context, previous_untracking = untracking, flags = reaction.f;
+  new_deps = null;
+  skipped_deps = 0;
+  untracked_writes = null;
+  skip_reaction = !!(flags & UNOWNED) && (untracking || !is_updating_effect || null === active_reaction);
+  active_reaction = !(flags & (BRANCH_EFFECT | ROOT_EFFECT)) ? reaction : null;
+  reaction_sources = null;
+  set_component_context(reaction.ctx);
+  untracking = false;
+  read_version++;
+  reaction.f |= EFFECT_IS_UPDATING;
+  try {
+    var result = (0, reaction.fn)(), deps = reaction.deps;
+    if (null !== new_deps) {
+      var i;
+      remove_reactions(reaction, skipped_deps);
+      if (null !== deps && skipped_deps > 0) {
+        deps.length = skipped_deps + new_deps.length;
+        for (i = 0; i < new_deps.length; i++) deps[skipped_deps + i] = new_deps[i];
+      } else reaction.deps = deps = new_deps;
+      if (!skip_reaction) for (i = skipped_deps; i < deps.length; i++) (null != (_b3 = (_a3 = deps[i]).reactions) ? _b3 : _a3.reactions = []).push(reaction);
+    } else if (null !== deps && skipped_deps < deps.length) {
+      remove_reactions(reaction, skipped_deps);
+      deps.length = skipped_deps;
+    }
+    if (is_runes() && null !== untracked_writes && !untracking && null !== deps && !(reaction.f & (DERIVED | MAYBE_DIRTY | DIRTY))) for (i = 0; i < untracked_writes.length; i++) schedule_possible_effect_self_invalidation(untracked_writes[i], reaction);
+    if (previous_reaction !== reaction) {
+      read_version++;
+      if (null !== untracked_writes) if (null === previous_untracked_writes) previous_untracked_writes = untracked_writes; else previous_untracked_writes.push(...untracked_writes);
+    }
+    return result;
+  } finally {
+    new_deps = previous_deps;
+    skipped_deps = previous_skipped_deps;
+    untracked_writes = previous_untracked_writes;
+    active_reaction = previous_reaction;
+    skip_reaction = previous_skip_reaction;
+    reaction_sources = previous_reaction_sources;
+    set_component_context(previous_component_context);
+    untracking = previous_untracking;
+    reaction.f ^= EFFECT_IS_UPDATING;
+  }
+}
+
+function remove_reaction(signal, dependency) {
+  let reactions = dependency.reactions;
+  if (null !== reactions) {
+    var index2 = index_of.call(reactions, signal);
+    if (-1 !== index2) {
+      var new_length = reactions.length - 1;
+      if (0 === new_length) reactions = dependency.reactions = null; else {
+        reactions[index2] = reactions[new_length];
+        reactions.pop();
+      }
+    }
+  }
+  if (!(null !== reactions || !(dependency.f & DERIVED) || null !== new_deps && new_deps.includes(dependency))) {
+    set_signal_status(dependency, MAYBE_DIRTY);
+    if (!(dependency.f & (UNOWNED | DISCONNECTED))) dependency.f ^= DISCONNECTED;
+    destroy_derived_effects(dependency);
+    remove_reactions(dependency, 0);
+  }
+}
+
+function remove_reactions(signal, start_index) {
+  var dependencies = signal.deps;
+  if (null !== dependencies) for (var i = start_index; i < dependencies.length; i++) remove_reaction(signal, dependencies[i]);
+}
+
+function update_effect(effect2) {
+  var flags = effect2.f;
+  if (!(flags & DESTROYED)) {
+    set_signal_status(effect2, CLEAN);
+    var previous_effect = active_effect, previous_component_context = component_context, was_updating_effect = is_updating_effect;
+    active_effect = effect2;
+    is_updating_effect = true;
+    if (dev_fallback_default) {
+      var previous_component_fn = dev_current_component_function;
+      set_dev_current_component_function(effect2.component_function);
+    }
+    try {
+      if (!!(flags & BLOCK_EFFECT)) destroy_block_effect_children(effect2); else destroy_effect_children(effect2);
+      execute_effect_teardown(effect2);
+      var teardown2 = update_reaction(effect2);
+      effect2.teardown = "function" == typeof teardown2 ? teardown2 : null;
+      effect2.wv = write_version;
+      var deps = effect2.deps;
+      if (dev_fallback_default && tracing_mode_flag && !!(effect2.f & DIRTY) && null !== deps) for (let i = 0; i < deps.length; i++) {
+        var dep = deps[i];
+        if (dep.trace_need_increase) {
+          dep.wv = increment_write_version();
+          dep.trace_need_increase = void 0;
+          dep.trace_v = void 0;
+        }
+      }
+      if (dev_fallback_default) dev_effect_stack.push(effect2);
+    } catch (error) {
+      handle_error(error, effect2, previous_effect, previous_component_context || effect2.ctx);
+    } finally {
+      is_updating_effect = was_updating_effect;
+      active_effect = previous_effect;
+      if (dev_fallback_default) set_dev_current_component_function(previous_component_fn);
+    }
+  }
+}
+
+function log_effect_stack() {
+  console.error("Last ten effects were: ", dev_effect_stack.slice(-10).map((d => d.fn)));
+  dev_effect_stack = [];
+}
+
+function infinite_loop_guard() {
+  try {
+    effect_update_depth_exceeded();
+  } catch (error) {
+    if (dev_fallback_default) define_property(error, "stack", {
+      value: ""
+    });
+    if (null !== last_scheduled_effect) if (dev_fallback_default) try {
+      handle_error(error, last_scheduled_effect, null, null);
+    } catch (e) {
+      log_effect_stack();
+      throw e;
+    } else handle_error(error, last_scheduled_effect, null, null); else {
+      if (dev_fallback_default) log_effect_stack();
+      throw error;
+    }
+  }
+}
+
+function flush_queued_root_effects() {
+  var was_updating_effect = is_updating_effect;
+  try {
+    var flush_count = 0;
+    is_updating_effect = true;
+    for (;queued_root_effects.length > 0; ) {
+      if (flush_count++ > 1e3) infinite_loop_guard();
+      var root_effects = queued_root_effects, length = root_effects.length;
+      queued_root_effects = [];
+      for (var i = 0; i < length; i++) flush_queued_effects(process_effects(root_effects[i]));
+      old_values.clear();
+    }
+  } finally {
+    is_flushing = false;
+    is_updating_effect = was_updating_effect;
+    last_scheduled_effect = null;
+    if (dev_fallback_default) dev_effect_stack = [];
+  }
+}
+
+function flush_queued_effects(effects) {
+  var length = effects.length;
+  if (0 !== length) for (var i = 0; i < length; i++) {
+    var effect2 = effects[i];
+    if (!(effect2.f & (DESTROYED | INERT))) try {
+      if (check_dirtiness(effect2)) {
+        update_effect(effect2);
+        if (null === effect2.deps && null === effect2.first && null === effect2.nodes_start) if (null === effect2.teardown) unlink_effect(effect2); else effect2.fn = null;
+      }
+    } catch (error) {
+      handle_error(error, effect2, null, effect2.ctx);
+    }
+  }
+}
+
+function schedule_effect(signal) {
+  if (!is_flushing) {
+    is_flushing = true;
+    queueMicrotask(flush_queued_root_effects);
+  }
+  for (var effect2 = last_scheduled_effect = signal; null !== effect2.parent; ) {
+    var flags = (effect2 = effect2.parent).f;
+    if (!!(flags & (ROOT_EFFECT | BRANCH_EFFECT))) {
+      if (!(flags & CLEAN)) return;
+      effect2.f ^= CLEAN;
+    }
+  }
+  queued_root_effects.push(effect2);
+}
+
+function process_effects(root6) {
+  for (var effects = [], effect2 = root6; null !== effect2; ) {
+    var flags = effect2.f, is_branch = !!(flags & (BRANCH_EFFECT | ROOT_EFFECT));
+    if (!(is_branch && !!(flags & CLEAN) || flags & INERT)) {
+      if (!!(flags & EFFECT)) effects.push(effect2); else if (is_branch) effect2.f ^= CLEAN; else {
+        var previous_active_reaction = active_reaction;
+        try {
+          active_reaction = effect2;
+          if (check_dirtiness(effect2)) update_effect(effect2);
+        } catch (error) {
+          handle_error(error, effect2, null, effect2.ctx);
+        } finally {
+          active_reaction = previous_active_reaction;
+        }
+      }
+      var child2 = effect2.first;
+      if (null !== child2) {
+        effect2 = child2;
+        continue;
+      }
+    }
+    var parent = effect2.parent;
+    effect2 = effect2.next;
+    for (;null === effect2 && null !== parent; ) {
+      effect2 = parent.next;
+      parent = parent.parent;
+    }
+  }
+  return effects;
+}
+
+function flushSync(fn) {
+  var result;
+  if (fn) {
+    is_flushing = true;
+    flush_queued_root_effects();
+    result = fn();
+  }
+  flush_tasks();
+  for (;queued_root_effects.length > 0; ) {
+    is_flushing = true;
+    flush_queued_root_effects();
+    flush_tasks();
+  }
+  return result;
+}
+
+function get(signal) {
+  var is_derived = !!(signal.f & DERIVED);
+  if (null !== captured_signals) captured_signals.add(signal);
+  if (null !== active_reaction && !untracking) {
+    if (!(null == reaction_sources ? void 0 : reaction_sources.includes(signal))) {
+      var deps = active_reaction.deps;
+      if (signal.rv < read_version) {
+        signal.rv = read_version;
+        if (null === new_deps && null !== deps && deps[skipped_deps] === signal) skipped_deps++; else if (null === new_deps) new_deps = [ signal ]; else if (!skip_reaction || !new_deps.includes(signal)) new_deps.push(signal);
+      }
+    }
+  } else if (is_derived && null === signal.deps && null === signal.effects) {
+    var derived3 = signal, parent = derived3.parent;
+    if (null !== parent && !(parent.f & UNOWNED)) derived3.f ^= UNOWNED;
+  }
+  if (is_derived) if (check_dirtiness(derived3 = signal)) update_derived(derived3);
+  if (dev_fallback_default && tracing_mode_flag && null !== tracing_expressions && null !== active_reaction && tracing_expressions.reaction === active_reaction) if (signal.debug) signal.debug(); else if (signal.created) {
+    var entry = tracing_expressions.entries.get(signal);
+    if (void 0 === entry) {
+      entry = {
+        read: []
+      };
+      tracing_expressions.entries.set(signal, entry);
+    }
+    entry.read.push(get_stack("TracedAt"));
+  }
+  if (is_destroying_effect && old_values.has(signal)) return old_values.get(signal); else return signal.v;
+}
+
+function untrack(fn) {
+  var previous_untracking = untracking;
+  try {
+    untracking = true;
+    return fn();
+  } finally {
+    untracking = previous_untracking;
+  }
+}
+
+var STATUS_MASK = ~(DIRTY | MAYBE_DIRTY | CLEAN);
+
+function set_signal_status(signal, status) {
+  signal.f = signal.f & STATUS_MASK | status;
+}
+
 function validate_effect(rune) {
   if (null === active_effect && null === active_reaction) effect_orphan(rune);
-  if (null !== active_reaction && !!(active_reaction.f & UNOWNED)) effect_in_unowned_derived();
+  if (null !== active_reaction && !!(active_reaction.f & UNOWNED) && null === active_effect) effect_in_unowned_derived();
   if (is_destroying_effect) effect_in_teardown(rune);
 }
 
@@ -1338,12 +1305,11 @@ function push_effect(effect2, parent_effect) {
 }
 
 function create_effect(type, fn, sync, push2 = true) {
-  var _a, is_root = !!(type & ROOT_EFFECT), parent_effect = active_effect;
-  if (DEV) for (;null !== parent_effect && !!(parent_effect.f & INSPECT_EFFECT); ) parent_effect = parent_effect.parent;
+  var _a3, parent = active_effect;
+  if (dev_fallback_default) for (;null !== parent && !!(parent.f & INSPECT_EFFECT); ) parent = parent.parent;
   var effect2 = {
     ctx: component_context,
     deps: null,
-    deriveds: null,
     nodes_start: null,
     nodes_end: null,
     f: type | DIRTY,
@@ -1351,31 +1317,25 @@ function create_effect(type, fn, sync, push2 = true) {
     fn,
     last: null,
     next: null,
-    parent: is_root ? null : parent_effect,
+    parent,
     prev: null,
     teardown: null,
     transitions: null,
-    version: 0
+    wv: 0
   };
-  if (DEV) effect2.component_function = dev_current_component_function;
-  if (sync) {
-    var previously_flushing_effect = is_flushing_effect;
-    try {
-      set_is_flushing_effect(true);
-      update_effect(effect2);
-      effect2.f |= EFFECT_RAN;
-    } catch (e) {
-      destroy_effect(effect2);
-      throw e;
-    } finally {
-      set_is_flushing_effect(previously_flushing_effect);
-    }
+  if (dev_fallback_default) effect2.component_function = dev_current_component_function;
+  if (sync) try {
+    update_effect(effect2);
+    effect2.f |= EFFECT_RAN;
+  } catch (e) {
+    destroy_effect(effect2);
+    throw e;
   } else if (null !== fn) schedule_effect(effect2);
-  if (!(sync && null === effect2.deps && null === effect2.first && null === effect2.nodes_start && null === effect2.teardown && !(effect2.f & EFFECT_HAS_DERIVED)) && !is_root && push2) {
-    if (null !== parent_effect) push_effect(effect2, parent_effect);
+  if (!(sync && null === effect2.deps && null === effect2.first && null === effect2.nodes_start && null === effect2.teardown && !(effect2.f & (EFFECT_HAS_DERIVED | BOUNDARY_EFFECT))) && push2) {
+    if (null !== parent) push_effect(effect2, parent);
     if (null !== active_reaction && !!(active_reaction.f & DERIVED)) {
       var derived3 = active_reaction;
-      (null != (_a = derived3.children) ? _a : derived3.children = []).push(effect2);
+      (null != (_a3 = derived3.effects) ? _a3 : derived3.effects = []).push(effect2);
     }
   }
   return effect2;
@@ -1389,15 +1349,15 @@ function teardown(fn) {
 }
 
 function user_effect(fn) {
-  var _a;
+  var _a3;
   validate_effect("$effect");
   var defer = null !== active_effect && !!(active_effect.f & BRANCH_EFFECT) && null !== component_context && !component_context.m;
-  if (DEV) define_property(fn, "name", {
+  if (dev_fallback_default) define_property(fn, "name", {
     value: "$effect"
   });
   if (defer) {
     var context = component_context;
-    (null != (_a = context.e) ? _a : context.e = []).push({
+    (null != (_a3 = context.e) ? _a3 : context.e = []).push({
       fn,
       effect: active_effect,
       reaction: active_reaction
@@ -1412,6 +1372,19 @@ function effect_root(fn) {
   };
 }
 
+function component_root(fn) {
+  const effect2 = create_effect(ROOT_EFFECT, fn, true);
+  return (options = {}) => new Promise((fulfil => {
+    if (options.outro) pause_effect(effect2, (() => {
+      destroy_effect(effect2);
+      fulfil(void 0);
+    })); else {
+      destroy_effect(effect2);
+      fulfil(void 0);
+    }
+  }));
+}
+
 function effect(fn) {
   return create_effect(EFFECT, fn, false);
 }
@@ -1420,11 +1393,12 @@ function render_effect(fn) {
   return create_effect(RENDER_EFFECT, fn, true);
 }
 
-function template_effect(fn) {
-  if (DEV) define_property(fn, "name", {
+function template_effect(fn, thunks = [], d = derived) {
+  const deriveds = thunks.map(d), effect2 = () => fn(...deriveds.map(get));
+  if (dev_fallback_default) define_property(effect2, "name", {
     value: "{expression}"
   });
-  return block(fn);
+  return block(effect2);
 }
 
 function block(fn, flags = 0) {
@@ -1450,20 +1424,12 @@ function execute_effect_teardown(effect2) {
   }
 }
 
-function destroy_effect_deriveds(signal) {
-  var deriveds = signal.deriveds;
-  if (null !== deriveds) {
-    signal.deriveds = null;
-    for (var i = 0; i < deriveds.length; i += 1) destroy_derived(deriveds[i]);
-  }
-}
-
 function destroy_effect_children(signal, remove_dom = false) {
   var effect2 = signal.first;
   signal.first = signal.last = null;
   for (;null !== effect2; ) {
     var next2 = effect2.next;
-    destroy_effect(effect2, remove_dom);
+    if (!!(effect2.f & ROOT_EFFECT)) effect2.parent = null; else destroy_effect(effect2, remove_dom);
     effect2 = next2;
   }
 }
@@ -1486,7 +1452,6 @@ function destroy_effect(effect2, remove_dom = true) {
     }
     removed = true;
   }
-  destroy_effect_deriveds(effect2);
   destroy_effect_children(effect2, remove_dom && !removed);
   remove_reactions(effect2, 0);
   set_signal_status(effect2, DESTROYED);
@@ -1495,8 +1460,8 @@ function destroy_effect(effect2, remove_dom = true) {
   execute_effect_teardown(effect2);
   var parent = effect2.parent;
   if (null !== parent && null !== parent.first) unlink_effect(effect2);
-  if (DEV) effect2.component_function = null;
-  effect2.next = effect2.prev = effect2.teardown = effect2.ctx = effect2.deps = effect2.parent = effect2.fn = effect2.nodes_start = effect2.nodes_end = null;
+  if (dev_fallback_default) effect2.component_function = null;
+  effect2.next = effect2.prev = effect2.teardown = effect2.ctx = effect2.deps = effect2.fn = effect2.nodes_start = effect2.nodes_end = null;
 }
 
 function unlink_effect(effect2) {
@@ -1545,7 +1510,11 @@ function resume_effect(effect2) {
 function resume_children(effect2, local) {
   if (effect2.f & INERT) {
     effect2.f ^= INERT;
-    if (check_dirtiness(effect2)) update_effect(effect2);
+    if (!(effect2.f & CLEAN)) effect2.f ^= CLEAN;
+    if (check_dirtiness(effect2)) {
+      set_signal_status(effect2, DIRTY);
+      schedule_effect(effect2);
+    }
     for (var child2 = effect2.first; null !== child2; ) {
       var sibling2 = child2.next;
       resume_children(child2, !!(child2.f & EFFECT_TRANSPARENT) || !!(child2.f & BRANCH_EFFECT) ? local : false);
@@ -1553,6 +1522,24 @@ function resume_children(effect2, local) {
     }
     if (null !== effect2.transitions) for (const transition2 of effect2.transitions) if (transition2.is_global || local) transition2.in();
   }
+}
+
+var regex_return_characters = /\r/g;
+
+function hash(str) {
+  let hash2 = 5381, i = (str = str.replace(regex_return_characters, "")).length;
+  for (;i--; ) hash2 = (hash2 << 5) - hash2 ^ str.charCodeAt(i);
+  return (hash2 >>> 0).toString(36);
+}
+
+var DOM_BOOLEAN_ATTRIBUTES = [ "allowfullscreen", "async", "autofocus", "autoplay", "checked", "controls", "default", "disabled", "formnovalidate", "hidden", "indeterminate", "inert", "ismap", "loop", "multiple", "muted", "nomodule", "novalidate", "open", "playsinline", "readonly", "required", "reversed", "seamless", "selected", "webkitdirectory", "defer", "disablepictureinpicture", "disableremoteplayback" ], DOM_PROPERTIES = [ ...DOM_BOOLEAN_ATTRIBUTES, "formNoValidate", "isMap", "noModule", "playsInline", "readOnly", "value", "volume", "defaultValue", "defaultChecked", "srcObject", "noValidate", "allowFullscreen", "disablePictureInPicture", "disableRemotePlayback" ], PASSIVE_EVENTS = [ "touchstart", "touchmove" ];
+
+function is_passive_event(name) {
+  return PASSIVE_EVENTS.includes(name);
+}
+
+function sanitize_location(location) {
+  return null == location ? void 0 : location.replace(/\//g, "/​");
 }
 
 var all_styles = new Map;
@@ -1566,22 +1553,50 @@ function register_style(hash2, style) {
   styles.add(style);
 }
 
+var listening_to_form_reset = false;
+
+function add_form_reset_listener() {
+  if (!listening_to_form_reset) {
+    listening_to_form_reset = true;
+    document.addEventListener("reset", (evt => {
+      Promise.resolve().then((() => {
+        var _a3;
+        if (!evt.defaultPrevented) for (const e of evt.target.elements) null == (_a3 = e.__on_r) || _a3.call(e);
+      }));
+    }), {
+      capture: true
+    });
+  }
+}
+
+function without_reactive_context(fn) {
+  var previous_reaction = active_reaction, previous_effect = active_effect;
+  set_active_reaction(null);
+  set_active_effect(null);
+  try {
+    return fn();
+  } finally {
+    set_active_reaction(previous_reaction);
+    set_active_effect(previous_effect);
+  }
+}
+
+function listen_to_event_and_reset_event(element2, event2, handler, on_reset = handler) {
+  element2.addEventListener(event2, (() => without_reactive_context(handler)));
+  const prev = element2.__on_r;
+  if (prev) element2.__on_r = () => {
+    prev();
+    on_reset(true);
+  }; else element2.__on_r = () => on_reset(true);
+  add_form_reset_listener();
+}
+
 var head_anchor, all_registered_events = new Set, root_event_handles = new Set;
 
-function create_event(event_name, dom, handler, options) {
+function create_event(event_name, dom, handler, options = {}) {
   function target_handler(event2) {
     if (!options.capture) handle_event_propagation.call(dom, event2);
-    if (!event2.cancelBubble) {
-      var previous_reaction = active_reaction, previous_effect = active_effect;
-      set_active_reaction(null);
-      set_active_effect(null);
-      try {
-        return handler.call(this, event2);
-      } finally {
-        set_active_reaction(previous_reaction);
-        set_active_effect(previous_effect);
-      }
-    }
+    if (!event2.cancelBubble) return without_reactive_context((() => null == handler ? void 0 : handler.call(this, event2)));
   }
   if (event_name.startsWith("pointer") || event_name.startsWith("touch") || "wheel" === event_name) queue_micro_task((() => {
     dom.addEventListener(event_name, target_handler, options);
@@ -1605,7 +1620,7 @@ function delegate(events) {
 }
 
 function handle_event_propagation(event2) {
-  var _a, owner_document = this.ownerDocument, event_name = event2.type, path = (null == (_a = event2.composedPath) ? void 0 : _a.call(event2)) || [], current_target = path[0] || event2.target, path_idx = 0, handled_at = event2.__root;
+  var _a3, owner_document = this.ownerDocument, event_name = event2.type, path = (null == (_a3 = event2.composedPath) ? void 0 : _a3.call(event2)) || [], current_target = path[0] || event2.target, path_idx = 0, handled_at = event2.__root;
   if (handled_at) {
     var at_idx = path.indexOf(handled_at);
     if (-1 !== at_idx && (this === document || this === window)) {
@@ -1629,7 +1644,7 @@ function handle_event_propagation(event2) {
         var parent_element = current_target.assignedSlot || current_target.parentNode || current_target.host || null;
         try {
           var delegated = current_target["__" + event_name];
-          if (void 0 !== delegated && !current_target.disabled) if (is_array(delegated)) {
+          if (null != delegated && (!current_target.disabled || event2.target === current_target)) if (is_array(delegated)) {
             var [fn, ...data] = delegated;
             fn.apply(current_target, [ event2, ...data ]);
           } else delegated.call(current_target, event2);
@@ -1683,7 +1698,27 @@ function template(content, flags) {
       node = create_fragment_from_html(has_start ? content : "<!>" + content);
       if (!is_fragment) node = get_first_child(node);
     }
-    var clone = use_import_node ? document.importNode(node, true) : node.cloneNode(true);
+    var clone = use_import_node || is_firefox ? document.importNode(node, true) : node.cloneNode(true);
+    if (is_fragment) assign_nodes(get_first_child(clone), clone.lastChild); else assign_nodes(clone, clone);
+    return clone;
+  };
+}
+
+function ns_template(content, flags, ns = "svg") {
+  var node, has_start = !content.startsWith("<!>"), is_fragment = !!(flags & TEMPLATE_FRAGMENT), wrapped = `<${ns}>${has_start ? content : "<!>" + content}</${ns}>`;
+  return () => {
+    if (hydrating) {
+      assign_nodes(hydrate_node, null);
+      return hydrate_node;
+    }
+    if (!node) {
+      var root6 = get_first_child(create_fragment_from_html(wrapped));
+      if (is_fragment) {
+        node = document.createDocumentFragment();
+        for (;get_first_child(root6); ) node.appendChild(get_first_child(root6));
+      } else node = get_first_child(root6);
+    }
+    var clone = node.cloneNode(true);
     if (is_fragment) assign_nodes(get_first_child(clone), clone.lastChild); else assign_nodes(clone, clone);
     return clone;
   };
@@ -1709,27 +1744,13 @@ function append(anchor, dom) {
   }
 }
 
-var regex_return_characters = /\r/g;
-
-function hash(str) {
-  let hash2 = 5381, i = (str = str.replace(regex_return_characters, "")).length;
-  for (;i--; ) hash2 = (hash2 << 5) - hash2 ^ str.charCodeAt(i);
-  return (hash2 >>> 0).toString(36);
-}
-
-var DOM_BOOLEAN_ATTRIBUTES = [ "allowfullscreen", "async", "autofocus", "autoplay", "checked", "controls", "default", "disabled", "formnovalidate", "hidden", "indeterminate", "ismap", "loop", "multiple", "muted", "nomodule", "novalidate", "open", "playsinline", "readonly", "required", "reversed", "seamless", "selected", "webkitdirectory" ], DOM_PROPERTIES = [ ...DOM_BOOLEAN_ATTRIBUTES, "formNoValidate", "isMap", "noModule", "playsInline", "readOnly", "value", "inert", "volume" ], PASSIVE_EVENTS = [ "touchstart", "touchmove" ];
-
-function is_passive_event(name) {
-  return PASSIVE_EVENTS.includes(name);
-}
-
 var should_intro = true;
 
 function set_text(text2, value) {
-  var _a, str = null == value ? "" : "object" == typeof value ? value + "" : value;
-  if (str !== (null != (_a = text2.__t) ? _a : text2.__t = text2.nodeValue)) {
+  var _a3, str = null == value ? "" : "object" == typeof value ? value + "" : value;
+  if (str !== (null != (_a3 = text2.__t) ? _a3 : text2.__t = text2.nodeValue)) {
     text2.__t = str;
-    text2.nodeValue = null == str ? "" : str + "";
+    text2.nodeValue = str + "";
   }
 }
 
@@ -1738,9 +1759,9 @@ function mount(component2, options) {
 }
 
 function hydrate(component2, options) {
-  var _a;
+  var _a3;
   init_operations();
-  options.intro = null != (_a = options.intro) ? _a : false;
+  options.intro = null != (_a3 = options.intro) ? _a3 : false;
   const target = options.target, was_hydrating = hydrating, previous_hydrate_node = hydrate_node;
   try {
     for (var anchor = get_first_child(target); anchor && (8 !== anchor.nodeType || anchor.data !== HYDRATION_START); ) anchor = get_next_sibling(anchor);
@@ -1799,7 +1820,7 @@ function _mount(Component, {target, anchor, props = {}, events, context, intro =
   };
   event_handle(array_from(all_registered_events));
   root_event_handles.add(event_handle);
-  var component2 = void 0, unmount2 = effect_root((() => {
+  var component2 = void 0, unmount2 = component_root((() => {
     var anchor_node = null != anchor ? anchor : target.appendChild(create_text());
     branch((() => {
       if (context) {
@@ -1815,7 +1836,7 @@ function _mount(Component, {target, anchor, props = {}, events, context, intro =
       if (context) pop();
     }));
     return () => {
-      var _a;
+      var _a3;
       for (var event_name of registered_events) {
         target.removeEventListener(event_name, handle_event_propagation);
         var n = document_listeners.get(event_name);
@@ -1825,8 +1846,7 @@ function _mount(Component, {target, anchor, props = {}, events, context, intro =
         } else document_listeners.set(event_name, n);
       }
       root_event_handles.delete(event_handle);
-      mounted_components.delete(component2);
-      if (anchor_node !== anchor) null == (_a = anchor_node.parentNode) || _a.removeChild(anchor_node);
+      if (anchor_node !== anchor) null == (_a3 = anchor_node.parentNode) || _a3.removeChild(anchor_node);
     };
   }));
   mounted_components.set(component2, unmount2);
@@ -1835,38 +1855,55 @@ function _mount(Component, {target, anchor, props = {}, events, context, intro =
 
 var mounted_components = new WeakMap;
 
-function unmount(component2) {
+function unmount(component2, options) {
   const fn = mounted_components.get(component2);
-  if (fn) fn(); else if (DEV) lifecycle_double_unmount();
+  if (fn) {
+    mounted_components.delete(component2);
+    return fn(options);
+  }
+  if (dev_fallback_default) lifecycle_double_unmount();
+  return Promise.resolve();
 }
 
-function if_block(node, get_condition, consequent_fn, alternate_fn = null, elseif = false) {
-  if (hydrating) hydrate_next();
-  var anchor = node, consequent_effect = null, alternate_effect = null, condition = null;
-  block((() => {
-    if (condition === (condition = !!get_condition())) return;
+function if_block(node, fn, [root_index, hydrate_index] = [ 0, 0 ]) {
+  if (hydrating && 0 === root_index) hydrate_next();
+  var anchor = node, consequent_effect = null, alternate_effect = null, condition = UNINITIALIZED, has_branch = false;
+  const set_branch = (fn2, flag = true) => {
+    has_branch = true;
+    update_branch(flag, fn2);
+  }, update_branch = (new_condition, fn2) => {
+    if (condition === (condition = new_condition)) return;
     let mismatch = false;
-    if (hydrating) {
-      const is_else = anchor.data === HYDRATION_START_ELSE;
-      if (condition === is_else) {
+    if (hydrating && -1 !== hydrate_index) {
+      if (0 === root_index) {
+        const data = anchor.data;
+        if (data === HYDRATION_START) hydrate_index = 0; else if (data === HYDRATION_START_ELSE) hydrate_index = 1 / 0; else if ((hydrate_index = parseInt(data.substring(1))) != hydrate_index) hydrate_index = condition ? 1 / 0 : -1;
+      }
+      if (!!condition == hydrate_index > root_index) {
         set_hydrate_node(anchor = remove_nodes());
         set_hydrating(false);
         mismatch = true;
+        hydrate_index = -1;
       }
     }
     if (condition) {
-      if (consequent_effect) resume_effect(consequent_effect); else consequent_effect = branch((() => consequent_fn(anchor)));
+      if (consequent_effect) resume_effect(consequent_effect); else if (fn2) consequent_effect = branch((() => fn2(anchor)));
       if (alternate_effect) pause_effect(alternate_effect, (() => {
         alternate_effect = null;
       }));
     } else {
-      if (alternate_effect) resume_effect(alternate_effect); else if (alternate_fn) alternate_effect = branch((() => alternate_fn(anchor)));
+      if (alternate_effect) resume_effect(alternate_effect); else if (fn2) alternate_effect = branch((() => fn2(anchor, [ root_index + 1, hydrate_index ])));
       if (consequent_effect) pause_effect(consequent_effect, (() => {
         consequent_effect = null;
       }));
     }
     if (mismatch) set_hydrating(true);
-  }), elseif ? EFFECT_TRANSPARENT : 0);
+  };
+  block((() => {
+    has_branch = false;
+    fn(set_branch);
+    if (!has_branch) update_branch(null, null);
+  }), root_index > 0 ? EFFECT_TRANSPARENT : 0);
   if (hydrating) anchor = hydrate_node;
 }
 
@@ -1909,9 +1946,12 @@ function each(node, flags, get_collection, get_key, render_fn, fallback_fn = nul
     anchor = hydrating ? set_hydrate_node(get_first_child(parent_node)) : parent_node.appendChild(create_text());
   }
   if (hydrating) hydrate_next();
-  var fallback2 = null, was_empty = false;
+  var fallback2 = null, was_empty = false, each_array = derived_safe_equal((() => {
+    var collection = get_collection();
+    return is_array(collection) ? collection : null == collection ? [] : array_from(collection);
+  }));
   block((() => {
-    var collection = get_collection(), array = is_array(collection) ? collection : null == collection ? [] : array_from(collection), length = array.length;
+    var array = get(each_array), length = array.length;
     if (was_empty && 0 === length) return;
     was_empty = 0 === length;
     let mismatch = false;
@@ -1929,28 +1969,28 @@ function each(node, flags, get_collection, get_key, render_fn, fallback_fn = nul
           break;
         }
         var value = array[i], key = get_key(value, i);
-        item = create_item(hydrate_node, state2, prev, null, value, key, i, render_fn, flags);
+        item = create_item(hydrate_node, state2, prev, null, value, key, i, render_fn, flags, get_collection);
         state2.items.set(key, item);
         prev = item;
       }
       if (length > 0) set_hydrate_node(remove_nodes());
     }
-    if (!hydrating) reconcile(array, state2, anchor, render_fn, flags, get_key);
+    if (!hydrating) reconcile(array, state2, anchor, render_fn, flags, get_key, get_collection);
     if (null !== fallback_fn) if (0 === length) if (fallback2) resume_effect(fallback2); else fallback2 = branch((() => fallback_fn(anchor))); else if (null !== fallback2) pause_effect(fallback2, (() => {
       fallback2 = null;
     }));
     if (mismatch) set_hydrating(true);
-    get_collection();
+    get(each_array);
   }));
   if (hydrating) anchor = hydrate_node;
 }
 
-function reconcile(array, state2, anchor, render_fn, flags, get_key) {
-  var _a, _b, _c, _d, seen, to_animate, value, key, item, i, is_animated = !!(flags & EACH_IS_ANIMATED), should_update = !!(flags & (EACH_ITEM_REACTIVE | EACH_INDEX_REACTIVE)), length = array.length, items = state2.items, current = state2.first, prev = null, matched = [], stashed = [];
+function reconcile(array, state2, anchor, render_fn, flags, get_key, get_collection) {
+  var _a3, _b3, _c2, _d, seen, to_animate, value, key, item, i, is_animated = !!(flags & EACH_IS_ANIMATED), should_update = !!(flags & (EACH_ITEM_REACTIVE | EACH_INDEX_REACTIVE)), length = array.length, items = state2.items, current = state2.first, prev = null, matched = [], stashed = [];
   if (is_animated) for (i = 0; i < length; i += 1) {
     key = get_key(value = array[i], i);
     if (void 0 !== (item = items.get(key))) {
-      null == (_a = item.a) || _a.measure();
+      null == (_a3 = item.a) || _a3.measure();
       (null != to_animate ? to_animate : to_animate = new Set).add(item);
     }
   }
@@ -1961,7 +2001,7 @@ function reconcile(array, state2, anchor, render_fn, flags, get_key) {
       if (!!(item.e.f & INERT)) {
         resume_effect(item.e);
         if (is_animated) {
-          null == (_b = item.a) || _b.unfix();
+          null == (_b3 = item.a) || _b3.unfix();
           (null != to_animate ? to_animate : to_animate = new Set).delete(item);
         }
       }
@@ -2005,7 +2045,7 @@ function reconcile(array, state2, anchor, render_fn, flags, get_key) {
       prev = item;
       current = item.next;
     } else {
-      prev = create_item(current ? current.e.nodes_start : anchor, state2, prev, null === prev ? state2.first : prev.next, value, key, i, render_fn, flags);
+      prev = create_item(current ? current.e.nodes_start : anchor, state2, prev, null === prev ? state2.first : prev.next, value, key, i, render_fn, flags, get_collection);
       items.set(key, prev);
       matched = [];
       stashed = [];
@@ -2021,15 +2061,15 @@ function reconcile(array, state2, anchor, render_fn, flags, get_key) {
     if (destroy_length > 0) {
       var controlled_anchor = !!(flags & EACH_IS_CONTROLLED) && 0 === length ? anchor : null;
       if (is_animated) {
-        for (i = 0; i < destroy_length; i += 1) null == (_c = to_destroy[i].a) || _c.measure();
+        for (i = 0; i < destroy_length; i += 1) null == (_c2 = to_destroy[i].a) || _c2.measure();
         for (i = 0; i < destroy_length; i += 1) null == (_d = to_destroy[i].a) || _d.fix();
       }
       pause_effects(state2, to_destroy, controlled_anchor, items);
     }
   }
   if (is_animated) queue_micro_task((() => {
-    var _a2;
-    if (void 0 !== to_animate) for (item of to_animate) null == (_a2 = item.a) || _a2.apply();
+    var _a4;
+    if (void 0 !== to_animate) for (item of to_animate) null == (_a4 = item.a) || _a4.apply();
   }));
   active_effect.first = state2.first && state2.first.e;
   active_effect.last = prev && prev.e;
@@ -2040,20 +2080,24 @@ function update_item(item, value, index2, type) {
   if (!!(type & EACH_INDEX_REACTIVE)) internal_set(item.i, index2); else item.i = index2;
 }
 
-function create_item(anchor, state2, prev, next2, value, key, index2, render_fn, flags) {
-  var previous_each_item = current_each_item;
+function create_item(anchor, state2, prev, next2, value, key, index2, render_fn, flags, get_collection) {
+  var previous_each_item = current_each_item, reactive = !!(flags & EACH_ITEM_REACTIVE), v = reactive ? !(flags & EACH_ITEM_IMMUTABLE) ? mutable_source(value) : source(value) : value, i = !(flags & EACH_INDEX_REACTIVE) ? index2 : source(index2);
+  if (dev_fallback_default && reactive) v.debug = () => {
+    var collection_index = "number" == typeof i ? index2 : i.v;
+    get_collection()[collection_index];
+  };
+  var item = {
+    i,
+    v,
+    k: key,
+    a: null,
+    e: null,
+    prev,
+    next: next2
+  };
+  current_each_item = item;
   try {
-    var v = !!(flags & EACH_ITEM_REACTIVE) ? !(flags & EACH_ITEM_IMMUTABLE) ? mutable_source(value) : source(value) : value, i = !(flags & EACH_INDEX_REACTIVE) ? index2 : source(index2), item = {
-      i,
-      v,
-      k: key,
-      a: null,
-      e: null,
-      prev,
-      next: next2
-    };
-    current_each_item = item;
-    item.e = branch((() => render_fn(anchor, v, i)), hydrating);
+    item.e = branch((() => render_fn(anchor, v, i, get_collection)), hydrating);
     item.e.prev = prev && prev.e;
     item.e.next = next2 && next2.e;
     if (null === prev) state2.first = item; else {
@@ -2090,19 +2134,19 @@ function link(state2, prev, next2) {
 }
 
 function check_hash(element2, server_hash, value) {
-  var _a, _b;
+  var _a3, _b3;
   if (!server_hash || server_hash === hash(String(null != value ? value : ""))) return;
   let location;
-  const loc = null == (_a = element2.__svelte_meta) ? void 0 : _a.loc;
-  if (loc) location = `near ${loc.file}:${loc.line}:${loc.column}`; else if (null == (_b = dev_current_component_function) ? void 0 : _b[FILENAME]) location = `in ${dev_current_component_function[FILENAME]}`;
-  hydration_html_changed(null == location ? void 0 : location.replace(/\//g, "/​"));
+  const loc = null == (_a3 = element2.__svelte_meta) ? void 0 : _a3.loc;
+  if (loc) location = `near ${loc.file}:${loc.line}:${loc.column}`; else if (null == (_b3 = dev_current_component_function) ? void 0 : _b3[FILENAME]) location = `in ${dev_current_component_function[FILENAME]}`;
+  hydration_html_changed(sanitize_location(location));
 }
 
 function html(node, get_value, svg, mathml, skip_warning) {
   var effect2, anchor = node, value = "";
   block((() => {
-    var _a;
-    if (value !== (value = null != (_a = get_value()) ? _a : "")) {
+    var _a3;
+    if (value !== (value = null != (_a3 = get_value()) ? _a3 : "")) {
       if (void 0 !== effect2) {
         destroy_effect(effect2);
         effect2 = void 0;
@@ -2124,7 +2168,7 @@ function html(node, get_value, svg, mathml, skip_warning) {
             hydration_mismatch();
             throw HYDRATION_ERROR;
           }
-          if (DEV && !skip_warning) check_hash(next2.parentNode, hash2, value);
+          if (dev_fallback_default && !skip_warning) check_hash(next2.parentNode, hash2, value);
           assign_nodes(hydrate_node, last);
           anchor = set_hydrate_node(next2);
         }
@@ -2141,7 +2185,7 @@ function snippet(node, get_snippet, ...args) {
         destroy_effect(snippet_effect);
         snippet_effect = null;
       }
-      if (DEV && null == snippet2) invalid_snippet();
+      if (dev_fallback_default && null == snippet2) invalid_snippet();
       snippet_effect = branch((() => snippet2(anchor, ...args)));
     }
   }), EFFECT_TRANSPARENT);
@@ -2150,32 +2194,136 @@ function snippet(node, get_snippet, ...args) {
 
 function append_styles(anchor, css) {
   queue_micro_task((() => {
-    var _a, root6 = anchor.getRootNode(), target = root6.host ? root6 : null != (_a = root6.head) ? _a : root6.ownerDocument.head;
+    var _a3, root6 = anchor.getRootNode(), target = root6.host ? root6 : null != (_a3 = root6.head) ? _a3 : root6.ownerDocument.head;
     if (!target.querySelector("#" + css.hash)) {
       const style = document.createElement("style");
       style.id = css.hash;
       style.textContent = css.code;
       target.appendChild(style);
-      if (DEV) register_style(css.hash, style);
+      if (dev_fallback_default) register_style(css.hash, style);
     }
   }));
 }
 
-var listening_to_form_reset = false;
+function r(e) {
+  var t, f, n = "";
+  if ("string" == typeof e || "number" == typeof e) n += e; else if ("object" == typeof e) if (Array.isArray(e)) {
+    var o = e.length;
+    for (t = 0; t < o; t++) e[t] && (f = r(e[t])) && (n && (n += " "), n += f);
+  } else for (f in e) e[f] && (n && (n += " "), n += f);
+  return n;
+}
 
-function add_form_reset_listener() {
-  if (!listening_to_form_reset) {
-    listening_to_form_reset = true;
-    document.addEventListener("reset", (evt => {
-      Promise.resolve().then((() => {
-        var _a;
-        if (!evt.defaultPrevented) for (const e of evt.target.elements) null == (_a = e.__on_r) || _a.call(e);
-      }));
-    }), {
-      capture: true
-    });
+function clsx() {
+  for (var e, t, f = 0, n = "", o = arguments.length; f < o; f++) (e = arguments[f]) && (t = r(e)) && (n && (n += " "), 
+  n += t);
+  return n;
+}
+
+function clsx2(value) {
+  if ("object" == typeof value) return clsx(value); else return null != value ? value : "";
+}
+
+var whitespace = [ ..." \t\n\r\f \v\ufeff" ];
+
+function to_class(value, hash2, directives) {
+  var classname = null == value ? "" : "" + value;
+  if (hash2) classname = classname ? classname + " " + hash2 : hash2;
+  if (directives) for (var key in directives) if (directives[key]) classname = classname ? classname + " " + key : key; else if (classname.length) for (var len = key.length, a = 0; (a = classname.indexOf(key, a)) >= 0; ) {
+    var b = a + len;
+    if ((0 === a || whitespace.includes(classname[a - 1])) && (b === classname.length || whitespace.includes(classname[b]))) classname = (0 === a ? "" : classname.substring(0, a)) + classname.substring(b + 1); else a = b;
+  }
+  return "" === classname ? null : classname;
+}
+
+function append_styles2(styles, important = false) {
+  var separator = important ? " !important;" : ";", css = "";
+  for (var key in styles) {
+    var value = styles[key];
+    if (null != value && "" !== value) css += " " + key + ": " + value + separator;
+  }
+  return css;
+}
+
+function to_css_name(name) {
+  if ("-" !== name[0] || "-" !== name[1]) return name.toLowerCase(); else return name;
+}
+
+function to_style(value, styles) {
+  if (styles) {
+    var normal_styles, important_styles, new_style = "";
+    if (Array.isArray(styles)) {
+      normal_styles = styles[0];
+      important_styles = styles[1];
+    } else normal_styles = styles;
+    if (value) {
+      value = String(value).replaceAll(/\s*\/\*.*?\*\/\s*/g, "").trim();
+      var in_str = false, in_apo = 0, in_comment = false, reserved_names = [];
+      if (normal_styles) reserved_names.push(...Object.keys(normal_styles).map(to_css_name));
+      if (important_styles) reserved_names.push(...Object.keys(important_styles).map(to_css_name));
+      var start_index = 0, name_index = -1;
+      const len = value.length;
+      for (var i = 0; i < len; i++) {
+        var c = value[i];
+        if (in_comment) {
+          if ("/" === c && "*" === value[i - 1]) in_comment = false;
+        } else if (in_str) {
+          if (in_str === c) in_str = false;
+        } else if ("/" === c && "*" === value[i + 1]) in_comment = true; else if ('"' === c || "'" === c) in_str = c; else if ("(" === c) in_apo++; else if (")" === c) in_apo--;
+        if (!in_comment && false === in_str && 0 === in_apo) if (":" === c && -1 === name_index) name_index = i; else if (";" === c || i === len - 1) {
+          if (-1 !== name_index) {
+            var name = to_css_name(value.substring(start_index, name_index).trim());
+            if (!reserved_names.includes(name)) {
+              if (";" !== c) i++;
+              new_style += " " + value.substring(start_index, i).trim() + ";";
+            }
+          }
+          start_index = i + 1;
+          name_index = -1;
+        }
+      }
+    }
+    if (normal_styles) new_style += append_styles2(normal_styles);
+    if (important_styles) new_style += append_styles2(important_styles, true);
+    return "" === (new_style = new_style.trim()) ? null : new_style;
+  }
+  return null == value ? null : String(value);
+}
+
+function set_class(dom, is_html, value, hash2, prev_classes, next_classes) {
+  var prev = dom.__className;
+  if (hydrating || prev !== value || void 0 === prev) {
+    var next_class_name = to_class(value, hash2, next_classes);
+    if (!hydrating || next_class_name !== dom.getAttribute("class")) if (null == next_class_name) dom.removeAttribute("class"); else if (is_html) dom.className = next_class_name; else dom.setAttribute("class", next_class_name);
+    dom.__className = value;
+  } else if (next_classes && prev_classes !== next_classes) for (var key in next_classes) {
+    var is_present = !!next_classes[key];
+    if (null == prev_classes || is_present !== !!prev_classes[key]) dom.classList.toggle(key, is_present);
+  }
+  return next_classes;
+}
+
+function update_styles(dom, prev = {}, next2, priority) {
+  for (var key in next2) {
+    var value = next2[key];
+    if (prev[key] !== value) if (null == next2[key]) dom.style.removeProperty(key); else dom.style.setProperty(key, value, priority);
   }
 }
+
+function set_style(dom, value, prev_styles, next_styles) {
+  var prev = dom.__style;
+  if (hydrating || prev !== value) {
+    var next_style_attr = to_style(value, next_styles);
+    if (!hydrating || next_style_attr !== dom.getAttribute("style")) if (null == next_style_attr) dom.removeAttribute("style"); else dom.style.cssText = next_style_attr;
+    dom.__style = value;
+  } else if (next_styles) if (Array.isArray(next_styles)) {
+    update_styles(dom, null == prev_styles ? void 0 : prev_styles[0], next_styles[0]);
+    update_styles(dom, null == prev_styles ? void 0 : prev_styles[1], next_styles[1], "important");
+  } else update_styles(dom, prev_styles, next_styles);
+  return next_styles;
+}
+
+var CLASS = Symbol("class"), STYLE = Symbol("style"), IS_CUSTOM_ELEMENT = Symbol("is custom element"), IS_HTML = Symbol("is html");
 
 function remove_input_defaults(input) {
   if (hydrating) {
@@ -2201,7 +2349,7 @@ function remove_input_defaults(input) {
 }
 
 function set_attribute(element2, attribute, value, skip_warning) {
-  var _a, attributes = null != (_a = element2.__attributes) ? _a : element2.__attributes = {};
+  var attributes = get_attributes(element2);
   if (hydrating) {
     attributes[attribute] = element2.getAttribute(attribute);
     if ("src" === attribute || "srcset" === attribute || "href" === attribute && "LINK" === element2.nodeName) {
@@ -2210,10 +2358,17 @@ function set_attribute(element2, attribute, value, skip_warning) {
     }
   }
   if (attributes[attribute] !== (attributes[attribute] = value)) {
-    if ("style" === attribute && "__styles" in element2) element2.__styles = {};
     if ("loading" === attribute) element2[LOADING_ATTR_SYMBOL] = value;
     if (null == value) element2.removeAttribute(attribute); else if ("string" != typeof value && get_setters(element2).includes(attribute)) element2[attribute] = value; else element2.setAttribute(attribute, value);
   }
+}
+
+function get_attributes(element2) {
+  var _a3;
+  return null != (_a3 = element2.__attributes) ? _a3 : element2.__attributes = {
+    [IS_CUSTOM_ELEMENT]: element2.nodeName.includes("-"),
+    [IS_HTML]: element2.namespaceURI === NAMESPACE_HTML
+  };
 }
 
 var setters_cache = new Map;
@@ -2222,7 +2377,7 @@ function get_setters(element2) {
   var descriptors, setters = setters_cache.get(element2.nodeName);
   if (setters) return setters;
   setters_cache.set(element2.nodeName, setters = []);
-  for (var proto = get_prototype_of(element2), element_proto = Element.prototype; element_proto !== proto; ) {
+  for (var proto = element2, element_proto = Element.prototype; element_proto !== proto; ) {
     descriptors = get_descriptors(proto);
     for (var key in descriptors) if (descriptors[key].set) setters.push(key);
     proto = get_prototype_of(proto);
@@ -2231,8 +2386,8 @@ function get_setters(element2) {
 }
 
 function check_src_in_dev_hydration(element2, attribute, value) {
-  var _a;
-  if (DEV) if ("srcset" !== attribute || !srcset_url_equal(element2, value)) if (!src_url_equal(null != (_a = element2.getAttribute(attribute)) ? _a : "", value)) hydration_attribute_changed(attribute, element2.outerHTML.replace(element2.innerHTML, element2.innerHTML && "..."), String(value));
+  var _a3;
+  if (dev_fallback_default) if ("srcset" !== attribute || !srcset_url_equal(element2, value)) if (!src_url_equal(null != (_a3 = element2.getAttribute(attribute)) ? _a3 : "", value)) hydration_attribute_changed(attribute, element2.outerHTML.replace(element2.innerHTML, element2.innerHTML && "..."), String(value));
 }
 
 function src_url_equal(element_src, url) {
@@ -2248,52 +2403,27 @@ function srcset_url_equal(element2, srcset) {
   return urls.length === element_urls.length && urls.every((([url, width], i) => width === element_urls[i][1] && (src_url_equal(element_urls[i][0], url) || src_url_equal(url, element_urls[i][0]))));
 }
 
-function set_class(dom, value) {
-  var prev_class_name = dom.__className, next_class_name = to_class(value);
-  if (hydrating && dom.className === next_class_name) dom.__className = next_class_name; else if (prev_class_name !== next_class_name || hydrating && dom.className !== next_class_name) {
-    if (null == value) dom.removeAttribute("class"); else dom.className = next_class_name;
-    dom.__className = next_class_name;
-  }
-}
-
-function to_class(value) {
-  return null == value ? "" : value;
-}
-
-function toggle_class(dom, class_name, value) {
-  if (value) {
-    if (dom.classList.contains(class_name)) return;
-    dom.classList.add(class_name);
-  } else {
-    if (!dom.classList.contains(class_name)) return;
-    dom.classList.remove(class_name);
-  }
-}
-
-function listen_to_event_and_reset_event(element2, event2, handler, on_reset = handler) {
-  element2.addEventListener(event2, handler);
-  const prev = element2.__on_r;
-  if (prev) element2.__on_r = () => {
-    prev();
-    on_reset();
-  }; else element2.__on_r = on_reset;
-  add_form_reset_listener();
-}
-
 function bind_value(input, get3, set2 = get3) {
   var runes = is_runes();
-  listen_to_event_and_reset_event(input, "input", (() => {
-    if (DEV && "checkbox" === input.type) bind_invalid_checkbox_value();
-    var value = is_numberlike_input(input) ? to_number(input.value) : input.value;
+  listen_to_event_and_reset_event(input, "input", (is_reset => {
+    if (dev_fallback_default && "checkbox" === input.type) bind_invalid_checkbox_value();
+    var value = is_reset ? input.defaultValue : input.value;
+    value = is_numberlike_input(input) ? to_number(value) : value;
     set2(value);
-    if (runes && value !== (value = get3())) input.value = null != value ? value : "";
+    if (runes && value !== (value = get3())) {
+      var start = input.selectionStart, end = input.selectionEnd;
+      input.value = null != value ? value : "";
+      if (null !== end) {
+        input.selectionStart = start;
+        input.selectionEnd = Math.min(end, input.value.length);
+      }
+    }
   }));
+  if (hydrating && input.defaultValue !== input.value || null == untrack(get3) && input.value) set2(is_numberlike_input(input) ? to_number(input.value) : input.value);
   render_effect((() => {
-    if (DEV && "checkbox" === input.type) bind_invalid_checkbox_value();
+    if (dev_fallback_default && "checkbox" === input.type) bind_invalid_checkbox_value();
     var value = get3();
-    if (!hydrating || input.defaultValue === input.value) {
-      if (!is_numberlike_input(input) || value !== to_number(input.value)) if ("date" !== input.type || value || input.value) if (value !== input.value) input.value = null != value ? value : "";
-    } else set2(input.value);
+    if (!is_numberlike_input(input) || value !== to_number(input.value)) if ("date" !== input.type || value || input.value) if (value !== input.value) input.value = null != value ? value : "";
   }));
 }
 
@@ -2332,16 +2462,16 @@ function bind_this(element_or_component = {}, update2, get_value, get_parts) {
   return element_or_component;
 }
 
-var _events, _instance, is_store_binding = false;
+var _events, _instance, is_store_binding = false, IS_UNMOUNTED = Symbol();
 
 function store_get(store, store_name, stores) {
-  var _a;
-  const entry = null != (_a = stores[store_name]) ? _a : stores[store_name] = {
+  var _a3;
+  const entry = null != (_a3 = stores[store_name]) ? _a3 : stores[store_name] = {
     store: null,
     source: mutable_source(void 0),
     unsubscribe: noop
   };
-  if (entry.store !== store) {
+  if (entry.store !== store && !(IS_UNMOUNTED in stores)) {
     entry.unsubscribe();
     entry.store = null != store ? store : null;
     if (null == store) {
@@ -2355,7 +2485,7 @@ function store_get(store, store_name, stores) {
       is_synchronous_callback = false;
     }
   }
-  return get(entry.source);
+  if (store && IS_UNMOUNTED in stores) return get2(store); else return get(entry.source);
 }
 
 function store_set(store, value) {
@@ -2365,10 +2495,15 @@ function store_set(store, value) {
 
 function setup_stores() {
   const stores = {};
-  teardown((() => {
-    for (var store_name in stores) stores[store_name].unsubscribe();
-  }));
-  return stores;
+  return [ stores, function cleanup() {
+    teardown((() => {
+      for (var store_name in stores) stores[store_name].unsubscribe();
+      define_property(stores, IS_UNMOUNTED, {
+        enumerable: false,
+        value: true
+      });
+    }));
+  } ];
 }
 
 function capture_store_binding(fn) {
@@ -2381,20 +2516,15 @@ function capture_store_binding(fn) {
   }
 }
 
-function with_parent_branch(fn) {
-  for (var effect2 = active_effect, previous_effect = active_effect; null !== effect2 && !(effect2.f & (BRANCH_EFFECT | ROOT_EFFECT)); ) effect2 = effect2.parent;
-  try {
-    set_active_effect(effect2);
-    return fn();
-  } finally {
-    set_active_effect(previous_effect);
-  }
+function has_destroyed_component_ctx(current_value) {
+  var _a3, _b3;
+  return null != (_b3 = null == (_a3 = current_value.ctx) ? void 0 : _a3.d) ? _b3 : false;
 }
 
 function prop(props, key, flags, fallback2) {
-  var _a, prop_value, immutable = !!(flags & PROPS_IS_IMMUTABLE), runes = !!(flags & PROPS_IS_RUNES), bindable = !!(flags & PROPS_IS_BINDABLE), lazy = !!(flags & PROPS_IS_LAZY_INITIAL), is_store_sub = false;
+  var _a3, _b3, prop_value, immutable = !!(flags & PROPS_IS_IMMUTABLE), runes = !legacy_mode_flag || !!(flags & PROPS_IS_RUNES), bindable = !!(flags & PROPS_IS_BINDABLE), lazy = !!(flags & PROPS_IS_LAZY_INITIAL), is_store_sub = false;
   if (bindable) [prop_value, is_store_sub] = capture_store_binding((() => props[key])); else prop_value = props[key];
-  var getter, setter = null == (_a = get_descriptor(props, key)) ? void 0 : _a.set, fallback_value = fallback2, fallback_dirty = true, fallback_used = false, get_fallback = () => {
+  var getter, is_entry_props = STATE_SYMBOL in props || LEGACY_PROPS in props, setter = bindable && (null != (_b3 = null == (_a3 = get_descriptor(props, key)) ? void 0 : _a3.set) ? _b3 : is_entry_props && key in props && (v => props[key] = v)) || void 0, fallback_value = fallback2, fallback_dirty = true, fallback_used = false, get_fallback = () => {
     fallback_used = true;
     if (fallback_dirty) {
       fallback_dirty = false;
@@ -2414,7 +2544,7 @@ function prop(props, key, flags, fallback2) {
     fallback_used = false;
     return value;
   }; else {
-    var derived_getter = with_parent_branch((() => (immutable ? derived : derived_safe_equal)((() => props[key]))));
+    var derived_getter = (immutable ? derived : derived_safe_equal)((() => props[key]));
     derived_getter.f |= LEGACY_DERIVED_PROP;
     getter = () => {
       var value = get(derived_getter);
@@ -2432,19 +2562,20 @@ function prop(props, key, flags, fallback2) {
       } else return getter();
     };
   }
-  var from_child = false, was_from_child = false, inner_current_value = mutable_source(prop_value), current_value = with_parent_branch((() => derived((() => {
+  var from_child = false, was_from_child = false, inner_current_value = mutable_source(prop_value), current_value = derived((() => {
     var parent_value = getter(), child_value = get(inner_current_value);
-    if (from_child || void 0 === parent_value && !!(active_reaction.f & DESTROYED)) {
+    if (from_child) {
       from_child = false;
       was_from_child = true;
       return child_value;
     }
     was_from_child = false;
     return inner_current_value.v = parent_value;
-  }))));
+  }));
+  if (bindable) get(current_value);
   if (!immutable) current_value.equals = safe_equals;
   return function(value, mutation) {
-    if (is_signals_recorded) {
+    if (null !== captured_signals) {
       from_child = was_from_child;
       getter();
       get(inner_current_value);
@@ -2455,11 +2586,12 @@ function prop(props, key, flags, fallback2) {
         from_child = true;
         set(inner_current_value, new_value);
         if (fallback_used && void 0 !== fallback_value) fallback_value = new_value;
+        if (has_destroyed_component_ctx(current_value)) return value;
         untrack((() => get(current_value)));
       }
       return value;
     }
-    return get(current_value);
+    if (has_destroyed_component_ctx(current_value)) return current_value.v; else return get(current_value);
   };
 }
 
@@ -2471,7 +2603,7 @@ var SvelteElement, Svelte4Component = class {
   constructor(options) {
     __privateAdd(this, _events);
     __privateAdd(this, _instance);
-    var _a, _b, sources = new Map, add_source = (key, value) => {
+    var _a3, _b3, sources = new Map, add_source = (key, value) => {
       var s = mutable_source(value);
       sources.set(key, s);
       return s;
@@ -2481,28 +2613,30 @@ var SvelteElement, Svelte4Component = class {
       $$events: {}
     }, {
       get(target, prop2) {
-        var _a2;
-        return get(null != (_a2 = sources.get(prop2)) ? _a2 : add_source(prop2, Reflect.get(target, prop2)));
+        var _a4;
+        return get(null != (_a4 = sources.get(prop2)) ? _a4 : add_source(prop2, Reflect.get(target, prop2)));
       },
       has(target, prop2) {
-        var _a2;
-        get(null != (_a2 = sources.get(prop2)) ? _a2 : add_source(prop2, Reflect.get(target, prop2)));
+        var _a4;
+        if (prop2 === LEGACY_PROPS) return true;
+        get(null != (_a4 = sources.get(prop2)) ? _a4 : add_source(prop2, Reflect.get(target, prop2)));
         return Reflect.has(target, prop2);
       },
       set(target, prop2, value) {
-        var _a2;
-        set(null != (_a2 = sources.get(prop2)) ? _a2 : add_source(prop2, value), value);
+        var _a4;
+        set(null != (_a4 = sources.get(prop2)) ? _a4 : add_source(prop2, value), value);
         return Reflect.set(target, prop2, value);
       }
     });
     __privateSet(this, _instance, (options.hydrate ? hydrate : mount)(options.component, {
       target: options.target,
+      anchor: options.anchor,
       props,
       context: options.context,
-      intro: null != (_a = options.intro) ? _a : false,
+      intro: null != (_a3 = options.intro) ? _a3 : false,
       recover: options.recover
     }));
-    if (!(null == (_b = null == options ? void 0 : options.props) ? void 0 : _b.$$host) || false === options.sync) flush_sync();
+    if (!(null == (_b3 = null == options ? void 0 : options.props) ? void 0 : _b3.$$host) || false === options.sync) flushSync();
     __privateSet(this, _events, props.$$events);
     for (const key of Object.keys(__privateGet(this, _instance))) if ("$set" !== key && "$destroy" !== key && "$on" !== key) define_property(this, key, {
       get() {
@@ -2614,10 +2748,10 @@ if ("function" == typeof HTMLElement) SvelteElement = class extends HTMLElement 
       });
       this.$$me = effect_root((() => {
         render_effect((() => {
-          var _a;
+          var _a3;
           this.$$r = true;
           for (const key of object_keys(this.$$c)) {
-            if (!(null == (_a = this.$$p_d[key]) ? void 0 : _a.reflect)) continue;
+            if (!(null == (_a3 = this.$$p_d[key]) ? void 0 : _a3.reflect)) continue;
             this.$$d[key] = this.$$c[key];
             const attribute_value = get_custom_element_value(key, this.$$d[key], this.$$p_d, "toAttribute");
             if (null == attribute_value) this.removeAttribute(this.$$p_d[key].attribute || key); else this.setAttribute(this.$$p_d[key].attribute || key, attribute_value);
@@ -2632,13 +2766,13 @@ if ("function" == typeof HTMLElement) SvelteElement = class extends HTMLElement 
       this.$$l = {};
     }
   }
-  attributeChangedCallback(attr, _oldValue, newValue) {
-    var _a;
+  attributeChangedCallback(attr2, _oldValue, newValue) {
+    var _a3;
     if (!this.$$r) {
-      attr = this.$$g_p(attr);
-      this.$$d[attr] = get_custom_element_value(attr, newValue, this.$$p_d, "toProp");
-      null == (_a = this.$$c) || _a.$set({
-        [attr]: this.$$d[attr]
+      attr2 = this.$$g_p(attr2);
+      this.$$d[attr2] = get_custom_element_value(attr2, newValue, this.$$p_d, "toProp");
+      null == (_a3 = this.$$c) || _a3.$set({
+        [attr2]: this.$$d[attr2]
       });
     }
   }
@@ -2658,8 +2792,8 @@ if ("function" == typeof HTMLElement) SvelteElement = class extends HTMLElement 
 };
 
 function get_custom_element_value(prop2, value, props_definition, transform) {
-  var _a;
-  const type = null == (_a = props_definition[prop2]) ? void 0 : _a.type;
+  var _a3;
+  const type = null == (_a3 = props_definition[prop2]) ? void 0 : _a3.type;
   value = "Boolean" === type && "boolean" != typeof value ? null != value : value;
   if (!transform || !props_definition[prop2]) return value; else if ("toAttribute" === transform) switch (type) {
    case "Object":
@@ -2698,9 +2832,33 @@ function get_custom_elements_slots(element2) {
   return result;
 }
 
+if (dev_fallback_default) {
+  let throw_rune_error = function(rune) {
+    if (!(rune in globalThis)) {
+      let value;
+      Object.defineProperty(globalThis, rune, {
+        configurable: true,
+        get: () => {
+          if (void 0 !== value) return value;
+          rune_outside_svelte(rune);
+        },
+        set: v => {
+          value = v;
+        }
+      });
+    }
+  };
+  throw_rune_error("$state");
+  throw_rune_error("$effect");
+  throw_rune_error("$derived");
+  throw_rune_error("$inspect");
+  throw_rune_error("$props");
+  throw_rune_error("$bindable");
+}
+
 function onMount(fn) {
   if (null === component_context) lifecycle_outside_component("onMount");
-  if (null !== component_context.l) init_update_callbacks(component_context).m.push(fn); else user_effect((() => {
+  if (legacy_mode_flag && null !== component_context.l) init_update_callbacks(component_context).m.push(fn); else user_effect((() => {
     const cleanup = untrack(fn);
     if ("function" == typeof cleanup) return cleanup;
   }));
@@ -2712,8 +2870,8 @@ function onDestroy(fn) {
 }
 
 function init_update_callbacks(context) {
-  var _a, l = context.l;
-  return null != (_a = l.u) ? _a : l.u = {
+  var _a3, l = context.l;
+  return null != (_a3 = l.u) ? _a3 : l.u = {
     a: [],
     b: [],
     m: []
@@ -2773,6 +2931,12 @@ function writable(value, start = noop) {
   };
 }
 
+function get2(store) {
+  let value;
+  subscribe_to_store(store, (_ => value = _))();
+  return value;
+}
+
 var currentFile = writable(""), maxDepth = writable(0), searchString = writable(""), tagInfo = writable({}), tagFolderSetting = writable(DEFAULT_SETTINGS), selectedTags = writable(), allViewItems = writable(), allViewItemsByLink = writable(), appliedFiles = writable(), v2expandedTags = writable(new Set), performHide = writable(0), pluginInstance = writable(void 0);
 
 function unique(items) {
@@ -2794,8 +2958,8 @@ function ancestorToTags(ancestors) {
 
 function ancestorToLongestTag(ancestors) {
   return ancestors.reduceRight(((a, e) => {
-    var _a;
-    return !a ? [ e ] : (null == (_a = a[0]) ? void 0 : _a.startsWith(e)) ? a : [ e, ...a ];
+    var _a3;
+    return !a ? [ e ] : (null == (_a3 = a[0]) ? void 0 : _a3.startsWith(e)) ? a : [ e, ...a ];
   }), []);
 }
 
@@ -2998,8 +3162,8 @@ function parseTagName(thisName, _tagInfo) {
 }
 
 function parseAllForwardReference(metaCache, filename, passed) {
-  var _a;
-  return unique(Object.keys(null != (_a = null == metaCache ? void 0 : metaCache[filename]) ? _a : {}).filter((e => !passed.contains(e))));
+  var _a3;
+  return unique(Object.keys(null != (_a3 = null == metaCache ? void 0 : metaCache[filename]) ? _a3 : {}).filter((e => !passed.contains(e))));
 }
 
 function parseAllReverseReference(metaCache, filename, passed) {
@@ -3007,8 +3171,8 @@ function parseAllReverseReference(metaCache, filename, passed) {
 }
 
 function parseAllReference(metaCache, filename, conf) {
-  var _a, _b;
-  let linked = [ ...!(null == (_a = null == conf ? void 0 : conf.outgoing) ? void 0 : _a.enabled) ? [] : parseAllForwardReference(metaCache, filename, []), ...!(null == (_b = null == conf ? void 0 : conf.incoming) ? void 0 : _b.enabled) ? [] : parseAllReverseReference(metaCache, filename, []) ];
+  var _a3, _b3;
+  let linked = [ ...!(null == (_a3 = null == conf ? void 0 : conf.outgoing) ? void 0 : _a3.enabled) ? [] : parseAllForwardReference(metaCache, filename, []), ...!(null == (_b3 = null == conf ? void 0 : conf.incoming) ? void 0 : _b3.enabled) ? [] : parseAllReverseReference(metaCache, filename, []) ];
   if (0 != linked.length) linked = unique([ filename, ...linked ]);
   return linked;
 }
@@ -3096,15 +3260,13 @@ function isSameAny(a, b) {
   }
 }
 
-var import_obsidian2 = require("obsidian"), PUBLIC_VERSION = "5";
+var _a2, _b2, _c, import_obsidian2 = require("obsidian"), PUBLIC_VERSION = "5";
 
-if ("undefined" != typeof window) (window.__svelte || (window.__svelte = {
-  v: new Set
-})).v.add(PUBLIC_VERSION);
+if ("undefined" != typeof window) (null != (_c = (_b2 = null != (_a2 = window.__svelte) ? _a2 : window.__svelte = {}).v) ? _c : _b2.v = new Set).add(PUBLIC_VERSION);
 
 var import_obsidian = require("obsidian"), root = template('<div class="markdownBody svelte-1qfikme" style="min-height: 1em;"></div>'), $$css = {
   hash: "svelte-1qfikme",
-  code: "\n\t.markdownBody.svelte-1qfikme {\n\t\tuser-select: text;\n\t\t-webkit-user-select: text;\n\t}\n"
+  code: ".markdownBody.svelte-1qfikme {user-select:text;-webkit-user-select:text;}"
 };
 
 function ScrollViewMarkdownComponent($$anchor, $$props) {
@@ -3116,7 +3278,7 @@ function ScrollViewMarkdownComponent($$anchor, $$props) {
   function onAppearing(_) {
     if (file().content && get(el) && get(renderedContent) != file().content) {
       import_obsidian.MarkdownRenderer.render($$props.plugin.app, file().content, get(el), file().path, $$props.plugin);
-      set(renderedContent, proxy(file().content));
+      set(renderedContent, file().content, true);
     }
   }
   onMount((() => {
@@ -3136,7 +3298,7 @@ function ScrollViewMarkdownComponent($$anchor, $$props) {
       get(el).style.minHeight = `${get(el).clientHeight}px`;
       get(el).innerHTML = "";
       import_obsidian.MarkdownRenderer.render($$props.plugin.app, file().content, get(el), file().path, $$props.plugin);
-      set(renderedContent, proxy(file().content));
+      set(renderedContent, file().content, true);
       get(el).style.minHeight = "20px";
     }
   }));
@@ -3148,21 +3310,21 @@ function ScrollViewMarkdownComponent($$anchor, $$props) {
 
 var on_click = (evt, handleOpenFile, file) => handleOpenFile(evt, get(file)), root_1 = template('<div class="file svelte-s1mg0b"><div class="header svelte-s1mg0b"><span> </span> <span class="path svelte-s1mg0b"> </span></div> <!> <hr class="svelte-s1mg0b"></div>'), root2 = template('<div class="x"><div class="header svelte-s1mg0b"> </div> <hr class="svelte-s1mg0b"> <!></div>'), $$css2 = {
   hash: "svelte-s1mg0b",
-  code: "\n\t.header.svelte-s1mg0b {\n\t\tbackground-color: var(--background-secondary-alt);\n\t\tposition: sticky;\n\t\ttop: 0;\n\t\tcolor: var(--text-normal);\n\t\tmargin-bottom: 8px;\n\t}\n\t.file.svelte-s1mg0b {\n\t\tcursor: pointer;\n\t}\n\t.path.svelte-s1mg0b {\n\t\tfont-size: 75%;\n\t}\n\thr.svelte-s1mg0b {\n\t\tmargin: 8px auto;\n\t}\n"
+  code: ".header.svelte-s1mg0b {background-color:var(--background-secondary-alt);position:sticky;top:0;color:var(--text-normal);margin-bottom:8px;}.file.svelte-s1mg0b {cursor:pointer;}.path.svelte-s1mg0b {font-size:75%;}hr.svelte-s1mg0b {margin:8px auto;}"
 };
 
 function ScrollViewComponent($$anchor, $$props) {
   push($$props, true);
   append_styles($$anchor, $$css2);
-  const $$stores = setup_stores();
+  const [$$stores, $$cleanup] = setup_stores();
   let store = prop($$props, "store", 19, (() => writable({
     files: [],
     title: "",
     tagPath: ""
   })));
-  const _state = derived((() => store_get(store(), "$store", $$stores)));
-  let files = derived((() => get(_state).files));
-  const tagPath = derived((() => get(_state).tagPath.split(", ").map((e => "#" + trimTrailingSlash(e).split("/").map((e2 => renderSpecialTag(e2.trim()))).join("/"))).join(", ")));
+  const _state = user_derived((() => store_get(store(), "$store", $$stores)));
+  let files = user_derived((() => get(_state).files));
+  const tagPath = user_derived((() => get(_state).tagPath.split(", ").map((e => "#" + trimTrailingSlash(e).split("/").map((e2 => renderSpecialTag(e2.trim()))).join("/"))).join(", ")));
   function handleOpenFile(e, file) {
     $$props.openfile(file.path, false);
     e.preventDefault();
@@ -3177,9 +3339,9 @@ function ScrollViewComponent($$anchor, $$props) {
       rootMargin: "10px",
       threshold: 0
     };
-    set(observer, proxy(new IntersectionObserver((entries => {
+    set(observer, new IntersectionObserver((entries => {
       for (const entry of entries) if (entry.isIntersecting) entry.target.dispatchEvent(onAppearing);
-    }), options)));
+    }), options), true);
   }));
   onDestroy((() => {
     null === get(observer) || void 0 === get(observer) || get(observer).disconnect();
@@ -3188,7 +3350,6 @@ function ScrollViewComponent($$anchor, $$props) {
   reset(div_1);
   each(sibling(div_1, 4), 17, (() => get(files)), index, (($$anchor2, file) => {
     var div_2 = root_1();
-    bind_this(div_2, ($$value => set(scrollEl, $$value)), (() => get(scrollEl)));
     div_2.__click = [ on_click, handleOpenFile, file ];
     var div_3 = child(div_2), span = child(div_3), text_1 = child(span, true);
     reset(span);
@@ -3208,20 +3369,22 @@ function ScrollViewComponent($$anchor, $$props) {
     });
     next(2);
     reset(div_2);
+    bind_this(div_2, ($$value => set(scrollEl, $$value)), (() => get(scrollEl)));
     template_effect((() => {
-      var _a;
+      var _a3;
       set_text(text_1, get(file).title);
-      set_text(text_2, `(${null != (_a = get(file).path) ? _a : ""})`);
+      set_text(text_2, `(${null != (_a3 = get(file).path) ? _a3 : ""})`);
     }));
     append($$anchor2, div_2);
   }));
   reset(div);
   template_effect((() => {
-    var _a;
-    return set_text(text2, `Files with ${null != (_a = get(tagPath)) ? _a : ""}`);
+    var _a3;
+    return set_text(text2, `Files with ${null != (_a3 = get(tagPath)) ? _a3 : ""}`);
   }));
   append($$anchor, div);
   pop();
+  $$cleanup();
 }
 
 delegate([ "click" ]);
@@ -3311,7 +3474,7 @@ var ScrollView = class extends import_obsidian2.ItemView {
   }
   async onClose() {
     if (this.component) {
-      unmount(this.component);
+      await unmount(this.component);
       this.component = void 0;
     }
     return await Promise.resolve();
@@ -3337,8 +3500,8 @@ var delays = [ nextTick2, delay2, nextTick2, waitForRequestAnimationFrame ], del
 async function collectChildren(previousTrail, tags, _tagInfo, _items) {
   const previousTrailLC = previousTrail.toLowerCase(), children = [], tagPerItem = new Map, lowercaseMap = new Map;
   for (const item of _items) item.tags.forEach((itemTag => {
-    var _a;
-    const tagLc = null != (_a = lowercaseMap.get(itemTag)) ? _a : lowercaseMap.set(itemTag, itemTag.toLowerCase()).get(itemTag);
+    var _a3;
+    const tagLc = null != (_a3 = lowercaseMap.get(itemTag)) ? _a3 : lowercaseMap.set(itemTag, itemTag.toLowerCase()).get(itemTag);
     if (!tagPerItem.has(tagLc)) tagPerItem.set(tagLc, []);
     tagPerItem.get(tagLc).push(item);
   }));
@@ -3364,9 +3527,9 @@ async function collectTreeChildren({key, expandLimit, depth, tags, trailLower, _
   } else {
     let wChildren = [];
     if ("tags" == viewType) wChildren = await collectChildren(previousTrail, tags, _tagInfo, _items); else if ("links" == viewType) wChildren = tags.map((tag => {
-      var _a;
+      var _a3;
       const selfInfo = getViewItemFromPath(tag), dispName = !selfInfo ? tag : selfInfo.displayName;
-      return [ tag, dispName, [ dispName ], null != (_a = linkedItems.get(tag)) ? _a : [] ];
+      return [ tag, dispName, [ dispName ], null != (_a3 = linkedItems.get(tag)) ? _a3 : [] ];
     }));
     if ("tags" == viewType) {
       if (_setting.mergeRedundantCombination) {
@@ -3420,37 +3583,37 @@ function OnDemandRender($$anchor, $$props) {
   user_effect((() => {
     if (get(_el) != get(el)) {
       if (get(_el)) unobserve(get(_el));
-      set(_el, proxy(get(el)));
+      set(_el, get(el), true);
       if (get(el)) observe(get(el), setIsVisible);
     }
   }));
   var div = root3();
-  bind_this(div, ($$value => set(el, $$value)), (() => get(el)));
   snippet(child(div), (() => {
-    var _a;
-    return null != (_a = $$props.children) ? _a : noop;
+    var _a3;
+    return null != (_a3 = $$props.children) ? _a3 : noop;
   }), (() => ({
     isVisible: isVisible()
   })));
   reset(div);
-  template_effect((() => set_class(div, cssClass())));
+  bind_this(div, ($$value => set(el, $$value)), (() => get(el)));
+  template_effect((() => set_class(div, 1, clsx2(cssClass()))));
   append($$anchor, div);
   pop();
 }
 
 var on_click2 = (evt, $$props) => $$props.openFile($$props.item.path, evt.metaKey || evt.ctrlKey), on_mouseover = (e, handleMouseover, $$props) => {
   handleMouseover(e, $$props.item.path);
-}, on_contextmenu = (evt, $$props) => $$props.showMenu(evt, $$props.trail, void 0, [ $$props.item ]), root_2 = template('<div class="tf-taglist"><!></div>'), root_12 = template('<div class="tree-item-self is-clickable nav-file-title"><div class="tree-item-inner nav-file-title-content lsl-f"> </div> <!></div>');
+}, on_contextmenu = (evt, $$props) => $$props.showMenu(evt, $$props.trail, void 0, [ $$props.item ]), root_2 = template('<div class="tf-taglist"><!></div>'), root_12 = template('<div><div class="tree-item-inner nav-file-title-content lsl-f"> </div> <!></div>');
 
 function V2TreeItemComponent($$anchor, $$props) {
   push($$props, true);
-  const $$stores = setup_stores(), $pluginInstance = () => store_get(pluginInstance, "$pluginInstance", $$stores);
+  const [$$stores, $$cleanup] = setup_stores(), $pluginInstance = () => store_get(pluginInstance, "$pluginInstance", $$stores);
   function handleMouseover(e, path) {
     $$props.hoverPreview(e, path);
   }
-  const _setting = derived((() => store_get(tagFolderSetting, "$tagFolderSetting", $$stores))), _currentActiveFilePath = derived((() => store_get(currentFile, "$currentFile", $$stores)));
-  let isActive = derived((() => $$props.item.path == get(_currentActiveFilePath))), isItemVisible = state(false);
-  const tagsLeft = derived((() => get(isItemVisible) ? uniqueCaseIntensive(getExtraTags($$props.item.tags, [ ...$$props.trail ], get(_setting).reduceNestedParent).map((e => trimSlash(e, false, true))).map((e => e.split("/").map((ee => renderSpecialTag(ee))).join("/"))).filter((e => "" != e))) : [])), extraTagsHtml = derived((() => `${get(tagsLeft).map((e => `<span class="tf-tag">${escapeStringToHTML(e)}</span>`)).join("")}`)), draggable = derived((() => !get(_setting).disableDragging)), app = derived((() => null === $pluginInstance() || void 0 === $pluginInstance() ? void 0 : $pluginInstance().app)), dm = derived((() => null === get(app) || void 0 === get(app) ? void 0 : get(app).dragManager));
+  const _setting = user_derived((() => store_get(tagFolderSetting, "$tagFolderSetting", $$stores))), _currentActiveFilePath = user_derived((() => store_get(currentFile, "$currentFile", $$stores)));
+  let isActive = user_derived((() => $$props.item.path == get(_currentActiveFilePath))), isItemVisible = state(false);
+  const tagsLeft = user_derived((() => get(isItemVisible) ? uniqueCaseIntensive([ ...getExtraTags($$props.item.tags, [ ...$$props.trail ], get(_setting).reduceNestedParent), ...$$props.item.extraTags ].map((e => trimSlash(e, false, true))).map((e => e.split("/").map((ee => renderSpecialTag(ee))).join("/"))).filter((e => "" != e))) : [])), extraTagsHtml = user_derived((() => `${get(tagsLeft).map((e => `<span class="tf-tag">${escapeStringToHTML(e)}</span>`)).join("")}`)), draggable = user_derived((() => !get(_setting).disableDragging)), app = user_derived((() => null === $pluginInstance() || void 0 === $pluginInstance() ? void 0 : $pluginInstance().app)), dm = user_derived((() => null === get(app) || void 0 === get(app) ? void 0 : get(app).dragManager));
   function dragStartFile(args) {
     if (!get(draggable)) return;
     const file = get(app).vault.getAbstractFileByPath($$props.item.path), param = get(dm).dragFile(args, file);
@@ -3460,24 +3623,30 @@ function V2TreeItemComponent($$anchor, $$props) {
     const children = ($$anchor2, $$arg0) => {
       let isVisible = () => null == $$arg0 ? void 0 : $$arg0().isVisible;
       var div = root_12();
+      let classes;
       div.__click = [ on_click2, $$props ];
       div.__mouseover = [ on_mouseover, handleMouseover, $$props ];
       div.__contextmenu = [ on_contextmenu, $$props ];
       var div_1 = child(div), text2 = child(div_1, true);
       reset(div_1);
-      if_block(sibling(div_1, 2), isVisible, ($$anchor3 => {
+      var node = sibling(div_1, 2), consequent = $$anchor3 => {
         var div_2 = root_2();
         html(child(div_2), (() => get(extraTagsHtml)), false, false);
         reset(div_2);
         append($$anchor3, div_2);
+      };
+      if_block(node, ($$render => {
+        if (isVisible()) $$render(consequent);
       }));
       reset(div);
-      template_effect((() => {
+      template_effect(($0 => {
+        classes = set_class(div, 1, "tree-item-self is-clickable nav-file-title", null, classes, $0);
         set_attribute(div, "draggable", get(draggable));
         set_attribute(div, "data-path", $$props.item.path);
-        toggle_class(div, "is-active", get(isActive));
         set_text(text2, isVisible() ? $$props.item.displayName : "");
-      }));
+      }), [ () => ({
+        "is-active": get(isActive)
+      }) ]);
       event("dragstart", div, dragStartFile);
       event("focus", div, (() => {}));
       append($$anchor2, div);
@@ -3488,7 +3657,7 @@ function V2TreeItemComponent($$anchor, $$props) {
         return get(isItemVisible);
       },
       set isVisible($$value) {
-        set(isItemVisible, proxy($$value));
+        set(isItemVisible, $$value, true);
       },
       children,
       $$slots: {
@@ -3497,6 +3666,7 @@ function V2TreeItemComponent($$anchor, $$props) {
     });
   }
   pop();
+  $$cleanup();
 }
 
 delegate([ "click", "mouseover", "contextmenu" ]);
@@ -3512,14 +3682,14 @@ function handleOpenItem(evt, viewType, $$props, filename) {
 var on_contextmenu2 = (evt, shouldResponsibleFor, $$props, trail, suppressLevels, viewType, tagName, filename, _items) => {
   evt.stopPropagation();
   if (shouldResponsibleFor(evt)) $$props.showMenu(evt, [ ...trail(), ...get(suppressLevels) ], "tags" == viewType() ? tagName() : get(filename), get(_items));
-}, root_22 = template('<div class="tree-item-self nav-folder-title"><div class="tree-item-inner nav-folder-title-content"> </div></div>'), root_6 = template('<svg class="svg-icon"></svg>'), root_7 = template('<div class="tagfolder-titletagname"><!></div>'), root_8 = template('<div class="tagfolder-titletagname">...</div>'), on_click3 = (e, handleOpenScroll, trail, _items) => handleOpenScroll(e, trail(), get(_items).map((e2 => e2.path))), root_4 = template('<div class="tree-item-icon collapse-icon nav-folder-collapse-indicator"><!></div> <div class="tree-item-inner nav-folder-title-content lsl-f"><!> <div class="tagfolder-quantity itemscount"><span class="itemscount"> </span></div></div>', 1), root_10 = template("<!> <!>", 1), root_15 = template('<div class="tree-item-children nav-folder-children"><!></div>'), root4 = template("<div><!> <!></div>");
+}, root_22 = template('<div class="tree-item-self nav-folder-title"><div class="tree-item-inner nav-folder-title-content"> </div></div>'), root_6 = ns_template('<svg class="svg-icon"></svg>'), root_7 = template('<div class="tagfolder-titletagname"><!></div>'), root_8 = template('<div class="tagfolder-titletagname">...</div>'), on_click3 = (e, handleOpenScroll, trail, _items) => handleOpenScroll(e, trail(), get(_items).map((e2 => e2.path))), root_4 = template('<div><!></div> <div class="tree-item-inner nav-folder-title-content lsl-f"><!> <div class="tagfolder-quantity itemscount"><span class="itemscount"> </span></div></div>', 1), root_10 = template("<!> <!>", 1), root_15 = template('<div class="tree-item-children nav-folder-children"><!></div>'), root4 = template("<div><!> <!></div>");
 
 function V2TreeFolderComponent_1($$anchor, $$props) {
   push($$props, true);
-  const $$stores = setup_stores();
-  var _a, _b, _c;
-  let viewType = prop($$props, "viewType", 3, "tags"), thisName = prop($$props, "thisName", 3, ""), items = prop($$props, "items", 19, (() => [])), tagName = prop($$props, "tagName", 11, ""), tagNameDisp = prop($$props, "tagNameDisp", 27, (() => proxy([]))), trail = prop($$props, "trail", 19, (() => [])), depth = prop($$props, "depth", 3, 1), folderIcon = prop($$props, "folderIcon", 3, ""), headerTitle = prop($$props, "headerTitle", 3, ""), _setting = derived((() => store_get(tagFolderSetting, "$tagFolderSetting", $$stores)));
-  const expandLimit = derived((() => !get(_setting).expandLimit ? 0 : "links" == viewType() ? get(_setting).expandLimit + 1 : get(_setting).expandLimit)), _tagInfo = derived((() => store_get(tagInfo, "$tagInfo", $$stores))), _currentActiveFilePath = derived((() => store_get(currentFile, "$currentFile", $$stores)));
+  const [$$stores, $$cleanup] = setup_stores();
+  var _a3, _b3, _c2;
+  let viewType = prop($$props, "viewType", 3, "tags"), thisName = prop($$props, "thisName", 3, ""), items = prop($$props, "items", 19, (() => [])), tagName = prop($$props, "tagName", 11, ""), tagNameDisp = prop($$props, "tagNameDisp", 27, (() => proxy([]))), trail = prop($$props, "trail", 19, (() => [])), depth = prop($$props, "depth", 3, 1), folderIcon = prop($$props, "folderIcon", 3, ""), headerTitle = prop($$props, "headerTitle", 3, ""), _setting = user_derived((() => store_get(tagFolderSetting, "$tagFolderSetting", $$stores)));
+  const expandLimit = user_derived((() => !get(_setting).expandLimit ? 0 : "links" == viewType() ? get(_setting).expandLimit + 1 : get(_setting).expandLimit)), _tagInfo = user_derived((() => store_get(tagInfo, "$tagInfo", $$stores))), _currentActiveFilePath = user_derived((() => store_get(currentFile, "$currentFile", $$stores)));
   function handleOpenScroll(e, trails, filePaths) {
     if ("tags" == viewType()) $$props.openScrollView(void 0, "", joinPartialPath(removeIntermediatePath(trails)).join(", "), filePaths); else if ("links" == viewType()) $$props.openScrollView(void 0, "", `Linked to ${get(filename)}`, filePaths);
     e.preventDefault();
@@ -3539,7 +3709,7 @@ function V2TreeFolderComponent_1($$anchor, $$props) {
     }
   }
   let _lastParam, suppressLevels = state(proxy([])), children = state(proxy([])), isUpdating = state(false);
-  const viewContextID = `${null !== (_a = getContext("viewID")) && void 0 !== _a ? _a : ""}`;
+  const viewContextID = `${null !== (_a3 = getContext("viewID")) && void 0 !== _a3 ? _a3 : ""}`;
   let isFolderVisible = state(false);
   function splitArrayToBatch(items2) {
     const ret = [];
@@ -3573,7 +3743,7 @@ function V2TreeFolderComponent_1($$anchor, $$props) {
     args.draggable = true;
     get(dm).onDragStart(args, args);
   }
-  const filename = derived((() => "tags" == viewType() ? "" : thisName().substring(thisName().indexOf(":") + 1))), thisInfo = derived((() => "links" != viewType() ? void 0 : getViewItemFromPath(thisName()))), thisLinks = derived((() => "links" != viewType() ? [] : (null !== (_b = null === get(thisInfo) || void 0 === get(thisInfo) ? void 0 : get(thisInfo).links) && void 0 !== _b ? _b : []).map((e => `${e}`)))), thisNameLC = derived((() => thisName().toLowerCase())), tagNameLC = derived((() => tagName().toLowerCase())), trailKey = derived((() => trail().join("*"))), trailLower = derived((() => trail().map((e => e.toLowerCase())))), collapsed = derived((() => !$$props.isRoot && !store_get(v2expandedTags, "$v2expandedTags", $$stores).has(get(trailKey)))), inMiddleOfTagHierarchy = derived((() => trail().length >= 1 && trail()[trail().length - 1].endsWith("/"))), previousTrail = derived((() => get(inMiddleOfTagHierarchy) ? trail()[trail().length - 1] : "")), lastTrailTagLC = derived((() => trimTrailingSlash(get(previousTrail)).toLowerCase())), _items = derived(items), tagsAllCI = derived((() => uniqueCaseIntensive(get(_items).flatMap((e => e.tags))))), tagsAllLower = derived((() => get(tagsAllCI).map((e => e.toLowerCase())))), isInDedicatedTag = derived((() => get(inMiddleOfTagHierarchy) && !get(tagsAllLower).contains(get(lastTrailTagLC)))), isMixedDedicatedTag = derived((() => get(inMiddleOfTagHierarchy))), displayTagCandidates = derived((() => {
+  const filename = user_derived((() => "tags" == viewType() ? "" : thisName().substring(thisName().indexOf(":") + 1))), thisInfo = user_derived((() => "links" != viewType() ? void 0 : getViewItemFromPath(thisName()))), thisLinks = user_derived((() => "links" != viewType() ? [] : (null !== (_b3 = null === get(thisInfo) || void 0 === get(thisInfo) ? void 0 : get(thisInfo).links) && void 0 !== _b3 ? _b3 : []).map((e => `${e}`)))), thisNameLC = user_derived((() => thisName().toLowerCase())), tagNameLC = user_derived((() => tagName().toLowerCase())), trailKey = user_derived((() => trail().join("*"))), trailLower = user_derived((() => trail().map((e => e.toLowerCase())))), collapsed = user_derived((() => !$$props.isRoot && !store_get(v2expandedTags, "$v2expandedTags", $$stores).has(get(trailKey)))), inMiddleOfTagHierarchy = user_derived((() => trail().length >= 1 && trail()[trail().length - 1].endsWith("/"))), previousTrail = user_derived((() => get(inMiddleOfTagHierarchy) ? trail()[trail().length - 1] : "")), lastTrailTagLC = user_derived((() => trimTrailingSlash(get(previousTrail)).toLowerCase())), _items = user_derived(items), tagsAllCI = user_derived((() => uniqueCaseIntensive(get(_items).flatMap((e => e.tags))))), tagsAllLower = user_derived((() => get(tagsAllCI).map((e => e.toLowerCase())))), isInDedicatedTag = user_derived((() => get(inMiddleOfTagHierarchy) && !get(tagsAllLower).contains(get(lastTrailTagLC)))), isMixedDedicatedTag = user_derived((() => get(inMiddleOfTagHierarchy))), displayTagCandidates = user_derived((() => {
     let tagsAll = [];
     if ("links" == viewType()) {
       if (!$$props.isRoot) if (!get(_setting).linkShowOnlyFDR) tagsAll = get(thisInfo) ? getAllLinksRecursive(get(thisInfo), [ ...trail() ]) : [ ...get(thisLinks) ]; else tagsAll = [ ...get(thisLinks) ]; else tagsAll = unique(get(_items).flatMap((e => e.links)));
@@ -3584,16 +3754,16 @@ function V2TreeFolderComponent_1($$anchor, $$props) {
       if (!$$props.isRoot || get(_setting).expandUntaggedToRoot) tagsAll = tagsAll.filter((e => "_untagged" != e));
     }
     return tagsAll;
-  })), tagsExceptAlreadyShown = derived((() => "tags" != viewType() ? [] : get(displayTagCandidates).filter((tag => trail().every((trail2 => trimTrailingSlash(tag.toLowerCase()) !== trimTrailingSlash(trail2.toLowerCase()))))))), passedTagWithoutThis = derived((() => {
+  })), tagsExceptAlreadyShown = user_derived((() => "tags" != viewType() ? [] : get(displayTagCandidates).filter((tag => trail().every((trail2 => trimTrailingSlash(tag.toLowerCase()) !== trimTrailingSlash(trail2.toLowerCase()))))))), passedTagWithoutThis = user_derived((() => {
     const trimSlashedThisNameLC = "/" + trimSlash(thisName()).toLowerCase();
     return get(tagsExceptAlreadyShown).filter((tag => {
       const lc = tag.toLowerCase();
       return lc != get(thisNameLC) && lc != get(tagNameLC);
     })).filter((tag => !tag.toLowerCase().endsWith(trimSlashedThisNameLC)));
-  })), escapedPreviousTrail = derived((() => !get(isMixedDedicatedTag) ? get(previousTrail) : get(previousTrail).split("/").join("*"))), sparseIntermediateTags = derived((() => {
+  })), escapedPreviousTrail = user_derived((() => !get(isMixedDedicatedTag) ? get(previousTrail) : get(previousTrail).split("/").join("*"))), sparseIntermediateTags = user_derived((() => {
     const t1 = !get(isInDedicatedTag) ? get(passedTagWithoutThis) : get(passedTagWithoutThis).filter((e => (e + "/").startsWith(get(previousTrail))));
     if (!get(isInDedicatedTag)) return t1; else return t1.map((e => (e + "/").startsWith(get(previousTrail)) ? get(escapedPreviousTrail) + e.substring(get(previousTrail).length) : e));
-  })), tagsPhaseX1 = derived((() => get(sparseIntermediateTags))), $$d = derived((() => {
+  })), tagsPhaseX1 = user_derived((() => get(sparseIntermediateTags))), $$d = user_derived((() => {
     let isSuppressibleLevel2 = false, existTags = get(tagsPhaseX1), existTagsFiltered1 = [];
     if (!get(_setting).doNotSimplifyTags && "links" != viewType()) if (1 == get(_items).length) {
       existTagsFiltered1 = existTags;
@@ -3630,7 +3800,7 @@ function V2TreeFolderComponent_1($$anchor, $$props) {
       filteredTags: uniqueCaseIntensive(existTagsFiltered1.map((e => existTagsFiltered1LC.contains(e.toLowerCase() + "/") ? e + "/" : e))),
       isSuppressibleLevel: isSuppressibleLevel2
     };
-  })), filteredTags = derived((() => get($$d).filteredTags)), isSuppressibleLevel = derived((() => get($$d).isSuppressibleLevel)), $$d_1 = derived((() => {
+  })), filteredTags = user_derived((() => get($$d).filteredTags)), isSuppressibleLevel = user_derived((() => get($$d).isSuppressibleLevel)), $$d_1 = user_derived((() => {
     let tags2 = [];
     const leftOverItemsSrc2 = [];
     if (!get(_items)) return {
@@ -3657,7 +3827,7 @@ function V2TreeFolderComponent_1($$anchor, $$props) {
       tags: tags2,
       leftOverItemsSrc: leftOverItemsSrc2
     };
-  })), tags = derived((() => get($$d_1).tags)), leftOverItemsSrc = derived((() => get($$d_1).leftOverItemsSrc)), linkedItems = derived((() => {
+  })), tags = user_derived((() => get($$d_1).tags)), leftOverItemsSrc = user_derived((() => get($$d_1).leftOverItemsSrc)), linkedItems = user_derived((() => {
     const ret = new Map;
     if ("tags" == viewType()) return ret;
     for (const tag of get(displayTagCandidates)) if ("_unlinked" == tag) ret.set(tag, get(_items).filter((e => e.links.contains(tag)))); else {
@@ -3665,7 +3835,7 @@ function V2TreeFolderComponent_1($$anchor, $$props) {
       ret.set(tag, wItems);
     }
     return ret;
-  })), tagsOfLinkedItems = derived((() => {
+  })), tagsOfLinkedItems = user_derived((() => {
     let leftOverItems2 = [], tags2 = [];
     if ("tags" == viewType()) return {
       tags: tags2,
@@ -3685,14 +3855,14 @@ function V2TreeFolderComponent_1($$anchor, $$props) {
       tags: tags2,
       leftOverItems: leftOverItems2
     };
-  })), leftOverItemsUnsorted = derived((() => {
+  })), leftOverItemsUnsorted = user_derived((() => {
     if (get(_setting).useMultiPaneList && $$props.isMainTree) return [];
     if ($$props.isRoot && $$props.isMainTree && !get(isSuppressibleLevel)) if (get(_setting).expandUntaggedToRoot) return get(_items).filter((e => e.tags.contains("_untagged") || e.tags.contains("_unlinked"))); else return [];
     if ($$props.isRoot && !$$props.isMainTree) return get(_items);
     if ("tags" == viewType()) if ("NONE" == get(_setting).hideItems) return get(_items); else if ("DEDICATED_INTERMIDIATES" == get(_setting).hideItems && get(isInDedicatedTag) || "ALL_EXCEPT_BOTTOM" == get(_setting).hideItems) return get(_items).filter((e => !get(children).map((e2 => e2[V2FI_IDX_CHILDREN])).flat().find((ee => e.path == ee.path)))); else return get(_items); else return get(leftOverItemsSrc);
-  })), leftOverItems = derived((() => get(_setting).sortExactFirst ? performSortExactFirst(get(_items), get(children), get(leftOverItemsUnsorted)) : get(leftOverItemsUnsorted)));
-  let isActive = derived((() => get(_items) && get(_items).some((e => e.path == get(_currentActiveFilePath))) || "links" == viewType() && (thisName() == get(_currentActiveFilePath) || get(tags).contains(get(_currentActiveFilePath)) || get(leftOverItems).some((e => e.path == get(_currentActiveFilePath))))));
-  const tagsDisp = derived((() => get(isSuppressibleLevel) && get(isInDedicatedTag) ? [ [ ...tagNameDisp(), ...get(suppressLevels).flatMap((e => e.split("/").map((e2 => renderSpecialTag(e2))))) ] ] : get(isSuppressibleLevel) ? [ tagNameDisp(), ...get(suppressLevels).map((e => e.split("/").map((e2 => renderSpecialTag(e2))))) ] : [ tagNameDisp() ])), classKey = derived((() => "links" == viewType() ? " tf-link" : " tf-tag")), tagsDispHtml = derived((() => get(isFolderVisible) ? get(tagsDisp).map((e => `<span class="tagfolder-tag tag-tag${get(classKey)}">${e.map((ee => `<span class="tf-tag-each">${escapeStringToHTML(ee)}</span>`)).join("")}</span>`)).join("") : "")), itemCount = derived((() => "tags" == viewType() ? null !== (_c = null === get(_items) || void 0 === get(_items) ? void 0 : get(_items).length) && void 0 !== _c ? _c : 0 : get(tags).length + get(leftOverItems).length)), leftOverItemsDisp = derived((() => splitArrayToBatch(get(leftOverItems)))), childrenDisp = derived((() => splitArrayToBatch(get(children)))), draggable = derived((() => !get(_setting).disableDragging)), app = derived((() => store_get(pluginInstance, "$pluginInstance", $$stores).app)), dm = derived((() => null === get(app) || void 0 === get(app) ? void 0 : get(app).dragManager));
+  })), leftOverItems = user_derived((() => get(_setting).sortExactFirst ? performSortExactFirst(get(_items), get(children), get(leftOverItemsUnsorted)) : get(leftOverItemsUnsorted)));
+  let isActive = user_derived((() => get(_items) && get(_items).some((e => e.path == get(_currentActiveFilePath))) || "links" == viewType() && (thisName() == get(_currentActiveFilePath) || get(tags).contains(get(_currentActiveFilePath)) || get(leftOverItems).some((e => e.path == get(_currentActiveFilePath))))));
+  const tagsDisp = user_derived((() => get(isSuppressibleLevel) && get(isInDedicatedTag) ? [ [ ...tagNameDisp(), ...get(suppressLevels).flatMap((e => e.split("/").map((e2 => renderSpecialTag(e2))))) ] ] : get(isSuppressibleLevel) ? [ tagNameDisp(), ...get(suppressLevels).map((e => e.split("/").map((e2 => renderSpecialTag(e2))))) ] : [ tagNameDisp() ])), classKey = user_derived((() => "links" == viewType() ? " tf-link" : " tf-tag")), tagsDispHtml = user_derived((() => get(isFolderVisible) ? get(tagsDisp).map((e => `<span class="tagfolder-tag tag-tag${get(classKey)}">${e.map((ee => `<span class="tf-tag-each">${escapeStringToHTML(ee)}</span>`)).join("")}</span>`)).join("") : "")), itemCount = user_derived((() => "tags" == viewType() ? null !== (_c2 = null === get(_items) || void 0 === get(_items) ? void 0 : get(_items).length) && void 0 !== _c2 ? _c2 : 0 : get(tags).length + get(leftOverItems).length)), leftOverItemsDisp = user_derived((() => splitArrayToBatch(get(leftOverItems)))), childrenDisp = user_derived((() => splitArrayToBatch(get(children)))), draggable = user_derived((() => !get(_setting).disableDragging)), app = user_derived((() => store_get(pluginInstance, "$pluginInstance", $$stores).app)), dm = user_derived((() => null === get(app) || void 0 === get(app) ? void 0 : get(app).dragManager));
   user_effect((() => {
     const key = get(trailKey) + ($$props.isRoot ? "-r" : "-x") + viewContextID, sortFunc = selectCompareMethodTags(get(_setting), "links" == viewType() ? {} : get(_tagInfo));
     (function updateX(param) {
@@ -3703,8 +3873,8 @@ function V2TreeFolderComponent_1($$anchor, $$props) {
         if (param.isFolderVisible || $$props.isRoot) scheduleOnceIfDuplicated("update-children-" + param.key, (async () => {
           set(isUpdating, true);
           const ret = await collectTreeChildren(param);
-          set(children, proxy(ret.children));
-          set(suppressLevels, proxy(ret.suppressLevels));
+          set(children, ret.children, true);
+          set(suppressLevels, ret.suppressLevels, true);
           set(isUpdating, false);
         }));
       }
@@ -3730,52 +3900,59 @@ function V2TreeFolderComponent_1($$anchor, $$props) {
   var div = root4();
   div.__click = toggleFolder;
   div.__contextmenu = [ on_contextmenu2, shouldResponsibleFor, $$props, trail, suppressLevels, viewType, tagName, filename, _items ];
-  var node = child(div);
-  if_block(node, (() => $$props.isRoot || !$$props.isMainTree), ($$anchor2 => {
-    var fragment = comment();
-    if_block(first_child(fragment), (() => $$props.isRoot), ($$anchor3 => {
+  var node = child(div), consequent_1 = $$anchor2 => {
+    var fragment = comment(), node_1 = first_child(fragment), consequent = $$anchor3 => {
       var div_1 = root_22(), div_2 = child(div_1), text2 = child(div_2, true);
       reset(div_2);
       reset(div_1);
       template_effect((() => set_text(text2, headerTitle())));
       append($$anchor3, div_1);
+    };
+    if_block(node_1, ($$render => {
+      if ($$props.isRoot) $$render(consequent);
     }));
     append($$anchor2, fragment);
-  }), ($$anchor2 => {
-    var cssClass = derived((() => `tree-item-self${!$$props.isRoot ? " is-clickable mod-collapsible" : ""} nav-folder-title tag-folder-title${get(isActive) ? " is-active" : ""}`));
+  }, alternate = $$anchor2 => {
+    const expression = user_derived((() => `tree-item-self${!$$props.isRoot ? " is-clickable mod-collapsible" : ""} nav-folder-title tag-folder-title${get(isActive) ? " is-active" : ""}`));
     OnDemandRender($$anchor2, {
       get cssClass() {
-        return get(cssClass);
+        return get(expression);
       },
       get isVisible() {
         return get(isFolderVisible);
       },
       set isVisible($$value) {
-        set(isFolderVisible, proxy($$value));
+        set(isFolderVisible, $$value, true);
       },
       children: ($$anchor3, $$slotProps) => {
         var fragment_2 = root_4(), div_3 = first_child(fragment_2);
+        let classes;
         div_3.__click = toggleFolder;
-        if_block(child(div_3), (() => get(isFolderVisible)), ($$anchor4 => {
+        var node_2 = child(div_3), consequent_2 = $$anchor4 => {
           var fragment_3 = comment();
           html(first_child(fragment_3), folderIcon, false, false);
           append($$anchor4, fragment_3);
-        }), ($$anchor4 => {
+        }, alternate_1 = $$anchor4 => {
           append($$anchor4, root_6());
+        };
+        if_block(node_2, ($$render => {
+          if (get(isFolderVisible)) $$render(consequent_2); else $$render(alternate_1, false);
         }));
         reset(div_3);
         var div_4 = sibling(div_3, 2);
         div_4.__click = [ handleOpenItem, viewType, $$props, filename ];
-        var node_4 = child(div_4);
-        if_block(node_4, (() => get(isFolderVisible)), ($$anchor4 => {
+        var node_4 = child(div_4), consequent_3 = $$anchor4 => {
           var div_5 = root_7();
           html(child(div_5), (() => get(tagsDispHtml)), false, false);
           reset(div_5);
           template_effect((() => set_attribute(div_5, "draggable", get(draggable))));
           event("dragstart", div_5, dragStartName);
           append($$anchor4, div_5);
-        }), ($$anchor4 => {
+        }, alternate_2 = $$anchor4 => {
           append($$anchor4, root_8());
+        };
+        if_block(node_4, ($$render => {
+          if (get(isFolderVisible)) $$render(consequent_3); else $$render(alternate_2, false);
         }));
         var div_7 = sibling(node_4, 2);
         div_7.__click = [ on_click3, handleOpenScroll, trail, _items ];
@@ -3783,11 +3960,13 @@ function V2TreeFolderComponent_1($$anchor, $$props) {
         reset(span);
         reset(div_7);
         reset(div_4);
-        template_effect((() => {
-          toggle_class(div_3, "is-collapsed", get(collapsed));
+        template_effect(($0 => {
+          classes = set_class(div_3, 1, "tree-item-icon collapse-icon nav-folder-collapse-indicator", null, classes, $0);
           set_attribute(span, "draggable", get(draggable));
           set_text(text_1, get(itemCount));
-        }));
+        }), [ () => ({
+          "is-collapsed": get(collapsed)
+        }) ]);
         event("dragstart", span, dragStartFiles);
         append($$anchor3, fragment_2);
       },
@@ -3795,16 +3974,19 @@ function V2TreeFolderComponent_1($$anchor, $$props) {
         default: true
       }
     });
+  };
+  if_block(node, ($$render => {
+    if ($$props.isRoot || !$$props.isMainTree) $$render(consequent_1); else $$render(alternate, false);
   }));
-  if_block(sibling(node, 2), (() => !get(collapsed)), ($$anchor2 => {
+  var node_6 = sibling(node, 2), consequent_5 = $$anchor2 => {
     var fragment_9 = comment();
     const treeContent = ($$anchor3, childrenDisp2 = noop, leftOverItemsDisp2 = noop) => {
       var fragment_4 = root_10(), node_7 = first_child(fragment_4);
-      each(node_7, 17, childrenDisp2, index, (($$anchor4, items2) => {
+      each(node_7, 17, childrenDisp2, index, (($$anchor4, items2, $$index_1, $$array) => {
         var fragment_5 = comment();
-        each(first_child(fragment_5), 17, (() => get(items2)), index, (($$anchor5, $$item) => {
+        each(first_child(fragment_5), 17, (() => get(items2)), index, (($$anchor5, $$item, $$index, $$array_1) => {
           let f = () => get($$item)[0];
-          var trail_1 = derived((() => [ ...trail(), ...get(suppressLevels), f() ])), depth_1 = derived((() => get(isInDedicatedTag) ? depth() : depth() + 1));
+          const expression_1 = user_derived((() => [ ...trail(), ...get(suppressLevels), f() ])), expression_2 = user_derived((() => get(isInDedicatedTag) ? depth() : depth() + 1));
           V2TreeFolderComponent_1($$anchor5, {
             get viewType() {
               return viewType();
@@ -3816,7 +3998,7 @@ function V2TreeFolderComponent_1($$anchor, $$props) {
               return f();
             },
             get trail() {
-              return get(trail_1);
+              return get(expression_1);
             },
             get folderIcon() {
               return folderIcon();
@@ -3844,16 +4026,16 @@ function V2TreeFolderComponent_1($$anchor, $$props) {
               return get($$item)[2];
             },
             get depth() {
-              return get(depth_1);
+              return get(expression_2);
             }
           });
         }));
         append($$anchor4, fragment_5);
       }));
-      each(sibling(node_7, 2), 17, leftOverItemsDisp2, index, (($$anchor4, items2) => {
+      each(sibling(node_7, 2), 17, leftOverItemsDisp2, index, (($$anchor4, items2, $$index_3, $$array_2) => {
         var fragment_7 = comment();
         each(first_child(fragment_7), 17, (() => get(items2)), index, (($$anchor5, item) => {
-          var trail_2 = derived((() => $$props.isRoot ? [ ...trail() ] : [ ...trail(), ...get(suppressLevels) ]));
+          const expression_3 = user_derived((() => $$props.isRoot ? [ ...trail() ] : [ ...trail(), ...get(suppressLevels) ]));
           V2TreeItemComponent($$anchor5, {
             get item() {
               return get(item);
@@ -3862,7 +4044,7 @@ function V2TreeFolderComponent_1($$anchor, $$props) {
               return $$props.openFile;
             },
             get trail() {
-              return get(trail_2);
+              return get(expression_3);
             },
             get showMenu() {
               return $$props.showMenu;
@@ -3876,20 +4058,27 @@ function V2TreeFolderComponent_1($$anchor, $$props) {
       }));
       append($$anchor3, fragment_4);
     };
-    if_block(first_child(fragment_9), (() => !$$props.isRoot), ($$anchor3 => {
+    var node_11 = first_child(fragment_9), consequent_4 = $$anchor3 => {
       var div_8 = root_15(), node_12 = child(div_8);
       treeContent(node_12, (() => get(childrenDisp)), (() => get(leftOverItemsDisp)));
       reset(div_8);
       append($$anchor3, div_8);
-    }), ($$anchor3 => {
+    }, alternate_3 = $$anchor3 => {
       treeContent($$anchor3, (() => get(childrenDisp)), (() => get(leftOverItemsDisp)));
+    };
+    if_block(node_11, ($$render => {
+      if (!$$props.isRoot) $$render(consequent_4); else $$render(alternate_3, false);
     }));
     append($$anchor2, fragment_9);
+  };
+  if_block(node_6, ($$render => {
+    if (!get(collapsed)) $$render(consequent_5);
   }));
   reset(div);
-  template_effect((() => set_class(div, `tree-item nav-folder${get(collapsed) ? " is-collapsed" : ""}${$$props.isRoot ? " mod-root" : ""}${get(isUpdating) ? " updating" : ""}`)));
+  template_effect((() => set_class(div, 1, `tree-item nav-folder${get(collapsed) ? " is-collapsed" : ""}${$$props.isRoot ? " mod-root" : ""}${get(isUpdating) ? " updating" : ""}`)));
   append($$anchor, div);
   pop();
+  $$cleanup();
 }
 
 delegate([ "click", "contextmenu" ]);
@@ -3909,33 +4098,40 @@ function doSwitch(__2, $$props) {
   if ($$props.switchView) $$props.switchView();
 }
 
-var root_13 = template('<div class="clickable-icon nav-action-button" aria-label="Change sort order"><!></div>  <div class="clickable-icon nav-action-button" aria-label="Expand limit"><!></div>  <div aria-label="Search"><!></div>', 1), root_23 = template('<div class="clickable-icon nav-action-button" aria-label="Switch List/Tree"><!></div>'), root_3 = template('<div class="clickable-icon nav-action-button" aria-label="Toggle Incoming"><!></div>  <div class="clickable-icon nav-action-button" aria-label="Toggle Outgoing"><!></div>  <div class="clickable-icon nav-action-button" aria-label="Toggle Incoming&amp;Outgoing"><!></div>  <div class="clickable-icon nav-action-button" aria-label="Toggle Hide indirect notes"><!></div>', 1), root_42 = template('<div class="search-row"><div class="search-input-container global-search-input-container"><input type="search" spellcheck="false" placeholder="Type to start search...">  <div class="search-input-clear-button" aria-label="Clear search"></div></div></div>'), root5 = template('<div hidden></div> <div class="nav-header"><div class="nav-buttons-container tagfolder-buttons-container"><div class="clickable-icon nav-action-button" aria-label="New note"><!></div> <!> <!> <!></div></div> <!> <div class="nav-files-container node-insert-event svelte-1xm87ro"><!></div>', 1), $$css3 = {
+function closeAllOpenedFolders() {
+  v2expandedTags.update((prev => {
+    prev.clear();
+    return prev;
+  }));
+}
+
+var root_13 = template('<div class="clickable-icon nav-action-button" aria-label="Change sort order"><!></div>  <div class="clickable-icon nav-action-button" aria-label="Expand limit"><!></div>  <div aria-label="Search"><!></div>', 1), root_23 = template('<div class="clickable-icon nav-action-button" aria-label="Switch List/Tree"><!></div>'), root_3 = template('<div aria-label="Toggle Incoming"><!></div>  <div aria-label="Toggle Outgoing"><!></div>  <div aria-label="Toggle Incoming&amp;Outgoing"><!></div>  <div aria-label="Toggle Hide indirect notes"><!></div>', 1), root_42 = template('<div class="clickable-icon nav-action-button" aria-label="Collapse all"><!></div>'), root_5 = template('<div class="search-row"><div class="search-input-container global-search-input-container"><input type="search" spellcheck="false" placeholder="Type to start search...">  <div class="search-input-clear-button" aria-label="Clear search"></div></div></div>'), root5 = template('<div hidden></div> <div class="nav-header"><div class="nav-buttons-container tagfolder-buttons-container"><div class="clickable-icon nav-action-button" aria-label="New note"><!></div> <!> <!> <!> <!></div></div> <!> <div class="nav-files-container node-insert-event svelte-1xm87ro"><!></div>', 1), $$css3 = {
   hash: "svelte-1xm87ro",
-  code: "\n\t.nav-files-container.svelte-1xm87ro {\n\t\theight: 100%;\n\t}\n"
+  code: ".nav-files-container.svelte-1xm87ro {height:100%;}"
 };
 
 function TagFolderViewComponent($$anchor, $$props) {
   push($$props, true);
   append_styles($$anchor, $$css3);
-  const $$stores = setup_stores(), $searchString = () => store_get(searchString, "$searchString", $$stores);
+  const [$$stores, $$cleanup] = setup_stores(), $searchString = () => store_get(searchString, "$searchString", $$stores);
   let vaultName = prop($$props, "vaultName", 3, ""), title = prop($$props, "title", 15, ""), tags = prop($$props, "tags", 31, (() => proxy([]))), viewType = prop($$props, "viewType", 3, "tags");
-  const isMainTree = derived((() => 0 == tags().length));
+  const isMainTree = user_derived((() => 0 == tags().length));
   null === $$props.stateStore || void 0 === $$props.stateStore || $$props.stateStore.subscribe((state2 => {
     tags(state2.tags);
     title(state2.title);
   }));
   let updatedFiles = state(proxy([]));
   appliedFiles.subscribe((async filenames => {
-    set(updatedFiles, proxy(null != filenames ? filenames : []));
+    set(updatedFiles, null != filenames ? filenames : [], true);
   }));
-  const viewItemsSrc = derived((() => {
+  const viewItemsSrc = user_derived((() => {
     if ("tags" == viewType()) return store_get(allViewItems, "$allViewItems", $$stores); else return store_get(allViewItemsByLink, "$allViewItemsByLink", $$stores);
   }));
   let _setting = state(proxy(store_get(tagFolderSetting, "$tagFolderSetting", $$stores))), outgoingEnabled = state(false), incomingEnabled = state(false), bothEnabled = state(false), onlyFDREnabled = state(false);
   tagFolderSetting.subscribe((setting => {
-    var _a, _b, _c, _d, _e, _f;
-    set(_setting, proxy(setting));
-    const incoming = null !== (_c = null === (_b = null === (_a = get(_setting).linkConfig) || void 0 === _a ? void 0 : _a.incoming) || void 0 === _b ? void 0 : _b.enabled) && void 0 !== _c ? _c : false, outgoing = null !== (_f = null === (_e = null === (_d = get(_setting).linkConfig) || void 0 === _d ? void 0 : _d.outgoing) || void 0 === _e ? void 0 : _e.enabled) && void 0 !== _f ? _f : false;
+    var _a3, _b3, _c2, _d, _e, _f;
+    set(_setting, setting, true);
+    const incoming = null !== (_c2 = null === (_b3 = null === (_a3 = get(_setting).linkConfig) || void 0 === _a3 ? void 0 : _a3.incoming) || void 0 === _b3 ? void 0 : _b3.enabled) && void 0 !== _c2 ? _c2 : false, outgoing = null !== (_f = null === (_e = null === (_d = get(_setting).linkConfig) || void 0 === _d ? void 0 : _d.outgoing) || void 0 === _e ? void 0 : _e.enabled) && void 0 !== _f ? _f : false;
     if (!incoming && !outgoing) {
       let newSet = {
         ...get(_setting)
@@ -3945,13 +4141,13 @@ function TagFolderViewComponent($$anchor, $$props) {
       if ($$props.saveSettings) $$props.saveSettings(newSet);
       set(bothEnabled, true);
     } else {
-      set(outgoingEnabled, proxy(!incoming && outgoing));
-      set(incomingEnabled, proxy(incoming && !outgoing));
-      set(bothEnabled, proxy(incoming && outgoing));
+      set(outgoingEnabled, !incoming && outgoing, true);
+      set(incomingEnabled, incoming && !outgoing, true);
+      set(bothEnabled, incoming && outgoing, true);
     }
-    set(onlyFDREnabled, proxy(get(_setting).linkShowOnlyFDR));
+    set(onlyFDREnabled, get(_setting).linkShowOnlyFDR, true);
   }));
-  let observer, showSearch = state(false), iconDivEl = state(void 0), newNoteIcon = state(""), folderIcon = state(""), upAndDownArrowsIcon = state(""), stackedLevels = state(""), searchIcon = state(""), switchIcon = state(""), outgoingIcon = state(""), incomingIcon = state(""), bothIcon = state(""), linkIcon = state("");
+  let observer, showSearch = state(false), iconDivEl = state(void 0), newNoteIcon = state(""), folderIcon = state(""), upAndDownArrowsIcon = state(""), stackedLevels = state(""), searchIcon = state(""), switchIcon = state(""), outgoingIcon = state(""), incomingIcon = state(""), bothIcon = state(""), linkIcon = state(""), closeAllIcon = state("");
   async function switchIncoming() {
     let newSet = {
       ...get(_setting)
@@ -4030,24 +4226,26 @@ function TagFolderViewComponent($$anchor, $$props) {
       set(newNoteIcon, `${get(iconDivEl).innerHTML}`);
       if (get(isMainTree)) {
         (0, import_obsidian3.setIcon)(get(iconDivEl), "lucide-sort-asc");
-        set(upAndDownArrowsIcon, proxy(get(iconDivEl).innerHTML));
+        set(upAndDownArrowsIcon, get(iconDivEl).innerHTML, true);
         (0, import_obsidian3.setIcon)(get(iconDivEl), "stacked-levels");
-        set(stackedLevels, proxy(get(iconDivEl).innerHTML));
+        set(stackedLevels, get(iconDivEl).innerHTML, true);
         (0, import_obsidian3.setIcon)(get(iconDivEl), "search");
-        set(searchIcon, proxy(get(iconDivEl).innerHTML));
+        set(searchIcon, get(iconDivEl).innerHTML, true);
       }
       if ("links" == viewType()) {
         (0, import_obsidian3.setIcon)(get(iconDivEl), "links-coming-in");
-        set(incomingIcon, proxy(get(iconDivEl).innerHTML));
+        set(incomingIcon, get(iconDivEl).innerHTML, true);
         (0, import_obsidian3.setIcon)(get(iconDivEl), "links-going-out");
-        set(outgoingIcon, proxy(get(iconDivEl).innerHTML));
+        set(outgoingIcon, get(iconDivEl).innerHTML, true);
         (0, import_obsidian3.setIcon)(get(iconDivEl), "link");
-        set(linkIcon, proxy(get(iconDivEl).innerHTML));
+        set(linkIcon, get(iconDivEl).innerHTML, true);
         (0, import_obsidian3.setIcon)(get(iconDivEl), "lucide-link-2");
-        set(bothIcon, proxy(get(iconDivEl).innerHTML));
+        set(bothIcon, get(iconDivEl).innerHTML, true);
       }
       (0, import_obsidian3.setIcon)(get(iconDivEl), "lucide-arrow-left-right");
-      set(switchIcon, proxy(get(iconDivEl).innerHTML));
+      set(switchIcon, get(iconDivEl).innerHTML, true);
+      (0, import_obsidian3.setIcon)(get(iconDivEl), "lucide-chevrons-down-up");
+      set(closeAllIcon, get(iconDivEl).innerHTML, true);
     }
     const int = setInterval((() => {
       performHide.set(Date.now());
@@ -4059,15 +4257,15 @@ function TagFolderViewComponent($$anchor, $$props) {
   onDestroy((() => {
     null == observer || observer.disconnect();
   }));
-  let headerTitle = derived((() => "" == title() ? `${"tags" == viewType() ? "Tags" : "Links"}: ${vaultName()}` : `Items: ${title()}`));
-  const viewItems = derived((() => {
-    var _a;
+  let headerTitle = user_derived((() => "" == title() ? `${"tags" == viewType() ? "Tags" : "Links"}: ${vaultName()}` : `Items: ${title()}`));
+  const viewItems = user_derived((() => {
+    var _a3;
     if (!get(viewItemsSrc)) return [];
     if (get(isMainTree)) return get(viewItemsSrc);
     let items = get(viewItemsSrc);
     const lowerTags = tags().map((e => e.toLowerCase()));
     for (const tag of lowerTags) items = items.filter((e => e.tags.some((e2 => (e2.toLowerCase() + "/").startsWith(tag)))));
-    const firstLevel = trimTrailingSlash(null !== (_a = tags().first()) && void 0 !== _a ? _a : "").toLowerCase(), archiveTags = get(_setting).archiveTags.toLowerCase().replace(/[\n ]/g, "").split(",");
+    const firstLevel = trimTrailingSlash(null !== (_a3 = tags().first()) && void 0 !== _a3 ? _a3 : "").toLowerCase(), archiveTags = get(_setting).archiveTags.toLowerCase().replace(/[\n ]/g, "").split(",");
     if (!archiveTags.contains(firstLevel)) items = items.filter((item => !item.tags.some((e => archiveTags.contains(e.toLowerCase())))));
     return items;
   }));
@@ -4076,24 +4274,23 @@ function TagFolderViewComponent($$anchor, $$props) {
   bind_this(div, ($$value => set(iconDivEl, $$value)), (() => get(iconDivEl)));
   var div_1 = sibling(div, 2), div_2 = child(div_1), div_3 = child(div_2);
   div_3.__click = function(...$$args) {
-    var _a;
-    null == (_a = $$props.newNote) || _a.apply(this, $$args);
+    var _a3;
+    null == (_a3 = $$props.newNote) || _a3.apply(this, $$args);
   };
   html(child(div_3), (() => get(newNoteIcon)), false, false);
   reset(div_3);
-  var node_1 = sibling(div_3, 2);
-  if_block(node_1, (() => get(isMainTree)), ($$anchor2 => {
+  var node_1 = sibling(div_3, 2), consequent = $$anchor2 => {
     var fragment_1 = root_13(), div_4 = first_child(fragment_1);
     div_4.__click = function(...$$args) {
-      var _a;
-      null == (_a = $$props.showOrder) || _a.apply(this, $$args);
+      var _a3;
+      null == (_a3 = $$props.showOrder) || _a3.apply(this, $$args);
     };
     html(child(div_4), (() => get(upAndDownArrowsIcon)), false, false);
     reset(div_4);
     var div_5 = sibling(div_4, 2);
     div_5.__click = function(...$$args) {
-      var _a;
-      null == (_a = $$props.showLevelSelect) || _a.apply(this, $$args);
+      var _a3;
+      null == (_a3 = $$props.showLevelSelect) || _a3.apply(this, $$args);
     };
     html(child(div_5), (() => get(stackedLevels)), false, false);
     reset(div_5);
@@ -4101,66 +4298,90 @@ function TagFolderViewComponent($$anchor, $$props) {
     div_6.__click = [ toggleSearch, showSearch, $searchString ];
     html(child(div_6), (() => get(searchIcon)), false, false);
     reset(div_6);
-    template_effect((() => {
-      var _a;
-      return set_class(div_6, `${null != (_a = "clickable-icon nav-action-button " + (get(showSearch) ? " is-active" : "")) ? _a : ""} svelte-1xm87ro`);
-    }));
+    template_effect((() => set_class(div_6, 1, "clickable-icon nav-action-button " + (get(showSearch) ? " is-active" : ""), "svelte-1xm87ro")));
     append($$anchor2, fragment_1);
+  };
+  if_block(node_1, ($$render => {
+    if (get(isMainTree)) $$render(consequent);
   }));
-  var node_5 = sibling(node_1, 2);
-  if_block(node_5, (() => $$props.isViewSwitchable), ($$anchor2 => {
+  var node_5 = sibling(node_1, 2), consequent_1 = $$anchor2 => {
     var div_7 = root_23();
     div_7.__click = [ doSwitch, $$props ];
     html(child(div_7), (() => get(switchIcon)), false, false);
     reset(div_7);
     append($$anchor2, div_7);
+  };
+  if_block(node_5, ($$render => {
+    if ($$props.isViewSwitchable) $$render(consequent_1);
   }));
-  if_block(sibling(node_5, 2), (() => "links" == viewType()), ($$anchor2 => {
+  var node_7 = sibling(node_5, 2), consequent_2 = $$anchor2 => {
     var fragment_2 = root_3(), div_8 = first_child(fragment_2);
+    let classes;
     div_8.__click = switchIncoming;
     html(child(div_8), (() => get(incomingIcon)), false, false);
     reset(div_8);
     var div_9 = sibling(div_8, 2);
+    let classes_1;
     div_9.__click = switchOutgoing;
     html(child(div_9), (() => get(outgoingIcon)), false, false);
     reset(div_9);
     var div_10 = sibling(div_9, 2);
+    let classes_2;
     div_10.__click = switchBoth;
     html(child(div_10), (() => get(bothIcon)), false, false);
     reset(div_10);
     var div_11 = sibling(div_10, 2);
+    let classes_3;
     div_11.__click = switchOnlyFDR;
     html(child(div_11), (() => get(linkIcon)), false, false);
     reset(div_11);
-    template_effect((() => {
-      toggle_class(div_8, "is-active", get(incomingEnabled));
-      toggle_class(div_9, "is-active", get(outgoingEnabled));
-      toggle_class(div_10, "is-active", get(bothEnabled));
-      toggle_class(div_11, "is-active", get(onlyFDREnabled));
-    }));
+    template_effect((($0, $1, $2, $3) => {
+      classes = set_class(div_8, 1, "clickable-icon nav-action-button", null, classes, $0);
+      classes_1 = set_class(div_9, 1, "clickable-icon nav-action-button", null, classes_1, $1);
+      classes_2 = set_class(div_10, 1, "clickable-icon nav-action-button", null, classes_2, $2);
+      classes_3 = set_class(div_11, 1, "clickable-icon nav-action-button", null, classes_3, $3);
+    }), [ () => ({
+      "is-active": get(incomingEnabled)
+    }), () => ({
+      "is-active": get(outgoingEnabled)
+    }), () => ({
+      "is-active": get(bothEnabled)
+    }), () => ({
+      "is-active": get(onlyFDREnabled)
+    }) ]);
     append($$anchor2, fragment_2);
+  };
+  if_block(node_7, ($$render => {
+    if ("links" == viewType()) $$render(consequent_2);
+  }));
+  var node_12 = sibling(node_7, 2), consequent_3 = $$anchor2 => {
+    var div_12 = root_42();
+    div_12.__click = [ closeAllOpenedFolders ];
+    html(child(div_12), (() => get(closeAllIcon)), false, false);
+    reset(div_12);
+    append($$anchor2, div_12);
+  };
+  if_block(node_12, ($$render => {
+    if (get(isMainTree)) $$render(consequent_3);
   }));
   reset(div_2);
   reset(div_1);
-  var node_12 = sibling(div_1, 2);
-  if_block(node_12, (() => get(showSearch) && get(isMainTree)), ($$anchor2 => {
-    var div_12 = root_42(), div_13 = child(div_12), input = child(div_13);
+  var node_14 = sibling(div_1, 2), consequent_4 = $$anchor2 => {
+    var div_13 = root_5(), div_14 = child(div_13), input = child(div_14);
     remove_input_defaults(input);
-    var div_14 = sibling(input, 2);
-    const style_derived = derived((() => {
-      var _a;
-      return `display:${null != (_a = "" == $searchString().trim() ? "none" : "") ? _a : ""};`;
-    }));
-    div_14.__click = [ clearSearch, $searchString ];
+    var div_15 = sibling(input, 2);
+    div_15.__click = [ clearSearch, $searchString ];
+    reset(div_14);
     reset(div_13);
-    reset(div_12);
-    template_effect((() => set_attribute(div_14, "style", get(style_derived))));
+    template_effect(($0 => set_style(div_15, `display:${null != $0 ? $0 : ""};`)), [ () => "" == $searchString().trim() ? "none" : "" ]);
     bind_value(input, $searchString, ($$value => store_set(searchString, $$value)));
-    append($$anchor2, div_12);
+    append($$anchor2, div_13);
+  };
+  if_block(node_14, ($$render => {
+    if (get(showSearch) && get(isMainTree)) $$render(consequent_4);
   }));
-  var div_15 = sibling(node_12, 2);
-  bind_this(div_15, ($$value => scrollParent = $$value), (() => scrollParent));
-  V2TreeFolderComponent_1(child(div_15), {
+  var div_16 = sibling(node_14, 2);
+  V2TreeFolderComponent_1(child(div_16), {
     get viewType() {
       return viewType();
     },
@@ -4192,9 +4413,11 @@ function TagFolderViewComponent($$anchor, $$props) {
       return get(headerTitle);
     }
   });
-  reset(div_15);
+  reset(div_16);
+  bind_this(div_16, ($$value => scrollParent = $$value), (() => scrollParent));
   append($$anchor, fragment);
   pop();
+  $$cleanup();
 }
 
 delegate([ "click" ]);
@@ -4225,8 +4448,8 @@ var import_obsidian5 = require("obsidian"), import_obsidian4 = require("obsidian
     });
   }
   onChooseSuggestion(item, evt) {
-    var _a;
-    null == (_a = this.callback) || _a.call(this, item);
+    var _a3;
+    null == (_a3 = this.callback) || _a3.call(this, item);
     this.callback = void 0;
   }
   onClose() {
@@ -4349,8 +4572,8 @@ var TagFolderViewBase = class extends import_obsidian5.ItemView {
         }));
         menu.addItem((item => {
           item.setTitle("Set an alternative label").setIcon("pencil").onClick((async () => {
-            var _a;
-            const oldAlt = tag in this.plugin.tagInfo ? null != (_a = this.plugin.tagInfo[tag].alt) ? _a : "" : "", label = await askString(this.app, "", "", oldAlt);
+            var _a3;
+            const oldAlt = tag in this.plugin.tagInfo ? null != (_a3 = this.plugin.tagInfo[tag].alt) ? _a3 : "" : "", label = await askString(this.app, "", "", oldAlt);
             if (false !== label) {
               this.plugin.tagInfo[tag] = toggleObjectProp(this.plugin.tagInfo[tag], "alt", "" == label ? false : label);
               this.plugin.applyTagInfo();
@@ -4360,8 +4583,8 @@ var TagFolderViewBase = class extends import_obsidian5.ItemView {
         }));
         menu.addItem((item => {
           item.setTitle("Change the mark").setIcon("pencil").onClick((async () => {
-            var _a;
-            const oldMark = tag in this.plugin.tagInfo ? null != (_a = this.plugin.tagInfo[tag].mark) ? _a : "" : "", mark = await askString(this.app, "", "", oldMark);
+            var _a3;
+            const oldMark = tag in this.plugin.tagInfo ? null != (_a3 = this.plugin.tagInfo[tag].mark) ? _a3 : "" : "", mark = await askString(this.app, "", "", oldMark);
             if (false !== mark) {
               this.plugin.tagInfo[tag] = toggleObjectProp(this.plugin.tagInfo[tag], "mark", "" == mark ? false : mark);
               this.plugin.applyTagInfo();
@@ -4371,8 +4594,8 @@ var TagFolderViewBase = class extends import_obsidian5.ItemView {
         }));
         menu.addItem((item => {
           item.setTitle("Redirect this tag to ...").setIcon("pencil").onClick((async () => {
-            var _a;
-            const oldRedirect = tag in this.plugin.tagInfo ? null != (_a = this.plugin.tagInfo[tag].redirect) ? _a : "" : "", redirect = await askString(this.app, "", "", oldRedirect);
+            var _a3;
+            const oldRedirect = tag in this.plugin.tagInfo ? null != (_a3 = this.plugin.tagInfo[tag].redirect) ? _a3 : "" : "", redirect = await askString(this.app, "", "", oldRedirect);
             if (false !== redirect) {
               this.plugin.tagInfo[tag] = toggleObjectProp(this.plugin.tagInfo[tag], "redirect", "" == redirect ? false : redirect);
               this.plugin.applyTagInfo();
@@ -4479,7 +4702,8 @@ var TagFolderViewBase = class extends import_obsidian5.ItemView {
     return await Promise.resolve();
   }
   async onClose() {
-    unmount(this.component);
+    await unmount(this.component);
+    this.component = void 0;
     return await Promise.resolve();
   }
 }, import_obsidian7 = require("obsidian"), TagFolderList = class extends TagFolderViewBase {
@@ -4554,7 +4778,7 @@ var TagFolderViewBase = class extends import_obsidian5.ItemView {
   }
   async onClose() {
     if (this.component) {
-      unmount(this.component);
+      await unmount(this.component);
       this.component = void 0;
     }
     return await Promise.resolve();
@@ -4726,12 +4950,12 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
       id: "tagfolder-create-similar",
       name: "Create a new note with the same tags",
       editorCallback: async (editor, view) => {
-        var _a;
+        var _a3;
         const file = null == view ? void 0 : view.file;
         if (!file) return;
         const cache = this.app.metadataCache.getFileCache(file);
         if (!cache) return;
-        const tagsWithoutPrefix = (null != (_a = (0, import_obsidian8.getAllTags)(cache)) ? _a : []).map((e => trimPrefix(e, "#")));
+        const tagsWithoutPrefix = (null != (_a3 = (0, import_obsidian8.getAllTags)(cache)) ? _a3 : []).map((e => trimPrefix(e, "#")));
         await this.createNewNote(tagsWithoutPrefix);
       }
     });
@@ -4769,19 +4993,19 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
       }
     };
     this.register(onElement(document, "click", 'a.tag[href^="#"]', ((event2, targetEl) => {
-      var _a;
+      var _a3;
       if (!this.settings.overrideTagClicking) return;
       const tagString = targetEl.innerText.substring(1);
       if (tagString) {
         setTagSearchString(event2, tagString);
-        const leaf = null == (_a = this.getView()) ? void 0 : _a.leaf;
+        const leaf = null == (_a3 = this.getView()) ? void 0 : _a3.leaf;
         if (leaf) this.app.workspace.revealLeaf(leaf);
       }
     }), {
       capture: true
     }));
     this.register(onElement(document, "click", "span.cm-hashtag.cm-meta", ((event2, targetEl) => {
-      var _a;
+      var _a3;
       if (!this.settings.overrideTagClicking) return;
       let enumTags = targetEl, tagString = "";
       for (;!enumTags.classList.contains("cm-hashtag-begin"); ) {
@@ -4800,7 +5024,7 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
       } while (enumTags);
       tagString = tagString.substring(1);
       setTagSearchString(event2, tagString);
-      const leaf = null == (_a = this.getView()) ? void 0 : _a.leaf;
+      const leaf = null == (_a3 = this.getView()) ? void 0 : _a3.leaf;
       if (leaf) this.app.workspace.revealLeaf(leaf);
     }), {
       capture: true
@@ -4842,8 +5066,8 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
   }
   updateFileCachesAll() {
     const caches = [ ...this.app.vault.getMarkdownFiles(), ...this.app.vault.getAllLoadedFiles().filter((e => "extension" in e && "canvas" == e.extension)) ].filter((file => {
-      var _a;
-      return null != (_a = this.parsedFileCache.get(file.path)) ? _a : 0 != file.stat.mtime;
+      var _a3;
+      return null != (_a3 = this.parsedFileCache.get(file.path)) ? _a3 : 0 != file.stat.mtime;
     })).map((entry => this.getFileCacheData(entry))).filter((e => false !== e));
     this.fileCaches = [ ...caches ];
     return this.isFileCacheChanged();
@@ -4912,6 +5136,7 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
         path.pop();
         if (path.length > 0) allTags.push(`${path.join("/")}`);
       }
+      allTags = uniqueCaseIntensive(allTags.map((e => e in tagRedirectList ? tagRedirectList[e] : e)));
       if (allTags.some((tag => ignoreDocTags.contains(tag.toLowerCase())))) continue;
       if (searchItems.map((searchItem => {
         let bx = false;
@@ -5082,9 +5307,9 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
     }
   }
   async _initTagView() {
-    var _a;
+    var _a3;
     const leaves = this.app.workspace.getLeavesOfType(VIEW_TYPE_TAGFOLDER);
-    if (0 == leaves.length) await (null == (_a = this.app.workspace.getLeftLeaf(false)) ? void 0 : _a.setViewState({
+    if (0 == leaves.length) await (null == (_a3 = this.app.workspace.getLeftLeaf(false)) ? void 0 : _a3.setViewState({
       type: VIEW_TYPE_TAGFOLDER,
       state: {
         treeViewType: "tags"
@@ -5101,9 +5326,9 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
     }
   }
   async _initLinkView() {
-    var _a;
+    var _a3;
     const leaves = this.app.workspace.getLeavesOfType(VIEW_TYPE_TAGFOLDER_LINK);
-    if (0 == leaves.length) await (null == (_a = this.app.workspace.getLeftLeaf(false)) ? void 0 : _a.setViewState({
+    if (0 == leaves.length) await (null == (_a3 = this.app.workspace.getLeftLeaf(false)) ? void 0 : _a3.setViewState({
       type: VIEW_TYPE_TAGFOLDER_LINK,
       state: {
         treeViewType: "links"
@@ -5211,13 +5436,13 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
     this.refreshAllViewItems();
   }
   async openListView(tagSrc) {
-    var _a, _b;
+    var _a3, _b3;
     if (!tagSrc) return;
     const tags = "root" == tagSrc.first() ? tagSrc.slice(1) : tagSrc;
     let theLeaf;
     for (const leaf of this.app.workspace.getLeavesOfType(VIEW_TYPE_TAGFOLDER_LIST)) {
       const state2 = leaf.getViewState();
-      if (null == (_a = state2.state) ? void 0 : _a.tags) {
+      if (null == (_a3 = state2.state) ? void 0 : _a3.tags) {
         if (state2.state.tags.slice().sort().join("-") == tags.slice().sort().join("-")) {
           this.app.workspace.setActiveLeaf(leaf, {
             focus: true
@@ -5228,7 +5453,7 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
       }
     }
     if (!theLeaf) {
-      const parent = null == (_b = this.app.workspace.getLeavesOfType(VIEW_TYPE_TAGFOLDER)) ? void 0 : _b.first();
+      const parent = null == (_b3 = this.app.workspace.getLeavesOfType(VIEW_TYPE_TAGFOLDER)) ? void 0 : _b3.first();
       if (!parent) return;
       switch (this.settings.showListIn) {
        case "CURRENT_PANE":
@@ -5259,8 +5484,8 @@ var TagFolderPlugin5 = class extends import_obsidian8.Plugin {
   async createNewNote(tags) {
     const expandedTagsAll = ancestorToLongestTag(ancestorToTags(joinPartialPath(removeIntermediatePath(null != tags ? tags : [])))).map((e => trimTrailingSlash(e))), expandedTags = expandedTagsAll.map((e => e.split("/").filter((ee => !isSpecialTag(ee))).join("/"))).filter((e => "" != e)).map((e => "#" + e)).join(" ").trim(), ww = await this.app.fileManager.createAndOpenMarkdownFile();
     if (this.settings.useFrontmatterTagsForNewNotes) await this.app.fileManager.processFrontMatter(ww, (matter => {
-      var _a;
-      matter.tags = null != (_a = matter.tags) ? _a : [];
+      var _a3;
+      matter.tags = null != (_a3 = matter.tags) ? _a3 : [];
       matter.tags = expandedTagsAll.filter((e => !isSpecialTag(e))).filter((e => matter.tags.indexOf(e) < 0)).concat(matter.tags);
     })); else await this.app.vault.append(ww, expandedTags);
   }

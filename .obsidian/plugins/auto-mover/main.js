@@ -41,10 +41,18 @@ module.exports = __toCommonJS(main_exports);
 // Settings/Settings.ts
 var DEFAULT_SETTINGS = {
   moveOnOpen: true,
-  moveOnSave: true,
-  moveOnClose: false,
-  moveOnCreate: false,
-  movingRules: []
+  // moveOnSave: true,
+  movingRules: [],
+  exclusionRules: [],
+  automaticMoving: false,
+  timer: null
+};
+
+// Models/ExclusionRule.ts
+var ExclusionRule = class {
+  constructor(regex) {
+    this.regex = regex || "";
+  }
 };
 
 // Models/MovingRule.ts
@@ -57,6 +65,47 @@ var MovingRule = class {
 
 // Settings/SettingsTab.ts
 var obsidian = __toESM(require("obsidian"));
+
+// Utils/TimerUtil.ts
+var TimerUtil = class {
+  constructor() {
+    this.timer = null;
+  }
+  static getInstance() {
+    if (!TimerUtil.instance) {
+      TimerUtil.instance = new TimerUtil();
+    }
+    return TimerUtil.instance;
+  }
+  formatTime(ms) {
+    if (ms == null)
+      return "00:00:00";
+    const totalSeconds = Math.floor(ms / 1e3);
+    const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, "0");
+    const minutes = String(Math.floor(totalSeconds % 3600 / 60)).padStart(
+      2,
+      "0"
+    );
+    const seconds = String(totalSeconds % 60).padStart(2, "0");
+    return `${hours}:${minutes}:${seconds}`;
+  }
+  parseTimeToMs(timeStr) {
+    const [h, m, s] = timeStr.split(":").map(Number);
+    if ([h, m, s].some((n) => Number.isNaN(n)))
+      return 0;
+    return ((h != null ? h : 0) * 3600 + (m != null ? m : 0) * 60 + (s != null ? s : 0)) * 1e3;
+  }
+  startTimer(callback, interval) {
+    if (this.timer) {
+      clearInterval(this.timer);
+    }
+    this.timer = setTimeout(callback, interval);
+  }
+};
+var timerUtil = TimerUtil.getInstance();
+var TimerUtil_default = timerUtil;
+
+// Settings/SettingsTab.ts
 var SettingsTab = class extends obsidian.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
@@ -80,10 +129,35 @@ var SettingsTab = class extends obsidian.PluginSettingTab {
         this.plugin.goThroughAllFiles();
       });
     });
+    const automaticMovingContainer = containerEl.createDiv({});
+    new obsidian.Setting(automaticMovingContainer).setName("Automatic moving").setDesc(
+      `Execute a timed event that goes through all the files and moves them according to the rules specified below.
+		 The formatting is hh:mm:ss.
+	     If the timer is set to 0, the automatic moving will do nothing.`
+    ).setClass("timer-setting").addToggle(
+      (cb) => cb.setValue(this.plugin.settings.automaticMoving).onChange(async (value) => {
+        this.plugin.settings.automaticMoving = value;
+        await this.plugin.saveData(this.plugin.settings);
+        this.app.workspace.trigger(
+          "AutoMover:automatic-moving-update",
+          this.plugin.settings
+        );
+        this.display();
+      })
+    ).addText(
+      (cb) => cb.setDisabled(!this.plugin.settings.automaticMoving).setValue(TimerUtil_default.formatTime(this.plugin.settings.timer)).setPlaceholder("hh:mm:ss").onChange(async (value) => {
+        this.plugin.settings.timer = TimerUtil_default.parseTimeToMs(value);
+        await this.plugin.saveData(this.plugin.settings);
+        this.app.workspace.trigger(
+          "AutoMover:automatic-moving-update",
+          this.plugin.settings
+        );
+      })
+    );
     const tutorialContainer = containerEl.createDiv({
       cls: "moving_rules_container"
     });
-    const headerSetting = new obsidian.Setting(tutorialContainer).setName("Tutorial").setHeading();
+    new obsidian.Setting(tutorialContainer).setName("Tutorial").setHeading();
     const description = tutorialContainer.createDiv();
     description.createSpan({
       text: "This plugin allows you to move files to a specified folder based on the file name."
@@ -126,11 +200,11 @@ var SettingsTab = class extends obsidian.PluginSettingTab {
       text: "Folder (string that can contain regex groups)",
       cls: "rule_title"
     });
-    const addButton = ruleHeader.createEl("button", {
+    const addRuleButton = ruleHeader.createEl("button", {
       text: "+",
       cls: "rule_button"
     });
-    addButton.addEventListener("click", () => {
+    addRuleButton.addEventListener("click", () => {
       this.plugin.settings.movingRules.push(new MovingRule());
       this.display();
     });
@@ -152,22 +226,75 @@ var SettingsTab = class extends obsidian.PluginSettingTab {
         this.plugin.settings.movingRules.map((r) => r === rule ? rule : r);
         this.plugin.saveData(this.plugin.settings);
       };
-      const duplicateButton = child.createEl("button", {
+      const duplicateRuleButton = child.createEl("button", {
         text: "\u2FFB",
         cls: "rule_button rule_button_duplicate"
       });
-      duplicateButton.addEventListener("click", () => {
+      duplicateRuleButton.addEventListener("click", () => {
         this.plugin.settings.movingRules.push(
           new MovingRule(rule.regex, rule.folder)
         );
         this.display();
       });
-      const deleteButton = child.createEl("button", {
+      const deleteRuleButton = child.createEl("button", {
         text: "x",
         cls: "rule_button rule_button_remove"
       });
-      deleteButton.addEventListener("click", () => {
+      deleteRuleButton.addEventListener("click", () => {
         this.plugin.settings.movingRules = this.plugin.settings.movingRules.filter((r) => r !== rule);
+        this.display();
+      });
+    }
+    const exclusionRuleContainer = containerEl.createDiv({
+      cls: "moving_rules_container"
+    });
+    new obsidian.Setting(exclusionRuleContainer).setName("Exclusion rules").setHeading();
+    const exclusionList = exclusionRuleContainer.createDiv({
+      cls: "rule_list"
+    });
+    const exclusionHeader = exclusionList.createDiv({
+      cls: "rule margig_right"
+    });
+    exclusionHeader.createEl("p", {
+      text: "Excluded folders or files (string or regex)",
+      cls: "rule_title"
+    });
+    const addExclusionButton = exclusionHeader.createEl("button", {
+      text: "+",
+      cls: "rule_button"
+    });
+    addExclusionButton.addEventListener("click", () => {
+      this.plugin.settings.exclusionRules.push(new ExclusionRule());
+      this.display();
+    });
+    for (const exclusion of this.plugin.settings.exclusionRules) {
+      const child = exclusionList.createDiv({ cls: "rule" });
+      child.createEl("input", {
+        value: exclusion.regex,
+        cls: "rule_input"
+      }).onchange = (e) => {
+        exclusion.regex = e.target.value;
+        this.plugin.settings.exclusionRules.map(
+          (ef) => ef === exclusion ? exclusion : ef
+        );
+        this.plugin.saveData(this.plugin.settings);
+      };
+      const duplicateExclusionButton = child.createEl("button", {
+        text: "\u2FFB",
+        cls: "rule_button rule_button_duplicate"
+      });
+      duplicateExclusionButton.addEventListener("click", () => {
+        this.plugin.settings.exclusionRules.push(
+          new ExclusionRule(exclusion.regex)
+        );
+        this.display();
+      });
+      const deleteExclusionButton = child.createEl("button", {
+        text: "x",
+        cls: "rule_button rule_button_remove"
+      });
+      deleteExclusionButton.addEventListener("click", () => {
+        this.plugin.settings.exclusionRules = this.plugin.settings.exclusionRules.filter((r) => r !== exclusion);
         this.display();
       });
     }
@@ -329,6 +456,10 @@ var RuleMatcherUtil = class {
         console.error("Rule does not have a regex: ", rule);
         continue;
       }
+      if (rule.folder == null || rule.folder === "") {
+        console.error("Rule does not have a destination folder: ", rule);
+        continue;
+      }
       if (!this.isValidRegex(rule.regex)) {
         console.error("Rule has an invalid regex: ", rule);
         continue;
@@ -420,6 +551,37 @@ var RuleMatcherUtil_default = ruleMatcherUtil;
 
 // main.ts
 var obsidian3 = __toESM(require("obsidian"));
+
+// Utils/ExclusionMatcherUtil.ts
+var ExclusionMatcherUtil = class {
+  constructor() {
+  }
+  static getInstance() {
+    if (!ExclusionMatcherUtil.instance) {
+      ExclusionMatcherUtil.instance = new ExclusionMatcherUtil();
+    }
+    return ExclusionMatcherUtil.instance;
+  }
+  /**
+   * This method is used to check if the file is excluded by the exclusion rule
+   * @param file - The file to be checked
+   * @param exclusionRules - The exclusion rule to be used
+   * @returns true if the file path is excluded, false otherwise
+   */
+  isFilePathExcluded(file, exclusionRules) {
+    for (const rule of exclusionRules) {
+      const regex = new RegExp(rule.regex);
+      if (regex.test(file.path)) {
+        return true;
+      }
+    }
+    return false;
+  }
+};
+var exclusionMatcherUtil = ExclusionMatcherUtil.getInstance();
+var ExclusionMatcherUtil_default = exclusionMatcherUtil;
+
+// main.ts
 var AutoMoverPlugin = class extends obsidian3.Plugin {
   async onload() {
     MovingUtil_default.init(this.app);
@@ -429,15 +591,52 @@ var AutoMoverPlugin = class extends obsidian3.Plugin {
       await this.loadData()
     );
     this.addSettingTab(new SettingsTab(this.app, this));
-    if (this.checkIfMovingTriggersAreEnabled() && this.checkIfThereAreRulesToApply() && this.checkIfRulesAreValid()) {
-      if (this.settings.moveOnOpen) {
-        this.registerEvent(
-          this.app.workspace.on("file-open", (file) => {
-            this.matchAndMoveFile(file);
-          })
-        );
+    if (!this.areMovingTriggersEnabled())
+      return;
+    if (!this.areThereRulesToApply())
+      return;
+    if (!this.areRulesValid())
+      return;
+    this.registerEvent(
+      this.app.workspace.on("file-open", (file) => {
+        if (!this.settings.moveOnOpen)
+          return;
+        if (file == null || file.path == null)
+          return;
+        if (this.isFileExcluded(file))
+          return;
+        this.matchAndMoveFile(file);
+      })
+    );
+    this.registerEvent(
+      // since i am defining my own event, ts-lint is crying about it but it works in the end
+      this.app.workspace.on("AutoMover:automatic-moving-update", () => {
+        this.automaticMoving();
+      })
+    );
+    this.addCommand({
+      id: "AutoMover:move-files",
+      name: "Move files",
+      callback: () => {
+        this.goThroughAllFiles();
       }
-    }
+    });
+    this.addRibbonIcon("file-input", "AutoMover: Move files", () => {
+      this.goThroughAllFiles();
+    });
+  }
+  /**
+   * Reocurring function that will be called by the timer
+   *
+   * @returns void
+   */
+  automaticMoving() {
+    if (!this.settings.automaticMoving)
+      return;
+    if (this.settings.timer == null || this.settings.timer <= 0)
+      return;
+    this.goThroughAllFiles();
+    TimerUtil_default.startTimer(this.automaticMoving.bind(this), this.settings.timer);
   }
   /**
    * Opens all files in the repository so that the even "file-open" is triggered
@@ -447,9 +646,29 @@ var AutoMoverPlugin = class extends obsidian3.Plugin {
   goThroughAllFiles() {
     const files = this.app.vault.getFiles();
     for (const file of files) {
+      if (file == null || file.path == null)
+        continue;
+      if (this.isFileExcluded(file))
+        continue;
       this.matchAndMoveFile(file);
     }
     new obsidian3.Notice("All files moved!", 5e3);
+  }
+  /**
+   * Checks if the file is excluded by the exclusion rule
+   *
+   * @param file - The file to be checked
+   * @returns true if the file path is excluded, false otherwise
+   */
+  isFileExcluded(file) {
+    if (!this.areThereExcludedFolders())
+      return false;
+    if (!this.areThereRulesToApply())
+      return false;
+    return ExclusionMatcherUtil_default.isFilePathExcluded(
+      file,
+      this.settings.exclusionRules
+    );
   }
   /**
    * Matches the file to the rule and moves it to the destination folder
@@ -458,8 +677,6 @@ var AutoMoverPlugin = class extends obsidian3.Plugin {
    * @returns void
    */
   matchAndMoveFile(file) {
-    if (file == null || file.path == null)
-      return;
     const rule = RuleMatcherUtil_default.getMatchingRule(
       file,
       this.settings.movingRules
@@ -490,24 +707,40 @@ var AutoMoverPlugin = class extends obsidian3.Plugin {
    * No point in doing anything if there is no trigger set which will cause you to move the files
    * @returns boolean
    */
-  checkIfMovingTriggersAreEnabled() {
-    return this.settings.moveOnClose || this.settings.moveOnCreate || this.settings.moveOnOpen || this.settings.moveOnSave;
+  areMovingTriggersEnabled() {
+    return this.settings.moveOnOpen;
   }
   /**
    * If there are no rules to apply, then there is no point in checking for them
    * @returns boolean
    */
-  checkIfThereAreRulesToApply() {
-    return this.settings.movingRules.length > 0;
+  areThereRulesToApply() {
+    return this.settings.movingRules.length > 0 && this.settings.movingRules.every(
+      (rule) => rule.regex !== "" && rule.folder !== ""
+    );
+  }
+  /**
+   * If there are no excluded folders, then we can move thing freely
+   * @returns boolean
+   */
+  areThereExcludedFolders() {
+    return this.settings.exclusionRules.length > 0;
   }
   /**
    * Superficail check if the rules are valid
    * @returns boolean
    */
-  checkIfRulesAreValid() {
+  areRulesValid() {
     return this.settings.movingRules.every(
       (rule) => rule.regex !== "" && rule.folder !== ""
     );
+  }
+  /**
+   * Superficail check if the excluded folders are valid
+   * @returns boolean
+   */
+  areExcludedFoldersValid() {
+    return this.settings.exclusionRules.every((rule) => rule.regex !== "");
   }
 };
 
