@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Dynamic Tags & Folders Plugin Development",
+      "path": "🕸️ UNSTRUCTURED/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
+    },
+    {
+      "basename": "Dynamic Folders & Tags",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
+    },
+    {
       "basename": "Tag Structure Examples",
       "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
     },
@@ -19,10 +27,6 @@
     {
       "basename": "Auto - Tagging, Linking, Dropzones & Organizers",
       "path": "📁 10 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md"
-    },
-    {
-      "basename": "Dynamic Folders & Tags",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
     },
     {
       "basename": "Using Tags",
@@ -195,10 +199,6 @@
     {
       "basename": "33 - Egress",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/33 - Egress/33 - Egress.md"
-    },
-    {
-      "basename": "31 - Sentinel, Sysmon",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/31 - Sentinel, Sysmon/31 - Sentinel, Sysmon.md"
     }
   ],
   "omittedPaths": [],

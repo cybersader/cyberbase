@@ -34,21 +34,13 @@ Be awesome if I could say anything the regex matches this in folder path gets a 
 Could use a dataView query at the top of the page?  Potentially or the bottom with a template for it when it matches that regex I talked about
 
 Problems in Tagging:
-
 - folders to tagging
     - format to snake case for folder path and make a nested tag
-
 - where do untagged go?
-
 - how do we move to certain types of folders based on parent tags with nested tags (untagged go to unstructured section)?
-
 - How do folder notes affect this?
-
 - Most tag related plugin will just use regular tags and not allow appending things for structuring
-
 - What's the actual alphabetic order in this?
-
-- 
 
 Plugins that use or affect structure:
 

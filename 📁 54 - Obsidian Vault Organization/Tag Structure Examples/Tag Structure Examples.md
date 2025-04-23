@@ -38,6 +38,8 @@ date modified: Wednesday, March 19th 2025, 12:49 pm
     - doesn't handle unstructured notes other than sending them to root
 - Folder Notes
 - AutoMover
+- Auto Note Mover
+- 
 
 # What needs to be in structure
 
