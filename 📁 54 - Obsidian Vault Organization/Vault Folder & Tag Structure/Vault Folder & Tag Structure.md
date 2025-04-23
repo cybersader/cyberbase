@@ -75,7 +75,6 @@ just as folders need structures so do tags, but they can overlap
 - use underscore to auto complete into ontology or process focused tag structures
 - use meta tag categories
 - use a tag root for meta stuff for working in the vault
-- 
 
 ### what's supported for tags?
 

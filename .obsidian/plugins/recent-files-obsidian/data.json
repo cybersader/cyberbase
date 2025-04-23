@@ -1,28 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "Dynamic Tags & Folders Plugin Development",
-      "path": "🕸️ UNSTRUCTURED/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
-    },
-    {
-      "basename": "Dynamic Folders & Tags",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
+      "basename": "Cyberbase Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Tag Structure/Cyberbase Tag Structure.md"
     },
     {
       "basename": "Tag Structure Examples",
       "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
     },
     {
-      "basename": "Tag Pages",
-      "path": "📁 54 - Obsidian Vault Organization/Tag Pages/Tag Pages.md"
+      "basename": "📁 54 - Obsidian Vault Organization",
+      "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
     },
     {
       "basename": "Vault Folder & Tag Structure",
       "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
     },
     {
-      "basename": "📁 54 - Obsidian Vault Organization",
-      "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
+      "basename": "Tag Pages",
+      "path": "📁 54 - Obsidian Vault Organization/Tag Pages/Tag Pages.md"
+    },
+    {
+      "basename": "Dynamic Tags & Folders Plugin Development",
+      "path": "🕸️ UNSTRUCTURED/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
+    },
+    {
+      "basename": "Dynamic Folders & Tags",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
     },
     {
       "basename": "Auto - Tagging, Linking, Dropzones & Organizers",
@@ -195,10 +199,6 @@
     {
       "basename": "BHIS, Antisyphon",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/BHIS, Antisyphon.md"
-    },
-    {
-      "basename": "33 - Egress",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/33 - Egress/33 - Egress.md"
     }
   ],
   "omittedPaths": [],

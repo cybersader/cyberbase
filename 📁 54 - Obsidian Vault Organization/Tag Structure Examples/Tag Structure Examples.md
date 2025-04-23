@@ -10,13 +10,14 @@ date modified: Wednesday, March 19th 2025, 12:49 pm
 [File Order](../../📁%2010%20-%20My%20Obsidian%20Stack/File%20Order/File%20Order.md) 
 [Obsidian File Names](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20File%20Names/Obsidian%20File%20Names.md)
 [Vault Folder & Tag Structure](../Vault%20Folder%20&%20Tag%20Structure/Vault%20Folder%20&%20Tag%20Structure.md)
-
+[Cyberbase Tag Structure](../Cyberbase%20Tag%20Structure/Cyberbase%20Tag%20Structure.md)
 
 > [!info] This is a work in progress - if you have better examples, then feel free to contribute
 
 # My Current Tagging Structure
 
 > [!tldr] My tag structure uses my [SEACOW(r)](../Knowledge%20Platform%20Organization%20Framework/Knowledge%20Platform%20Organization%20Meta-Framework.md) knowledge platform organization framework
+
 
 # Problems in Tagging
 
@@ -39,8 +40,3 @@ date modified: Wednesday, March 19th 2025, 12:49 pm
 - Folder Notes
 - AutoMover
 - Auto Note Mover
-- 
-
-# What needs to be in structure
-
-- 
