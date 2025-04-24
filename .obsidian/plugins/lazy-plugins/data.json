@@ -1028,6 +1028,12 @@
       },
       "cycle-through-panes": {
         "startupType": "instant"
+      },
+      "crosslink-advanced": {
+        "startupType": "disabled"
+      },
+      "tag-page-md": {
+        "startupType": "disabled"
       }
     },
     "loadOrder": []
