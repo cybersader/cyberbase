@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "The Modern Adversary (Crowdstrike)",
+      "path": "📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/The Modern Adversary (Crowdstrike)/The Modern Adversary (Crowdstrike).md"
+    },
+    {
       "basename": "FBI Agent & Ex-Hacker GPSEC",
       "path": "📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/FBI Agent & Ex-Hacker GPSEC/FBI Agent & Ex-Hacker GPSEC.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
-    },
-    {
-      "basename": "Home-Ec 2025",
-      "path": "🕸️ UNSTRUCTURED/Home-Ec 2025/Home-Ec 2025.md"
     }
   ],
   "omittedPaths": [],
