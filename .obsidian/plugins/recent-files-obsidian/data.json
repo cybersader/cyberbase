@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "GPSEC 2025",
+      "path": "📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/GPSEC 2025.md"
+    },
+    {
+      "basename": "Security Conferences",
+      "path": "📁 06 - Learning, Notes/Security Conferences/Security Conferences.md"
+    },
+    {
       "basename": "Backdoors & Breaches",
       "path": "📁 05 - Organizational Cyber/Game-Based Tabletops/Backdoors & Breaches/Backdoors & Breaches.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "34 - Pentest Tooling",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/34 - Pentest Tooling/34 - Pentest Tooling.md"
-    },
-    {
-      "basename": "91 - Q&A",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/91 - Q&A/91 - Q&A.md"
-    },
-    {
-      "basename": "90 - Key Takeaways",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/90 - Key Takeaways/90 - Key Takeaways.md"
     }
   ],
   "omittedPaths": [],

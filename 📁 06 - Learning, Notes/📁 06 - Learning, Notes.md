@@ -31,6 +31,7 @@ publish: true
 	- **[[PowerShell for InfoSec]]**
 - **[[Cyber Movies, TV, Documentaries]]**
 - **[[Financial Sector & Cyber]]**
+- **[[Security Conferences]]**
 - **[[StudyGRC]]**
 
 %% End Waypoint %%
