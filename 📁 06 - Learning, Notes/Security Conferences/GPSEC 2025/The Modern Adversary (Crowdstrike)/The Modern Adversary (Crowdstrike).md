@@ -5,7 +5,7 @@ tags: []
 publish: true
 permalink: 
 date created: Thursday, April 24th 2025, 11:10 am
-date modified: Thursday, April 24th 2025, 11:34 am
+date modified: Thursday, April 24th 2025, 11:50 am
 authors:
   - Duke McDonald
 ---
@@ -50,4 +50,4 @@ authors:
 - Sharepoint is popular 
 - They look for docs for things like VPN access
 
-- 
+- Know your adversary - somehow
