@@ -6,6 +6,7 @@ date created: Monday, April 29th 2024, 2:39 pm
 date modified: Wednesday, May 8th 2024, 10:01 pm
 ---
 %% Begin Waypoint %%
+- **[[Financial Industry]]**
 - **[[FS-ISAC]]**
 	- **[[FS-ISAC Spring Summit 2024]]**
 		- **[[Adopting CRI Profile v2]]**
