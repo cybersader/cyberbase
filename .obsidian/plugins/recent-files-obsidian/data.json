@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Financial Industry",
+      "path": "📁 06 - Learning, Notes/Financial Sector & Cyber/Financial Industry/Financial Industry.md"
+    },
+    {
+      "basename": "ACH - Automated Clearing House",
+      "path": "📁 06 - Learning, Notes/Financial Sector & Cyber/Financial Industry/ACH - Automated Clearing House/ACH - Automated Clearing House.md"
+    },
+    {
+      "basename": "Financial Sector & Cyber",
+      "path": "📁 06 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md"
+    },
+    {
       "basename": "The Modern Adversary (Crowdstrike)",
       "path": "📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/The Modern Adversary (Crowdstrike)/The Modern Adversary (Crowdstrike).md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "Credit Freeze vs Fraud Alert",
       "path": "⬇️ Clippings/ChatGPT/Credit Freeze vs Fraud Alert/Credit Freeze vs Fraud Alert.md"
-    },
-    {
-      "basename": "Personal Privacy & Identity Handling",
-      "path": "📁 07 - Cybersader Arsenal/Personal Privacy & Identity Handling/Personal Privacy & Identity Handling.md"
-    },
-    {
-      "basename": "Personal Info Breach Response",
-      "path": "📁 07 - Cybersader Arsenal/Personal Info Breach Response/Personal Info Breach Response.md"
-    },
-    {
-      "basename": "My Media Server",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
     }
   ],
   "omittedPaths": [],
