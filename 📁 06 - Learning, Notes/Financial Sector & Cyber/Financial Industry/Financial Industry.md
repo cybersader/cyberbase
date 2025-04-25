@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Friday, April 25th 2025, 8:44 am
-date modified: Friday, April 25th 2025, 8:56 am
+date modified: Friday, April 25th 2025, 11:01 am
 ---
 
 %% Begin Waypoint %%
@@ -38,3 +38,5 @@ date modified: Friday, April 25th 2025, 8:56 am
 	- Access control is limited using some number system per screens
 - Formance
 	- Open source financial core
+
+- 
