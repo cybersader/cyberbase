@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sun, Apr 20, 2025 - [[⬇️ Clippings]]
+> Fri, Apr 25, 2025 - [[📁 06 - Learning, Notes]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                                                                                                        | Last modified            |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                                                              | Sun - 4/20/2025, 1:38 PM |
-| [[⬇️ Clippings/Websites/Techlore/Techlore.md\|Techlore]]                                                                                                                                                                    | Sun - 4/20/2025, 1:38 PM |
-| [[⬇️ Clippings/Tech/OperationPrivacy/OperationPrivacy.md\|OperationPrivacy]]                                                                                                                                                | Sun - 4/20/2025, 1:37 PM |
-| [[📁 33 - Diving/📁 33 - Diving.md\|📁 33 - Diving]]                                                                                                                                                                        | Sun - 4/20/2025, 1:33 PM |
-| [[⬇️ Clippings/Tech/Formance/Formance.md\|Formance]]                                                                                                                                                                        | Sun - 4/20/2025, 1:28 PM |
-| [[⬇️ Clippings/Tech/Webstudio_website_builder/Webstudio_website_builder.md\|Webstudio_website_builder]]                                                                                                                     | Sun - 4/20/2025, 1:25 PM |
-| [[⬇️ Clippings/Tech/Khoj/Khoj.md\|Khoj]]                                                                                                                                                                                    | Sun - 4/20/2025, 1:24 PM |
-| [[⬇️ Clippings/Websites/Algorа/Algorа.md\|Algorа]]                                                                                                                                                                          | Sun - 4/20/2025, 1:19 PM |
-| [[⬇️ Clippings/Tech/Screenpipe/Screenpipe.md\|Screenpipe]]                                                                                                                                                                  | Sun - 4/20/2025, 1:18 PM |
-| [[⬇️ Clippings/Articles, Blogs/The Value of Christian Principles in Cybersecurity Education/The Value of Christian Principles in Cybersecurity Education.md\|The Value of Christian Principles in Cybersecurity Education]] | Sun - 4/20/2025, 1:15 PM |
+| File                                                                                                                                                                     | Last modified            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
+| [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                                                                                          | Fri - 4/25/2025, 4:14 PM |
+| [[📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/The Modern Adversary (Crowdstrike)/The Modern Adversary (Crowdstrike).md\|The Modern Adversary (Crowdstrike)]] | Fri - 4/25/2025, 4:14 PM |
+| [[📁 06 - Learning, Notes/Security Conferences/Security Conferences.md\|Security Conferences]]                                                                           | Fri - 4/25/2025, 4:14 PM |
+| [[📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/GPSEC 2025.md\|GPSEC 2025]]                                                                                    | Fri - 4/25/2025, 4:14 PM |
+| [[📁 06 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md\|Financial Sector & Cyber]]                                                               | Fri - 4/25/2025, 4:14 PM |
+| [[📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/FBI Agent & Ex-Hacker GPSEC/FBI Agent & Ex-Hacker GPSEC.md\|FBI Agent & Ex-Hacker GPSEC]]                      | Fri - 4/25/2025, 4:14 PM |
+| [[📁 06 - Learning, Notes/Financial Sector & Cyber/Financial Industry/Financial Industry.md\|Financial Industry]]                                                        | Fri - 4/25/2025, 4:14 PM |
+| [[📁 06 - Learning, Notes/Financial Sector & Cyber/Financial Industry/ACH - Automated Clearing House/ACH - Automated Clearing House.md\|ACH - Automated Clearing House]] | Fri - 4/25/2025, 4:14 PM |
+| [[📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md\|Tag Structure Examples]]                                                         | Tue - 4/22/2025, 8:20 PM |
+| [[📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md\|Vault Folder & Tag Structure]]                                       | Tue - 4/22/2025, 8:15 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
