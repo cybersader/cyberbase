@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Saturday, April 26th 2025, 9:54 pm
-date modified: Saturday, April 26th 2025, 10:31 pm
+date modified: Sunday, April 27th 2025, 12:58 pm
 ---
 
 # Plugins that use or affect structure
@@ -23,17 +23,18 @@ date modified: Saturday, April 26th 2025, 10:31 pm
 - https://www.obsidianstats.com/plugins/ai-tagger-universe
 
 - https://www.obsidianstats.com/plugins/index-notes
+- https://github.com/d7sd6u/obsidian-hide-index-files
+- https://github.com/d7sd6u/obsidian-reveal-folded
+- https://github.com/d7sd6u/obsidian-lazy-cached-vault-load
+- https://github.com/d7sd6u/obsidian-auto-folder-note-paste
+- https://github.com/d7sd6u/obsidian-folders-graph
+
 - https://www.obsidianstats.com/plugins/tag-buddy
 - https://www.obsidianstats.com/plugins/quick-tagger
 - https://www.obsidianstats.com/plugins/tag-page-md
 - https://www.obsidianstats.com/plugins/graph-nested-tags
 - https://www.obsidianstats.com/plugins/graph-analysis
 - https://www.obsidianstats.com/plugins/crosslink-advanced
-- https://github.com/d7sd6u/obsidian-lazy-cached-vault-load
-- https://github.com/d7sd6u/obsidian-auto-folder-note-paste
-- https://github.com/d7sd6u/obsidian-folders-graph
 - https://www.obsidianstats.com/plugins/link-maintainer
 - https://www.obsidianstats.com/plugins/folder-file-splitter
-- https://github.com/d7sd6u/obsidian-hide-index-files
-- https://github.com/d7sd6u/obsidian-reveal-folded
-- 
+
