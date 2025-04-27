@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sat, Apr 26, 2025 - [[Tag & Folder Plugins]]
+> Sun, Apr 27, 2025 - [[Tag & Folder Plugins]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -102,15 +102,15 @@ SORT file.mtime DESC LIMIT 10
 
 | File                                                                                                                                                                     | Last modified             |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------- |
-| [[📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md\|Tag & Folder Plugins]]                                                               | Sat - 4/26/2025, 10:31 PM |
+| [[📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md\|Tag & Folder Plugins]]                                                               | Sun - 4/27/2025, 12:58 PM |
 | [[📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md\|📁 54 - Obsidian Vault Organization]]                                                      | Sat - 4/26/2025, 9:54 PM  |
 | [[📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md\|Tag Structure Examples]]                                                         | Sat - 4/26/2025, 9:54 PM  |
 | [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                                                                                          | Fri - 4/25/2025, 4:14 PM  |
-| [[📁 06 - Learning, Notes/Security Conferences/Security Conferences.md\|Security Conferences]]                                                                           | Fri - 4/25/2025, 4:14 PM  |
 | [[📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/The Modern Adversary (Crowdstrike)/The Modern Adversary (Crowdstrike).md\|The Modern Adversary (Crowdstrike)]] | Fri - 4/25/2025, 4:14 PM  |
+| [[📁 06 - Learning, Notes/Security Conferences/Security Conferences.md\|Security Conferences]]                                                                           | Fri - 4/25/2025, 4:14 PM  |
 | [[📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/GPSEC 2025.md\|GPSEC 2025]]                                                                                    | Fri - 4/25/2025, 4:14 PM  |
-| [[📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/FBI Agent & Ex-Hacker GPSEC/FBI Agent & Ex-Hacker GPSEC.md\|FBI Agent & Ex-Hacker GPSEC]]                      | Fri - 4/25/2025, 4:14 PM  |
 | [[📁 06 - Learning, Notes/Financial Sector & Cyber/Financial Sector & Cyber.md\|Financial Sector & Cyber]]                                                               | Fri - 4/25/2025, 4:14 PM  |
+| [[📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/FBI Agent & Ex-Hacker GPSEC/FBI Agent & Ex-Hacker GPSEC.md\|FBI Agent & Ex-Hacker GPSEC]]                      | Fri - 4/25/2025, 4:14 PM  |
 | [[📁 06 - Learning, Notes/Financial Sector & Cyber/Financial Industry/Financial Industry.md\|Financial Industry]]                                                        | Fri - 4/25/2025, 4:14 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
