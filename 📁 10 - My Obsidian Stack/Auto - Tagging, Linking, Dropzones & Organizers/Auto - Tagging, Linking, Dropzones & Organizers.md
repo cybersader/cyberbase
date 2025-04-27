@@ -1,9 +1,11 @@
 ---
-aliases: 
-tags: 
+permalink:
+title:
+aliases: []
+tags: []
 publish: true
 date created: Friday, April 26th 2024, 3:30 pm
-date modified: Saturday, April 27th 2024, 1:50 pm
+date modified: Sunday, April 27th 2025, 5:10 pm
 ---
 
 %% Begin Landmark %%
@@ -20,7 +22,9 @@ Auto-linking and tagging
 - [mymind is the extension for your mind.](https://mymind.com/) 
 - [AI Obsidian Manager - Never Organize your Obsidian Vault](https://fileorganizer2000.com/) 
 	- [(29) File Organizer 2000: Tips & Tricks - YouTube](https://www.youtube.com/playlist?list=PLgRcC-DFR5jdUxbSBuNeymwYTH_FSVxio)
+
 # Stack Ideas
+
 - Mobile Dropzone Vault -> GitHub [repo-file-sync-action](https://github.com/BetaHuhn/repo-file-sync-action) -> Main vault ([awesome-cyber](https://github.com/cybersader/awesome-cyber)) -> [File Organizer 2000](File%20Organizer%202000/File%20Organizer%202000.md)  (dropzone folder in main vault)
 	- Create a dropzone vault that connects to the main vault via the repo file sync action GitHub action
 	- Runs [File Organizer 2000](File%20Organizer%202000/File%20Organizer%202000.md) right when the main vault is opened on a client

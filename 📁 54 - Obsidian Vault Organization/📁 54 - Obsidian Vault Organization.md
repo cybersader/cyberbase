@@ -9,10 +9,13 @@ date modified: Saturday, March 15th 2025, 5:46 pm
 
 %% Begin Waypoint %%
 - **[[Choosing a Tag Structure in Obsidian]]**
+- **[[Combining Tags, Links, & Folders]]**
 - **[[Cyberbase Folder Structure]]**
 - **[[Cyberbase New Note Workflow]]**
 - **[[Cyberbase Tag Structure]]**
 - **[[Dynamic Folders & Tags]]**
+- **[[Dynamic Tags & Folders Plugin]]**
+- **[[Dynamic Tags & Folders Plugin Development]]**
 - **[[File Organization Systems]]**
 - **[[Folder Structure Ideas]]**
 - **[[Folders vs Tags vs Links vs Metadata]]**

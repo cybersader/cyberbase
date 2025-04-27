@@ -21,7 +21,7 @@ Add a system that decides when to dynamically move something to a different fold
 
 # Make my own plugin?
 
-[Dynamic Tags & Folders Plugin Development](🕸️%20UNSTRUCTURED/Dynamic%20Tags%20&%20Folders%20Plugin%20Development/Dynamic%20Tags%20&%20Folders%20Plugin%20Development.md)
+[Dynamic Tags & Folders Plugin Development](../Dynamic%20Tags%20&%20Folders%20Plugin%20Development/Dynamic%20Tags%20&%20Folders%20Plugin%20Development.md)
 
 Be awesome if I could say anything the regex matches this in folder path gets a converted tag based on the path to snake case.
 

@@ -1,8 +1,36 @@
 {
   "recentFiles": [
     {
+      "basename": "Combining Tags, Links, & Folders",
+      "path": "📁 54 - Obsidian Vault Organization/Combining Tags, Links, & Folders/Combining Tags, Links, & Folders.md"
+    },
+    {
       "basename": "Tag & Folder Plugins",
       "path": "📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md"
+    },
+    {
+      "basename": "Dynamic Tags & Folders Plugin Development",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
+    },
+    {
+      "basename": "Tag Pages",
+      "path": "📁 54 - Obsidian Vault Organization/Tag Pages/Tag Pages.md"
+    },
+    {
+      "basename": "Using Tags",
+      "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
+    },
+    {
+      "basename": "Auto - Tagging, Linking, Dropzones & Organizers",
+      "path": "📁 10 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md"
+    },
+    {
+      "basename": "📁 54 - Obsidian Vault Organization",
+      "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
+    },
+    {
+      "basename": "Cyberbase Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Tag Structure/Cyberbase Tag Structure.md"
     },
     {
       "basename": "Vault Folder & Tag Structure",
@@ -25,32 +53,8 @@
       "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
     },
     {
-      "basename": "📁 54 - Obsidian Vault Organization",
-      "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
-    },
-    {
-      "basename": "Cyberbase Tag Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Tag Structure/Cyberbase Tag Structure.md"
-    },
-    {
-      "basename": "Auto - Tagging, Linking, Dropzones & Organizers",
-      "path": "📁 10 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md"
-    },
-    {
-      "basename": "Tag Pages",
-      "path": "📁 54 - Obsidian Vault Organization/Tag Pages/Tag Pages.md"
-    },
-    {
-      "basename": "Dynamic Tags & Folders Plugin Development",
-      "path": "🕸️ UNSTRUCTURED/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
-    },
-    {
       "basename": "Dynamic Folders & Tags",
       "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
-    },
-    {
-      "basename": "Using Tags",
-      "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
     },
     {
       "basename": "📁 52 - Obsidian Starters & Templates",
@@ -195,10 +199,6 @@
     {
       "basename": "Home-Ec 2025",
       "path": "🕸️ UNSTRUCTURED/Home-Ec 2025/Home-Ec 2025.md"
-    },
-    {
-      "basename": "34 - Pentest Tooling",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/34 - Pentest Tooling/34 - Pentest Tooling.md"
     }
   ],
   "omittedPaths": [],
