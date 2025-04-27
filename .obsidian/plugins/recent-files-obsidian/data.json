@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "📁 54 - Obsidian Vault Organization",
-      "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
+      "basename": "Tag & Folder Plugins",
+      "path": "📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md"
+    },
+    {
+      "basename": "Cyberbase Starter Vault",
+      "path": "📁 52 - Obsidian Starters & Templates/Cyberbase Starter Vault/Cyberbase Starter Vault.md"
+    },
+    {
+      "basename": "2 - Vault Organization",
+      "path": "📁 52 - Obsidian Starters & Templates/2 - Vault Organization/2 - Vault Organization.md"
+    },
+    {
+      "basename": "0 - FAQ",
+      "path": "📁 52 - Obsidian Starters & Templates/0 - FAQ/0 - FAQ.md"
     },
     {
       "basename": "Tag Structure Examples",
       "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
+    },
+    {
+      "basename": "📁 54 - Obsidian Vault Organization",
+      "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
     },
     {
       "basename": "Cyberbase Tag Structure",
@@ -183,22 +199,6 @@
     {
       "basename": "34 - Pentest Tooling",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/34 - Pentest Tooling/34 - Pentest Tooling.md"
-    },
-    {
-      "basename": "91 - Q&A",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/91 - Q&A/91 - Q&A.md"
-    },
-    {
-      "basename": "92 - Action Items for Orgs",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/92 - Action Items for Orgs/92 - Action Items for Orgs.md"
-    },
-    {
-      "basename": "90 - Key Takeaways",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/Assumed Compromise/90 - Key Takeaways/90 - Key Takeaways.md"
-    },
-    {
-      "basename": "BHIS, Antisyphon",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/BHIS, Antisyphon.md"
     }
   ],
   "omittedPaths": [],

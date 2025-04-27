@@ -22,6 +22,7 @@ date modified: Saturday, March 15th 2025, 5:46 pm
 - **[[Knowledge Platform Organization Meta-Framework]]**
 - **[[Obsidian Tag Limitations & Unicode Order]]**
 - **[[SEACOWr Quick Start]]**
+- **[[Tag & Folder Plugins]]**
 - **[[Tag Bugs & Issues]]**
 - **[[Tag Pages]]**
 - **[[Tag Structure Examples]]**
