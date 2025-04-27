@@ -1,11 +1,11 @@
 ---
-aliases: 
-tags: 
+aliases: []
+tags: []
 publish: true
 permalink:
 title:
 date created: Saturday, April 26th 2025, 9:54 pm
-date modified: Saturday, April 26th 2025, 9:54 pm
+date modified: Saturday, April 26th 2025, 10:31 pm
 ---
 
 # Plugins that use or affect structure
@@ -20,6 +20,8 @@ date modified: Saturday, April 26th 2025, 9:54 pm
 - Auto Note Mover
 
 - https://www.obsidianstats.com/plugins/metadata-auto-classifier
+- https://www.obsidianstats.com/plugins/ai-tagger-universe
+
 - https://www.obsidianstats.com/plugins/index-notes
 - https://www.obsidianstats.com/plugins/tag-buddy
 - https://www.obsidianstats.com/plugins/quick-tagger
