@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Saturday, April 26th 2025, 9:54 pm
-date modified: Sunday, April 27th 2025, 12:58 pm
+date modified: Sunday, April 27th 2025, 4:51 pm
 ---
 
 # Plugins that use or affect structure
@@ -18,6 +18,8 @@ date modified: Sunday, April 27th 2025, 12:58 pm
 - Folder Notes
 - AutoMover
 - Auto Note Mover
+
+- Tag Page
 
 - https://www.obsidianstats.com/plugins/metadata-auto-classifier
 - https://www.obsidianstats.com/plugins/ai-tagger-universe
