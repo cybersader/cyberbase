@@ -38,3 +38,5 @@ date modified: Sunday, April 27th 2025, 12:58 pm
 - https://www.obsidianstats.com/plugins/link-maintainer
 - https://www.obsidianstats.com/plugins/folder-file-splitter
 
+- https://www.obsidianstats.com/plugins/moc-link-helper
+- 
