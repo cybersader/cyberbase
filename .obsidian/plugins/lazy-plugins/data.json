@@ -1034,6 +1034,9 @@
       },
       "tag-page-md": {
         "startupType": "disabled"
+      },
+      "open-tab-settings": {
+        "startupType": "disabled"
       }
     },
     "loadOrder": []

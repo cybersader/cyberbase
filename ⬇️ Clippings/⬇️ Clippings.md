@@ -16,6 +16,7 @@
 - **[[Reddit]]**
 - **[[Tech]]**
 	- **[[Actions For Obsidian]]**
+	- **[[Bruno]]**
 	- **[[Castopod]]**
 	- **[[Chatwoot]]**
 	- **[[Cryptee]]**
@@ -54,6 +55,7 @@
 	- **[[VoidZero]]**
 	- **[[Wakatime]]**
 	- **[[Webstudio_website_builder]]**
+	- **[[Yaak]]**
 	- **[[Zivver Security]]**
 - **[[Websites]]**
 	- **[[Algorа]]**

@@ -1,16 +1,36 @@
 {
   "recentFiles": [
     {
+      "basename": "Dynamic Tags & Folders Plugin Development",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
+    },
+    {
+      "basename": "Yaak",
+      "path": "⬇️ Clippings/Tech/Yaak/Yaak.md"
+    },
+    {
+      "basename": "Bruno",
+      "path": "⬇️ Clippings/Tech/Bruno/Bruno.md"
+    },
+    {
+      "basename": "⬇️ New Tools",
+      "path": "⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools.md"
+    },
+    {
+      "basename": "Plugin Development",
+      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
+    },
+    {
+      "basename": "Dynamic Folders & Tags",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
+    },
+    {
       "basename": "Combining Tags, Links, & Folders",
       "path": "📁 54 - Obsidian Vault Organization/Combining Tags, Links, & Folders/Combining Tags, Links, & Folders.md"
     },
     {
       "basename": "Tag & Folder Plugins",
       "path": "📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md"
-    },
-    {
-      "basename": "Dynamic Tags & Folders Plugin Development",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
     },
     {
       "basename": "Tag Pages",
@@ -51,10 +71,6 @@
     {
       "basename": "Tag Structure Examples",
       "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
-    },
-    {
-      "basename": "Dynamic Folders & Tags",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
     },
     {
       "basename": "📁 52 - Obsidian Starters & Templates",
@@ -183,22 +199,6 @@
     {
       "basename": "Credit Freeze vs Fraud Alert",
       "path": "⬇️ Clippings/ChatGPT/Credit Freeze vs Fraud Alert/Credit Freeze vs Fraud Alert.md"
-    },
-    {
-      "basename": "Personal Privacy & Identity Handling",
-      "path": "📁 07 - Cybersader Arsenal/Personal Privacy & Identity Handling/Personal Privacy & Identity Handling.md"
-    },
-    {
-      "basename": "Personal Info Breach Response",
-      "path": "📁 07 - Cybersader Arsenal/Personal Info Breach Response/Personal Info Breach Response.md"
-    },
-    {
-      "basename": "My Media Server",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
-    },
-    {
-      "basename": "Home-Ec 2025",
-      "path": "🕸️ UNSTRUCTURED/Home-Ec 2025/Home-Ec 2025.md"
     }
   ],
   "omittedPaths": [],
