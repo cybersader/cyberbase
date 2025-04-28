@@ -5,7 +5,7 @@ aliases: []
 publish: true
 permalink: 
 date created: Sunday, March 23rd 2025, 2:20 pm
-date modified: Monday, April 28th 2025, 12:48 pm
+date modified: Monday, April 28th 2025, 1:21 pm
 ---
 
 ---
@@ -14,6 +14,7 @@ LLM input:
 I'm building a plugin for Obsidian. Below I'll share what I'm trying to build and the environment I have set up right now using bun and husky.  Let's start developing this thing.
 
 [Obsidian Plugin Development Quickstart](../../🕸️%20UNSTRUCTURED/Obsidian%20Plugin%20Development%20Quickstart/Obsidian%20Plugin%20Development%20Quickstart.md) - testing and plugin development information and environment docs
+
 ## 1) Naming & Concept
 
 - Dynamic Tags & Folders
@@ -130,3 +131,13 @@ The options will be similar to Tag to Folders:
 	- [github.com > IdreesInc/Waypoint: Obsidian plugin that gives you the power to generate dynamic MOCs in your folder notes. Enables folders to show up in the graph view and removes the need for messy tags!](https://github.com/IdreesInc/Waypoint)
 - Folder Notes
 	- [github.com > LostPaul/obsidian-folder-notes: Create notes within folders that can be accessed without collapsing the folder](https://github.com/LostPaul/obsidian-folder-notes)
+
+# 4) Additional Requirements
+
+- I need a README.md that shows:
+	- Architecture of the code
+	- Logical flow of components
+	- Any modeling of the components really
+	- How to get started
+	- How to contribute
+	- 
