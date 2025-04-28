@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "Obsidian Plugin Development Quickstart",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Plugin Development Quickstart/Obsidian Plugin Development Quickstart.md"
+      "basename": "Tag & Folder Plugins",
+      "path": "📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md"
+    },
+    {
+      "basename": "Open Explorer in PS",
+      "path": "⬇️ Clippings/ChatGPT/Open Explorer in PS/Open Explorer in PS.md"
     },
     {
       "basename": "Plugin Development",
       "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
+    },
+    {
+      "basename": "Codex CLI VS Code Setup",
+      "path": "⬇️ Clippings/ChatGPT/Codex CLI VS Code Setup/Codex CLI VS Code Setup.md"
+    },
+    {
+      "basename": "Obsidian Plugin Development Quickstart",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Plugin Development Quickstart/Obsidian Plugin Development Quickstart.md"
     },
     {
       "basename": "Dynamic Folders & Tags",
@@ -35,10 +47,6 @@
     {
       "basename": "Combining Tags, Links, & Folders",
       "path": "📁 54 - Obsidian Vault Organization/Combining Tags, Links, & Folders/Combining Tags, Links, & Folders.md"
-    },
-    {
-      "basename": "Tag & Folder Plugins",
-      "path": "📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md"
     },
     {
       "basename": "Tag Pages",
@@ -191,14 +199,6 @@
     {
       "basename": "Nomorobo",
       "path": "⬇️ Clippings/Tech/Nomorobo/Nomorobo.md"
-    },
-    {
-      "basename": "Web Clipper Testing",
-      "path": "📦 VAULT SANDBOX TESTING/Web Clipper Testing/Web Clipper Testing.md"
-    },
-    {
-      "basename": "Toggl Track",
-      "path": "⬇️ Clippings/Tech/Toggl Track/Toggl Track.md"
     }
   ],
   "omittedPaths": [],
