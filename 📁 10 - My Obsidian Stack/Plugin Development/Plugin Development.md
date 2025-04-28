@@ -10,6 +10,7 @@ date modified: Sunday, March 23rd 2025, 3:49 pm
 [Obsidian Plugins and Ideas for Contributions](../../📁%2051%20-%20Cyberbase/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions/Obsidian%20Plugins%20and%20Ideas%20for%20Contributions.md)
 [⬇️ Obsidian Ideas Drop](../⬇️%20Obsidian%20Ideas%20Drop/⬇️%20Obsidian%20Ideas%20Drop.md)
 [Divide & Conquer Plugin Testing](../../🕸️%20UNSTRUCTURED/Divide%20&%20Conquer%20Plugin%20Testing/Divide%20&%20Conquer%20Plugin%20Testing.md)
+[Obsidian Plugin Development Quickstart](../../🕸️%20UNSTRUCTURED/Obsidian%20Plugin%20Development%20Quickstart/Obsidian%20Plugin%20Development%20Quickstart.md)
 
 - [How to get started with developing a custom Plugin? - Developers: Plugin & API - Obsidian Forum](https://forum.obsidian.md/t/how-to-get-started-with-developing-a-custom-plugin/8157/3)
 - [Leaving the Comfort Zone Behind: The Journey to Developing a Plugin for Obsidian.md - DEV Community](https://dev.to/dariocasciato/leaving-the-comfort-zone-behind-the-journey-to-developing-a-plugin-for-obsidianmd-53hi)

@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Obsidian Plugin Development Quickstart",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Plugin Development Quickstart/Obsidian Plugin Development Quickstart.md"
+    },
+    {
+      "basename": "Plugin Development",
+      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
+    },
+    {
       "basename": "Dynamic Folders & Tags",
       "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
     },
@@ -23,10 +31,6 @@
     {
       "basename": "⬇️ New Tools",
       "path": "⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools.md"
-    },
-    {
-      "basename": "Plugin Development",
-      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
     },
     {
       "basename": "Combining Tags, Links, & Folders",
@@ -195,10 +199,6 @@
     {
       "basename": "Toggl Track",
       "path": "⬇️ Clippings/Tech/Toggl Track/Toggl Track.md"
-    },
-    {
-      "basename": "Wakatime",
-      "path": "⬇️ Clippings/Tech/Wakatime/Wakatime.md"
     }
   ],
   "omittedPaths": [],
