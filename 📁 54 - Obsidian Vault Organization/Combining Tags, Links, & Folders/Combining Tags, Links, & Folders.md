@@ -5,10 +5,10 @@ publish: true
 permalink: 
 title: 
 date created: Sunday, April 27th 2025, 5:20 pm
-date modified: Sunday, April 27th 2025, 5:23 pm
+date modified: Monday, April 28th 2025, 12:31 pm
 ---
 
-# Combing Tags and Folders
+# Combining Tags and Folders
 
 - [Dynamic Folders & Tags](../Dynamic%20Folders%20&%20Tags/Dynamic%20Folders%20&%20Tags.md)
 - [Dynamic Tags & Folders Plugin Development](../Dynamic%20Tags%20&%20Folders%20Plugin%20Development/Dynamic%20Tags%20&%20Folders%20Plugin%20Development.md)

@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "Dynamic Tags & Folders Plugin Development",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
+    },
+    {
+      "basename": "Obsidian Plugin Development Quickstart",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Plugin Development Quickstart/Obsidian Plugin Development Quickstart.md"
+    },
+    {
       "basename": "Tag & Folder Plugins",
       "path": "📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md"
+    },
+    {
+      "basename": "Combining Tags, Links, & Folders",
+      "path": "📁 54 - Obsidian Vault Organization/Combining Tags, Links, & Folders/Combining Tags, Links, & Folders.md"
+    },
+    {
+      "basename": "Dynamic Folders & Tags",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
     },
     {
       "basename": "Open Explorer in PS",
@@ -17,20 +33,8 @@
       "path": "⬇️ Clippings/ChatGPT/Codex CLI VS Code Setup/Codex CLI VS Code Setup.md"
     },
     {
-      "basename": "Obsidian Plugin Development Quickstart",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Plugin Development Quickstart/Obsidian Plugin Development Quickstart.md"
-    },
-    {
-      "basename": "Dynamic Folders & Tags",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
-    },
-    {
       "basename": "refined-github extension",
       "path": "⬇️ Clippings/Tech/refined-github extension/refined-github extension.md"
-    },
-    {
-      "basename": "Dynamic Tags & Folders Plugin Development",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
     },
     {
       "basename": "Yaak",
@@ -43,10 +47,6 @@
     {
       "basename": "⬇️ New Tools",
       "path": "⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools.md"
-    },
-    {
-      "basename": "Combining Tags, Links, & Folders",
-      "path": "📁 54 - Obsidian Vault Organization/Combining Tags, Links, & Folders/Combining Tags, Links, & Folders.md"
     },
     {
       "basename": "Tag Pages",
@@ -195,10 +195,6 @@
     {
       "basename": "The Value of Christian Principles in Cybersecurity Education",
       "path": "⬇️ Clippings/Articles, Blogs/The Value of Christian Principles in Cybersecurity Education/The Value of Christian Principles in Cybersecurity Education.md"
-    },
-    {
-      "basename": "Nomorobo",
-      "path": "⬇️ Clippings/Tech/Nomorobo/Nomorobo.md"
     }
   ],
   "omittedPaths": [],

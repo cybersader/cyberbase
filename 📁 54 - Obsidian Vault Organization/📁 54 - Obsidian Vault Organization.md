@@ -14,7 +14,6 @@ date modified: Saturday, March 15th 2025, 5:46 pm
 - **[[Cyberbase New Note Workflow]]**
 - **[[Cyberbase Tag Structure]]**
 - **[[Dynamic Folders & Tags]]**
-- **[[Dynamic Tags & Folders Plugin]]**
 - **[[Dynamic Tags & Folders Plugin Development]]**
 - **[[File Organization Systems]]**
 - **[[Folder Structure Ideas]]**

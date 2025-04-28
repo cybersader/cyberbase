@@ -12,12 +12,16 @@ date modified: Sunday, April 27th 2025, 4:51 pm
 
 - MyThesaurus
 - TagFolder
+	- [github.com > vrtmrz/obsidian-tagfolder](https://github.com/vrtmrz/obsidian-tagfolder)
 - Tag Wrangler
+	- [obsidianstats.com > Tag Wrangler - Rename](https://www.obsidianstats.com/plugins/tag-wrangler)
 - Folder by tags distributor
     - doesn't handle unstructured notes other than sending them to root
 - Folder Notes
 - AutoMover
+	- [github.com > al0cam/AutoMover: Moves files with specified names into the same folder](https://github.com/al0cam/AutoMover)
 - Auto Note Mover
+	- [github.com > farux/obsidian-auto-note-mover: This is a plugin for Obsidian (https://obsidian.md).](https://github.com/farux/obsidian-auto-note-mover)
 
 - Tag Page
 

@@ -1,14 +1,14 @@
 ---
+title:
 aliases: [Automate Folders Based on Tags, Dynamic Folders Based on Tags, Dynamic Folders From Hierarchical Tags]
 tags: []
 publish: true
 permalink: 
 date created: Monday, March 17th 2025, 11:51 am
-date modified: Sunday, March 23rd 2025, 4:09 pm
+date modified: Monday, April 28th 2025, 12:27 pm
 ---
 
 [Plugin Development](../../📁%2010%20-%20My%20Obsidian%20Stack/Plugin%20Development/Plugin%20Development.md) - could develop a plugin for it
-[Dynamic Tags from Folder](../Dynamic%20Tags%20Based%20on%20Folder/Dynamic%20Tags%20from%20Folder.md) - the opposite of this (automate tag based on folder)
 [QuickAdd Tag Selector](../../🕸️%20UNSTRUCTURED/QuickAdd%20Tag%20Selector/QuickAdd%20Tag%20Selector.md) - select tags while adding new notes with QuickAdd
 [Using Tags](../../📁%2010%20-%20My%20Obsidian%20Stack/Using%20Tags/Using%20Tags.md)
 
