@@ -45,6 +45,7 @@
 	- **[[Raycast]]**
 	- **[[Readdy]]**
 	- **[[Readwise]]**
+	- **[[refined-github extension]]**
 	- **[[Screenpipe]]**
 	- **[[Scrypted]]**
 	- **[[Simplemind]]**

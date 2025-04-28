@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Dynamic Folders & Tags",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
+    },
+    {
+      "basename": "refined-github extension",
+      "path": "⬇️ Clippings/Tech/refined-github extension/refined-github extension.md"
+    },
+    {
       "basename": "Dynamic Tags & Folders Plugin Development",
       "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
     },
@@ -19,10 +27,6 @@
     {
       "basename": "Plugin Development",
       "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
-    },
-    {
-      "basename": "Dynamic Folders & Tags",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
     },
     {
       "basename": "Combining Tags, Links, & Folders",
@@ -195,10 +199,6 @@
     {
       "basename": "Wakatime",
       "path": "⬇️ Clippings/Tech/Wakatime/Wakatime.md"
-    },
-    {
-      "basename": "Credit Freeze vs Fraud Alert",
-      "path": "⬇️ Clippings/ChatGPT/Credit Freeze vs Fraud Alert/Credit Freeze vs Fraud Alert.md"
     }
   ],
   "omittedPaths": [],
