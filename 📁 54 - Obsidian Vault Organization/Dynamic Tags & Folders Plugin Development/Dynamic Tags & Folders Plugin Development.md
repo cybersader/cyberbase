@@ -37,4 +37,4 @@ The idea is to have a bidirectional system where you can define rules to transla
     When rules overlap (a note may belong to multiple folders/tags), let users set priorities so the most specific or preferred rule “wins.” You can also offer options like prompting the user or preserving multiple tags.
     
 - **Additional Features:**  
-    Consider special cases such as handling untagged notes, folder notes (where a folder might have an associated note), and exclusions using regex or glob pa
+    Consider special cases such as handling untagged notes, folder notes (where a folder might have an associated note), and exclusions using regex or glob patterns.
