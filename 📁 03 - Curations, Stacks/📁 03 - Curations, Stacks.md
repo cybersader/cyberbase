@@ -19,6 +19,7 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 - **[[Awesome Dark Web Terms]]**
 - **[[Awesome EDC]]**
 - **[[Awesome IAM]]**
+- **[[Awesome List Templates & Tools]]**
 - **[[Awesome Markdown]]**
 - **[[Awesome NMAP]]**
 - **[[Awesome Office Organizing]]**

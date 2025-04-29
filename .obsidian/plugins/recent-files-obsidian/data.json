@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Tag & Folder Plugins",
+      "path": "📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md"
+    },
+    {
+      "basename": "Awesome List Templates & Tools",
+      "path": "📁 03 - Curations, Stacks/Awesome List Templates & Tools/Awesome List Templates & Tools.md"
+    },
+    {
       "basename": "Obsidian & Cyber Working Group",
       "path": "📁 53 - Cybersader GRC Tools/Obsidian & Cyber Working Group/Obsidian & Cyber Working Group.md"
     },
@@ -11,10 +19,6 @@
     {
       "basename": "Obsidian Plugin Development Quickstart",
       "path": "🕸️ UNSTRUCTURED/Obsidian Plugin Development Quickstart/Obsidian Plugin Development Quickstart.md"
-    },
-    {
-      "basename": "Tag & Folder Plugins",
-      "path": "📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md"
     },
     {
       "basename": "Combining Tags, Links, & Folders",
@@ -195,10 +199,6 @@
     {
       "basename": "Store Now Decrypt Later",
       "path": "⬇ INBOX, DROPZONE/Store Now Decrypt Later/Store Now Decrypt Later.md"
-    },
-    {
-      "basename": "The Value of Christian Principles in Cybersecurity Education",
-      "path": "⬇️ Clippings/Articles, Blogs/The Value of Christian Principles in Cybersecurity Education/The Value of Christian Principles in Cybersecurity Education.md"
     }
   ],
   "omittedPaths": [],
