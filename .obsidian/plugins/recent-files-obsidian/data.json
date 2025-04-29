@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Tag & Folder Plugins",
-      "path": "📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md"
-    },
-    {
       "basename": "Awesome List Templates & Tools",
       "path": "📁 03 - Curations, Stacks/Awesome List Templates & Tools/Awesome List Templates & Tools.md"
+    },
+    {
+      "basename": "Combining Tags, Links, & Folders",
+      "path": "📁 54 - Obsidian Vault Organization/Combining Tags, Links, & Folders/Combining Tags, Links, & Folders.md"
+    },
+    {
+      "basename": "GitHub Readme Templates",
+      "path": "📁 10 - My Obsidian Stack/GitHub Readme Templates/GitHub Readme Templates.md"
+    },
+    {
+      "basename": "Tag & Folder Plugins",
+      "path": "📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md"
     },
     {
       "basename": "Obsidian & Cyber Working Group",
@@ -19,10 +27,6 @@
     {
       "basename": "Obsidian Plugin Development Quickstart",
       "path": "🕸️ UNSTRUCTURED/Obsidian Plugin Development Quickstart/Obsidian Plugin Development Quickstart.md"
-    },
-    {
-      "basename": "Combining Tags, Links, & Folders",
-      "path": "📁 54 - Obsidian Vault Organization/Combining Tags, Links, & Folders/Combining Tags, Links, & Folders.md"
     },
     {
       "basename": "Dynamic Folders & Tags",
@@ -195,10 +199,6 @@
     {
       "basename": "Screenpipe",
       "path": "⬇️ Clippings/Tech/Screenpipe/Screenpipe.md"
-    },
-    {
-      "basename": "Store Now Decrypt Later",
-      "path": "⬇ INBOX, DROPZONE/Store Now Decrypt Later/Store Now Decrypt Later.md"
     }
   ],
   "omittedPaths": [],

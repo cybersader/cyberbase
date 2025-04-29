@@ -17,6 +17,7 @@ date modified: Thursday, April 25th 2024, 4:12 pm
 - **[[Daily Notes Workflow]]**
 - **[[Dataview]]**
 - **[[File Order]]**
+- **[[GitHub Readme Templates]]**
 - **[[Image Handling]]**
 - **[[Linting & Formatting]]**
 - **[[Microsoft Graph API in Obsidian]]**
