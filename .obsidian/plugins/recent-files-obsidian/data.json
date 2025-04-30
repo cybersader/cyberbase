@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "Combining Tags, Links, & Folders",
+      "path": "📁 54 - Obsidian Vault Organization/Combining Tags, Links, & Folders/Combining Tags, Links, & Folders.md"
+    },
+    {
       "basename": "Cyberbase Development",
       "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
+    },
+    {
+      "basename": "Contributable Obsidian Wiki",
+      "path": "📁 51 - Cyberbase/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
     },
     {
       "basename": "Customizing Obsidian Publish",
@@ -19,10 +27,6 @@
     {
       "basename": "✒️ Cyberbase Architecture",
       "path": "📁 51 - Cyberbase/✒️ Cyberbase Architecture/✒️ Cyberbase Architecture.md"
-    },
-    {
-      "basename": "Combining Tags, Links, & Folders",
-      "path": "📁 54 - Obsidian Vault Organization/Combining Tags, Links, & Folders/Combining Tags, Links, & Folders.md"
     },
     {
       "basename": "GitHub Readme Templates",
@@ -195,10 +199,6 @@
     {
       "basename": "Webstudio_website_builder",
       "path": "⬇️ Clippings/Tech/Webstudio_website_builder/Webstudio_website_builder.md"
-    },
-    {
-      "basename": "Thinkst Canary",
-      "path": "⬇️ Clippings/Tech/Thinkst Canary/Thinkst Canary.md"
     }
   ],
   "omittedPaths": [],
