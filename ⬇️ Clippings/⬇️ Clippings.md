@@ -56,6 +56,7 @@
 	- **[[VoidZero]]**
 	- **[[Wakatime]]**
 	- **[[Webstudio_website_builder]]**
+	- **[[Wispr flow]]**
 	- **[[Yaak]]**
 	- **[[Zivver Security]]**
 - **[[Websites]]**

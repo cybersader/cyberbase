@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Awesome List Templates & Tools",
+      "path": "📁 03 - Curations, Stacks/Awesome List Templates & Tools/Awesome List Templates & Tools.md"
+    },
+    {
+      "basename": "Wispr flow",
+      "path": "⬇️ Clippings/Tech/Wispr flow/Wispr flow.md"
+    },
+    {
       "basename": "Combining Tags, Links, & Folders",
       "path": "📁 54 - Obsidian Vault Organization/Combining Tags, Links, & Folders/Combining Tags, Links, & Folders.md"
     },
@@ -15,10 +23,6 @@
     {
       "basename": "Customizing Obsidian Publish",
       "path": "📁 51 - Cyberbase/Customizing Obsidian Publish/Customizing Obsidian Publish.md"
-    },
-    {
-      "basename": "Awesome List Templates & Tools",
-      "path": "📁 03 - Curations, Stacks/Awesome List Templates & Tools/Awesome List Templates & Tools.md"
     },
     {
       "basename": "✒️ Obsidian Tech Stack Diagram",
@@ -195,10 +199,6 @@
     {
       "basename": "📁 33 - Diving",
       "path": "📁 33 - Diving/📁 33 - Diving.md"
-    },
-    {
-      "basename": "Webstudio_website_builder",
-      "path": "⬇️ Clippings/Tech/Webstudio_website_builder/Webstudio_website_builder.md"
     }
   ],
   "omittedPaths": [],
