@@ -16,8 +16,12 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                                                              | Last modified             |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                                                    | Mon - 4/28/2025, 9:10 PM  |
-| [[README.md\|README]]                                                                                                                                                             | Mon - 4/28/2025, 9:10 PM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                                                    | Wed - 4/30/2025, 10:13 PM |
+| [[README.md\|README]]                                                                                                                                                             | Wed - 4/30/2025, 10:12 PM |
+| [[⬇ INBOX, DROPZONE/Symbolic Links/Symbolic Links.md\|Symbolic Links]]                                                                                                            | Wed - 4/30/2025, 9:55 PM  |
+| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                                                                     | Wed - 4/30/2025, 9:55 PM  |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                    | Tue - 4/29/2025, 9:30 PM  |
+| [[⬇️ Clippings/Tech/Wispr flow/Wispr flow.md\|Wispr flow]]                                                                                                                        | Tue - 4/29/2025, 9:30 PM  |
 | [[📁 03 - Curations, Stacks/Awesome List Templates & Tools/Awesome List Templates & Tools.md\|Awesome List Templates & Tools]]                                                    | Mon - 4/28/2025, 8:21 PM  |
 | [[📁 10 - My Obsidian Stack/GitHub Readme Templates/GitHub Readme Templates.md\|GitHub Readme Templates]]                                                                         | Mon - 4/28/2025, 8:21 PM  |
 | [[📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md\|📁 10 - My Obsidian Stack]]                                                                                             | Mon - 4/28/2025, 8:17 PM  |
@@ -29,7 +33,6 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md\|Dynamic Folders & Tags]]                                                                  | Mon - 4/28/2025, 12:27 PM |
 | [[📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md\|📁 54 - Obsidian Vault Organization]]                                                               | Mon - 4/28/2025, 12:27 PM |
 | [[⬇️ Clippings/ChatGPT/ChatGPT.md\|ChatGPT]]                                                                                                                                      | Mon - 4/28/2025, 11:43 AM |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                    | Mon - 4/28/2025, 11:43 AM |
 | [[⬇️ Clippings/ChatGPT/Open Explorer in PS/Open Explorer in PS.md\|Open Explorer in PS]]                                                                                          | Mon - 4/28/2025, 11:43 AM |
 | [[⬇️ Clippings/ChatGPT/Codex CLI VS Code Setup/Codex CLI VS Code Setup.md\|Codex CLI VS Code Setup]]                                                                              | Mon - 4/28/2025, 11:35 AM |
 | [[📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md\|Plugin Development]]                                                                                        | Mon - 4/28/2025, 9:50 AM  |
@@ -63,8 +66,5 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[⬇️ Clippings/Websites/Techlore/Techlore.md\|Techlore]]                                                                                                                          | Sun - 4/20/2025, 1:38 PM  |
 | [[⬇️ Clippings/Tech/OperationPrivacy/OperationPrivacy.md\|OperationPrivacy]]                                                                                                      | Sun - 4/20/2025, 1:37 PM  |
 | [[📁 33 - Diving/📁 33 - Diving.md\|📁 33 - Diving]]                                                                                                                              | Sun - 4/20/2025, 1:33 PM  |
-| [[⬇️ Clippings/Tech/Formance/Formance.md\|Formance]]                                                                                                                              | Sun - 4/20/2025, 1:28 PM  |
-| [[⬇️ Clippings/Tech/Webstudio_website_builder/Webstudio_website_builder.md\|Webstudio_website_builder]]                                                                           | Sun - 4/20/2025, 1:25 PM  |
-| [[⬇️ Clippings/Tech/Khoj/Khoj.md\|Khoj]]                                                                                                                                          | Sun - 4/20/2025, 1:24 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%

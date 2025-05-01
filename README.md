@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Mon, Apr 28, 2025 - [[Awesome List Templates & Tools]]
+> Wed, Apr 30, 2025 - [[Symbolic Links]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                                                      | Last modified             |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 03 - Curations, Stacks/Awesome List Templates & Tools/Awesome List Templates & Tools.md\|Awesome List Templates & Tools]]                                            | Mon - 4/28/2025, 8:21 PM  |
-| [[📁 10 - My Obsidian Stack/GitHub Readme Templates/GitHub Readme Templates.md\|GitHub Readme Templates]]                                                                 | Mon - 4/28/2025, 8:21 PM  |
-| [[📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md\|📁 10 - My Obsidian Stack]]                                                                                     | Mon - 4/28/2025, 8:17 PM  |
-| [[📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md\|📁 03 - Curations, Stacks]]                                                                                     | Mon - 4/28/2025, 7:55 PM  |
-| [[📁 53 - Cybersader GRC Tools/Obsidian & Cyber Working Group/Obsidian & Cyber Working Group.md\|Obsidian & Cyber Working Group]]                                         | Mon - 4/28/2025, 3:40 PM  |
-| [[📁 54 - Obsidian Vault Organization/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md\|Dynamic Tags & Folders Plugin Development]] | Mon - 4/28/2025, 3:00 PM  |
-| [[📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md\|Tag & Folder Plugins]]                                                                | Mon - 4/28/2025, 12:39 PM |
-| [[📁 54 - Obsidian Vault Organization/Combining Tags, Links, & Folders/Combining Tags, Links, & Folders.md\|Combining Tags, Links, & Folders]]                            | Mon - 4/28/2025, 12:31 PM |
-| [[📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md\|Dynamic Folders & Tags]]                                                          | Mon - 4/28/2025, 12:27 PM |
-| [[📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md\|📁 54 - Obsidian Vault Organization]]                                                       | Mon - 4/28/2025, 12:27 PM |
+| File                                                                                                                                                                      | Last modified            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [[⬇ INBOX, DROPZONE/Symbolic Links/Symbolic Links.md\|Symbolic Links]]                                                                                                    | Wed - 4/30/2025, 9:55 PM |
+| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                                                             | Wed - 4/30/2025, 9:55 PM |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                            | Tue - 4/29/2025, 9:30 PM |
+| [[⬇️ Clippings/Tech/Wispr flow/Wispr flow.md\|Wispr flow]]                                                                                                                | Tue - 4/29/2025, 9:30 PM |
+| [[📁 03 - Curations, Stacks/Awesome List Templates & Tools/Awesome List Templates & Tools.md\|Awesome List Templates & Tools]]                                            | Mon - 4/28/2025, 8:21 PM |
+| [[📁 10 - My Obsidian Stack/GitHub Readme Templates/GitHub Readme Templates.md\|GitHub Readme Templates]]                                                                 | Mon - 4/28/2025, 8:21 PM |
+| [[📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md\|📁 10 - My Obsidian Stack]]                                                                                     | Mon - 4/28/2025, 8:17 PM |
+| [[📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md\|📁 03 - Curations, Stacks]]                                                                                     | Mon - 4/28/2025, 7:55 PM |
+| [[📁 53 - Cybersader GRC Tools/Obsidian & Cyber Working Group/Obsidian & Cyber Working Group.md\|Obsidian & Cyber Working Group]]                                         | Mon - 4/28/2025, 3:40 PM |
+| [[📁 54 - Obsidian Vault Organization/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md\|Dynamic Tags & Folders Plugin Development]] | Mon - 4/28/2025, 3:00 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
