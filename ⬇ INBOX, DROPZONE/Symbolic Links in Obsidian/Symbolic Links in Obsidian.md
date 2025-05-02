@@ -1,11 +1,11 @@
 ---
-aliases: 
-tags: 
+aliases: []
+tags: []
 publish: true
 permalink:
 title:
 date created: Wednesday, April 30th 2025, 9:51 pm
-date modified: Wednesday, April 30th 2025, 9:55 pm
+date modified: Wednesday, April 30th 2025, 10:15 pm
 ---
 
 - [chrisdmacrae/symlinks-obsidian: A plugin that refreshes symlinks in an obsidian vault, allowing them to be used.](https://github.com/chrisdmacrae/symlinks-obsidian "chrisdmacrae/symlinks-obsidian: A plugin that refreshes symlinks in an obsidian vault, allowing them to be used.")

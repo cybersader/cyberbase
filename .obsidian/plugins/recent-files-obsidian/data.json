@@ -1,8 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "Symbolic Links",
-      "path": "⬇ INBOX, DROPZONE/Symbolic Links/Symbolic Links.md"
+      "basename": "Obsidian Plugin Development Quickstart",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Plugin Development Quickstart/Obsidian Plugin Development Quickstart.md"
+    },
+    {
+      "basename": "Symbolic Links in Obsidian",
+      "path": "⬇ INBOX, DROPZONE/Symbolic Links in Obsidian/Symbolic Links in Obsidian.md"
     },
     {
       "basename": "Customizing Obsidian Publish",
@@ -51,10 +55,6 @@
     {
       "basename": "Dynamic Tags & Folders Plugin Development",
       "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
-    },
-    {
-      "basename": "Obsidian Plugin Development Quickstart",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Plugin Development Quickstart/Obsidian Plugin Development Quickstart.md"
     },
     {
       "basename": "Dynamic Folders & Tags",

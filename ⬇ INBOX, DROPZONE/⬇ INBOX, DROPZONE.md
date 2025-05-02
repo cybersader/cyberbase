@@ -26,7 +26,7 @@ publish: true
 - **[[Malware Sandboxing]]**
 - **[[Public Threat Actor Reporting, Blacklists]]**
 - **[[Store Now Decrypt Later]]**
-- **[[Symbolic Links]]**
+- **[[Symbolic Links in Obsidian]]**
 - **[[Team Resource Management]]**
 - **[[Video Ideas]]**
 - **[[Windows 11 UI Stuff]]**

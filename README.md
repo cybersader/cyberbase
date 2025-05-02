@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Wed, Apr 30, 2025 - [[Symbolic Links]]
+> Wed, Apr 30, 2025 - [[⬇ INBOX, DROPZONE/Symbolic Links/Symbolic Links in Obsidian]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -102,7 +102,7 @@ SORT file.mtime DESC LIMIT 10
 
 | File                                                                                                                                                                      | Last modified            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[⬇ INBOX, DROPZONE/Symbolic Links/Symbolic Links.md\|Symbolic Links]]                                                                                                    | Wed - 4/30/2025, 9:55 PM |
+| [[⬇ INBOX, DROPZONE/Symbolic Links/Symbolic Links in Obsidian|Symbolic Links]]                                                                                                    | Wed - 4/30/2025, 9:55 PM |
 | [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                                                             | Wed - 4/30/2025, 9:55 PM |
 | [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                            | Tue - 4/29/2025, 9:30 PM |
 | [[⬇️ Clippings/Tech/Wispr flow/Wispr flow.md\|Wispr flow]]                                                                                                                | Tue - 4/29/2025, 9:30 PM |
