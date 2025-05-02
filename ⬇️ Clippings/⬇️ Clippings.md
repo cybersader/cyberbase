@@ -16,6 +16,7 @@
 - **[[Reddit]]**
 - **[[Tech]]**
 	- **[[Actions For Obsidian]]**
+	- **[[Blaze ai]]**
 	- **[[Bruno]]**
 	- **[[Castopod]]**
 	- **[[Chatwoot]]**
@@ -30,17 +31,21 @@
 	- **[[Kittl]]**
 	- **[[Kortex]]**
 	- **[[Makemydrivefun]]**
-	- **[[Metube - self-hosted youtube downloader]]**
+	- **[[Metube]]**
+	- **[[mouseless.click]]**
 	- **[[n8n]]**
 	- **[[Napkin]]**
 	- **[[Nomorobo]]**
 	- **[[Notesnook]]**
 	- **[[Ollama]]**
+	- **[[Omg.lol]]**
+	- **[[Oodo]]**
 	- **[[Open WebUI]]**
 	- **[[Openfhe]]**
 	- **[[Opennote]]**
 	- **[[OperationPrivacy]]**
 	- **[[Peertube]]**
+	- **[[Pintree]]**
 	- **[[Printify]]**
 	- **[[Raycast]]**
 	- **[[Readdy]]**
@@ -53,6 +58,7 @@
 	- **[[Thinkst Canary]]**
 	- **[[Toggl Track]]**
 	- **[[Trilium Notes]]**
+	- **[[Typefully]]**
 	- **[[VoidZero]]**
 	- **[[Wakatime]]**
 	- **[[Webstudio_website_builder]]**
@@ -62,8 +68,10 @@
 - **[[Websites]]**
 	- **[[Algorа]]**
 	- **[[Gruv]]**
+	- **[[Openbazaar]]**
 	- **[[Techlore]]**
 	- **[[Tertulia]]**
+	- **[[Xkcd]]**
 - **[[Wikipedia]]**
 - **[[YouTube]]**
 	- **[[Mike Schmitz - The People Note The Key to Rolling Up Tasks & Project in Obsidian]]**

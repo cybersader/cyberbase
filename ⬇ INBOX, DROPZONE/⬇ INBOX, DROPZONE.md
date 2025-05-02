@@ -24,6 +24,7 @@ publish: true
 - **[[Governance, Mgmt]]**
 - **[[Lookalike Domain Defenses]]**
 - **[[Malware Sandboxing]]**
+- **[[Modern Financial Industry Tech]]**
 - **[[Productivity Tech]]**
 - **[[Public Threat Actor Reporting, Blacklists]]**
 - **[[Store Now Decrypt Later]]**
