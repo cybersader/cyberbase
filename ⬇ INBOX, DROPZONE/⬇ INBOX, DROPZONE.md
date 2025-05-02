@@ -24,7 +24,7 @@ publish: true
 - **[[Governance, Mgmt]]**
 - **[[Lookalike Domain Defenses]]**
 - **[[Malware Sandboxing]]**
-- **[[Planning Tech]]**
+- **[[Productivity Tech]]**
 - **[[Public Threat Actor Reporting, Blacklists]]**
 - **[[Store Now Decrypt Later]]**
 - **[[Symbolic Links in Obsidian]]**
