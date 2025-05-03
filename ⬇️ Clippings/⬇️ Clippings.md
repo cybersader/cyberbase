@@ -59,6 +59,7 @@
 	- **[[Kittl]]**
 	- **[[Kortex]]**
 	- **[[LibreChat]]**
+	- **[[LM Studio]]**
 	- **[[Makemydrivefun]]**
 	- **[[Metube]]**
 	- **[[mouseless.click]]**
