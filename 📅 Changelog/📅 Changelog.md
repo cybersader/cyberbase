@@ -16,11 +16,26 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                                                              | Last modified             |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                                                    | Wed - 4/30/2025, 10:13 PM |
-| [[README.md\|README]]                                                                                                                                                             | Wed - 4/30/2025, 10:12 PM |
-| [[../⬇ INBOX, DROPZONE/Symbolic Links/Symbolic Links in Obsidian|Symbolic Links]]                                                                                                            | Wed - 4/30/2025, 9:55 PM  |
-| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                                                                     | Wed - 4/30/2025, 9:55 PM  |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                    | Tue - 4/29/2025, 9:30 PM  |
+| [[⬇️ Clippings/Tech/LibreChat/LibreChat.md\|LibreChat]]                                                                                                                           | Fri - 5/2/2025, 9:51 PM   |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                    | Fri - 5/2/2025, 9:51 PM   |
+| [[⬇️ Clippings/Tech/Msty/Msty.md\|Msty]]                                                                                                                                          | Fri - 5/2/2025, 9:44 PM   |
+| [[⬇ INBOX, DROPZONE/Fake Login Forms for Testing/Fake Login Forms for Testing.md\|Fake Login Forms for Testing]]                                                                  | Fri - 5/2/2025, 9:10 PM   |
+| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                                                                     | Fri - 5/2/2025, 9:10 PM   |
+| [[⬇️ Clippings/Tech/Omg.lol/Omg.lol.md\|Omg.lol]]                                                                                                                                 | Fri - 5/2/2025, 9:11 AM   |
+| [[⬇️ Clippings/Websites/Openbazaar/Openbazaar.md\|Openbazaar]]                                                                                                                    | Fri - 5/2/2025, 9:08 AM   |
+| [[⬇ INBOX, DROPZONE/Productivity Tech/Productivity Tech.md\|Productivity Tech]]                                                                                                   | Fri - 5/2/2025, 9:07 AM   |
+| [[⬇️ Clippings/Tech/mouseless.click/mouseless.click.md\|mouseless.click]]                                                                                                         | Fri - 5/2/2025, 9:06 AM   |
+| [[⬇️ Clippings/Tech/Typefully/Typefully.md\|Typefully]]                                                                                                                           | Fri - 5/2/2025, 9:00 AM   |
+| [[⬇️ Clippings/Tech/Oodo/Oodo.md\|Oodo]]                                                                                                                                          | Fri - 5/2/2025, 8:59 AM   |
+| [[⬇ INBOX, DROPZONE/Modern Financial Industry Tech/Modern Financial Industry Tech.md\|Modern Financial Industry Tech]]                                                            | Fri - 5/2/2025, 8:58 AM   |
+| [[⬇️ Clippings/Websites/Xkcd/Xkcd.md\|Xkcd]]                                                                                                                                      | Fri - 5/2/2025, 8:54 AM   |
+| [[⬇️ Clippings/Tech/Pintree/Pintree.md\|Pintree]]                                                                                                                                 | Fri - 5/2/2025, 8:30 AM   |
+| [[⬇️ Clippings/Tech/Blaze ai/Blaze ai.md\|Blaze ai]]                                                                                                                              | Fri - 5/2/2025, 8:26 AM   |
+| [[📁 03 - Curations, Stacks/Personal Productivity Stack/Personal Productivity Stack.md\|Personal Productivity Stack]]                                                             | Thu - 5/1/2025, 8:36 PM   |
+| [[📁 10 - My Obsidian Stack/Project Management/Project Management.md\|Project Management]]                                                                                        | Thu - 5/1/2025, 8:20 PM   |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                                                    | Wed - 4/30/2025, 10:15 PM |
+| [[README.md\|README]]                                                                                                                                                             | Wed - 4/30/2025, 10:15 PM |
+| [[⬇ INBOX, DROPZONE/Symbolic Links in Obsidian/Symbolic Links in Obsidian.md\|Symbolic Links in Obsidian]]                                                                        | Wed - 4/30/2025, 10:15 PM |
 | [[⬇️ Clippings/Tech/Wispr flow/Wispr flow.md\|Wispr flow]]                                                                                                                        | Tue - 4/29/2025, 9:30 PM  |
 | [[📁 03 - Curations, Stacks/Awesome List Templates & Tools/Awesome List Templates & Tools.md\|Awesome List Templates & Tools]]                                                    | Mon - 4/28/2025, 8:21 PM  |
 | [[📁 10 - My Obsidian Stack/GitHub Readme Templates/GitHub Readme Templates.md\|GitHub Readme Templates]]                                                                         | Mon - 4/28/2025, 8:21 PM  |
@@ -51,20 +66,5 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[📁 06 - Learning, Notes/Financial Sector & Cyber/Financial Industry/Financial Industry.md\|Financial Industry]]                                                                 | Fri - 4/25/2025, 4:14 PM  |
 | [[📁 06 - Learning, Notes/Financial Sector & Cyber/Financial Industry/ACH - Automated Clearing House/ACH - Automated Clearing House.md\|ACH - Automated Clearing House]]          | Fri - 4/25/2025, 4:14 PM  |
 | [[📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md\|Vault Folder & Tag Structure]]                                                | Tue - 4/22/2025, 8:15 PM  |
-| [[📁 53 - Cybersader GRC Tools/📁 53 - Cybersader GRC Tools.md\|📁 53 - Cybersader GRC Tools]]                                                                                    | Tue - 4/22/2025, 7:14 PM  |
-| [[📁 01 - Projects/Obsidian Frameworker/Mapping Cyber Frameworks to Obsidian/Mapping Cyber Frameworks to Obsidian.md\|Mapping Cyber Frameworks to Obsidian]]                      | Mon - 4/21/2025, 9:34 PM  |
-| [[📁 01 - Projects/📁 01 - Projects.md\|📁 01 - Projects]]                                                                                                                        | Mon - 4/21/2025, 3:30 PM  |
-| [[📁 01 - Projects/Obsidian Frameworker/Framework Crosswalker - GPT Intro/Framework Crosswalker - GPT Intro.md\|Framework Crosswalker - GPT Intro]]                               | Mon - 4/21/2025, 3:30 PM  |
-| [[📁 01 - Projects/Obsidian Frameworker/Framework Crosswalks/Framework Crosswalks.md\|Framework Crosswalks]]                                                                      | Mon - 4/21/2025, 3:30 PM  |
-| [[📁 01 - Projects/Obsidian Frameworker/Framework Crosswalker - TLDR/Framework Crosswalker - TLDR.md\|Framework Crosswalker - TLDR]]                                              | Mon - 4/21/2025, 9:09 AM  |
-| [[📁 01 - Projects/Obsidian Frameworker/frameworker_linking/frameworker_linking.md\|frameworker_linking]]                                                                         | Mon - 4/21/2025, 8:28 AM  |
-| [[📁 05 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md\|Framework Mapping]]                                                                  | Sun - 4/20/2025, 8:46 PM  |
-| [[⬇️ Clippings/ChatGPT/pfSense- DNS Rebinding and NAT Reflection/pfSense- DNS Rebinding and NAT Reflection.md\|pfSense- DNS Rebinding and NAT Reflection]]                        | Sun - 4/20/2025, 8:40 PM  |
-| [[⬇️ Clippings/ChatGPT/pfSense - View pfSense Blocked Traffic/pfSense - View pfSense Blocked Traffic.md\|pfSense - View pfSense Blocked Traffic]]                                 | Sun - 4/20/2025, 8:39 PM  |
-| [[⬇️ Clippings/ChatGPT/pfSense - VLAN setup in pfSense/pfSense - VLAN setup in pfSense.md\|pfSense - VLAN setup in pfSense]]                                                      | Sun - 4/20/2025, 8:36 PM  |
-| [[⬇️ Clippings/ChatGPT/Optimum Racing Sim Setup/Optimum Racing Sim Setup.md\|Optimum Racing Sim Setup]]                                                                           | Sun - 4/20/2025, 8:21 PM  |
-| [[⬇️ Clippings/Websites/Techlore/Techlore.md\|Techlore]]                                                                                                                          | Sun - 4/20/2025, 1:38 PM  |
-| [[⬇️ Clippings/Tech/OperationPrivacy/OperationPrivacy.md\|OperationPrivacy]]                                                                                                      | Sun - 4/20/2025, 1:37 PM  |
-| [[📁 33 - Diving/📁 33 - Diving.md\|📁 33 - Diving]]                                                                                                                              | Sun - 4/20/2025, 1:33 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%

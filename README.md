@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Wed, Apr 30, 2025 - [[⬇ INBOX, DROPZONE/Symbolic Links/Symbolic Links in Obsidian]]
+> Fri, May 2, 2025 - [[LibreChat]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                                                      | Last modified            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[⬇ INBOX, DROPZONE/Symbolic Links/Symbolic Links in Obsidian|Symbolic Links]]                                                                                                    | Wed - 4/30/2025, 9:55 PM |
-| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                                                             | Wed - 4/30/2025, 9:55 PM |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                            | Tue - 4/29/2025, 9:30 PM |
-| [[⬇️ Clippings/Tech/Wispr flow/Wispr flow.md\|Wispr flow]]                                                                                                                | Tue - 4/29/2025, 9:30 PM |
-| [[📁 03 - Curations, Stacks/Awesome List Templates & Tools/Awesome List Templates & Tools.md\|Awesome List Templates & Tools]]                                            | Mon - 4/28/2025, 8:21 PM |
-| [[📁 10 - My Obsidian Stack/GitHub Readme Templates/GitHub Readme Templates.md\|GitHub Readme Templates]]                                                                 | Mon - 4/28/2025, 8:21 PM |
-| [[📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md\|📁 10 - My Obsidian Stack]]                                                                                     | Mon - 4/28/2025, 8:17 PM |
-| [[📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md\|📁 03 - Curations, Stacks]]                                                                                     | Mon - 4/28/2025, 7:55 PM |
-| [[📁 53 - Cybersader GRC Tools/Obsidian & Cyber Working Group/Obsidian & Cyber Working Group.md\|Obsidian & Cyber Working Group]]                                         | Mon - 4/28/2025, 3:40 PM |
-| [[📁 54 - Obsidian Vault Organization/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md\|Dynamic Tags & Folders Plugin Development]] | Mon - 4/28/2025, 3:00 PM |
+| File                                                                                                             | Last modified           |
+| ---------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| [[⬇️ Clippings/Tech/LibreChat/LibreChat.md\|LibreChat]]                                                          | Fri - 5/2/2025, 9:51 PM |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                   | Fri - 5/2/2025, 9:51 PM |
+| [[⬇️ Clippings/Tech/Msty/Msty.md\|Msty]]                                                                         | Fri - 5/2/2025, 9:44 PM |
+| [[⬇ INBOX, DROPZONE/Fake Login Forms for Testing/Fake Login Forms for Testing.md\|Fake Login Forms for Testing]] | Fri - 5/2/2025, 9:10 PM |
+| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                    | Fri - 5/2/2025, 9:10 PM |
+| [[⬇️ Clippings/Tech/Omg.lol/Omg.lol.md\|Omg.lol]]                                                                | Fri - 5/2/2025, 9:11 AM |
+| [[⬇️ Clippings/Websites/Openbazaar/Openbazaar.md\|Openbazaar]]                                                   | Fri - 5/2/2025, 9:08 AM |
+| [[⬇ INBOX, DROPZONE/Productivity Tech/Productivity Tech.md\|Productivity Tech]]                                  | Fri - 5/2/2025, 9:07 AM |
+| [[⬇️ Clippings/Tech/mouseless.click/mouseless.click.md\|mouseless.click]]                                        | Fri - 5/2/2025, 9:06 AM |
+| [[⬇️ Clippings/Tech/Typefully/Typefully.md\|Typefully]]                                                          | Fri - 5/2/2025, 9:00 AM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
