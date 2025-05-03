@@ -1,8 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "Framework Crosswalker - TLDR",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalker - TLDR/Framework Crosswalker - TLDR.md"
+    },
+    {
+      "basename": "Framework Crosswalks",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalks/Framework Crosswalks.md"
+    },
+    {
+      "basename": "About Frameworker",
+      "path": "📁 01 - Projects/Obsidian Frameworker/About Frameworker/About Frameworker.md"
+    },
+    {
+      "basename": "Framework Crosswalker - GPT Intro",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalker - GPT Intro/Framework Crosswalker - GPT Intro.md"
+    },
+    {
       "basename": "obsidian-dev-utils",
       "path": "⬇️ Clippings/GitHub Repos/mnaoumov/obsidian-dev-utils/obsidian-dev-utils.md"
+    },
+    {
+      "basename": "codex",
+      "path": "⬇️ Clippings/GitHub Repos/openai/codex/codex.md"
     },
     {
       "basename": "ciso-assistant-community",
@@ -179,26 +199,6 @@
     {
       "basename": "✒️ Cyberbase Architecture",
       "path": "📁 51 - Cyberbase/✒️ Cyberbase Architecture/✒️ Cyberbase Architecture.md"
-    },
-    {
-      "basename": "GitHub Readme Templates",
-      "path": "📁 10 - My Obsidian Stack/GitHub Readme Templates/GitHub Readme Templates.md"
-    },
-    {
-      "basename": "Tag & Folder Plugins",
-      "path": "📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md"
-    },
-    {
-      "basename": "Obsidian & Cyber Working Group",
-      "path": "📁 53 - Cybersader GRC Tools/Obsidian & Cyber Working Group/Obsidian & Cyber Working Group.md"
-    },
-    {
-      "basename": "Dynamic Tags & Folders Plugin Development",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
-    },
-    {
-      "basename": "Dynamic Folders & Tags",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
     }
   ],
   "omittedPaths": [],

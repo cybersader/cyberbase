@@ -28,6 +28,8 @@
 		- **[[obsidian-dev-utils]]**
 	- **open-webui**
 		- **[[open-webui]]**
+	- **openai**
+		- **[[codex]]**
 - **[[Manually Entered Links]]**
 	- **[[Characters That Sort After Z]]**
 - **[[News]]**
