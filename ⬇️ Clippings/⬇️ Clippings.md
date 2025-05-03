@@ -1,10 +1,29 @@
 %% Begin Waypoint %%
 - **[[Articles, Blogs]]**
+	- **[[The Value of Christian Principles in Cybersecurity Education]]**
 - **[[ChatGPT]]**
-- **[[GitHub]]**
+	- **[[Best Budget Mic Options]]**
+	- **[[Codex CLI VS Code Setup]]**
+	- **[[Credit Freeze vs Fraud Alert]]**
+	- **[[Display Android on Windows]]**
+	- **[[Hacking Motivations and Shifts]]**
+	- **[[iPhone Alarm Settings Guide]]**
+	- **[[Meta-framework]]**
+	- **[[Open Explorer in PS]]**
+	- **[[Optimum Racing Sim Setup]]**
+	- **[[pfSense - View pfSense Blocked Traffic]]**
+	- **[[pfSense - VLAN setup in pfSense]]**
+	- **[[pfSense- DNS Rebinding and NAT Reflection]]**
+	- **[[Tag Selection Workflow Options]]**
+	- **[[Texas Outdoor Adventures]]**
+	- **[[WPA2-PSK vs WPA2-Enterprise]]**
+- **[[GitHub Repos]]**
+	- **EndoTheDev**
+		- **[[Awesome-Ollama]]**
+	- **lobehub**
+		- **[[lobe-chat]]**
 	- **open-webui**
-		- **[[open-webui 1]]**
-	- **[[test]]**
+		- **[[open-webui]]**
 - **[[Manually Entered Links]]**
 	- **[[Characters That Sort After Z]]**
 - **[[News]]**

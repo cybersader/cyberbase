@@ -1,16 +1,52 @@
 {
   "recentFiles": [
     {
-      "basename": "test",
-      "path": "⬇️ Clippings/GitHub/test/test.md"
+      "basename": "Awesome-Ollama",
+      "path": "⬇️ Clippings/GitHub Repos/EndoTheDev/Awesome-Ollama/Awesome-Ollama.md"
     },
     {
-      "basename": "open-webui 1",
-      "path": "⬇️ Clippings/GitHub/open-webui/open-webui 1/open-webui 1.md"
+      "basename": "Reddit",
+      "path": "⬇️ Clippings/Reddit/Reddit.md"
     },
     {
-      "basename": "GitHub",
-      "path": "⬇️ Clippings/GitHub/GitHub.md"
+      "basename": "Obsidian",
+      "path": "⬇️ Clippings/Obsidian/Obsidian.md"
+    },
+    {
+      "basename": "News",
+      "path": "⬇️ Clippings/News/News.md"
+    },
+    {
+      "basename": "Manually Entered Links",
+      "path": "⬇️ Clippings/Manually Entered Links/Manually Entered Links.md"
+    },
+    {
+      "basename": "Articles, Blogs",
+      "path": "⬇️ Clippings/Articles, Blogs/Articles, Blogs.md"
+    },
+    {
+      "basename": "The Value of Christian Principles in Cybersecurity Education",
+      "path": "⬇️ Clippings/Articles, Blogs/The Value of Christian Principles in Cybersecurity Education/The Value of Christian Principles in Cybersecurity Education.md"
+    },
+    {
+      "basename": "ChatGPT",
+      "path": "⬇️ Clippings/ChatGPT/ChatGPT.md"
+    },
+    {
+      "basename": "GitHub Repos",
+      "path": "⬇️ Clippings/GitHub Repos/GitHub Repos.md"
+    },
+    {
+      "basename": "lobe-chat",
+      "path": "⬇️ Clippings/GitHub Repos/lobehub/lobe-chat/lobe-chat.md"
+    },
+    {
+      "basename": "YouTube",
+      "path": "⬇️ Clippings/YouTube/YouTube.md"
+    },
+    {
+      "basename": "open-webui",
+      "path": "⬇️ Clippings/GitHub Repos/open-webui/open-webui/open-webui.md"
     },
     {
       "basename": "Tech",
@@ -163,38 +199,6 @@
     {
       "basename": "Plugin Development",
       "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
-    },
-    {
-      "basename": "Codex CLI VS Code Setup",
-      "path": "⬇️ Clippings/ChatGPT/Codex CLI VS Code Setup/Codex CLI VS Code Setup.md"
-    },
-    {
-      "basename": "refined-github extension",
-      "path": "⬇️ Clippings/Tech/refined-github extension/refined-github extension.md"
-    },
-    {
-      "basename": "Yaak",
-      "path": "⬇️ Clippings/Tech/Yaak/Yaak.md"
-    },
-    {
-      "basename": "Bruno",
-      "path": "⬇️ Clippings/Tech/Bruno/Bruno.md"
-    },
-    {
-      "basename": "⬇️ New Tools",
-      "path": "⬇ INBOX, DROPZONE/⬇️ New Tools/⬇️ New Tools.md"
-    },
-    {
-      "basename": "Tag Pages",
-      "path": "📁 54 - Obsidian Vault Organization/Tag Pages/Tag Pages.md"
-    },
-    {
-      "basename": "Using Tags",
-      "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
-    },
-    {
-      "basename": "Auto - Tagging, Linking, Dropzones & Organizers",
-      "path": "📁 10 - My Obsidian Stack/Auto - Tagging, Linking, Dropzones & Organizers/Auto - Tagging, Linking, Dropzones & Organizers.md"
     }
   ],
   "omittedPaths": [],
