@@ -20,8 +20,12 @@
 - **[[GitHub Repos]]**
 	- **EndoTheDev**
 		- **[[Awesome-Ollama]]**
+	- **intuitem**
+		- **[[ciso-assistant-community]]**
 	- **lobehub**
 		- **[[lobe-chat]]**
+	- **mnaoumov**
+		- **[[obsidian-dev-utils]]**
 	- **open-webui**
 		- **[[open-webui]]**
 - **[[Manually Entered Links]]**

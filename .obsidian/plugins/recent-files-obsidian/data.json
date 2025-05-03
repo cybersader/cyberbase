@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "obsidian-dev-utils",
+      "path": "⬇️ Clippings/GitHub Repos/mnaoumov/obsidian-dev-utils/obsidian-dev-utils.md"
+    },
+    {
+      "basename": "ciso-assistant-community",
+      "path": "⬇️ Clippings/GitHub Repos/intuitem/ciso-assistant-community/ciso-assistant-community.md"
+    },
+    {
       "basename": "Awesome-Ollama",
       "path": "⬇️ Clippings/GitHub Repos/EndoTheDev/Awesome-Ollama/Awesome-Ollama.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Dynamic Folders & Tags",
       "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
-    },
-    {
-      "basename": "Open Explorer in PS",
-      "path": "⬇️ Clippings/ChatGPT/Open Explorer in PS/Open Explorer in PS.md"
-    },
-    {
-      "basename": "Plugin Development",
-      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
     }
   ],
   "omittedPaths": [],
