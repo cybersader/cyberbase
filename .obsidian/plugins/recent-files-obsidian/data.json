@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "About Frameworker",
+      "path": "📁 01 - Projects/Obsidian Frameworker/About Frameworker/About Frameworker.md"
+    },
+    {
       "basename": "Framework Crosswalks",
       "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalks/Framework Crosswalks.md"
+    },
+    {
+      "basename": "Framework Crosswalker - GPT Intro",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalker - GPT Intro/Framework Crosswalker - GPT Intro.md"
     },
     {
       "basename": "LM Studio",
@@ -11,14 +19,6 @@
     {
       "basename": "Framework Crosswalker - TLDR",
       "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalker - TLDR/Framework Crosswalker - TLDR.md"
-    },
-    {
-      "basename": "About Frameworker",
-      "path": "📁 01 - Projects/Obsidian Frameworker/About Frameworker/About Frameworker.md"
-    },
-    {
-      "basename": "Framework Crosswalker - GPT Intro",
-      "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalker - GPT Intro/Framework Crosswalker - GPT Intro.md"
     },
     {
       "basename": "obsidian-dev-utils",
