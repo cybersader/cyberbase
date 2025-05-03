@@ -1,7 +1,9 @@
 %% Begin Waypoint %%
 - **[[Articles, Blogs]]**
 - **[[ChatGPT]]**
-- **[[GitHub Repos]]**
+- **[[GitHub]]**
+	- **open-webui**
+		- **[[open-webui 1]]**
 - **[[Manually Entered Links]]**
 	- **[[Characters That Sort After Z]]**
 - **[[News]]**
