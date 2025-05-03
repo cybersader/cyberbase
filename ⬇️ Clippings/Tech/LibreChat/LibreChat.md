@@ -1,0 +1,48 @@
+---
+title: "danny-avila/LibreChat: Enhanced ChatGPT Clone: Features Agents, DeepSeek, Anthropic, AWS, OpenAI, Assistants API, Azure, Groq, o1, GPT-4o, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active project."
+source: "https://github.com/danny-avila/LibreChat"
+published:
+date created: Friday, May 2nd 2025, 9:50 pm
+description: "Enhanced ChatGPT Clone: Features Agents, DeepSeek, Anthropic, AWS, OpenAI, Assistants API, Azure, Groq, o1, GPT-4o, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active project. - danny-avila/LibreChat"
+tags:
+  - "clippings"
+  - "clippings/tech"
+  - "chat"
+  - "ai"
+  - "chatbot"
+  - "open_source"
+  - "chatgpt"
+  - "large_language_model"
+  - "llm"
+  - "agents"
+  - "dalles"
+  - "langchain"
+  - "code_interpreter"
+  - "assistants_api"
+  - "openai"
+  - "aws"
+  - "azure"
+  - "google"
+  - "gemini"
+  - "mistral"
+  - "gpt_4o"
+  - "o1"
+  - "self_hosting"
+  - "development"
+  - "code"
+  - "chat"
+  - "ai"
+  - "chatbot"
+  - "open_source"
+  - "development"
+  - "code"
+  - "chat"
+  - "ai"
+  - "chatbot"
+  - "open_source"
+  - "ollama"
+favicon: "https://github.githubassets.com/favicons/favicon-dark.svg"
+---
+> [github.com > danny-avila/LibreChat: Enhanced ChatGPT Clone: Features Agents](https://github.com/danny-avila/LibreChat)
+
+Enhanced ChatGPT Clone: Features Agents, DeepSeek, Anthropic, AWS, OpenAI, Assistants API, Azure, Groq, o1, GPT-4o, Mistral, OpenRouter, Vertex AI, Gemini, Ar tifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Preset, open-source for self-hosting. Active project.

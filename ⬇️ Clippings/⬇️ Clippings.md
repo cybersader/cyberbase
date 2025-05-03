@@ -30,6 +30,7 @@
 	- **[[Khoj]]**
 	- **[[Kittl]]**
 	- **[[Kortex]]**
+	- **[[LibreChat]]**
 	- **[[Makemydrivefun]]**
 	- **[[Metube]]**
 	- **[[mouseless.click]]**

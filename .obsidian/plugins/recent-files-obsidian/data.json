@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Tech",
+      "path": "⬇️ Clippings/Tech/Tech.md"
+    },
+    {
+      "basename": "LibreChat",
+      "path": "⬇️ Clippings/Tech/LibreChat/LibreChat.md"
+    },
+    {
       "basename": "Msty",
       "path": "⬇️ Clippings/Tech/Msty/Msty.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Cyberbase Starter Vault",
       "path": "📁 52 - Obsidian Starters & Templates/Cyberbase Starter Vault/Cyberbase Starter Vault.md"
-    },
-    {
-      "basename": "2 - Vault Organization",
-      "path": "📁 52 - Obsidian Starters & Templates/2 - Vault Organization/2 - Vault Organization.md"
-    },
-    {
-      "basename": "0 - FAQ",
-      "path": "📁 52 - Obsidian Starters & Templates/0 - FAQ/0 - FAQ.md"
     }
   ],
   "omittedPaths": [],
