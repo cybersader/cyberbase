@@ -61,6 +61,7 @@
 	- **[[Fakeupdate]]**
 	- **[[Formance]]**
 	- **[[Gitea]]**
+	- **[[Google Map Plus Codes]]**
 	- **[[Google-Gemma-3]]**
 	- **[[Invidious]]**
 	- **[[Khoj]]**
@@ -86,7 +87,9 @@
 	- **[[OperationPrivacy]]**
 	- **[[OrbStack]]**
 	- **[[Peertube]]**
+	- **[[Photopea]]**
 	- **[[Pintree]]**
+	- **[[PowerToys]]**
 	- **[[Printify]]**
 	- **[[Raycast]]**
 	- **[[Readdy]]**
@@ -96,14 +99,19 @@
 	- **[[Scrypted]]**
 	- **[[Simplemind]]**
 	- **[[Slido]]**
+	- **[[Teleseer]]**
+	- **[[Terrateam]]**
 	- **[[Thinkst Canary]]**
 	- **[[Toggl Track]]**
 	- **[[Trilium Notes]]**
 	- **[[Typefully]]**
+	- **[[Ueli]]**
 	- **[[VoidZero]]**
 	- **[[Wakatime]]**
 	- **[[Webstudio_website_builder]]**
+	- **[[Windsurf]]**
 	- **[[Wispr flow]]**
+	- **[[WizTree]]**
 	- **[[Yaak]]**
 	- **[[Zivver Security]]**
 - **[[Websites]]**
