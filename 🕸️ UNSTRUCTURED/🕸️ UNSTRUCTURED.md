@@ -12,6 +12,7 @@ date modified: Friday, January 31st 2025, 4:34 pm
 - **[[2025 Cybersecurity Goals]]**
 - **[[AI & Security by Obscurity]]**
 - **[[AI Ethics & Morality]]**
+- **[[Android Shortcuts]]**
 - **[[AR Glasses]]**
 - [[Audio to Multiple Headphones]]
 - **[[Awesome Clothing]]**
@@ -36,6 +37,7 @@ date modified: Friday, January 31st 2025, 4:34 pm
 - **[[Databases]]**
 - **[[Datetime Formatting]]**
 - [[Debugging Obsidian Plugins]]
+- **[[Decimal System]]**
 - [[Digital Garden]]
 - **[[Divide & Conquer Plugin Testing]]**
 - [[Documenting Activity]]

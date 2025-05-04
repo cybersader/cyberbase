@@ -1,32 +1,68 @@
 {
   "recentFiles": [
     {
+      "basename": "OrbStack",
+      "path": "⬇️ Clippings/Tech/OrbStack/OrbStack.md"
+    },
+    {
+      "basename": "Claude",
+      "path": "⬇️ Clippings/Tech/Claude/Claude.md"
+    },
+    {
+      "basename": "Awesome Clothing",
+      "path": "🕸️ UNSTRUCTURED/Awesome Clothing/Awesome Clothing.md"
+    },
+    {
+      "basename": "Legcord",
+      "path": "⬇️ Clippings/GitHub Repos/Legcord/Legcord/Legcord.md"
+    },
+    {
+      "basename": "minimal-twitter",
+      "path": "⬇️ Clippings/GitHub Repos/typefully/minimal-twitter/minimal-twitter.md"
+    },
+    {
+      "basename": "Minimal Theme for Twitter",
+      "path": "⬇️ Clippings/Tech/Minimal Theme for Twitter/Minimal Theme for Twitter.md"
+    },
+    {
+      "basename": "Android Shortcuts",
+      "path": "🕸️ UNSTRUCTURED/Android Shortcuts/Android Shortcuts.md"
+    },
+    {
       "basename": "Obsidian & Cyber Working Group",
       "path": "📁 53 - Cybersader GRC Tools/Obsidian & Cyber Working Group/Obsidian & Cyber Working Group.md"
     },
     {
-      "basename": "📁 01 - Projects",
-      "path": "📁 01 - Projects/📁 01 - Projects.md"
-    },
-    {
-      "basename": "About Frameworker",
-      "path": "📁 01 - Projects/Obsidian Frameworker/About Frameworker/About Frameworker.md"
-    },
-    {
-      "basename": "Framework Crosswalks",
-      "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalks/Framework Crosswalks.md"
+      "basename": "Framework Crosswalker - TLDR",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalker - TLDR/Framework Crosswalker - TLDR.md"
     },
     {
       "basename": "Framework Crosswalker - GPT Intro",
       "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalker - GPT Intro/Framework Crosswalker - GPT Intro.md"
     },
     {
-      "basename": "LM Studio",
-      "path": "⬇️ Clippings/Tech/LM Studio/LM Studio.md"
+      "basename": "About Frameworker",
+      "path": "📁 01 - Projects/Obsidian Frameworker/About Frameworker/About Frameworker.md"
     },
     {
-      "basename": "Framework Crosswalker - TLDR",
-      "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalker - TLDR/Framework Crosswalker - TLDR.md"
+      "basename": "📁 01 - Projects",
+      "path": "📁 01 - Projects/📁 01 - Projects.md"
+    },
+    {
+      "basename": "Decimal System",
+      "path": "🕸️ UNSTRUCTURED/Decimal System/Decimal System.md"
+    },
+    {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
+      "basename": "Framework Crosswalks",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalks/Framework Crosswalks.md"
+    },
+    {
+      "basename": "LM Studio",
+      "path": "⬇️ Clippings/Tech/LM Studio/LM Studio.md"
     },
     {
       "basename": "obsidian-dev-utils",
@@ -163,42 +199,6 @@
     {
       "basename": "Blaze ai",
       "path": "⬇️ Clippings/Tech/Blaze ai/Blaze ai.md"
-    },
-    {
-      "basename": "Project Management",
-      "path": "📁 10 - My Obsidian Stack/Project Management/Project Management.md"
-    },
-    {
-      "basename": "Scalable Project Management",
-      "path": "🕸️ UNSTRUCTURED/Scalable Project Management.md"
-    },
-    {
-      "basename": "Obsidian Plugin Development Quickstart",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Plugin Development Quickstart/Obsidian Plugin Development Quickstart.md"
-    },
-    {
-      "basename": "Symbolic Links in Obsidian",
-      "path": "⬇ INBOX, DROPZONE/Symbolic Links in Obsidian/Symbolic Links in Obsidian.md"
-    },
-    {
-      "basename": "Customizing Obsidian Publish",
-      "path": "📁 51 - Cyberbase/Customizing Obsidian Publish/Customizing Obsidian Publish.md"
-    },
-    {
-      "basename": "Awesome List Templates & Tools",
-      "path": "📁 03 - Curations, Stacks/Awesome List Templates & Tools/Awesome List Templates & Tools.md"
-    },
-    {
-      "basename": "Wispr flow",
-      "path": "⬇️ Clippings/Tech/Wispr flow/Wispr flow.md"
-    },
-    {
-      "basename": "Combining Tags, Links, & Folders",
-      "path": "📁 54 - Obsidian Vault Organization/Combining Tags, Links, & Folders/Combining Tags, Links, & Folders.md"
-    },
-    {
-      "basename": "Cyberbase Development",
-      "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
     }
   ],
   "omittedPaths": [],

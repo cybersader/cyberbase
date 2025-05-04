@@ -22,6 +22,8 @@
 		- **[[Awesome-Ollama]]**
 	- **intuitem**
 		- **[[ciso-assistant-community]]**
+	- **Legcord**
+		- **[[Legcord]]**
 	- **lobehub**
 		- **[[lobe-chat]]**
 	- **mnaoumov**
@@ -30,6 +32,8 @@
 		- **[[open-webui]]**
 	- **openai**
 		- **[[codex]]**
+	- **typefully**
+		- **[[minimal-twitter]]**
 - **[[Manually Entered Links]]**
 	- **[[Characters That Sort After Z]]**
 - **[[News]]**
@@ -48,9 +52,11 @@
 	- **[[Bruno]]**
 	- **[[Castopod]]**
 	- **[[Chatwoot]]**
+	- **[[Claude]]**
 	- **[[Cryptee]]**
 	- **[[Cryptomator]]**
 	- **[[Cryptpad]]**
+	- **[[eramba]]**
 	- **[[Fakeupdate]]**
 	- **[[Formance]]**
 	- **[[Google-Gemma-3]]**
@@ -62,6 +68,7 @@
 	- **[[LM Studio]]**
 	- **[[Makemydrivefun]]**
 	- **[[Metube]]**
+	- **[[Minimal Theme for Twitter]]**
 	- **[[mouseless.click]]**
 	- **[[Msty]]**
 	- **[[n8n]]**
@@ -75,6 +82,7 @@
 	- **[[Openfhe]]**
 	- **[[Opennote]]**
 	- **[[OperationPrivacy]]**
+	- **[[OrbStack]]**
 	- **[[Peertube]]**
 	- **[[Pintree]]**
 	- **[[Printify]]**
