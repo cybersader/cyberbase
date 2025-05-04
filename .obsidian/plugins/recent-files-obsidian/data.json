@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "Cursor",
+      "path": "⬇️ Clippings/Tech/Cursor/Cursor.md"
+    },
+    {
       "basename": "OrbStack",
       "path": "⬇️ Clippings/Tech/OrbStack/OrbStack.md"
+    },
+    {
+      "basename": "Gitea",
+      "path": "⬇️ Clippings/Tech/Gitea/Gitea.md"
     },
     {
       "basename": "Claude",
@@ -187,18 +195,6 @@
     {
       "basename": "Personal Productivity Stack",
       "path": "📁 03 - Curations, Stacks/Personal Productivity Stack/Personal Productivity Stack.md"
-    },
-    {
-      "basename": "Xkcd",
-      "path": "⬇️ Clippings/Websites/Xkcd/Xkcd.md"
-    },
-    {
-      "basename": "Pintree",
-      "path": "⬇️ Clippings/Tech/Pintree/Pintree.md"
-    },
-    {
-      "basename": "Blaze ai",
-      "path": "⬇️ Clippings/Tech/Blaze ai/Blaze ai.md"
     }
   ],
   "omittedPaths": [],

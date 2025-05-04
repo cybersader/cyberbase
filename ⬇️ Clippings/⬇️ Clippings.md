@@ -56,9 +56,11 @@
 	- **[[Cryptee]]**
 	- **[[Cryptomator]]**
 	- **[[Cryptpad]]**
+	- **[[Cursor]]**
 	- **[[eramba]]**
 	- **[[Fakeupdate]]**
 	- **[[Formance]]**
+	- **[[Gitea]]**
 	- **[[Google-Gemma-3]]**
 	- **[[Invidious]]**
 	- **[[Khoj]]**
