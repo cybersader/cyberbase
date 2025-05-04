@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Fri, May 2, 2025 - [[LibreChat]]
+> Sat, May 3, 2025 - [[WizTree]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                             | Last modified           |
-| ---------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| [[⬇️ Clippings/Tech/LibreChat/LibreChat.md\|LibreChat]]                                                          | Fri - 5/2/2025, 9:51 PM |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                   | Fri - 5/2/2025, 9:51 PM |
-| [[⬇️ Clippings/Tech/Msty/Msty.md\|Msty]]                                                                         | Fri - 5/2/2025, 9:44 PM |
-| [[⬇ INBOX, DROPZONE/Fake Login Forms for Testing/Fake Login Forms for Testing.md\|Fake Login Forms for Testing]] | Fri - 5/2/2025, 9:10 PM |
-| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                    | Fri - 5/2/2025, 9:10 PM |
-| [[⬇️ Clippings/Tech/Omg.lol/Omg.lol.md\|Omg.lol]]                                                                | Fri - 5/2/2025, 9:11 AM |
-| [[⬇️ Clippings/Websites/Openbazaar/Openbazaar.md\|Openbazaar]]                                                   | Fri - 5/2/2025, 9:08 AM |
-| [[⬇ INBOX, DROPZONE/Productivity Tech/Productivity Tech.md\|Productivity Tech]]                                  | Fri - 5/2/2025, 9:07 AM |
-| [[⬇️ Clippings/Tech/mouseless.click/mouseless.click.md\|mouseless.click]]                                        | Fri - 5/2/2025, 9:06 AM |
-| [[⬇️ Clippings/Tech/Typefully/Typefully.md\|Typefully]]                                                          | Fri - 5/2/2025, 9:00 AM |
+| File                                                                                        | Last modified            |
+| ------------------------------------------------------------------------------------------- | ------------------------ |
+| [[⬇️ Clippings/Tech/WizTree/WizTree.md\|WizTree]]                                           | Sat - 5/3/2025, 10:13 PM |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                              | Sat - 5/3/2025, 10:13 PM |
+| [[⬇️ Clippings/Tech/PowerToys/PowerToys.md\|PowerToys]]                                     | Sat - 5/3/2025, 10:12 PM |
+| [[⬇️ Clippings/Tech/Photopea/Photopea.md\|Photopea]]                                        | Sat - 5/3/2025, 10:10 PM |
+| [[⬇️ Clippings/Tech/Ueli/Ueli.md\|Ueli]]                                                    | Sat - 5/3/2025, 10:07 PM |
+| [[⬇️ Clippings/Tech/Terrateam/Terrateam.md\|Terrateam]]                                     | Sat - 5/3/2025, 10:05 PM |
+| [[⬇️ Clippings/Tech/Google Map Plus Codes/Google Map Plus Codes.md\|Google Map Plus Codes]] | Sat - 5/3/2025, 9:58 PM  |
+| [[⬇️ Clippings/Tech/Windsurf/Windsurf.md\|Windsurf]]                                        | Sat - 5/3/2025, 9:56 PM  |
+| [[⬇️ Clippings/Tech/Cursor/Cursor.md\|Cursor]]                                              | Sat - 5/3/2025, 9:44 PM  |
+| [[⬇️ Clippings/Tech/Gitea/Gitea.md\|Gitea]]                                                 | Sat - 5/3/2025, 9:43 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 
