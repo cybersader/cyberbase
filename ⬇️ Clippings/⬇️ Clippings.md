@@ -63,12 +63,14 @@
 	- **[[Gitea]]**
 	- **[[Google Map Plus Codes]]**
 	- **[[Google-Gemma-3]]**
+	- **[[HandBrake]]**
 	- **[[Invidious]]**
 	- **[[Khoj]]**
 	- **[[Kittl]]**
 	- **[[Kortex]]**
 	- **[[LibreChat]]**
 	- **[[LM Studio]]**
+	- **[[MakeMKV]]**
 	- **[[Makemydrivefun]]**
 	- **[[Metube]]**
 	- **[[Minimal Theme for Twitter]]**

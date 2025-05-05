@@ -5,6 +5,18 @@
       "path": "README.md"
     },
     {
+      "basename": "HandBrake",
+      "path": "⬇️ Clippings/Tech/HandBrake/HandBrake.md"
+    },
+    {
+      "basename": "MakeMKV",
+      "path": "⬇️ Clippings/Tech/MakeMKV/MakeMKV.md"
+    },
+    {
+      "basename": "My Media Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
+    },
+    {
       "basename": "frameworker_linking",
       "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_linking/frameworker_linking.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "YouTube",
       "path": "⬇️ Clippings/YouTube/YouTube.md"
-    },
-    {
-      "basename": "open-webui",
-      "path": "⬇️ Clippings/GitHub Repos/open-webui/open-webui/open-webui.md"
-    },
-    {
-      "basename": "Tech",
-      "path": "⬇️ Clippings/Tech/Tech.md"
-    },
-    {
-      "basename": "LibreChat",
-      "path": "⬇️ Clippings/Tech/LibreChat/LibreChat.md"
     }
   ],
   "omittedPaths": [],
