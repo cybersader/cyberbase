@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "SEACOWr Quick Start",
-      "path": "📁 54 - Obsidian Vault Organization/SEACOWr Quick Start/SEACOWr Quick Start.md"
+      "basename": "frameworker_linking",
+      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_linking/frameworker_linking.md"
+    },
+    {
+      "basename": "Linking to Frameworks",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Linking to Frameworks/Linking to Frameworks.md"
+    },
+    {
+      "basename": "Obsidian Frameworker",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
     },
     {
       "basename": "Knowledge Organization",
       "path": "📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "SEACOWr Quick Start",
+      "path": "📁 54 - Obsidian Vault Organization/SEACOWr Quick Start/SEACOWr Quick Start.md"
     },
     {
       "basename": "📁 52 - Obsidian Starters & Templates",
@@ -183,22 +199,6 @@
     {
       "basename": "LibreChat",
       "path": "⬇️ Clippings/Tech/LibreChat/LibreChat.md"
-    },
-    {
-      "basename": "Msty",
-      "path": "⬇️ Clippings/Tech/Msty/Msty.md"
-    },
-    {
-      "basename": "Fake Login Forms for Testing",
-      "path": "⬇ INBOX, DROPZONE/Fake Login Forms for Testing/Fake Login Forms for Testing.md"
-    },
-    {
-      "basename": "Windows BCDR",
-      "path": "⬇ INBOX, DROPZONE/Windows BCDR/Windows BCDR.md"
-    },
-    {
-      "basename": "Omg.lol",
-      "path": "⬇️ Clippings/Tech/Omg.lol/Omg.lol.md"
     }
   ],
   "omittedPaths": [],
