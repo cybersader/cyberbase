@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Humble Bundle",
+      "path": "⬇️ Clippings/Websites/Humble Bundle/Humble Bundle.md"
+    },
+    {
       "basename": "MKVToolNix",
       "path": "⬇️ Clippings/Tech/MKVToolNix/MKVToolNix.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "GitHub Repos",
       "path": "⬇️ Clippings/GitHub Repos/GitHub Repos.md"
-    },
-    {
-      "basename": "lobe-chat",
-      "path": "⬇️ Clippings/GitHub Repos/lobehub/lobe-chat/lobe-chat.md"
     }
   ],
   "omittedPaths": [],

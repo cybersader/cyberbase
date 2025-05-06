@@ -120,6 +120,7 @@
 - **[[Websites]]**
 	- **[[Algorа]]**
 	- **[[Gruv]]**
+	- **[[Humble Bundle]]**
 	- **[[Openbazaar]]**
 	- **[[Techlore]]**
 	- **[[Tertulia]]**
