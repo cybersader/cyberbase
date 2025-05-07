@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sat, May 3, 2025 - [[WizTree]]
+> Tue, May 6, 2025 - [[⬇️ Clippings]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                        | Last modified            |
-| ------------------------------------------------------------------------------------------- | ------------------------ |
-| [[⬇️ Clippings/Tech/WizTree/WizTree.md\|WizTree]]                                           | Sat - 5/3/2025, 10:13 PM |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                              | Sat - 5/3/2025, 10:13 PM |
-| [[⬇️ Clippings/Tech/PowerToys/PowerToys.md\|PowerToys]]                                     | Sat - 5/3/2025, 10:12 PM |
-| [[⬇️ Clippings/Tech/Photopea/Photopea.md\|Photopea]]                                        | Sat - 5/3/2025, 10:10 PM |
-| [[⬇️ Clippings/Tech/Ueli/Ueli.md\|Ueli]]                                                    | Sat - 5/3/2025, 10:07 PM |
-| [[⬇️ Clippings/Tech/Terrateam/Terrateam.md\|Terrateam]]                                     | Sat - 5/3/2025, 10:05 PM |
-| [[⬇️ Clippings/Tech/Google Map Plus Codes/Google Map Plus Codes.md\|Google Map Plus Codes]] | Sat - 5/3/2025, 9:58 PM  |
-| [[⬇️ Clippings/Tech/Windsurf/Windsurf.md\|Windsurf]]                                        | Sat - 5/3/2025, 9:56 PM  |
-| [[⬇️ Clippings/Tech/Cursor/Cursor.md\|Cursor]]                                              | Sat - 5/3/2025, 9:44 PM  |
-| [[⬇️ Clippings/Tech/Gitea/Gitea.md\|Gitea]]                                                 | Sat - 5/3/2025, 9:43 PM  |
+| File                                                                    | Last modified            |
+| ----------------------------------------------------------------------- | ------------------------ |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                          | Tue - 5/6/2025, 7:31 PM  |
+| [[⬇️ Clippings/Websites/Humble Bundle/Humble Bundle.md\|Humble Bundle]] | Tue - 5/6/2025, 7:31 PM  |
+| [[⬇️ Clippings/Tech/MKVToolNix/MKVToolNix.md\|MKVToolNix]]              | Mon - 5/5/2025, 7:20 PM  |
+| [[⬇️ Clippings/Tech/HandBrake/HandBrake.md\|HandBrake]]                 | Mon - 5/5/2025, 6:51 PM  |
+| [[⬇️ Clippings/Tech/MakeMKV/MakeMKV.md\|MakeMKV]]                       | Mon - 5/5/2025, 6:51 PM  |
+| [[⬇️ Clippings/Tech/WizTree/WizTree.md\|WizTree]]                       | Sat - 5/3/2025, 10:13 PM |
+| [[⬇️ Clippings/Tech/PowerToys/PowerToys.md\|PowerToys]]                 | Sat - 5/3/2025, 10:12 PM |
+| [[⬇️ Clippings/Tech/Photopea/Photopea.md\|Photopea]]                    | Sat - 5/3/2025, 10:10 PM |
+| [[⬇️ Clippings/Tech/Ueli/Ueli.md\|Ueli]]                                | Sat - 5/3/2025, 10:07 PM |
+| [[⬇️ Clippings/Tech/Terrateam/Terrateam.md\|Terrateam]]                 | Sat - 5/3/2025, 10:05 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
