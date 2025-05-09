@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Tue, May 6, 2025 - [[⬇️ Clippings]]
+> Fri, May 9, 2025 - [[Data Classifications]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                    | Last modified            |
-| ----------------------------------------------------------------------- | ------------------------ |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                          | Tue - 5/6/2025, 7:31 PM  |
-| [[⬇️ Clippings/Websites/Humble Bundle/Humble Bundle.md\|Humble Bundle]] | Tue - 5/6/2025, 7:31 PM  |
-| [[⬇️ Clippings/Tech/MKVToolNix/MKVToolNix.md\|MKVToolNix]]              | Mon - 5/5/2025, 7:20 PM  |
-| [[⬇️ Clippings/Tech/HandBrake/HandBrake.md\|HandBrake]]                 | Mon - 5/5/2025, 6:51 PM  |
-| [[⬇️ Clippings/Tech/MakeMKV/MakeMKV.md\|MakeMKV]]                       | Mon - 5/5/2025, 6:51 PM  |
-| [[⬇️ Clippings/Tech/WizTree/WizTree.md\|WizTree]]                       | Sat - 5/3/2025, 10:13 PM |
-| [[⬇️ Clippings/Tech/PowerToys/PowerToys.md\|PowerToys]]                 | Sat - 5/3/2025, 10:12 PM |
-| [[⬇️ Clippings/Tech/Photopea/Photopea.md\|Photopea]]                    | Sat - 5/3/2025, 10:10 PM |
-| [[⬇️ Clippings/Tech/Ueli/Ueli.md\|Ueli]]                                | Sat - 5/3/2025, 10:07 PM |
-| [[⬇️ Clippings/Tech/Terrateam/Terrateam.md\|Terrateam]]                 | Sat - 5/3/2025, 10:05 PM |
+| File                                                                                                                    | Last modified            |
+| ----------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [[📁 05 - Organizational Cyber/Org Data Governance/Data Classifications/Data Classifications.md\|Data Classifications]] | Fri - 5/9/2025, 1:02 PM  |
+| [[📁 05 - Organizational Cyber/📁 05 - Organizational Cyber.md\|📁 05 - Organizational Cyber]]                          | Fri - 5/9/2025, 12:00 PM |
+| [[📁 05 - Organizational Cyber/Org Data Governance/Org Data Governance.md\|Org Data Governance]]                        | Fri - 5/9/2025, 12:00 PM |
+| [[📁 09 - Personal/Jumping & Diving Spots/Jumping & Diving Spots.md\|Jumping & Diving Spots]]                           | Wed - 5/7/2025, 9:44 PM  |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                          | Tue - 5/6/2025, 7:31 PM  |
+| [[⬇️ Clippings/Websites/Humble Bundle/Humble Bundle.md\|Humble Bundle]]                                                 | Tue - 5/6/2025, 7:31 PM  |
+| [[⬇️ Clippings/Tech/MKVToolNix/MKVToolNix.md\|MKVToolNix]]                                                              | Mon - 5/5/2025, 7:20 PM  |
+| [[⬇️ Clippings/Tech/HandBrake/HandBrake.md\|HandBrake]]                                                                 | Mon - 5/5/2025, 6:51 PM  |
+| [[⬇️ Clippings/Tech/MakeMKV/MakeMKV.md\|MakeMKV]]                                                                       | Mon - 5/5/2025, 6:51 PM  |
+| [[⬇️ Clippings/Tech/WizTree/WizTree.md\|WizTree]]                                                                       | Sat - 5/3/2025, 10:13 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 

@@ -16,8 +16,12 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                              | Last modified            |
 | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                    | Tue - 5/6/2025, 9:34 PM  |
-| [[README.md\|README]]                                                                                                             | Tue - 5/6/2025, 9:34 PM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                    | Fri - 5/9/2025, 1:02 PM  |
+| [[README.md\|README]]                                                                                                             | Fri - 5/9/2025, 1:02 PM  |
+| [[📁 05 - Organizational Cyber/Org Data Governance/Data Classifications/Data Classifications.md\|Data Classifications]]           | Fri - 5/9/2025, 1:02 PM  |
+| [[📁 05 - Organizational Cyber/📁 05 - Organizational Cyber.md\|📁 05 - Organizational Cyber]]                                    | Fri - 5/9/2025, 12:00 PM |
+| [[📁 05 - Organizational Cyber/Org Data Governance/Org Data Governance.md\|Org Data Governance]]                                  | Fri - 5/9/2025, 12:00 PM |
+| [[📁 09 - Personal/Jumping & Diving Spots/Jumping & Diving Spots.md\|Jumping & Diving Spots]]                                     | Wed - 5/7/2025, 9:44 PM  |
 | [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                    | Tue - 5/6/2025, 7:31 PM  |
 | [[⬇️ Clippings/Websites/Humble Bundle/Humble Bundle.md\|Humble Bundle]]                                                           | Tue - 5/6/2025, 7:31 PM  |
 | [[⬇️ Clippings/Tech/MKVToolNix/MKVToolNix.md\|MKVToolNix]]                                                                        | Mon - 5/5/2025, 7:20 PM  |
@@ -62,9 +66,5 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                     | Fri - 5/2/2025, 9:10 PM  |
 | [[⬇️ Clippings/Tech/Omg.lol/Omg.lol.md\|Omg.lol]]                                                                                 | Fri - 5/2/2025, 9:11 AM  |
 | [[⬇️ Clippings/Websites/Openbazaar/Openbazaar.md\|Openbazaar]]                                                                    | Fri - 5/2/2025, 9:08 AM  |
-| [[⬇ INBOX, DROPZONE/Productivity Tech/Productivity Tech.md\|Productivity Tech]]                                                   | Fri - 5/2/2025, 9:07 AM  |
-| [[⬇️ Clippings/Tech/mouseless.click/mouseless.click.md\|mouseless.click]]                                                         | Fri - 5/2/2025, 9:06 AM  |
-| [[⬇️ Clippings/Tech/Typefully/Typefully.md\|Typefully]]                                                                           | Fri - 5/2/2025, 9:00 AM  |
-| [[⬇️ Clippings/Tech/Oodo/Oodo.md\|Oodo]]                                                                                          | Fri - 5/2/2025, 8:59 AM  |
 
 %% DATAVIEW_PUBLISHER: end %%
