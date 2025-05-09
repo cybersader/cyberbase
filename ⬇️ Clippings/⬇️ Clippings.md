@@ -50,6 +50,7 @@
 	- **[[Actions For Obsidian]]**
 	- **[[Blaze ai]]**
 	- **[[Bruno]]**
+	- **[[CasaOS]]**
 	- **[[Castopod]]**
 	- **[[Chatwoot]]**
 	- **[[Claude]]**
