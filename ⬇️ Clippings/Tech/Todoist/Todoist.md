@@ -1,29 +1,29 @@
 ---
-title: "Todoist"
-source: "https://www.todoist.com/it"
-published:
+title: Todoist
+source: https://www.todoist.com/it
+published: 
 date created: Saturday, May 10th 2025, 4:36 pm
-description: "Scelta da oltre 30 milioni di persone e team, Todoist è l'app di task manager e to do list che aumenta produttività, concentrazione e organizzazione."
+description: Simplify your life and organize your team's work with the most popular task manager and to do list app in the world.
 tags:
-  - "clippings"
-  - "clippings/tech"
-  - "task_management"
-  - "productivity"
-  - "to_do_list"
-  - "project_management"
-  - "time_management"
-  - "teamwork"
-  - "organization"
-  - "productivity"
-  - "task_management"
-  - "project_management"
-  - "time_management"
-  - "teamwork"
-  - "organization"
-  - "productivity"
-favicon: "https://www.todoist.com/static/favicon.ico"
+  - clippings
+  - clippings/tech
+  - task_management
+  - productivity
+  - to_do_list
+  - project_management
+  - time_management
+  - teamwork
+  - organization
+  - productivity
+  - task_management
+  - project_management
+  - time_management
+  - teamwork
+  - organization
+  - productivity
+favicon: https://www.todoist.com/static/favicon.ico
 ---
-> [todoist.com > Todoist | La to do list per organizzare la tua vita e il tuo lavoro](https://www.todoist.com/it)
+> [todoist.com > Todoist)
 
 ## Todoist Overview
 
