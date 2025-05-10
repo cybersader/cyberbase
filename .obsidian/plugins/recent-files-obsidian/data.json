@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Windows Desktop Provisioning",
+      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
+    },
+    {
+      "basename": "Home OS Provisioning",
+      "path": "📁 07 - Cybersader Arsenal/Home OS Provisioning/Home OS Provisioning.md"
+    },
+    {
+      "basename": "Windows Home IT Admin",
+      "path": "📁 07 - Cybersader Arsenal/Windows Home IT Admin/Windows Home IT Admin.md"
+    },
+    {
       "basename": "Todoist",
       "path": "⬇️ Clippings/Tech/Todoist/Todoist.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "⬇️ Obsidian Ideas Drop",
       "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
-    },
-    {
-      "basename": "Framework Crosswalks",
-      "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalks/Framework Crosswalks.md"
-    },
-    {
-      "basename": "LM Studio",
-      "path": "⬇️ Clippings/Tech/LM Studio/LM Studio.md"
-    },
-    {
-      "basename": "obsidian-dev-utils",
-      "path": "⬇️ Clippings/GitHub Repos/mnaoumov/obsidian-dev-utils/obsidian-dev-utils.md"
     }
   ],
   "omittedPaths": [],
