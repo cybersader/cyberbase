@@ -70,6 +70,7 @@
 	- **[[Kittl]]**
 	- **[[Kortex]]**
 	- **[[LibreChat]]**
+	- **[[Limitless AI]]**
 	- **[[LM Studio]]**
 	- **[[MakeMKV]]**
 	- **[[Makemydrivefun]]**
