@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Todoist",
+      "path": "⬇️ Clippings/Tech/Todoist/Todoist.md"
+    },
+    {
       "basename": "b",
       "path": "⬇️ Clippings/Tech/b/b.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "obsidian-dev-utils",
       "path": "⬇️ Clippings/GitHub Repos/mnaoumov/obsidian-dev-utils/obsidian-dev-utils.md"
-    },
-    {
-      "basename": "codex",
-      "path": "⬇️ Clippings/GitHub Repos/openai/codex/codex.md"
     }
   ],
   "omittedPaths": [],

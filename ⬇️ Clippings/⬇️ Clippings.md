@@ -111,6 +111,7 @@
 	- **[[Teleseer]]**
 	- **[[Terrateam]]**
 	- **[[Thinkst Canary]]**
+	- **[[Todoist]]**
 	- **[[Toggl Track]]**
 	- **[[Trilium Notes]]**
 	- **[[Typefully]]**
