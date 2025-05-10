@@ -50,6 +50,7 @@
 - **[[Reddit]]**
 - **[[Tech]]**
 	- **[[Actions For Obsidian]]**
+	- **[[b]]**
 	- **[[Blaze ai]]**
 	- **[[Bruno]]**
 	- **[[CasaOS]]**
@@ -120,6 +121,7 @@
 	- **[[Windsurf]]**
 	- **[[Wispr flow]]**
 	- **[[WizTree]]**
+	- **[[Workflowy]]**
 	- **[[Yaak]]**
 	- **[[Zivver Security]]**
 - **[[Websites]]**

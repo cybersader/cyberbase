@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "b",
+      "path": "⬇️ Clippings/Tech/b/b.md"
+    },
+    {
+      "basename": "Workflowy",
+      "path": "⬇️ Clippings/Tech/Workflowy/Workflowy.md"
+    },
+    {
       "basename": "vim-keybindings-everywhere-the-ultimate-list",
       "path": "⬇️ Clippings/GitHub Repos/erikw/vim-keybindings-everywhere-the-ultimate-list/vim-keybindings-everywhere-the-ultimate-list.md"
     },
@@ -191,10 +199,6 @@
     {
       "basename": "codex",
       "path": "⬇️ Clippings/GitHub Repos/openai/codex/codex.md"
-    },
-    {
-      "basename": "ciso-assistant-community",
-      "path": "⬇️ Clippings/GitHub Repos/intuitem/ciso-assistant-community/ciso-assistant-community.md"
     }
   ],
   "omittedPaths": [],
