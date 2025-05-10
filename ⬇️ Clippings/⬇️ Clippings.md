@@ -20,6 +20,8 @@
 - **[[GitHub Repos]]**
 	- **EndoTheDev**
 		- **[[Awesome-Ollama]]**
+	- **erikw**
+		- **[[vim-keybindings-everywhere-the-ultimate-list]]**
 	- **intuitem**
 		- **[[ciso-assistant-community]]**
 	- **Legcord**
