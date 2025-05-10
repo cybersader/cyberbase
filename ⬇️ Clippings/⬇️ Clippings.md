@@ -90,6 +90,7 @@
 	- **[[Opennote]]**
 	- **[[OperationPrivacy]]**
 	- **[[OrbStack]]**
+	- **[[Org Mode]]**
 	- **[[Peertube]]**
 	- **[[Photopea]]**
 	- **[[Pintree]]**

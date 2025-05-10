@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Org Mode",
+      "path": "⬇️ Clippings/Tech/Org Mode/Org Mode.md"
+    },
+    {
       "basename": "CasaOS",
       "path": "⬇️ Clippings/Tech/CasaOS/CasaOS.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Obsidian",
       "path": "⬇️ Clippings/Obsidian/Obsidian.md"
-    },
-    {
-      "basename": "News",
-      "path": "⬇️ Clippings/News/News.md"
     }
   ],
   "omittedPaths": [],
