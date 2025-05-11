@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Sunday, May 11th 2025, 11:30 am
-date modified: Sunday, May 11th 2025, 3:32 pm
+date modified: Sunday, May 11th 2025, 3:59 pm
 ---
 
 [Paperless Storage](../../../Paperless%20Storage/Paperless%20Storage.md)
@@ -22,13 +22,13 @@ services:
      restart: unless-stopped
      container_name: paperless-broker
      volumes:
-        - redisdata:/data
+        - /mnt/personal/paperless-ngx/redisdata:/data
   db:
      image: postgres:17
      restart: unless-stopped
      container_name: paperless-db
      volumes:
-        - pgdata:/var/lib/postgresql/data
+        - /mnt/personal/paperless-ngx/pgdata:/var/lib/postgresql/data
      environment:
         POSTGRES_DB: paperless
         POSTGRES_USER: paperless
@@ -45,17 +45,20 @@ services:
      ports:
         - "8010:8000"
      volumes:
-        - data:/usr/src/paperless/data
-        - media:/usr/src/paperless/media
-        - export:/usr/src/paperless/export
-        - consume:/usr/src/paperless/consume
+        - /mnt/personal/paperless-ngx/data:/usr/src/paperless/data
+        - /mnt/personal/paperless-ngx/media:/usr/src/paperless/media
+        - /mnt/personal/paperless-ngx/export:/usr/src/paperless/export
+        - /mnt/personal/paperless-ngx/consume:/usr/src/paperless/consume
      environment:
-        PAPERLESS_REDIS: redis://broker:6379
-        PAPERLESS_DBHOST: db
-        USERMAP_UID: 1000
-        USERMAP_GID: 100
+		POSTGRES_DB: paperless
+		POSTGRES_USER: paperless
+		POSTGRES_PASSWORD: paperless
+		PAPERLESS_REDIS: redis://broker:6379
+		PAPERLESS_DBHOST: db
+		USERMAP_UID: "1000"
+		USERMAP_GID: "100"
 		PAPERLESS_TIKA_ENABLED: "1"
-	    PAPERLESS_TIKA_ENDPOINT: http://tika:9998
+		PAPERLESS_TIKA_ENDPOINT: http://tika:9998
 		PAPERLESS_TIKA_GOTENBERG_ENDPOINT: http://gotenberg:3000
   tika:
     image: docker.io/apache/tika:latest
@@ -63,7 +66,6 @@ services:
   gotenberg:
     image: docker.io/gotenberg/gotenberg:8.19
     restart: unless-stopped
-
     # The gotenberg chromium route is used to convert .eml files. We do not
     # want to allow external content like tracking pixels or even javascript.
     command:
