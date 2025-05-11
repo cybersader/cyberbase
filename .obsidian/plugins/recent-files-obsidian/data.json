@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "Custom Docker Apps in TrueNAS",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Custom Docker Apps in TrueNAS/Custom Docker Apps in TrueNAS.md"
+    },
+    {
+      "basename": "TrueNAS Scale Home Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
+    },
+    {
+      "basename": "Docker Paperless-NGX",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Docker Paperless-NGX/Docker Paperless-NGX.md"
+    },
+    {
       "basename": "Paperless Storage",
       "path": "📁 07 - Cybersader Arsenal/Paperless Storage/Paperless Storage.md"
+    },
+    {
+      "basename": "Home Lab, Home Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md"
     },
     {
       "basename": "Home OS Provisioning & Resetting",
@@ -183,22 +199,6 @@
     {
       "basename": "Framework Crosswalker - TLDR",
       "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalker - TLDR/Framework Crosswalker - TLDR.md"
-    },
-    {
-      "basename": "Framework Crosswalker - GPT Intro",
-      "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalker - GPT Intro/Framework Crosswalker - GPT Intro.md"
-    },
-    {
-      "basename": "About Frameworker",
-      "path": "📁 01 - Projects/Obsidian Frameworker/About Frameworker/About Frameworker.md"
-    },
-    {
-      "basename": "📁 01 - Projects",
-      "path": "📁 01 - Projects/📁 01 - Projects.md"
-    },
-    {
-      "basename": "Decimal System",
-      "path": "🕸️ UNSTRUCTURED/Decimal System/Decimal System.md"
     }
   ],
   "omittedPaths": [],

@@ -14,6 +14,7 @@ date modified: Monday, May 27th 2024, 1:14 pm
 - **[[Custom Local Domain]]**
 - **[[Dataset Available Space]]**
 
+- **[[Docker Paperless-NGX]]**
 - **[[Home Server Power]]**
 - **[[Immich & Cloudflare Tunnels]]**
 - **[[iX-Storj Overcharging or Overusing Storage]]**
