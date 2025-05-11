@@ -18,7 +18,9 @@ date modified: Saturday, May 10th 2025, 8:31 pm
 - [youtube.com > The Perfect Windows 11 Install - YouTube](https://www.youtube.com/watch?v=6UQZ5oQg8XA)
 - [youtube.com > Making the Best Windows ISO - YouTube](https://www.youtube.com/watch?v=xLCWtC6UYrM&t=100s)
 - [youtube.com > Create A Custom Windows 10 or 11 ISO - YouTube](https://www.youtube.com/watch?v=_gMJNQ3yWNE)
-
+- [psappdeploytoolkit.com > Features · PSAppDeployToolkit](https://psappdeploytoolkit.com/features)
+- [boxstarter.org > 100% Uninterrupted Windows Environment Installs](https://boxstarter.org/)
+- 
 # Tech Stack 
 
 - [TrueNAS Scale Home Server](../Home%20Lab,%20Home%20Server/TrueNAS%20Scale%20Home%20Server/TrueNAS%20Scale%20Home%20Server.md) -  specifically SMB shares implemented in some way (network-accessible storage)
