@@ -13,6 +13,7 @@ date modified: Sunday, May 11th 2025, 3:59 pm
 - [paperless-ngx.com > Setup - Paperless-ngx](https://docs.paperless-ngx.com/setup/#docker)
 - Good example of using custom YAML - [youtube.com > TrueNAS Scale + Custom App (Baserow example)](https://www.youtube.com/watch?v=ZjWRPOkLCwA)
 	- [github.com > serversathome/ServersatHome: This is the official Github for Servers@Home](https://github.com/serversathome/ServersatHome/tree/main)
+- [youtube.com > Setup PAPERLESS on TrueNAS SCALE: Your Self-Hosted Document Manager - YouTube](https://www.youtube.com/watch?v=-Y6VudY35nE)
 - [truenas.com > Installing Custom Apps](https://apps.truenas.com/managing-apps/installing-custom-apps/)
 
 ```yaml
