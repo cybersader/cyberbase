@@ -72,6 +72,7 @@ services:
     image: gotenberg/gotenberg:8.19
     restart: unless-stopped
     command:
+      - "gotenberg"
       - "--chromium-disable-javascript=true"
       - "--chromium-allow-list=file:///tmp/.*"
 
