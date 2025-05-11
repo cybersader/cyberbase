@@ -1,12 +1,75 @@
 ---
-aliases: 
-tags: 
+aliases: []
+tags: []
 publish: true
 permalink:
 title:
 date created: Sunday, May 11th 2025, 11:30 am
-date modified: Sunday, May 11th 2025, 11:30 am
+date modified: Sunday, May 11th 2025, 3:32 pm
 ---
 
 [Paperless Storage](../../../Paperless%20Storage/Paperless%20Storage.md)
 
+- [paperless-ngx.com > Setup - Paperless-ngx](https://docs.paperless-ngx.com/setup/#docker)
+- Good example of using custom YAML - [youtube.com > TrueNAS Scale + Custom App (Baserow example)](https://www.youtube.com/watch?v=ZjWRPOkLCwA)
+	- [github.com > serversathome/ServersatHome: This is the official Github for Servers@Home](https://github.com/serversathome/ServersatHome/tree/main)
+- [truenas.com > Installing Custom Apps](https://apps.truenas.com/managing-apps/installing-custom-apps/)
+
+```yaml
+services:
+  broker:
+     image: redis:7
+     restart: unless-stopped
+     container_name: paperless-broker
+     volumes:
+        - redisdata:/data
+  db:
+     image: postgres:17
+     restart: unless-stopped
+     container_name: paperless-db
+     volumes:
+        - pgdata:/var/lib/postgresql/data
+     environment:
+        POSTGRES_DB: paperless
+        POSTGRES_USER: paperless
+        POSTGRES_PASSWORD: paperless
+  webserver:
+     image: ghcr.io/paperless-ngx/paperless-ngx:latest
+     restart: unless-stopped
+     container_name: paperless-ngx
+     depends_on:
+        - db
+        - broker
+     ports:
+        - "8000:8000"
+     volumes:
+        - data:/usr/src/paperless/data
+        - media:/usr/src/paperless/media
+        - export:/usr/src/paperless/export
+        - consume:/usr/src/paperless/consume
+     environment:
+        PAPERLESS_REDIS: redis://broker:6379
+        PAPERLESS_DBHOST: db
+        USERMAP_UID: 1000
+        USERMAP_GID: 100
+		PAPERLESS_TIKA_ENABLED: "1"
+	    PAPERLESS_TIKA_ENDPOINT: http://tika:9998
+		PAPERLESS_TIKA_GOTENBERG_ENDPOINT: http://gotenberg:3000
+  tika:
+     image: apache/tika:latest
+     restart: unless-stopped
+     container_name: paperless-tika
+     ports:
+        - "9998:9998"
+  gotenberg:
+     image: gotenberg/gotenberg:7
+     restart: unless-stopped
+     container_name: paperless-gotenberg
+     ports:
+        - "3000:3000"
+volumes:
+  data:
+  media:
+  pgdata:
+  redisdata:
+```

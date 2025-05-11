@@ -1,10 +1,10 @@
 {
-  "findText": "(\\n)([\\t ]*\\n)",
-  "replaceText": "$1",
+  "findText": "   ",
+  "replaceText": "    ",
   "useRegEx": true,
-  "selOnly": false,
+  "selOnly": true,
   "caseInsensitive": false,
-  "processLineBreak": false,
+  "processLineBreak": true,
   "processTab": false,
   "prefillFind": false
 }
