@@ -1,16 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Windows Desktop Provisioning",
-      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
-    },
-    {
-      "basename": "Home OS Provisioning",
-      "path": "📁 07 - Cybersader Arsenal/Home OS Provisioning/Home OS Provisioning.md"
+      "basename": "Home OS Provisioning & Resetting",
+      "path": "📁 07 - Cybersader Arsenal/Home OS Provisioning & Resetting/Home OS Provisioning & Resetting.md"
     },
     {
       "basename": "Windows Home IT Admin",
       "path": "📁 07 - Cybersader Arsenal/Windows Home IT Admin/Windows Home IT Admin.md"
+    },
+    {
+      "basename": "Windows Desktop Provisioning",
+      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
     },
     {
       "basename": "Todoist",
@@ -195,10 +195,6 @@
     {
       "basename": "Decimal System",
       "path": "🕸️ UNSTRUCTURED/Decimal System/Decimal System.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     }
   ],
   "omittedPaths": [],

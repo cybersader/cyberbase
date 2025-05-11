@@ -19,7 +19,7 @@ date modified: Thursday, June 20th 2024, 3:38 pm
 - **[[Handling Web Links]]**
 - **[[Home Lab, Home Server]]**
 - **[[Home Network]]**
-- **[[Home OS Provisioning]]**
+- **[[Home OS Provisioning & Resetting]]**
 - **[[Internet Access]]**
 - **[[Internet Safety for Children]]**
 	- **[[⬇️ Internet & Children]]**
