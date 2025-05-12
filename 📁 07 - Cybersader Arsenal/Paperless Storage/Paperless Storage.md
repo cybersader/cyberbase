@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Saturday, May 10th 2025, 9:14 pm
-date modified: Sunday, May 11th 2025, 8:59 pm
+date modified: Sunday, May 11th 2025, 9:54 pm
 ---
 
 [Home Lab, Home Server](../Home%20Lab,%20Home%20Server/Home%20Lab,%20Home%20Server.md)
@@ -23,4 +23,8 @@ date modified: Sunday, May 11th 2025, 8:59 pm
 1. A document scanner or printer with scanning capability
 2. Network storage - SMB share
 3. Paperless-NGX instance
+4. NAPS2
+5. CIFs Document Provider
+6. Mopria Android
+7. TrueNAS Scale
 
