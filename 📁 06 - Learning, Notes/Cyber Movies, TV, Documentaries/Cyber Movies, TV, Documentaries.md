@@ -42,6 +42,7 @@ Subfolders:
 - [WarGames](WarGames/WarGames.md) 
 - Hackers
 - Zero Day (Netflix 2025) 
+- The Amateur
 
 ## Documentaries
 
@@ -88,6 +89,8 @@ Subfolders:
 - Blackhat
 - The Night Agent
 - Stranger Things - phreaking scene
+- Bad Guys
+- 
 
 # Financial Sector and Cyber
 
