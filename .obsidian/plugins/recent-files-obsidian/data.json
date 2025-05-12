@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Cyber Movies, TV, Documentaries",
+      "path": "📁 06 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
+    },
+    {
       "basename": "Docker Paperless-NGX",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Docker Paperless-NGX/Docker Paperless-NGX.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Obsidian & Cyber Working Group",
       "path": "📁 53 - Cybersader GRC Tools/Obsidian & Cyber Working Group/Obsidian & Cyber Working Group.md"
-    },
-    {
-      "basename": "Framework Crosswalker - TLDR",
-      "path": "📁 01 - Projects/Obsidian Frameworker/Framework Crosswalker - TLDR/Framework Crosswalker - TLDR.md"
     }
   ],
   "omittedPaths": [],

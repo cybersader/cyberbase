@@ -1,9 +1,10 @@
 ---
+title:
 permalink:
 aliases: []
 tags: [Curations]
 date created: Monday, April 22nd 2024, 3:08 pm
-date modified: Sunday, February 9th 2025, 10:45 am
+date modified: Sunday, May 11th 2025, 8:18 pm
 publish: true
 ---
 
@@ -40,6 +41,7 @@ Subfolders:
 - The Score
 - [WarGames](WarGames/WarGames.md) 
 - Hackers
+- Zero Day (Netflix 2025) 
 
 ## Documentaries
 
@@ -85,6 +87,7 @@ Subfolders:
 - Better Call Saul
 - Blackhat
 - The Night Agent
+- Stranger Things - phreaking scene
 
 # Financial Sector and Cyber
 
