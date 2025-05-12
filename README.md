@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sun, May 11, 2025 - [[Cyber Movies, TV, Documentaries]]
+> Sun, May 11, 2025 - [[Paperless Storage]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -102,9 +102,9 @@ SORT file.mtime DESC LIMIT 10
 
 | File                                                                                                                                              | Last modified             |
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 07 - Cybersader Arsenal/Paperless Storage/Paperless Storage.md\|Paperless Storage]]                                                          | Sun - 5/11/2025, 9:54 PM  |
 | [[📁 06 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md\|Cyber Movies, TV, Documentaries]]                   | Sun - 5/11/2025, 8:29 PM  |
 | [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Docker Paperless-NGX/Docker Paperless-NGX.md\|Docker Paperless-NGX]] | Sun - 5/11/2025, 5:57 PM  |
-| [[📁 07 - Cybersader Arsenal/Paperless Storage/Paperless Storage.md\|Paperless Storage]]                                                          | Sun - 5/11/2025, 11:30 AM |
 | [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                          | Sun - 5/11/2025, 11:30 AM |
 | [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md\|Home Lab, Home Server]]                                              | Sun - 5/11/2025, 11:30 AM |
 | [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md\|TrueNAS Scale Home Server]]            | Sun - 5/11/2025, 11:30 AM |
