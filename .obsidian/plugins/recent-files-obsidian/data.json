@@ -1,16 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "Paperless Storage",
-      "path": "📁 07 - Cybersader Arsenal/Paperless Storage/Paperless Storage.md"
+      "basename": "GrapheneOS",
+      "path": "⬇️ Clippings/Tech/GrapheneOS/GrapheneOS.md"
+    },
+    {
+      "basename": "Windows Desktop Provisioning",
+      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
+    },
+    {
+      "basename": "Docker Paperless-NGX",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Docker Paperless-NGX/Docker Paperless-NGX.md"
     },
     {
       "basename": "Cyber Movies, TV, Documentaries",
       "path": "📁 06 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md"
     },
     {
-      "basename": "Docker Paperless-NGX",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Docker Paperless-NGX/Docker Paperless-NGX.md"
+      "basename": "Identity & Cybersecurity Basics",
+      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Identity & Cybersecurity Basics/Identity & Cybersecurity Basics.svg"
+    },
+    {
+      "basename": "Pasted Image 20250106153615_580",
+      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Identity & Cybersecurity Basics/Pasted Image 20250106153615_580.png"
+    },
+    {
+      "basename": "Identity & Cybersecurity Basics",
+      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Identity & Cybersecurity Basics/Identity & Cybersecurity Basics.md"
+    },
+    {
+      "basename": "YLC 2024 Presentation",
+      "path": "📁 50 - Cybersade/YLC 2024 Presentation/YLC 2024 Presentation.md"
+    },
+    {
+      "basename": "Paperless Storage",
+      "path": "📁 07 - Cybersader Arsenal/Paperless Storage/Paperless Storage.md"
     },
     {
       "basename": "Custom Docker Apps in TrueNAS",
@@ -31,10 +55,6 @@
     {
       "basename": "Windows Home IT Admin",
       "path": "📁 07 - Cybersader Arsenal/Windows Home IT Admin/Windows Home IT Admin.md"
-    },
-    {
-      "basename": "Windows Desktop Provisioning",
-      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
     },
     {
       "basename": "Todoist",
@@ -179,26 +199,6 @@
     {
       "basename": "Awesome Clothing",
       "path": "🕸️ UNSTRUCTURED/Awesome Clothing/Awesome Clothing.md"
-    },
-    {
-      "basename": "Legcord",
-      "path": "⬇️ Clippings/GitHub Repos/Legcord/Legcord/Legcord.md"
-    },
-    {
-      "basename": "minimal-twitter",
-      "path": "⬇️ Clippings/GitHub Repos/typefully/minimal-twitter/minimal-twitter.md"
-    },
-    {
-      "basename": "Minimal Theme for Twitter",
-      "path": "⬇️ Clippings/Tech/Minimal Theme for Twitter/Minimal Theme for Twitter.md"
-    },
-    {
-      "basename": "Android Shortcuts",
-      "path": "🕸️ UNSTRUCTURED/Android Shortcuts/Android Shortcuts.md"
-    },
-    {
-      "basename": "Obsidian & Cyber Working Group",
-      "path": "📁 53 - Cybersader GRC Tools/Obsidian & Cyber Working Group/Obsidian & Cyber Working Group.md"
     }
   ],
   "omittedPaths": [],
