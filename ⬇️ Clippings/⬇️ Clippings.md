@@ -50,13 +50,14 @@
 - **[[Reddit]]**
 - **[[Tech]]**
 	- **[[Actions For Obsidian]]**
-	- **[[b]]**
 	- **[[Blaze ai]]**
 	- **[[Bruno]]**
+	- **[[CalyxOS]]**
 	- **[[CasaOS]]**
 	- **[[Castopod]]**
 	- **[[Chatwoot]]**
 	- **[[Claude]]**
+	- **[[ConfessIt]]**
 	- **[[Cryptee]]**
 	- **[[Cryptomator]]**
 	- **[[Cryptpad]]**
@@ -87,6 +88,7 @@
 	- **[[Napkin]]**
 	- **[[Nomorobo]]**
 	- **[[Notesnook]]**
+	- **[[Notion Calendar]]**
 	- **[[Ollama]]**
 	- **[[Omg.lol]]**
 	- **[[Oodo]]**
