@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sun, May 11, 2025 - [[Paperless Storage]]
+> Mon, May 12, 2025 - [[⬇️ Clippings]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -102,6 +102,8 @@ SORT file.mtime DESC LIMIT 10
 
 | File                                                                                                                                              | Last modified             |
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                    | Mon - 5/12/2025, 9:32 PM  |
+| [[⬇️ Clippings/Tech/GrapheneOS/GrapheneOS.md\|GrapheneOS]]                                                                                        | Mon - 5/12/2025, 9:32 PM  |
 | [[📁 07 - Cybersader Arsenal/Paperless Storage/Paperless Storage.md\|Paperless Storage]]                                                          | Sun - 5/11/2025, 9:54 PM  |
 | [[📁 06 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md\|Cyber Movies, TV, Documentaries]]                   | Sun - 5/11/2025, 8:29 PM  |
 | [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Docker Paperless-NGX/Docker Paperless-NGX.md\|Docker Paperless-NGX]] | Sun - 5/11/2025, 5:57 PM  |
@@ -110,8 +112,6 @@ SORT file.mtime DESC LIMIT 10
 | [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md\|TrueNAS Scale Home Server]]            | Sun - 5/11/2025, 11:30 AM |
 | [[📁 07 - Cybersader Arsenal/Home OS Provisioning & Resetting/Home OS Provisioning & Resetting.md\|Home OS Provisioning & Resetting]]             | Sat - 5/10/2025, 9:02 PM  |
 | [[🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md\|Windows Desktop Provisioning]]                                   | Sat - 5/10/2025, 8:05 PM  |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                    | Sat - 5/10/2025, 8:03 PM  |
-| [[⬇️ Clippings/Tech/Todoist/Todoist.md\|Todoist]]                                                                                                 | Sat - 5/10/2025, 4:55 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 

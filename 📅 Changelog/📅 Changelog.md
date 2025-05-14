@@ -16,9 +16,11 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                                                           | Last modified             |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------- |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                                                 | Mon - 5/12/2025, 9:33 PM  |
+| [[README.md\|README]]                                                                                                                                                          | Mon - 5/12/2025, 9:33 PM  |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                 | Mon - 5/12/2025, 9:32 PM  |
+| [[⬇️ Clippings/Tech/GrapheneOS/GrapheneOS.md\|GrapheneOS]]                                                                                                                     | Mon - 5/12/2025, 9:32 PM  |
 | [[📁 07 - Cybersader Arsenal/Paperless Storage/Paperless Storage.md\|Paperless Storage]]                                                                                       | Sun - 5/11/2025, 9:54 PM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                                                 | Sun - 5/11/2025, 8:29 PM  |
-| [[README.md\|README]]                                                                                                                                                          | Sun - 5/11/2025, 8:29 PM  |
 | [[📁 06 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md\|Cyber Movies, TV, Documentaries]]                                                | Sun - 5/11/2025, 8:29 PM  |
 | [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Docker Paperless-NGX/Docker Paperless-NGX.md\|Docker Paperless-NGX]]                              | Sun - 5/11/2025, 5:57 PM  |
 | [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                                                       | Sun - 5/11/2025, 11:30 AM |
@@ -26,7 +28,6 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md\|TrueNAS Scale Home Server]]                                         | Sun - 5/11/2025, 11:30 AM |
 | [[📁 07 - Cybersader Arsenal/Home OS Provisioning & Resetting/Home OS Provisioning & Resetting.md\|Home OS Provisioning & Resetting]]                                          | Sat - 5/10/2025, 9:02 PM  |
 | [[🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md\|Windows Desktop Provisioning]]                                                                | Sat - 5/10/2025, 8:05 PM  |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                 | Sat - 5/10/2025, 8:03 PM  |
 | [[⬇️ Clippings/Tech/Todoist/Todoist.md\|Todoist]]                                                                                                                              | Sat - 5/10/2025, 4:55 PM  |
 | [[⬇️ Clippings/Tech/b/b.md\|b]]                                                                                                                                                | Sat - 5/10/2025, 4:15 PM  |
 | [[⬇️ Clippings/Tech/Workflowy/Workflowy.md\|Workflowy]]                                                                                                                        | Sat - 5/10/2025, 4:14 PM  |
@@ -65,6 +66,5 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md\|⬇️ Obsidian Ideas Drop]]                                                                         | Sat - 5/3/2025, 9:04 PM   |
 | [[⬇️ Clippings/Tech/eramba/eramba.md\|eramba]]                                                                                                                                 | Sat - 5/3/2025, 9:00 PM   |
 | [[📁 53 - Cybersader GRC Tools/Obsidian & Cyber Working Group/Obsidian & Cyber Working Group.md\|Obsidian & Cyber Working Group]]                                              | Sat - 5/3/2025, 4:17 PM   |
-| [[⬇️ Clippings/Tech/LM Studio/LM Studio.md\|LM Studio]]                                                                                                                        | Sat - 5/3/2025, 3:13 PM   |
 
 %% DATAVIEW_PUBLISHER: end %%
