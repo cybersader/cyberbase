@@ -16,6 +16,7 @@
 	- **[[pfSense- DNS Rebinding and NAT Reflection]]**
 	- **[[Tag Selection Workflow Options]]**
 	- **[[Texas Outdoor Adventures]]**
+	- **[[Wifi Mode Explanation]]**
 	- **[[WPA2-PSK vs WPA2-Enterprise]]**
 - **[[GitHub Repos]]**
 	- **EndoTheDev**
