@@ -112,6 +112,7 @@
 	- **[[Scrypted]]**
 	- **[[Simplemind]]**
 	- **[[Slido]]**
+	- **[[solidtime]]**
 	- **[[Teleseer]]**
 	- **[[Terrateam]]**
 	- **[[Thinkst Canary]]**
