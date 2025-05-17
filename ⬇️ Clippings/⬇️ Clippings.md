@@ -52,6 +52,7 @@
 - **[[Tech]]**
 	- **[[Ableton Live]]**
 	- **[[Actions For Obsidian]]**
+	- **[[Audacity]]**
 	- **[[Blaze ai]]**
 	- **[[Bruno]]**
 	- **[[CalyxOS]]**

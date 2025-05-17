@@ -5,6 +5,14 @@
       "path": "📁 12 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md"
     },
     {
+      "basename": "Audacity",
+      "path": "⬇️ Clippings/Tech/Audacity/Audacity.md"
+    },
+    {
+      "basename": "📁 12 - Content Creation",
+      "path": "📁 12 - Content Creation/📁 12 - Content Creation.md"
+    },
+    {
       "basename": "Ableton Live",
       "path": "⬇️ Clippings/Tech/Ableton Live/Ableton Live.md"
     },
@@ -35,10 +43,6 @@
     {
       "basename": "Presentation Tools & Tech",
       "path": "📁 12 - Content Creation/Presentation Tools & Tech/Presentation Tools & Tech.md"
-    },
-    {
-      "basename": "📁 12 - Content Creation",
-      "path": "📁 12 - Content Creation/📁 12 - Content Creation.md"
     },
     {
       "basename": "🕸️ UNSTRUCTURED",
@@ -195,10 +199,6 @@
     {
       "basename": "Obsidian Frameworker",
       "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md"
     }
   ],
   "omittedPaths": [],
