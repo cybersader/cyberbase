@@ -50,6 +50,7 @@
 	- **[[Simple Archiver]]**
 - **[[Reddit]]**
 - **[[Tech]]**
+	- **[[Ableton Live]]**
 	- **[[Actions For Obsidian]]**
 	- **[[Blaze ai]]**
 	- **[[Bruno]]**
