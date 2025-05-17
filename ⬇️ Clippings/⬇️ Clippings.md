@@ -78,6 +78,7 @@
 	- **[[LibreChat]]**
 	- **[[Limitless AI]]**
 	- **[[LM Studio]]**
+	- **[[LMMS]]**
 	- **[[MakeMKV]]**
 	- **[[Makemydrivefun]]**
 	- **[[Metube]]**
@@ -89,6 +90,7 @@
 	- **[[Napkin]]**
 	- **[[Nomorobo]]**
 	- **[[Notesnook]]**
+	- **[[Nothing Tech US]]**
 	- **[[Notion Calendar]]**
 	- **[[Ollama]]**
 	- **[[Omg.lol]]**
