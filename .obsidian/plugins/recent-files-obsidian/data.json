@@ -5,6 +5,14 @@
       "path": "📁 07 - Cybersader Arsenal/Personal Privacy Tools/Personal Privacy Tools.md"
     },
     {
+      "basename": "Obsidian Quartz Publish",
+      "path": "📁 51 - Cyberbase/Obsidian Quartz Publish/Obsidian Quartz Publish.md"
+    },
+    {
+      "basename": "CB1 - Customize Publish",
+      "path": "📁 51 - Cyberbase/Cyberbase Prompts/CB1 - Customize Publish/CB1 - Customize Publish.md"
+    },
+    {
       "basename": "📁 07 - Cybersader Arsenal",
       "path": "📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "MakeMKV",
       "path": "⬇️ Clippings/Tech/MakeMKV/MakeMKV.md"
-    },
-    {
-      "basename": "My Media Server",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
-    },
-    {
-      "basename": "frameworker_linking",
-      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_linking/frameworker_linking.md"
     }
   ],
   "omittedPaths": [],
