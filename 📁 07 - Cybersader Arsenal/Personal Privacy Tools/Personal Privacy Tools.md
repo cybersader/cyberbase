@@ -1,10 +1,11 @@
 ---
+title:
 aliases: []
 tags: []
 publish: true
 permalink:
 date created: Sunday, December 22nd 2024, 5:33 pm
-date modified: Sunday, December 22nd 2024, 5:34 pm
+date modified: Saturday, May 17th 2025, 4:53 pm
 ---
 
 [📁 03 - Curations, Stacks](../../📁%2003%20-%20Curations,%20Stacks/📁%2003%20-%20Curations,%20Stacks.md)
@@ -17,3 +18,19 @@ date modified: Sunday, December 22nd 2024, 5:34 pm
 - [GitHub Awesome Privacy and Privacy Engineering Lists](https://upsecure.com/blog/github-awesome-privacy-and-privacy-engineering-lists/ "GitHub Awesome Privacy and Privacy Engineering Lists")
 - [Star-Kid-zone/awesome-list-privacy: Awesome Privacy - A curated list of services and alternatives that respect your privacy because PRIVACY MATTERS.](https://github.com/Star-Kid-zone/awesome-list-privacy "Star-Kid-zone/awesome-list-privacy: Awesome Privacy - A curated list of services and alternatives that respect your privacy because PRIVACY MATTERS.")
 - [iAnonymous3000/awesome-privacy-tools: A curated list of privacy-focused tools, blending security with reasonable convenience. Ideal for enhancing online privacy without compromising usability. A go-to resource for privacy-conscious users.](https://github.com/iAnonymous3000/awesome-privacy-tools "iAnonymous3000/awesome-privacy-tools: A curated list of privacy-focused tools, blending security with reasonable convenience. Ideal for enhancing online privacy without compromising usability. A go-to resource for privacy-conscious users.")
+
+- Privacy controls
+- Don’t track
+- cookies
+- 3rd parties
+- location
+- ads
+- pasteboard
+- app privacy reports
+
+# Misc
+
+- [https://www.privacyguides.org/en/](https://www.privacyguides.org/en/)
+- [https://prism-break.org/](https://prism-break.org/)
+- [Temp Number](https://temp-number.com/countries/?country=United%20States)
+- [https://quackr.io/temporary-numbers/](https://quackr.io/temporary-numbers/)
