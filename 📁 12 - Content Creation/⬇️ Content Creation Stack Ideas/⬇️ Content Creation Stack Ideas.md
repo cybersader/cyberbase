@@ -41,6 +41,9 @@ date modified: Sunday, May 18th 2025, 1:43 pm
 - [screenity.io > Screenity - The free and privacy-friendly screen recorder](https://screenity.io/en/)
 	- [github.com > alyssaxuu/screenity: The free and privacy-friendly screen recorder with no limits 🎥](https://github.com/alyssaxuu/screenity)
 - [mifi.no > LosslessCut](https://mifi.no/losslesscut/)
+- [streamelements.com > The Ultimate Streamer Platform](https://streamelements.com/)
+- [github.com > webcamoid/webcamoid: Webcamoid is a full featured and multiplatform webcam suite.](https://github.com/webcamoid/webcamoid)
+- [twitchroulette.net > twitchroulette.net](https://twitchroulette.net/)
 - 
 
 - Re-recording Workflow - Screen Recording
