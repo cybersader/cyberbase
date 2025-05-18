@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Monday, April 29th 2024, 1:42 pm
-date modified: Sunday, May 18th 2025, 1:43 pm
+date modified: Sunday, May 18th 2025, 3:00 pm
 ---
 
 # Todos
@@ -44,10 +44,50 @@ date modified: Sunday, May 18th 2025, 1:43 pm
 - [streamelements.com > The Ultimate Streamer Platform](https://streamelements.com/)
 - [github.com > webcamoid/webcamoid: Webcamoid is a full featured and multiplatform webcam suite.](https://github.com/webcamoid/webcamoid)
 - [twitchroulette.net > twitchroulette.net](https://twitchroulette.net/)
-- 
+- [livecurtain.com > Live Curtain - virtual meeting display board](https://livecurtain.com/)
+
+- Webcam
+	- [filteronme.com > Filteronme - Filters for video calls & streams](https://www.filteronme.com/)
+	- [snap.com > Lens Studio](https://ar.snap.com/lens-studio)
+	- 
+
+- Streaming
+	- [streamer.bot > Supercharge your Live Stream | Streamer.bot](https://streamer.bot/)
+	- [streamup.tips > Next generation streaming - StreamUP](https://streamup.tips/)
+	- 
 
 - Re-recording Workflow - Screen Recording
 	- [Vento.so > With Vento just pause, rewind a few seconds, and re-record over it!](https://vento.so/ "Vento - Stress-Free Screen Recording")
+
+- VS Code
+	- [visualstudio.com > Comment Anchors - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ExodiusStudios.comment-anchors)
+	- [visualstudio.com > Todo+ - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus)
+	- [visualstudio.com > Bracket pair colorization 10](https://code.visualstudio.com/blogs/2021/09/29/bracket-pair-colorization)
+	- 
+
+- [microsoft.com > Microsoft PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)
+
+- Screen drawing and annotation
+	- [github.com > pubpub-zz/ppInk: Fork from Gink](https://github.com/pubpub-zz/ppInk)
+	- [epicpen.com > Home](https://epicpen.com/)
+	- 
+- Live screen overlays
+	- [github.com > mausimus/ShaderGlass: Overlay for running GPU shaders on top of Windows desktop](https://github.com/mausimus/ShaderGlass)
+	- [windowtop.info > Boost your multitasking with Always-on-Top](https://windowtop.info/)
+	- 
+
+- Vtuber stuff?
+	- [vseeface.icu > VSeeFace](https://www.vseeface.icu/#about)
+	- 
+
+- Davinci marker automation
+	- [fusionpixelstudio.com > Flow Trimmer | Davinci Resolve Utility Script](https://fusionpixelstudio.com/products/marker-trimmer)
+	- [youtube.com > DaVinci Resolve 19 - Marker EDL to YouTube Chapters.](https://www.youtube.com/watch?v=LidsA_yTW40)
+	- 
+
+# Twitch 
+
+- 
 
 # OBS Workflow
 
@@ -55,7 +95,13 @@ date modified: Sunday, May 18th 2025, 1:43 pm
 - [github.com > juancarlospaco/awesome-streaming-tools: Awesome Streaming Tools](https://github.com/juancarlospaco/awesome-streaming-tools)
 - [streamelements.com > The Ultimate Streamer Platform](https://streamelements.com/)
 - [obsproject.com > OBS Studio Plugins](https://obsproject.com/forum/plugins/)
-- 
+
+- OBS Plugins
+	- [github.com > exeldro/obs-shaderfilter: OBS Studio filter for applying an arbitrary shader to a source.](https://github.com/exeldro/obs-shaderfilter)
+		- [obsproject.com > obs-shaderfilter](https://obsproject.com/forum/resources/obs-shaderfilter.1736/)
+	- [obsproject.com > StreamUP Chapter Marker Manager - Updates](https://obsproject.com/forum/resources/streamup-chapter-marker-manager.1962/updates#resource-update-6437)
+	- [obsproject.com > Additional Chapter Hotkeys (30.2+)](https://obsproject.com/forum/resources/additional-chapter-hotkeys-30-2.1957/)
+	- 
 
 - Chapters and highlighting
 	- Old plugins?
