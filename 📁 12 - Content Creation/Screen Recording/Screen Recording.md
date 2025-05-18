@@ -1,10 +1,11 @@
 ---
+title:
 permalink:
 aliases: []
 tags: []
 publish: true
 date created: Sunday, April 28th 2024, 2:39 pm
-date modified: Thursday, March 20th 2025, 3:48 pm
+date modified: Sunday, May 18th 2025, 11:41 am
 ---
 
 - [ ] Check out automatic scene switching ➕ 2024-04-28
@@ -24,3 +25,4 @@ date modified: Thursday, March 20th 2025, 3:48 pm
 - https://www.blurweb.app/
 - https://divbyzero.com/tools/blur-extension/
 - https://www.reddit.com/r/SideProject/comments/19645vw/i_made_a_chrome_extension_that_lets_blur_your/
+

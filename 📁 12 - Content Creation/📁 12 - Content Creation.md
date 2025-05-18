@@ -25,7 +25,7 @@ date modified: Saturday, February 15th 2025, 3:04 pm
 - **[[Persona Creation]]**
 - **[[Prepping Devices for Demos]]**
 - **[[Presentation Tools & Tech]]**
-- **[[Screen Recording, Streaming Stack]]**
+- **[[Screen Recording]]**
 - **[[Stock Resources]]**
 - **[[Sync Video and Audio]]**
 - **[[Webcams]]**
