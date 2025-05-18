@@ -54,6 +54,7 @@
 	- **[[Actions For Obsidian]]**
 	- **[[Audacity]]**
 	- **[[Blaze ai]]**
+	- **[[Briefing]]**
 	- **[[Bruno]]**
 	- **[[CalyxOS]]**
 	- **[[CasaOS]]**
@@ -67,6 +68,7 @@
 	- **[[Cursor]]**
 	- **[[eramba]]**
 	- **[[Fakeupdate]]**
+	- **[[Flameshot]]**
 	- **[[Formance]]**
 	- **[[Gitea]]**
 	- **[[Google Map Plus Codes]]**

@@ -5,12 +5,20 @@
       "path": "📁 12 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md"
     },
     {
-      "basename": "Awesome AI",
-      "path": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md"
+      "basename": "Flameshot",
+      "path": "⬇️ Clippings/Tech/Flameshot/Flameshot.md"
     },
     {
       "basename": "⬇️ Cyber Content Ideas",
       "path": "📁 12 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md"
+    },
+    {
+      "basename": "Briefing",
+      "path": "⬇️ Clippings/Tech/Briefing/Briefing.md"
+    },
+    {
+      "basename": "Awesome AI",
+      "path": "📁 03 - Curations, Stacks/Awesome AI/Awesome AI.md"
     },
     {
       "basename": "Screen Recording",
@@ -191,14 +199,6 @@
     {
       "basename": "📁 33 - Diving",
       "path": "📁 33 - Diving/📁 33 - Diving.md"
-    },
-    {
-      "basename": "Humble Bundle",
-      "path": "⬇️ Clippings/Websites/Humble Bundle/Humble Bundle.md"
-    },
-    {
-      "basename": "MKVToolNix",
-      "path": "⬇️ Clippings/Tech/MKVToolNix/MKVToolNix.md"
     }
   ],
   "omittedPaths": [],

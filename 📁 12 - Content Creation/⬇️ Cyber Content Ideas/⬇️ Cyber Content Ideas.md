@@ -6,7 +6,7 @@ date modified: Thursday, November 7th 2024, 7:58 pm
 publish: true
 ---
 
-- Cyber walk n talk - or walk the talk
+- ccCyber walk n talk - or walk the talk
 - Password and email alias management
 - Why IT sucks at documentation
 - The philosophy of why cyber isn't entry level, but...can be?

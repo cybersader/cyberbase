@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Monday, April 29th 2024, 1:42 pm
-date modified: Sunday, May 18th 2025, 1:28 pm
+date modified: Sunday, May 18th 2025, 1:43 pm
 ---
 
 # Todos
@@ -37,11 +37,15 @@ date modified: Sunday, May 18th 2025, 1:28 pm
 - [loupedeck.com > Loupedeck Custom Consoles | Discover Now](https://loupedeck.com/us/)
 	- [loupedeck.com > Loupedeck Custom Consoles | Discover Now](https://loupedeck.com/us/)
 - [vento.so > Vento - Stress-Free Screen Recording](https://vento.so/)
+- [tella.com > Tella — Online Screen Recorder for Mac & Windows](https://www.tella.com/)
+- [screenity.io > Screenity - The free and privacy-friendly screen recorder](https://screenity.io/en/)
+	- [github.com > alyssaxuu/screenity: The free and privacy-friendly screen recorder with no limits 🎥](https://github.com/alyssaxuu/screenity)
+- [mifi.no > LosslessCut](https://mifi.no/losslesscut/)
 - 
 
 - Re-recording Workflow - Screen Recording
 	- [Vento.so > With Vento just pause, rewind a few seconds, and re-record over it!](https://vento.so/ "Vento - Stress-Free Screen Recording")
-	- 
+
 # OBS Workflow
 
 - [github.com > streamgeeks/Awesome-OBS-Plugin-List: Awesome OBS Plugin List](https://github.com/streamgeeks/Awesome-OBS-Plugin-List)
@@ -49,6 +53,11 @@ date modified: Sunday, May 18th 2025, 1:28 pm
 - [streamelements.com > The Ultimate Streamer Platform](https://streamelements.com/)
 - [obsproject.com > OBS Studio Plugins](https://obsproject.com/forum/plugins/)
 - 
+
+- Chapters and highlighting
+	- Old plugins?
+		- [github.com > Davidj361/OBS-ChapterMarker](https://github.com/Davidj361/OBS-ChapterMarker)
+	- 
 
 - Cancelling recordings
 	- Turns out, you can't cancel recording, since it's streaming the data to the disk rather than memory
