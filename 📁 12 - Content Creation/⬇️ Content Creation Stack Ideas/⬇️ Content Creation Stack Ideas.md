@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Monday, April 29th 2024, 1:42 pm
-date modified: Sunday, May 18th 2025, 3:00 pm
+date modified: Sunday, May 18th 2025, 4:12 pm
 ---
 
 # Todos
@@ -54,10 +54,6 @@ date modified: Sunday, May 18th 2025, 3:00 pm
 - Streaming
 	- [streamer.bot > Supercharge your Live Stream | Streamer.bot](https://streamer.bot/)
 	- [streamup.tips > Next generation streaming - StreamUP](https://streamup.tips/)
-	- 
-
-- Re-recording Workflow - Screen Recording
-	- [Vento.so > With Vento just pause, rewind a few seconds, and re-record over it!](https://vento.so/ "Vento - Stress-Free Screen Recording")
 
 - VS Code
 	- [visualstudio.com > Comment Anchors - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ExodiusStudios.comment-anchors)
@@ -83,7 +79,13 @@ date modified: Sunday, May 18th 2025, 3:00 pm
 - Davinci marker automation
 	- [fusionpixelstudio.com > Flow Trimmer | Davinci Resolve Utility Script](https://fusionpixelstudio.com/products/marker-trimmer)
 	- [youtube.com > DaVinci Resolve 19 - Marker EDL to YouTube Chapters.](https://www.youtube.com/watch?v=LidsA_yTW40)
-	- 
+	- [youtube.com > NEW Davinci Resolve Plugin AUTOMATICALLY cuts OBS footage! - YouTube](https://www.youtube.com/watch?v=F74DvIzoRbU)
+	- [Vento.so > With Vento just pause, rewind a few seconds, and re-record over it!](https://vento.so/ "Vento - Stress-Free Screen Recording")
+	- [obsproject.com > StreamUP Chapter Marker Manager](https://obsproject.com/forum/resources/streamup-chapter-marker-manager.1962/)
+	- [obsproject.com > Additional Chapter Hotkeys (30.2+)](https://obsproject.com/forum/resources/additional-chapter-hotkeys-30-2.1957/)
+	- [github.com > StreamUPTips/obs-chapter-marker-manager](https://github.com/StreamUPTips/obs-chapter-marker-manager)
+		- [notion.site > OBS Chapter Marker Manager](https://streamup.notion.site/OBS-Chapter-Marker-Manager-1567a7ed1438449cbbe8be87143568df)
+		- 
 
 # Twitch 
 
