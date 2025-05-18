@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Monday, April 29th 2024, 1:42 pm
-date modified: Sunday, May 18th 2025, 12:19 pm
+date modified: Sunday, May 18th 2025, 1:28 pm
 ---
 
 # Todos
@@ -36,15 +36,24 @@ date modified: Sunday, May 18th 2025, 12:19 pm
 - [screen.studio > Professional screen recorder for macOS](https://screen.studio/)
 - [loupedeck.com > Loupedeck Custom Consoles | Discover Now](https://loupedeck.com/us/)
 	- [loupedeck.com > Loupedeck Custom Consoles | Discover Now](https://loupedeck.com/us/)
+- [vento.so > Vento - Stress-Free Screen Recording](https://vento.so/)
 - 
+
+- Re-recording Workflow - Screen Recording
+	- [Vento.so > With Vento just pause, rewind a few seconds, and re-record over it!](https://vento.so/ "Vento - Stress-Free Screen Recording")
+	- 
 # OBS Workflow
 
 - [github.com > streamgeeks/Awesome-OBS-Plugin-List: Awesome OBS Plugin List](https://github.com/streamgeeks/Awesome-OBS-Plugin-List)
 - [github.com > juancarlospaco/awesome-streaming-tools: Awesome Streaming Tools](https://github.com/juancarlospaco/awesome-streaming-tools)
 - [streamelements.com > The Ultimate Streamer Platform](https://streamelements.com/)
+- [obsproject.com > OBS Studio Plugins](https://obsproject.com/forum/plugins/)
 - 
 
 - Cancelling recordings
+	- Turns out, you can't cancel recording, since it's streaming the data to the disk rather than memory
+	- A better alternative is to highlight parts of the recording to speed up the editing process
 	- [obsproject.com > Question / Help - How to immediately delete last recording and where is the pause feature and shortcuts?](https://obsproject.com/forum/threads/how-to-immediately-delete-last-recording-and-where-is-the-pause-feature-and-shortcuts.102034/)
 	- [obsproject.com > How to stop recording and finish a video?](https://obsproject.com/forum/threads/how-to-stop-recording-and-finish-a-video.126339/)
-	- 
+
+- 
