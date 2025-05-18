@@ -90,7 +90,11 @@ date modified: Sunday, May 18th 2025, 4:12 pm
 		- [github.io > Unofficial DaVinci Resolve Scripting Documentation](https://deric.github.io/DaVinciResolve-API-Docs/)
 		- [readthedocs.io > Resolve API Readme — ResolveDevDoc 0.1 documentation](https://resolvedevdoc.readthedocs.io/en/latest/readme_resolveapi.html)
 		- [readthedocs.io > API Introduction — ResolveDevDoc 0.1 documentation](https://resolvedevdoc.readthedocs.io/en/latest/API_intro.html?highlight=python)
-	- 
+		- [youtube.com > (1) Automate EVERYTHING in Davinci Resolve - Python Tutorial for Beginners with AlexTheCreative - YouTube](https://www.youtube.com/watch?v=2ZtkLXDpNhM)
+		- [youtube.com > (1) How to Set Up Python Scripting in DaVinci Resolve - YouTube](https://www.youtube.com/watch?v=5s-Rebj67iU)
+		- Davinci Resolve (free version)
+			- [youtube.com > (1) How to Set Up Python Scripting in DaVinci Resolve - YouTube](https://www.youtube.com/watch?v=5s-Rebj67iU)
+			- 
 
 # Twitch 
 
