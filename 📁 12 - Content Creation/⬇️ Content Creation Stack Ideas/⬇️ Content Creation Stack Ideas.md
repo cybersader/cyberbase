@@ -95,7 +95,7 @@ date modified: Sunday, May 18th 2025, 4:12 pm
 		- Davinci Resolve (free version)
 			- [youtube.com > (1) How to Set Up Python Scripting in DaVinci Resolve - YouTube](https://www.youtube.com/watch?v=5s-Rebj67iU)
 			- [readthedocs.io > Basic Resolve API — ResolveDevDoc 0.1 documentation](https://resolvedevdoc.readthedocs.io/en/latest/API_basic.html?highlight=app%20getresolve)
-			- 
+		- Looks like you can't edit videos with the Python API 
 
 # Twitch 
 
