@@ -4,7 +4,7 @@ tags: []
 publish: true
 permalink: 
 date created: Thursday, April 24th 2025, 10:09 am
-date modified: Thursday, April 24th 2025, 10:55 am
+date modified: Monday, May 19th 2025, 8:46 am
 title: FBI Agent and an Ex-Hacker Unite on Cybersecurity
 authors:
   - Bryan Ormes

@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "GPSEC 2025",
+      "path": "📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/GPSEC 2025.md"
+    },
+    {
+      "basename": "Anatomy of Ransomware - Rubrik",
+      "path": "📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/Anatomy of Ransomware - Rubrik/Anatomy of Ransomware - Rubrik.md"
+    },
+    {
+      "basename": "Beyond IAM - NHIM",
+      "path": "📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/Beyond IAM - NHIM/Beyond IAM - NHIM.md"
+    },
+    {
+      "basename": "CISO Panel GPSEC 25",
+      "path": "📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/CISO Panel GPSEC 25/CISO Panel GPSEC 25.md"
+    },
+    {
+      "basename": "FBI Agent & Ex-Hacker GPSEC",
+      "path": "📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/FBI Agent & Ex-Hacker GPSEC/FBI Agent & Ex-Hacker GPSEC.md"
+    },
+    {
+      "basename": "The Modern Adversary (Crowdstrike)",
+      "path": "📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/The Modern Adversary (Crowdstrike)/The Modern Adversary (Crowdstrike).md"
+    },
+    {
+      "basename": "MDR Mythbusters",
+      "path": "📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/MDR Mythbusters/MDR Mythbusters.md"
+    },
+    {
       "basename": "⬇️ Content Creation Stack Ideas",
       "path": "📁 12 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md"
     },
@@ -171,34 +199,6 @@
     {
       "basename": "vim-keybindings-everywhere-the-ultimate-list",
       "path": "⬇️ Clippings/GitHub Repos/erikw/vim-keybindings-everywhere-the-ultimate-list/vim-keybindings-everywhere-the-ultimate-list.md"
-    },
-    {
-      "basename": "Limitless AI",
-      "path": "⬇️ Clippings/Tech/Limitless AI/Limitless AI.md"
-    },
-    {
-      "basename": "Org Mode",
-      "path": "⬇️ Clippings/Tech/Org Mode/Org Mode.md"
-    },
-    {
-      "basename": "CasaOS",
-      "path": "⬇️ Clippings/Tech/CasaOS/CasaOS.md"
-    },
-    {
-      "basename": "Data Classifications",
-      "path": "📁 05 - Organizational Cyber/Org Data Governance/Data Classifications/Data Classifications.md"
-    },
-    {
-      "basename": "Org Data Governance",
-      "path": "📁 05 - Organizational Cyber/Org Data Governance/Org Data Governance.md"
-    },
-    {
-      "basename": "Jumping & Diving Spots",
-      "path": "📁 09 - Personal/Jumping & Diving Spots/Jumping & Diving Spots.md"
-    },
-    {
-      "basename": "📁 33 - Diving",
-      "path": "📁 33 - Diving/📁 33 - Diving.md"
     }
   ],
   "omittedPaths": [],
