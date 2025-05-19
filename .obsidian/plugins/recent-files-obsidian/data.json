@@ -5,6 +5,30 @@
       "path": "📁 12 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md"
     },
     {
+      "basename": "Audio Stack",
+      "path": "📁 12 - Content Creation/Audio Stack/Audio Stack.md"
+    },
+    {
+      "basename": "Awesome Stream Deck Alternatives",
+      "path": "📁 03 - Curations, Stacks/Awesome Stream Deck Alternatives/Awesome Stream Deck Alternatives.md"
+    },
+    {
+      "basename": "Teleprompters",
+      "path": "📁 03 - Curations, Stacks/Teleprompters/Teleprompters.md"
+    },
+    {
+      "basename": "Awesome Tech Stacks from Teams",
+      "path": "📁 03 - Curations, Stacks/Awesome Tech Stacks from Teams/Awesome Tech Stacks from Teams.md"
+    },
+    {
+      "basename": "Awesome Streaming",
+      "path": "📁 12 - Content Creation/Awesome Streaming/Awesome Streaming.md"
+    },
+    {
+      "basename": "⬇️ Cyber Content Ideas",
+      "path": "📁 12 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md"
+    },
+    {
       "basename": "GPSEC 2025",
       "path": "📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/GPSEC 2025.md"
     },
@@ -35,10 +59,6 @@
     {
       "basename": "Flameshot",
       "path": "⬇️ Clippings/Tech/Flameshot/Flameshot.md"
-    },
-    {
-      "basename": "⬇️ Cyber Content Ideas",
-      "path": "📁 12 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md"
     },
     {
       "basename": "Briefing",
@@ -179,26 +199,6 @@
     {
       "basename": "Home Lab, Home Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md"
-    },
-    {
-      "basename": "Home OS Provisioning & Resetting",
-      "path": "📁 07 - Cybersader Arsenal/Home OS Provisioning & Resetting/Home OS Provisioning & Resetting.md"
-    },
-    {
-      "basename": "Windows Home IT Admin",
-      "path": "📁 07 - Cybersader Arsenal/Windows Home IT Admin/Windows Home IT Admin.md"
-    },
-    {
-      "basename": "Todoist",
-      "path": "⬇️ Clippings/Tech/Todoist/Todoist.md"
-    },
-    {
-      "basename": "Workflowy",
-      "path": "⬇️ Clippings/Tech/Workflowy/Workflowy.md"
-    },
-    {
-      "basename": "vim-keybindings-everywhere-the-ultimate-list",
-      "path": "⬇️ Clippings/GitHub Repos/erikw/vim-keybindings-everywhere-the-ultimate-list/vim-keybindings-everywhere-the-ultimate-list.md"
     }
   ],
   "omittedPaths": [],
