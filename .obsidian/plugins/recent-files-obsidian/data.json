@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "superwhisper",
+      "path": "⬇️ Clippings/Tech/superwhisper/superwhisper.md"
+    },
+    {
       "basename": "⬇️ Content Creation Stack Ideas",
       "path": "📁 12 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "TrueNAS Scale Home Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
-    },
-    {
-      "basename": "Home Lab, Home Server",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md"
     }
   ],
   "omittedPaths": [],

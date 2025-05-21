@@ -119,6 +119,7 @@
 	- **[[Simplemind]]**
 	- **[[Slido]]**
 	- **[[solidtime]]**
+	- **[[superwhisper]]**
 	- **[[Teleseer]]**
 	- **[[Terrateam]]**
 	- **[[Thinkst Canary]]**
