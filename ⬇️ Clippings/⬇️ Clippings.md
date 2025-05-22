@@ -53,6 +53,7 @@
 	- **[[Ableton Live]]**
 	- **[[Actions For Obsidian]]**
 	- **[[Agentic Windows]]**
+		- [[Agentic Windows 1]]
 	- **[[Audacity]]**
 	- **[[Blaze ai]]**
 	- **[[Briefing]]**
