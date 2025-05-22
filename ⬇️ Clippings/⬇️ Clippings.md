@@ -52,6 +52,7 @@
 - **[[Tech]]**
 	- **[[Ableton Live]]**
 	- **[[Actions For Obsidian]]**
+	- **[[Agentic Windows]]**
 	- **[[Audacity]]**
 	- **[[Blaze ai]]**
 	- **[[Briefing]]**
