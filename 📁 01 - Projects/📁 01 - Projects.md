@@ -34,6 +34,7 @@ date modified: Saturday, May 3rd 2025, 9:07 pm
 
 	- **[[Linking to Frameworks]]**
 	- **[[Mapping Cyber Frameworks to Obsidian]]**
+- **[[Personal Agentic Setup]]**
 - **[[Phone Pick in 2024]]**
 - **[[Podman Setup & Container Usage]]**
 - **[[Python Projects]]**
