@@ -53,7 +53,6 @@
 	- **[[Ableton Live]]**
 	- **[[Actions For Obsidian]]**
 	- **[[Agentic Windows]]**
-		- [[Agentic Windows 1]]
 	- **[[Audacity]]**
 	- **[[Blaze ai]]**
 	- **[[Briefing]]**
@@ -130,6 +129,7 @@
 	- **[[Trilium Notes]]**
 	- **[[Typefully]]**
 	- **[[Ueli]]**
+	- **[[Velociraptor]]**
 	- **[[VoidZero]]**
 	- **[[Wakatime]]**
 	- **[[Webstudio_website_builder]]**
