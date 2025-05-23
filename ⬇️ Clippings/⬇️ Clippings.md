@@ -144,6 +144,7 @@
 	- **[[Gruv]]**
 	- **[[Humble Bundle]]**
 	- **[[Openbazaar]]**
+	- **[[St Paul Center]]**
 	- **[[Techlore]]**
 	- **[[Tertulia]]**
 	- **[[Xkcd]]**
