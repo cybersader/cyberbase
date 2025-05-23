@@ -1,10 +1,11 @@
 ---
+title:
 permalink:
 aliases: [Awesome Backpacks, Awesome Every Day Carry, Awesome Everyday Carry, Awesome Utils, Awesome Bags]
 tags: [Bags, EDC, Utils]
 publish: true
 date created: Tuesday, June 18th 2024, 8:39 pm
-date modified: Friday, December 20th 2024, 8:42 am
+date modified: Friday, May 23rd 2025, 6:33 pm
 ---
 
 [Daily Driver Stuff](../⬇%20Tech%20Dropzone/Daily%20Driver%20Stuff/Daily%20Driver%20Stuff.md)
@@ -57,6 +58,7 @@ date modified: Friday, December 20th 2024, 8:42 am
 - [KeySmart - The Best Compact Key Holder](https://www.getkeysmart.com/)
 - [Jibbon Key Organiser](https://www.jibbonkey.com/)
 - [Clever Organisation for Better Living – Orbitkey](https://www.orbitkey.com/)
+- [blackember.com > Black Ember Magnetic Keychain Fidlock® | EDC Accessories](https://blackember.com/products/magnetic-keychain)
 - 
 
 # Awesome Bags
@@ -64,3 +66,19 @@ date modified: Friday, December 20th 2024, 8:42 am
 - [Operator System Page – Volante Design](https://www.volantedesign.us/pages/operator-system-page)
 - [OneMo Series – PGYTECH](https://www.pgytech.com/collections/onemo-bags)
 - https://www.dsptch.com/
+
+## EDC
+
+- [nike.com > Nike ACG "DAYMAX" Crossbody Bag (3L)](https://www.nike.com/t/acg-daymax-crossbody-bag-3l-7dKf7Z/HJ8180-010)
+- [goruck.com > GR0 - Ballistic Nylon Cordura](https://www.goruck.com/products/gr0-cordura?variant=43790401994852)
+- 
+
+## Laptop & Messenger Bags
+
+- Timbuk
+	- [timbuk2.com > Authority Laptop Backpack Deluxe](https://www.timbuk2.com/products/1825-authority-laptop-backpack-deluxe)
+- [chromeindustries.com > Kadet Max](https://chromeindustries.com/products/kadet-max?variant=40916621525052)
+- [chromeindustries.com > Buran III Messenger](https://chromeindustries.com/products/buran-iii-messenger-bag)
+- [Amazon.com: tomtoc Multi-functional Laptop Briefcase Business Shoulder Bag Fits up to 15.6 Inch Dell Acer ASUS Lenovo HP Samsung Universal Laptop NoteBook](https://www.amazon.com/tomtoc-Multi-functional-Briefcase-Water-Repellent-Protective/dp/B0CLD781L8) - $78.99
+- [Amazon.com: Topo Designs Global Briefcase - Bold Daily Carry Bag](https://www.amazon.com/dp/B0D3FNWYWH) - $99.95
+- 
