@@ -136,6 +136,7 @@
 	- **[[Windsurf]]**
 	- **[[Wispr flow]]**
 	- **[[WizTree]]**
+	- **[[Wo mic]]**
 	- **[[Workflowy]]**
 	- **[[Yaak]]**
 	- **[[Zivver Security]]**
