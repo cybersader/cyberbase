@@ -66,7 +66,10 @@ date modified: Friday, May 23rd 2025, 6:33 pm
 - [Operator System Page – Volante Design](https://www.volantedesign.us/pages/operator-system-page)
 - [OneMo Series – PGYTECH](https://www.pgytech.com/collections/onemo-bags)
 - https://www.dsptch.com/
-
+- [topodesigns.com > Backpacks | Browse All Backpacks by Topo Designs](https://topodesigns.com/collections/backpacks)
+- [aersf.com > All Products](https://aersf.com/collections/all-products)
+- [slnt.com > SLNT® Faraday Bags](https://slnt.com/)
+- 
 ## EDC
 
 - [nike.com > Nike ACG "DAYMAX" Crossbody Bag (3L)](https://www.nike.com/t/acg-daymax-crossbody-bag-3l-7dKf7Z/HJ8180-010)

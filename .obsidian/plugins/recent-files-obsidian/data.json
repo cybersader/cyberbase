@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "hledger",
-      "path": "⬇️ Clippings/Tech/hledger/hledger.md"
+      "basename": "Awesome EDC",
+      "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
     },
     {
-      "basename": "BaseTest",
-      "path": "BaseTest.base"
+      "basename": "📁 36 - Personal Finance",
+      "path": "📁 36 - Personal Finance/📁 36 - Personal Finance.md"
+    },
+    {
+      "basename": "Productivity Tech",
+      "path": "⬇ INBOX, DROPZONE/Productivity Tech/Productivity Tech.md"
+    },
+    {
+      "basename": "hledger",
+      "path": "⬇️ Clippings/Tech/hledger/hledger.md"
     },
     {
       "basename": "Wo mic",
@@ -15,10 +23,6 @@
     {
       "basename": "Personal Agentic Setup",
       "path": "📁 01 - Projects/Personal Agentic Setup/Personal Agentic Setup.md"
-    },
-    {
-      "basename": "Awesome EDC",
-      "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
     },
     {
       "basename": "St Paul Center",
@@ -195,10 +199,6 @@
     {
       "basename": "Paperless Storage",
       "path": "📁 07 - Cybersader Arsenal/Paperless Storage/Paperless Storage.md"
-    },
-    {
-      "basename": "GrapheneOS",
-      "path": "⬇️ Clippings/Tech/GrapheneOS/GrapheneOS.md"
     }
   ],
   "omittedPaths": [],
