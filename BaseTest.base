@@ -1,0 +1,13 @@
+views:
+  - type: table
+    name: Table
+  - type: table
+    name: View
+    order:
+      - file.name
+      - tags
+    columnSize:
+      file.name: 227
+    sort:
+      - column: property.tags
+        direction: DESC

@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "BaseTest",
+      "path": "BaseTest.base"
+    },
+    {
       "basename": "Wo mic",
       "path": "⬇️ Clippings/Tech/Wo mic/Wo mic.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Windows Desktop Provisioning",
       "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
-    },
-    {
-      "basename": "Docker Paperless-NGX",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Docker Paperless-NGX/Docker Paperless-NGX.md"
     }
   ],
   "omittedPaths": [],
