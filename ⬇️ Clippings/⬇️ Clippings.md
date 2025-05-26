@@ -76,6 +76,7 @@
 	- **[[Google-Gemma-3]]**
 	- **[[GrapheneOS]]**
 	- **[[HandBrake]]**
+	- **[[hledger]]**
 	- **[[Invidious]]**
 	- **[[Khoj]]**
 	- **[[Kittl]]**

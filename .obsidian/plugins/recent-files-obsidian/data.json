@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "hledger",
+      "path": "⬇️ Clippings/Tech/hledger/hledger.md"
+    },
+    {
       "basename": "BaseTest",
       "path": "BaseTest.base"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "GrapheneOS",
       "path": "⬇️ Clippings/Tech/GrapheneOS/GrapheneOS.md"
-    },
-    {
-      "basename": "Windows Desktop Provisioning",
-      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
     }
   ],
   "omittedPaths": [],
