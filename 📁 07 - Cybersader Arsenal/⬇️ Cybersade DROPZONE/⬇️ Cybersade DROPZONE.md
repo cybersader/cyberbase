@@ -6,7 +6,8 @@ permalink:
 date created: Sunday, December 22nd 2024, 5:12 pm
 date modified: Sunday, December 22nd 2024, 5:12 pm
 ---
-
+- [github.com > servusdei2018/awesome-catholic: curated list of awesome open-source Catholic projects, libraries and software](https://github.com/servusdei2018/awesome-catholic)
+- 
 - [The best parental control apps in 2024, tested by our editors | CNN Underscored](https://www.cnn.com/cnn-underscored/reviews/best-parental-control-apps "The best parental control apps in 2024, tested by our editors | CNN Underscored")
 - [phone for a 7th grader? Best parental monitoring apps. | DIS Disney Discussion Forums - DISboards.com](https://www.disboards.com/threads/phone-for-a-7th-grader-best-parental-monitoring-apps.3917635/ "phone for a 7th grader? Best parental monitoring apps. | DIS Disney Discussion Forums - DISboards.com")
 - [Bark | The Best Parental Control App To Monitor Your Child's Device](https://www.bark.us/learn/ps-parental-control-lp1/?utm_source=aw&utm_medium=paid-search&utm_campaign=parental-control-google&utm_content=116486595077&utm_term=e&gad_source=1 "Bark | The Best Parental Control App To Monitor Your Child's Device")
