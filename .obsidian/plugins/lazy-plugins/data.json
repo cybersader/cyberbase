@@ -1037,6 +1037,9 @@
       },
       "open-tab-settings": {
         "startupType": "disabled"
+      },
+      "folders2graph": {
+        "startupType": "instant"
       }
     },
     "loadOrder": []
