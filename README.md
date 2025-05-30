@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Mon, May 12, 2025 - [[⬇️ Clippings]]
+> Fri, May 30, 2025 - [[📁 36 - Personal Finance]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                              | Last modified             |
-| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                    | Mon - 5/12/2025, 9:32 PM  |
-| [[⬇️ Clippings/Tech/GrapheneOS/GrapheneOS.md\|GrapheneOS]]                                                                                        | Mon - 5/12/2025, 9:32 PM  |
-| [[📁 07 - Cybersader Arsenal/Paperless Storage/Paperless Storage.md\|Paperless Storage]]                                                          | Sun - 5/11/2025, 9:54 PM  |
-| [[📁 06 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md\|Cyber Movies, TV, Documentaries]]                   | Sun - 5/11/2025, 8:29 PM  |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Docker Paperless-NGX/Docker Paperless-NGX.md\|Docker Paperless-NGX]] | Sun - 5/11/2025, 5:57 PM  |
-| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                          | Sun - 5/11/2025, 11:30 AM |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md\|Home Lab, Home Server]]                                              | Sun - 5/11/2025, 11:30 AM |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md\|TrueNAS Scale Home Server]]            | Sun - 5/11/2025, 11:30 AM |
-| [[📁 07 - Cybersader Arsenal/Home OS Provisioning & Resetting/Home OS Provisioning & Resetting.md\|Home OS Provisioning & Resetting]]             | Sat - 5/10/2025, 9:02 PM  |
-| [[🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md\|Windows Desktop Provisioning]]                                   | Sat - 5/10/2025, 8:05 PM  |
+| File                                                                                                 | Last modified             |
+| ---------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 36 - Personal Finance/📁 36 - Personal Finance.md\|📁 36 - Personal Finance]]                   | Tue - 5/27/2025, 10:36 PM |
+| [[📁 07 - Cybersader Arsenal/⬇️ Cybersade DROPZONE/⬇️ Cybersade DROPZONE.md\|⬇️ Cybersade DROPZONE]] | Mon - 5/26/2025, 1:24 PM  |
+| [[📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md\|Awesome EDC]]                                | Mon - 5/26/2025, 10:09 AM |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                       | Mon - 5/26/2025, 9:41 AM  |
+| [[⬇️ Clippings/Tech/hledger/hledger.md\|hledger]]                                                    | Mon - 5/26/2025, 9:41 AM  |
+| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                           | Mon - 5/26/2025, 9:12 AM  |
+| [[⬇️ Clippings/Tech/Wo mic/Wo mic.md\|Wo mic]]                                                       | Sun - 5/25/2025, 3:02 PM  |
+| [[⬇️ Clippings/Websites/St Paul Center/St Paul Center.md\|St Paul Center]]                           | Fri - 5/23/2025, 4:44 PM  |
+| [[📁 01 - Projects/Personal Agentic Setup/Personal Agentic Setup.md\|Personal Agentic Setup]]        | Fri - 5/23/2025, 4:17 PM  |
+| [[📁 01 - Projects/📁 01 - Projects.md\|📁 01 - Projects]]                                           | Fri - 5/23/2025, 4:15 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 
