@@ -1,0 +1,37 @@
+{
+  "tiers": [
+    {
+      "name": "S",
+      "color": "#861d1d"
+    },
+    {
+      "name": "A",
+      "color": "#ad6a28"
+    },
+    {
+      "name": "B",
+      "color": "#a17e19"
+    },
+    {
+      "name": "C",
+      "color": "#888814"
+    },
+    {
+      "name": "D",
+      "color": "#127c36"
+    }
+  ],
+  "useColors": true,
+  "image": "favicon",
+  "unordered": "To Rank",
+  "tag": "#tier-list",
+  "width": 70,
+  "slots": 10,
+  "settings": "Settings",
+  "ratio": 1,
+  "animation": 150,
+  "from": "",
+  "where": "",
+  "lastSlotType": "Internal Link / Cover",
+  "title": false
+}

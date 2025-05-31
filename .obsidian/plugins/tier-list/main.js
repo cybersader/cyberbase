@@ -9886,7 +9886,11 @@ async function renderSlot(plugin, settings, slot) {
           parent.textContent = "";
           await import_obsidian.MarkdownRenderer.render(app, `!${imageSrc}`, parent, "", plugin);
           slot.setAttr("href", filePath);
-          slot.setAttr("title", link.textContent);
+          if (settings.title) {
+            addTitle(slot, link.textContent || "");
+          } else {
+            slot.setAttr("title", link.textContent);
+          }
         }
       }
     }
@@ -9910,10 +9914,32 @@ async function renderSlot(plugin, settings, slot) {
     }
   }
   const altEl = slot.find("[alt]");
-  if (altEl) {
-    slot.setAttr("title", altEl.getAttr("alt"));
+  if (altEl && !fileEmbed) {
+    if (settings.title) {
+      addTitle(slot, altEl.getAttr("alt") || "");
+    } else {
+      slot.setAttr("title", altEl.getAttr("alt"));
+    }
+  }
+  const embedTitle = slot.find(".markdown-embed-title");
+  if (embedTitle) {
+    embedTitle.remove();
   }
   return slot;
+}
+function addTitle(parentElement, text) {
+  if (parentElement.find(".tier-list-title"))
+    return;
+  const textOverlay = parentElement.createEl("div", {
+    cls: "tier-list-title"
+  });
+  const backgroundElement = textOverlay.createEl("div", {
+    cls: "tier-list-title-background"
+  });
+  const textElement = textOverlay.createEl("span", {
+    text,
+    cls: "tier-list-title-text"
+  });
 }
 function findTextNodeRecursive(element) {
   const childNodesArray = Array.from(element.childNodes);
@@ -10061,7 +10087,7 @@ var import_obsidian_dataview = __toESM(require_lib());
 
 // src/modals/local-settings-modal.ts
 var import_obsidian3 = require("obsidian");
-var AVAILABLE_SETTINGS = ["width", "slots", "ratio", "from", "where", "image"];
+var AVAILABLE_SETTINGS = ["width", "slots", "ratio", "from", "where", "image", "title"];
 var LocalSettingsModal = class extends import_obsidian3.Modal {
   constructor(app, settings, onSave) {
     super(app);
@@ -10075,17 +10101,26 @@ var LocalSettingsModal = class extends import_obsidian3.Modal {
     const updatedSettings = {};
     AVAILABLE_SETTINGS.forEach((key) => {
       updatedSettings[key] = settings[key];
-      new import_obsidian3.Setting(contentEl).setName(key.charAt(0).toUpperCase() + key.slice(1)).addText((text) => {
-        const initialValue = settings[key];
-        text.setValue(String(initialValue)).onChange((value) => {
-          const defaultValue = DEFAULT_SETTINGS[key];
-          if (typeof defaultValue === "number") {
-            updatedSettings[key] = Number(value) || 0;
-          } else {
+      const settingValue = settings[key];
+      if (typeof settingValue === "boolean") {
+        new import_obsidian3.Setting(contentEl).setName(key.charAt(0).toUpperCase() + key.slice(1)).addToggle((toggle) => {
+          toggle.setValue(settingValue).onChange((value) => {
             updatedSettings[key] = value;
-          }
+          });
         });
-      });
+      } else {
+        new import_obsidian3.Setting(contentEl).setName(key.charAt(0).toUpperCase() + key.slice(1)).addText((text) => {
+          const initialValue = settingValue;
+          text.setValue(String(initialValue)).onChange((value) => {
+            const defaultValue = DEFAULT_SETTINGS[key];
+            if (typeof defaultValue === "number") {
+              updatedSettings[key] = Number(value) || 0;
+            } else {
+              updatedSettings[key] = value;
+            }
+          });
+        });
+      }
     });
     new import_obsidian3.Setting(contentEl).addButton((btn) => btn.setIcon("undo-2").setCta().onClick(() => {
       this.init(DEFAULT_SETTINGS);
@@ -10189,7 +10224,7 @@ function generateTierListPostProcessor(plugin) {
       const settingsList = tierList.find(".settings");
       settings = Object.fromEntries(
         Object.entries(settings).filter(
-          ([key, value]) => DEFAULT_SETTINGS[key] !== value
+          ([key, value]) => plugin.settings[key] !== value
         )
       );
       const values = Object.entries(settings).map(([key, value]) => `	- ${key}: ${value}`);
@@ -10219,7 +10254,7 @@ function generateTierListPostProcessor(plugin) {
     }
     function addCursorChangeHandler(slot) {
       slot.addEventListener("mouseover", (event) => {
-        if (event.ctrlKey) {
+        if (event.ctrlKey || event.metaKey) {
           slot.classList.add("help-cursor");
         }
       });
@@ -10227,7 +10262,7 @@ function generateTierListPostProcessor(plugin) {
         slot.classList.remove("help-cursor");
       });
       slot.addEventListener("mousemove", (event) => {
-        if (event.ctrlKey) {
+        if (event.ctrlKey || event.metaKey) {
           slot.classList.add("help-cursor");
         } else {
           slot.classList.remove("help-cursor");
@@ -10241,7 +10276,7 @@ function generateTierListPostProcessor(plugin) {
           event.stopPropagation();
           return;
         }
-        if (event.ctrlKey) {
+        if (event.ctrlKey || event.metaKey) {
           event.stopPropagation();
           const link = slot.find("a.internal-link, a.external-link");
           if (slot.hasAttribute("href")) {
@@ -10354,7 +10389,7 @@ function generateTierListPostProcessor(plugin) {
         }).open();
       }));
       menu.addItem((item) => {
-        item.dom.addClass("option-red");
+        item.dom.addClass("is-warning");
         item.setTitle("Delete slot").setIcon("trash-2").onClick(async () => {
           scroll = scrollableEl.scrollTop;
           await deleteLineInActiveFile(app, line);
@@ -10442,15 +10477,16 @@ function generateTierListPostProcessor(plugin) {
       });
     }
     async function initializeTierSlots() {
-      for (const li of tierList.findAll(":scope > ul > li")) {
+      const listItems = tierList.findAll(":scope > ul > li");
+      for (const li of listItems.reverse()) {
         let text = "";
         let unordered = false;
         li.childNodes.forEach((node) => {
-          var _a, _b;
+          var _a;
           if (node.nodeType === Node.TEXT_NODE) {
-            if ((_a = node.nodeValue) == null ? void 0 : _a.contains(localSettings.settings)) {
+            if (node.nodeValue && node.nodeValue.trim() == localSettings.settings.trim()) {
               settingsProcessing(li, localSettings);
-            } else if ((_b = node.nodeValue) == null ? void 0 : _b.contains(localSettings.unordered)) {
+            } else if ((_a = node.nodeValue) == null ? void 0 : _a.contains(localSettings.unordered)) {
               unordered = true;
             } else {
               text = text + node.nodeValue;
@@ -10999,7 +11035,8 @@ var DEFAULT_SETTINGS = {
   animation: 150,
   from: "",
   where: "",
-  lastSlotType: "Text" /* Text */
+  lastSlotType: "Text" /* Text */,
+  title: false
 };
 function setSetting(key, value, settings) {
   key = key.toLowerCase();
@@ -11097,6 +11134,13 @@ var SettingTab = class extends import_obsidian7.PluginSettingTab {
           this.plugin.settings.slots = Number(text.getValue());
           this.plugin.saveSettings();
         }
+      });
+    });
+    new import_obsidian7.Setting(containerEl).setName("Show title").addToggle((cb) => {
+      cb.setValue(this.plugin.settings.title);
+      cb.onChange((value) => {
+        this.plugin.settings.title = value;
+        this.plugin.saveSettings();
       });
     });
     new import_obsidian7.Setting(containerEl).setName("Template").setHeading();
