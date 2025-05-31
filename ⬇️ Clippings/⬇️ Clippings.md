@@ -63,6 +63,7 @@
 	- **[[Bruno]]**
 	- **[[Buckets Budgeting App]]**
 	- **[[CalyxOS]]**
+	- **[[Canarytokens]]**
 	- **[[CasaOS]]**
 	- **[[Castopod]]**
 	- **[[Chatwoot]]**
@@ -132,6 +133,7 @@
 	- **[[Pocketsmith]]**
 	- **[[PowerToys]]**
 	- **[[Printify]]**
+	- **[[Privacy Virtual Cards]]**
 	- **[[ProjectionLab]]**
 	- **[[Raycast]]**
 	- **[[Readdy]]**
