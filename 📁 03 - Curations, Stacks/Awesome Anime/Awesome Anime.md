@@ -17,10 +17,11 @@ date modified: Friday, January 31st 2025, 3:21 pm
 		- Seems wholesome
 		- Any work can be noble work if it is done with a noble heart
 	- The Unwanted Undead Adventurer
+	- The Apothecary Diaries - not bad...shallow philosophies though
 	- The Elusive Samurai
 		- Has a good rating and hopefully wholesome
 	- The Trillion Game - actually related to IT and hacking
-	- Solo Leveling - ehhh...has some vengeance type vibes - with great power comes great responsibility
+	- Solo Leveling - ehhh...has some vengeance type vibes - with great power comes great responsibility.  Amazing animation and action.
 
 # Top Anime
 

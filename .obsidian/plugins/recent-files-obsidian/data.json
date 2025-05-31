@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "Awesome Anime",
+      "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
+    },
+    {
       "basename": "IronVest",
       "path": "⬇️ Clippings/Tech/IronVest/IronVest.md"
+    },
+    {
+      "basename": "📁 36 - Personal Finance",
+      "path": "📁 36 - Personal Finance/📁 36 - Personal Finance.md"
     },
     {
       "basename": "Google Pay",
@@ -31,10 +39,6 @@
     {
       "basename": "Thinkst Canary",
       "path": "⬇️ Clippings/Tech/Thinkst Canary/Thinkst Canary.md"
-    },
-    {
-      "basename": "📁 36 - Personal Finance",
-      "path": "📁 36 - Personal Finance/📁 36 - Personal Finance.md"
     },
     {
       "basename": "MyBudgetCoach",
@@ -195,10 +199,6 @@
     {
       "basename": "⬇️ Cybersade DROPZONE",
       "path": "📁 07 - Cybersader Arsenal/⬇️ Cybersade DROPZONE/⬇️ Cybersade DROPZONE.md"
-    },
-    {
-      "basename": "Awesome EDC",
-      "path": "📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md"
     }
   ],
   "omittedPaths": [],
