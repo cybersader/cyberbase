@@ -52,33 +52,45 @@
 - **[[Tech]]**
 	- **[[Ableton Live]]**
 	- **[[Actions For Obsidian]]**
+	- **[[Actual]]**
 	- **[[Agentic Windows]]**
+	- **[[Amigo AI Finance]]**
 	- **[[Audacity]]**
+	- **[[Beanhub]]**
 	- **[[Blaze ai]]**
+	- **[[Boldin]]**
 	- **[[Briefing]]**
 	- **[[Bruno]]**
+	- **[[Buckets Budgeting App]]**
 	- **[[CalyxOS]]**
 	- **[[CasaOS]]**
 	- **[[Castopod]]**
 	- **[[Chatwoot]]**
 	- **[[Claude]]**
 	- **[[ConfessIt]]**
+	- **[[Copilot Money]]**
 	- **[[Cryptee]]**
 	- **[[Cryptomator]]**
 	- **[[Cryptpad]]**
 	- **[[Cursor]]**
+	- **[[Emma Budget App]]**
 	- **[[eramba]]**
 	- **[[Fakeupdate]]**
+	- **[[Fava]]**
+	- **[[Financial Freedom]]**
 	- **[[Flameshot]]**
 	- **[[Formance]]**
+	- **[[Ghostfolio]]**
 	- **[[Gitea]]**
 	- **[[Google Map Plus Codes]]**
 	- **[[Google-Gemma-3]]**
 	- **[[GrapheneOS]]**
 	- **[[HandBrake]]**
 	- **[[hledger]]**
+	- **[[Honeydue]]**
 	- **[[Invidious]]**
 	- **[[Khoj]]**
+	- **[[Kiro]]**
 	- **[[Kittl]]**
 	- **[[Kortex]]**
 	- **[[LibreChat]]**
@@ -87,12 +99,15 @@
 	- **[[LMMS]]**
 	- **[[MakeMKV]]**
 	- **[[Makemydrivefun]]**
+	- **[[Maybe Finance]]**
 	- **[[Metube]]**
 	- **[[Minimal Theme for Twitter]]**
 	- **[[MKVToolNix]]**
 	- **[[Monarchmoney]]**
+	- **[[MoneyWiz]]**
 	- **[[mouseless.click]]**
 	- **[[Msty]]**
+	- **[[MyBudgetCoach]]**
 	- **[[n8n]]**
 	- **[[Napkin]]**
 	- **[[Nomorobo]]**
@@ -103,29 +118,38 @@
 	- **[[Omg.lol]]**
 	- **[[Oodo]]**
 	- **[[Open WebUI]]**
+	- **[[OpenBB]]**
 	- **[[Openfhe]]**
 	- **[[Opennote]]**
 	- **[[OperationPrivacy]]**
 	- **[[OrbStack]]**
 	- **[[Org Mode]]**
+	- **[[Papermoney_finance]]**
+	- **[[Peek Money]]**
 	- **[[Peertube]]**
 	- **[[Photopea]]**
 	- **[[Pintree]]**
+	- **[[Pocketsmith]]**
 	- **[[PowerToys]]**
 	- **[[Printify]]**
+	- **[[ProjectionLab]]**
 	- **[[Raycast]]**
 	- **[[Readdy]]**
 	- **[[Readwise]]**
 	- **[[refined-github extension]]**
 	- **[[Screenpipe]]**
 	- **[[Scrypted]]**
+	- **[[SimpleFIN]]**
 	- **[[Simplemind]]**
+	- **[[skwad]]**
 	- **[[Slido]]**
 	- **[[solidtime]]**
 	- **[[superwhisper]]**
 	- **[[Teleseer]]**
+	- **[[Tendi]]**
 	- **[[Terrateam]]**
 	- **[[Thinkst Canary]]**
+	- **[[Tiller]]**
 	- **[[Todoist]]**
 	- **[[Toggl Track]]**
 	- **[[Trilium Notes]]**
@@ -135,18 +159,24 @@
 	- **[[VoidZero]]**
 	- **[[Wakatime]]**
 	- **[[Webstudio_website_builder]]**
+	- **[[WenFire]]**
 	- **[[Windsurf]]**
 	- **[[Wispr flow]]**
 	- **[[WizTree]]**
 	- **[[Wo mic]]**
 	- **[[Workflowy]]**
 	- **[[Yaak]]**
+	- **[[YNAB]]**
 	- **[[Zivver Security]]**
 - **[[Websites]]**
 	- **[[Algorа]]**
 	- **[[Gruv]]**
 	- **[[Humble Bundle]]**
 	- **[[Openbazaar]]**
+	- **[[plaintextaccounting]]**
+	- **[[R_frugal_reddit_frontpage]]**
+	- **[[R_personalfinance_overview]]**
+	- **[[R_pftools_community]]**
 	- **[[St Paul Center]]**
 	- **[[Techlore]]**
 	- **[[Tertulia]]**
