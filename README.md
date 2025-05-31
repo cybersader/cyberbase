@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Fri, May 30, 2025 - [[📁 36 - Personal Finance]]
+> Sat, May 31, 2025 - [[Awesome Anime]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -102,16 +102,16 @@ SORT file.mtime DESC LIMIT 10
 
 | File                                                                                        | Last modified             |
 | ------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md\|Awesome Anime]]                 | Sat - 5/31/2025, 7:53 PM  |
+| [[⬇️ Clippings/Tech/IronVest/IronVest.md\|IronVest]]                                        | Sat - 5/31/2025, 10:17 AM |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                              | Sat - 5/31/2025, 10:16 AM |
+| [[⬇️ Clippings/Tech/Google Pay/Google Pay.md\|Google Pay]]                                  | Sat - 5/31/2025, 10:14 AM |
+| [[⬇️ Clippings/Tech/Apple Pay/Apple Pay.md\|Apple Pay]]                                     | Sat - 5/31/2025, 10:10 AM |
+| [[⬇️ Clippings/Tech/Google Wallet/Google Wallet.md\|Google Wallet]]                         | Sat - 5/31/2025, 10:08 AM |
+| [[⬇️ Clippings/Tech/Privacy Virtual Cards/Privacy Virtual Cards.md\|Privacy Virtual Cards]] | Sat - 5/31/2025, 9:55 AM  |
+| [[⬇️ Clippings/Tech/Canarytokens/Canarytokens.md\|Canarytokens]]                            | Sat - 5/31/2025, 9:53 AM  |
 | [[📁 36 - Personal Finance/📁 36 - Personal Finance.md\|📁 36 - Personal Finance]]          | Fri - 5/30/2025, 10:44 PM |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                              | Fri - 5/30/2025, 10:42 PM |
 | [[⬇️ Clippings/Tech/MyBudgetCoach/MyBudgetCoach.md\|MyBudgetCoach]]                         | Fri - 5/30/2025, 10:42 PM |
-| [[⬇️ Clippings/Tech/Buckets Budgeting App/Buckets Budgeting App.md\|Buckets Budgeting App]] | Fri - 5/30/2025, 10:40 PM |
-| [[⬇️ Clippings/Tech/skwad/skwad.md\|skwad]]                                                 | Fri - 5/30/2025, 10:38 PM |
-| [[⬇️ Clippings/Tech/SimpleFIN/SimpleFIN.md\|SimpleFIN]]                                     | Fri - 5/30/2025, 10:38 PM |
-| [[⬇️ Clippings/Tech/Kiro/Kiro.md\|Kiro]]                                                    | Fri - 5/30/2025, 10:37 PM |
-| [[⬇️ Clippings/Tech/Tendi/Tendi.md\|Tendi]]                                                 | Fri - 5/30/2025, 10:36 PM |
-| [[⬇️ Clippings/Tech/Peek Money/Peek Money.md\|Peek Money]]                                  | Fri - 5/30/2025, 10:36 PM |
-| [[⬇️ Clippings/Tech/Pocketsmith/Pocketsmith.md\|Pocketsmith]]                               | Fri - 5/30/2025, 10:35 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
