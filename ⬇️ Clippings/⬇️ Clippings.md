@@ -55,6 +55,7 @@
 	- **[[Actual]]**
 	- **[[Agentic Windows]]**
 	- **[[Amigo AI Finance]]**
+	- **[[Apple Pay]]**
 	- **[[Audacity]]**
 	- **[[Beanhub]]**
 	- **[[Blaze ai]]**
@@ -84,12 +85,15 @@
 	- **[[Ghostfolio]]**
 	- **[[Gitea]]**
 	- **[[Google Map Plus Codes]]**
+	- **[[Google Pay]]**
+	- **[[Google Wallet]]**
 	- **[[Google-Gemma-3]]**
 	- **[[GrapheneOS]]**
 	- **[[HandBrake]]**
 	- **[[hledger]]**
 	- **[[Honeydue]]**
 	- **[[Invidious]]**
+	- **[[IronVest]]**
 	- **[[Khoj]]**
 	- **[[Kiro]]**
 	- **[[Kittl]]**
