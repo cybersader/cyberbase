@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                 | Last modified             |
-| ---------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 36 - Personal Finance/📁 36 - Personal Finance.md\|📁 36 - Personal Finance]]                   | Tue - 5/27/2025, 10:36 PM |
-| [[📁 07 - Cybersader Arsenal/⬇️ Cybersade DROPZONE/⬇️ Cybersade DROPZONE.md\|⬇️ Cybersade DROPZONE]] | Mon - 5/26/2025, 1:24 PM  |
-| [[📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md\|Awesome EDC]]                                | Mon - 5/26/2025, 10:09 AM |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                       | Mon - 5/26/2025, 9:41 AM  |
-| [[⬇️ Clippings/Tech/hledger/hledger.md\|hledger]]                                                    | Mon - 5/26/2025, 9:41 AM  |
-| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                           | Mon - 5/26/2025, 9:12 AM  |
-| [[⬇️ Clippings/Tech/Wo mic/Wo mic.md\|Wo mic]]                                                       | Sun - 5/25/2025, 3:02 PM  |
-| [[⬇️ Clippings/Websites/St Paul Center/St Paul Center.md\|St Paul Center]]                           | Fri - 5/23/2025, 4:44 PM  |
-| [[📁 01 - Projects/Personal Agentic Setup/Personal Agentic Setup.md\|Personal Agentic Setup]]        | Fri - 5/23/2025, 4:17 PM  |
-| [[📁 01 - Projects/📁 01 - Projects.md\|📁 01 - Projects]]                                           | Fri - 5/23/2025, 4:15 PM  |
+| File                                                                                        | Last modified             |
+| ------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 36 - Personal Finance/📁 36 - Personal Finance.md\|📁 36 - Personal Finance]]          | Fri - 5/30/2025, 10:44 PM |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                              | Fri - 5/30/2025, 10:42 PM |
+| [[⬇️ Clippings/Tech/MyBudgetCoach/MyBudgetCoach.md\|MyBudgetCoach]]                         | Fri - 5/30/2025, 10:42 PM |
+| [[⬇️ Clippings/Tech/Buckets Budgeting App/Buckets Budgeting App.md\|Buckets Budgeting App]] | Fri - 5/30/2025, 10:40 PM |
+| [[⬇️ Clippings/Tech/skwad/skwad.md\|skwad]]                                                 | Fri - 5/30/2025, 10:38 PM |
+| [[⬇️ Clippings/Tech/SimpleFIN/SimpleFIN.md\|SimpleFIN]]                                     | Fri - 5/30/2025, 10:38 PM |
+| [[⬇️ Clippings/Tech/Kiro/Kiro.md\|Kiro]]                                                    | Fri - 5/30/2025, 10:37 PM |
+| [[⬇️ Clippings/Tech/Tendi/Tendi.md\|Tendi]]                                                 | Fri - 5/30/2025, 10:36 PM |
+| [[⬇️ Clippings/Tech/Peek Money/Peek Money.md\|Peek Money]]                                  | Fri - 5/30/2025, 10:36 PM |
+| [[⬇️ Clippings/Tech/Pocketsmith/Pocketsmith.md\|Pocketsmith]]                               | Fri - 5/30/2025, 10:35 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 

@@ -14,57 +14,57 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 ```
 %%
 
-| File                                                                                                                                                                         | Last modified             |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                                               | Fri - 5/30/2025, 9:03 AM  |
-| [[README.md\|README]]                                                                                                                                                        | Fri - 5/30/2025, 9:03 AM  |
-| [[📁 36 - Personal Finance/📁 36 - Personal Finance.md\|📁 36 - Personal Finance]]                                                                                           | Tue - 5/27/2025, 10:36 PM |
-| [[📁 07 - Cybersader Arsenal/⬇️ Cybersade DROPZONE/⬇️ Cybersade DROPZONE.md\|⬇️ Cybersade DROPZONE]]                                                                         | Mon - 5/26/2025, 1:24 PM  |
-| [[📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md\|Awesome EDC]]                                                                                                        | Mon - 5/26/2025, 10:09 AM |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                               | Mon - 5/26/2025, 9:41 AM  |
-| [[⬇️ Clippings/Tech/hledger/hledger.md\|hledger]]                                                                                                                            | Mon - 5/26/2025, 9:41 AM  |
-| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                                                                   | Mon - 5/26/2025, 9:12 AM  |
-| [[⬇️ Clippings/Tech/Wo mic/Wo mic.md\|Wo mic]]                                                                                                                               | Sun - 5/25/2025, 3:02 PM  |
-| [[⬇️ Clippings/Websites/St Paul Center/St Paul Center.md\|St Paul Center]]                                                                                                   | Fri - 5/23/2025, 4:44 PM  |
-| [[📁 01 - Projects/Personal Agentic Setup/Personal Agentic Setup.md\|Personal Agentic Setup]]                                                                                | Fri - 5/23/2025, 4:17 PM  |
-| [[📁 01 - Projects/📁 01 - Projects.md\|📁 01 - Projects]]                                                                                                                   | Fri - 5/23/2025, 4:15 PM  |
-| [[⬇️ Clippings/Tech/Agentic Windows/Agentic Windows.md\|Agentic Windows]]                                                                                                    | Fri - 5/23/2025, 3:42 PM  |
-| [[⬇️ Clippings/Tech/Velociraptor/Velociraptor.md\|Velociraptor]]                                                                                                             | Fri - 5/23/2025, 3:39 PM  |
-| [[⬇️ Clippings/Tech/superwhisper/superwhisper.md\|superwhisper]]                                                                                                             | Tue - 5/20/2025, 9:08 PM  |
-| [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                                                                                              | Tue - 5/20/2025, 7:33 PM  |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/BHIS, Antisyphon.md\|BHIS, Antisyphon]]                                                                                           | Tue - 5/20/2025, 7:33 PM  |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Detection Engineering Disposition/Detection Engineering Disposition.md\|Detection Engineering Disposition]]                       | Tue - 5/20/2025, 7:33 PM  |
-| [[📁 12 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md\|⬇️ Cyber Content Ideas]]                                                                        | Mon - 5/19/2025, 1:10 PM  |
-| [[📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/GPSEC 2025.md\|GPSEC 2025]]                                                                                        | Mon - 5/19/2025, 8:46 AM  |
-| [[📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/Anatomy of Ransomware - Rubrik/Anatomy of Ransomware - Rubrik.md\|Anatomy of Ransomware - Rubrik]]                 | Mon - 5/19/2025, 8:46 AM  |
-| [[📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/Beyond IAM - NHIM/Beyond IAM - NHIM.md\|Beyond IAM - NHIM]]                                                        | Mon - 5/19/2025, 8:46 AM  |
-| [[📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/CISO Panel GPSEC 25/CISO Panel GPSEC 25.md\|CISO Panel GPSEC 25]]                                                  | Mon - 5/19/2025, 8:46 AM  |
-| [[📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/FBI Agent & Ex-Hacker GPSEC/FBI Agent & Ex-Hacker GPSEC.md\|FBI Agent & Ex-Hacker GPSEC]]                          | Mon - 5/19/2025, 8:46 AM  |
-| [[📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/MDR Mythbusters/MDR Mythbusters.md\|MDR Mythbusters]]                                                              | Mon - 5/19/2025, 8:46 AM  |
-| [[📁 06 - Learning, Notes/Security Conferences/Security Conferences.md\|Security Conferences]]                                                                               | Mon - 5/19/2025, 8:45 AM  |
-| [[📁 06 - Learning, Notes/Security Conferences/GPSEC 2025/The Modern Adversary (Crowdstrike)/The Modern Adversary (Crowdstrike).md\|The Modern Adversary (Crowdstrike)]]     | Mon - 5/19/2025, 8:45 AM  |
-| [[📁 12 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md\|⬇️ Content Creation Stack Ideas]]                                             | Sun - 5/18/2025, 7:48 PM  |
-| [[⬇️ Clippings/Tech/Flameshot/Flameshot.md\|Flameshot]]                                                                                                                      | Sun - 5/18/2025, 1:57 PM  |
-| [[⬇️ Clippings/Tech/Briefing/Briefing.md\|Briefing]]                                                                                                                         | Sun - 5/18/2025, 1:52 PM  |
-| [[📁 12 - Content Creation/Screen Recording/Screen Recording.md\|Screen Recording]]                                                                                          | Sun - 5/18/2025, 11:46 AM |
-| [[📁 12 - Content Creation/📁 12 - Content Creation.md\|📁 12 - Content Creation]]                                                                                           | Sun - 5/18/2025, 11:46 AM |
-| [[📁 51 - Cyberbase/Obsidian Quartz Publish/Obsidian Quartz Publish.md\|Obsidian Quartz Publish]]                                                                            | Sat - 5/17/2025, 6:18 PM  |
-| [[📁 51 - Cyberbase/📁 51 - Cyberbase.md\|📁 51 - Cyberbase]]                                                                                                                | Sat - 5/17/2025, 6:18 PM  |
-| [[📁 07 - Cybersader Arsenal/Personal Privacy Tools/Personal Privacy Tools.md\|Personal Privacy Tools]]                                                                      | Sat - 5/17/2025, 4:53 PM  |
-| [[⬇️ Clippings/Tech/Audacity/Audacity.md\|Audacity]]                                                                                                                         | Sat - 5/17/2025, 2:54 PM  |
-| [[⬇️ Clippings/Tech/Ableton Live/Ableton Live.md\|Ableton Live]]                                                                                                             | Sat - 5/17/2025, 2:39 PM  |
-| [[⬇️ Clippings/Tech/LMMS/LMMS.md\|LMMS]]                                                                                                                                     | Sat - 5/17/2025, 2:15 PM  |
-| [[⬇️ Clippings/Tech/Nothing Tech US/Nothing Tech US.md\|Nothing Tech US]]                                                                                                    | Sat - 5/17/2025, 2:08 PM  |
-| [[📁 07 - Cybersader Arsenal/Personal Cyber Resilience/Personal Cyber Resilience.md\|Personal Cyber Resilience]]                                                             | Sat - 5/17/2025, 2:03 PM  |
-| [[📁 07 - Cybersader Arsenal/PersonalPrivacyTips/PersonalPrivacyTips.md\|PersonalPrivacyTips]]                                                                               | Sat - 5/17/2025, 2:02 PM  |
-| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                                                     | Sat - 5/17/2025, 2:02 PM  |
-| [[⬇️ Clippings/Tech/solidtime/solidtime.md\|solidtime]]                                                                                                                      | Thu - 5/15/2025, 10:03 PM |
-| [[⬇️ Clippings/ChatGPT/Wifi Mode Explanation/Wifi Mode Explanation.md\|Wifi Mode Explanation]]                                                                               | Tue - 5/13/2025, 9:04 PM  |
-| [[⬇️ Clippings/Tech/ConfessIt/ConfessIt.md\|ConfessIt]]                                                                                                                      | Tue - 5/13/2025, 8:47 PM  |
-| [[⬇️ Clippings/Tech/CalyxOS/CalyxOS.md\|CalyxOS]]                                                                                                                            | Tue - 5/13/2025, 8:42 PM  |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Custom Docker Apps in TrueNAS/Custom Docker Apps in TrueNAS.md\|Custom Docker Apps in TrueNAS]] | Tue - 5/13/2025, 8:38 PM  |
-| [[⬇️ Clippings/Tech/GrapheneOS/GrapheneOS.md\|GrapheneOS]]                                                                                                                   | Mon - 5/12/2025, 9:32 PM  |
-| [[📁 07 - Cybersader Arsenal/Paperless Storage/Paperless Storage.md\|Paperless Storage]]                                                                                     | Sun - 5/11/2025, 9:54 PM  |
-| [[📁 06 - Learning, Notes/Cyber Movies, TV, Documentaries/Cyber Movies, TV, Documentaries.md\|Cyber Movies, TV, Documentaries]]                                              | Sun - 5/11/2025, 8:29 PM  |
+| File                                                                                                                                                   | Last modified             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------- |
+| [[📁 36 - Personal Finance/📁 36 - Personal Finance.md\|📁 36 - Personal Finance]]                                                                     | Fri - 5/30/2025, 10:44 PM |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                         | Fri - 5/30/2025, 10:42 PM |
+| [[⬇️ Clippings/Tech/MyBudgetCoach/MyBudgetCoach.md\|MyBudgetCoach]]                                                                                    | Fri - 5/30/2025, 10:42 PM |
+| [[⬇️ Clippings/Tech/Buckets Budgeting App/Buckets Budgeting App.md\|Buckets Budgeting App]]                                                            | Fri - 5/30/2025, 10:40 PM |
+| [[⬇️ Clippings/Tech/skwad/skwad.md\|skwad]]                                                                                                            | Fri - 5/30/2025, 10:38 PM |
+| [[⬇️ Clippings/Tech/SimpleFIN/SimpleFIN.md\|SimpleFIN]]                                                                                                | Fri - 5/30/2025, 10:38 PM |
+| [[⬇️ Clippings/Tech/Kiro/Kiro.md\|Kiro]]                                                                                                               | Fri - 5/30/2025, 10:37 PM |
+| [[⬇️ Clippings/Tech/Tendi/Tendi.md\|Tendi]]                                                                                                            | Fri - 5/30/2025, 10:36 PM |
+| [[⬇️ Clippings/Tech/Peek Money/Peek Money.md\|Peek Money]]                                                                                             | Fri - 5/30/2025, 10:36 PM |
+| [[⬇️ Clippings/Tech/Pocketsmith/Pocketsmith.md\|Pocketsmith]]                                                                                          | Fri - 5/30/2025, 10:35 PM |
+| [[⬇️ Clippings/Tech/MoneyWiz/MoneyWiz.md\|MoneyWiz]]                                                                                                   | Fri - 5/30/2025, 10:35 PM |
+| [[⬇️ Clippings/Tech/Emma Budget App/Emma Budget App.md\|Emma Budget App]]                                                                              | Fri - 5/30/2025, 10:34 PM |
+| [[⬇️ Clippings/Tech/Boldin/Boldin.md\|Boldin]]                                                                                                         | Fri - 5/30/2025, 10:31 PM |
+| [[⬇️ Clippings/Tech/Honeydue/Honeydue.md\|Honeydue]]                                                                                                   | Fri - 5/30/2025, 10:30 PM |
+| [[⬇️ Clippings/Tech/OpenBB/OpenBB.md\|OpenBB]]                                                                                                         | Fri - 5/30/2025, 10:27 PM |
+| [[⬇️ Clippings/Tech/Fava/Fava.md\|Fava]]                                                                                                               | Fri - 5/30/2025, 10:26 PM |
+| [[⬇️ Clippings/Tech/ProjectionLab/ProjectionLab.md\|ProjectionLab]]                                                                                    | Fri - 5/30/2025, 10:25 PM |
+| [[⬇️ Clippings/Tech/Financial Freedom/Financial Freedom.md\|Financial Freedom]]                                                                        | Fri - 5/30/2025, 10:23 PM |
+| [[⬇️ Clippings/Tech/WenFire/WenFire.md\|WenFire]]                                                                                                      | Fri - 5/30/2025, 10:22 PM |
+| [[⬇️ Clippings/Tech/Amigo AI Finance/Amigo AI Finance.md\|Amigo AI Finance]]                                                                           | Fri - 5/30/2025, 10:21 PM |
+| [[⬇️ Clippings/Tech/Copilot Money/Copilot Money.md\|Copilot Money]]                                                                                    | Fri - 5/30/2025, 10:20 PM |
+| [[⬇️ Clippings/Tech/Maybe Finance/Maybe Finance.md\|Maybe Finance]]                                                                                    | Fri - 5/30/2025, 10:19 PM |
+| [[⬇️ Clippings/Tech/Actual/Actual.md\|Actual]]                                                                                                         | Fri - 5/30/2025, 10:19 PM |
+| [[⬇️ Clippings/Tech/Ghostfolio/Ghostfolio.md\|Ghostfolio]]                                                                                             | Fri - 5/30/2025, 10:18 PM |
+| [[⬇️ Clippings/Websites/R_frugal_reddit_frontpage/R_frugal_reddit_frontpage.md\|R_frugal_reddit_frontpage]]                                            | Fri - 5/30/2025, 10:17 PM |
+| [[⬇️ Clippings/Websites/R_personalfinance_overview/R_personalfinance_overview.md\|R_personalfinance_overview]]                                         | Fri - 5/30/2025, 10:16 PM |
+| [[⬇️ Clippings/Tech/Papermoney_finance/Papermoney_finance.md\|Papermoney_finance]]                                                                     | Fri - 5/30/2025, 10:16 PM |
+| [[⬇️ Clippings/Websites/R_pftools_community/R_pftools_community.md\|R_pftools_community]]                                                              | Fri - 5/30/2025, 10:15 PM |
+| [[⬇️ Clippings/Tech/Tiller/Tiller.md\|Tiller]]                                                                                                         | Fri - 5/30/2025, 10:14 PM |
+| [[⬇️ Clippings/Tech/YNAB/YNAB.md\|YNAB]]                                                                                                               | Fri - 5/30/2025, 10:13 PM |
+| [[⬇️ Clippings/Tech/Beanhub/Beanhub.md\|Beanhub]]                                                                                                      | Fri - 5/30/2025, 10:12 PM |
+| [[⬇️ Clippings/Websites/plaintextaccounting/plaintextaccounting.md\|plaintextaccounting]]                                                              | Fri - 5/30/2025, 10:10 PM |
+| [[⬇️ Clippings/Tech/Monarchmoney/Monarchmoney.md\|Monarchmoney]]                                                                                       | Fri - 5/30/2025, 9:40 PM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                         | Fri - 5/30/2025, 9:07 AM  |
+| [[README.md\|README]]                                                                                                                                  | Fri - 5/30/2025, 9:03 AM  |
+| [[📁 07 - Cybersader Arsenal/⬇️ Cybersade DROPZONE/⬇️ Cybersade DROPZONE.md\|⬇️ Cybersade DROPZONE]]                                                   | Mon - 5/26/2025, 1:24 PM  |
+| [[📁 03 - Curations, Stacks/Awesome EDC/Awesome EDC.md\|Awesome EDC]]                                                                                  | Mon - 5/26/2025, 10:09 AM |
+| [[⬇️ Clippings/Tech/hledger/hledger.md\|hledger]]                                                                                                      | Mon - 5/26/2025, 9:41 AM  |
+| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                                             | Mon - 5/26/2025, 9:12 AM  |
+| [[⬇️ Clippings/Tech/Wo mic/Wo mic.md\|Wo mic]]                                                                                                         | Sun - 5/25/2025, 3:02 PM  |
+| [[⬇️ Clippings/Websites/St Paul Center/St Paul Center.md\|St Paul Center]]                                                                             | Fri - 5/23/2025, 4:44 PM  |
+| [[📁 01 - Projects/Personal Agentic Setup/Personal Agentic Setup.md\|Personal Agentic Setup]]                                                          | Fri - 5/23/2025, 4:17 PM  |
+| [[📁 01 - Projects/📁 01 - Projects.md\|📁 01 - Projects]]                                                                                             | Fri - 5/23/2025, 4:15 PM  |
+| [[⬇️ Clippings/Tech/Agentic Windows/Agentic Windows.md\|Agentic Windows]]                                                                              | Fri - 5/23/2025, 3:42 PM  |
+| [[⬇️ Clippings/Tech/Velociraptor/Velociraptor.md\|Velociraptor]]                                                                                       | Fri - 5/23/2025, 3:39 PM  |
+| [[⬇️ Clippings/Tech/superwhisper/superwhisper.md\|superwhisper]]                                                                                       | Tue - 5/20/2025, 9:08 PM  |
+| [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                                                                        | Tue - 5/20/2025, 7:33 PM  |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/BHIS, Antisyphon.md\|BHIS, Antisyphon]]                                                                     | Tue - 5/20/2025, 7:33 PM  |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/Detection Engineering Disposition/Detection Engineering Disposition.md\|Detection Engineering Disposition]] | Tue - 5/20/2025, 7:33 PM  |
+| [[📁 12 - Content Creation/⬇️ Cyber Content Ideas/⬇️ Cyber Content Ideas.md\|⬇️ Cyber Content Ideas]]                                                  | Mon - 5/19/2025, 1:10 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
