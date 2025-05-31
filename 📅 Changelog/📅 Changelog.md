@@ -16,7 +16,9 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                           | Last modified             |
 | -------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md\|Awesome Anime]]                                    | Sat - 5/31/2025, 7:53 PM  |
+| [[📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md\|Awesome Anime]]                                    | Sat - 5/31/2025, 7:54 PM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                 | Sat - 5/31/2025, 7:53 PM  |
+| [[README.md\|README]]                                                                                          | Sat - 5/31/2025, 7:53 PM  |
 | [[⬇️ Clippings/Tech/IronVest/IronVest.md\|IronVest]]                                                           | Sat - 5/31/2025, 10:17 AM |
 | [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                 | Sat - 5/31/2025, 10:16 AM |
 | [[⬇️ Clippings/Tech/Google Pay/Google Pay.md\|Google Pay]]                                                     | Sat - 5/31/2025, 10:14 AM |
@@ -24,8 +26,6 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[⬇️ Clippings/Tech/Google Wallet/Google Wallet.md\|Google Wallet]]                                            | Sat - 5/31/2025, 10:08 AM |
 | [[⬇️ Clippings/Tech/Privacy Virtual Cards/Privacy Virtual Cards.md\|Privacy Virtual Cards]]                    | Sat - 5/31/2025, 9:55 AM  |
 | [[⬇️ Clippings/Tech/Canarytokens/Canarytokens.md\|Canarytokens]]                                               | Sat - 5/31/2025, 9:53 AM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                 | Fri - 5/30/2025, 10:45 PM |
-| [[README.md\|README]]                                                                                          | Fri - 5/30/2025, 10:45 PM |
 | [[📁 36 - Personal Finance/📁 36 - Personal Finance.md\|📁 36 - Personal Finance]]                             | Fri - 5/30/2025, 10:44 PM |
 | [[⬇️ Clippings/Tech/MyBudgetCoach/MyBudgetCoach.md\|MyBudgetCoach]]                                            | Fri - 5/30/2025, 10:42 PM |
 | [[⬇️ Clippings/Tech/Buckets Budgeting App/Buckets Budgeting App.md\|Buckets Budgeting App]]                    | Fri - 5/30/2025, 10:40 PM |

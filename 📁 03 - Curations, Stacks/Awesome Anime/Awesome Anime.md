@@ -16,7 +16,7 @@ date modified: Friday, January 31st 2025, 3:21 pm
 	- I Parry Everything (as of Ep1)
 		- Seems wholesome
 		- Any work can be noble work if it is done with a noble heart
-	- The Unwanted Undead Adventurer
+	- The Unwanted Undead Adventurer - has some annoying ecchi and other jealousy vibes
 	- The Apothecary Diaries - not bad...shallow philosophies though
 	- The Elusive Samurai
 		- Has a good rating and hopefully wholesome
