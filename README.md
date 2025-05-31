@@ -102,7 +102,7 @@ SORT file.mtime DESC LIMIT 10
 
 | File                                                                                        | Last modified             |
 | ------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md\|Awesome Anime]]                 | Sat - 5/31/2025, 7:54 PM  |
+| [[📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md\|Awesome Anime]]                 | Sat - 5/31/2025, 7:56 PM  |
 | [[⬇️ Clippings/Tech/IronVest/IronVest.md\|IronVest]]                                        | Sat - 5/31/2025, 10:17 AM |
 | [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                              | Sat - 5/31/2025, 10:16 AM |
 | [[⬇️ Clippings/Tech/Google Pay/Google Pay.md\|Google Pay]]                                  | Sat - 5/31/2025, 10:14 AM |
