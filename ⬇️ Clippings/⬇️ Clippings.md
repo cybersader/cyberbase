@@ -84,6 +84,7 @@
 	- **[[Formance]]**
 	- **[[Ghostfolio]]**
 	- **[[Gitea]]**
+	- **[[Glint]]**
 	- **[[Google Map Plus Codes]]**
 	- **[[Google Pay]]**
 	- **[[Google Wallet]]**
