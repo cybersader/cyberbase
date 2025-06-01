@@ -32,7 +32,7 @@ tags:
   - authenticaction
   - phishing_protection
   - personal_finance
-favicon: /favicon.ico
+favicon: https://ironvest.com/favicon.ico
 ---
 > [ironvest.com > IronVest](https://ironvest.com/consumer-security/)
 

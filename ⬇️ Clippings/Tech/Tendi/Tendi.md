@@ -1,13 +1,14 @@
 ---
-title: "Tendi | Your Personal AI Financial Advisor"
-source: "https://tendi.ai/"
+title: Tendi | Your Personal AI Financial Advisor
+source: https://tendi.ai/
 published: Wednesday, October 16th 2024, 11:33 am
-date created: Friday, May 30th 2025, 10:36 pm
-description: "AI-Powered Personal Financial Advisor"
+date created: Saturday, May 31st 2025, 10:32 pm
+description: AI-Powered Personal Financial Advisor
 tags:
-  - "clippings"
-  - "clippings/tech"
-favicon: "https://tendi.ai/wp-content/uploads/2024/10/cropped-tendi.app_.icon_-32x32.png"
+  - clippings
+  - clippings/tech
+  - personal_finance
+favicon: https://tendi.ai/wp-content/uploads/2024/10/cropped-tendi.app_.icon_-32x32.png
 ---
 > [tendi.ai > Tendi | Your Personal AI Financial Advisor](https://tendi.ai/)
 

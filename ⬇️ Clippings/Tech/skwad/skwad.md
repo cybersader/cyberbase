@@ -1,39 +1,52 @@
 ---
 title: "Skwad App: Understand your spending without linking your bank."
-source: "https://skwad.app/"
+source: https://skwad.app/why-skwad
 published:
-date created: Friday, May 30th 2025, 10:38 pm
-description: "Skwad is a privacy-first budgeting app that helps you gain financial clarity without sharing your bank login with third-party apps. Skwad uses your bank's built-in email alerts to track your spending and income."
+date created: Saturday, May 31st 2025, 10:36 pm
+description: Why we're building Skwad and how we're different from other personal finance apps.
 tags:
-  - "clippings"
-  - "clippings/tech"
-favicon: "https://skwad.app/favicon.ico"
+  - clippings
+  - clippings/tech
+  - privacy
+  - budgeting
+  - finance
+  - fintech
+  - bank_alerts
+  - receipt_scanning
+  - bank_statements
+  - couples_budgeting
+  - data_security
+  - fintech
+  - personal_finance
+favicon: https://skwad.app/favicon.ico
 ---
-> [skwad.app > Skwad App: Understand your spending without linking your bank.](https://skwad.app/)
+> [skwad.app > Skwad App: Understand your spending without linking your bank.](https://skwad.app/why-skwad)
 
-# Skwad App Overview
+# Skwad App: Spending Tracking Without Bank Credentials
 
-Skwad is a privacy-first budgeting app that tracks spending and income without requiring users to link their bank accounts. It leverages bank email alerts to automatically categorize transactions. Key features include budgeting, receipt scanning, bank statement conversion, and support for couples.
+Skwad is a privacy-first budgeting app that allows users to track their spending and income without sharing bank login credentials. It leverages bank's built-in email alerts.
 
 ## Key Features
 
-*   **Budgeting:** Manage personal budgets with rollovers and comprehensive reports.
-*   **Receipt Scanner:** Extract and categorize line items from receipts.
-*   **Bank Statements:** Automatically convert PDF bank statements into Excel.
-*   **For Couples:** Share accounts, bills, and budgets in real-time.
+*   **Receipt Scanning:** Automatically categorizes line items from receipts.
+*   **Bank Statement Conversion:** Converts PDF bank statements into Excel.
+*   **Budgeting:** Manage budgets with rollovers and reports.
+*   **Couples Sharing:** Share accounts, bills, and budgets in real-time.
+*   **Supported Banks:** Uses SimpleFIN for optional bank sync.
+*   **Importing Transactions:** Supports CSV, OFX, and QIF file imports.
+*   **Mint Migration:** Supports importing data from Mint exports.
 
 ## Comparisons
 
-Skwad is compared to other budgeting apps such as Plaid, YNAB, Monarch Money, Actual Budget, and Mint.
+*   **Plaid:** Skwad differentiates itself by avoiding third-party data sharing.
+*   **YNAB:**  Comparison available on the Skwad website.
+*   **Monarch Money:** Comparison available on the Skwad website.
+*   **Actual Budget:** Comparison available on the Skwad website.
+*   **Mint:** Comparison available on the Skwad website.
 
-## Supported Banks & Integrations
+## Additional Resources
 
-Skwad supports over 11,000 financial institutions and offers optional bank sync via SimpleFIN. It also supports importing transactions from CSV, OFX, and QIF files, and migrating from Mint.
-
-## Privacy & Security
-
-Skwad prioritizes user privacy by avoiding the need to share bank login credentials. It addresses concerns about the safety of connecting bank accounts to budgeting apps.
-
-## Pricing & Sign-Up
-
-Skwad offers a free trial and supports sign-up via Apple or Google.
+*   **Pricing:** Available on the Skwad website.
+*   **Bank Alerts:** Supported banks listed on the Skwad website.
+*   **Guides:** Blog posts covering topics like data security and migration.
+*   **Get Started:** 15% off your first year with code DUO15.

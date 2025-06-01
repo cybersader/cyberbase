@@ -100,6 +100,7 @@
 	- **[[Khoj]]**
 	- **[[Kiro]]**
 	- **[[Kittl]]**
+	- **[[Klutch Card]]**
 	- **[[Kortex]]**
 	- **[[LibreChat]]**
 	- **[[Limitless AI]]**
@@ -179,6 +180,7 @@
 	- **[[Workflowy]]**
 	- **[[Yaak]]**
 	- **[[YNAB]]**
+	- **[[Zelle]]**
 	- **[[Zivver Security]]**
 - **[[Websites]]**
 	- **[[Algorа]]**
