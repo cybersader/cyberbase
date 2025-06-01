@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sat, May 31, 2025 - [[Awesome Anime]]
+> Sat, May 31, 2025 - [[Klutch Card]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                        | Last modified             |
-| ------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md\|Awesome Anime]]                 | Sat - 5/31/2025, 7:56 PM  |
-| [[⬇️ Clippings/Tech/IronVest/IronVest.md\|IronVest]]                                        | Sat - 5/31/2025, 10:17 AM |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                              | Sat - 5/31/2025, 10:16 AM |
-| [[⬇️ Clippings/Tech/Google Pay/Google Pay.md\|Google Pay]]                                  | Sat - 5/31/2025, 10:14 AM |
-| [[⬇️ Clippings/Tech/Apple Pay/Apple Pay.md\|Apple Pay]]                                     | Sat - 5/31/2025, 10:10 AM |
-| [[⬇️ Clippings/Tech/Google Wallet/Google Wallet.md\|Google Wallet]]                         | Sat - 5/31/2025, 10:08 AM |
-| [[⬇️ Clippings/Tech/Privacy Virtual Cards/Privacy Virtual Cards.md\|Privacy Virtual Cards]] | Sat - 5/31/2025, 9:55 AM  |
-| [[⬇️ Clippings/Tech/Canarytokens/Canarytokens.md\|Canarytokens]]                            | Sat - 5/31/2025, 9:53 AM  |
-| [[📁 36 - Personal Finance/📁 36 - Personal Finance.md\|📁 36 - Personal Finance]]          | Fri - 5/30/2025, 10:44 PM |
-| [[⬇️ Clippings/Tech/MyBudgetCoach/MyBudgetCoach.md\|MyBudgetCoach]]                         | Fri - 5/30/2025, 10:42 PM |
+| File                                                          | Last modified             |
+| ------------------------------------------------------------- | ------------------------- |
+| [[⬇️ Clippings/Tech/Klutch Card/Klutch Card.md\|Klutch Card]] | Sat - 5/31/2025, 10:48 PM |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                | Sat - 5/31/2025, 10:48 PM |
+| [[⬇️ Clippings/Tech/IronVest/IronVest.md\|IronVest]]          | Sat - 5/31/2025, 10:44 PM |
+| [[⬇️ Clippings/Tech/Zelle/Zelle.md\|Zelle]]                   | Sat - 5/31/2025, 10:38 PM |
+| [[⬇️ Clippings/Tech/skwad/skwad.md\|skwad]]                   | Sat - 5/31/2025, 10:36 PM |
+| [[⬇️ Clippings/Tech/Tendi/Tendi.md\|Tendi]]                   | Sat - 5/31/2025, 10:33 PM |
+| [[⬇️ Clippings/Tech/SimpleFIN/SimpleFIN.md\|SimpleFIN]]       | Sat - 5/31/2025, 10:31 PM |
+| [[⬇️ Clippings/Tech/Honeydue/Honeydue.md\|Honeydue]]          | Sat - 5/31/2025, 10:13 PM |
+| [[⬇️ Clippings/Tech/Fava/Fava.md\|Fava]]                      | Sat - 5/31/2025, 10:11 PM |
+| [[⬇️ Clippings/Tech/cFIREsim/cFIREsim.md\|cFIREsim]]          | Sat - 5/31/2025, 10:10 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
