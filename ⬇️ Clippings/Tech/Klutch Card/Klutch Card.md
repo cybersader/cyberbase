@@ -7,32 +7,27 @@ description: Get all the features you want, all in one place, with the world’s
 tags:
   - clippings
   - clippings/tech
-  - spending
-  - credit_card
-  - finance
-  - budgeting
-  - financial_management
-  - app
-  - mobile
-  - control
-  - payments
-  - subscriptions
-  - merchant
-  - ai
-  - insights
-  - automation
-  - climate
-  - fsa
-  - deals
-  - if_then
-  - google_sheets
-  - user_friendly
-  - personalized
-  - financial_tools
-  - digital_wallet
+  - crypto
+  - cryptocurrency
+  - virtual_card
+  - moon
+  - visa
+  - payment
+  - blockchain
+  - digital_currency
+  - online_shopping
+  - merchants
+  - ebay
+  - airbnb
+  - walmart
+  - iherb
+  - netflix
+  - costco
+  - blockchain_payment
+  - crypto_payment
+  - virtual_card_payment
   - personal_finance
-  - personal_privacy
-  - privacy
+  - virtual_cards
 favicon: https://cdn.prod.website-files.com/660d6194e5d7f9c60a769ac1/660d647f144ddd526e9e3894_favicon.png
 ---
 > [klutchcard.com > Klutch Card](https://www.klutchcard.com/)

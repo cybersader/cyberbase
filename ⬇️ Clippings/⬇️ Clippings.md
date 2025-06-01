@@ -77,6 +77,7 @@
 	- **[[Cryptomator]]**
 	- **[[Cryptpad]]**
 	- **[[Cursor]]**
+	- **[[Donotpay]]**
 	- **[[Emma Budget App]]**
 	- **[[eramba]]**
 	- **[[Fakeupdate]]**
@@ -151,6 +152,7 @@
 	- **[[Raycast]]**
 	- **[[Readdy]]**
 	- **[[Readwise]]**
+	- **[[Redact_dev]]**
 	- **[[refined-github extension]]**
 	- **[[Revolut]]**
 	- **[[Screenpipe]]**

@@ -28,6 +28,7 @@ tags:
   - virtual_card_payment
   - personal_finance
   - virtual_cards
+  - 5ghz
 favicon: https://cdn.prod.website-files.com/6604526310f4c7f24d8e3435/66086ea476c375566ce9c5e6_favicon-32x32.webp
 ---
 > [paywithmoon.com > Moon - Shop Online with Cryptocurrency - Pay with Moon](https://paywithmoon.com/)
