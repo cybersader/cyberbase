@@ -63,6 +63,7 @@
 	- **[[Briefing]]**
 	- **[[Bruno]]**
 	- **[[Buckets Budgeting App]]**
+	- **[[Cake-pay]]**
 	- **[[CalyxOS]]**
 	- **[[Canarytokens]]**
 	- **[[CasaOS]]**
@@ -99,6 +100,7 @@
 	- **[[HandBrake]]**
 	- **[[hledger]]**
 	- **[[Honeydue]]**
+	- **[[Hushed]]**
 	- **[[Invidious]]**
 	- **[[IronVest]]**
 	- **[[Khoj]]**
@@ -162,6 +164,7 @@
 	- **[[Revolut]]**
 	- **[[Screenpipe]]**
 	- **[[Scrypted]]**
+	- **[[Silent Link]]**
 	- **[[SimpleFIN]]**
 	- **[[Simplemind]]**
 	- **[[skwad]]**
