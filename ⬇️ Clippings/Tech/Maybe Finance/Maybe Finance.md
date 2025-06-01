@@ -1,21 +1,44 @@
 ---
-title: "Maybe Finance"
-source: "https://maybefinance.com/"
+title: Maybe Finance
+source: https://maybefinance.com/
 published:
-date created: Friday, May 30th 2025, 10:19 pm
+date created: Saturday, May 31st 2025, 10:07 pm
 description: "Maybe Finance: The personal finance app for everyone"
 tags:
-  - "clippings"
-  - "clippings/tech"
-favicon: "https://maybefinance.com/favicon-32x32.png"
+  - clippings
+  - clippings/tech
+  - tracking
+  - transactions
+  - budgeting
+  - assistant
+  - personal_finance
+  - finance_app
+  - assets
+  - debts
+  - automation
+  - financial_terms
+  - community
+  - github
+  - finance
+  - tools
+  - resources
+  - mobile_app
+  - web_app
+  - optimization
+  - accessibility
+  - social_media
+  - og_tags
+  - twitter_tags
+  - meta_tags
+favicon: https://maybefinance.com/favicon-32x32.png
 ---
 > [maybefinance.com > Maybe Finance](https://maybefinance.com/)
 
 # Maybe Finance
 
-Maybe Finance is a personal finance app designed for everyone. The website includes meta tags for mobile web app optimization, social media sharing (OG and Twitter), and accessibility.
+Maybe Finance is a personal finance app designed for everyone. The website includes meta tags for mobile web app optimization, social media sharing (OG and Twitter), and accessibility. Key features include:
 
-## Features
+## Product
 
 *   **Tracking:** Link all your assets and debts.
 *   **Transactions:** Edit and automate transactions effortlessly.
@@ -24,12 +47,12 @@ Maybe Finance is a personal finance app designed for everyone. The website inclu
 
 ## Resources
 
-*   **Tools:** Try our tools [Tracking](https://maybefinance.com/features/tracking), [Transactions](https://maybefinance.com/features/transactions), [Budgeting](https://maybefinance.com/features/budgeting), and [Assistant](https://maybefinance.com/features/assistant).
-*   **Learn new terms:** [Financial Terms](https://maybefinance.com/financial-terms).
-*   **Join Community:** [Join Community](https://link.maybe.co/discord).
+*   **Tools:** Try our tools [Tracking, Transactions, Budgeting, Assistant]
+*   **Financial Terms:** Learn new terms [Financial Terms]
 
 ## Links
 
-*   [Personal Finance Articles](https://maybefinance.com/articles)
-*   [Financial Terms](https://maybefinance.com/financial-terms)
-*   [Join Community](https://link.maybe.co/discord)
+*   **Personal Finance Articles:** [Personal Finance Articles]
+*   **Financial Terms:** [Financial Terms]
+*   **Join Community:** [Join Community]
+*   **GitHub:** [GitHub]

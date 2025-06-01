@@ -1,13 +1,13 @@
 ---
-title: "Honeydue • How It Works"
-source: "https://www.honeydue.com/how-it-works"
+title: Honeydue • How It Works
+source: https://www.honeydue.com/how-it-works
 published:
 date created: Friday, May 30th 2025, 10:29 pm
-description: "An introduction to Honeydue and how to use it with your partner."
+description: An introduction to Honeydue and how to use it with your partner.
 tags:
-  - "clippings"
-  - "clippings/tech"
-favicon: "//cdn.honeydue.com/site/images/favicon.ico"
+  - clippings
+  - clippings/tech
+favicon: https://cdn.honeydue.com/site/images/favicon.ico
 ---
 > [honeydue.com > Honeydue • How It Works](https://www.honeydue.com/how-it-works)
 

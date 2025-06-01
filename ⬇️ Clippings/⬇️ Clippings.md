@@ -67,6 +67,7 @@
 	- **[[Canarytokens]]**
 	- **[[CasaOS]]**
 	- **[[Castopod]]**
+	- **[[cFIREsim]]**
 	- **[[Chatwoot]]**
 	- **[[Claude]]**
 	- **[[ConfessIt]]**
@@ -146,6 +147,7 @@
 	- **[[Readdy]]**
 	- **[[Readwise]]**
 	- **[[refined-github extension]]**
+	- **[[Revolut]]**
 	- **[[Screenpipe]]**
 	- **[[Scrypted]]**
 	- **[[SimpleFIN]]**
@@ -170,6 +172,7 @@
 	- **[[Webstudio_website_builder]]**
 	- **[[WenFire]]**
 	- **[[Windsurf]]**
+	- **[[Wise Virtual Card]]**
 	- **[[Wispr flow]]**
 	- **[[WizTree]]**
 	- **[[Wo mic]]**

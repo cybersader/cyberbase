@@ -1,13 +1,13 @@
 ---
-title: "Know.  Before it matters"
-source: "https://canarytokens.org/nest/"
+title: Know.  Before it matters
+source: https://canarytokens.org/nest/
 published:
 date created: Saturday, May 31st 2025, 9:52 am
-description: "Canarytokens is a free tool that helps you discover you’ve been breached by having attackers announce themselves.    The tokens allow you to implant traps around your network and notifies you as soon as they are triggered."
+description: Canarytokens is a free tool that helps you discover you’ve been breached by having attackers announce themselves.    The tokens allow you to implant traps around your network and notifies you as soon as they are triggered.
 tags:
-  - "clippings"
-  - "clippings/tech"
-favicon: "/nest/favicon.ico"
+  - clippings
+  - clippings/tech
+favicon: https://canarytokens.org/nest/favicon.ico
 ---
 > [canarytokens.org > Know.  Before it matters](https://canarytokens.org/nest/)
 

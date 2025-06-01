@@ -32,6 +32,7 @@ tags:
   - github
   - chat
   - pythonanywhere
+  - personal_finance
 favicon: https://beancount.github.io/favicon.ico
 ---
 > [github.io > Fava](https://beancount.github.io/fava/index.html)
