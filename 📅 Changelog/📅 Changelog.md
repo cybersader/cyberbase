@@ -16,9 +16,9 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                           | Last modified             |
 | -------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                 | Sat - 5/31/2025, 7:56 PM  |
+| [[README.md\|README]]                                                                                          | Sat - 5/31/2025, 7:56 PM  |
 | [[📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md\|Awesome Anime]]                                    | Sat - 5/31/2025, 7:56 PM  |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                 | Sat - 5/31/2025, 7:55 PM  |
-| [[README.md\|README]]                                                                                          | Sat - 5/31/2025, 7:55 PM  |
 | [[⬇️ Clippings/Tech/IronVest/IronVest.md\|IronVest]]                                                           | Sat - 5/31/2025, 10:17 AM |
 | [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                 | Sat - 5/31/2025, 10:16 AM |
 | [[⬇️ Clippings/Tech/Google Pay/Google Pay.md\|Google Pay]]                                                     | Sat - 5/31/2025, 10:14 AM |
