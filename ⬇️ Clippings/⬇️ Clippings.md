@@ -134,6 +134,7 @@
 	- **[[OrbStack]]**
 	- **[[Org Mode]]**
 	- **[[Papermoney_finance]]**
+	- **[[Paypal]]**
 	- **[[Peek Money]]**
 	- **[[Peertube]]**
 	- **[[Photopea]]**
@@ -168,6 +169,7 @@
 	- **[[Typefully]]**
 	- **[[Ueli]]**
 	- **[[Velociraptor]]**
+	- **[[Venmo]]**
 	- **[[VoidZero]]**
 	- **[[Wakatime]]**
 	- **[[Webstudio_website_builder]]**

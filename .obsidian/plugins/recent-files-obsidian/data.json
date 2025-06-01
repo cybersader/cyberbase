@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Paypal",
+      "path": "⬇️ Clippings/Tech/Paypal/Paypal.md"
+    },
+    {
+      "basename": "Venmo",
+      "path": "⬇️ Clippings/Tech/Venmo/Venmo.md"
+    },
+    {
       "basename": "Klutch Card",
       "path": "⬇️ Clippings/Tech/Klutch Card/Klutch Card.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "R_pftools_community",
       "path": "⬇️ Clippings/Websites/R_pftools_community/R_pftools_community.md"
-    },
-    {
-      "basename": "YNAB",
-      "path": "⬇️ Clippings/Tech/YNAB/YNAB.md"
-    },
-    {
-      "basename": "plaintextaccounting",
-      "path": "⬇️ Clippings/Websites/plaintextaccounting/plaintextaccounting.md"
     }
   ],
   "omittedPaths": [],
