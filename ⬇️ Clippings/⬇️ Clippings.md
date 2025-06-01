@@ -82,6 +82,7 @@
 	- **[[Financial Freedom]]**
 	- **[[Flameshot]]**
 	- **[[Formance]]**
+	- **[[Garmin Pay]]**
 	- **[[Ghostfolio]]**
 	- **[[Gitea]]**
 	- **[[Glint]]**
@@ -140,6 +141,7 @@
 	- **[[Printify]]**
 	- **[[Privacy Virtual Cards]]**
 	- **[[ProjectionLab]]**
+	- **[[Proton-wallet]]**
 	- **[[Raycast]]**
 	- **[[Readdy]]**
 	- **[[Readwise]]**
