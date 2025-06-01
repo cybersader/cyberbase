@@ -77,7 +77,9 @@
 	- **[[Cryptomator]]**
 	- **[[Cryptpad]]**
 	- **[[Cursor]]**
+	- **[[Dangerzone_rocks]]**
 	- **[[Donotpay]]**
+	- **[[EasyOptOuts]]**
 	- **[[Emma Budget App]]**
 	- **[[eramba]]**
 	- **[[Fakeupdate]]**
@@ -117,6 +119,7 @@
 	- **[[Minimal Theme for Twitter]]**
 	- **[[MKVToolNix]]**
 	- **[[Monarchmoney]]**
+	- **[[Monero_project]]**
 	- **[[MoneyWiz]]**
 	- **[[Moon]]**
 	- **[[mouseless.click]]**

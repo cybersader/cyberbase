@@ -22,6 +22,7 @@ date modified: Friday, January 31st 2025, 3:21 pm
 		- Has a good rating and hopefully wholesome
 	- The Trillion Game - actually related to IT and hacking
 	- Solo Leveling - ehhh...has some vengeance type vibes - with great power comes great responsibility.  Amazing animation and action.
+	- Frieren - awesome so far...wholesome so far too!
 
 # Top Anime
 
