@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Moon",
+      "path": "⬇️ Clippings/Tech/Moon/Moon.md"
+    },
+    {
+      "basename": "IronVest",
+      "path": "⬇️ Clippings/Tech/IronVest/IronVest.md"
+    },
+    {
+      "basename": "Paysafe",
+      "path": "⬇️ Clippings/Tech/Paysafe/Paysafe.md"
+    },
+    {
+      "basename": "Cashapp",
+      "path": "⬇️ Clippings/Tech/Cashapp/Cashapp.md"
+    },
+    {
       "basename": "Paypal",
       "path": "⬇️ Clippings/Tech/Paypal/Paypal.md"
     },
@@ -15,10 +31,6 @@
     {
       "basename": "SimpleFIN",
       "path": "⬇️ Clippings/Tech/SimpleFIN/SimpleFIN.md"
-    },
-    {
-      "basename": "IronVest",
-      "path": "⬇️ Clippings/Tech/IronVest/IronVest.md"
     },
     {
       "basename": "Zelle",
@@ -187,18 +199,6 @@
     {
       "basename": "Ghostfolio",
       "path": "⬇️ Clippings/Tech/Ghostfolio/Ghostfolio.md"
-    },
-    {
-      "basename": "R_frugal_reddit_frontpage",
-      "path": "⬇️ Clippings/Websites/R_frugal_reddit_frontpage/R_frugal_reddit_frontpage.md"
-    },
-    {
-      "basename": "R_personalfinance_overview",
-      "path": "⬇️ Clippings/Websites/R_personalfinance_overview/R_personalfinance_overview.md"
-    },
-    {
-      "basename": "R_pftools_community",
-      "path": "⬇️ Clippings/Websites/R_pftools_community/R_pftools_community.md"
     }
   ],
   "omittedPaths": [],

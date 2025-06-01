@@ -66,6 +66,7 @@
 	- **[[CalyxOS]]**
 	- **[[Canarytokens]]**
 	- **[[CasaOS]]**
+	- **[[Cashapp]]**
 	- **[[Castopod]]**
 	- **[[cFIREsim]]**
 	- **[[Chatwoot]]**
@@ -114,6 +115,7 @@
 	- **[[MKVToolNix]]**
 	- **[[Monarchmoney]]**
 	- **[[MoneyWiz]]**
+	- **[[Moon]]**
 	- **[[mouseless.click]]**
 	- **[[Msty]]**
 	- **[[MyBudgetCoach]]**
@@ -135,6 +137,7 @@
 	- **[[Org Mode]]**
 	- **[[Papermoney_finance]]**
 	- **[[Paypal]]**
+	- **[[Paysafe]]**
 	- **[[Peek Money]]**
 	- **[[Peertube]]**
 	- **[[Photopea]]**
