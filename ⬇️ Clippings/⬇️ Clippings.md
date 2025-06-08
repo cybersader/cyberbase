@@ -86,6 +86,8 @@
 	- **[[Fakeupdate]]**
 	- **[[Fava]]**
 	- **[[Financial Freedom]]**
+	- **[[Finicity]]**
+	- **[[Fintable]]**
 	- **[[Flameshot]]**
 	- **[[Formance]]**
 	- **[[Garmin Pay]]**
@@ -203,6 +205,7 @@
 	- **[[Humble Bundle]]**
 	- **[[Openbazaar]]**
 	- **[[plaintextaccounting]]**
+	- **[[Privacy_guides]]**
 	- **[[R_frugal_reddit_frontpage]]**
 	- **[[R_personalfinance_overview]]**
 	- **[[R_pftools_community]]**
