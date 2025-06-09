@@ -407,6 +407,8 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 	- [b3n.org > Automatic Ripping Machine | Headless | Blu-Ray/DVD/CD](https://b3n.org/automatic-ripping-machine/)
 	- [youtube.com > How To Rip DVDs With MakeMKV and Use Handbrake For Hardware Transcoding](https://www.youtube.com/watch?v=u_xdrscVB0Y)
 	- [makemkv.com > Options for trying to back up scratched discs? - www.makemkv.com](https://forum.makemkv.com/forum/viewtopic.php?t=15195)
+	- [youtube.com > How to Rip 4K & Blu-Ray Movies | The Official Guide](https://www.youtube.com/watch?v=LguN8RCXVyc)
+	- [youtube.com > Streaming 4K Blu-rays With a DECADE-OLD PC](https://www.youtube.com/watch?v=jZRQh-ngoO4)
 	- 
 	- Required tools
 		- [handbrake.fr > HandBrake: Open Source Video Transcoder](https://handbrake.fr/)
@@ -414,7 +416,8 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 		- VLC
 			- [makemkv.com > MakeMKV is free while in beta - www.makemkv.com](https://forum.makemkv.com/forum/viewtopic.php?t=1053)
 		- [archive.org > SDFtool Flasher (v 1.3.4) : MartyMcNuts : Free Download, Borrow, and Streaming : Internet Archive](https://archive.org/details/sdftool-flasher-v-1.3.4)
-		- 
+			- [makemkv.com > SDFtool Flasher - www.makemkv.com](https://forum.makemkv.com/forum/viewtopic.php?t=22896) - guide for flashing drive
+			- 
 	- [Amazon.com: Pioneer Electronics BDR-XS07UHD 6x Slot Loading CD DVD BluRay Portable USB 3.1 BD/DVD/CD Burner Supports Blu-Ray](https://www.amazon.com/Pioneer-Electronics-BDR-XS07UHD-Portable-Supports/dp/B00FGVPTHW) - $174.99
 
 ### Music, Books, and More
