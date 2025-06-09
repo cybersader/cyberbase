@@ -399,14 +399,19 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 	- 
 
 - Ripping discs
+	- [makemkv.com > Ultimate UHD Drives Flashing Guide Updated 2025 - www.makemkv.com](https://forum.makemkv.com/forum/viewtopic.php?f=16&t=19634)
+		- [makemkv.com > MakeMKV is free while in beta - www.makemkv.com](https://forum.makemkv.com/forum/viewtopic.php?t=1053)
 	- [youtube.com > Time to UNSUBSCRIBE from Disney+ > Jeff Geerling](https://www.youtube.com/watch?v=RZ8ijmy3qPo)
 	- [youtube.com > Media Ripping Explained](https://www.youtube.com/watch?v=GdQ5bClEgHg)
 	- [youtube.com > This Saved Me SO Much Time – Ripping Movies Automatically With ARM](https://www.youtube.com/watch?v=wPWx6GISIhY)
-	- 
+	- [b3n.org > Automatic Ripping Machine | Headless | Blu-Ray/DVD/CD](https://b3n.org/automatic-ripping-machine/)
+	- [youtube.com > How To Rip DVDs With MakeMKV and Use Handbrake For Hardware Transcoding](https://www.youtube.com/watch?v=u_xdrscVB0Y)
 	- Required tools
 		- [handbrake.fr > HandBrake: Open Source Video Transcoder](https://handbrake.fr/)
 		- [makemkv.com > MakeMKV - Make MKV from Blu-ray and DVD](https://www.makemkv.com/)
 		- VLC
+			- [makemkv.com > MakeMKV is free while in beta - www.makemkv.com](https://forum.makemkv.com/forum/viewtopic.php?t=1053)
+		- [archive.org > SDFtool Flasher (v 1.3.4) : MartyMcNuts : Free Download, Borrow, and Streaming : Internet Archive](https://archive.org/details/sdftool-flasher-v-1.3.4)
 		- 
 	- [Amazon.com: Pioneer Electronics BDR-XS07UHD 6x Slot Loading CD DVD BluRay Portable USB 3.1 BD/DVD/CD Burner Supports Blu-Ray](https://www.amazon.com/Pioneer-Electronics-BDR-XS07UHD-Portable-Supports/dp/B00FGVPTHW) - $174.99
 
