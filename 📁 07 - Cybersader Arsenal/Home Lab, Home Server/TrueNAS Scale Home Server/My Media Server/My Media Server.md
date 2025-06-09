@@ -393,7 +393,6 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 		- Ripping discs
 		- Record live TV
 			- [youtube.com > Build your own DVR with Plex Server!  #plex #homeserver #antenna](https://www.youtube.com/watch?app=desktop&v=0HxtccUFtm8)
-			- 
 
 - Jellyfin plugins
 	- [youtube.com > ULTIMATE Jellyfin Media Server Guide - Plugins and Themes! (PART 3)](https://www.youtube.com/watch?v=DivZcyoY6bs)
@@ -402,10 +401,13 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 - Ripping discs
 	- [youtube.com > Time to UNSUBSCRIBE from Disney+ > Jeff Geerling](https://www.youtube.com/watch?v=RZ8ijmy3qPo)
 	- [youtube.com > Media Ripping Explained](https://www.youtube.com/watch?v=GdQ5bClEgHg)
+	- [youtube.com > This Saved Me SO Much Time – Ripping Movies Automatically With ARM](https://www.youtube.com/watch?v=wPWx6GISIhY)
+	- 
 	- Required tools
 		- [handbrake.fr > HandBrake: Open Source Video Transcoder](https://handbrake.fr/)
 		- [makemkv.com > MakeMKV - Make MKV from Blu-ray and DVD](https://www.makemkv.com/)
 		- VLC
+		- 
 	- [Amazon.com: Pioneer Electronics BDR-XS07UHD 6x Slot Loading CD DVD BluRay Portable USB 3.1 BD/DVD/CD Burner Supports Blu-Ray](https://www.amazon.com/Pioneer-Electronics-BDR-XS07UHD-Portable-Supports/dp/B00FGVPTHW) - $174.99
 
 ### Music, Books, and More
