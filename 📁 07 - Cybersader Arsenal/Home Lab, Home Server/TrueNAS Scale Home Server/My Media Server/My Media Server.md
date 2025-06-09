@@ -406,6 +406,8 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 	- [youtube.com > This Saved Me SO Much Time – Ripping Movies Automatically With ARM](https://www.youtube.com/watch?v=wPWx6GISIhY)
 	- [b3n.org > Automatic Ripping Machine | Headless | Blu-Ray/DVD/CD](https://b3n.org/automatic-ripping-machine/)
 	- [youtube.com > How To Rip DVDs With MakeMKV and Use Handbrake For Hardware Transcoding](https://www.youtube.com/watch?v=u_xdrscVB0Y)
+	- [makemkv.com > Options for trying to back up scratched discs? - www.makemkv.com](https://forum.makemkv.com/forum/viewtopic.php?t=15195)
+	- 
 	- Required tools
 		- [handbrake.fr > HandBrake: Open Source Video Transcoder](https://handbrake.fr/)
 		- [makemkv.com > MakeMKV - Make MKV from Blu-ray and DVD](https://www.makemkv.com/)
