@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Manufacturing in America",
+      "path": "📁 16 - Society, Culture, Politics, Government/Manufacturing in America/Manufacturing in America.md"
+    },
+    {
+      "basename": "📁 16 - Society, Culture, Politics, Government",
+      "path": "📁 16 - Society, Culture, Politics, Government/📁 16 - Society, Culture, Politics, Government.md"
+    },
+    {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Amigo AI Finance",
       "path": "⬇️ Clippings/Tech/Amigo AI Finance/Amigo AI Finance.md"
-    },
-    {
-      "basename": "Maybe Finance",
-      "path": "⬇️ Clippings/Tech/Maybe Finance/Maybe Finance.md"
-    },
-    {
-      "basename": "Actual",
-      "path": "⬇️ Clippings/Tech/Actual/Actual.md"
     }
   ],
   "omittedPaths": [],

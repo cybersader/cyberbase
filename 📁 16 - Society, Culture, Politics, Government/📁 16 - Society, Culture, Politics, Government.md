@@ -16,6 +16,7 @@ date modified: Tuesday, November 12th 2024, 10:06 pm
 	- **[[Fr. Pine Interviews Matt Fradd]]**
 - **[[Debate - Why Marriage is Good for Men]]**
 - **[[Language & Politics]]**
+- **[[Manufacturing in America]]**
 - **[[Social Choice Theory]]**
 - **[[Social Interactions]]**
 - **[[Societal Moral Progression]]**
