@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sat, May 31, 2025 - [[Klutch Card]]
+> Mon, Jun 9, 2025 - [[Manufacturing in America]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                          | Last modified             |
-| ------------------------------------------------------------- | ------------------------- |
-| [[⬇️ Clippings/Tech/Klutch Card/Klutch Card.md\|Klutch Card]] | Sat - 5/31/2025, 10:48 PM |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                | Sat - 5/31/2025, 10:48 PM |
-| [[⬇️ Clippings/Tech/IronVest/IronVest.md\|IronVest]]          | Sat - 5/31/2025, 10:44 PM |
-| [[⬇️ Clippings/Tech/Zelle/Zelle.md\|Zelle]]                   | Sat - 5/31/2025, 10:38 PM |
-| [[⬇️ Clippings/Tech/skwad/skwad.md\|skwad]]                   | Sat - 5/31/2025, 10:36 PM |
-| [[⬇️ Clippings/Tech/Tendi/Tendi.md\|Tendi]]                   | Sat - 5/31/2025, 10:33 PM |
-| [[⬇️ Clippings/Tech/SimpleFIN/SimpleFIN.md\|SimpleFIN]]       | Sat - 5/31/2025, 10:31 PM |
-| [[⬇️ Clippings/Tech/Honeydue/Honeydue.md\|Honeydue]]          | Sat - 5/31/2025, 10:13 PM |
-| [[⬇️ Clippings/Tech/Fava/Fava.md\|Fava]]                      | Sat - 5/31/2025, 10:11 PM |
-| [[⬇️ Clippings/Tech/cFIREsim/cFIREsim.md\|cFIREsim]]          | Sat - 5/31/2025, 10:10 PM |
+| File                                                                                                                                                 | Last modified            |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [[📁 16 - Society, Culture, Politics, Government/Manufacturing in America/Manufacturing in America.md\|Manufacturing in America]]                    | Mon - 6/9/2025, 8:32 PM  |
+| [[📁 16 - Society, Culture, Politics, Government/📁 16 - Society, Culture, Politics, Government.md\|📁 16 - Society, Culture, Politics, Government]] | Mon - 6/9/2025, 8:31 PM  |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md\|My Media Server]]                   | Mon - 6/9/2025, 5:16 PM  |
+| [[📁 33 - Diving/📁 33 - Diving.md\|📁 33 - Diving]]                                                                                                 | Sun - 6/8/2025, 9:07 PM  |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                       | Sun - 6/8/2025, 12:32 PM |
+| [[⬇️ Clippings/Tech/Finicity/Finicity.md\|Finicity]]                                                                                                 | Sun - 6/8/2025, 12:32 PM |
+| [[⬇️ Clippings/Tech/Fintable/Fintable.md\|Fintable]]                                                                                                 | Sun - 6/8/2025, 12:31 PM |
+| [[⬇️ Clippings/Websites/Privacy_guides/Privacy_guides.md\|Privacy_guides]]                                                                           | Sun - 6/8/2025, 12:30 PM |
+| [[⬇️ Clippings/Tech/Cake-pay/Cake-pay.md\|Cake-pay]]                                                                                                 | Sun - 6/1/2025, 3:41 PM  |
+| [[⬇️ Clippings/Tech/Hushed/Hushed.md\|Hushed]]                                                                                                       | Sun - 6/1/2025, 3:37 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 
