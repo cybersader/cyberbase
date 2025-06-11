@@ -99,6 +99,7 @@
 	- **[[Google Wallet]]**
 	- **[[Google-Gemma-3]]**
 	- **[[GrapheneOS]]**
+	- **[[Grayjay App]]**
 	- **[[HandBrake]]**
 	- **[[hledger]]**
 	- **[[Honeydue]]**
@@ -163,6 +164,7 @@
 	- **[[Readwise]]**
 	- **[[Redact_dev]]**
 	- **[[refined-github extension]]**
+	- **[[ReVanced]]**
 	- **[[Revolut]]**
 	- **[[Screenpipe]]**
 	- **[[Scrypted]]**
