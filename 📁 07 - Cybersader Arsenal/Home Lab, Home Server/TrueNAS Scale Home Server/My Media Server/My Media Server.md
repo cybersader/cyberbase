@@ -412,6 +412,8 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 	- 
 	- Required tools
 		- [handbrake.fr > HandBrake: Open Source Video Transcoder](https://handbrake.fr/)
+			- Handbrake settings
+				- 
 		- [makemkv.com > MakeMKV - Make MKV from Blu-ray and DVD](https://www.makemkv.com/)
 		- VLC
 			- [makemkv.com > MakeMKV is free while in beta - www.makemkv.com](https://forum.makemkv.com/forum/viewtopic.php?t=1053)
