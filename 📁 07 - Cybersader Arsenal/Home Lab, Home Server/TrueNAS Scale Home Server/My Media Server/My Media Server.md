@@ -422,6 +422,25 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 			- 
 	- [Amazon.com: Pioneer Electronics BDR-XS07UHD 6x Slot Loading CD DVD BluRay Portable USB 3.1 BD/DVD/CD Burner Supports Blu-Ray](https://www.amazon.com/Pioneer-Electronics-BDR-XS07UHD-Portable-Supports/dp/B00FGVPTHW) - $174.99
 
+### Filebot Settings
+
+- [filebot.net > [MakeMKV] title_t00.mkv, title_t01.mkv, etc - FileBot](https://www.filebot.net/forums/viewtopic.php?t=10904)
+- [filebot.net > Plex / Kodi / Emby / Jellyfin Naming Schemes - FileBot](https://www.filebot.net/forums/viewtopic.php?t=4116)
+- [filebot.net > Format Expressions](https://www.filebot.net/naming.html)
+- [filebot.net > How about sharing our format expressions? - FileBot](https://www.filebot.net/forums/viewtopic.php?t=2)
+- 
+
+Movies:
+```json
+{collection+'/'} {n} ({y}) {' (' + fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/, " ") + ')'} {"{imdb-$imdbid}"} {audioLanguages.size() > 2 ? ' (Multi Audio)' : audioLanguages.size() > 1 ? ' (Dual Audio)' : audioLanguages =~ /eng/ ? null : audioLanguages.ISO3.joining(', ', ' (', ')').upper()} / {n} ({y}) {"[$vf $vc $ac $af]"}{" {edition-${tags.first()}}"}{subt}
+```
+
+TV Shows:
+```json
+{n} ({y}) {"{tmdb-$tmdbid}"} {audioLanguages.size() > 2 ? ' (Multi Audio)' : audioLanguages.size() > 1 ? ' (Dual Audio)' : audioLanguages =~ /eng/ ? null : audioLanguages.ISO3.joining(', ', ' (', ')').upper()} / Season {s}/{s00E00} - {t} {"[$vf $vc $ac $af]"}{subt}
+```
+
+
 ### Music, Books, and More
 
 - [f-droid.org > Subtracks | F-Droid - Free and Open Source Android App Repository](https://f-droid.org/en/packages/com.subtracks/)
