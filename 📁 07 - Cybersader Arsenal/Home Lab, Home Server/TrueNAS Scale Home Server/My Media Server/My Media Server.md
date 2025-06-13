@@ -344,6 +344,13 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 
 > [!attention] Yes...this is where we get into a dicey moral grey area
 
+- Workflow Breakdown
+	- Buy DVDs
+	- Rip with [MakeMKV](../../../../⬇️%20Clippings/Tech/MakeMKV/MakeMKV.md)
+	- Transcode with Handbrake
+	- Rename with Filebot
+	- Drop into Jellyfin folder
+
 - Related videos
 	- [youtube.com > Time to UNSUBSCRIBE from Disney+ > Jeff Geerling](https://www.youtube.com/watch?v=RZ8ijmy3qPo)
 	- [youtube.com > Media Ripping Explained](https://www.youtube.com/watch?v=GdQ5bClEgHg)
@@ -412,8 +419,6 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 	- 
 	- Required tools
 		- [handbrake.fr > HandBrake: Open Source Video Transcoder](https://handbrake.fr/)
-			- Handbrake settings
-				- 
 		- [makemkv.com > MakeMKV - Make MKV from Blu-ray and DVD](https://www.makemkv.com/)
 		- VLC
 			- [makemkv.com > MakeMKV is free while in beta - www.makemkv.com](https://forum.makemkv.com/forum/viewtopic.php?t=1053)
@@ -422,26 +427,65 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 			- 
 	- [Amazon.com: Pioneer Electronics BDR-XS07UHD 6x Slot Loading CD DVD BluRay Portable USB 3.1 BD/DVD/CD Burner Supports Blu-Ray](https://www.amazon.com/Pioneer-Electronics-BDR-XS07UHD-Portable-Supports/dp/B00FGVPTHW) - $174.99
 
-### Filebot Settings
+### 1) Filebot Prep for Handbrake
+
+Movies expression format:
+
+```json
+D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/Movies/{n} ({y}){m=fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : ''}{' {imdb-'+imdbid+'}'}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!audioLanguages =~ /eng/?' ('+audioLanguages.ISO3.join(', ').upper()+')':''} [{vf} {vc} {ac} {af}]{dc>1?' -part'+di:''}.{ext}
+```
+
+TV Shows expression format:
+
+```json
+D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/TV Shows/{n} - {s00e00} - {t} ({y}) {'{tmdb-'+tmdbid+'}'}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!audioLanguages =~ /eng/?' ('+audioLanguages.ISO3.join(', ').upper()+')':''} [{vf} {vc} {ac} {af}]{dc>1?' -part'+di:''}.{ext}
+```
+
+### 2) Handbrake
+
+- batch scan and put all your stuff into a queue
+
+#### Handbrake Settings
+
+- For now, H.264 for the video encoding since most things still don't support H.265
+
+##### Configuration 1: HQ 1080p30 Surround w/2160p Resolution Limit
+
+- Blu-ray and High-Definition Content
+- ![](_attachments/file-20250613093807620.png)
+##### Configuration 2: HQ 1080p30 Surround w/1080p Resolution Limit
+
+- Literally choose `HQ 1080p30 Surround` and leave everything the same
+
+### 3) Filebot Settings to Prepare for Jellyfin
 
 - [filebot.net > [MakeMKV] title_t00.mkv, title_t01.mkv, etc - FileBot](https://www.filebot.net/forums/viewtopic.php?t=10904)
 - [filebot.net > Plex / Kodi / Emby / Jellyfin Naming Schemes - FileBot](https://www.filebot.net/forums/viewtopic.php?t=4116)
 - [filebot.net > Format Expressions](https://www.filebot.net/naming.html)
 - [filebot.net > How about sharing our format expressions? - FileBot](https://www.filebot.net/forums/viewtopic.php?t=2)
-- 
+- [youtube.com > Streamline Plex TV Show Naming with FileBot](https://www.youtube.com/watch?v=PRdNYG2ArJo)
+- [youtube.com > Rename TV Series](https://www.youtube.com/watch?v=uD4WQN_vWcE)
+- [youtube.com > Automatic Subtitle Lookup](https://www.youtube.com/watch?v=q-oZ_hovsTY)
+- [opensubtitles.org > Subtitles - download movie and TV Series subtitles](https://www.opensubtitles.org/en/index.asp)
+- [filebot.net > Metadata and Extended Attributes - FileBot](https://www.filebot.net/forums/viewtopic.php?f=3&t=324)
+- [filebot.net > Rename from file hash - FileBot](https://www.filebot.net/forums/viewtopic.php?t=2984) - not as good as you might think - harder to do or automate
+- [filebot.net > Advanced Settings / Developer Options / System Properties - FileBot](https://www.filebot.net/forums/viewtopic.php?t=3913)
 
 Movies:
 ```json
-{collection+'/'} {n} ({y}) {' (' + fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/, " ") + ')'} {"{imdb-$imdbid}"} {audioLanguages.size() > 2 ? ' (Multi Audio)' : audioLanguages.size() > 1 ? ' (Dual Audio)' : audioLanguages =~ /eng/ ? null : audioLanguages.ISO3.joining(', ', ' (', ')').upper()} / {n} ({y}) {"[$vf $vc $ac $af]"}{" {edition-${tags.first()}}"}{subt}
+D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/Movies/{n} ({y}){m=fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m?' ('+m+')':''}{' {imdb-'+imdbid+'}'}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!audioLanguages =~ /eng/?' ('+audioLanguages.ISO3.join(', ').upper()+')':''} [{vf} {vc} {ac} {af}]{edition?' {'+edition+'}':''}{pi != null ? ' -cd'+pi : dc>1 ? ' -cd'+di : ''}.{ext}
 ```
 
 TV Shows:
 ```json
-{n} ({y}) {"{tmdb-$tmdbid}"} {audioLanguages.size() > 2 ? ' (Multi Audio)' : audioLanguages.size() > 1 ? ' (Dual Audio)' : audioLanguages =~ /eng/ ? null : audioLanguages.ISO3.joining(', ', ' (', ')').upper()} / Season {s}/{s00E00} - {t} {"[$vf $vc $ac $af]"}{subt}
+D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/TV Shows/{n} - {s00e00} - {t} ({y}) {'{tmdb-'+tmdbid+'}'}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!audioLanguages =~ /eng/?' ('+audioLanguages.ISO3.join(', ').upper()+')':''} [{vf} {vc} {ac} {af}]{pi!=null?' -cd'+pi:dc>1?' -cd'+di:''}.{ext}
 ```
 
+#### Common Filebot Issues
 
-### Music, Books, and More
+- Invalid Characters - just click "validate"
+- 
+### +) Music, Books, and More
 
 - [f-droid.org > Subtracks | F-Droid - Free and Open Source Android App Repository](https://f-droid.org/en/packages/com.subtracks/)
 - [navidrome.org > Navidrome](https://www.navidrome.org/)
