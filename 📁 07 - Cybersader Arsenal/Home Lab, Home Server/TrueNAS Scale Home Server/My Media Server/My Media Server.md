@@ -471,14 +471,30 @@ D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/TV Shows/{n} - {s00e00} - {t} ({y}) {'{tmdb
 - [filebot.net > Rename from file hash - FileBot](https://www.filebot.net/forums/viewtopic.php?t=2984) - not as good as you might think - harder to do or automate
 - [filebot.net > Advanced Settings / Developer Options / System Properties - FileBot](https://www.filebot.net/forums/viewtopic.php?t=3913)
 
+<u>V1:</u>
+
 Movies:
 ```json
-D:/MEDIA/_BATCH_3RENAME_FOR_JELLYFIN/Movies/{collection+'/'} {n} ({y}) {' (' + fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/, " ") + ')'} {"{imdb-$imdbid}"} {audioLanguages.size() > 2 ? ' (Multi Audio)' : audioLanguages.size() > 1 ? ' (Dual Audio)' : audioLanguages =~ /eng/ ? null : audioLanguages.ISO3.joining(', ', ' (', ')').upper()} / {n} ({y}) {"[$vf $vc $ac $af]"}{" {edition-${tags.first()}}"}{subt}
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'} {n} ({y}) {' (' + fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/, " ") + ')'} {"{imdb-$imdbid}"} {audioLanguages.size() > 2 ? ' (Multi Audio)' : audioLanguages.size() > 1 ? ' (Dual Audio)' : audioLanguages =~ /eng/ ? null : audioLanguages.ISO3.joining(', ', ' (', ')').upper()} / {n} ({y}) {"[$vf $vc $ac $af]"}{" {edition-${tags.first()}}"}{subt}{pi != null ? ' -cd'+pi : dc>1 ? ' -cd'+di : ''}
 ```
 
 TV Shows:
 ```json
-D:/MEDIA/_BATCH_3RENAME_FOR_JELLYFIN/TV Shows/{n} ({y}) {"{tmdb-$tmdbid}"} {audioLanguages.size() > 2 ? ' (Multi Audio)' : audioLanguages.size() > 1 ? ' (Dual Audio)' : audioLanguages =~ /eng/ ? null : audioLanguages.ISO3.joining(', ', ' (', ')').upper()} / Season {s}/{s00E00} - {t} {"[$vf $vc $ac $af]"}{subt}
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}) {"{tmdb-$tmdbid}"} {audioLanguages.size() > 2 ? ' (Multi Audio)' : audioLanguages.size() > 1 ? ' (Dual Audio)' : audioLanguages =~ /eng/ ? null : audioLanguages.ISO3.joining(', ', ' (', ')').upper()} / Season {s}/{s00E00} - {t} {"[$vf $vc $ac $af]"}{subt}{pi != null ? ' -cd'+pi : dc>1 ? ' -cd'+di : ''}
+```
+
+<u>V2:</u>
+
+Movies:
+
+```json
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}){m=fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' ');m?' ('+m+')':''}{' {imdb-'+imdbid+'}'}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!audioLanguages =~ /eng/?' ('+audioLanguages.ISO3.join(', ', ', ').upper()+')':''}/{n} ({y}){m=fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' ');m?' ('+m+')':''}{' {imdb-'+imdbid+'}'}{' ['+vf+' '+vc+' '+ac+' '+af+']'}{edition?' {'+edition+'}':''}{' -cd'+pi}{dc>1?' -cd'+di:''}
+```
+
+TV Shows:
+
+```json
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}){' {tmdb-'+tmdbid+'}'}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!audioLanguages =~ /eng/?' ('+audioLanguages.ISO3.join(', ', ', ').upper()+')':''}/Season {s}/{s00e00} - {t}{' ['+vf+' '+vc+' '+ac+' '+af+']'}{' -cd'+pi}{dc>1?' -cd'+di:''}
 ```
 
 #### Common Filebot Issues
