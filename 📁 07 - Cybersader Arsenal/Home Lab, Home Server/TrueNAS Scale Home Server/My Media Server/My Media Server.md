@@ -448,7 +448,7 @@ D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/TV Shows/{n} - {s00e00} - {t} ({y}) {'{tmdb
 #### Handbrake Settings
 
 - For now, H.264 for the video encoding since most things still don't support H.265
-
+- For subtitles, make sure to go to Subtitles > Selection Behavior, move (Any) to `Selected Languages`, and leave Burn-in set to None.
 ##### Configuration 1: HQ 1080p30 Surround w/2160p Resolution Limit
 
 - Blu-ray and High-Definition Content
