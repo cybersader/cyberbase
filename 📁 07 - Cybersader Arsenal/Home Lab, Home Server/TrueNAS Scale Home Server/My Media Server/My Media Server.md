@@ -449,6 +449,7 @@ D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/TV Shows/{n} - {s00e00} - {t} ({y}) {'{tmdb
 
 - For now, H.264 for the video encoding since most things still don't support H.265
 - For subtitles, make sure to go to Subtitles > Selection Behavior, move (Any) to `Selected Languages`, and leave Burn-in set to None.
+- Use `H.264 (NVEnc)` if you want to speed up the process using an NVIDIA GPU
 ##### Configuration 1: HQ 1080p30 Surround w/2160p Resolution Limit
 
 - Blu-ray and High-Definition Content
@@ -578,4 +579,3 @@ D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}){' {tmdb-'+tmdbid+'}'}{au
 
 - You can do this from your bittorrent client
 - Put the RSS feed URL in and it will allow you to add things as they come
-- 
