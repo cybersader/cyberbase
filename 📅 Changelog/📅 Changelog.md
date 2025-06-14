@@ -16,13 +16,18 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                                 | Last modified             |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md\|My Media Server]]                   | Sat - 6/14/2025, 9:08 AM  |
+| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                             | Fri - 6/13/2025, 9:38 AM  |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md\|Home Lab, Home Server]]                                                 | Fri - 6/13/2025, 9:38 AM  |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md\|TrueNAS Scale Home Server]]               | Fri - 6/13/2025, 9:38 AM  |
+| [[⬇️ Clippings/Tech/ReVanced/ReVanced.md\|ReVanced]]                                                                                                 | Wed - 6/11/2025, 1:56 PM  |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                       | Wed - 6/11/2025, 1:56 PM  |
+| [[⬇️ Clippings/Tech/Grayjay App/Grayjay App.md\|Grayjay App]]                                                                                        | Wed - 6/11/2025, 1:54 PM  |
 | [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                       | Mon - 6/9/2025, 9:44 PM   |
 | [[README.md\|README]]                                                                                                                                | Mon - 6/9/2025, 9:44 PM   |
 | [[📁 16 - Society, Culture, Politics, Government/Manufacturing in America/Manufacturing in America.md\|Manufacturing in America]]                    | Mon - 6/9/2025, 8:32 PM   |
 | [[📁 16 - Society, Culture, Politics, Government/📁 16 - Society, Culture, Politics, Government.md\|📁 16 - Society, Culture, Politics, Government]] | Mon - 6/9/2025, 8:31 PM   |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md\|My Media Server]]                   | Mon - 6/9/2025, 5:16 PM   |
 | [[📁 33 - Diving/📁 33 - Diving.md\|📁 33 - Diving]]                                                                                                 | Sun - 6/8/2025, 9:07 PM   |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                       | Sun - 6/8/2025, 12:32 PM  |
 | [[⬇️ Clippings/Tech/Finicity/Finicity.md\|Finicity]]                                                                                                 | Sun - 6/8/2025, 12:32 PM  |
 | [[⬇️ Clippings/Tech/Fintable/Fintable.md\|Fintable]]                                                                                                 | Sun - 6/8/2025, 12:31 PM  |
 | [[⬇️ Clippings/Websites/Privacy_guides/Privacy_guides.md\|Privacy_guides]]                                                                           | Sun - 6/8/2025, 12:30 PM  |
@@ -54,7 +59,6 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[⬇️ Clippings/Tech/Copilot Money/Copilot Money.md\|Copilot Money]]                                                                                  | Sat - 5/31/2025, 10:09 PM |
 | [[⬇️ Clippings/Tech/Maybe Finance/Maybe Finance.md\|Maybe Finance]]                                                                                  | Sat - 5/31/2025, 10:07 PM |
 | [[📁 36 - Personal Finance/📁 36 - Personal Finance.md\|📁 36 - Personal Finance]]                                                                   | Sat - 5/31/2025, 10:04 PM |
-| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                             | Sat - 5/31/2025, 10:04 PM |
 | [[⬇️ Clippings/Tech/Canarytokens/Canarytokens.md\|Canarytokens]]                                                                                     | Sat - 5/31/2025, 9:56 PM  |
 | [[⬇️ Clippings/Tech/Revolut/Revolut.md\|Revolut]]                                                                                                    | Sat - 5/31/2025, 9:53 PM  |
 | [[⬇️ Clippings/Tech/Wise Virtual Card/Wise Virtual Card.md\|Wise Virtual Card]]                                                                      | Sat - 5/31/2025, 9:52 PM  |
@@ -62,9 +66,5 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[⬇️ Clippings/Tech/Proton-wallet/Proton-wallet.md\|Proton-wallet]]                                                                                  | Sat - 5/31/2025, 9:38 PM  |
 | [[⬇️ Clippings/Tech/Glint/Glint.md\|Glint]]                                                                                                          | Sat - 5/31/2025, 9:12 PM  |
 | [[⬇️ Clippings/Tech/Google Pay/Google Pay.md\|Google Pay]]                                                                                           | Sat - 5/31/2025, 10:14 AM |
-| [[⬇️ Clippings/Tech/Apple Pay/Apple Pay.md\|Apple Pay]]                                                                                              | Sat - 5/31/2025, 10:10 AM |
-| [[⬇️ Clippings/Tech/Google Wallet/Google Wallet.md\|Google Wallet]]                                                                                  | Sat - 5/31/2025, 10:08 AM |
-| [[⬇️ Clippings/Tech/Privacy Virtual Cards/Privacy Virtual Cards.md\|Privacy Virtual Cards]]                                                          | Sat - 5/31/2025, 9:55 AM  |
-| [[⬇️ Clippings/Tech/MyBudgetCoach/MyBudgetCoach.md\|MyBudgetCoach]]                                                                                  | Fri - 5/30/2025, 10:42 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
