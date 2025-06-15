@@ -90,6 +90,7 @@
 	- **[[Fintable]]**
 	- **[[Flameshot]]**
 	- **[[Formance]]**
+	- **[[Formed]]**
 	- **[[Garmin Pay]]**
 	- **[[Ghostfolio]]**
 	- **[[Gitea]]**
