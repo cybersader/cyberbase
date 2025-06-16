@@ -184,6 +184,7 @@
 	- **[[Todoist]]**
 	- **[[Toggl Track]]**
 	- **[[Trilium Notes]]**
+	- **[[TubeArchivist]]**
 	- **[[Typefully]]**
 	- **[[Ueli]]**
 	- **[[Velociraptor]]**
