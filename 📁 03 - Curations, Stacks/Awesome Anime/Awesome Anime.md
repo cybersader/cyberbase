@@ -13,7 +13,7 @@ date modified: Friday, January 31st 2025, 3:21 pm
 - I've watched anime at https://www.wcopremium.tv/
 
 - New Animes
-	- I Parry Everything (as of Ep1)
+	- I Parry Everything
 		- Seems wholesome
 		- Any work can be noble work if it is done with a noble heart
 	- The Unwanted Undead Adventurer - has some annoying ecchi and other jealousy vibes
@@ -24,6 +24,18 @@ date modified: Friday, January 31st 2025, 3:21 pm
 	- Solo Leveling - ehhh...has some vengeance type vibes - with great power comes great responsibility.  Amazing animation and action.
 	- Frieren - awesome so far...wholesome so far too!
 
+- Heard of
+	- Demon Lord 2099
+	- The Beginning After the End English Subbed
+	- The Wrong Way to Use Healing Magic
+	- Durarara
+	- Vivy: Fluorite Eye's Song
+	- Silent Witch
+	- Anne Shirley
+	- Call of the Night
+
+- Code Geass
+- 
 # Top Anime
 
 > [!tldr] All the anime I would recommend
@@ -49,22 +61,23 @@ date modified: Friday, January 31st 2025, 3:21 pm
 19. Hellsing Ultimate
 20. ReLIFE
 21. Re:Zero
-22. Violet Evergarden
-23. Log Horizon
-24. GATE
-25. Charlotte
-26. My Little Monster
-27. Angel Beats!
-28. Made in Abyss
-29. Black Clover
-30. Fairy Tail
-31. Restaurant to Another World
-32. Assassination Classroom
-33. Psycho-Pass
-34. Guilty Crown
-35. Haibane Renmei
-36. Id:Invaded
-37. BOFURI: I Don't Want to Get Hurt, so I'll Max Out My Defense
-38. Wandering Witch: The Journey of Elaina
-39. Kino's Journey: The Beautiful World
-40. So I'm a Spider, So What?
+22. My Happy Marriage
+23. Violet Evergarden
+24. Log Horizon
+25. GATE
+26. Charlotte
+27. My Little Monster
+28. Angel Beats!
+29. Made in Abyss
+30. Black Clover
+31. Fairy Tail
+32. Restaurant to Another World
+33. Assassination Classroom
+34. Psycho-Pass
+35. Guilty Crown
+36. Haibane Renmei
+37. Id:Invaded
+38. BOFURI: I Don't Want to Get Hurt, so I'll Max Out My Defense
+39. Wandering Witch: The Journey of Elaina
+40. Kino's Journey: The Beautiful World
+41. So I'm a Spider, So What?

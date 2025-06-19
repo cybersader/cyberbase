@@ -403,6 +403,9 @@ Click the **Web UI** button on the **Application Info** widget to open the J
 
 - Jellyfin plugins
 	- [youtube.com > ULTIMATE Jellyfin Media Server Guide - Plugins and Themes! (PART 3)](https://www.youtube.com/watch?v=DivZcyoY6bs)
+	- [youtube.com > Must-Have Jellyfin Plug-ins For Your Media Center](https://www.youtube.com/watch?v=iHTah6KpxXs)
+	- [github.com > danieladov/jellyfin-plugin-skin-manager: Jellyfin Skin Manager is a plugin that helps you to download and install skins](https://github.com/danieladov/jellyfin-plugin-skin-manager)
+	- [github.com > CTalvio/Ultrachromic: The final form, the true evolution of the chromic theme saga!](https://github.com/CTalvio/Ultrachromic)
 	- 
 
 - Ripping discs
@@ -503,7 +506,7 @@ D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}){' {tmdb-'+tmdbid+'}'}{au
 #### Common Filebot Issues
 
 - Invalid Characters - just click "validate"
-- 
+
 ### +) Music, Books, and More
 
 - [f-droid.org > Subtracks | F-Droid - Free and Open Source Android App Repository](https://f-droid.org/en/packages/com.subtracks/)
