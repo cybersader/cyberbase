@@ -33,6 +33,10 @@ date modified: Friday, January 31st 2025, 3:21 pm
 	- Silent Witch
 	- Anne Shirley
 	- Call of the Night
+	- A Galaxy Next Door
+	- Sakamoto Days
+	- To Your Eternity
+	- 
 
 - Code Geass
 - 
