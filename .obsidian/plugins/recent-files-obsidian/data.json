@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "TrueCloud Storj Backups",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueCloud Storj Backups/TrueCloud Storj Backups.md"
+    },
+    {
+      "basename": "Awesome Anime",
+      "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
+    },
+    {
+      "basename": "TrueNAS Cloud Backups",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
+    },
+    {
       "basename": "TrueNAS Scale Home Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
     },
     {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
-    },
-    {
-      "basename": "Awesome Anime",
-      "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
     },
     {
       "basename": "TubeArchivist",
@@ -191,14 +199,6 @@
     {
       "basename": "Fava",
       "path": "⬇️ Clippings/Tech/Fava/Fava.md"
-    },
-    {
-      "basename": "WenFire",
-      "path": "⬇️ Clippings/Tech/WenFire/WenFire.md"
-    },
-    {
-      "basename": "ProjectionLab",
-      "path": "⬇️ Clippings/Tech/ProjectionLab/ProjectionLab.md"
     }
   ],
   "omittedPaths": [],
