@@ -6,6 +6,7 @@
 	- **[[Codex CLI VS Code Setup]]**
 	- **[[Credit Freeze vs Fraud Alert]]**
 	- **[[Display Android on Windows]]**
+	- **[[Getting Out of Mud]]**
 	- **[[Hacking Motivations and Shifts]]**
 	- **[[iPhone Alarm Settings Guide]]**
 	- **[[Meta-framework]]**

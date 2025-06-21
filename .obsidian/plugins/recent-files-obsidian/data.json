@@ -5,6 +5,14 @@
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueCloud Storj Backups/TrueCloud Storj Backups.md"
     },
     {
+      "basename": "Getting Out of Mud",
+      "path": "⬇️ Clippings/ChatGPT/Getting Out of Mud/Getting Out of Mud.md"
+    },
+    {
+      "basename": "My Media Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
+    },
+    {
       "basename": "Awesome Anime",
       "path": "📁 03 - Curations, Stacks/Awesome Anime/Awesome Anime.md"
     },
@@ -15,10 +23,6 @@
     {
       "basename": "TrueNAS Scale Home Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
-    },
-    {
-      "basename": "My Media Server",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
     },
     {
       "basename": "TubeArchivist",
@@ -195,10 +199,6 @@
     {
       "basename": "Emma Budget App",
       "path": "⬇️ Clippings/Tech/Emma Budget App/Emma Budget App.md"
-    },
-    {
-      "basename": "Fava",
-      "path": "⬇️ Clippings/Tech/Fava/Fava.md"
     }
   ],
   "omittedPaths": [],
