@@ -591,4 +591,7 @@ D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}){' {tmdb-'+tmdbid+'}'}{au
 
 - [github.com > gluetun-wiki/setup/readme.md at main · qdm12/gluetun-wiki](https://github.com/qdm12/gluetun-wiki/blob/main/setup/readme.md#setup)
 - [roadtohomelab.blog > Dead simple container VPN: Gluetun, Portainer, and Private Internet Access](https://roadtohomelab.blog/container-vpn/)
+
+## Custom APP Docker Compose YAML, Apps, Datasets, etc.
+
 - 
