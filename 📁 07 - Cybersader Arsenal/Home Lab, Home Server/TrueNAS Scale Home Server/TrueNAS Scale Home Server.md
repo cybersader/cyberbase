@@ -42,5 +42,6 @@ date modified: Monday, May 27th 2024, 1:14 pm
 - **[[TrueNAS Scale RAID Setup]]**
 - **[[Turning Old PC into NAS in 2024]]**
 - **[[Using a New Router with TrueNAS]]**
+- **[[Using Hostnames Locally]]**
 
 %% End Waypoint %%
