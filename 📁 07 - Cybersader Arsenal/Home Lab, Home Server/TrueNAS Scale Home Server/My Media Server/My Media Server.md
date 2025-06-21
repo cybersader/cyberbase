@@ -197,22 +197,22 @@ Click Install!
 > 
 > When creating datasets for apps follow these steps:
 > 
-> 1. Go to **Datasets**, select the location for the parent dataset if organizing required datasets under a parent dataset, then click **Add Dataset**. For example, select the root dataset of the pool, and click **Add Dataset** to create a new parent called _apps_ or _appName_*, where _appName_ is the name of the app.
+> 4. Go to **Datasets**, select the location for the parent dataset if organizing required datasets under a parent dataset, then click **Add Dataset**. For example, select the root dataset of the pool, and click **Add Dataset** to create a new parent called _apps_ or _appName_*, where _appName_ is the name of the app.
 >     
 >     Do not create the app datasets under the ix-applications or ix-apps dataset.
 >     
 >     
-> 2. Enter the name of the dataset, then select **Apps** as the **Dataset Preset**. Creating the parent dataset with the preset set to **Generic** causes permissions issues when you try to create the datasets the app requires with the preset set to **Apps**.
+> 5. Enter the name of the dataset, then select **Apps** as the **Dataset Preset**. Creating the parent dataset with the preset set to **Generic** causes permissions issues when you try to create the datasets the app requires with the preset set to **Apps**.
 >     
-> 3. Click **Save**. Return to dataset creation when prompted rather than configuring ACL permissions.
+> 6. Click **Save**. Return to dataset creation when prompted rather than configuring ACL permissions.
 >     
 >     You can set up permissions (ACLs) for a dataset after adding it by selecting **Go to ACL Manager** to open the **Edit ACL** screen, or wait and use the app Install wizard ACL settings to add permissions. You can also edit permissions after installing the app using either method.
 >     
-> 4. Select the parent dataset and then click **Create Dataset** to open the **Add Dataset** screen again.
+> 7. Select the parent dataset and then click **Create Dataset** to open the **Add Dataset** screen again.
 >     
-> 5. Enter the name of a dataset required for the app, such as _config_, select **Apps** as the **Dataset Preset**, and then click **Save**. When prompted, return to creating datasets rather than setting up ACL permissions.
+> 8. Enter the name of a dataset required for the app, such as _config_, select **Apps** as the **Dataset Preset**, and then click **Save**. When prompted, return to creating datasets rather than setting up ACL permissions.
 >     
-> 6. Repeat for remaining datasets required for the app.
+> 9. Repeat for remaining datasets required for the app.
 >     
 > 
 > You can set up the permissions (ACLs) for these datasets after adding them using the **Edit ACL** screen, or wait and use the **Install Plex** wizard ACL settings to add permissions. You can also edit permissions after using either method.
@@ -594,4 +594,97 @@ D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}){' {tmdb-'+tmdbid+'}'}{au
 
 ## Custom APP Docker Compose YAML, Apps, Datasets, etc.
 
-- 
+```yaml
+version: "3.9"
+
+x-arr-env: &arr_env
+  PUID: "1000"
+  PGID: "1000"
+  TZ:   America/Indiana/Indianapolis
+
+services:
+
+  # ─── Gluetun (unchanged) ──────────────────────────────────────────────
+  gluetun:
+    image: qmcgaw/gluetun:v3
+    container_name: gluetun
+    cap_add: [NET_ADMIN]
+    devices: [/dev/net/tun]
+    environment:
+      - VPN_SERVICE_PROVIDER=protonvpn
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=PRIVATE_KEY_HERE
+      - WIREGUARD_ADDRESSES=10.2.0.2/32
+      - SERVER_COUNTRIES=US
+      - FIREWALL_OUTBOUND_SUBNETS=192.168.0.0/16
+      - UPDATER_PERIOD=24h
+      - TZ=America/Indiana/Indianapolis
+    ports:
+      - "8080:8080"   # qBittorrent
+      - "8989:8989"   # Sonarr
+      - "7878:7878"   # Radarr
+      - "9696:9696"   # Prowlarr
+      - "8787:8787"   # Readarr  ← new
+      - "6789:6789"   # NZBGet
+      - "6881:6881/udp"
+    volumes:
+      - /mnt/personal/APP_Configs/servarr_configs/gluetun:/gluetun
+    restart: unless-stopped
+
+  # ─── Downloaders (unchanged) ─────────────────────────────────────────
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent
+    network_mode: service:gluetun
+    environment: *arr_env
+    volumes:
+      - /mnt/personal/APP_Configs/servarr_configs/qbittorrent:/config
+      - /mnt/personal/smb-share/ServarrStack/Downloads:/downloads
+    restart: unless-stopped
+
+  nzbget:
+    image: lscr.io/linuxserver/nzbget
+    network_mode: service:gluetun
+    environment: *arr_env
+    volumes:
+      - /mnt/personal/APP_Configs/servarr_configs/nzbget:/config
+      - /mnt/personal/smb-share/ServarrStack/Downloads:/downloads
+    restart: unless-stopped
+
+  # ─── Indexer hub ─────────────────────────────────────────────────────
+  prowlarr:
+    image: lscr.io/linuxserver/prowlarr
+    network_mode: service:gluetun
+    environment: *arr_env
+    volumes:
+      - /mnt/personal/APP_Configs/servarr_configs/prowlarr:/config
+    restart: unless-stopped
+
+  # ─── Media managers ─────────────────────────────────────────────────
+  sonarr:
+    image: lscr.io/linuxserver/sonarr
+    network_mode: service:gluetun
+    environment: *arr_env
+    volumes:
+      - /mnt/personal/APP_Configs/servarr_configs/sonarr:/config
+      - /mnt/personal/smb-share/ServarrStack/TV:/tv
+      - /mnt/personal/smb-share/ServarrStack/Downloads:/downloads
+    restart: unless-stopped
+  radarr:
+    image: lscr.io/linuxserver/radarr
+    network_mode: service:gluetun
+    environment: *arr_env
+    volumes:
+      - /mnt/personal/APP_Configs/servarr_configs/radarr:/config
+      - /mnt/personal/smb-share/ServarrStack/Movies:/movies
+      - /mnt/personal/smb-share/ServarrStack/Downloads:/downloads
+    restart: unless-stopped
+  readarr:
+    image: lscr.io/linuxserver/readarr:develop   # dev tag until stable released
+    network_mode: service:gluetun               # rides the same VPN
+    environment: *arr_env
+    volumes:
+      - /mnt/personal/APP_Configs/servarr_configs/readarr:/config
+      - /mnt/personal/smb-share/ServarrStack/Books:/books
+      - /mnt/personal/smb-share/ServarrStack/Downloads:/downloads
+    restart: unless-stopped
+```

@@ -1,8 +1,8 @@
 {
-  "findText": "   ",
-  "replaceText": "    ",
-  "useRegEx": true,
-  "selOnly": true,
+  "findText": "bg_share",
+  "replaceText": "smb-share",
+  "useRegEx": false,
+  "selOnly": false,
   "caseInsensitive": false,
   "processLineBreak": true,
   "processTab": false,
