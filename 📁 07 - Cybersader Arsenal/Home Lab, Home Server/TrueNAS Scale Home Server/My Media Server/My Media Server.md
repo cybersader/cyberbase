@@ -1,10 +1,11 @@
 ---
+title:
 permalink:
 aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Tuesday, April 15th 2025, 9:36 pm
+date modified: Sunday, June 22nd 2025, 9:31 pm
 ---
 
 # Links
@@ -459,6 +460,7 @@ D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/TV Shows/{n} - {s00e00} - {t} ({y}) {'{tmdb
 
 - Blu-ray and High-Definition Content
 - ![](_attachments/file-20250613093807620.png)
+
 ##### Configuration 2: HQ 1080p30 Surround w/1080p Resolution Limit
 
 - Literally choose `HQ 1080p30 Surround` and leave everything the same
@@ -591,6 +593,8 @@ D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}){' {tmdb-'+tmdbid+'}'}{au
 
 - [github.com > gluetun-wiki/setup/readme.md at main · qdm12/gluetun-wiki](https://github.com/qdm12/gluetun-wiki/blob/main/setup/readme.md#setup)
 - [roadtohomelab.blog > Dead simple container VPN: Gluetun, Portainer, and Private Internet Access](https://roadtohomelab.blog/container-vpn/)
+- [reddit.com > Gluetun and qBittorrent correct setup in docker-compose file](https://www.reddit.com/r/selfhosted/comments/15oe631/gluetun_and_qbittorrent_correct_setup_in/)
+- 
 
 ## Custom APP Docker Compose YAML, Apps, Datasets, etc.
 
