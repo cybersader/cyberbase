@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Sunday, June 22nd 2025, 9:31 pm
+date modified: Thursday, June 26th 2025, 8:52 am
 ---
 
 # Links
@@ -586,6 +586,78 @@ D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}){' {tmdb-'+tmdbid+'}'}{au
 
 - You can do this from your bittorrent client
 - Put the RSS feed URL in and it will allow you to add things as they come
+
+## 11) Fixing Audio, Quiet Audio (Jellyfin, Handbrake)
+
+- [jellyfin.org > Stereo Downmix | Jellyfin](https://jellyfin.org/docs/general/post-install/transcoding/downmix/?utm_source=chatgpt.com)
+- [jellyfin.org > Volume Normalization](https://forum.jellyfin.org/t-volume-normalization)
+- [jellyfin.org > the sound is very soft](https://forum.jellyfin.org/t-the-sound-is-very-soft)
+- [handbrake.fr > HandBrake Documentation — Surround Sound Guide](https://handbrake.fr/docs/en/1.3.0/advanced/surround-sound.html)
+- [reddit.com > Force transcoding?](https://www.reddit.com/r/jellyfin/comments/u9aopx/force_transcoding/)
+
+## Quick summary
+
+_Check Jellyfin’s session overlay or server dashboard; if you see “Transcode (Audio)” the server is altering your track._ In HandBrake, set **one surround-compatible passthrough track** plus **one stereo track with modest Dynamic Range Compression (≈ 1.5) and +3 dB Gain**. DRC tames the loud/quiet swings; Gain lifts the entire mix. Saving these rules in **Audio → Selection Behaviour** applies them to every title—TV or film—without extra presets.
+
+### 1 How to know if Jellyfin is transcoding audio
+
+| Where to look | What you’ll see | Notes |
+| --- | --- | --- |
+| **Server Dashboard → Activity** | Each active stream shows “Direct Play / Direct Stream / Transcode (Audio)” | If it says Transcode, Jellyfin is decoding and re-encoding that track. [forum.jellyfin.org](https://forum.jellyfin.org/t-movies-cropped-when-playing-on-android-tv?utm_source=chatgpt.com) |
+| **Playback stats overlay** (Android TV, Jellyfin for Android v0.15+) | Ctrl + D (keyboard) or Info × 2 on remote opens an OSD with codec/bitrate and “Playback Mode” | Handy on TVs and shields. [features.jellyfin.org](https://features.jellyfin.org/posts/3175/advanced-playback-statistics-overlay-in-android-tv-jellyfin-client?utm_source=chatgpt.com) |
+| **User settings** → _Profile → Playback_ | “Allow audio playback that requires transcoding” toggle | Disabling this forces Jellyfin to refuse incompatible tracks. [forum.jellyfin.org](https://forum.jellyfin.org/t-allow-audio-playback-that-requires-transcoding?utm_source=chatgpt.com) |
+
+If you always see **Direct Play**, your HandBrake defaults are already compatible and Jellyfin is doing nothing to the audio.
+
+### 2 DRC vs Gain in HandBrake—what’s the difference?
+
+| Feature | What it does | Typical range | When it applies |
+| --- | --- | --- | --- |
+| **Dynamic Range Compression (DRC)** | Dynamically narrows the gap between the softest and loudest parts (e.g., boosts whispers, leaves explosions) using the Dolby metadata in AC-3/E-AC-3 sources. | **1.0 – 2.5**; HandBrake docs call this the “sweet spot” (0 = off). [handbrake.fr](https://handbrake.fr/docs/en/latest/technical/audio-drc.html?utm_source=chatgpt.com)[handbrake.fr](https://handbrake.fr/docs/en/1.5.0/technical/dynamic-range-compression.html?utm_source=chatgpt.com) | Only while **mixing or re-encoding AC-3/E-AC-3**. No effect on DTS, TrueHD, PCM, etc. |
+| **Gain** | Adds a _fixed_ volume boost to the whole track before encoding. | 0 – +6 dB recommended; higher may clip. [handbrake.fr](https://handbrake.fr/docs/en/latest/technical/audio-gain.html?utm_source=chatgpt.com) | Works on any codec or mix-down. |
+
+**Why use both?**  
+_DRC 1.5_ makes dialogue easier to hear without crushing dynamics, and a small _+3 dB Gain_ offsets the 4–6 dB you lose when folding the centre channel into stereo. They complement each other and stay well below clipping. [reddit.com](https://www.reddit.com/r/handbrake/comments/mmi9ir/anyone_using_drc_dynamic_range_compression/?utm_source=chatgpt.com)
+
+### 3 “Single-preset” HandBrake audio defaults
+
+Open **Preferences → Audio → Defaults** (your last screenshot) and configure:
+
+| Setting | Recommended value | Rationale |
+| --- | --- | --- |
+| **Track Selection Behaviour** | _All matching selected languages_ | Keeps commentary/trailer tracks out, but preserves multi-lang episodes. [handbrake.fr](https://handbrake.fr/docs/en/latest/advanced/audio-subtitle-defaults.html?utm_source=chatgpt.com)[handbrake.fr](https://handbrake.fr/docs/en/1.3.0/advanced/audio-subtitle-defaults.html?utm_source=chatgpt.com) |
+| **Selected languages** | e.g. _English, Japanese_ (plus “Any” for extras) | Matches your library’s needs. |
+| **Audio Encoder rows** | **Row 1 – Stereo:** _Codec = AAC_, _Bitrate = 160 kb/s_, _Mix-down = Stereo_, _DRC = 1.5_, **Gain = +3 dB**  
+**Row 2 – Surround:** _Codec = AC-3 Passthru_ (or _AC-3 640 kb/s_ if the source is DTS/TrueHD) | Leaves a proper surround track for sound-bars/AVRs; provides a speech-friendly stereo track for phones, tablets, older TVs. [reddit.com](https://www.reddit.com/r/handbrake/comments/mmi9ir/anyone_using_drc_dynamic_range_compression/?utm_source=chatgpt.com) |
+| **Auto Passthru allow list** | ✓ AAC, ✓ AC-3 | Everything else re-encodes to match Row 1/2. |
+| **Sample rate** | Auto | HandBrake picks the original rate. |
+
+Save the window and HandBrake will apply these two tracks to **every movie or episode** you scan—no need for separate “TV” vs “Movie” presets unless you want lower stereo bit-rates (e.g., 128 kb/s) for cartoons or sitcoms.
+
+### 4 Jellyfin down-mix tweaks that fit this preset
+
+1. **Stereo Downmix Algorithm:**  
+    _Dave750_ keeps LFE rumble; _NightmodeDialogue_ pushes everything to the centre—choose the one you prefer. [jellyfin.org](https://jellyfin.org/docs/general/post-install/transcoding/downmix/?utm_source=chatgpt.com)
+    
+2. **Audio boost when downmixing:**  
+    Leave at **2.0** for Dave750, **1.5–2.0** for NightmodeDialogue, as those algorithms output slightly different baselines. [jellyfin.org](https://jellyfin.org/docs/general/post-install/transcoding/downmix/?utm_source=chatgpt.com)
+    
+3. **Client fallback:**  
+    If a device supports only stereo and Jellyfin must transcode, the server will apply the above boost. Otherwise it will direct-play your HandBrake stereo track.
+    
+
+### 5 When would you create a second preset?
+
+| Need | Small tweak |
+| --- | --- |
+| **Ultra-portable TV episodes** where bandwidth is tight | Drop stereo bitrate to 128 kb/s and leave everything else. |
+| **Archival Blu-ray rips with Atmos / DTS-HD MA** | Keep the lossless track as _E-AC-3 7.1 768 kb/s_ (or TrueHD passthrough) plus the same AAC stereo. |
+
+But for 90 % of libraries, the single defaults above keep file sizes reasonable, play everywhere, and deliver consistent loudness.
+
+#### Bottom line
+
+_Use one HandBrake audio-defaults profile: AC-3 5.1 passthrough + AAC stereo (DRC 1.5, Gain +3 dB)._ Jellyfin will direct-play in most cases; when it must down-mix, its “Audio boost when down-mixing” fills the gap. Check the server dashboard to verify; if you don’t see “Transcode (Audio)”, you’re good.
 
 # Media File Stack on TrueNAS Scale
 
