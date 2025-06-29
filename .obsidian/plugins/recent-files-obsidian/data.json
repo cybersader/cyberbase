@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Paperless Storage",
+      "path": "📁 07 - Cybersader Arsenal/Paperless Storage/Paperless Storage.md"
+    },
+    {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Monarchmoney",
       "path": "⬇️ Clippings/Tech/Monarchmoney/Monarchmoney.md"
-    },
-    {
-      "basename": "Pocketsmith",
-      "path": "⬇️ Clippings/Tech/Pocketsmith/Pocketsmith.md"
     }
   ],
   "omittedPaths": [],

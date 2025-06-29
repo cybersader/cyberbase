@@ -16,6 +16,8 @@ date modified: Sunday, May 11th 2025, 9:54 pm
 - [github.com > ad-si/awesome-scanning: A curated list of awesome projects to simplify and improve paper and document scanning.](https://github.com/ad-si/awesome-scanning)
 - [google.com > OpenScan: Document Scanner - Apps on Google Play](https://play.google.com/store/apps/details?id=com.ethereal.openscan&hl=en&gl=US)
 	- [opensourcealternative.to > OpenScan | Open Source Alternative to Adobe Scan](https://www.opensourcealternative.to/project/openscan)
+- [reddit.com > Paperless NGX not pulling date from document - showing creation date as upload date](https://www.reddit.com/r/selfhosted/comments/10rfnnd/paperless_ngx_not_pulling_date_from_document/)
+- [paperless-ngx.com > Configuration - Paperless-ngx](https://docs.paperless-ngx.com/configuration/#inotify)
 - 
 
 # Tech Stack
