@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "Daily Driver Stuff",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Daily Driver Stuff/Daily Driver Stuff.md"
+    },
+    {
+      "basename": "PotatoPirates",
+      "path": "⬇️ Clippings/Websites/Untitled/PotatoPirates.md"
+    },
+    {
       "basename": "Paperless Storage",
       "path": "📁 07 - Cybersader Arsenal/Paperless Storage/Paperless Storage.md"
     },
     {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
-    },
-    {
-      "basename": "Daily Driver Stuff",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Daily Driver Stuff/Daily Driver Stuff.md"
     },
     {
       "basename": "Using Hostnames Locally",
@@ -195,10 +199,6 @@
     {
       "basename": "Tendi",
       "path": "⬇️ Clippings/Tech/Tendi/Tendi.md"
-    },
-    {
-      "basename": "Monarchmoney",
-      "path": "⬇️ Clippings/Tech/Monarchmoney/Monarchmoney.md"
     }
   ],
   "omittedPaths": [],
