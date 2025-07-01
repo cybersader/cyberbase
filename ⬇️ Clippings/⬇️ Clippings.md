@@ -210,6 +210,7 @@
 	- **[[Humble Bundle]]**
 	- **[[Openbazaar]]**
 	- **[[plaintextaccounting]]**
+	- **[[PotatoPirates]]**
 	- **[[Privacy_guides]]**
 	- **[[R_frugal_reddit_frontpage]]**
 	- **[[R_personalfinance_overview]]**
@@ -217,8 +218,6 @@
 	- **[[St Paul Center]]**
 	- **[[Techlore]]**
 	- **[[Tertulia]]**
-	- **Untitled**
-		- [[PotatoPirates]]
 	- **[[Xkcd]]**
 - **[[Wikipedia]]**
 - **[[YouTube]]**

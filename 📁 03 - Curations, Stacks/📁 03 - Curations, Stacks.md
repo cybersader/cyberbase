@@ -12,6 +12,7 @@ date modified: Tuesday, April 9th 2024, 9:01 pm
 	- **[[Data Entry Tools]]**
 	- **[[Deepfakes]]**
 	- **[[Home Surveillance]]**
+- **[[Alternative YouTube Clients]]**
 - **[[Awesome AI]]**
 - **[[Awesome Anime]]**
 - **[[Awesome Collaboration]]**

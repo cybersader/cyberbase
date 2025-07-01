@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sat, Jun 14, 2025 - [[My Media Server]]
+> Mon, Jun 30, 2025 - [[⬇️ Clippings]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                                 | Last modified            |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md\|My Media Server]]                   | Sat - 6/14/2025, 9:08 AM |
-| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                             | Fri - 6/13/2025, 9:38 AM |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md\|Home Lab, Home Server]]                                                 | Fri - 6/13/2025, 9:38 AM |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md\|TrueNAS Scale Home Server]]               | Fri - 6/13/2025, 9:38 AM |
-| [[⬇️ Clippings/Tech/ReVanced/ReVanced.md\|ReVanced]]                                                                                                 | Wed - 6/11/2025, 1:56 PM |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                       | Wed - 6/11/2025, 1:56 PM |
-| [[⬇️ Clippings/Tech/Grayjay App/Grayjay App.md\|Grayjay App]]                                                                                        | Wed - 6/11/2025, 1:54 PM |
-| [[📁 16 - Society, Culture, Politics, Government/Manufacturing in America/Manufacturing in America.md\|Manufacturing in America]]                    | Mon - 6/9/2025, 8:32 PM  |
-| [[📁 16 - Society, Culture, Politics, Government/📁 16 - Society, Culture, Politics, Government.md\|📁 16 - Society, Culture, Politics, Government]] | Mon - 6/9/2025, 8:31 PM  |
-| [[📁 33 - Diving/📁 33 - Diving.md\|📁 33 - Diving]]                                                                                                 | Sun - 6/8/2025, 9:07 PM  |
+| File                                                                                                                                                       | Last modified             |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                             | Mon - 6/30/2025, 6:25 PM  |
+| [[⬇️ Clippings/Websites/PotatoPirates/PotatoPirates|PotatoPirates]]                                                                                         | Mon - 6/30/2025, 6:25 PM  |
+| [[📁 07 - Cybersader Arsenal/Paperless Storage/Paperless Storage.md\|Paperless Storage]]                                                                   | Sun - 6/29/2025, 10:38 AM |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md\|My Media Server]]                         | Thu - 6/26/2025, 8:52 AM  |
+| [[📁 03 - Curations, Stacks/⬇ Tech Dropzone/Daily Driver Stuff/Daily Driver Stuff.md\|Daily Driver Stuff]]                                                 | Mon - 6/23/2025, 8:46 AM  |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Using Hostnames Locally/Using Hostnames Locally.md\|Using Hostnames Locally]] | Sun - 6/22/2025, 8:51 PM  |
+| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                                   | Sat - 6/21/2025, 7:20 PM  |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md\|Home Lab, Home Server]]                                                       | Sat - 6/21/2025, 7:20 PM  |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md\|TrueNAS Scale Home Server]]                     | Sat - 6/21/2025, 7:20 PM  |
+| [[⬇️ Clippings/ChatGPT/Getting Out of Mud/Getting Out of Mud.md\|Getting Out of Mud]]                                                                      | Sat - 6/21/2025, 11:12 AM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
