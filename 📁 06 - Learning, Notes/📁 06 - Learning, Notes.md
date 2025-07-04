@@ -34,6 +34,7 @@ publish: true
 - **[[Cyber Movies, TV, Documentaries]]**
 - **[[Financial Sector & Cyber]]**
 - **[[Security Conferences]]**
+- **[[Security Metaphors & Allegories]]**
 - **[[StudyGRC]]**
 
 %% End Waypoint %%
