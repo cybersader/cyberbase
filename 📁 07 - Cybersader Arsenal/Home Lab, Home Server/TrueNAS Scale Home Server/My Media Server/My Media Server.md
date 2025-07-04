@@ -16,8 +16,17 @@ date modified: Thursday, June 26th 2025, 8:52 am
 - [awesome-jellyfin/awesome-jellyfin: A Collection of Awesome Jellyfin Plugins, Themes, Guides and More!](https://github.com/awesome-jellyfin/awesome-jellyfin)
 - 
 - YouTube
+	- [Alternative YouTube Clients](../../../../📁%2003%20-%20Curations,%20Stacks/Alternative%20YouTube%20Clients/Alternative%20YouTube%20Clients.md)
 	- [r/youtubedl Wiki: yt-dlp GUI Guide](https://www.reddit.com/r/youtubedl/wiki/info-guis/)
 	- [ankenyr/jellyfin-youtube-metadata-plugin: Youtube Metadata Plugin for Jellyfin](https://github.com/ankenyr/jellyfin-youtube-metadata-plugin)
+	- [reddit.com > Automatic YouTube Video downloads to Jellyfin](https://www.reddit.com/r/selfhosted/comments/10wy7wl/automatic_youtube_video_downloads_to_jellyfin/)
+	- [reddit.com > Is there a way to get jellyfin to automatically download youtibe videos from specific creators?](https://www.reddit.com/r/jellyfin/comments/wdhu36/is_there_a_way_to_get_jellyfin_to_automatically/)
+	- [jellyfin.org > Youtube plugin?](https://forum.jellyfin.org/t-youtube-plugin)
+	- [github.com > Beheadedstraw/Tubular: Tubular - A YouTube video collecting suite](https://github.com/Beheadedstraw/Tubular)
+	- [github.com > AECX/FinTube: Jellyfin Plugin to import directly from YT](https://github.com/AECX/FinTube)
+	- [github.com > alexta69/metube: Self-hosted YouTube downloader (web UI for youtube-dl / yt-dlp)](https://github.com/alexta69/metube)
+	- [github.com > mendel5/alternative-front-ends: Overview of alternative open source front-ends for popular internet platforms (e.g. YouTube, Twitter, etc.)](https://github.com/mendel5/alternative-front-ends#imgur)
+	- 
 - [3 Ways to Start Your Own Plex Server - YouTube](https://www.youtube.com/watch?v=XKDSld-CrHU)
 - [Important information for users running Plex Media Server on Nvidia Shield devices - Announcements - Plex Forum](https://forums.plex.tv/t/important-information-for-users-running-plex-media-server-on-nvidia-shield-devices/883484 "Important information for users running Plex Media Server on Nvidia Shield devices - Announcements - Plex Forum")
 - [Prowlarr](https://prowlarr.com/ "Prowlarr")
