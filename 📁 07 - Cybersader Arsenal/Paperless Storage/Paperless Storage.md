@@ -19,7 +19,7 @@ date modified: Sunday, May 11th 2025, 9:54 pm
 - [reddit.com > Paperless NGX not pulling date from document - showing creation date as upload date](https://www.reddit.com/r/selfhosted/comments/10rfnnd/paperless_ngx_not_pulling_date_from_document/)
 - [paperless-ngx.com > Configuration - Paperless-ngx](https://docs.paperless-ngx.com/configuration/#inotify)
 - [richardneililagan.com > Configuring Paperless-ngx to monitor emails from a Proton Mail account](https://www.richardneililagan.com/posts/paperless-ngx-with-proton-mail/)
-- 
+	- [proton.me > How to install Proton Mail Bridge](https://proton.me/support/protonmail-bridge-install)
 
 # Tech Stack
 
