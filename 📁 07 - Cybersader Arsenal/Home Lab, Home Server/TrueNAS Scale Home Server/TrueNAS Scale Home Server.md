@@ -23,6 +23,7 @@ date modified: Monday, May 27th 2024, 1:14 pm
 	- **[[Rsync Related]]**
 	- **[[TrueNAS Drive Data Recovery]]**
 - **[[My Media Server]]**
+- **[[Ollama TrueNAS Scale]]**
 - **[[Portainer in TrueNAS]]**
 - **[[Scheduled Backups, Scheduled Downtime]]**
 - **[[TrueNAS Cloud Backups]]**
