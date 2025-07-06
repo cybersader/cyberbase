@@ -20,7 +20,8 @@ date modified: Sunday, May 11th 2025, 9:54 pm
 - [paperless-ngx.com > Configuration - Paperless-ngx](https://docs.paperless-ngx.com/configuration/#inotify)
 - [richardneililagan.com > Configuring Paperless-ngx to monitor emails from a Proton Mail account](https://www.richardneililagan.com/posts/paperless-ngx-with-proton-mail/)
 	- [proton.me > How to install Proton Mail Bridge](https://proton.me/support/protonmail-bridge-install)
-
+- Newer proton bridge container - [github.com > VideoCurio/ProtonMailBridgeDocker: A docker version of the Proton mail bridge command line interface. It creates a local SMTP server, so other docker containers can send emails via your proton mail account.](https://github.com/VideoCurio/ProtonMailBridgeDocker)
+- 
 # Tech Stack
 
 1. A document scanner or printer with scanning capability
