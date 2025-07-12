@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Home Assistant",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Assistant/Home Assistant.md"
+    },
+    {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Kiro",
       "path": "⬇️ Clippings/Tech/Kiro/Kiro.md"
-    },
-    {
-      "basename": "Peek Money",
-      "path": "⬇️ Clippings/Tech/Peek Money/Peek Money.md"
     }
   ],
   "omittedPaths": [],
