@@ -26,7 +26,7 @@ tags:
   - ethics
   - lying
 title: Secular Santa Claus Origins
-ai_model:
+ai_model: ChatGPT o3
 ---
 
 ##### You said:

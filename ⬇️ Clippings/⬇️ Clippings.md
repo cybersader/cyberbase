@@ -9,6 +9,8 @@
 
 	- **[[Best Budget Mic Options]]**
 	- **[[Budget Zwift Setup Guide]]**
+	- **[[Calling Out Arrogance]]**
+
 	- **[[Codex CLI VS Code Setup]]**
 	- **[[Credit Freeze vs Fraud Alert]]**
 	- **[[Display Android on Windows]]**
@@ -26,6 +28,7 @@
 	- **[[pfSense - VLAN setup in pfSense]]**
 	- **[[pfSense- DNS Rebinding and NAT Reflection]]**
 	- **[[Secular Santa Claus Origins]]**
+	- **[[Suicide Lane Usage Rules]]**
 	- **[[Tag Selection Workflow Options]]**
 	- **[[Texas Outdoor Adventures]]**
 	- **[[VLC Alternatives for Android]]**
