@@ -3,6 +3,7 @@
 	- **[[The Value of Christian Principles in Cybersecurity Education]]**
 - **[[ChatGPT]]**
 	- **[[Best Budget Mic Options]]**
+	- **[[Budget Zwift Setup Guide]]**
 	- **[[Codex CLI VS Code Setup]]**
 	- **[[Credit Freeze vs Fraud Alert]]**
 	- **[[Display Android on Windows]]**
@@ -110,6 +111,7 @@
 	- **[[Invidious]]**
 	- **[[IronVest]]**
 	- **[[Khoj]]**
+	- **[[Kimi K2]]**
 	- **[[Kiro]]**
 	- **[[Kittl]]**
 	- **[[Klutch Card]]**
