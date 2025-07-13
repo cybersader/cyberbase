@@ -157,6 +157,7 @@
 	- **[[Oodo]]**
 	- **[[Open WebUI]]**
 	- **[[OpenBB]]**
+	- **[[OpenCut]]**
 	- **[[Openfhe]]**
 	- **[[Opennote]]**
 	- **[[OperationPrivacy]]**
