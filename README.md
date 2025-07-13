@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sat, Jul 12, 2025 - [[Home Assistant]]
+> Sat, Jul 12, 2025 - [[⬇️ Clippings]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -102,7 +102,9 @@ SORT file.mtime DESC LIMIT 10
 
 | File                                                                                                                                              | Last modified            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Assistant/Home Assistant.md\|Home Assistant]]                                             | Sat - 7/12/2025, 4:43 PM |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                    | Sat - 7/12/2025, 9:03 PM |
+| [[⬇️ Clippings/Tech/Comma3x/Comma3x.md\|Comma3x]]                                                                                                 | Sat - 7/12/2025, 9:03 PM |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Assistant/Home Assistant.md\|Home Assistant]]                                             | Sat - 7/12/2025, 5:07 PM |
 | [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                          | Sat - 7/12/2025, 2:34 PM |
 | [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md\|Home Lab, Home Server]]                                              | Sat - 7/12/2025, 2:34 PM |
 | [[📁 07 - Cybersader Arsenal/Paperless Storage/Paperless Storage.md\|Paperless Storage]]                                                          | Sun - 7/6/2025, 4:41 PM  |
@@ -110,8 +112,6 @@ SORT file.mtime DESC LIMIT 10
 | [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md\|TrueNAS Scale Home Server]]            | Sun - 7/6/2025, 2:36 PM  |
 | [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md\|My Media Server]]                | Fri - 7/4/2025, 11:14 AM |
 | [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                                                                   | Fri - 7/4/2025, 11:10 AM |
-| [[📁 06 - Learning, Notes/Security Metaphors & Allegories/Security Metaphors & Allegories.md\|Security Metaphors & Allegories]]                   | Fri - 7/4/2025, 11:10 AM |
-| [[📁 03 - Curations, Stacks/Alternative YouTube Clients/Alternative YouTube Clients.md\|Alternative YouTube Clients]]                             | Mon - 6/30/2025, 8:43 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
