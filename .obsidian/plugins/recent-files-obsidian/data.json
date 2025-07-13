@@ -5,6 +5,10 @@
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Assistant/Home Assistant.md"
     },
     {
+      "basename": "⬇️ Clippings",
+      "path": "⬇️ Clippings/⬇️ Clippings.md"
+    },
+    {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
     },
@@ -191,14 +195,6 @@
     {
       "basename": "Buckets Budgeting App",
       "path": "⬇️ Clippings/Tech/Buckets Budgeting App/Buckets Budgeting App.md"
-    },
-    {
-      "basename": "MyBudgetCoach",
-      "path": "⬇️ Clippings/Tech/MyBudgetCoach/MyBudgetCoach.md"
-    },
-    {
-      "basename": "Kiro",
-      "path": "⬇️ Clippings/Tech/Kiro/Kiro.md"
     }
   ],
   "omittedPaths": [],
