@@ -2,14 +2,23 @@
 - **[[Articles, Blogs]]**
 	- **[[The Value of Christian Principles in Cybersecurity Education]]**
 - **[[ChatGPT]]**
+	- **[[2FA Backup and Recovery]]**
+
+	- **[[Amazon Made in USA Filter]]**
+	- **[[American Made Laundry Baskets]]**
+
 	- **[[Best Budget Mic Options]]**
 	- **[[Budget Zwift Setup Guide]]**
 	- **[[Codex CLI VS Code Setup]]**
 	- **[[Credit Freeze vs Fraud Alert]]**
 	- **[[Display Android on Windows]]**
+	- **[[Draft and Cyber Roles]]**
+
 	- **[[Getting Out of Mud]]**
 	- **[[Hacking Motivations and Shifts]]**
 	- **[[iPhone Alarm Settings Guide]]**
+	- **[[Legal Documents to Keep]]**
+
 	- **[[Meta-framework]]**
 	- **[[Open Explorer in PS]]**
 	- **[[Optimum Racing Sim Setup]]**
@@ -18,6 +27,8 @@
 	- **[[pfSense- DNS Rebinding and NAT Reflection]]**
 	- **[[Tag Selection Workflow Options]]**
 	- **[[Texas Outdoor Adventures]]**
+	- **[[VLC Alternatives for Android]]**
+
 	- **[[Wifi Mode Explanation]]**
 	- **[[WPA2-PSK vs WPA2-Enterprise]]**
 - **[[GitHub Repos]]**
