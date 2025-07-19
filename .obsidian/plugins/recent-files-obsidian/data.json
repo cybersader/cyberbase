@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Custom Docker Apps in TrueNAS",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Custom Docker Apps in TrueNAS/Custom Docker Apps in TrueNAS.md"
+    },
+    {
       "basename": "Poster Storage Solutions",
       "path": "⬇️ Clippings/ChatGPT/Poster Storage Solutions/Poster Storage Solutions.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Moon",
       "path": "⬇️ Clippings/Tech/Moon/Moon.md"
-    },
-    {
-      "basename": "IronVest",
-      "path": "⬇️ Clippings/Tech/IronVest/IronVest.md"
     }
   ],
   "omittedPaths": [],
