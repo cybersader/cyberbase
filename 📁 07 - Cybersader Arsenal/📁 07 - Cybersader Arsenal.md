@@ -13,6 +13,7 @@ date modified: Thursday, June 20th 2024, 3:38 pm
 - **[[✒️Home Lab v0.0.01]]**
 
 - **[[⬇️ Cybersade DROPZONE]]**
+- **[[3D Printer]]**
 - **[[DNS Proxies & FIltering]]**
 - **[[Dumb Phones]]**
 - **[[Extreme Privacy]]**

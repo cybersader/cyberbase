@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "3D Printer",
+      "path": "📁 07 - Cybersader Arsenal/3D Printer/3D Printer.md"
+    },
+    {
       "basename": "Custom Docker Apps in TrueNAS",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Custom Docker Apps in TrueNAS/Custom Docker Apps in TrueNAS.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Klutch Card",
       "path": "⬇️ Clippings/Tech/Klutch Card/Klutch Card.md"
-    },
-    {
-      "basename": "Moon",
-      "path": "⬇️ Clippings/Tech/Moon/Moon.md"
     }
   ],
   "omittedPaths": [],
