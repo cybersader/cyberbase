@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Saturday, July 19th 2025, 2:57 pm
-date modified: Sunday, July 20th 2025, 11:11 am
+date modified: Sunday, July 20th 2025, 1:37 pm
 ---
 
 [3D Printing](../../⬇%20INBOX,%20DROPZONE/3D%20Printing/3D%20Printing.md)
@@ -25,6 +25,7 @@ date modified: Sunday, July 20th 2025, 11:11 am
 - [multiboard.io > Core Parts Documentation | Multiboard Knowledge Hub](https://docs.multiboard.io/beginner-section/core-parts-documentation)
 - [thangs.com > Clip Tool - 3D model by Multiboard on Thangs](https://thangs.com/designer/Multiboard/3d-model/Clip%2520Tool-1131717)
 - [Measurement System](https://docs.multiboard.io/beginner-section/core-parts-documentation#measurement-system) - 25 mm grids for Multiboard parts
+
 ### Border Tile Riser
 
 - core sides and bottoms - [multiboard.io > Strip Border Tiles](https://www.multiboard.io/parts-library/tiles/strip-border)
@@ -37,6 +38,9 @@ date modified: Sunday, July 20th 2025, 11:11 am
 
 - .
 
+### Stacking Plates
+
+- [thangs.com > 3x2H - Stacking Plate Handle - 3D model by Multiboard on Thangs](https://thangs.com/designer/Multiboard/3d-model/3x2H%20-%20Stacking%20Plate%20Handle-1123269)
 ---
 
 # Misc Multiboard
