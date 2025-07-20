@@ -24,7 +24,7 @@ date modified: Sunday, July 20th 2025, 11:11 am
 
 - [multiboard.io > Core Parts Documentation | Multiboard Knowledge Hub](https://docs.multiboard.io/beginner-section/core-parts-documentation)
 - [thangs.com > Clip Tool - 3D model by Multiboard on Thangs](https://thangs.com/designer/Multiboard/3d-model/Clip%2520Tool-1131717)
-- 
+- [Measurement System](https://docs.multiboard.io/beginner-section/core-parts-documentation#measurement-system) - 25 mm grids for Multiboard parts
 ### Border Tile Riser
 
 - core sides and bottoms - [multiboard.io > Strip Border Tiles](https://www.multiboard.io/parts-library/tiles/strip-border)
