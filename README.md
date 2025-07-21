@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sat, Jul 12, 2025 - [[⬇️ Clippings]]
+> Sun, Jul 20, 2025 - [[3D Prints]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                              | Last modified            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                    | Sat - 7/12/2025, 9:03 PM |
-| [[⬇️ Clippings/Tech/Comma3x/Comma3x.md\|Comma3x]]                                                                                                 | Sat - 7/12/2025, 9:03 PM |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Assistant/Home Assistant.md\|Home Assistant]]                                             | Sat - 7/12/2025, 5:07 PM |
-| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                          | Sat - 7/12/2025, 2:34 PM |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md\|Home Lab, Home Server]]                                              | Sat - 7/12/2025, 2:34 PM |
-| [[📁 07 - Cybersader Arsenal/Paperless Storage/Paperless Storage.md\|Paperless Storage]]                                                          | Sun - 7/6/2025, 4:41 PM  |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Ollama TrueNAS Scale/Ollama TrueNAS Scale.md\|Ollama TrueNAS Scale]] | Sun - 7/6/2025, 2:37 PM  |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md\|TrueNAS Scale Home Server]]            | Sun - 7/6/2025, 2:36 PM  |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md\|My Media Server]]                | Fri - 7/4/2025, 11:14 AM |
-| [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                                                                   | Fri - 7/4/2025, 11:10 AM |
+| File                                                                                                                                                                         | Last modified             |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 07 - Cybersader Arsenal/3D Prints/3D Prints.md\|3D Prints]]                                                                                                             | Sun - 7/20/2025, 1:37 PM  |
+| [[⬇️ Clippings/Tech/Tec-accessories_ti-tape/Tec-accessories_ti-tape.md\|Tec-accessories_ti-tape]]                                                                            | Sun - 7/20/2025, 11:51 AM |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                               | Sun - 7/20/2025, 11:51 AM |
+| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                                                     | Sat - 7/19/2025, 2:57 PM  |
+| [[📁 07 - Cybersader Arsenal/3D Printer/3D Printer.md\|3D Printer]]                                                                                                          | Sat - 7/19/2025, 1:29 PM  |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Custom Docker Apps in TrueNAS/Custom Docker Apps in TrueNAS.md\|Custom Docker Apps in TrueNAS]] | Sat - 7/19/2025, 10:40 AM |
+| [[⬇️ Clippings/ChatGPT/Poster Storage Solutions/Poster Storage Solutions.md\|Poster Storage Solutions]]                                                                      | Sun - 7/13/2025, 5:54 PM  |
+| [[⬇️ Clippings/ChatGPT/Hacking Motivations and Shifts/Hacking Motivations and Shifts.md\|Hacking Motivations and Shifts]]                                                    | Sun - 7/13/2025, 12:18 PM |
+| [[⬇️ Clippings/ChatGPT/Suicide Lane Usage Rules/Suicide Lane Usage Rules.md\|Suicide Lane Usage Rules]]                                                                      | Sun - 7/13/2025, 12:14 PM |
+| [[⬇️ Clippings/ChatGPT/Secular Santa Claus Origins/Secular Santa Claus Origins.md\|Secular Santa Claus Origins]]                                                             | Sun - 7/13/2025, 12:08 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
