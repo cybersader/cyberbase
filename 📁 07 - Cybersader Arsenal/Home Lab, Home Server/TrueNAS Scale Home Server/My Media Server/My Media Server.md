@@ -570,6 +570,9 @@ D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}){' {tmdb-'+tmdbid+'}'}{au
 		- `{ jellyfin.id }`
 	- [filebot.net > Format Expressions](https://www.filebot.net/naming.html)
 		- Right click the file names to changes the format expression
+- Jellyfin Special Naming
+	- [jellyfin.org > Movies | Jellyfin](https://jellyfin.org/docs/general/server/media/movies#naming)
+	- [jellyfin.org > TV Shows | Jellyfin](https://jellyfin.org/docs/general/server/media/shows#naming)
 
 ## 9) Testing "arr" Locally
 
