@@ -41,7 +41,7 @@ date modified: Sunday, July 27th 2025, 5:43 pm
 		- [youtube.com > How Do I Go Back to a Local Account after Setting Up Windows 11 with a Microsoft Account?](https://www.youtube.com/watch?v=h_5lWNWyVoY&list=WL&index=1)
 	- Copying the User Profile Data?
 		- [microsoft.com > Migrate User Accounts](https://learn.microsoft.com/en-us/windows/deployment/usmt/usmt-migrate-user-accounts) - using Microsoft USMT
-		- 
+		- [microsoft.com > Download and install the Windows ADK](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install#download-the-adk-101261002454-december-2024)
 		- 
 
 --- 
