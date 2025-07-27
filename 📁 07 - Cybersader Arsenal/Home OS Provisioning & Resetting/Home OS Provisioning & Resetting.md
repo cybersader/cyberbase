@@ -39,6 +39,9 @@ date modified: Sunday, July 27th 2025, 5:43 pm
 	- Move all MS account data to a local account profile - HARD
 	- Resources or links
 		- [youtube.com > How Do I Go Back to a Local Account after Setting Up Windows 11 with a Microsoft Account?](https://www.youtube.com/watch?v=h_5lWNWyVoY&list=WL&index=1)
+	- Copying the User Profile Data?
+		- [microsoft.com > Migrate User Accounts](https://learn.microsoft.com/en-us/windows/deployment/usmt/usmt-migrate-user-accounts) - using Microsoft USMT
+		- 
 		- 
 
 --- 
