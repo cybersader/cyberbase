@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Saturday, May 10th 2025, 6:45 pm
-date modified: Saturday, May 10th 2025, 8:31 pm
+date modified: Sunday, July 27th 2025, 5:43 pm
 ---
 
 [Windows Desktop Provisioning](../../🕸️%20UNSTRUCTURED/Windows%20Desktop%20Provisioning/Windows%20Desktop%20Provisioning.md)
@@ -21,11 +21,25 @@ date modified: Saturday, May 10th 2025, 8:31 pm
 - [psappdeploytoolkit.com > Features · PSAppDeployToolkit](https://psappdeploytoolkit.com/features)
 - [boxstarter.org > 100% Uninterrupted Windows Environment Installs](https://boxstarter.org/)
 - 
+
 # Tech Stack 
 
 - [TrueNAS Scale Home Server](../Home%20Lab,%20Home%20Server/TrueNAS%20Scale%20Home%20Server/TrueNAS%20Scale%20Home%20Server.md) -  specifically SMB shares implemented in some way (network-accessible storage)
 - 
 
+# Windows OS Approach
+
+- If setting up Windows...
+	- Use commands to avoid using an MS account and use a local account instead
+	- Resources or links
+		- [youtube.com > How to Setup Windows PROPERLY](https://www.youtube.com/watch?v=MBCiMK4AmEI&list=WL&index=3&t=283s)
+		- [youtube.com > The New BypassNRO](https://www.youtube.com/watch?v=LK75SWX4F2s&list=WL&index=2) - bypass using an MS account
+		- 
+- If Windows already exists...
+	- Move all MS account data to a local account profile - HARD
+	- Resources or links
+		- [youtube.com > How Do I Go Back to a Local Account after Setting Up Windows 11 with a Microsoft Account?](https://www.youtube.com/watch?v=h_5lWNWyVoY&list=WL&index=1)
+		- 
 
 --- 
 
