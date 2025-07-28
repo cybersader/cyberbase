@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Saturday, May 10th 2025, 6:45 pm
-date modified: Sunday, July 27th 2025, 5:43 pm
+date modified: Sunday, July 27th 2025, 7:47 pm
 ---
 
 [Windows Desktop Provisioning](../../🕸️%20UNSTRUCTURED/Windows%20Desktop%20Provisioning/Windows%20Desktop%20Provisioning.md)
@@ -32,8 +32,10 @@ date modified: Sunday, July 27th 2025, 5:43 pm
 - If setting up Windows...
 	- Use commands to avoid using an MS account and use a local account instead
 	- Resources or links
-		- [youtube.com > How to Setup Windows PROPERLY](https://www.youtube.com/watch?v=MBCiMK4AmEI&list=WL&index=3&t=283s)
 		- [youtube.com > The New BypassNRO](https://www.youtube.com/watch?v=LK75SWX4F2s&list=WL&index=2) - bypass using an MS account
+		- [github.com > ChrisTitusTech/winutil: Chris Titus Tech's Windows Utility - Install Programs, Tweaks, Fixes, and Updates](https://github.com/ChrisTitusTech/winutil)
+		- [youtube.com > How To Setup Windows](https://www.youtube.com/watch?v=0PA1wgdMeeI)
+		- [youtube.com > How to Setup Windows PROPERLY](https://www.youtube.com/watch?v=MBCiMK4AmEI&list=WL&index=3&t=283s)
 		- 
 - If Windows already exists...
 	- Move all MS account data to a local account profile - HARD
@@ -42,7 +44,10 @@ date modified: Sunday, July 27th 2025, 5:43 pm
 	- Copying the User Profile Data?
 		- [microsoft.com > Migrate User Accounts](https://learn.microsoft.com/en-us/windows/deployment/usmt/usmt-migrate-user-accounts) - using Microsoft USMT
 		- [microsoft.com > Download and install the Windows ADK](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install#download-the-adk-101261002454-december-2024)
-		- 
+		- [github.com > belowaverage-org/SuperGrate: 💾 Get moving with Super Grate; a free & open source Windows Profile Migration & Backup Utility. Super Grate is a GUI (Graphical User Interface) that assists Microsoft's USMT (User State Migration Utility) in performing remote migrations over a network connection.](https://github.com/belowaverage-org/SuperGrate)
+			- [belowaverage.org > Super Grate](https://belowaverage.org/documentation/supergrate/)
+		- Use "Robocopy"
+- 
 
 --- 
 
