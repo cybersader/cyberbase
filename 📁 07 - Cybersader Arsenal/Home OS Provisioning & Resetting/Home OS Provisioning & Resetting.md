@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Saturday, May 10th 2025, 6:45 pm
-date modified: Sunday, July 27th 2025, 7:47 pm
+date modified: Sunday, July 27th 2025, 8:54 pm
 ---
 
 [Windows Desktop Provisioning](../../🕸️%20UNSTRUCTURED/Windows%20Desktop%20Provisioning/Windows%20Desktop%20Provisioning.md)
@@ -47,7 +47,9 @@ date modified: Sunday, July 27th 2025, 7:47 pm
 		- [github.com > belowaverage-org/SuperGrate: 💾 Get moving with Super Grate; a free & open source Windows Profile Migration & Backup Utility. Super Grate is a GUI (Graphical User Interface) that assists Microsoft's USMT (User State Migration Utility) in performing remote migrations over a network connection.](https://github.com/belowaverage-org/SuperGrate)
 			- [belowaverage.org > Super Grate](https://belowaverage.org/documentation/supergrate/)
 		- Use "Robocopy"
-- 
+			- `robocopy "C:\Users\OldUser" "C:\Users\NewUser" /MIR /COPYALL /X /R:1 /W:1`
+			- `robocopy "C:\Users\OldUser" "C:\Users\NewUser"  /MIR /COPYALL /XJ /R:1 /W:1 /XD "C:\Users\OldUser\AppData\Local" "C:\Users\OldUser\AppData\LocalLow" /XD "C:\Users\OldUser\AppData\Local" "C:\Users\OldUser\AppData\LocalLow"`
+	- 
 
 --- 
 
