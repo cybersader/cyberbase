@@ -21,6 +21,9 @@ There's only one option that seems like it could scale and that's [Kasm Workspac
 
 # DROPZONE
 
+- [github.com > silverbulletmd/silverbullet: An open source personal productivity platform built on Markdown, turbo charged with the scripting power of Lua](https://github.com/silverbulletmd/silverbullet)
+- [obsidian.md > I need a Obsidian Web server service - Help](https://forum.obsidian.md/t/i-need-a-obsidian-web-server-service/97000)
+- 
 - [sytone/obsidian-remote: Run Obsidian.md in a browser via a docker container.](https://github.com/sytone/obsidian-remote)
 - [https://code.visualstudio.com/docs/editor/vscode-web#\_extensions](https://code.visualstudio.com/docs/editor/vscode-web#_extensions) - an example of why Obsidian doesn't have a browser version
 - https://www.reddit.com/r/ObsidianMD/comments/10sj378/web_version_of_obsidian/

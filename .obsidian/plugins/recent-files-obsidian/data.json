@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Web or Browser-Based Obsidian",
+      "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Web or Browser-Based Obsidian/Web or Browser-Based Obsidian.md"
+    },
+    {
+      "basename": "Child Online Safety Tech Stack",
+      "path": "📁 50 - Cybersade/Child Online Safety Tech Stack/Child Online Safety Tech Stack.md"
+    },
+    {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
     },
@@ -11,10 +19,6 @@
     {
       "basename": "Open Source Media",
       "path": "📁 03 - Curations, Stacks/Open Source Media/Open Source Media.md"
-    },
-    {
-      "basename": "Child Online Safety Tech Stack",
-      "path": "📁 50 - Cybersade/Child Online Safety Tech Stack/Child Online Safety Tech Stack.md"
     },
     {
       "basename": "3D Prints",
@@ -195,10 +199,6 @@
     {
       "basename": "Monero_project",
       "path": "⬇️ Clippings/Tech/Monero_project/Monero_project.md"
-    },
-    {
-      "basename": "EasyOptOuts",
-      "path": "⬇️ Clippings/Tech/EasyOptOuts/EasyOptOuts.md"
     }
   ],
   "omittedPaths": [],
