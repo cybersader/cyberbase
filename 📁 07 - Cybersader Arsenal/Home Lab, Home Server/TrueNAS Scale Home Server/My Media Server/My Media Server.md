@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Saturday, August 2nd 2025, 2:25 pm
+date modified: Saturday, August 2nd 2025, 2:49 pm
 ---
 
 # Links
@@ -726,6 +726,18 @@ D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}) {'[tmdbid-'+tmdbid+']'}/
 - [jellyfin.org > the sound is very soft](https://forum.jellyfin.org/t-the-sound-is-very-soft)
 - [handbrake.fr > HandBrake Documentation — Surround Sound Guide](https://handbrake.fr/docs/en/1.3.0/advanced/surround-sound.html)
 - [reddit.com > Force transcoding?](https://www.reddit.com/r/jellyfin/comments/u9aopx/force_transcoding/)
+
+## 12) Jellyfin Administration
+
+Most can be found in their docs.
+
+### Using Tags to Limit to Specific Sets of Content for Certain Users
+
+[jellyfin.org > Managing Users > Parental Control | Jellyfin](https://jellyfin.org/docs/general/server/users/adding-managing-users/#parental-control)
+
+Primarily, use the `Block items with tags` and `Allow items with tags` settings.
+
+You can manually set tags on certain movies to have unlimited control here.
 
 ## Quick summary
 
