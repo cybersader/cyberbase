@@ -1,10 +1,11 @@
 ---
+title:
 permalink:
 aliases: []
 tags: []
 publish: true
 date created: Friday, April 26th 2024, 2:52 pm
-date modified: Friday, January 31st 2025, 3:21 pm
+date modified: Saturday, August 2nd 2025, 5:30 pm
 ---
 
 [Cyber Movies, TV, Documentaries](../../📁%2006%20-%20Learning,%20Notes/Cyber%20Movies,%20TV,%20Documentaries/Cyber%20Movies,%20TV,%20Documentaries.md)
@@ -27,19 +28,12 @@ date modified: Friday, January 31st 2025, 3:21 pm
 - Heard of
 	- Demon Lord 2099
 	- The Beginning After the End English Subbed
-	- The Wrong Way to Use Healing Magic
-	- Durarara
 	- Vivy: Fluorite Eye's Song
 	- Silent Witch
-	- Anne Shirley
-	- Call of the Night
-	- A Galaxy Next Door
-	- Sakamoto Days
-	- To Your Eternity
-	- 
 
 - Code Geass
 - 
+
 # Top Anime
 
 > [!tldr] All the anime I would recommend
