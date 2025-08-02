@@ -548,7 +548,7 @@ D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}){' {tmdb-'+tmdbid+'}'}{au
 Movies - smart matching and runtime
 
 ```json
-D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'{imdb-'+imdbid+'}'}/{n} ({y}) {'{imdb-'+imdbid+'}'} - {def L=[];def ed=edition;if(ed)L<<ed;def tg=tags;if(tg)L.addAll(tg);def usr=fn.matchAll(/(?i)(?<=\[)[^\]]+(?=\]$)|(?<=\()[^\)]+(?=\)$)/);if(usr)L.addAll(usr);def lang=audioLanguages.size()>2?'Multi Audio':(audioLanguages.size()>1?'Dual Audio':(!audioLanguages =~ /eng/?audioLanguages.ISO3.join(', ').upper():null));if(lang)L<<lang;L<<vc;L<<(ac+' '+af);L<<((runtime?:minutes)+'m');(L.findAll{it}.join(' · ')+' – '+vf).trim()}
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'{imdb-'+imdbid+'}'}/{n} ({y}) {'{imdb-'+imdbid+'}'} - {[edition,fn.match(/(?i)(?<=\\[)[^\\]]+(?=\\]$)|(?<=\\()[^\\)]+(?=\\)$)/),audioLanguages.size()>2?'Multi Audio':(audioLanguages.size()>1?'Dual Audio':(!audioLanguages =~ /eng/?audioLanguages.ISO3.join(', ').upper():null)),vc,ac+' '+af,runtime+'m'].findAll{it}.join(' · ')+' – '+vf}
 ```
 
 TV Shows - smart matching and runtime
