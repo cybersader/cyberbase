@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Friday, August 1st 2025, 9:29 pm
+date modified: Saturday, August 2nd 2025, 11:44 am
 ---
 
 # Links
@@ -514,47 +514,98 @@ TV Shows:
 D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}){' {tmdb-'+tmdbid+'}'}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!audioLanguages =~ /eng/?' ('+audioLanguages.ISO3.join(', ', ', ').upper()+')':''}/Season {s}/{s00e00} - {t}{' ['+vf+' '+vc+' '+ac+' '+af+']'}{' -cd'+pi}{dc>1?' -cd'+di:''}
 ```
 
-<u>V3:</u>
+#### <u>V3:</u>
 
 - https://www.filebot.net/forums/viewtopic.php?t=2
 - https://jellyfin.org/docs/general/server/media/movies/#multiple-versions
 - https://jellyfin.org/docs/general/server/media/shows
-- 
 
-Movies (pi first, fall back to di):
+##### 🔧 Reusable components (copy-paste snippets)
+
+**A. Trailing bracketed tag from the source name (optional)**
 
 ```json
-D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}){m=fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' ');m?' ('+m+')':''}{' {imdb-'+imdbid+'}'}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!audioLanguages =~ /eng/?' ('+audioLanguages.ISO3.join(', ').upper()+')':''}/{n} ({y}){m=fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' ');m?' ('+m+')':''}{' {imdb-'+imdbid+'}'}{' ['+vf+' '+vc+' '+ac+' '+af+']'}{edition?' {'+edition+'}':''}{ pc>1 ? ' -cd'+pi : (dc>1 ? ' -cd'+di : '') }
+{ bt = fn.match(/(?i)(?:\[[^\]]+\]|\([^\)]+\))$/); bt ? ' '+bt : '' }
 ```
 
-TV Shows (pi first, fall back to di):
+B. Language label (Multi / Dual / ISO3 for non-ENG)
 
 ```json
-D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}){' {tmdb-'+tmdbid+'}'}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!audioLanguages =~ /eng/?' ('+audioLanguages.ISO3.join(', ').upper()+')':''}/Season {s}/{s00e00} - {t}{' ['+vf+' '+vc+' '+ac+' '+af+']'}{ pc>1 ? ' -cd'+pi : (dc>1 ? ' -cd'+di : '') }
+{ audioLanguages.size()>2 ? ' (Multi Audio)' 
+  : audioLanguages.size()>1 ? ' (Dual Audio)' 
+  : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }
 ```
 
-Movies — di only:
+C. Edition keywords (your original “m=” scan)
 
 ```json
-D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}){m=fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' ');m?' ('+m+')':''}{' {imdb-'+imdbid+'}'}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!audioLanguages =~ /eng/?' ('+audioLanguages.ISO3.join(', ').upper()+')':''}/{n} ({y}){m=fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' ');m?' ('+m+')':''}{' {imdb-'+imdbid+'}'}{' ['+vf+' '+vc+' '+ac+' '+af+']'}{edition?' {'+edition+'}':''}{ dc>1 ? ' -cd'+di : '' }
+{ m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)
+      *.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' ');
+  m ? ' ('+m+')' : '' }
 ```
 
-TV Shows — di only:
+**D. Tech blocks (pick one):**
+
+- **Duration variant** (granular uniqueness):
 
 ```json
-D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}){' {tmdb-'+tmdbid+'}'}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!audioLanguages =~ /eng/?' ('+audioLanguages.ISO3.join(', ').upper()+')':''}/Season {s}/{s00e00} - {t}{' ['+vf+' '+vc+' '+ac+' '+af+']'}{ dc>1 ? ' -cd'+di : '' }
+{ ' ['+vf+' '+vc+' '+ac+' '+af+' '+duration+']' }
 ```
 
-Movies - smart matching and runtime
+- **CRC variant** (stable uniqueness):
 
 ```json
-D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'{imdb-'+imdbid+'}'}/{n} ({y}) {'{imdb-'+imdbid+'}'} - {[edition,fn.match(/(?i)(?<=\\[)[^\\]]+(?=\\]$)|(?<=\\()[^\\)]+(?=\\)$)/),audioLanguages.size()>2?'Multi Audio':(audioLanguages.size()>1?'Dual Audio':(!audioLanguages =~ /eng/?audioLanguages.ISO3.join(', ').upper():null)),vc,ac+' '+af,runtime+'m'].findAll{it}.join(' · ')+' – '+vf}
+{ ' ['+vf+' '+vc+' '+ac+' '+af+' '+crc32+']' }
 ```
 
-TV Shows - smart matching and runtime
+- Resolution variant:
 
 ```json
-D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}) {'{tmdb-'+tmdbid+'}'}/Season {s}/{s00e00} - {t} - {def L=[];def tg=tags;if(tg)L.addAll(tg);def usr=fn.matchAll(/(?i)(?<=\[)[^\]]+(?=\]$)|(?<=\()[^\)]+(?=\)$)/);if(usr)L.addAll(usr);def lang=audioLanguages.size()>2?'Multi Audio':(audioLanguages.size()>1?'Dual Audio':(!audioLanguages =~ /eng/?audioLanguages.ISO3.join(', ').upper():null));if(lang)L<<lang;L<<vc;L<<(ac+' '+af);L<<((runtime?:minutes)+'m');(L.findAll{it}.join(' · ')+' – '+vf).trim()}
+{ ' ['+resolution+'p '+vc+' '+ac+' '+af+' '+duration+']' }
+```
+
+**E. Part / duplicate suffixes**
+
+- **Prefer parts → fall back to duplicates**
+
+```json
+{ pc>1 ? ' -cd'+pi : (dc>1 ? ' -dup'+di : '') }
+```
+
+- Duplicates only
+
+```json
+{ dc>1 ? ' -dup'+di : '' }
+```
+
+Notes: `duration` gives ISO-8601 (e.g., `PT1H43M21S`), which Jellyfin ignores but is great for uniqueness. `{crc32}` is shorter if you prefer that. Jellyfin multiple versions require filenames like `Movie (Year) [id] - Label.ext`; the part **before** the `-` must match exactly. “Stacking” (cd1/cd2) cannot be combined with versions
+
+##### Full Format Expressions
+###### BATCH 2
+
+Movies:
+
+```json
+
+```
+
+TV Shows (use duration)
+```json
+
+```
+
+###### BATCH 4
+
+Movies:
+
+```json
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-'+imdbid+']'}/{n} ({y}) {'[imdbid-'+imdbid+']'}{ (audioLanguages.size()>2?'Multi Audio':audioLanguages.size()>1?'Dual Audio':(!audioLanguages =~ /eng/?audioLanguages.ISO3.join(', ').upper():null)) ?: '' }{ ' ['+resolution+'p '+vc+' '+ac+' '+af+' '+duration+']' } - { (bt=fn.match(/(?i)(?:\[[^\]]+\]|\([^\)]+\))$/))? bt+' ' : '' }
+```
+
+TV Shows:
+
+```json
+
 ```
 
 #### Common Filebot Issues
