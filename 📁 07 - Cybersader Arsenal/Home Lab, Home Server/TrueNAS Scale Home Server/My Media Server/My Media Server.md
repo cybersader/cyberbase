@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Saturday, August 2nd 2025, 11:44 am
+date modified: Saturday, August 2nd 2025, 12:42 pm
 ---
 
 # Links
@@ -581,17 +581,18 @@ C. Edition keywords (your original “m=” scan)
 Notes: `duration` gives ISO-8601 (e.g., `PT1H43M21S`), which Jellyfin ignores but is great for uniqueness. `{crc32}` is shorter if you prefer that. Jellyfin multiple versions require filenames like `Movie (Year) [id] - Label.ext`; the part **before** the `-` must match exactly. “Stacking” (cd1/cd2) cannot be combined with versions
 
 ##### Full Format Expressions
+
 ###### BATCH 2
 
 Movies:
 
 ```json
-
+D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/Movies/{n} ({y}) {' [imdbid-'+imdbid+']'}{ m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+duration+']'}{ bt = fn.match(/(?i)(?:\[[^\]]+\]|\([^\)]+\))$/); bt ? ' '+bt : '' }{ pc>1 ? ' -cd'+pi : '' }
 ```
 
 TV Shows (use duration)
 ```json
-
+D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/TV Shows/{n} - {s00e00} - {t} ({y}) {' [tmdbid-'+tmdbid+']'}{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+duration+']'}{ bt = fn.match(/(?i)(?:\[[^\]]+\]|\([^\)]+\))$/); bt ? ' '+bt : '' }{ pc>1 ? ' -cd'+pi : '' }
 ```
 
 ###### BATCH 4
@@ -599,13 +600,13 @@ TV Shows (use duration)
 Movies:
 
 ```json
-D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-'+imdbid+']'}/{n} ({y}) {'[imdbid-'+imdbid+']'}{ (audioLanguages.size()>2?'Multi Audio':audioLanguages.size()>1?'Dual Audio':(!audioLanguages =~ /eng/?audioLanguages.ISO3.join(', ').upper():null)) ?: '' }{ ' ['+resolution+'p '+vc+' '+ac+' '+af+' '+duration+']' } - { (bt=fn.match(/(?i)(?:\[[^\]]+\]|\([^\)]+\))$/))? bt+' ' : '' }
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-'+imdbid+']'}/{n} ({y}) {'[imdbid-'+imdbid+']'} - { m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+duration+']'}{ bt = fn.match(/(?i)(?:\[[^\]]+\]|\([^\)]+\))$/); bt ? '- '+bt : '' }
 ```
 
 TV Shows:
 
 ```json
-
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}) {'[tmdbid-'+tmdbid+']'}/Season {s}/{s00e00} - {t} - { m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+duration+']'}{ bt = fn.match(/(?i)(?:\[[^\]]+\]|\([^\)]+\))$/); bt ? '- '+bt : '' }
 ```
 
 #### Common Filebot Issues
