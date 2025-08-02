@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Friday, August 1st 2025, 7:45 pm
+date modified: Friday, August 1st 2025, 8:03 pm
 ---
 
 # Links
@@ -516,6 +516,11 @@ D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}){' {tmdb-'+tmdbid+'}'}{au
 
 <u>V3:</u>
 
+- https://www.filebot.net/forums/viewtopic.php?t=2
+- https://jellyfin.org/docs/general/server/media/movies/#multiple-versions
+- https://jellyfin.org/docs/general/server/media/shows
+- 
+
 Movies (pi first, fall back to di):
 
 ```json
@@ -538,6 +543,12 @@ TV Shows — di only:
 
 ```json
 D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}){' {tmdb-'+tmdbid+'}'}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!audioLanguages =~ /eng/?' ('+audioLanguages.ISO3.join(', ').upper()+')':''}/Season {s}/{s00e00} - {t}{' ['+vf+' '+vc+' '+ac+' '+af+']'}{ dc>1 ? ' -cd'+di : '' }
+```
+
+Movies - smart matching and runtime
+
+```json
+
 ```
 
 #### Common Filebot Issues
