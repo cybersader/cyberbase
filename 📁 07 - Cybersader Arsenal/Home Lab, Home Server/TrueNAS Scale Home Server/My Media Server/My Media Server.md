@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Saturday, August 2nd 2025, 12:42 pm
+date modified: Saturday, August 2nd 2025, 1:23 pm
 ---
 
 # Links
@@ -587,12 +587,12 @@ Notes: `duration` gives ISO-8601 (e.g., `PT1H43M21S`), which Jellyfin ignores bu
 Movies:
 
 ```json
-D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/Movies/{n} ({y}) {' [imdbid-'+imdbid+']'}{ m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+duration+']'}{ bt = fn.match(/(?i)(?:\[[^\]]+\]|\([^\)]+\))$/); bt ? ' '+bt : '' }{ pc>1 ? ' -cd'+pi : '' }
+D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/Movies/{n} ({y}) {' [imdbid-'+imdbid+']'}{ m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+duration+']'}{ bt = fn.match(/(?:\[(?!\d[^\]]*Ch\])[^\]]+\]|\([^\)]+\))$/); bt ? ' '+bt : '' }{ pc>1 ? ' -cd'+pi : '' }
 ```
 
 TV Shows (use duration)
 ```json
-D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/TV Shows/{n} - {s00e00} - {t} ({y}) {' [tmdbid-'+tmdbid+']'}{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+duration+']'}{ bt = fn.match(/(?i)(?:\[[^\]]+\]|\([^\)]+\))$/); bt ? ' '+bt : '' }{ pc>1 ? ' -cd'+pi : '' }
+D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/TV Shows/{n} - {s00e00} - {t} ({y}) {' [tmdbid-'+tmdbid+']'}{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+duration+']'}{ bt = fn.match(/(?:\[(?!\d[^\]]*Ch\])[^\]]+\]|\([^\)]+\))$/); bt ? ' '+bt : '' }{ pc>1 ? ' -cd'+pi : '' }
 ```
 
 ###### BATCH 4
@@ -600,13 +600,19 @@ D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/TV Shows/{n} - {s00e00} - {t} ({y}) {' [tmd
 Movies:
 
 ```json
-D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-'+imdbid+']'}/{n} ({y}) {'[imdbid-'+imdbid+']'} - { m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+duration+']'}{ bt = fn.match(/(?i)(?:\[[^\]]+\]|\([^\)]+\))$/); bt ? '- '+bt : '' }
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-'+imdbid+']'}/{n} ({y}) {'[imdbid-'+imdbid+']'} - { m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+seconds+'s'+']'}{ bt = fn.match(/(?:\[(?!\d[^\]]*Ch\])[^\]]+\]|\([^\)]+\))$/); bt ? ' - '+bt : '' }
+```
+
+- CRC32 variation
+
+```json
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-'+imdbid+']'}/{n} ({y}) {'[imdbid-'+imdbid+']'} - { m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+crc32+' '+seconds+'s'+']'}{ bt = fn.match(/(?:\[(?!\d[^\]]*Ch\])[^\]]+\]|\([^\)]+\))$/); bt ? ' - '+bt : '' }
 ```
 
 TV Shows:
 
 ```json
-D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}) {'[tmdbid-'+tmdbid+']'}/Season {s}/{s00e00} - {t} - { m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+duration+']'}{ bt = fn.match(/(?i)(?:\[[^\]]+\]|\([^\)]+\))$/); bt ? '- '+bt : '' }
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}) {'[tmdbid-'+tmdbid+']'}/Season {s}/{s00e00} - {t} - { m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+seconds+'s'+']'}{ bt = fn.match(/(?:\[(?!\d[^\]]*Ch\])[^\]]+\]|\([^\)]+\))$/); bt ? ' - '+bt : '' }
 ```
 
 #### Common Filebot Issues
