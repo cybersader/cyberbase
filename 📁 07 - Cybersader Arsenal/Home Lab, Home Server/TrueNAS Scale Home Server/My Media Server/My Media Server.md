@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Friday, August 1st 2025, 8:03 pm
+date modified: Friday, August 1st 2025, 9:29 pm
 ---
 
 # Links
@@ -548,7 +548,13 @@ D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}){' {tmdb-'+tmdbid+'}'}{au
 Movies - smart matching and runtime
 
 ```json
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'{imdb-'+imdbid+'}'}/{n} ({y}) {'{imdb-'+imdbid+'}'} - {def L=[];def ed=edition;if(ed)L<<ed;def tg=tags;if(tg)L.addAll(tg);def usr=fn.matchAll(/(?i)(?<=\[)[^\]]+(?=\]$)|(?<=\()[^\)]+(?=\)$)/);if(usr)L.addAll(usr);def lang=audioLanguages.size()>2?'Multi Audio':(audioLanguages.size()>1?'Dual Audio':(!audioLanguages =~ /eng/?audioLanguages.ISO3.join(', ').upper():null));if(lang)L<<lang;L<<vc;L<<(ac+' '+af);L<<((runtime?:minutes)+'m');(L.findAll{it}.join(' · ')+' – '+vf).trim()}
+```
 
+TV Shows - smart matching and runtime
+
+```json
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}) {'{tmdb-'+tmdbid+'}'}/Season {s}/{s00e00} - {t} - {def L=[];def tg=tags;if(tg)L.addAll(tg);def usr=fn.matchAll(/(?i)(?<=\[)[^\]]+(?=\]$)|(?<=\()[^\)]+(?=\)$)/);if(usr)L.addAll(usr);def lang=audioLanguages.size()>2?'Multi Audio':(audioLanguages.size()>1?'Dual Audio':(!audioLanguages =~ /eng/?audioLanguages.ISO3.join(', ').upper():null));if(lang)L<<lang;L<<vc;L<<(ac+' '+af);L<<((runtime?:minutes)+'m');(L.findAll{it}.join(' · ')+' – '+vf).trim()}
 ```
 
 #### Common Filebot Issues
