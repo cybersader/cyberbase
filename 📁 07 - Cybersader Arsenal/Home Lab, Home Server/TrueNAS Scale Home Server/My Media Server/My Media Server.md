@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Saturday, August 2nd 2025, 1:23 pm
+date modified: Saturday, August 2nd 2025, 1:30 pm
 ---
 
 # Links
@@ -618,6 +618,10 @@ D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}) {'[tmdbid-'+tmdbid+']'}/
 #### Common Filebot Issues
 
 - Invalid Characters - just click "validate"
+
+### 4) Power Rename for Specials Renaming and Other Cases
+
+- Uses PowerRename for Microsoft PowerToys along with regex for additional name transformations
 
 ### +) Music, Books, and More
 

@@ -16,6 +16,15 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 
 | File                                                                                                                                                                             | Last modified             |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md\|My Media Server]]                                               | Sat - 8/2/2025, 1:23 PM   |
+| [[📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Web or Browser-Based Obsidian/Web or Browser-Based Obsidian.md\|Web or Browser-Based Obsidian]]                         | Fri - 8/1/2025, 2:59 PM   |
+| [[📁 07 - Cybersader Arsenal/Home OS Provisioning & Resetting/Home OS Provisioning & Resetting.md\|Home OS Provisioning & Resetting]]                                            | Sun - 7/27/2025, 8:54 PM  |
+| [[📁 50 - Cybersade/Child Online Safety Tech Stack/Child Online Safety Tech Stack.md\|Child Online Safety Tech Stack]]                                                           | Sun - 7/27/2025, 5:58 PM  |
+| [[📁 50 - Cybersade/📁 50 - Cybersade.md\|📁 50 - Cybersade]]                                                                                                                    | Sun - 7/27/2025, 5:48 PM  |
+| [[📁 03 - Curations, Stacks/Open Source Media/Open Source Media.md\|Open Source Media]]                                                                                          | Mon - 7/21/2025, 9:18 PM  |
+| [[📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md\|📁 03 - Curations, Stacks]]                                                                                            | Mon - 7/21/2025, 9:17 PM  |
+| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                                                   | Sun - 7/20/2025, 3:17 PM  |
+| [[README.md\|README]]                                                                                                                                                            | Sun - 7/20/2025, 3:17 PM  |
 | [[📁 07 - Cybersader Arsenal/3D Prints/3D Prints.md\|3D Prints]]                                                                                                                 | Sun - 7/20/2025, 1:37 PM  |
 | [[⬇️ Clippings/Tech/Tec-accessories_ti-tape/Tec-accessories_ti-tape.md\|Tec-accessories_ti-tape]]                                                                                | Sun - 7/20/2025, 11:51 AM |
 | [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                   | Sun - 7/20/2025, 11:51 AM |
@@ -36,19 +45,15 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[⬇️ Clippings/ChatGPT/Legal Documents to Keep/Legal Documents to Keep.md\|Legal Documents to Keep]]                                                                             | Sun - 7/13/2025, 11:33 AM |
 | [[⬇️ Clippings/ChatGPT/Budget Zwift Setup Guide/Budget Zwift Setup Guide.md\|Budget Zwift Setup Guide]]                                                                          | Sun - 7/13/2025, 11:01 AM |
 | [[⬇️ Clippings/Tech/Kimi K2/Kimi K2.md\|Kimi K2]]                                                                                                                                | Sun - 7/13/2025, 10:55 AM |
-| [[📅 Changelog/📅 Changelog.md\|📅 Changelog]]                                                                                                                                   | Sat - 7/12/2025, 9:03 PM  |
-| [[README.md\|README]]                                                                                                                                                            | Sat - 7/12/2025, 9:03 PM  |
 | [[⬇️ Clippings/Tech/Comma3x/Comma3x.md\|Comma3x]]                                                                                                                                | Sat - 7/12/2025, 9:03 PM  |
 | [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Assistant/Home Assistant.md\|Home Assistant]]                                                                            | Sat - 7/12/2025, 5:07 PM  |
 | [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md\|Home Lab, Home Server]]                                                                             | Sat - 7/12/2025, 2:34 PM  |
 | [[📁 07 - Cybersader Arsenal/Paperless Storage/Paperless Storage.md\|Paperless Storage]]                                                                                         | Sun - 7/6/2025, 4:41 PM   |
 | [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Ollama TrueNAS Scale/Ollama TrueNAS Scale.md\|Ollama TrueNAS Scale]]                                | Sun - 7/6/2025, 2:37 PM   |
 | [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md\|TrueNAS Scale Home Server]]                                           | Sun - 7/6/2025, 2:36 PM   |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md\|My Media Server]]                                               | Fri - 7/4/2025, 11:14 AM  |
 | [[📁 06 - Learning, Notes/📁 06 - Learning, Notes.md\|📁 06 - Learning, Notes]]                                                                                                  | Fri - 7/4/2025, 11:10 AM  |
 | [[📁 06 - Learning, Notes/Security Metaphors & Allegories/Security Metaphors & Allegories.md\|Security Metaphors & Allegories]]                                                  | Fri - 7/4/2025, 11:10 AM  |
 | [[📁 03 - Curations, Stacks/Alternative YouTube Clients/Alternative YouTube Clients.md\|Alternative YouTube Clients]]                                                            | Mon - 6/30/2025, 8:43 PM  |
-| [[📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md\|📁 03 - Curations, Stacks]]                                                                                            | Mon - 6/30/2025, 8:35 PM  |
 | [[⬇️ Clippings/Websites/PotatoPirates/PotatoPirates.md\|PotatoPirates]]                                                                                                          | Mon - 6/30/2025, 6:25 PM  |
 | [[📁 03 - Curations, Stacks/⬇ Tech Dropzone/Daily Driver Stuff/Daily Driver Stuff.md\|Daily Driver Stuff]]                                                                       | Mon - 6/23/2025, 8:46 AM  |
 | [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Using Hostnames Locally/Using Hostnames Locally.md\|Using Hostnames Locally]]                       | Sun - 6/22/2025, 8:51 PM  |
@@ -61,10 +66,5 @@ TABLE dateformat(file.mtime, "ccc - f") AS "Last modified" FROM "" SORT file.mti
 | [[⬇️ Clippings/Tech/Grayjay App/Grayjay App.md\|Grayjay App]]                                                                                                                    | Wed - 6/11/2025, 1:54 PM  |
 | [[📁 16 - Society, Culture, Politics, Government/Manufacturing in America/Manufacturing in America.md\|Manufacturing in America]]                                                | Mon - 6/9/2025, 8:32 PM   |
 | [[📁 16 - Society, Culture, Politics, Government/📁 16 - Society, Culture, Politics, Government.md\|📁 16 - Society, Culture, Politics, Government]]                             | Mon - 6/9/2025, 8:31 PM   |
-| [[📁 33 - Diving/📁 33 - Diving.md\|📁 33 - Diving]]                                                                                                                             | Sun - 6/8/2025, 9:07 PM   |
-| [[⬇️ Clippings/Tech/Finicity/Finicity.md\|Finicity]]                                                                                                                             | Sun - 6/8/2025, 12:32 PM  |
-| [[⬇️ Clippings/Tech/Fintable/Fintable.md\|Fintable]]                                                                                                                             | Sun - 6/8/2025, 12:31 PM  |
-| [[⬇️ Clippings/Websites/Privacy_guides/Privacy_guides.md\|Privacy_guides]]                                                                                                       | Sun - 6/8/2025, 12:30 PM  |
-| [[⬇️ Clippings/Tech/Cake-pay/Cake-pay.md\|Cake-pay]]                                                                                                                             | Sun - 6/1/2025, 3:41 PM   |
 
 %% DATAVIEW_PUBLISHER: end %%
