@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Home IT Monitoring",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home IT Monitoring/Home IT Monitoring.md"
+    },
+    {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Hushed",
       "path": "⬇️ Clippings/Tech/Hushed/Hushed.md"
-    },
-    {
-      "basename": "Silent Link",
-      "path": "⬇️ Clippings/Tech/Silent Link/Silent Link.md"
     }
   ],
   "omittedPaths": [],

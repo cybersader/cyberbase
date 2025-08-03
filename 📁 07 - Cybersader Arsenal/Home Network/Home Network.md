@@ -13,6 +13,7 @@ date modified: Saturday, November 23rd 2024, 3:43 pm
 - **[[Ethernet Cables]]**
 - **[[Home DNS]]**
 - **[[Home Firewall]]**
+- **[[Home IT Monitoring]]**
 - **[[Home Network Defenses]]**
 - **[[Home Network Hardware]]**
 	- **[[Netgear is Not Good]]**
