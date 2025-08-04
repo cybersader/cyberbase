@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Sunday, August 3rd 2025, 3:09 pm
-date modified: Sunday, August 3rd 2025, 8:00 pm
+date modified: Sunday, August 3rd 2025, 10:16 pm
 ---
 
 [Home Lab, Home Server](../../Home%20Lab,%20Home%20Server/Home%20Lab,%20Home%20Server.md)
@@ -22,4 +22,41 @@ date modified: Sunday, August 3rd 2025, 8:00 pm
 - NetAlertx
 - Scrutiny
 - WhatsUpGold
+- Graylog
+- Wazuh
+- Security Onion
+- Teleseer
+- SPAN Port
+- Suricata
+- Snort
+- Zeek/Bro
+- DefectDojo
+- CrowdSec
+- Bitor/Orbit
+- Nuclei Scanner
+- Grype & Syft
+- Trivy
+- Anchore Engine
+- Flan - by Cloudflare
+- OWASP ZAP
+- Hive Cortex
+- Probo
+- Canary Tokens
+- OPNSense
+- Velociraptor
+- Atomic Red Team
+- Yara
+- RITA
+- Snyk
+- Splunk Community
+- Ciso Assistant
+- Comp AI
+- Portmaster
+- Bitwarden
+- Pfsense
+- Kasm Workspaces
+- Tails OS
+- Qubes OS
+- Firewalla
+- Bettercap
 - 
