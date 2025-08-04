@@ -30,7 +30,8 @@
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
     "",
-    "📦 VAULT SANDBOX TESTING/Templater Templates/Copy Full Path.md"
+    "📦 VAULT SANDBOX TESTING/Templater Templates/Copy Full Path.md",
+    "📦 VAULT SANDBOX TESTING/Templater Templates/Linkify DFD.md"
   ],
   "startup_templates": [
     ""
