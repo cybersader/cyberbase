@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Sunday, August 3rd 2025, 3:09 pm
-date modified: Monday, August 4th 2025, 9:01 am
+date modified: Monday, August 4th 2025, 9:40 am
 ---
 
 [Home Lab, Home Server](../../Home%20Lab,%20Home%20Server/Home%20Lab,%20Home%20Server.md)
@@ -15,7 +15,7 @@ date modified: Monday, August 4th 2025, 9:01 am
 
 # Technology
 
-- Netdata
+- [Netdata](https://www.netdata.cloud/)
 - SNMPv3
 - Prometheus, Grafana, Telegraph
 - Uptime Kuma
@@ -32,6 +32,9 @@ date modified: Monday, August 4th 2025, 9:01 am
 	- [youtube.com > Take Control of Your Security: Free, Self-Hosted SIEM & Logs with Graylog, Wazuh, & Security Onion](https://www.youtube.com/watch?v=GZZZvLRSUvc&t=165s)
 	- 
 - Teleseer
+- [Blumira](https://www.blumira.com/pricing)
+	- [youtube.com > Blumira: The SIEM and XDR Security Tool for IT & MSP Teams](https://www.youtube.com/watch?v=5dytu5YW0LY)
+	- SIEM and XDR with free tier?
 - SPAN Port
 - Suricata
 - Snort
@@ -40,7 +43,9 @@ date modified: Monday, August 4th 2025, 9:01 am
 - [CrowdSec](https://www.crowdsec.net/)
 	- Open-source, participative protection against malicious IPs.
 	- 
-
+- [RunZero](https://www.runzero.com/pricing/)
+	- [youtube.com > In Depth Network Discovery Made Easy Using RunZero @runZeroInc](https://www.youtube.com/watch?v=9xnV2KeyQjY)
+	- 
 - [Nuclei Scanner](https://projectdiscovery.io/nuclei)
 	- Nuclei uses a vast templating library to scan applications, cloud infrastructure, and networks to find and remediate vulnerabilities.
 - [Bitor/Orbit](https://bitor.dev/)
@@ -85,3 +90,10 @@ date modified: Monday, August 4th 2025, 9:01 am
 - Zabbix
 - [Matano](https://matanosecurity.com/)
 	- Modern Cloud Native SIEM
+- Ansible
+- OpenTofu
+- Kestra
+- [Terrateam](https://terrateam.io/)
+	- Plan, govern, and ship infrastructure changes through GitOps workflows.
+- [Gitlab](https://about.gitlab.com/)
+- [Gitea](https://about.gitea.com/)
