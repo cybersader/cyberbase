@@ -15,14 +15,11 @@ date modified: Monday, August 4th 2025, 12:32 pm
 	- [[Transfer]]
 - **DFD Objects Database**
 	- **Assets**
-		- [[asset-rectangle-mdxlyno2l28]]
-		- [[asset-rectangle-mdxlynornxs]]
-		- [[asset-rectangle-mdxlynsknxy]]
-		- [[custom-name]]
 	- **Entities**
 	- **Transfers**
-		- [[transfer_asset-rectangle-mdxlynornxs-to-asset-rectangle-mdxlynsknxy-mdxlynyd6bh]]
 - **[[Object 2]]**
+- **Transfers**
+	- [[transfer_asset-rectangle-qon3-to-asset-rectangle-ryu5]]
 
 %% End Waypoint %%
 

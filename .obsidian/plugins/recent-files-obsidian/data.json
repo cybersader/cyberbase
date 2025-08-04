@@ -1,20 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "DFD Example",
+      "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/DFD Example.md"
+    },
+    {
+      "basename": "Linkify DFD v8",
+      "path": "📦 VAULT SANDBOX TESTING/Excalidraw Scripts/Linkify DFD v8/Linkify DFD v8.md"
+    },
+    {
       "basename": "Linkify DFD Debug",
       "path": "📦 VAULT SANDBOX TESTING/Excalidraw Scripts/Linkify DFD Debug/Linkify DFD Debug.md"
     },
     {
-      "basename": "asset-rectangle-mdxlyno2l28",
-      "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/DFD Objects Database/Assets/asset-rectangle-mdxlyno2l28.md"
-    },
-    {
       "basename": "Asset",
       "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/DFD Object Configuration/Asset.md"
-    },
-    {
-      "basename": "DFD Example",
-      "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/DFD Example.md"
     },
     {
       "basename": "Linkify DFD",
@@ -183,18 +183,6 @@
     {
       "basename": "TrueNAS Cloud Backups",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueNAS Cloud Backups.md"
-    },
-    {
-      "basename": "TrueNAS Scale Home Server",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
-    },
-    {
-      "basename": "TubeArchivist",
-      "path": "⬇️ Clippings/Tech/TubeArchivist/TubeArchivist.md"
-    },
-    {
-      "basename": "Formed",
-      "path": "⬇️ Clippings/Tech/Formed/Formed.md"
     }
   ],
   "omittedPaths": [],
