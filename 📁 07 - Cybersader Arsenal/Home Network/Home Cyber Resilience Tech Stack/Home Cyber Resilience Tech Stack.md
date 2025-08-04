@@ -25,13 +25,16 @@ date modified: Monday, August 4th 2025, 9:40 am
 - [Graylog](https://graylog.org/)
 	- [youtube.com > Take Control of Your Security: Free, Self-Hosted SIEM & Logs with Graylog, Wazuh, & Security Onion](https://www.youtube.com/watch?v=GZZZvLRSUvc&t=165s)
 	- 
-- Wazuh
+- [Wazuh](https://wazuh.com/)
 	- [youtube.com > Take Control of Your Security: Free, Self-Hosted SIEM & Logs with Graylog, Wazuh, & Security Onion](https://www.youtube.com/watch?v=GZZZvLRSUvc&t=165s)
+	- [youtube.com > this Cybersecurity Platform is FREE](https://www.youtube.com/watch?v=i68atPbB8uQ)
+	- [youtube.com > Detection Engineering with Wazuh](https://www.youtube.com/watch?v=nSOqU1iX5oQ&t=413s)'
 	- 
 - Security Onion
 	- [youtube.com > Take Control of Your Security: Free, Self-Hosted SIEM & Logs with Graylog, Wazuh, & Security Onion](https://www.youtube.com/watch?v=GZZZvLRSUvc&t=165s)
 	- 
-- Teleseer
+- [Teleseer](https://www.cyberspatial.com/teleseer-documentation)
+	- 
 - [Blumira](https://www.blumira.com/pricing)
 	- [youtube.com > Blumira: The SIEM and XDR Security Tool for IT & MSP Teams](https://www.youtube.com/watch?v=5dytu5YW0LY)
 	- SIEM and XDR with free tier?
@@ -92,7 +95,7 @@ date modified: Monday, August 4th 2025, 9:40 am
 	- Modern Cloud Native SIEM
 - Ansible
 - OpenTofu
-- Kestra
+- [Kestra](https://kestra.io/)
 - [Terrateam](https://terrateam.io/)
 	- Plan, govern, and ship infrastructure changes through GitOps workflows.
 - [Gitlab](https://about.gitlab.com/)
