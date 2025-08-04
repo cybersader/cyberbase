@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Sunday, August 3rd 2025, 3:09 pm
-date modified: Sunday, August 3rd 2025, 3:11 pm
+date modified: Sunday, August 3rd 2025, 8:00 pm
 ---
 
 [Home Lab, Home Server](../../Home%20Lab,%20Home%20Server/Home%20Lab,%20Home%20Server.md)

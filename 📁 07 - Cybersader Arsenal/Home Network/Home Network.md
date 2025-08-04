@@ -11,9 +11,9 @@ date modified: Saturday, November 23rd 2024, 3:43 pm
 - **[[Bridging New Home Router]]**
 - **[[Cable Management]]**
 - **[[Ethernet Cables]]**
+- **[[Home Cyber Resilience Tech Stack]]**
 - **[[Home DNS]]**
 - **[[Home Firewall]]**
-- **[[Home IT Monitoring]]**
 - **[[Home Network Defenses]]**
 - **[[Home Network Hardware]]**
 	- **[[Netgear is Not Good]]**
