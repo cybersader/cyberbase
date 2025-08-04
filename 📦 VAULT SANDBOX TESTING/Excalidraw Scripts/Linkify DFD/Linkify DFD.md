@@ -5,27 +5,38 @@ publish: true
 permalink:
 title:
 date created: Monday, August 4th 2025, 12:48 pm
-date modified: Monday, August 4th 2025, 4:07 pm
+date modified: Monday, August 4th 2025, 4:20 pm
 ---
 
 /*
 ```js*/
-// Linkify DFD — v0.7.1
-// Fix: build allEls/byId once; remove duplicate byId declaration.
-// Storage modes + config-driven templates carried over from v0.7.
+// Linkify DFD — v0.7.2
+// Fixes: transfer via Add-link, filename "replace" default, shortest canvas links.
+// Supports: config-driven templates, storage modes, assets/entities/transfers.
 
 /*** ====== CONFIG ====== ***/
-const REQUIRE_EXPLICIT_MARKER   = true;
-const INCLUDE_SHAPE_IN_NAME     = true;
-const INCLUDE_NAME_IN_FILENAME  = true;
-const WRITE_INLINE_FIELDS       = false;
+const REQUIRE_EXPLICIT_MARKER   = true;       // only process marked elements
+const FILENAME_MODE             = "replace";  // "replace" | "inject"
+const INCLUDE_SHAPE_IN_NAME     = true;       // used only when FILENAME_MODE === "inject"
+const INCLUDE_NAME_IN_FILENAME  = true;       // used only when FILENAME_MODE === "inject"
+const WRITE_INLINE_FIELDS       = false;      // add DFD_out:: / DFD_in:: in body
 
-const DB_PLACEMENT    = "db_folder";            // "db_folder" | "flat" | "diagram_named"
-const DB_PARENT_PATH  = "";                     // "" => diagram's folder
-const DB_FOLDER_NAME  = "DFD Objects Database"; // used only when db_folder
+// Canvas link display: "none" = plain shortest link, "basename" = [[path|Note]],
+// "fm_name" = [[path|<frontmatter name>]] if available, else basename.
+const ELEMENT_LINK_ALIAS_MODE   = "none";     // "none" | "basename" | "fm_name"
 
+// Storage placement:
+//  - "db_folder":     <DB_PARENT_PATH>/<DB_FOLDER_NAME>/<subfolder>
+//  - "flat":          <DB_PARENT_PATH or DRAW_DIR>/<subfolder>
+//  - "diagram_named": <DB_PARENT_PATH>/<DiagramBaseName>/<subfolder>
+const DB_PLACEMENT    = "db_folder";
+const DB_PARENT_PATH  = "";                        // "" => diagram's folder
+const DB_FOLDER_NAME  = "DFD Objects Database";    // used only when "db_folder"
+
+// Config folder (vault-relative)
 const DFD_CONFIG_DIR  = "DFD Object Configuration";
 
+// Fallbacks if no config file is found
 const DEFAULT_SUBFOLDERS = { asset:"Assets", entity:"Entities", transfer:"Transfers" };
 const FALLBACK_DEFAULTS  = {
   asset:    { schema:"dfd-asset-v1",    type:"asset",    classification:"", owner:"", systemType:"", url:"" },
@@ -44,11 +55,15 @@ const sanitize   = (s) => (s||"").toString().replace(/[\\/#^|?%*:<>"]/g," ").rep
 const slug       = (s) => sanitize(s).replace(/\s+/g,"-").toLowerCase() || "unnamed";
 const uniqId     = () => (Date.now().toString(36) + Math.random().toString(36).slice(2,5)).toLowerCase();
 
-function fileToWiki(path, fromPath) {
+function shortestLinktext(path, fromPath) {
+  // Obsidian’s MetadataCache.fileToLinktext → shortest relative linktext. :contentReference[oaicite:3]{index=3}
   const f = app.vault.getAbstractFileByPath(path);
-  const linkText = app.metadataCache.fileToLinktext(f, fromPath);
-  return `[[${linkText}]]`;
-} // shortest relative wikilink. :contentReference[oaicite:1]{index=1}
+  return app.metadataCache.fileToLinktext(f, fromPath);
+}
+function toWiki(path, fromPath, alias = null) {
+  const linkText = shortestLinktext(path, fromPath);
+  return alias ? `[[${linkText}|${alias}]]` : `[[${linkText}]]`;
+}
 
 async function ensureFolder(p){
   if (!p) return;
@@ -60,7 +75,7 @@ async function ensureFolder(p){
   }
 }
 
-// atomic FM helpers. :contentReference[oaicite:2]{index=2}
+// Atomic frontmatter edits. :contentReference[oaicite:4]{index=4}
 async function setFM(filePath, updater){
   const f = app.vault.getAbstractFileByPath(filePath);
   if (!f) return;
@@ -81,8 +96,8 @@ async function appendInline(filePath, field, wikilink){
   await writeFile(filePath, (content.endsWith("\n") ? content : content+"\n") + line + "\n");
 }
 
-// load config notes (marker → {kind,subfolder,defaults,body})
-function getMdUnder(dirPath){
+// ---- load configs (marker → cfg) ----
+function mdUnder(dirPath){
   const folder = app.vault.getAbstractFileByPath(dirPath);
   if (!folder || !folder.children) return [];
   const out = [];
@@ -92,7 +107,7 @@ function getMdUnder(dirPath){
 }
 async function loadConfigs(){
   const map = new Map();
-  const files = getMdUnder(DFD_CONFIG_DIR);
+  const files = mdUnder(DFD_CONFIG_DIR);
   for (const tf of files) {
     const cache = app.metadataCache.getFileCache(tf);
     const fm = cache?.frontmatter || {};
@@ -117,15 +132,14 @@ async function loadConfigs(){
   return map;
 }
 
-// markers: element.link or grouped text like [[TPL:Asset]], and inline naming with =Name
+// ---- markers & inline names ----
 const MARKER_RE = /^(?:\[\[)?(?:tpl:)?\s*(asset|entity|transfer)\s*(?:=\s*([^\]]+))?(?:\]\])?$/i;
-function parseMarkerString(s){
+function parseMarker(s){
   if (!s) return null;
   const m = s.trim().match(MARKER_RE);
   if (!m) return null;
   return { kind: m[1].toLowerCase(), inlineName: (m[2]||"").trim() || null };
 }
-
 const groupOf = (all, el) => {
   const gid = (el.groupIds && el.groupIds.length) ? el.groupIds[el.groupIds.length-1] : null;
   return gid ? all.filter(x => x.groupIds && x.groupIds.includes(gid)) : [el];
@@ -135,18 +149,28 @@ const firstText = (els) => (els.find(e=>e.type==="text" && (e.text||"").trim())?
 function detectKindAndName(el, group){
   const cd = el.customData?.dfd || el.customData?.DFD;
   if (cd?.kind && ["asset","entity","transfer"].includes(cd.kind)) return { kind: cd.kind, inlineName: null };
-  const linkMarker = parseMarkerString(typeof el.link==="string" ? el.link : "");
-  if (linkMarker) return linkMarker;
-  const textMarker = parseMarkerString(firstText(group));
-  if (textMarker) return textMarker;
+
+  const lm = parseMarker(typeof el.link==="string" ? el.link : "");
+  if (lm) return lm;
+
+  const tm = parseMarker(firstText(group));
+  if (tm) return tm;
+
   if (REQUIRE_EXPLICIT_MARKER) return null;
-  if (el.type === "arrow") return { kind: "transfer", inlineName: null };
+  if (isArrowish(el)) return { kind:"transfer", inlineName:null };
   const nodeTypes = new Set(["rectangle","ellipse","diamond","image","frame"]);
-  if (nodeTypes.has(el.type)) return { kind: "asset", inlineName: null };
+  if (nodeTypes.has(el.type)) return { kind:"asset", inlineName:null };
   return null;
 }
 
-// ---------- placement ----------
+// Treat 'arrow' or 'line' with arrowheads as transfer-capable. :contentReference[oaicite:5]{index=5}
+function isArrowish(el){
+  if (el.type === "arrow") return true;
+  if (el.type === "line" && (el.endArrowhead || el.startArrowhead)) return true;
+  return false;
+}
+
+// ---- placement ----
 ea.setView("active");
 const view = ea.targetView;
 if (!view || !view.file) { new Notice("Open an Excalidraw file first."); return; }
@@ -155,7 +179,7 @@ const DRAW_DIR = view.file.parent?.path || "";
 const DIAGRAM_BASENAME = baseName(view.file.path);
 const PARENT = DB_PARENT_PATH || DRAW_DIR;
 
-function rootFor(kind){
+function rootFor(){
   if (DB_PLACEMENT === "db_folder")     return [PARENT, DB_FOLDER_NAME].filter(Boolean).join("/");
   if (DB_PLACEMENT === "diagram_named") return [PARENT, DIAGRAM_BASENAME].filter(Boolean).join("/");
   return PARENT; // flat
@@ -169,56 +193,69 @@ function cfgFor(keyOrKind){
   const kind = ["asset","entity","transfer"].includes(k) ? k : "asset";
   return { kind, subfolder: DEFAULT_SUBFOLDERS[kind], defaults: FALLBACK_DEFAULTS[kind], body: "" };
 }
-
-async function ensureRoots(){
-  for (const kind of ["asset","entity","transfer"]) {
-    const cfg = cfgFor(kind);
-    const dir = [rootFor(kind), (cfg.subfolder || DEFAULT_SUBFOLDERS[kind])].filter(Boolean).join("/");
-    await ensureFolder(dir);
-  }
-}
-await ensureRoots();
-
 function folderFor(kind){
   const cfg = cfgFor(kind);
-  return [rootFor(kind), (cfg.subfolder || DEFAULT_SUBFOLDERS[kind])].filter(Boolean).join("/");
+  return [rootFor(), (cfg.subfolder || DEFAULT_SUBFOLDERS[kind])].filter(Boolean).join("/");
 }
+await ensureFolder(folderFor("asset"));
+await ensureFolder(folderFor("entity"));
+await ensureFolder(folderFor("transfer"));
 
-// ---------- data snapshot (build ONCE) ----------
+// ---- scene snapshot ----
 const allEls = ea.getViewElements ? ea.getViewElements() : ea.getElements();
 const byId   = Object.fromEntries(allEls.map(e => [e.id, e]));
 
-// ---------- creation ----------
+// ---- creation ----
 async function createFromConfig(kind, inlineName, shapeType){
   const cfg = cfgFor(kind);
-  const id  = uniqId();
-  const namePart  = (inlineName && INCLUDE_NAME_IN_FILENAME) ? `-${slug(inlineName)}` : "";
-  const shapePart = (INCLUDE_SHAPE_IN_NAME && shapeType) ? `-${shapeType}` : "";
-  const fileBase  = `${kind}${shapePart}${namePart}-${id}`;
-  const folder    = folderFor(kind);
+  let fileBase, path;
 
-  let path = `${folder}/${fileBase}.md`;
-  let i=2; while (exists(path)) { path = `${folder}/${fileBase}-${i}.md`; i++; }
+  if (inlineName && FILENAME_MODE === "replace") {
+    // Just the provided name, keep unique via suffix
+    fileBase = slug(inlineName);
+    if (!fileBase) fileBase = kind;
+    path = `${folderFor(kind)}/${fileBase}.md`;
+    let i=2; while (exists(path)) { path = `${folderFor(kind)}/${fileBase}-${i}.md`; i++; }
+  } else {
+    // Inject mode (old behavior)
+    const id  = uniqId();
+    const namePart  = (inlineName && INCLUDE_NAME_IN_FILENAME) ? `-${slug(inlineName)}` : "";
+    const shapePart = (INCLUDE_SHAPE_IN_NAME && shapeType) ? `-${shapeType}` : "";
+    fileBase = `${kind}${shapePart}${namePart}-${id}`;
+    path = `${folderFor(kind)}/${fileBase}.md`;
+    let i=2; while (exists(path)) { path = `${folderFor(kind)}/${fileBase}-${i}.md`; i++; }
+  }
 
   const fm = Object.assign({}, cfg.defaults, { name: inlineName || cfg.defaults?.name || kind, created: nowISO() });
   const fmLines = ["---", ...Object.entries(fm).map(([k,v]) => `${k}: ${typeof v==="string" ? `"${String(v).replace(/"/g,'\\"')}"` : JSON.stringify(v)}`), "---"];
   const content = cfg.body ? fmLines.join("\n") + "\n\n" + cfg.body : fmLines.join("\n") + "\n\n";
   await createFile(path, content);
-  return { path, link: fileToWiki(path, view.file.path), name: fileBase };
+  return { path, link: toWiki(path, view.file.path, computeAlias(path)), name: fileBase };
+}
+
+function computeAlias(path){
+  if (ELEMENT_LINK_ALIAS_MODE === "basename") return baseName(path);
+  if (ELEMENT_LINK_ALIAS_MODE === "fm_name") {
+    const cache = app.metadataCache.getCache(path);
+    const n = cache?.frontmatter?.name;
+    return n ? String(n) : baseName(path);
+  }
+  return null; // "none": no alias in the canvas link
 }
 
 async function ensureNode(el, kind, inlineName){
   if (!["asset","entity"].includes(kind)) return null;
   const group = groupOf(allEls, el);
 
+  // Respect existing wikilink
   const existing = group.find(e => typeof e.link==="string" && e.link.startsWith("[["))?.link;
   if (existing) {
     const p = existing.slice(2,-2);
     if (exists(p)) {
       const largest = group.reduce((a,b)=> (a.width*a.height >= b.width*b.height ? a : b), group[0]);
-      largest.link = fileToWiki(p, view.file.path);
+      largest.link = toWiki(p, view.file.path, computeAlias(p));
       ea.copyViewElementsToEAforEditing([largest]);
-      return { path: p, link: fileToWiki(p, view.file.path), name: baseName(p) };
+      return { path: p, link: largest.link, name: baseName(p) };
     }
   }
 
@@ -226,20 +263,23 @@ async function ensureNode(el, kind, inlineName){
 
   const node = await createFromConfig(kind, inlineName, el.type);
   const largest = group.reduce((a,b)=> (a.width*a.height >= b.width*b.height ? a : b), group[0]);
-  largest.link = node.link;
+  largest.link = node.link; // shortest (with optional alias)
   ea.copyViewElementsToEAforEditing([largest]);
   return node;
 }
 
 async function ensureTransfer(arr){
-  if (arr.type !== "arrow") return;
+  if (!isArrowish(arr)) return;
 
+  // Accept element.link = "transfer" or grouped [[TPL:Transfer]] or customData
   const detected = detectKindAndName(arr, [arr]);
   if (!detected || detected.kind!=="transfer") return;
 
+  // Must be bound on both ends. Excalidraw exposes start/end bindings on arrow/line. :contentReference[oaicite:6]{index=6}
   const fromId = arr.startBinding?.elementId;
   const toId   = arr.endBinding?.elementId;
-  if (!fromId || !toId) return; // needs both bindings (Excalidraw exposes these on arrows)
+  if (!fromId || !toId) return;
+
   const fromEl = byId[fromId], toEl = byId[toId];
   if (!fromEl || !toEl) return;
 
@@ -251,11 +291,11 @@ async function ensureTransfer(arr){
   const toNode   = await ensureNode(toEl,   toDet.kind,   toDet.inlineName);
   if (!fromNode || !toNode) return;
 
-  // respect pre-existing arrow link
+  // Respect existing transfer link
   if (typeof arr.link==="string" && arr.link.startsWith("[[")) {
     const p = arr.link.slice(2,-2);
     if (exists(p)) {
-      const w = fileToWiki(p, view.file.path);
+      const w = toWiki(p, view.file.path, computeAlias(p));
       await ensureArrayFM(fromNode.path, "dfd_out", w);
       await ensureArrayFM(toNode.path,   "dfd_in",  w);
       await appendInline(fromNode.path, "DFD_out", w);
@@ -264,7 +304,7 @@ async function ensureTransfer(arr){
     return;
   }
 
-  // create transfer
+  // Create transfer file (base from endpoints; add id for uniqueness)
   const tcfg = cfgFor("transfer");
   const id   = uniqId();
   const base = `transfer_${slug(baseName(fromNode.path))}-to-${slug(baseName(toNode.path))}-${id}`;
@@ -276,17 +316,17 @@ async function ensureTransfer(arr){
   const content0 = tcfg.body ? fm0Lines.join("\n") + "\n\n" + tcfg.body : fm0Lines.join("\n") + "\n\n";
   await createFile(tPath, content0);
 
-  const fromW = fileToWiki(fromNode.path, view.file.path);
-  const toW   = fileToWiki(toNode.path,   view.file.path);
-  const srcW  = fileToWiki(view.file.path, view.file.path);
+  const fromW = toWiki(fromNode.path, view.file.path);
+  const toW   = toWiki(toNode.path,   view.file.path);
+  const srcW  = toWiki(view.file.path, view.file.path);
   await setFM(tPath, (fm) => {
     fm.schema = tcfg.defaults?.schema || FALLBACK_DEFAULTS.transfer.schema;
     fm.type   = tcfg.defaults?.type   || FALLBACK_DEFAULTS.transfer.type;
     fm.from = fromW; fm.to = toW; fm.source_drawing = srcW;
   });
 
-  const xferW = fileToWiki(tPath, view.file.path);
-  arr.link = xferW;
+  const xferW = toWiki(tPath, view.file.path, computeAlias(tPath));
+  arr.link = xferW; // shortest (with optional alias) on the canvas
   const short = "TR-" + uniqId().slice(0,5).toUpperCase();
   arr.customData = { ...(arr.customData||{}), dfd: { ...(arr.customData?.dfd||{}), kind:"transfer", edgeId: short, transferPath: tPath, from: fromW, to: toW } };
   try { if (Array.isArray(arr.points) && arr.points.length === 2) ea.addLabelToLine(arr.id, short); } catch(_){}
@@ -298,17 +338,22 @@ async function ensureTransfer(arr){
   await appendInline(toNode.path,   "DFD_in",  xferW);
 }
 
-// ---------- run ----------
+// ---- run ----
 await (async () => {
+  // ensure roots exist
+  await ensureFolder(folderFor("asset"));
+  await ensureFolder(folderFor("entity"));
+  await ensureFolder(folderFor("transfer"));
+
   // nodes
-  for (const n of allEls.filter(e => e.type !== "arrow")) {
+  for (const n of allEls.filter(e => !isArrowish(e))) {
     const d = detectKindAndName(n, groupOf(allEls, n));
     if (d && (d.kind==="asset" || d.kind==="entity")) await ensureNode(n, d.kind, d.inlineName);
   }
-  // arrows
-  for (const a of allEls.filter(e => e.type === "arrow")) {
+  // arrows + "arrowish" lines
+  for (const a of allEls.filter(isArrowish)) {
     await ensureTransfer(a);
   }
   await ea.addElementsToView(false,true,true,true);
 })();
-new Notice("Linkify DFD v0.7.1: done");
+new Notice("Linkify DFD v0.7.2: done");
