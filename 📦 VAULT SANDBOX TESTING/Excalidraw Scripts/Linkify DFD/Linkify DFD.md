@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Monday, August 4th 2025, 12:48 pm
-date modified: Monday, August 4th 2025, 4:20 pm
+date modified: Monday, August 4th 2025, 4:45 pm
 ---
 
 /*
@@ -13,6 +13,9 @@ date modified: Monday, August 4th 2025, 4:20 pm
 // Linkify DFD — v0.7.2
 // Fixes: transfer via Add-link, filename "replace" default, shortest canvas links.
 // Supports: config-driven templates, storage modes, assets/entities/transfers.
+
+const DEBUG     = true;     // 👉 turn off when done
+const LOG_LINKS = true;     // 👉 logs to browser console
 
 /*** ====== CONFIG ====== ***/
 const REQUIRE_EXPLICIT_MARKER   = true;       // only process marked elements
@@ -262,6 +265,7 @@ async function ensureNode(el, kind, inlineName){
   if (REQUIRE_EXPLICIT_MARKER && !detectKindAndName(el, group)) return null;
 
   const node = await createFromConfig(kind, inlineName, el.type);
+  debugNot(`✓ Node (${kind}) → ${node.link}`);
   const largest = group.reduce((a,b)=> (a.width*a.height >= b.width*b.height ? a : b), group[0]);
   largest.link = node.link; // shortest (with optional alias)
   ea.copyViewElementsToEAforEditing([largest]);
@@ -301,6 +305,7 @@ async function ensureTransfer(arr){
       await appendInline(fromNode.path, "DFD_out", w);
       await appendInline(toNode.path,   "DFD_in",  w);
     }
+    
     return;
   }
 
@@ -336,6 +341,19 @@ async function ensureTransfer(arr){
   await ensureArrayFM(toNode.path,   "dfd_in",  xferW);
   await appendInline(fromNode.path, "DFD_out", xferW);
   await appendInline(toNode.path,   "DFD_in",  xferW);
+  
+  debugNot(`✓ Transfer arrow → ${xferW}`);Fx
+}
+
+// helper for debug notices
+function debugNot(msg){ if (DEBUG) new Notice(msg, 4000); }
+
+// override toWiki so we can debug link text
+function toWiki(path, fromPath, alias = null) {
+  const linkText = shortestLinktext(path, fromPath);
+  const wl = alias ? `[[${linkText}|${alias}]]` : `[[${linkText}]]`;
+  if (LOG_LINKS) console.log(`link for ${baseName(path)} = ${wl}`);
+  return wl;
 }
 
 // ---- run ----
