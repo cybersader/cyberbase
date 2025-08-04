@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Saturday, August 2nd 2025, 2:49 pm
+date modified: Sunday, August 3rd 2025, 8:23 pm
 ---
 
 # Links
@@ -601,25 +601,25 @@ D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/TV Shows/{n} - {s00e00} - {t} ({y}) {' [tmd
 Movies:
 
 ```json
-D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-'+imdbid+']'}/{n} ({y}) {'[imdbid-'+imdbid+']'} - { m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+seconds+'s'+']'}{ bt = fn.match(/(?:\[(?!\d[^\]]*Ch\])[^\]]+\]|\([^\)]+\))$/); bt ? ' - '+bt : '' }
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-'+imdbid+']'}/{n} ({y}) {'[imdbid-'+imdbid+']'} - { m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+seconds+'s'+']'}{ bt = fn.match(/(?:\[(?![\d]+P[^\]]*(?:Ch|S)\])[^\]]+\]|\([^\)]+\))$/); bt ? ' - '+bt : '' }
 ```
 
 - CRC32 variation
 
 ```json
-D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-'+imdbid+']'}/{n} ({y}) {'[imdbid-'+imdbid+']'} - { m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+crc32+' '+seconds+'s'+']'}{ bt = fn.match(/(?:\[(?!\d[^\]]*Ch\])[^\]]+\]|\([^\)]+\))$/); bt ? ' - '+bt : '' }
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-'+imdbid+']'}/{n} ({y}) {'[imdbid-'+imdbid+']'} - { m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+crc32+' '+seconds+'s'+']'}{ bt = fn.match(/(?:\[(?![\d]+P[^\]]*(?:Ch|S)\])[^\]]+\]|\([^\)]+\))$/); bt ? ' - '+bt : '' }
 ```
 
 - Duration variation
 
 ```json
-D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-'+imdbid+']'}/{n} ({y}) {'[imdbid-'+imdbid+']'} - { m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+duration+']'}{ bt = fn.match(/(?:\[(?!\d[^\]]*Ch\])[^\]]+\]|\([^\)]+\))$/); bt ? ' - '+bt : '' }
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-'+imdbid+']'}/{n} ({y}) {'[imdbid-'+imdbid+']'} - { m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+duration+']'}{ bt = fn.match(/(?:\[(?![\d]+P[^\]]*(?:Ch|S)\])[^\]]+\]|\([^\)]+\))$/); bt ? ' - '+bt : '' }
 ```
 
 TV Shows:
 
 ```json
-D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}) {'[tmdbid-'+tmdbid+']'}/Season {s}/{s00e00} - {t} - { m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+seconds+'s'+']'}{ bt = fn.match(/(?:\[(?!\d[^\]]*Ch\])[^\]]+\]|\([^\)]+\))$/); bt ? ' - '+bt : '' }
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}) {'[tmdbid-'+tmdbid+']'}/Season {s}/{s00e00} - {t} - { m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+seconds+'s'+']'}{ bt = fn.match(/(?:\[(?![\d]+P[^\]]*(?:Ch|S)\])[^\]]+\]|\([^\)]+\))$/); bt ? ' - '+bt : '' }
 ```
 
 - Duration variation
