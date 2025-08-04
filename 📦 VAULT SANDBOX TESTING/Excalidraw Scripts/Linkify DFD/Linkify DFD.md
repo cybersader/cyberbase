@@ -5,45 +5,42 @@ publish: true
 permalink:
 title:
 date created: Monday, August 4th 2025, 12:48 pm
-date modified: Monday, August 4th 2025, 1:57 pm
+date modified: Monday, August 4th 2025, 2:29 pm
 ---
 
 /*
 ```js*/
-// Linkify DFD — v0.4
-// - Shortest wikilinks everywhere (and quoted in YAML)
-// - Assets + Entities + Transfers
-// - Endpoint notes get frontmatter arrays: dfd_out / dfd_in
+// Linkify DFD — v0.5
+// - Processes ONLY marked shapes/arrows (markers or customData) by default
+// - Asset, Entity, Transfer notes; shortest wikilinks; stable short IDs
+// - Endpoint notes get frontmatter arrays dfd_out[] / dfd_in[]
 // - Optional inline fields via WRITE_INLINE_FIELDS
-// - Detects types by [[TPL:*]] marker or customData.dfd.kind
-// - Names transfers: transfer_<from>-to-<to>.md
 
-// --------- CONFIG ----------
-const ASSUME_ALL_ELEMENTS_ARE_DFD = true;   // Unmarked nodes => asset; unmarked arrows => transfer
-const WRITE_INLINE_FIELDS = false;          // Also add "DFD_out::"/"DFD_in::" inline fields
-const ASSETS_SUBFOLDER    = "Assets";       // All are relative to the drawing’s folder
+// ======= CONFIG =======
+const REQUIRE_EXPLICIT_MARKER = true;      // if true, ignore unmarked elements
+const INCLUDE_SHAPE_IN_NAME   = true;      // asset-rectangle-abc12 vs asset-abc12
+const WRITE_INLINE_FIELDS     = false;     // also add DFD_out:: / DFD_in:: lines
+
+const ASSETS_SUBFOLDER    = "Assets";      // under the drawing’s folder
 const ENTITIES_SUBFOLDER  = "Entities";
 const TRANSFERS_SUBFOLDER = "Transfers";
 
-const HARDCODED_TEMPLATES = {
-  "[[TPL:Asset]]": {
-    kind: "asset",
-    defaults: { schema: "dfd-asset-v1", type: "asset", classification: "", owner: "", systemType: "", url: "" }
-  },
-  "[[TPL:Entity]]": {
-    kind: "entity",
-    defaults: { schema: "dfd-entity-v1", type: "entity", category: "", contact: "", jurisdiction: "" }
-  },
-  "[[TPL:Transfer]]": {
-    kind: "transfer",
-    defaults: { schema: "dfd-transfer-v1", type: "transfer", method: "", frequency: "", classification: "", risk: "" }
-  },
+// Marker links used on library items or grouped tiny text
+const MARKERS = {
+  asset:    "[[TPL:Asset]]",
+  entity:   "[[TPL:Entity]]",
+  transfer: "[[TPL:Transfer]]",
 };
-// --------------------------------
+
+// Default frontmatter per kind
+const DEFAULTS = {
+  asset:   { schema: "dfd-asset-v1",   type: "asset",   classification: "", owner: "", systemType: "", url: "" },
+  entity:  { schema: "dfd-entity-v1",  type: "entity",  category: "", contact: "", jurisdiction: "" },
+  transfer:{ schema: "dfd-transfer-v1",type: "transfer",method: "", frequency: "", classification: "", risk: "" },
+};
+// ======================
 
 const nowISO = () => new Date().toISOString();
-const sanitize = (s) => (s||"").toString().replace(/[\\/#^|?%*:<>"]/g," ").replace(/\s+/g," ").trim();
-const slug = (s) => sanitize(s).replace(/\s+/g,"-").toLowerCase() || "unnamed";
 const exists = (p) => !!app.vault.getAbstractFileByPath(p);
 const createFile = async (p,c) => await app.vault.create(p,c);
 const readFile   = async (p) => await app.vault.read(app.vault.getAbstractFileByPath(p));
@@ -59,214 +56,209 @@ async function ensureFolder(folderPath){
   }
 }
 
+// Short, stable-ish ID (time base36 + 3 random base36)
+function shortId() {
+  return (Date.now().toString(36) + Math.random().toString(36).slice(2,5)).toLowerCase();
+}
+
+function fileToWiki(path, sourcePath) {
+  const f = app.vault.getAbstractFileByPath(path);
+  const linkText = app.metadataCache.fileToLinktext(f, sourcePath);
+  return `[[${linkText}]]`;
+} // shortest wikilink relative to the drawing :contentReference[oaicite:3]{index=3}
+
+const baseName = (p) => p.split("/").pop().replace(/\.md$/i,"");
+const sanitize = (s) => (s||"").toString().replace(/[\\/#^|?%*:<>"]/g," ").replace(/\s+/g," ").trim();
+const slug     = (s) => sanitize(s).replace(/\s+/g,"-").toLowerCase() || "unnamed";
+
 ea.setView("active");
 const view = ea.targetView;
-if(!view || !view.file){ new Notice("No active Excalidraw view."); return; }
+if (!view || !view.file) { new Notice("Open an Excalidraw file first."); return; }
 
-const DRAWING_DIR   = view.file.parent?.path || "";
-const ASSETS_DIR    = [DRAWING_DIR, ASSETS_SUBFOLDER].filter(Boolean).join("/");
-const ENTITIES_DIR  = [DRAWING_DIR, ENTITIES_SUBFOLDER].filter(Boolean).join("/");
-const TRANSFERS_DIR = [DRAWING_DIR, TRANSFERS_SUBFOLDER].filter(Boolean).join("/");
-await ensureFolder(ASSETS_DIR); await ensureFolder(ENTITIES_DIR); await ensureFolder(TRANSFERS_DIR);
+const DRAW_DIR   = view.file.parent?.path || "";
+const ASSETS_DIR = [DRAW_DIR, ASSETS_SUBFOLDER].filter(Boolean).join("/");
+const ENTS_DIR   = [DRAW_DIR, ENTITIES_SUBFOLDER].filter(Boolean).join("/");
+const XFERS_DIR  = [DRAW_DIR, TRANSFERS_SUBFOLDER].filter(Boolean).join("/");
+await ensureFolder(ASSETS_DIR); await ensureFolder(ENTS_DIR); await ensureFolder(XFERS_DIR);
 
 const all  = (ea.getViewElements ? ea.getViewElements() : ea.getElements());
 const byId = Object.fromEntries(all.map(e => [e.id, e]));
 
-// --- shortest wikilink helpers ---
-function tfileByPath(p){ return app.vault.getAbstractFileByPath(p); }
-function toWikiFrom(p, sourcePath){
-  const f = tfileByPath(p);
-  if (!f) return `[[${p.replace(/\.md$/,"")}]]`;
-  // Shortest linktext relative to the drawing file; wrap to a wikilink
-  // (fileToLinktext returns the shortest path text; add [[...]] ourselves)
-  const linkText = app.metadataCache.fileToLinktext(f, sourcePath);
-  return `[[${linkText}]]`;
-}
-// Quote wikilink for safe YAML
-const q = (wikilink) => `"${wikilink.replace(/"/g,'\\"')}"`;
-
-// --- group & detection helpers ---
 const getGroupEls = (el) => {
   const gid = (el.groupIds && el.groupIds.length) ? el.groupIds[el.groupIds.length-1] : null;
   return gid ? all.filter(x => x.groupIds && x.groupIds.includes(gid)) : [el];
 };
 const firstTextIn = (els) => (els.find(e=>e.type==="text" && (e.text||"").trim())?.text||"").trim();
-const firstLinkIn = (els) => {
-  const withLink = els.find(e => typeof e.link==="string" && e.link.trim());
-  if (withLink) return withLink.link.trim();
+const firstMarkerIn = (els) => {
+  const link = els.find(e => typeof e.link==="string" && e.link.trim())?.link?.trim();
+  if (link && [MARKERS.asset, MARKERS.entity, MARKERS.transfer].includes(link)) return link;
   const t = firstTextIn(els);
   const m = t.match(/\[\[[^\]]+\]\]/);
-  return m ? m[0] : null;
+  if (!m) return null;
+  const v = m[0];
+  return [MARKERS.asset, MARKERS.entity, MARKERS.transfer].includes(v) ? v : null;
 };
 
+// Decide element kind
 function detectKind(el, group) {
-  // A) explicit customData marker
-  const cd = el.customData?.dfd || el.customData?.DFD || null;
-  if (cd && ["asset","entity","transfer"].includes(cd.kind)) {
-    return { kind: cd.kind, template: cd.template||null, defaults: cd.defaults||{} };
-  }
-  // B) marker link
-  const marker = firstLinkIn(group);
-  if (marker && HARDCODED_TEMPLATES[marker]) {
-    const def = HARDCODED_TEMPLATES[marker];
-    return { kind: def.kind, template: marker, defaults: def.defaults||{} };
-  }
-  // C) fallback (assume DFD)
-  if (ASSUME_ALL_ELEMENTS_ARE_DFD) {
-    if (el.type === "arrow") return { kind:"transfer", template:"[[TPL:Transfer]]", defaults: HARDCODED_TEMPLATES["[[TPL:Transfer]]"].defaults };
-    const nodeTypes = new Set(["rectangle","ellipse","diamond","image","frame"]);
-    if (nodeTypes.has(el.type)) return { kind:"asset", template:"[[TPL:Asset]]", defaults: HARDCODED_TEMPLATES["[[TPL:Asset]]"].defaults };
-  }
+  const cd = el.customData?.dfd || el.customData?.DFD;
+  if (cd && ["asset","entity","transfer"].includes(cd.kind)) return { kind: cd.kind };
+
+  const marker = firstMarkerIn(group);
+  if (marker === MARKERS.asset)    return { kind:"asset" };
+  if (marker === MARKERS.entity)   return { kind:"entity" };
+  if (marker === MARKERS.transfer) return { kind:"transfer" };
+
+  if (REQUIRE_EXPLICIT_MARKER) return null;
+
+  if (el.type === "arrow") return { kind:"transfer" };
+  const nodeTypes = new Set(["rectangle","ellipse","diamond","image","frame"]);
+  if (nodeTypes.has(el.type)) return { kind:"asset" };
   return null;
 }
 
-// --- frontmatter helpers (robust & atomic) ---
-async function setFrontmatter(filePath, updater){
-  const f = tfileByPath(filePath);
+// Frontmatter helpers (atomic) :contentReference[oaicite:4]{index=4}
+async function setFM(filePath, updater){
+  const f = app.vault.getAbstractFileByPath(filePath);
   if (!f) return;
-  await app.fileManager.processFrontMatter(f, (fm) => { updater(fm); }); // atomic FM update
+  await app.fileManager.processFrontMatter(f, (fm) => { updater(fm); });
 }
-
-async function ensureArrayFM(filePath, key, item){
-  const f = tfileByPath(filePath);
-  if (!f) return;
-  await app.fileManager.processFrontMatter(f, (fm) => {
+async function ensureArrayFM(filePath, key, wikilink){
+  await setFM(filePath, (fm) => {
     const a = Array.isArray(fm[key]) ? fm[key] : (fm[key] ? [fm[key]] : []);
-    if (!a.includes(item)) a.push(item);
+    if (!a.includes(wikilink)) a.push(wikilink);
     fm[key] = a;
   });
 }
-
-// optional inline (Dataview) fields
-async function appendInlineField(filePath, field, wikilink) {
+async function appendInline(filePath, field, wikilink){
   if (!WRITE_INLINE_FIELDS) return;
   const content = await readFile(filePath);
   const line = `${field}:: ${wikilink}`;
   if (content.includes(line)) return;
-  const updated = content.endsWith("\n") ? content + line + "\n" : content + "\n" + line + "\n";
-  await writeFile(filePath, updated);
+  const out = content.endsWith("\n") ? content + line + "\n" : content + "\n" + line + "\n";
+  await writeFile(filePath, out);
 }
 
-// --- create/open helpers ---
-async function ensureNote(path, defaults){
-  if (!exists(path)) {
-    await createFile(path, "---\n---\n");
-    await setFrontmatter(path, (fm) => Object.assign(fm, defaults));
-  }
-  return path;
-}
+// Ensure Asset/Entity note for a marked group
+async function ensureNodeNote(el, kind){
+  if (!["asset","entity"].includes(kind)) return null;
 
-// Ensure note for an Asset/Entity group; return {path, link, name, kind}
-async function ensureNodeNote(el, kindInfo) {
-  if (!kindInfo || !["asset","entity"].includes(kindInfo.kind)) return null;
   const group = getGroupEls(el);
 
-  // If already links to a real file, normalize and return
-  const existing = firstLinkIn(group);
-  if (existing?.startsWith("[[")) {
-    const target = existing.slice(2,-2);
-    if (exists(target)) {
+  // If any element already links to a real file, normalize and return
+  const existingLink = group.find(e => typeof e.link==="string" && e.link.startsWith("[["))?.link;
+  if (existingLink) {
+    const pathGuess = existingLink.slice(2,-2);
+    if (exists(pathGuess)) {
+      const target = pathGuess;
       const largest = group.reduce((a,b)=> (a.width*a.height >= b.width*b.height ? a : b), group[0]);
-      largest.link = toWikiFrom(target, view.file.path);  // shortest wikilink
+      largest.link = fileToWiki(target, view.file.path);
       ea.copyViewElementsToEAforEditing([largest]);
-      return { path: target, link: toWikiFrom(target, view.file.path), name: sanitize(target.split("/").pop().replace(/\.md$/,"")), kind: kindInfo.kind };
+      return { path: target, link: fileToWiki(target, view.file.path), name: baseName(target), kind };
     }
   }
 
-  const rawName = firstTextIn(group) || `${el.type}-${el.id.slice(0,6)}`;
-  const name = sanitize(rawName) || (kindInfo.kind === "entity" ? "Entity" : "Asset");
-  const folder = (kindInfo.kind === "entity") ? ENTITIES_DIR : ASSETS_DIR;
-  let path = `${folder}/${name}.md`;
-  let i=2; while (exists(path)) { path = `${folder}/${name}-${i}.md`; i++; }
+  // Only create if explicitly marked (or fallback allowed)
+  if (REQUIRE_EXPLICIT_MARKER) {
+    const hasMarker = !!detectKind(el, group);
+    if (!hasMarker) return null;
+  }
 
-  await ensureNote(path, Object.assign({}, kindInfo.defaults, { name, created: nowISO() }));
+  const textName = sanitize(firstTextIn(group)) || (kind === "entity" ? "Entity" : "Asset");
+  const id = shortId();
+  const shapePart = INCLUDE_SHAPE_IN_NAME ? `-${el.type}` : "";
+  const fileBase = `${kind}${shapePart}-${id}`;
+  const folder = kind === "entity" ? ENTS_DIR : ASSETS_DIR;
+  let path = `${folder}/${fileBase}.md`;
+  let i=2; while (exists(path)) { path = `${folder}/${fileBase}-${i}.md`; i++; }
+
+  if (!exists(path)) {
+    await createFile(path, "---\n---\n");
+    await setFM(path, (fm) => Object.assign(fm, DEFAULTS[kind], { name: textName, created: nowISO() }));
+  }
+
   const largest = group.reduce((a,b)=> (a.width*a.height >= b.width*b.height ? a : b), group[0]);
-  largest.link = toWikiFrom(path, view.file.path);
+  largest.link = fileToWiki(path, view.file.path);
   ea.copyViewElementsToEAforEditing([largest]);
 
-  return { path, link: toWikiFrom(path, view.file.path), name, kind: kindInfo.kind };
+  return { path, link: fileToWiki(path, view.file.path), name: fileBase, kind };
 }
 
-async function ensureTransferForArrow(arr) {
+// Transfers for marked arrows
+async function ensureTransferForArrow(arr){
   if (arr.type !== "arrow") return;
+  const k = detectKind(arr, [arr]);
+  if (!k || k.kind !== "transfer") return;
 
   const fromId = arr.startBinding?.elementId;
   const toId   = arr.endBinding?.elementId;
-  if (!fromId || !toId) return; // must be bound at both ends
+  if (!fromId || !toId) return; // requires bound endpoints :contentReference[oaicite:5]{index=5}
 
   const fromEl = byId[fromId], toEl = byId[toId];
   if (!fromEl || !toEl) return;
 
-  const fromKind = detectKind(fromEl, getGroupEls(fromEl)) || {kind:"asset",defaults:{}};
-  const toKind   = detectKind(toEl,   getGroupEls(toEl))   || {kind:"asset",defaults:{}};
+  const fromKind = (detectKind(fromEl, getGroupEls(fromEl))?.kind) || (REQUIRE_EXPLICIT_MARKER ? null : "asset");
+  const toKind   = (detectKind(toEl,   getGroupEls(toEl))?.kind)   || (REQUIRE_EXPLICIT_MARKER ? null : "asset");
+  if (!fromKind || !toKind) return;
 
   const fromNode = await ensureNodeNote(fromEl, fromKind);
   const toNode   = await ensureNodeNote(toEl,   toKind);
   if (!fromNode || !toNode) return;
 
-  // Keep existing transfer link if present: still ensure FM arrays on endpoints
+  // If arrow already points to a transfer note, keep it and ensure endpoint FM
   if (typeof arr.link==="string" && arr.link.startsWith("[[")) {
-    const existingXfer = arr.link.slice(2,-2);
-    const xferPath = exists(existingXfer) ? existingXfer : null;
-    if (xferPath) {
-      const w = toWikiFrom(xferPath, view.file.path);
+    const p = arr.link.slice(2,-2);
+    if (exists(p)) {
+      const w = fileToWiki(p, view.file.path);
       await ensureArrayFM(fromNode.path, "dfd_out", w);
       await ensureArrayFM(toNode.path,   "dfd_in",  w);
-      await appendInlineField(fromNode.path, "DFD_out", w);
-      await appendInlineField(toNode.path,   "DFD_in",  w);
+      await appendInline(fromNode.path, "DFD_out", w);
+      await appendInline(toNode.path,   "DFD_in",  w);
     }
     return;
   }
 
-  // Create transfer file: transfer_<from>-to-<to>.md
-  const base = `transfer_${slug(fromNode.name)}-to-${slug(toNode.name)}`;
-  let transferPath = `${TRANSFERS_DIR}/${base}.md`;
-  let j=2; while (exists(transferPath)) { transferPath = `${TRANSFERS_DIR}/${base}-${j}.md`; j++; }
-  await ensureNote(transferPath, { ...(HARDCODED_TEMPLATES["[[TPL:Transfer]]"]?.defaults||{}), created: nowISO() });
+  // Build transfer filename from endpoint *file* IDs (not visible text)
+  const base = `transfer_${slug(baseName(fromNode.path))}-to-${slug(baseName(toNode.path))}`;
+  let tPath = `${XFERS_DIR}/${base}.md`;
+  let j=2; while (exists(tPath)) { tPath = `${XFERS_DIR}/${base}-${j}.md`; j++; }
 
-  // Fill FM with quoted wikilinks (atomic)
-  const fromW = toWikiFrom(fromNode.path, view.file.path);
-  const toW   = toWikiFrom(toNode.path,   view.file.path);
-  const srcW  = toWikiFrom(view.file.path, view.file.path);
-  await setFrontmatter(transferPath, (fm) => {
-    fm.schema = "dfd-transfer-v1";
-    fm.type = "transfer";
-    fm.from = fromW;   // Obsidian will keep as string; quoting not required via processFrontMatter
-    fm.to   = toW;
+  // Create transfer file & fill FM
+  if (!exists(tPath)) { await createFile(tPath, "---\n---\n"); }
+  const fromW = fileToWiki(fromNode.path, view.file.path);
+  const toW   = fileToWiki(toNode.path,   view.file.path);
+  const srcW  = fileToWiki(view.file.path, view.file.path);
+  await setFM(tPath, (fm) => {
+    Object.assign(fm, DEFAULTS.transfer);
+    fm.from = fromW; fm.to = toW;
     fm.source_drawing = srcW;
+    fm.created = nowISO();
   });
 
-  // Link arrow & label
-  const xferWiki = toWikiFrom(transferPath, view.file.path);
-  arr.link = xferWiki;
-  const shortId = "TR-" + Math.random().toString(36).slice(2,7).toUpperCase();
-  arr.customData = {
-    ...(arr.customData||{}),
-    dfd: { ...(arr.customData?.dfd||{}), kind:"transfer", edgeId: shortId, transferPath, from: fromW, to: toW }
-  };
-  try { if (Array.isArray(arr.points) && arr.points.length === 2) ea.addLabelToLine(arr.id, shortId); } catch(_) {}
+  // Link the arrow; store small customData; add short label (2-point only)
+  const xferW = fileToWiki(tPath, view.file.path);
+  arr.link = xferW;
+  const short = "TR-" + shortId().slice(0,5).toUpperCase();
+  arr.customData = { ...(arr.customData||{}), dfd: { ...(arr.customData?.dfd||{}), kind:"transfer", edgeId: short, transferPath: tPath, from: fromW, to: toW } };
+  try { if (Array.isArray(arr.points) && arr.points.length === 2) ea.addLabelToLine(arr.id, short); } catch(_){}
   ea.copyViewElementsToEAforEditing([arr]);
 
-  // Endpoint properties & optional inline fields
-  await ensureArrayFM(fromNode.path, "dfd_out", xferWiki);
-  await ensureArrayFM(toNode.path,   "dfd_in",  xferWiki);
-  await appendInlineField(fromNode.path, "DFD_out", xferWiki);
-  await appendInlineField(toNode.path,   "DFD_in",  xferWiki);
+  // Endpoint FM + optional inline
+  await ensureArrayFM(fromNode.path, "dfd_out", xferW);
+  await ensureArrayFM(toNode.path,   "dfd_in",  xferW);
+  await appendInline(fromNode.path, "DFD_out", xferW);
+  await appendInline(toNode.path,   "DFD_in",  xferW);
 }
 
-// ---------- MAIN ----------
-const nodes  = all.filter(e => e.type!=="arrow");
+// ========== MAIN ==========
+const nodes = all.filter(e => e.type!=="arrow");
 for (const n of nodes) {
   const k = detectKind(n, getGroupEls(n));
-  if (k && (k.kind==="asset" || k.kind==="entity")) {
-    await ensureNodeNote(n, k);
-  } else if (ASSUME_ALL_ELEMENTS_ARE_DFD && n.type!=="arrow") {
-    await ensureNodeNote(n, {kind:"asset",defaults:HARDCODED_TEMPLATES["[[TPL:Asset]]"].defaults});
-  }
+  if (!k || !["asset","entity"].includes(k.kind)) continue;
+  await ensureNodeNote(n, k.kind);
 }
 const arrows = all.filter(e => e.type==="arrow");
 for (const a of arrows) { await ensureTransferForArrow(a); }
 
 await ea.addElementsToView(false,true,true,true);
-new Notice("Linkify DFD: done");
-
+new Notice("Linkify DFD v0.5: done");

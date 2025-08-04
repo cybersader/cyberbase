@@ -5,6 +5,6 @@ classification: ""
 owner: ""
 systemType: ""
 url: ""
-name: rectangle-A2stpx
-created: 2025-08-04T18:10:50.037Z
+name: Asset
+created: 2025-08-04T18:35:14.961Z
 ---
