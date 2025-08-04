@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Monday, August 4th 2025, 5:29 pm
-date modified: Monday, August 4th 2025, 5:39 pm
+date modified: Monday, August 4th 2025, 5:45 pm
 ---
 
 /*
@@ -14,8 +14,8 @@ date modified: Monday, August 4th 2025, 5:39 pm
  * Linkify DFD — v0.8.1  (2025-08-04)
  ******************************************************************/
 
-const DEBUG  = false;        // true ⇒ popup + console traces
-const LOG_LINKS = false;     // console.log every wikilink
+const DEBUG  = true;        // true ⇒ popup + console traces
+const LOG_LINKS = true;     // console.log every wikilink
 
 const REQUIRE_EXPLICIT_MARKER = false;
 const DB_PLACEMENT    = "flat";     // "db_folder" | "flat" | "diagram_named"

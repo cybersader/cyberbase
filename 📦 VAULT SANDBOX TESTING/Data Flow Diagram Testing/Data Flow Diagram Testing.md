@@ -8,6 +8,11 @@ date created: Monday, August 4th 2025, 12:30 pm
 date modified: Monday, August 4th 2025, 12:32 pm
 ---
 %% Begin Waypoint %%
+- **Assets**
+	- [[asset-rectangle-0heg]]
+	- [[asset-rectangle-2wou]]
+	- [[asset-rectangle-e0xu]]
+	- [[custom-name]]
 - [[DFD Example]]
 - **DFD Object Configuration**
 	- [[Asset]]
@@ -19,7 +24,7 @@ date modified: Monday, August 4th 2025, 12:32 pm
 	- **Transfers**
 - **[[Object 2]]**
 - **Transfers**
-	- [[transfer_asset-rectangle-qon3-to-asset-rectangle-ryu5]]
+	- [[transfer_asset-rectangle-e0xu-to-asset-rectangle-0heg]]
 
 %% End Waypoint %%
 
