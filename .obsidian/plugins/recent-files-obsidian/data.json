@@ -5,12 +5,12 @@
       "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/Transfers/transfer_asset-rectangle-ilql-to-custom-name.md"
     },
     {
-      "basename": "asset-rectangle-ilql",
-      "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/Assets/asset-rectangle-ilql.md"
-    },
-    {
       "basename": "custom-name",
       "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/Assets/custom-name.md"
+    },
+    {
+      "basename": "asset-rectangle-ilql",
+      "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/Assets/asset-rectangle-ilql.md"
     },
     {
       "basename": "DFD Example",
