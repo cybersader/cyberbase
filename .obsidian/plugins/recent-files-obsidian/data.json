@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "transfer_asset-rectangle-ilql-to-custom-name",
+      "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/Transfers/transfer_asset-rectangle-ilql-to-custom-name.md"
+    },
+    {
+      "basename": "asset-rectangle-ilql",
+      "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/Assets/asset-rectangle-ilql.md"
+    },
+    {
+      "basename": "custom-name",
+      "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/Assets/custom-name.md"
+    },
+    {
       "basename": "DFD Example",
       "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/DFD Example.md"
     },
@@ -187,14 +199,6 @@
     {
       "basename": "ReVanced",
       "path": "⬇️ Clippings/Tech/ReVanced/ReVanced.md"
-    },
-    {
-      "basename": "PotatoPirates",
-      "path": "⬇️ Clippings/Websites/PotatoPirates/PotatoPirates.md"
-    },
-    {
-      "basename": "Getting Out of Mud",
-      "path": "⬇️ Clippings/ChatGPT/Getting Out of Mud/Getting Out of Mud.md"
     }
   ],
   "omittedPaths": [],
