@@ -8,10 +8,9 @@ date created: Monday, August 4th 2025, 12:30 pm
 date modified: Monday, August 4th 2025, 12:32 pm
 ---
 %% Begin Waypoint %%
+- **[[AI Chat Log DFD]]**
 - **Assets**
-	- [[asset-rectangle-0heg]]
-	- [[asset-rectangle-2wou]]
-	- [[asset-rectangle-e0xu]]
+	- [[asset-rectangle-mqi0]]
 	- [[custom-name]]
 - [[DFD Example]]
 - **DFD Object Configuration**
@@ -22,9 +21,9 @@ date modified: Monday, August 4th 2025, 12:32 pm
 	- **Assets**
 	- **Entities**
 	- **Transfers**
+- **Entities**
 - **[[Object 2]]**
 - **Transfers**
-	- [[transfer_asset-rectangle-e0xu-to-asset-rectangle-0heg]]
 
 %% End Waypoint %%
 
