@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Migrate Fangtooth LXC to VM",
+      "path": "📁 01 - Projects/⬇️ Project Drop/Migrate Fangtooth LXC to VM/Migrate Fangtooth LXC to VM.md"
+    },
+    {
+      "basename": "⬇️ Project Drop",
+      "path": "📁 01 - Projects/⬇️ Project Drop/⬇️ Project Drop.md"
+    },
+    {
       "basename": "Implementing a Forum Website",
       "path": "📁 01 - Projects/⬇️ Project Drop/Implementing a Forum Website/Implementing a Forum Website.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Daily Driver Stuff",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Daily Driver Stuff/Daily Driver Stuff.md"
-    },
-    {
-      "basename": "Alternative YouTube Clients",
-      "path": "📁 03 - Curations, Stacks/Alternative YouTube Clients/Alternative YouTube Clients.md"
-    },
-    {
-      "basename": "Ollama TrueNAS Scale",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Ollama TrueNAS Scale/Ollama TrueNAS Scale.md"
     }
   ],
   "omittedPaths": [],
