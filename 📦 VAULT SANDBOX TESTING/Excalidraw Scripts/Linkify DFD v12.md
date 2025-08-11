@@ -1,21 +1,21 @@
 ---
-aliases: 
-tags: 
+aliases: []
+tags: []
 publish: true
 permalink:
 title:
 date created: Monday, August 11th 2025, 2:13 pm
-date modified: Monday, August 11th 2025, 2:15 pm
+date modified: Monday, August 11th 2025, 2:30 pm
 ---
 
 
 /*
 ```js*/
 /*****************************************************************
- * Linkify DFD — v1.1  (2025-08-05)
+ * Linkify DFD — v1.2  (2025-08-05)
  * ---------------------------------------------------------------
- * Fixed: Custom DB_DB_PARENT_PATH path resolution and link handling
- * Added: Better vault-wide path resolution for database locations
+ * Added: Bidirectional arrow support for two-way data flows
+ * Fixed: Detection of arrows with arrowheads on both ends
  ******************************************************************/
 
 /************* USER SETTINGS ************************************/
@@ -25,7 +25,7 @@ const REQUIRE_EXPLICIT_MARKER = false;
 // Storage options
 const DB_PLACEMENT = "db_folder";       // "flat" | "diagram_named" | "db_folder"
 const DB_FOLDER_NAME = "DFD Objects Database";
-const DB_DB_PARENT_PATH = "My Projects"; // Can be vault-relative path like "My Projects" or ""
+const DB_DB_PARENT_PATH = "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/"; // Can be vault-relative path like "My Projects" or ""
 
 // Config folder - can use relative paths like "./DFD Object Configuration"
 const CFG_DIR = "./DFD Object Configuration";
@@ -35,6 +35,12 @@ const WRITE_INLINE_FIELDS = false;
 
 // Filename behavior for custom names
 const CUSTOM_NAME_MODE = "replace";     // "replace" | "inject"
+
+// BIDIRECTIONAL ARROW BEHAVIOR
+const BIDIRECTIONAL_MODE = "single_bidirectional";  // Options:
+// "single_bidirectional" = One transfer note marked as bidirectional
+// "dual_transfers" = Two separate transfer notes (A→B and B→A)  
+// "ignore_bidirectional" = Treat as normal unidirectional (start→end)
 /****************************************************************/
 
 /* ---------- helpers ---------- */
@@ -53,6 +59,15 @@ const clog = m => DEBUG && console.log("🔧 DFD:", m);
 function normalizePath(path) {
   if (!path) return "";
   return path.replace(/^\/+|\/+$/g, "");
+}
+
+// NEW: Detect if arrow is bidirectional (arrowheads on both ends)
+function isBidirectional(arrow) {
+  const hasStart = arrow.startArrowhead && arrow.startArrowhead !== null;
+  const hasEnd = arrow.endArrowhead && arrow.endArrowhead !== null;
+  const result = hasStart && hasEnd;
+  clog(`Arrow ${arrow.id}: startArrowhead=${arrow.startArrowhead}, endArrowhead=${arrow.endArrowhead} → bidirectional: ${result}`);
+  return result;
 }
 
 // Resolve a wikilink to actual file path - improved for cross-folder resolution
@@ -179,7 +194,7 @@ const RESOLVED_CFG_DIR = CFG_DIR.startsWith("./") ?
   CFG_DIR;
 clog(`Config directory: ${RESOLVED_CFG_DIR}`);
 
-// IMPROVED: Better database root path resolution
+// Better database root path resolution
 const ROOT = (() => {
   switch(DB_PLACEMENT) {
     case "flat": 
@@ -405,7 +420,7 @@ async function ensureNodeLinked(el, kind, customName) {
   clog(`\n--- Ensuring ${kind} node linked ---`);
   const group = getGroupEls(el);
   
-  // IMPROVED: Better existing link detection for cross-folder scenarios
+  // Better existing link detection for cross-folder scenarios
   const existingLinkEl = group.find(e => 
     typeof e.link === "string" && 
     e.link.includes("[[") && 
@@ -451,7 +466,49 @@ async function ensureNodeLinked(el, kind, customName) {
   return path;
 }
 
-/* ---------- transfers ---------- */
+/* ---------- NEW: Create transfer note helper ---------- */
+async function createTransferNote(startPath, endPath, classification, isBidirectional = false, suffix = "") {
+  const config = getConfig("transfer");
+  const folder = targetFolder("transfer");
+  
+  const direction = isBidirectional ? "bidirectional" : "to";
+  const fileName = `transfer_${slug(bn(startPath))}-${direction}-${slug(bn(endPath))}${suffix}`;
+  let path = `${folder}/${fileName}.md`;
+  
+  if (exists(path)) {
+    path = `${folder}/${fileName}-${rnd4()}.md`;
+    clog(`  File exists, using: ${path}`);
+  } else {
+    clog(`  Using: ${path}`);
+  }
+  
+  const fm = Object.assign({}, config.defaults, {
+    name: classification.customName || config.defaults.name || "transfer",
+    created: nowISO()
+  });
+  
+  if (isBidirectional) {
+    fm.direction = "bidirectional";
+    fm.note = "This transfer represents bidirectional data flow";
+  }
+  
+  const fmLines = ["---"];
+  for (const [key, value] of Object.entries(fm)) {
+    fmLines.push(`${key}: ${typeof value === "string" ? `"${value.replace(/"/g, '\\"')}"` : JSON.stringify(value)}`);
+  }
+  fmLines.push("---");
+  
+  const content = config.body ? 
+    fmLines.join("\n") + "\n\n" + config.body : 
+    fmLines.join("\n") + "\n\n";
+  
+  await create(path, content);
+  clog(`  ✓ Created transfer note: ${path}`);
+  
+  return path;
+}
+
+/* ---------- transfers with bidirectional support ---------- */
 async function ensureTransfer(arr) {
   clog(`\n--- Processing arrow ${arr.id} ---`);
   const classification = classifyElement(arr);
@@ -461,6 +518,12 @@ async function ensureTransfer(arr) {
   }
   
   clog(`  ✓ Classified as transfer, customName: ${classification.customName}`);
+  
+  // Check if arrow is bidirectional
+  const bidirectional = isBidirectional(arr);
+  if (bidirectional) {
+    clog(`  🔄 Detected bidirectional arrow (mode: ${BIDIRECTIONAL_MODE})`);
+  }
   
   const startId = arr.startBinding?.elementId;
   const endId = arr.endBinding?.elementId;
@@ -498,115 +561,177 @@ async function ensureTransfer(arr) {
   
   clog(`  ✓ Endpoints: ${startPath} → ${endPath}`);
   
-  // IMPROVED: Better existing arrow link detection for cross-folder scenarios
+  // Check for existing arrow link
   if (typeof arr.link === "string" && arr.link.includes("[[") && arr.link.includes("]]")) {
     clog(`  Found existing arrow link: ${arr.link}`);
     const existingPath = resolveLink(arr.link, view.file.path);
     if (existingPath && exists(existingPath)) {
       clog(`  ✓ Reusing existing transfer: ${existingPath}`);
       const wikiLink = shortWiki(existingPath, view.file.path);
-      await pushArr(startPath, "dfd_out", wikiLink);
-      await pushArr(endPath, "dfd_in", wikiLink);
-      await dvInline(startPath, "DFD_out", wikiLink);
-      await dvInline(endPath, "DFD_in", wikiLink);
+      // Update endpoint arrays based on bidirectional mode
+      if (bidirectional && BIDIRECTIONAL_MODE === "single_bidirectional") {
+        await pushArr(startPath, "dfd_out", wikiLink);
+        await pushArr(startPath, "dfd_in", wikiLink);
+        await pushArr(endPath, "dfd_out", wikiLink);
+        await pushArr(endPath, "dfd_in", wikiLink);
+      } else {
+        await pushArr(startPath, "dfd_out", wikiLink);
+        await pushArr(endPath, "dfd_in", wikiLink);
+      }
       return;
-    } else {
-      clog(`  ✗ Existing arrow link points to non-existent file: ${existingPath}`);
     }
   }
   
-  // Create transfer note
-  const config = getConfig("transfer");
-  const folder = targetFolder("transfer");
-  
-  const fileName = `transfer_${slug(bn(startPath))}-to-${slug(bn(endPath))}`;
-  let path = `${folder}/${fileName}.md`;
-  
-  // Don't add suffix for transfers unless collision
-  if (exists(path)) {
-    path = `${folder}/${fileName}-${rnd4()}.md`;
-    clog(`  File exists, using: ${path}`);
+  // Handle different bidirectional modes
+  if (bidirectional && BIDIRECTIONAL_MODE === "dual_transfers") {
+    clog(`  Creating dual transfers for bidirectional arrow`);
+    
+    // Create two transfer notes
+    const path1 = await createTransferNote(startPath, endPath, classification, false, "-forward");
+    const path2 = await createTransferNote(endPath, startPath, classification, false, "-reverse");
+    
+    // Set frontmatter for both transfers
+    const startWiki = shortWiki(startPath, view.file.path);
+    const endWiki = shortWiki(endPath, view.file.path);
+    const sourceWiki = shortWiki(view.file.path, view.file.path);
+    
+    await setFM(path1, fm => {
+      fm.from = startWiki;
+      fm.to = endWiki;
+      fm.source_drawing = sourceWiki;
+      fm.paired_transfer = shortWiki(path2, view.file.path);
+    });
+    
+    await setFM(path2, fm => {
+      fm.from = endWiki;
+      fm.to = startWiki;
+      fm.source_drawing = sourceWiki;
+      fm.paired_transfer = shortWiki(path1, view.file.path);
+    });
+    
+    // Link arrow to primary transfer
+    const transferWiki = shortWiki(path1, view.file.path);
+    arr.link = transferWiki;
+    
+    // Update endpoint arrays
+    const transfer1Wiki = shortWiki(path1, view.file.path);
+    const transfer2Wiki = shortWiki(path2, view.file.path);
+    
+    await pushArr(startPath, "dfd_out", transfer1Wiki);
+    await pushArr(startPath, "dfd_in", transfer2Wiki);
+    await pushArr(endPath, "dfd_in", transfer1Wiki);
+    await pushArr(endPath, "dfd_out", transfer2Wiki);
+    
+    note(`✓ bidirectional transfers → ${transfer1Wiki} ⟷ ${transfer2Wiki}`);
+    clog(`  ✓ Created dual transfers: ${transfer1Wiki} ⟷ ${transfer2Wiki}`);
+    
+  } else if (bidirectional && BIDIRECTIONAL_MODE === "single_bidirectional") {
+    clog(`  Creating single bidirectional transfer`);
+    
+    // Create one transfer note marked as bidirectional
+    const path = await createTransferNote(startPath, endPath, classification, true);
+    
+    // Set frontmatter
+    const startWiki = shortWiki(startPath, view.file.path);
+    const endWiki = shortWiki(endPath, view.file.path);
+    const sourceWiki = shortWiki(view.file.path, view.file.path);
+    
+    await setFM(path, fm => {
+      fm.endpoint_a = startWiki;
+      fm.endpoint_b = endWiki;
+      fm.source_drawing = sourceWiki;
+      // Keep traditional from/to for compatibility, but mark as bidirectional
+      fm.from = startWiki;
+      fm.to = endWiki;
+    });
+    
+    // Link arrow to transfer
+    const transferWiki = shortWiki(path, view.file.path);
+    arr.link = transferWiki;
+    
+    // Both endpoints get both in and out references
+    await pushArr(startPath, "dfd_out", transferWiki);
+    await pushArr(startPath, "dfd_in", transferWiki);
+    await pushArr(endPath, "dfd_out", transferWiki);
+    await pushArr(endPath, "dfd_in", transferWiki);
+    
+    note(`✓ bidirectional transfer → ${transferWiki}`);
+    clog(`  ✓ Created bidirectional transfer: ${transferWiki}`);
+    
   } else {
-    clog(`  Using: ${path}`);
+    // Normal unidirectional transfer (or ignoring bidirectional)
+    clog(`  Creating unidirectional transfer`);
+    
+    const path = await createTransferNote(startPath, endPath, classification, false);
+    
+    // Set frontmatter
+    const startWiki = shortWiki(startPath, view.file.path);
+    const endWiki = shortWiki(endPath, view.file.path);
+    const sourceWiki = shortWiki(view.file.path, view.file.path);
+    
+    await setFM(path, fm => {
+      fm.from = startWiki;
+      fm.to = endWiki;
+      fm.source_drawing = sourceWiki;
+    });
+    
+    // Link arrow to transfer
+    const transferWiki = shortWiki(path, view.file.path);
+    arr.link = transferWiki;
+    
+    // Standard endpoint arrays
+    await pushArr(startPath, "dfd_out", transferWiki);
+    await pushArr(endPath, "dfd_in", transferWiki);
+    
+    note(`✓ transfer → ${transferWiki}`);
+    clog(`  ✓ Created unidirectional transfer: ${transferWiki}`);
   }
-  
-  const fm = Object.assign({}, config.defaults, {
-    name: classification.customName || config.defaults.name || "transfer",
-    created: nowISO()
-  });
-  
-  const fmLines = ["---"];
-  for (const [key, value] of Object.entries(fm)) {
-    fmLines.push(`${key}: ${typeof value === "string" ? `"${value.replace(/"/g, '\\"')}"` : JSON.stringify(value)}`);
-  }
-  fmLines.push("---");
-  
-  const content = config.body ? 
-    fmLines.join("\n") + "\n\n" + config.body : 
-    fmLines.join("\n") + "\n\n";
-  
-  await create(path, content);
-  clog(`  ✓ Created transfer note: ${path}`);
-  
-  // Update frontmatter with from/to links
-  const startWiki = shortWiki(startPath, view.file.path);
-  const endWiki = shortWiki(endPath, view.file.path);
-  const sourceWiki = shortWiki(view.file.path, view.file.path);
-  
-  await setFM(path, fm => {
-    fm.from = startWiki;
-    fm.to = endWiki;
-    fm.source_drawing = sourceWiki;
-  });
-  
-  // Update arrow
-  const transferWiki = shortWiki(path, view.file.path);
-  clog(`  Setting arrow link to: ${transferWiki}`);
   
   // Clear any existing marker from arrow.link
   if (typeof arr.link === "string" && parseMarker(arr.link)) {
     clog(`  Clearing marker from arrow.link: "${arr.link}"`);
   }
   
-  arr.link = transferWiki;
-  
   const edgeId = "TR-" + rnd4().toUpperCase();
-  arr.customData = {
-    ...(arr.customData || {}),
-    dfd: {
-      kind: "transfer",
-      edgeId,
-      transferPath: path,
-      from: startWiki,
-      to: endWiki
-    }
-  };
+  if (bidirectional && BIDIRECTIONAL_MODE !== "ignore_bidirectional") {
+    arr.customData = {
+      ...(arr.customData || {}),
+      dfd: {
+        kind: "transfer",
+        edgeId,
+        bidirectional: true,
+        mode: BIDIRECTIONAL_MODE
+      }
+    };
+  } else {
+    arr.customData = {
+      ...(arr.customData || {}),
+      dfd: {
+        kind: "transfer",
+        edgeId,
+        bidirectional: false
+      }
+    };
+  }
   
   // Add label to straight arrows
   try {
     if (Array.isArray(arr.points) && arr.points.length === 2) {
-      ea.addLabelToLine(arr.id, edgeId);
-      clog(`  ✓ Added label: ${edgeId}`);
+      const label = bidirectional && BIDIRECTIONAL_MODE !== "ignore_bidirectional" ? `${edgeId}⟷` : edgeId;
+      ea.addLabelToLine(arr.id, label);
+      clog(`  ✓ Added label: ${label}`);
     }
   } catch(e) {
     clog(`  ✗ Failed to add label: ${e.message}`);
   }
   
   ea.copyViewElementsToEAforEditing([arr]);
-  
-  // Update endpoint arrays
-  await pushArr(startPath, "dfd_out", transferWiki);
-  await pushArr(endPath, "dfd_in", transferWiki);
-  await dvInline(startPath, "DFD_out", transferWiki);
-  await dvInline(endPath, "DFD_in", transferWiki);
-  
-  note(`✓ transfer → ${transferWiki}`);
-  clog(`  ✓ Transfer complete: ${transferWiki}`);
 }
 
 /* ---------- main execution ---------- */
 (async () => {
-  clog("\n🚀 Starting Linkify DFD v1.1");
+  clog("\n🚀 Starting Linkify DFD v1.2");
+  clog(`📋 Bidirectional mode: ${BIDIRECTIONAL_MODE}`);
   
   // Process nodes first
   const nodeElements = els.filter(e => e.type !== "arrow");
@@ -628,6 +753,6 @@ async function ensureTransfer(arr) {
   }
   
   await ea.addElementsToView(false, true, true, true);
-  clog("\n✅ Linkify DFD v1.1: finished");
-  note("Linkify DFD v1.1: finished");
+  clog("\n✅ Linkify DFD v1.2: finished");
+  note("Linkify DFD v1.2: finished");
 })();

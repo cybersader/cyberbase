@@ -10,8 +10,6 @@ date modified: Monday, August 4th 2025, 12:32 pm
 %% Begin Waypoint %%
 - **[[AI Chat Log DFD]]**
 - **Assets**
-	- [[asset-rectangle-ilql]]
-	- [[custom-name]]
 - [[DFD Example]]
 - **DFD Object Configuration**
 	- [[Asset]]
@@ -19,12 +17,14 @@ date modified: Monday, August 4th 2025, 12:32 pm
 	- [[Transfer]]
 - **DFD Objects Database**
 	- **Assets**
+		- [[asset-rectangle-xf62]]
+		- [[custom-name]]
 	- **Entities**
 	- **Transfers**
+		- [[transfer_asset-rectangle-xf62-bidirectional-custom-name]]
 - **Entities**
 - **[[Object 2]]**
 - **Transfers**
-	- [[transfer_asset-rectangle-ilql-to-custom-name]]
 
 %% End Waypoint %%
 
