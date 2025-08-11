@@ -114,5 +114,4 @@ Use a trusted **transactional email provider** (SES, Postmark, SendGrid, etc.):
 
 ## Overlapping VM MAC Addresses in Virtual Machines in TrueNAS
 
-- I noticed there was overlap with two VMs.  Maybe you have to generate MACs for them each time you create one???
-- 
+- I noticed there was overlap with two VMs.  Maybe you have to generate MACs for them each time you create one
