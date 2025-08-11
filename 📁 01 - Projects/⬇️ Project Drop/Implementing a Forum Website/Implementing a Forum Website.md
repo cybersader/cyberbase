@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, August 17th 2024, 8:12 pm
-date modified: Sunday, August 10th 2025, 12:25 pm
+date modified: Monday, August 11th 2025, 8:35 am
 ---
 
 [Community IT Support Setup](../../../🕸️%20UNSTRUCTURED/Community%20IT%20Support%20Setup.md)
@@ -111,4 +111,7 @@ Use a trusted **transactional email provider** (SES, Postmark, SendGrid, etc.):
 # Setup & Common Issues
 
 - [discourse.org > Configure a firewall for Discourse - Documentation / Self-Hosting](https://meta.discourse.org/t/configure-a-firewall-for-discourse/20584) - you may need to fiddle with the "ufw" firewall to let in port 80 or 443 requests
-- 
+
+## Overlapping VM MAC Addresses in Virtual Machines in TrueNAS
+
+- I noticed there was
