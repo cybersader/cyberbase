@@ -17,11 +17,11 @@ date modified: Monday, August 4th 2025, 12:32 pm
 	- [[Transfer]]
 - **DFD Objects Database**
 	- **Assets**
-		- [[asset-rectangle-xf62]]
+		- [[asset-rectangle-xmi2]]
 		- [[custom-name]]
 	- **Entities**
 	- **Transfers**
-		- [[transfer_asset-rectangle-xf62-bidirectional-custom-name]]
+		- [[transfer_asset-rectangle-xmi2_to_custom-name]]
 - **Entities**
 - **[[Object 2]]**
 - **Transfers**
