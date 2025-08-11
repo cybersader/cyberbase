@@ -17,8 +17,11 @@ date modified: Monday, August 4th 2025, 12:32 pm
 	- [[Transfer]]
 - **DFD Objects Database**
 	- **Assets**
+		- [[asset-rectangle-peo7]]
+		- [[custom-name]]
 	- **Entities**
 	- **Transfers**
+		- [[transfer_custom-name_to_asset-rectangle-peo7]]
 - **Entities**
 - **[[Object 2]]**
 - **Transfers**
