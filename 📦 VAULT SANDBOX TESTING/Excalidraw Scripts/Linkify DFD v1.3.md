@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Monday, August 11th 2025, 2:43 pm
-date modified: Monday, August 11th 2025, 2:47 pm
+date modified: Monday, August 11th 2025, 2:44 pm
 ---
 
 /*
@@ -24,7 +24,7 @@ const REQUIRE_EXPLICIT_MARKER = false;
 // Storage options
 const DB_PLACEMENT = "db_folder";       // "flat" | "diagram_named" | "db_folder"
 const DB_FOLDER_NAME = "DFD Objects Database";
-const DB_DB_PARENT_PATH = "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/"; // Can be vault-relative path like "My Projects" or ""
+const DB_DB_PARENT_PATH = "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing"; // Can be vault-relative path like "My Projects" or ""
 
 // Config folder - can use relative paths like "./DFD Object Configuration"
 const CFG_DIR = "./DFD Object Configuration";
@@ -47,7 +47,7 @@ const OBJECT_SEPARATOR = "_";                   // Separator between objects: "_
 
 // TRANSFER PROPERTY BEHAVIOR
 const INCLUDE_FROM_TO_PROPERTIES = true;       // Include from:/to: fields for compatibility
-const BIDIRECTIONAL_FROM_TO_BOTH = true;     // For bidirectional: put both objects in both from: and to: fields
+const BIDIRECTIONAL_FROM_TO_BOTH = false;     // For bidirectional: put both objects in both from: and to: fields
 /****************************************************************/
 
 /* ---------- helpers ---------- */
