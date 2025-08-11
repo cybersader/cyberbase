@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "Linkify DFD v12",
+      "path": "📦 VAULT SANDBOX TESTING/Excalidraw Scripts/Linkify DFD v12.md"
+    },
+    {
       "basename": "Linkify DFD v10",
       "path": "📦 VAULT SANDBOX TESTING/Excalidraw Scripts/Linkify DFD v10/Linkify DFD v10.md"
+    },
+    {
+      "basename": "linkify dfd v11",
+      "path": "📦 VAULT SANDBOX TESTING/Excalidraw Scripts/linkify dfd v11.md"
     },
     {
       "basename": "Linkify DFD v8",
@@ -191,14 +199,6 @@
     {
       "basename": "TrueCloud Storj Backups",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Cloud Backups/TrueCloud Storj Backups/TrueCloud Storj Backups.md"
-    },
-    {
-      "basename": "Using Hostnames Locally",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Using Hostnames Locally/Using Hostnames Locally.md"
-    },
-    {
-      "basename": "Daily Driver Stuff",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Daily Driver Stuff/Daily Driver Stuff.md"
     }
   ],
   "omittedPaths": [],
