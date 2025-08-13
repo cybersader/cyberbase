@@ -5,6 +5,10 @@
       "path": "📁 01 - Projects/⬇️ Project Drop/Implementing a Forum Website/Implementing a Forum Website.md"
     },
     {
+      "basename": "Migrate Fangtooth LXC to VM",
+      "path": "📁 01 - Projects/⬇️ Project Drop/Migrate Fangtooth LXC to VM/Migrate Fangtooth LXC to VM.md"
+    },
+    {
       "basename": "DFD Example",
       "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/DFD Example.md"
     },
@@ -35,10 +39,6 @@
     {
       "basename": "Excalidraw Scripts",
       "path": "📦 VAULT SANDBOX TESTING/Excalidraw Scripts/Excalidraw Scripts.md"
-    },
-    {
-      "basename": "Migrate Fangtooth LXC to VM",
-      "path": "📁 01 - Projects/⬇️ Project Drop/Migrate Fangtooth LXC to VM/Migrate Fangtooth LXC to VM.md"
     },
     {
       "basename": "Linkify DFD v10",
