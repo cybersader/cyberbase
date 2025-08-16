@@ -9,7 +9,7 @@ date modified: Friday, April 25th 2025, 11:01 am
 ---
 
 %% Begin Waypoint %%
-- **[[ACH - Automated Clearing House]]**
+
 
 %% End Waypoint %%
 
