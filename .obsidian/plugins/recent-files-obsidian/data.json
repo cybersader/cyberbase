@@ -5,6 +5,10 @@
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Custom Docker Apps in TrueNAS/Custom Docker Apps in TrueNAS.md"
     },
     {
+      "basename": "Bridging New Home Router",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Bridging New Home Router/Bridging New Home Router.md"
+    },
+    {
       "basename": "Fitness and Diet Tech Stack",
       "path": "📁 23 - Wellness, Fitness/Fitness and Diet Tech Stack/Fitness and Diet Tech Stack.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Hacking Motivations and Shifts",
       "path": "⬇️ Clippings/ChatGPT/Hacking Motivations and Shifts/Hacking Motivations and Shifts.md"
-    },
-    {
-      "basename": "Suicide Lane Usage Rules",
-      "path": "⬇️ Clippings/ChatGPT/Suicide Lane Usage Rules/Suicide Lane Usage Rules.md"
     }
   ],
   "omittedPaths": [],
