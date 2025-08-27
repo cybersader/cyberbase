@@ -226,6 +226,8 @@
 	- **[[Zelle]]**
 	- **[[Zivver Security]]**
 - **[[Websites]]**
+	- ** quantum trainer**
+		- [[quantum trainer]]
 	- **[[Algorа]]**
 	- **[[Gruv]]**
 	- **[[Humble Bundle]]**
@@ -239,6 +241,8 @@
 	- **[[St Paul Center]]**
 	- **[[Techlore]]**
 	- **[[Tertulia]]**
+	- **Untitled**
+		- [[Quantum Trainer]]
 	- **[[Xkcd]]**
 - **[[Wikipedia]]**
 - **[[YouTube]]**
