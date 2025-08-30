@@ -229,6 +229,8 @@
 	- ** quantum trainer**
 		- [[quantum trainer]]
 	- **[[Algorа]]**
+	- **[[CYGNVS]]**
+	- **[[DFIR-IRIS]]**
 	- **[[Gruv]]**
 	- **[[Humble Bundle]]**
 	- **[[Openbazaar]]**

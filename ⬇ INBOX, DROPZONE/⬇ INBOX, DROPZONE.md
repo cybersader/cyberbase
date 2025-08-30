@@ -28,10 +28,12 @@ publish: true
 - **[[Modern Financial Industry Tech]]**
 - **[[Productivity Tech]]**
 - **[[Public Threat Actor Reporting, Blacklists]]**
+- **[[Smart Blinds]]**
 - **[[Store Now Decrypt Later]]**
 - **[[Symbolic Links in Obsidian]]**
 - **[[Team Resource Management]]**
 - **[[Video Ideas]]**
+- **[[Vim]]**
 - **[[Windows 11 UI Stuff]]**
 - **[[Windows BCDR]]**
 

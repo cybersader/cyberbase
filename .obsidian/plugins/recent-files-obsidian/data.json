@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "📁 23 - Wellness, Fitness",
+      "path": "📁 23 - Wellness, Fitness/📁 23 - Wellness, Fitness.md"
+    },
+    {
+      "basename": "Fitness and Diet Tech Stack",
+      "path": "📁 23 - Wellness, Fitness/Fitness and Diet Tech Stack/Fitness and Diet Tech Stack.md"
+    },
+    {
+      "basename": "DFIR-IRIS",
+      "path": "⬇️ Clippings/Websites/DFIR-IRIS/DFIR-IRIS.md"
+    },
+    {
+      "basename": "CYGNVS",
+      "path": "⬇️ Clippings/Websites/CYGNVS/CYGNVS.md"
+    },
+    {
+      "basename": "Community IT Support Setup",
+      "path": "🕸️ UNSTRUCTURED/Community IT Support Setup.md"
+    },
+    {
+      "basename": "Smart Blinds",
+      "path": "⬇ INBOX, DROPZONE/Smart Blinds/Smart Blinds.md"
+    },
+    {
+      "basename": "Vim",
+      "path": "⬇ INBOX, DROPZONE/Vim/Vim.md"
+    },
+    {
+      "basename": "Comma3x",
+      "path": "⬇️ Clippings/Tech/Comma3x/Comma3x.md"
+    },
+    {
       "basename": "Quantum Trainer",
       "path": "⬇️ Clippings/Websites/Untitled/Quantum Trainer.md"
     },
@@ -19,10 +51,6 @@
     {
       "basename": "Custom Docker Apps in TrueNAS",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Custom Docker Apps in TrueNAS/Custom Docker Apps in TrueNAS.md"
-    },
-    {
-      "basename": "Fitness and Diet Tech Stack",
-      "path": "📁 23 - Wellness, Fitness/Fitness and Diet Tech Stack/Fitness and Diet Tech Stack.md"
     },
     {
       "basename": "Financial Sector & Cyber",
@@ -55,10 +83,6 @@
     {
       "basename": "Switching Banks",
       "path": "📁 06 - Learning, Notes/Financial Sector & Cyber/Switching Banks/Switching Banks.md"
-    },
-    {
-      "basename": "📁 23 - Wellness, Fitness",
-      "path": "📁 23 - Wellness, Fitness/📁 23 - Wellness, Fitness.md"
     },
     {
       "basename": "Migrate Fangtooth LXC to VM",
@@ -103,10 +127,6 @@
     {
       "basename": "Linkify DFD v8",
       "path": "📦 VAULT SANDBOX TESTING/Excalidraw Scripts/Linkify DFD v8/Linkify DFD v8.md"
-    },
-    {
-      "basename": "Community IT Support Setup",
-      "path": "🕸️ UNSTRUCTURED/Community IT Support Setup.md"
     },
     {
       "basename": "Home Assistant",
@@ -179,26 +199,6 @@
     {
       "basename": "Web or Browser-Based Obsidian",
       "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Web or Browser-Based Obsidian/Web or Browser-Based Obsidian.md"
-    },
-    {
-      "basename": "Home OS Provisioning & Resetting",
-      "path": "📁 07 - Cybersader Arsenal/Home OS Provisioning & Resetting/Home OS Provisioning & Resetting.md"
-    },
-    {
-      "basename": "3D Prints",
-      "path": "📁 07 - Cybersader Arsenal/3D Prints/3D Prints.md"
-    },
-    {
-      "basename": "Tec-accessories_ti-tape",
-      "path": "⬇️ Clippings/Tech/Tec-accessories_ti-tape/Tec-accessories_ti-tape.md"
-    },
-    {
-      "basename": "3D Printing",
-      "path": "⬇ INBOX, DROPZONE/3D Printing/3D Printing.md"
-    },
-    {
-      "basename": "Cyberbase Domains",
-      "path": "📁 51 - Cyberbase/Cyberbase Domains/Cyberbase Domains.md"
     }
   ],
   "omittedPaths": [],
