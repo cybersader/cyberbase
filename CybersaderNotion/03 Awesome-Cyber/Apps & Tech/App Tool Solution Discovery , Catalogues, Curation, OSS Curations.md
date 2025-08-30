@@ -1,30 +1,17 @@
-# App / Tool / Solution Discovery , Catalogues, Curations
-
+---
+aliases: 
+tags: 
+publish: true
+permalink:
+title:
+date created: Saturday, March 9th 2024, 8:53 pm
+date modified: Saturday, August 30th 2025, 3:07 pm
 ---
 
-# App Comparisons
-
-## Note Taking Apps
-
-- [NoteApps.info: 27 best note taking apps analyzed over 281 features](https://www.noteapps.info/)
-
-# The Business Model Matters
-
-Make sure that you know how the monetary model works before going and using some software.
-
-## Open-Source vs Proprietary
-
-The good part about open-source is that you can gauge how much work is actually put in.
-
-Common Issues in Proprietary:
-
-- It looks like “magic”, but it really isn’t that special
-- Sometimes the product just visually looks good, but lacks effectiveness, viability, and functionality.
-    - The GUI just looks good
-    - The website just looks good
-- Not enough detail to effectively compare to other products
-
----
+- [alternateoss.com > Free & Open Source Alternatives - AlternateOSS](https://alternateoss.com/)
+- [youmightnotneed.co > YouMightNotNeed - Best Alternatives to Popular Saas Products](https://youmightnotneed.co/)
+- [openalternative.co > Open Source Alternatives to Popular Software](https://openalternative.co/)
+- 
 
 # Crowd-Sourced Reviews | App Discovery | OPINIONATED
 
@@ -75,6 +62,7 @@ Common Issues in Proprietary:
     - [https://start.me/discover/int](https://start.me/discover/int)
     - [https://start.me/pages/int](https://start.me/pages/int)
 - [Raindrop.io — All-in-one bookmark manager](https://raindrop.io/)
+
 ## Shareable Tierlists
 
 - [Tier List Maker for Everything - TierMaker](https://tiermaker.com/)
