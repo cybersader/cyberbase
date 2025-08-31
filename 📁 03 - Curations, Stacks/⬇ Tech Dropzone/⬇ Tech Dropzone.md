@@ -5,7 +5,7 @@ aliases: []
 tags: [opensourcesoftware, privacy, software]
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Sunday, August 31st 2025, 7:20 pm
+date modified: Sunday, August 31st 2025, 7:36 pm
 ---
 
 
@@ -30,6 +30,50 @@ date modified: Sunday, August 31st 2025, 7:20 pm
 
 # Finance Tech Stack
 
+- [Tech Stack for Financial Services – The Ultimate Guide \[2024\]](https://justcall.io/blog/tech-stack-financial-services.html "Tech Stack for Financial Services – The Ultimate Guide [2024]")
+- [How to Build a Modern Finance Tech Stack](https://www.bill.com/blog/finance-tech-stack "How to Build a Modern Finance Tech Stack")
+- [The modern finance tech stack: a comprehensive guide](https://www.vareto.com/post/finance-tech-stack-guide "The modern finance tech stack: a comprehensive guide")
+- [modern financial core tech stack banking &quot;core&quot; - Brave Search](https://search.brave.com/search?q=modern+financial+core+tech+stack+banking+%22core%22&source=web "modern financial core tech stack banking &quot;core&quot; - Brave Search")
+- [Next-generation core banking platforms: A golden ticket?](https://www.mckinsey.com/industries/financial-services/our-insights/banking-matters/next-generation-core-banking-platforms-a-golden-ticket "Next-generation core banking platforms: A golden ticket?")
+- [Core Banking Systems - from legacy to modern cores. | Fintech In Depth](https://medium.com/fintech-in-depth/core-banking-systems-primer-a2d26919f3eb "Core Banking Systems - from legacy to modern cores. | Fintech In Depth")
+- [Banking 2.0— mapping banking tech neo-stack | by Denis Kuznetsov | Medium](https://denis-k.medium.com/banking-neo-stack-42549139eaf8 "Banking 2.0— mapping banking tech neo-stack | by Denis Kuznetsov | Medium")
+- [SaaS cloud banking platform | Mambu](https://mambu.com/en "SaaS cloud banking platform | Mambu")
+- [Building Core Banking: A Blueprint for Modern Financial Systems - Introduction - DEV Community](https://dev.to/claretnnamocha/building-core-banking-a-blueprint-for-modern-financial-systems-introduction-4d13 "Building Core Banking: A Blueprint for Modern Financial Systems - Introduction - DEV Community")
+- [Thought Machine | Core Banking Software | Cloud Native](https://www.thoughtmachine.net/ "Thought Machine | Core Banking Software | Cloud Native")
+- [Unit | Embedded Finance](https://www.unit.co/ "Unit | Embedded Finance")
+- [Plaid: Enabling all companies to build fintech solutions](https://plaid.com/en-eu/ "Plaid: Enabling all companies to build fintech solutions")
+- [Tink | European open banking platform | 6000 connections](https://tink.com/ "Tink | European open banking platform | 6000 connections")
+- [TrueLayer - Europe's leading open banking platform](https://truelayer.com/ "TrueLayer - Europe's leading open banking platform")
+- [Organiza tu Dinero y Ahorra con la App de Fintonic](https://www.fintonic.com/es-ES/inicio/ "Organiza tu Dinero y Ahorra con la App de Fintonic")
+- [Goin: Haz crecer tu dinero. Compra más barato](https://www.goin.app/ "Goin: Haz crecer tu dinero. Compra más barato")
+- [Corlytics - Regulation Actioned](https://www.corlytics.com/ "Corlytics - Regulation Actioned")
+- [Identity (ID) Verification Solutions | Entrust](https://www.entrust.com/products/identity-verification?edc_redirect=Onfido-Redirect "Identity (ID) Verification Solutions | Entrust")
+- [DX Compliance Solutions : Home](https://dxcompliance.com/ "DX Compliance Solutions : Home")
+- [Powering a New Era in Financial Services](https://www.ncino.com/ "Powering a New Era in Financial Services")
+- [Klarna - Compare prices and pay in 4 payments](https://www.klarna.com/us/ "Klarna - Compare prices and pay in 4 payments")
+- [Affirm | Buy now, pay later with no late fees or surprises](https://www.affirm.com/ "Affirm | Buy now, pay later with no late fees or surprises")
+- [Cross River | API-Based Financial Solutions for Business](https://www.crossriver.com/ "Cross River | API-Based Financial Solutions for Business")
+- [nordigen.com](https://nordigen.com/en/ "nordigen.com")
+- [bonify: Bonität &amp; SCHUFA im Griff. Einfach. Schnell. Kostenlos.](https://www.bonify.de/ "bonify: Bonität &amp; SCHUFA im Griff. Einfach. Schnell. Kostenlos.")
+- [www.creditkudos.com](https://www.creditkudos.com/ "www.creditkudos.com")
+- [SPIN Analytics | Innovation in Risk management](https://spin-analytics.com/#riskrobot "SPIN Analytics | Innovation in Risk management")
+- [Products – G-Square Solutions](https://g-square.in/products/ "Products – G-Square Solutions")
+- [Denis Kuznetsov – Medium](https://denis-k.medium.com/ "Denis Kuznetsov – Medium")
+- [(38) How to Build a Digital Bank from Scratch...&amp; The Economics! | LinkedIn](https://www.linkedin.com/pulse/how-build-digital-bank-from-scratch-economics-germain-bahri/ "(38) How to Build a Digital Bank from Scratch...&amp; The Economics! | LinkedIn")
+- [The future of bank risk management | McKinsey](https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/the-future-of-bank-risk-management "The future of bank risk management | McKinsey")
+- [Unit | Embedded Finance](https://www.unit.co/ "Unit | Embedded Finance")
+- [Page not found | Andreessen Horowitz](https://a16z.com/2020/08/04/fintech-scales-vertical-saas/ "Page not found | Andreessen Horowitz")
+- [Open Banking: AISPs and PISPs explained: By Retired Member](https://www.finextra.com/blogposting/16647/open-banking-aisps-and-pisps-explained "Open Banking: AISPs and PISPs explained: By Retired Member")
+- [banking cores explained - Brave Search](https://search.brave.com/search?q=banking+cores+explained&source=android&summary=1&conversation=913b35bf47aa07fb365c53 "banking cores explained - Brave Search")
+- [Core banking - Wikipedia](https://en.m.wikipedia.org/wiki/Core_banking "Core banking - Wikipedia")
+- [What is Core Banking? | IBM](https://www.ibm.com/think/topics/core-banking "What is Core Banking? | IBM")
+- [Core Banking System: what is it? | Skaleet](https://skaleet.com/en/blog/core-banking-system-what-is-it "Core Banking System: what is it? | Skaleet")
+- [What is a core banking system? | Cognizant](https://www.cognizant.com/us/en/glossary/core-banking-system "What is a core banking system? | Cognizant")
+- [StackShare - Tech Stack Intelligence](https://stackshare.io/ "StackShare - Tech Stack Intelligence")
+- [stackshare credit union - Brave Search](https://search.brave.com/search?q=stackshare+credit+union&source=android "stackshare credit union - Brave Search")
+- [Flexcutech – Efficient Core Software for Credit Unions](https://www.flexcutech.com/ "Flexcutech – Efficient Core Software for Credit Unions")
+- [Sharetec | Web-Based Core Software for Credit Unions](https://www.sharetec.com/ "Sharetec | Web-Based Core Software for Credit Unions")
+- [credit union &quot;tech stack&quot; - Brave Search](https://search.brave.com/search?q=credit+union+%22tech+stack%22&source=android "credit union &quot;tech stack&quot; - Brave Search")
 
 # Software, Web
 
