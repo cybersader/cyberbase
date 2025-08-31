@@ -19,6 +19,7 @@ date modified: Sunday, August 31st 2025, 5:29 pm
 
 %% End Waypoint %%
 
+- [github.com > kepano/kepano-obsidian: My personal Obsidian vault template. A bottom-up approach to note-taking and organizing things I am interested in.](https://github.com/kepano/kepano-obsidian)
 - 
 
 # Vault Starters
