@@ -1,16 +1,32 @@
 {
   "recentFiles": [
     {
+      "basename": "Cyber Frameworks, Ontologies",
+      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Cyber Frameworks, Ontologies/Cyber Frameworks, Ontologies.md"
+    },
+    {
+      "basename": "⬇️ Obsidian Ideas Drop",
+      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
       "basename": "📁 52 - Obsidian Starters & Templates",
       "path": "📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md"
     },
     {
-      "basename": "Cyberbase Starter Vault",
-      "path": "📁 52 - Obsidian Starters & Templates/Cyberbase Starter Vault/Cyberbase Starter Vault.md"
+      "basename": "Cyberbase Obsidian Publish",
+      "path": "📁 51 - Cyberbase/Cyberbase Obsidian Publish/Cyberbase Obsidian Publish.md"
+    },
+    {
+      "basename": "Portfolio CMSs",
+      "path": "📁 51 - Cyberbase/Portfolio CMSs/Portfolio CMSs.md"
     },
     {
       "basename": "Personal Productivity Stack",
       "path": "📁 03 - Curations, Stacks/Personal Productivity Stack/Personal Productivity Stack.md"
+    },
+    {
+      "basename": "Cyberbase Starter Vault",
+      "path": "📁 52 - Obsidian Starters & Templates/Cyberbase Starter Vault/Cyberbase Starter Vault.md"
     },
     {
       "basename": "⬇ INBOX, DROPZONE",
@@ -183,22 +199,6 @@
     {
       "basename": "Entity",
       "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/DFD Object Configuration/Entity.md"
-    },
-    {
-      "basename": "AI Chat Log DFD",
-      "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/AI Chat Log DFD/AI Chat Log DFD.md"
-    },
-    {
-      "basename": "Linkify DFD Debug",
-      "path": "📦 VAULT SANDBOX TESTING/Excalidraw Scripts/Linkify DFD Debug/Linkify DFD Debug.md"
-    },
-    {
-      "basename": "Linkify DFD",
-      "path": "📦 VAULT SANDBOX TESTING/Excalidraw Scripts/Linkify DFD/Linkify DFD.md"
-    },
-    {
-      "basename": "Object 2",
-      "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/Object 2/Object 2.md"
     }
   ],
   "omittedPaths": [],

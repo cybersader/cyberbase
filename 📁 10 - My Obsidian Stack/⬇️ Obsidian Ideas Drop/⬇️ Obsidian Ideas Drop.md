@@ -5,7 +5,7 @@ aliases: [Obsidian Wiki Drop]
 tags: []
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Saturday, May 3rd 2025, 9:04 pm
+date modified: Sunday, August 31st 2025, 7:07 pm
 ---
 
 %% Begin Waypoint %%
@@ -134,3 +134,55 @@ date modified: Saturday, May 3rd 2025, 9:04 pm
 - [ ] Automatically go to image size with pasting an image to choose size immediately without having to click ➕ 2024-04-27
 - [ ] Reimplement last modified time check with Linter or another plugin (that actually works with Obsidian Publish) to use hashes of content to update even when hitting Ctrl S or linting 🔽 ➕ 2024-04-28
 - [ ] Obsidian Plugin that uses an LLM funnel or other LLM and AI technology to take recently added to pages (using content hashes?) and summarizes work done in a certain format along with layers of templates.  Then a "firehose" folder is generated with pages of summaries based on schedules ⏬ ➕ 2024-04-29
+
+- https://forum.obsidian.md/t/integrating-microsoft-office-documents/32055/26
+- https://forum.obsidian.md/t/actions-for-obsidian-40-dedicated-shortcuts-actions-for-obsidian-macos-ios/56341
+- https://forum.obsidian.md/t/best-way-to-link-these-notes/94846/4
+- https://github.com/Assblastois/Obsidian-Vault-Project-Management
+- https://forum.obsidian.md/t/best-way-to-manage-saved-quotes/71160/6
+- https://forum.obsidian.md/t/select-tools-for-zettelkasten-but-how/66067/2
+- https://forum.obsidian.md/t/12-principles-for-using-zettelkasten/51679/2
+- https://forum.obsidian.md/t/review-and-revise-notes-but-how/86820/6
+- https://forum.obsidian.md/t/obsidian-notes-template-ob-template/28940/30
+- https://forum.obsidian.md/t/make-good-notes-but-how/71760/7
+- https://docs.freeplane.org/
+- https://forum.obsidian.md/t/the-para-method-and-the-hard-facts-of-life/22279/6
+- chrome://newtab/
+- https://forum.obsidian.md/t/it-personal-knowledge/94137
+- https://forum.obsidian.md/t/youtube-watchlist/94094
+- https://forum.obsidian.md/t/historical-timeline-in-obsidian/6353/5
+- https://forum.obsidian.md/t/implementing-a-zettelkasten-system-with-block-references-in-obsidian/82589
+- https://forum.obsidian.md/t/understanding-meeting-notes-at-work/93659
+- https://forum.obsidian.md/t/how-to-organize-an-overview-note-for-a-folder/92397
+- https://forum.obsidian.md/t/eliminate-folders-as-a-concept/74337
+- https://forum.obsidian.md/t/use-tags-but-how/35320/4
+- https://forum.obsidian.md/t/quality-control-processes-for-notes/92117
+- https://forum.obsidian.md/t/search-and-retrieve-notes-but-how/65386
+- https://forum.obsidian.md/t/folders-vs-linking-vs-tags-the-definitive-guide-extremely-short-read-this/78468/5
+- https://forum.obsidian.md/t/after-dozens-and-dozens-of-youtube-tutorials-i-have-nothing-but-a-mess-in-my-head-i-dont-know-how-to-build-the-structure-of-a-vault/89980
+- https://forum.obsidian.md/t/inspect-and-adapt-process-but-how/36799
+- https://forum.obsidian.md/t/start-with-clear-goals-but-how/85629
+- https://forum.obsidian.md/t/simplify-zettelkasten-but-how/81090
+- https://forum.obsidian.md/t/using-obsidian-with-stream-deck/7842
+- https://forum.obsidian.md/t/folders-and-links-hierarchies-vs-flat/48400
+- https://forum.obsidian.md/t/using-obsidian-at-work-project-manager-project-lead/33137
+- https://forum.obsidian.md/t/how-do-i-mass-import-bookmarked-or-saved-instagram-posts/82125
+- https://forum.obsidian.md/t/need-help-integrating-johnny-decimal-system-and-my-pkm-vault-in-obsidian/80847
+- https://forum.obsidian.md/t/technical-script-snippets-resource-management/98303
+- https://forum.obsidian.md/t/lifeos-pro-para-method-periodic-notes-fullcalendar/88125
+- https://forum.obsidian.md/t/relay-multiplayer-plugin-for-obsidian-collaborative-editing-and-folder-sharing/87170/2
+- https://forum.obsidian.md/t/hovernotes-transforming-videos-into-notes-in-your-obsidian-vault/98234/1
+- https://forum.obsidian.md/t/why-manage-creation-and-modification-times-yourself/98192/1
+- https://forum.obsidian.md/t/semantic-search-plugin/58407
+- https://forum.obsidian.md/t/new-plugin-bujo-bullets/98179
+- https://forum.obsidian.md/t/convert-entire-pdfs-to-markdown-new-mistral-ocr/97924
+- https://forum.obsidian.md/t/publish-your-obsidian-vault-for-free-with-flowershow-cloud/98144
+- https://forum.obsidian.md/t/differentiate-unresolved-links-in-the-quick-switcher/97789
+- https://forum.obsidian.md/t/obsidianclipper-for-thunderbird-email-client/74822
+- https://forum.obsidian.md/t/obsidian-web-clipper-bookmarklet-with-full-markdown-support-for-images-headings-and-code-blocks/22068
+- https://forum.obsidian.md/t/templater-mermaid-tree-auto-creation/97717
+- https://forum.obsidian.md/t/using-graph-view-to-visualize-my-linkedin-connections/97667
+- https://code.visualstudio.com/docs/setup/vscode-web
+- https://pivic.blog/blog/my-favourite-obsidian-plugins/#latticework
+- https://web.hypothes.is/
+- https://github.com/qawatake/obsidian-binary-file-manager-plugin

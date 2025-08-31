@@ -1,11 +1,26 @@
 ---
+title:
 permalink:
 aliases: []
 tags: []
 publish: true
 date created: Monday, October 7th 2024, 1:22 pm
-date modified: Sunday, February 16th 2025, 3:37 pm
+date modified: Sunday, August 31st 2025, 7:05 pm
 ---
+
+
+- [SCF with STRM cybersecurity frameworks - Brave Search](https://search.brave.com/search?q=SCF+with+STRM+cybersecurity+frameworks+&source=web&summary=1&conversation=451e2c8115b3a790ec7441 "SCF with STRM cybersecurity frameworks - Brave Search")
+- [Secure Controls Framework (SCF)](https://securecontrolsframework.com/ "Secure Controls Framework (SCF)")
+- [&quot;set theory relationship mapping&quot; - Brave Search](https://search.brave.com/search?q=%22set+theory+relationship+mapping%22&source=web "&quot;set theory relationship mapping&quot; - Brave Search")
+- [SCF Set Theory Relationship Mapping (STRM) Excel](https://securecontrolsframework.com/strm-bundle/ "SCF Set Theory Relationship Mapping (STRM) Excel")
+- [set theory relationship mapping - Glossary | CSRC](https://csrc.nist.gov/glossary/term/set_theory_relationship_mapping "set theory relationship mapping - Glossary | CSRC")
+- [IR 8477, Mapping Relationships Between Documentary Standards, Regulations, Frameworks, and Guidelines: Developing Cybersecurity and Privacy Concept Mappings | CSRC](https://csrc.nist.gov/pubs/ir/8477/final "IR 8477, Mapping Relationships Between Documentary Standards, Regulations, Frameworks, and Guidelines: Developing Cybersecurity and Privacy Concept Mappings | CSRC")
+- [nist cprt - Brave Search](https://search.brave.com/search?q=nist+cprt&source=android "nist cprt - Brave Search")
+- [Apptega | Easily Crosswalk Multiple Frameworks](https://www.apptega.com/platform/framework-crosswalking "Apptega | Easily Crosswalk Multiple Frameworks")
+- [Set Theory Relationship Mapping](https://securecontrolsframework.com/set-theory-relationship-mapping-strm/ "Set Theory Relationship Mapping")
+- [Cybersecurity Risk Management and Information Protection | HITRUST](https://hitrustalliance.net/ "Cybersecurity Risk Management and Information Protection | HITRUST")
+- [MyCSF Cybersecurity Compliance Framework Tool | HITRUST](https://hitrustalliance.net/mycsf "MyCSF Cybersecurity Compliance Framework Tool | HITRUST")
+- [HITRUST Framework for Cybersecurity and Compliance Success](https://hitrustalliance.net/hitrust-framework "HITRUST Framework for Cybersecurity and Compliance Success")
 
 # Initial Mapping for Frameworks
 
