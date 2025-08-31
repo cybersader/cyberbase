@@ -1,8 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "Cyber Frameworks, Ontologies",
-      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Cyber Frameworks, Ontologies/Cyber Frameworks, Ontologies.md"
+      "basename": "⬇ Tech Dropzone",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
+    },
+    {
+      "basename": "📁 10 - My Obsidian Stack",
+      "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
     },
     {
       "basename": "⬇️ Obsidian Ideas Drop",
@@ -11,6 +15,14 @@
     {
       "basename": "📁 52 - Obsidian Starters & Templates",
       "path": "📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md"
+    },
+    {
+      "basename": "Cyber Frameworks, Ontologies",
+      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Cyber Frameworks, Ontologies/Cyber Frameworks, Ontologies.md"
+    },
+    {
+      "basename": "Population Collapse",
+      "path": "📁 16 - Society, Culture, Politics, Government/Population Collapse/Population Collapse.md"
     },
     {
       "basename": "Cyberbase Obsidian Publish",
@@ -187,18 +199,6 @@
     {
       "basename": "⬇️ Project Drop",
       "path": "📁 01 - Projects/⬇️ Project Drop/⬇️ Project Drop.md"
-    },
-    {
-      "basename": "Asset",
-      "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/DFD Object Configuration/Asset.md"
-    },
-    {
-      "basename": "Transfer",
-      "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/DFD Object Configuration/Transfer.md"
-    },
-    {
-      "basename": "Entity",
-      "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/DFD Object Configuration/Entity.md"
     }
   ],
   "omittedPaths": [],

@@ -5,7 +5,7 @@ aliases: [Obsidian Wiki Drop]
 tags: []
 publish: true
 date created: Friday, April 26th 2024, 11:33 am
-date modified: Sunday, August 31st 2025, 7:07 pm
+date modified: Sunday, August 31st 2025, 7:19 pm
 ---
 
 %% Begin Waypoint %%
@@ -120,6 +120,46 @@ date modified: Sunday, August 31st 2025, 7:07 pm
 
 - [My Project Management Workflow; An In-Depth Explanation - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/my-project-management-workflow-an-in-depth-explanation/82508)
 - 
+
+# Obsidian and Social Media
+
+- [I created a social network on top of Obsidian - Plugins ideas - Obsidian Forum](https://forum.obsidian.md/t/i-created-a-social-network-on-top-of-obsidian/31784 "I created a social network on top of Obsidian - Plugins ideas - Obsidian Forum")
+- [README - Cybersader](https://cybersader.com/README "README - Cybersader")
+- [obsidian publish social media - Brave Search](https://search.brave.com/search?q=obsidian+publish+social+media&source=web&summary=1&conversation=0da246a6676f307ae63374 "obsidian publish social media - Brave Search")
+- [Sekund](https://github.com/Sekund "Sekund")
+- [Social Media Calendar : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/1ex8bok/social_media_calendar/ "Social Media Calendar : r/ObsidianMD")
+- [Sekund/sekund-wiki-template: A template for group-based collaborative wikis using Sekund](https://github.com/Sekund/sekund-wiki-template "Sekund/sekund-wiki-template: A template for group-based collaborative wikis using Sekund")
+- [Moving Content Between Obsidian &amp; Social Media - Knowledge management - Obsidian Forum](https://forum.obsidian.md/t/moving-content-between-obsidian-social-media/37091 "Moving Content Between Obsidian &amp; Social Media - Knowledge management - Obsidian Forum")
+- [Sekund/sekund-plugin-react](https://github.com/Sekund/sekund-plugin-react "Sekund/sekund-plugin-react")
+- [Obsidian Plugins - Comprehensive List and Detailed Summaries of 2605 Plugins](https://www.obsidianstats.com/plugins?q=Bluesk "Obsidian Plugins - Comprehensive List and Detailed Summaries of 2605 Plugins")
+- [Organized daily notes - Automatically organizes your daily notes into customizable folder structures for better organization and easier navigation.](https://www.obsidianstats.com/plugins/organized-daily-notes "Organized daily notes - Automatically organizes your daily notes into customizable folder structures for better organization and easier navigation.")
+- [Papyrus](https://www.obsidianstats.com/plugins/papyrus "Papyrus")
+- [Autofit Tabs - Obsidian Plugin that automatically adjusts tab header widths in real-time to perfectly fit each tab's title content while maintaining a clean, seamless interface that prevents awkward text truncation and ensures optimal readability of your document titles.](https://www.obsidianstats.com/plugins/autofit-tabs "Autofit Tabs - Obsidian Plugin that automatically adjusts tab header widths in real-time to perfectly fit each tab's title content while maintaining a clean, seamless interface that prevents awkward text truncation and ensures optimal readability of your document titles.")
+- [Fold Properties By Default - Always have editor/metadata properties folded by default.](https://www.obsidianstats.com/plugins/fold-properties-by-default "Fold Properties By Default - Always have editor/metadata properties folded by default.")
+- [Age Encrypt - A plugin for Obsidian that provides age-based encryption for your notes.](https://www.obsidianstats.com/plugins/age-encrypt "Age Encrypt - A plugin for Obsidian that provides age-based encryption for your notes.")
+- [Minote Sync - Minote Sync is a Obsidian plugin to sync Minote(小米笔记) into your Vault.](https://www.obsidianstats.com/plugins/minote-sync "Minote Sync - Minote Sync is a Obsidian plugin to sync Minote(小米笔记) into your Vault.")
+- [Folder overview - Provides a dynamic overview of your vault or folders in the format of a code block.](https://www.obsidianstats.com/plugins/folder-overview "Folder overview - Provides a dynamic overview of your vault or folders in the format of a code block.")
+- [Readeck Importer - Import bookmarks from Readeck to Obsidian](https://www.obsidianstats.com/plugins/readeck-importer "Readeck Importer - Import bookmarks from Readeck to Obsidian")
+- [Explorer Colors - Set cascading colors for files and folders in Obsidian.](https://www.obsidianstats.com/plugins/explorer-colors "Explorer Colors - Set cascading colors for files and folders in Obsidian.")
+- [Media Companion](https://www.obsidianstats.com/plugins/media-companion "Media Companion")
+- [New Note Fixer - Obsidian Plugin that unifies the way non-existing notes are created when clicking on their links](https://www.obsidianstats.com/plugins/new-note-fixer "New Note Fixer - Obsidian Plugin that unifies the way non-existing notes are created when clicking on their links")
+- [Data Files Editor - Obsidian.md plugin for editing text data files](https://www.obsidianstats.com/plugins/data-files-editor "Data Files Editor - Obsidian.md plugin for editing text data files")
+- [Spacekeys - Obsidian plugin to define hotkeys based on sequences of keypresses.](https://www.obsidianstats.com/plugins/spacekeys "Spacekeys - Obsidian plugin to define hotkeys based on sequences of keypresses.")
+- [Tag Tactician](https://www.obsidianstats.com/plugins/tag-tactician "Tag Tactician")
+- [SamePage](https://www.obsidianstats.com/plugins/samepage "SamePage")
+- [Publish to Discourse - Obsidian plugin for publishing articles to forums built with Discourse. obsidian插件, 用于把文章发布到使用discourse搭建的论坛.](https://www.obsidianstats.com/plugins/publish-to-discourse "Publish to Discourse - Obsidian plugin for publishing articles to forums built with Discourse. obsidian插件, 用于把文章发布到使用discourse搭建的论坛.")
+- [DocBase (Unofficial) - Unofficial DocBase plugin for Obsidian](https://www.obsidianstats.com/plugins/docbase-unofficial "DocBase (Unofficial) - Unofficial DocBase plugin for Obsidian")
+- [Tressel Sync for Obsidian - Official Tressel plugin to export various content from the Internet (like Twitter, Reddit, Kindle and more) into Obsidian](https://www.obsidianstats.com/plugins/obsidian-tressel "Tressel Sync for Obsidian - Official Tressel plugin to export various content from the Internet (like Twitter, Reddit, Kindle and more) into Obsidian")
+- [obsidianstats.com/plugins/obsidian-pocket](https://www.obsidianstats.com/plugins/obsidian-pocket "obsidianstats.com/plugins/obsidian-pocket")
+- [Slurp - Slurps webpages and saves them as clean, uncluttered Markdown. Think Pocket, but better.](https://www.obsidianstats.com/plugins/slurp "Slurp - Slurps webpages and saves them as clean, uncluttered Markdown. Think Pocket, but better.")
+- [Pocketbook Cloud Highlight Importer - Imports highlights and notes from books stored in the pocketbook cloud to your obsidian vault](https://www.obsidianstats.com/plugins/pocketbook-cloud-highlight-importer "Pocketbook Cloud Highlight Importer - Imports highlights and notes from books stored in the pocketbook cloud to your obsidian vault")
+- [Mastodon Threading - Obsidian plugin to compose and post threads to Mastodon](https://www.obsidianstats.com/plugins/mastodon-threading "Mastodon Threading - Obsidian plugin to compose and post threads to Mastodon")
+- [Bluesky - Post to Bluesky from Obsidian](https://www.obsidianstats.com/plugins/bluesky "Bluesky - Post to Bluesky from Obsidian")
+- [NoteTweet - Post tweets directly from Obsidian.](https://www.obsidianstats.com/plugins/notetweet "NoteTweet - Post tweets directly from Obsidian.")
+- [Finally at a point to share how I'm managing my large personal social network using plain Markdown files and Obsidian. I don't expect anyone else to do it but it feels good to share nonetheless! : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/18u5g1l/finally_at_a_point_to_share_how_im_managing_my/ "Finally at a point to share how I'm managing my large personal social network using plain Markdown files and Obsidian. I don't expect anyone else to do it but it feels good to share nonetheless! : r/ObsidianMD")
+- [Typefully - Integrate Typefully within Obsidian](https://www.obsidianstats.com/plugins/typefully "Typefully - Integrate Typefully within Obsidian")
+- [hal_md/README.md at main · thephm/hal_md](https://github.com/thephm/hal_md/blob/main/README.md "hal_md/README.md at main · thephm/hal_md")
+- [Typefully: Best social media tool for creators &amp; businesses](https://typefully.com/ "Typefully: Best social media tool for creators &amp; businesses")
 
 # Misc
 

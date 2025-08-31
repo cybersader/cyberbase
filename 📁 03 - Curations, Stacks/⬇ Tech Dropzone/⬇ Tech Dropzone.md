@@ -1,11 +1,35 @@
 ---
+title:
 permalink: 
 aliases: []
 tags: [opensourcesoftware, privacy, software]
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Monday, March 3rd 2025, 9:03 pm
+date modified: Sunday, August 31st 2025, 7:20 pm
 ---
+
+
+
+- [Features | Rows](https://rows.com/features "Features | Rows")
+- [Meet Zario](https://www.meetzario.com/ "Meet Zario")
+- [Probo - Compliance for Startups in One Week](https://www.getprobo.com/ "Probo - Compliance for Startups in One Week")
+- [Algora - Hire the top 1% open source engineers](https://algora.io/ "Algora - Hire the top 1% open source engineers")
+- [Riot, where companies get their teams secured.](https://tryriot.com/ "Riot, where companies get their teams secured.")
+- [Resistbot](https://resist.bot/ "Resistbot")
+- [Keybase](https://keybase.io/ "Keybase")
+- [Mine - The Future of Data Ownership](https://www.saymine.com/ "Mine - The Future of Data Ownership")
+- [The diaspora* Project](https://diasporafoundation.org/ "The diaspora* Project")
+- [Home - YaCy](https://yacy.net/ "Home - YaCy")
+- [ZeroNet: Decentralized websites using Bitcoin cryptography and the BitTorrent network](https://zeronet.io/ "ZeroNet: Decentralized websites using Bitcoin cryptography and the BitTorrent network")
+- [Page Not Found | SpiderOak](https://spideroak.com/personal/encryptr "Page Not Found | SpiderOak")
+- [A New Kind of Instant Messaging](https://tox.chat/ "A New Kind of Instant Messaging")
+- [WireMin: A Decentralized Social Network to Express Freely and Chat Securely.](https://wiremin.org/ "WireMin: A Decentralized Social Network to Express Freely and Chat Securely.")
+- [ipfs/awesome-ipfs: Community list of awesome projects, apps, tools, pinning services and more related to IPFS.](https://github.com/ipfs/awesome-ipfs "ipfs/awesome-ipfs: Community list of awesome projects, apps, tools, pinning services and more related to IPFS.")
+- [sebsauvage/ZeroBin: A minimalist, opensource online pastebin where the server has zero knowledge of pasted data. Data is encrypted/decrypted in the browser using 256 bits AES.](https://github.com/sebsauvage/ZeroBin "sebsauvage/ZeroBin: A minimalist, opensource online pastebin where the server has zero knowledge of pasted data. Data is encrypted/decrypted in the browser using 256 bits AES.")
+- [PrivateBin](https://privatebin.info/ "PrivateBin")
+
+# Finance Tech Stack
+
 
 # Software, Web
 
