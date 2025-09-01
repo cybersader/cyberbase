@@ -1,11 +1,13 @@
 ---
+title:
 aliases: []
 tags: []
 publish: true
 permalink:
 date created: Sunday, December 22nd 2024, 5:12 pm
-date modified: Sunday, December 22nd 2024, 5:12 pm
+date modified: Sunday, August 31st 2025, 9:28 pm
 ---
+
 - [github.com > servusdei2018/awesome-catholic: curated list of awesome open-source Catholic projects, libraries and software](https://github.com/servusdei2018/awesome-catholic)
 - 
 - [The best parental control apps in 2024, tested by our editors | CNN Underscored](https://www.cnn.com/cnn-underscored/reviews/best-parental-control-apps "The best parental control apps in 2024, tested by our editors | CNN Underscored")
@@ -60,3 +62,27 @@ date modified: Sunday, December 22nd 2024, 5:12 pm
 - [android local vpn content filter client - Brave Search](https://search.brave.com/search?q=android+local+vpn+content+filter+client&source=web "android local vpn content filter client - Brave Search")
 - [Best DNS Filters for Blocking Porn at Home (Updated for 2024) | Tech Lockdown](https://www.techlockdown.com/blog/porn-blocker-dns "Best DNS Filters for Blocking Porn at Home (Updated for 2024) | Tech Lockdown")
 - [NextDNS - The new firewall for the modern Internet](https://nextdns.io/ "NextDNS - The new firewall for the modern Internet")
+- [WhatsMyName Web](https://whatsmyname.app/ "WhatsMyName Web")
+- [Is Whatsmyname broken for anyone else? : r/OSINT](https://www.reddit.com/r/OSINT/comments/1d1gsxg/is_whatsmyname_broken_for_anyone_else/ "Is Whatsmyname broken for anyone else? : r/OSINT")
+- [jivoi/awesome-osint: :scream: A curated list of amazingly awesome OSINT](https://github.com/jivoi/awesome-osint "jivoi/awesome-osint: :scream: A curated list of amazingly awesome OSINT")
+- [base.cybersader.com](https://base.cybersader.com/ylc2024 "base.cybersader.com")
+- [OSINT Combine | NexusXplore](https://www.osintcombine.com/ "OSINT Combine | NexusXplore")
+- [jivoi/awesome-osint: :scream: A curated list of amazingly awesome OSINT](https://github.com/jivoi/awesome-osint "jivoi/awesome-osint: :scream: A curated list of amazingly awesome OSINT")
+- [OSINT Framework](https://osintframework.com/ "OSINT Framework")
+- [Awesome osint Lists | Ecosyste.ms: Awesome](https://awesome.ecosyste.ms/lists?topic=osint "Awesome osint Lists | Ecosyste.ms: Awesome")
+- [How do I create a Credit Card Canarytoken? – Thinkst Canary](https://help.canary.tools/hc/en-gb/articles/22095726239901-How-do-I-create-a-Credit-Card-Canarytoken "How do I create a Credit Card Canarytoken? – Thinkst Canary")
+- [Swipe right on our new credit card tokens! – Thinkst Thoughts](https://blog.thinkst.com/2023/01/swipe-right-on-our-new-credit-card-tokens.html "Swipe right on our new credit card tokens! – Thinkst Thoughts")
+- [Requested a credit card under an alias. Any liability on my end. : r/CreditCards](https://www.reddit.com/r/CreditCards/comments/84vyjk/requested_a_credit_card_under_an_alias_any/ "Requested a credit card under an alias. Any liability on my end. : r/CreditCards")
+- [Are harvest now, decrypt later cyberattacks actually happening?](https://www.techmonitor.ai/hardware/quantum/harvest-now-decrypt-later-cyberattack-quantum-computer "Are harvest now, decrypt later cyberattacks actually happening?")
+- [hack washington dc - Brave Search](https://search.brave.com/search?q=hack+washington+dc&source=android&summary=1&conversation=e4e135af50642baf354ec2 "hack washington dc - Brave Search")
+- [store now decrypt later - Brave Search](https://search.brave.com/search?q=store+now+decrypt+later&summary=1&conversation=6e092a5aa2cc3a31cf55fe "store now decrypt later - Brave Search")
+- [base.cybersader.com](https://base.cybersader.com/ "base.cybersader.com")
+- [‘Store now, decrypt later’: US leaders prep for quantum cryptography concerns | The Record from Recorded Future News](https://therecord.media/us-leaders-prep-for-quantum-cryptography-concerns "‘Store now, decrypt later’: US leaders prep for quantum cryptography concerns | The Record from Recorded Future News")
+- [internet graph history statistics - Google Search](https://www.google.com/search?q=internet+graph+history+statistics&udm=2 "internet graph history statistics - Google Search")
+- [social media stats united states - Google Search](https://www.google.com/search?q=social+media+stats+united+states&udm=2#vhid=XXkuiGwxiniUuM&vssid=mosaic "social media stats united states - Google Search")
+- [Christian Principles in Cybersecurity | Geneva College](https://www.geneva.edu/blog/program-spotlight/the-value-of-christian-principles-in-cybersecurity-education "Christian Principles in Cybersecurity | Geneva College")
+- [Cyberspace - New World Encyclopedia](https://www.newworldencyclopedia.org/entry/Cyberspace "Cyberspace - New World Encyclopedia")
+- [privacy etymology - Brave Search](https://search.brave.com/search?q=privacy+etymology&source=android "privacy etymology - Brave Search")
+- [privacy - Wiktionary, the free dictionary](https://en.m.wiktionary.org/wiki/privacy "privacy - Wiktionary, the free dictionary")
+- [Privacy - Wikipedia](https://en.m.wikipedia.org/wiki/Privacy "Privacy - Wikipedia")
+- [Privacy - Etymology, Origin &amp; Meaning](https://www.etymonline.com/word/privacy "Privacy - Etymology, Origin &amp; Meaning")

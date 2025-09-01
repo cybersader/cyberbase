@@ -8,7 +8,7 @@ date created: Sunday, May 11th 2025, 11:30 am
 date modified: Sunday, May 11th 2025, 3:59 pm
 ---
 
-[Paperless Storage](../../../Paperless%20Storage/Paperless%20Storage.md)
+[Paperless Storage, Document Scanners](../../../Paperless%20Storage/Paperless%20Storage,%20Document%20Scanners.md)
 
 - [paperless-ngx.com > Setup - Paperless-ngx](https://docs.paperless-ngx.com/setup/#docker)
 - Good example of using custom YAML - [youtube.com > TrueNAS Scale + Custom App (Baserow example)](https://www.youtube.com/watch?v=ZjWRPOkLCwA)

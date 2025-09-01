@@ -1,11 +1,15 @@
 ---
+title:
 permalink:
 aliases: [Windows Desktop Environment and App Setup Tools - Provisioning Workstations]
 tags: []
 publish: true
 date created: Wednesday, November 6th 2024, 11:36 am
-date modified: Monday, December 2nd 2024, 9:05 pm
+date modified: Sunday, August 31st 2025, 9:25 pm
 ---
+
+[Home OS Provisioning & Resetting](../../📁%2007%20-%20Cybersader%20Arsenal/Home%20OS%20Provisioning%20&%20Resetting/Home%20OS%20Provisioning%20&%20Resetting.md)
+
 
 - [ ] Make my own provisioning workflow for home users - security, scripting (powershell), Python, apps, etc. ➕ 2024-11-06
 
@@ -25,6 +29,20 @@ date modified: Monday, December 2nd 2024, 9:05 pm
 - Clonezilla
 	- [Clonezilla - About](https://clonezilla.org/)
 	- [Using Clonezilla | Welcome to The Privacy Dad's Blog!](https://theprivacydad.com/using-clonezilla/)
+
+
+- [Features · PSAppDeployToolkit](https://psappdeploytoolkit.com/features "Features · PSAppDeployToolkit")
+- [Robocopy | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy "Robocopy | Microsoft Learn")
+- [Clonezilla - About](https://clonezilla.org/ "Clonezilla - About")
+- [Clonezilla live](https://clonezilla.org/clonezilla-live.php "Clonezilla live")
+- [Chris Titus Tech | Tech Content Creator](https://christitus.com/ "Chris Titus Tech | Tech Content Creator")
+- [Windows to Linux for Powerusers](https://christitus.com/windows-to-linux/ "Windows to Linux for Powerusers")
+- [The Most Popular Windows Utility](https://christitus.com/winutil-install/ "The Most Popular Windows Utility")
+- [Chocolatey Software | Chocolatey GUI 2.1.1](https://community.chocolatey.org/packages/chocolateygui "Chocolatey Software | Chocolatey GUI 2.1.1")
+- [winget.run | Finding winget packages made simple.](https://winget.run/ "winget.run | Finding winget packages made simple.")
+- [ntdevlabs/tiny11builder: Scripts to build a trimmed-down Windows 11 image.](https://github.com/ntdevlabs/tiny11builder "ntdevlabs/tiny11builder: Scripts to build a trimmed-down Windows 11 image.")
+- [NTLite](https://www.ntlite.com/ "NTLite")
+- [winget.run | Finding winget packages made simple.](https://winget.run/ "winget.run | Finding winget packages made simple.")
 
 ## Misc Links
 

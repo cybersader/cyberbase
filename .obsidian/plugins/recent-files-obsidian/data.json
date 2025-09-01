@@ -1,16 +1,76 @@
 {
   "recentFiles": [
     {
+      "basename": "Organization Documentation & Wikis",
+      "path": "📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
+    },
+    {
+      "basename": "PersonalPrivacyTips",
+      "path": "📁 07 - Cybersader Arsenal/PersonalPrivacyTips/PersonalPrivacyTips.md"
+    },
+    {
+      "basename": "📁 07 - Cybersader Arsenal",
+      "path": "📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md"
+    },
+    {
+      "basename": "Brace",
+      "path": "⬇️ Clippings/Tech/Brace/Brace.md"
+    },
+    {
+      "basename": "Wakapi",
+      "path": "⬇️ Clippings/Tech/Wakapi/Wakapi.md"
+    },
+    {
+      "basename": "⬇️ Cybersade DROPZONE",
+      "path": "📁 07 - Cybersader Arsenal/⬇️ Cybersade DROPZONE/⬇️ Cybersade DROPZONE.md"
+    },
+    {
+      "basename": "Titan Core",
+      "path": "⬇️ Clippings/Tech/Titan Core/Titan Core.md"
+    },
+    {
+      "basename": "Gitbutler",
+      "path": "⬇️ Clippings/Tech/Gitbutler/Gitbutler.md"
+    },
+    {
       "basename": "⬇ Tech Dropzone",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
     },
     {
-      "basename": "📁 10 - My Obsidian Stack",
-      "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
+      "basename": "Windows Desktop Provisioning",
+      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
+    },
+    {
+      "basename": "Fake Window Light",
+      "path": "⬇ INBOX, DROPZONE/Fake Window Light/Fake Window Light.md"
+    },
+    {
+      "basename": "Personal Productivity Stack",
+      "path": "📁 03 - Curations, Stacks/Personal Productivity Stack/Personal Productivity Stack.md"
+    },
+    {
+      "basename": "Portfolio CMSs",
+      "path": "📁 51 - Cyberbase/Portfolio CMSs/Portfolio CMSs.md"
     },
     {
       "basename": "⬇️ Obsidian Ideas Drop",
       "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
+    },
+    {
+      "basename": "Paperless Storage, Document Scanners",
+      "path": "📁 07 - Cybersader Arsenal/Paperless Storage, Document Scanners/Paperless Storage, Document Scanners.md"
+    },
+    {
+      "basename": "YLC 2024 Presentation",
+      "path": "📁 50 - Cybersade/YLC 2024 Presentation/YLC 2024 Presentation.md"
+    },
+    {
+      "basename": "Data Entry Tools",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md"
+    },
+    {
+      "basename": "📁 10 - My Obsidian Stack",
+      "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
     },
     {
       "basename": "📁 52 - Obsidian Starters & Templates",
@@ -29,14 +89,6 @@
       "path": "📁 51 - Cyberbase/Cyberbase Obsidian Publish/Cyberbase Obsidian Publish.md"
     },
     {
-      "basename": "Portfolio CMSs",
-      "path": "📁 51 - Cyberbase/Portfolio CMSs/Portfolio CMSs.md"
-    },
-    {
-      "basename": "Personal Productivity Stack",
-      "path": "📁 03 - Curations, Stacks/Personal Productivity Stack/Personal Productivity Stack.md"
-    },
-    {
       "basename": "Cyberbase Starter Vault",
       "path": "📁 52 - Obsidian Starters & Templates/Cyberbase Starter Vault/Cyberbase Starter Vault.md"
     },
@@ -45,20 +97,12 @@
       "path": "⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md"
     },
     {
-      "basename": "Fake Window Light",
-      "path": "⬇ INBOX, DROPZONE/Fake Window Light/Fake Window Light.md"
-    },
-    {
       "basename": "Fitness and Diet Tech Stack",
       "path": "📁 23 - Wellness, Fitness/Fitness and Diet Tech Stack/Fitness and Diet Tech Stack.md"
     },
     {
       "basename": "App Tool Solution Discovery , Catalogues, Curation, OSS Curations",
       "path": "CybersaderNotion/03 Awesome-Cyber/Apps & Tech/App Tool Solution Discovery , Catalogues, Curation, OSS Curations.md"
-    },
-    {
-      "basename": "Windows Desktop Provisioning",
-      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
     },
     {
       "basename": "Tech Stacks from Tech Content Creators",
@@ -155,50 +199,6 @@
     {
       "basename": "DFD Example",
       "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/DFD Example.md"
-    },
-    {
-      "basename": "transfer_custom-name_to_asset-rectangle-peo7",
-      "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/DFD Objects Database/Transfers/transfer_custom-name_to_asset-rectangle-peo7.md"
-    },
-    {
-      "basename": "Linkify DFD v1.3",
-      "path": "📦 VAULT SANDBOX TESTING/Excalidraw Scripts/Linkify DFD v1.3.md"
-    },
-    {
-      "basename": "Linkify DFD v1.3.1",
-      "path": "📦 VAULT SANDBOX TESTING/Excalidraw Scripts/Linkify DFD v1.3.1.md"
-    },
-    {
-      "basename": "Data Flow Diagram Testing",
-      "path": "📦 VAULT SANDBOX TESTING/Data Flow Diagram Testing/Data Flow Diagram Testing.md"
-    },
-    {
-      "basename": "Linkify DFD v1.2",
-      "path": "📦 VAULT SANDBOX TESTING/Excalidraw Scripts/Linkify DFD v1.2.md"
-    },
-    {
-      "basename": "linkify dfd v1.1",
-      "path": "📦 VAULT SANDBOX TESTING/Excalidraw Scripts/linkify dfd v1.1.md"
-    },
-    {
-      "basename": "Excalidraw Scripts",
-      "path": "📦 VAULT SANDBOX TESTING/Excalidraw Scripts/Excalidraw Scripts.md"
-    },
-    {
-      "basename": "Linkify DFD v10",
-      "path": "📦 VAULT SANDBOX TESTING/Excalidraw Scripts/Linkify DFD v10/Linkify DFD v10.md"
-    },
-    {
-      "basename": "Linkify DFD v8",
-      "path": "📦 VAULT SANDBOX TESTING/Excalidraw Scripts/Linkify DFD v8/Linkify DFD v8.md"
-    },
-    {
-      "basename": "Home Assistant",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Assistant/Home Assistant.md"
-    },
-    {
-      "basename": "⬇️ Project Drop",
-      "path": "📁 01 - Projects/⬇️ Project Drop/⬇️ Project Drop.md"
     }
   ],
   "omittedPaths": [],

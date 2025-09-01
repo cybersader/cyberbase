@@ -5,7 +5,7 @@ aliases: []
 tags: [opensourcesoftware, privacy, software]
 publish: true
 date created: Tuesday, April 9th 2024, 9:01 pm
-date modified: Sunday, August 31st 2025, 7:36 pm
+date modified: Sunday, August 31st 2025, 9:28 pm
 ---
 
 
@@ -27,6 +27,8 @@ date modified: Sunday, August 31st 2025, 7:36 pm
 - [ipfs/awesome-ipfs: Community list of awesome projects, apps, tools, pinning services and more related to IPFS.](https://github.com/ipfs/awesome-ipfs "ipfs/awesome-ipfs: Community list of awesome projects, apps, tools, pinning services and more related to IPFS.")
 - [sebsauvage/ZeroBin: A minimalist, opensource online pastebin where the server has zero knowledge of pasted data. Data is encrypted/decrypted in the browser using 256 bits AES.](https://github.com/sebsauvage/ZeroBin "sebsauvage/ZeroBin: A minimalist, opensource online pastebin where the server has zero knowledge of pasted data. Data is encrypted/decrypted in the browser using 256 bits AES.")
 - [PrivateBin](https://privatebin.info/ "PrivateBin")
+- [formsflow.ai > Home](https://formsflow.ai/)
+- 
 
 # Finance Tech Stack
 
@@ -74,6 +76,19 @@ date modified: Sunday, August 31st 2025, 7:36 pm
 - [Flexcutech – Efficient Core Software for Credit Unions](https://www.flexcutech.com/ "Flexcutech – Efficient Core Software for Credit Unions")
 - [Sharetec | Web-Based Core Software for Credit Unions](https://www.sharetec.com/ "Sharetec | Web-Based Core Software for Credit Unions")
 - [credit union &quot;tech stack&quot; - Brave Search](https://search.brave.com/search?q=credit+union+%22tech+stack%22&source=android "credit union &quot;tech stack&quot; - Brave Search")
+- [checkmarble.com > Marble | The real-time fraud and AML decision engine](https://www.checkmarble.com/)
+- [psd3 regulation - Brave Search](https://search.brave.com/search?q=psd3+regulation&source=android&summary=1&conversation=ea5a310924a45f3388d637 "psd3 regulation - Brave Search")
+- [A guide to PSD3 | Stripe](https://stripe.com/guides/what-platforms-and-marketplaces-can-expect-from-psd3 "A guide to PSD3 | Stripe")
+- [Payment Services Directive 3 (PSD3) and Payment Services Regulation (PSR) | Updates and Insights](https://www.payment-services-directive-3.com/ "Payment Services Directive 3 (PSD3) and Payment Services Regulation (PSR) | Updates and Insights")
+- [How PSD3 and PSR will shape trends in financial services | EY - Global](https://www.ey.com/en_gl/insights/financial-services/emeia/how-psd3-and-psr-will-shape-trends-in-eu-financial-services "How PSD3 and PSR will shape trends in financial services | EY - Global")
+- [PSD3: Everything you need to know - Adyen](https://www.adyen.com/knowledge-hub/psd3 "PSD3: Everything you need to know - Adyen")
+- [github awesome open banking - Brave Search](https://search.brave.com/search?q=github+awesome+open+banking&source=web "github awesome open banking - Brave Search")
+- [wilsonfreitas/awesome-quant: A curated list of insanely awesome libraries, packages and resources for Quants (Quantitative Finance)](https://github.com/wilsonfreitas/awesome-quant "wilsonfreitas/awesome-quant: A curated list of insanely awesome libraries, packages and resources for Quants (Quantitative Finance)")
+- [Capital One](https://github.com/capitalone "Capital One")
+- [JPMorganChase](https://github.com/jpmorganchase "JPMorganChase")
+- [gavincyi/awesome-financial-open-source: Collection of financial institution open source groups](https://github.com/gavincyi/awesome-financial-open-source "gavincyi/awesome-financial-open-source: Collection of financial institution open source groups")
+- [akfamily/awesome-data: Awesome-data shows most interesting data-source around the financial world!](https://github.com/akfamily/awesome-data "akfamily/awesome-data: Awesome-data shows most interesting data-source around the financial world!")
+- [jplock/awesome-fintech: Curated list of awesome Fintech startup companies](https://github.com/jplock/awesome-fintech "jplock/awesome-fintech: Curated list of awesome Fintech startup companies")
 
 # Software, Web
 

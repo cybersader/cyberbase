@@ -1,10 +1,11 @@
 ---
+title:
 aliases: []
 tags: []
 publish: true
 permalink: ylc2024
 date created: Tuesday, December 31st 2024, 4:14 pm
-date modified: Monday, January 6th 2025, 12:45 pm
+date modified: Sunday, August 31st 2025, 9:23 pm
 ---
 
 %% Begin Waypoint %%
@@ -248,6 +249,7 @@ Technology is a means to ends
 - [What to know about string of US hacks blamed on China](https://www.bbc.com/news/articles/c86w2evj05do)
 - [US Treasury says Chinese hackers stole documents in 'major incident' | Reuters](https://www.reuters.com/technology/cybersecurity/us-treasurys-workstations-hacked-cyberattack-by-china-afp-reports-2024-12-30/)
 - 
+
 ## Factors of Authentication
 
 - Links

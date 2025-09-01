@@ -78,6 +78,7 @@
 	- **[[Beanhub]]**
 	- **[[Blaze ai]]**
 	- **[[Boldin]]**
+	- **[[Brace]]**
 	- **[[Briefing]]**
 	- **[[Bruno]]**
 	- **[[Buckets Budgeting App]]**
@@ -112,6 +113,7 @@
 	- **[[Formed]]**
 	- **[[Garmin Pay]]**
 	- **[[Ghostfolio]]**
+	- **[[Gitbutler]]**
 	- **[[Gitea]]**
 	- **[[Glint]]**
 	- **[[Google Map Plus Codes]]**
@@ -203,6 +205,7 @@
 	- **[[Terrateam]]**
 	- **[[Thinkst Canary]]**
 	- **[[Tiller]]**
+	- **[[Titan Core]]**
 	- **[[Todoist]]**
 	- **[[Toggl Track]]**
 	- **[[Trilium Notes]]**
@@ -212,6 +215,7 @@
 	- **[[Velociraptor]]**
 	- **[[Venmo]]**
 	- **[[VoidZero]]**
+	- **[[Wakapi]]**
 	- **[[Wakatime]]**
 	- **[[Webstudio_website_builder]]**
 	- **[[WenFire]]**
