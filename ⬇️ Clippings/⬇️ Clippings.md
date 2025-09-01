@@ -70,6 +70,7 @@
 - **[[Tech]]**
 	- **[[Ableton Live]]**
 	- **[[Actions For Obsidian]]**
+	- **[[Activitywatch]]**
 	- **[[Actual]]**
 	- **[[Agentic Windows]]**
 	- **[[Amigo AI Finance]]**
