@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sat, Aug 2, 2025 - [[My Media Server]]
+> Sun, Sep 7, 2025 - [[Catholic & Christian Taxonomies]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                                     | Last modified             |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md\|My Media Server]]                       | Sat - 8/2/2025, 1:23 PM   |
-| [[📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Web or Browser-Based Obsidian/Web or Browser-Based Obsidian.md\|Web or Browser-Based Obsidian]] | Fri - 8/1/2025, 2:59 PM   |
-| [[📁 07 - Cybersader Arsenal/Home OS Provisioning & Resetting/Home OS Provisioning & Resetting.md\|Home OS Provisioning & Resetting]]                    | Sun - 7/27/2025, 8:54 PM  |
-| [[📁 50 - Cybersade/Child Online Safety Tech Stack/Child Online Safety Tech Stack.md\|Child Online Safety Tech Stack]]                                   | Sun - 7/27/2025, 5:58 PM  |
-| [[📁 50 - Cybersade/📁 50 - Cybersade.md\|📁 50 - Cybersade]]                                                                                            | Sun - 7/27/2025, 5:48 PM  |
-| [[📁 03 - Curations, Stacks/Open Source Media/Open Source Media.md\|Open Source Media]]                                                                  | Mon - 7/21/2025, 9:18 PM  |
-| [[📁 03 - Curations, Stacks/📁 03 - Curations, Stacks.md\|📁 03 - Curations, Stacks]]                                                                    | Mon - 7/21/2025, 9:17 PM  |
-| [[📁 07 - Cybersader Arsenal/3D Prints/3D Prints.md\|3D Prints]]                                                                                         | Sun - 7/20/2025, 1:37 PM  |
-| [[⬇️ Clippings/Tech/Tec-accessories_ti-tape/Tec-accessories_ti-tape.md\|Tec-accessories_ti-tape]]                                                        | Sun - 7/20/2025, 11:51 AM |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                           | Sun - 7/20/2025, 11:51 AM |
+| File                                                                                                                                          | Last modified             |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 50 - Cybersade/Catholic & Christian Taxonomies/Catholic & Christian Taxonomies.md\|Catholic & Christian Taxonomies]]                     | Sun - 9/7/2025, 7:35 PM   |
+| [[📁 50 - Cybersade/📁 50 - Cybersade.md\|📁 50 - Cybersade]]                                                                                 | Sun - 9/7/2025, 7:24 PM   |
+| [[⬇️ Clippings/Tech/Activitywatch/Activitywatch.md\|Activitywatch]]                                                                           | Sun - 8/31/2025, 10:02 PM |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                | Sun - 8/31/2025, 10:02 PM |
+| [[📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md\|Organization Documentation & Wikis]] | Sun - 8/31/2025, 9:47 PM  |
+| [[⬇️ Clippings/Tech/Brace/Brace.md\|Brace]]                                                                                                   | Sun - 8/31/2025, 9:46 PM  |
+| [[⬇️ Clippings/Tech/Wakapi/Wakapi.md\|Wakapi]]                                                                                                | Sun - 8/31/2025, 9:39 PM  |
+| [[⬇️ Clippings/Tech/Titan Core/Titan Core.md\|Titan Core]]                                                                                    | Sun - 8/31/2025, 9:37 PM  |
+| [[⬇️ Clippings/Tech/Gitbutler/Gitbutler.md\|Gitbutler]]                                                                                       | Sun - 8/31/2025, 9:35 PM  |
+| [[📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md\|⬇ Tech Dropzone]]                                                             | Sun - 8/31/2025, 9:28 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 
