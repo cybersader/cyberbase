@@ -24,7 +24,6 @@
   "table-editor-obsidian",
   "obsidian-charts",
   "chronos",
-  "cmdr",
   "consistent-attachments-and-links",
   "obsidian-custom-attachment-location",
   "custom-save",
@@ -62,5 +61,6 @@
   "recent-files-obsidian",
   "various-complements",
   "omnisearch",
-  "fileorganizer2000"
+  "fileorganizer2000",
+  "cmdr"
 ]
