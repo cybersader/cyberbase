@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Sunday, August 3rd 2025, 8:23 pm
+date modified: Monday, September 8th 2025, 6:40 pm
 ---
 
 # Links
@@ -590,10 +590,19 @@ Movies:
 D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/Movies/{n} ({y}) {' [imdbid-'+imdbid+']'}{ m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+duration+']'}{ bt = fn.match(/(?:\[(?!\d[^\]]*Ch\])[^\]]+\]|\([^\)]+\))$/); bt ? ' '+bt : '' }
 ```
 
+```json
+D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/Movies/{n} ({y}){' [imdbid-'+imdbid+']'}{m=fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' ');m?' ('+m+')':''}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!(audioLanguages =~ /eng/)?' ('+audioLanguages.ISO3.join(', ').upper()+')':''}{' ['+any{vf}{height+'p'}+' '+any{vc}{'NA'}+' '+any{ac}{'NA'}+' '+any{af}{'NA'}+' '+any{duration}{'PT0M'}+']'}{bt=fn.match(/(?:\[(?!\d[^\]]*Ch\])[^\]]+\]|\([^\)]+\))$/);bt?' '+bt:''}
+```
+
 TV Shows (use duration)
 
 ```json
 D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/TV Shows/{n} - {s00e00} - {t} ({y}) {' [tmdbid-'+tmdbid+']'}{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+duration+']'}{ bt = fn.match(/(?:\[(?!\d[^\]]*Ch\])[^\]]+\]|\([^\)]+\))$/); bt ? ' '+bt : '' }
+```
+
+Movies (w/tnn at end):
+```json
+D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/Movies/{n} ({y}){' [imdbid-'+imdbid+']'}{m=fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' ');m?' ('+m+')':''}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!(audioLanguages =~ /eng/)?' ('+audioLanguages.ISO3.join(', ').upper()+')':''}{' ['+any{vf}{height+'p'}+' '+any{vc}{'NA'}+' '+any{ac}{'NA'}+' '+any{af}{'NA'}+' '+any{duration}{'PT0M'}+']'}{bt=fn.match(/(?:\[(?!\d[^\]]*Ch\])[^\]]+\]|\([^\)]+\))$/);x=fn.match(/(?i)_t\d{2}\b$/);x?' '+x:bt?' '+bt:''}
 ```
 
 ###### BATCH 4
