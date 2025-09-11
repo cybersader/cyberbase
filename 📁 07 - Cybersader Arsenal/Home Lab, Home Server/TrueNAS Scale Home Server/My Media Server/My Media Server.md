@@ -699,7 +699,9 @@ D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}) {'[tmdbid-'+tmdbid+']'}/
 		- Right click the file names to changes the format expression
 - Jellyfin Special Naming
 	- [jellyfin.org > Movies | Jellyfin](https://jellyfin.org/docs/general/server/media/movies#naming)
+		- 
 	- [jellyfin.org > TV Shows | Jellyfin](https://jellyfin.org/docs/general/server/media/shows#naming)
+		- 
 - Finding episodes by subtitles or file hash
 	- [opensubtitles.com > opensubtitles.com](https://www.opensubtitles.com/en/stats/) - some have said you can use this for file hash-based matching in FileBot, but it may be an older version
 	- 
