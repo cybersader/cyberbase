@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Thursday, September 11th 2025, 8:37 pm
+date modified: Thursday, September 11th 2025, 9:04 pm
 ---
 
 # Links
@@ -707,6 +707,44 @@ D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}) {'[tmdbid-'+tmdbid+']'}/
 	- 
 - [jellyfin.org > TV Shows | Jellyfin](https://jellyfin.org/docs/general/server/media/shows#naming)
 	- 
+
+#### File Suffix
+
+If you would rather keep everything in a single folder, you can append special suffixes to the filename which Jellyfin picks up and uses to identify the file as an extra. Note that, with a few noted exceptions, these suffixes **DO NOT** contain any spaces.
+
+- `-trailer`
+- `.trailer`
+- `_trailer`
+- `trailer` - This is a space followed by the word `trailer`
+- `-sample`
+- `.sample`
+- `_sample`
+- `sample` - This is a space followed by the word `sample`
+- `-scene`
+- `-clip`
+- `-interview`
+- `-behindthescenes`
+- `-deleted`
+- `-deletedscene`
+- `-featurette`
+- `-short`
+- `-other`
+- `-extra`
+
+```
+Best_Movie_Ever (2019)  
+├── Best_Movie_Ever (2019) - 1080P.mp4  
+├── Preview Trailer.trailer.mp4  
+└── Making of The Best Movie Ever-behindthescenes.mp4
+```
+
+```
+Awesome TV Show (2024)  
+├── Season 1  
+│ ├── S01E01 episode name.mp4  
+│ └── Preview Trailer.trailer.mp4  
+└── making of awesome tv show-behindthescenes.mp4
+```
 
 #### Multiple Parts
 
