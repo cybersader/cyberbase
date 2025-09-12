@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Monday, September 8th 2025, 6:40 pm
+date modified: Thursday, September 11th 2025, 8:37 pm
 ---
 
 # Links
@@ -690,21 +690,48 @@ D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}) {'[tmdbid-'+tmdbid+']'}/
 
 ## 8) Renaming Shows
 
-- Install the "AniDB", TvDB, and other DB plugins to Jellyfin
-	- [Custom Plugins (above)](📁%2007%20-%20Cybersader%20Arsenal/Home%20Lab,%20Home%20Server/TrueNAS%20Scale%20Home%20Server/My%20Media%20Server/My%20Media%20Server.md#7%20Custom%20Plugins)
-- Using naming schemes from FileBot
-	- [filebot.net > Plex / Kodi / Emby / Jellyfin Naming Schemes - FileBot](https://www.filebot.net/forums/viewtopic.php?t=4116#jellyfin)
-		- `{ jellyfin.id }`
-	- [filebot.net > Format Expressions](https://www.filebot.net/naming.html)
-		- Right click the file names to changes the format expression
-- Jellyfin Special Naming
-	- [jellyfin.org > Movies | Jellyfin](https://jellyfin.org/docs/general/server/media/movies#naming)
-		- 
-	- [jellyfin.org > TV Shows | Jellyfin](https://jellyfin.org/docs/general/server/media/shows#naming)
-		- 
-- Finding episodes by subtitles or file hash
-	- [opensubtitles.com > opensubtitles.com](https://www.opensubtitles.com/en/stats/) - some have said you can use this for file hash-based matching in FileBot, but it may be an older version
+### Install the "AniDB", TvDB, and other DB plugins to Jellyfin
+
+- [Custom Plugins (above)](📁%2007%20-%20Cybersader%20Arsenal/Home%20Lab,%20Home%20Server/TrueNAS%20Scale%20Home%20Server/My%20Media%20Server/My%20Media%20Server.md#7%20Custom%20Plugins)
+
+### Using naming schemes from FileBot
+
+- [filebot.net > Plex / Kodi / Emby / Jellyfin Naming Schemes - FileBot](https://www.filebot.net/forums/viewtopic.php?t=4116#jellyfin)
+	- `{ jellyfin.id }`
+- [filebot.net > Format Expressions](https://www.filebot.net/naming.html)
+	- Right click the file names to changes the format expression
+
+### Jellyfin Special Naming
+
+- [jellyfin.org > Movies | Jellyfin](https://jellyfin.org/docs/general/server/media/movies#naming)
 	- 
+- [jellyfin.org > TV Shows | Jellyfin](https://jellyfin.org/docs/general/server/media/shows#naming)
+	- 
+
+#### Multiple Parts
+
+Content that is split into multiple files can be stacked together if named correctly. Files should be named as follows:
+
+```
+Movie Name (2010)  
+├── Movie Name-cd1.mkv  
+├── Movie Name-cd2.mkv  
+└── Movie Name-cd3.mkv
+```
+
+```
+Show (2025)  
+└──Season 1  
+├── S01E01-part-1.mkv  
+└── S01E01-part-2.mkv
+```
+
+The separator is optional between `<parttype>` and `<partnumber>`. `<partnumber>` can be any number, or the letters a-d.
+
+### Finding episodes by subtitles or file hash
+
+- [opensubtitles.com > opensubtitles.com](https://www.opensubtitles.com/en/stats/) - some have said you can use this for file hash-based matching in FileBot, but it may be an older version
+- 
 
 ## 9) Testing "arr" Locally
 
