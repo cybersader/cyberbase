@@ -622,7 +622,7 @@ D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-
 - Duration variation
 
 ```json
-D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-'+imdbid+']'}/{n} ({y}) {'[imdbid-'+imdbid+']'} - { m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+duration+']'}{ bt = fn.match(/(?:\[(?![\d]+P[^\]]*(?:Ch|S)\])[^\]]+\]|\([^\)]+\))$/); bt ? ' - '+bt : '' }
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-'+imdbid+']'}/{n} ({y}) {'[imdb-'+imdbid+']'} - { m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+duration+']'}{ bt = fn.match(/(?:\[(?![\d]+P[^\]]*(?:Ch|S)\])[^\]]+\]|\([^\)]+\))$/); bt ? ' - '+bt : '' }
 ```
 
 TV Shows:
