@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, August 17th 2024, 8:12 pm
-date modified: Saturday, September 13th 2025, 8:32 pm
+date modified: Saturday, September 13th 2025, 10:08 pm
 ---
 
 [Community IT Support Setup](../../../🕸️%20UNSTRUCTURED/Community%20IT%20Support%20Setup.md)
@@ -120,5 +120,46 @@ Use a trusted **transactional email provider** (SES, Postmark, SendGrid, etc.):
 
 - [github.com > discourse/docs/INSTALL.md at main · discourse/discourse](https://github.com/discourse/discourse/blob/main/docs/INSTALL-cloud.md)
 - Buy a website domain
+- Download Ubuntu Server - [ubuntu.com > Get Ubuntu Server | Download](https://ubuntu.com/download/server)
 - Setup email - get your mail server creds (SMTP)
+- Create and start a new VM in TrueNAS
+	- Create a dataset
+		- zvol with ~40GB space
+	- Create the VM
+		- 2 vCPUs
+		- 2 GB RAM minimum (4 GB+ recommended if you have resources).
+- Add Ubuntu Server to the VM via the CD ROM device
+	- Make a new SMB share in "Datasets" for storing .iso files
+	- Put the Ubuntu server iso into the file share
+	- Go to the created VM and add the CD ROM device with the .iso file selected
+	- Still in the VM edit screen → Boot Options or “Boot Order”:
+		- Move the CD-ROM device above the hard disk.
+	- Edit the isos dataset ACL by adding the user called "libvirt-qemu" - apply recursively
+- Initialize and configure the Discourse Ubuntu VM
+	- For networking config
+		- 192.168.1.0/24 for subnet
+		- enter the local address you want to use (e.g. 192.168.1.xx"
+		- make sure the local address/IP is reserved or not part of the ones for DHCP so the server can use it
+		- you'll reserve this in your firewall/router once you start the server.  In Pfsense, you can go to Services > DHCP > LAN > DHCP Static Mappings to add it by matching the IP and MAC, and make sure the IP is below the Primary Address Pool Range
+	- Install OpenSSH during setup if you want to have an easier time administering the system
+	- Remove or lower the CD-ROM in boot order after install
+		- Otherwise, it’ll keep booting into the installer every time.
+	- 
+- Set up NPM for the new domain
+	- Get the API key from Cloudflare for easier SSL long-term
+		- Uses A "DNS Challenge"
+		- Top right > Profile > API Tokens 
 - 
+- Make sure two VMs aren't using the same MAC address - seriously it will break things - check the NIC on each VM in TrueNAS
+- Install Prerequisites for Docker (Debian/Ubuntu based Distro example)
+	- sudo apt install docker.io
+	- sudo apt install git
+- Install Discourse
+	- sudo -s
+	- git clone https://github.com/discourse/discourse_docker.git /var/discourse
+	- cd /var/discourse
+	- chmod 700 containers
+- Launch the Discourse setup script
+	- ./discourse-setup
+	- Put the SMTP creds in
+	- 
