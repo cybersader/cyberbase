@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, August 17th 2024, 8:12 pm
-date modified: Tuesday, August 12th 2025, 8:50 pm
+date modified: Saturday, September 13th 2025, 8:32 pm
 ---
 
 [Community IT Support Setup](../../../🕸️%20UNSTRUCTURED/Community%20IT%20Support%20Setup.md)
@@ -108,10 +108,17 @@ Use a trusted **transactional email provider** (SES, Postmark, SendGrid, etc.):
 - **Easier maintenance**—standard upgrade path, S3 backups, predictable email.
 - **Hardware-friendly**—TrueNAS stays focused on storage; VM handles app logic.
 
-# Setup & Common Issues
+## Setup & Common Issues
 
 - [discourse.org > Configure a firewall for Discourse - Documentation / Self-Hosting](https://meta.discourse.org/t/configure-a-firewall-for-discourse/20584) - you may need to fiddle with the "ufw" firewall to let in port 80 or 443 requests
 
 ## Overlapping VM MAC Addresses in Virtual Machines in TrueNAS
 
 - I noticed there was overlap with two VMs.  Maybe you have to generate MACs for them each time you create one
+
+## Setting Discourse Up
+
+- [github.com > discourse/docs/INSTALL.md at main · discourse/discourse](https://github.com/discourse/discourse/blob/main/docs/INSTALL-cloud.md)
+- Buy a website domain
+- Setup email - get your mail server creds (SMTP)
+- 
