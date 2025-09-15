@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, August 17th 2024, 8:12 pm
-date modified: Saturday, September 13th 2025, 10:08 pm
+date modified: Monday, September 15th 2025, 9:09 am
 ---
 
 [Community IT Support Setup](../../../🕸️%20UNSTRUCTURED/Community%20IT%20Support%20Setup.md)
@@ -149,6 +149,8 @@ Use a trusted **transactional email provider** (SES, Postmark, SendGrid, etc.):
 	- Get the API key from Cloudflare for easier SSL long-term
 		- Uses A "DNS Challenge"
 		- Top right > Profile > API Tokens 
+- Set up DNS records
+	- Make sure the root and www point to something like the `forum.` subdomain.
 - 
 - Make sure two VMs aren't using the same MAC address - seriously it will break things - check the NIC on each VM in TrueNAS
 - Install Prerequisites for Docker (Debian/Ubuntu based Distro example)
