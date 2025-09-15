@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, August 17th 2024, 8:12 pm
-date modified: Monday, September 15th 2025, 10:42 am
+date modified: Monday, September 15th 2025, 11:05 am
 ---
 
 [Community IT Support Setup](../../../🕸️%20UNSTRUCTURED/Community%20IT%20Support%20Setup.md)
@@ -168,8 +168,11 @@ Use a trusted **transactional email provider** (SES, Postmark, SendGrid, etc.):
 		- apt install nano
 		- nano containers/app.yml
 		- Edit the values
+			- If using Mailgun, change the discourse SMTP domain and notification email values under .env
 		- ./launcher bootstrap app
 		- ./launcher start app
 - Register your email
 	- Make sure your SMTP server address, username, and password are correct
-	- 
+	- [discourse.org > Troubleshoot email on a new Discourse install - Documentation / Self-Hosting](https://meta.discourse.org/t/troubleshoot-email-on-a-new-discourse-install/16326)
+	- Change the DISCOURSE_NOTIFICATION_EMAIL and DISCOURSE_SMTP_DOMAIN to match what you have in your email provider (e.g. Mailgun).  The notification email will become your from address which will need to match the SMTP domain.  This also assumes that you've set up DMARC, DKIM, and SPF in your DNS (e.g. Cloudflare)
+- 
