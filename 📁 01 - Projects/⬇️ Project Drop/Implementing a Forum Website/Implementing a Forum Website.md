@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Saturday, August 17th 2024, 8:12 pm
-date modified: Monday, September 15th 2025, 9:09 am
+date modified: Monday, September 15th 2025, 10:42 am
 ---
 
 [Community IT Support Setup](../../../🕸️%20UNSTRUCTURED/Community%20IT%20Support%20Setup.md)
@@ -170,3 +170,6 @@ Use a trusted **transactional email provider** (SES, Postmark, SendGrid, etc.):
 		- Edit the values
 		- ./launcher bootstrap app
 		- ./launcher start app
+- Register your email
+	- Make sure your SMTP server address, username, and password are correct
+	- 
