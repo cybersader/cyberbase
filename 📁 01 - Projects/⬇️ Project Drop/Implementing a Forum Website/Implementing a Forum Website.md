@@ -165,5 +165,8 @@ Use a trusted **transactional email provider** (SES, Postmark, SendGrid, etc.):
 	- ./discourse-setup
 	- Put the SMTP creds in
 	- OR
+		- apt install nano
+		- nano containers/app.yml
+		- Edit the values
 		- ./launcher bootstrap app
 		- ./launcher start app
