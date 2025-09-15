@@ -164,4 +164,6 @@ Use a trusted **transactional email provider** (SES, Postmark, SendGrid, etc.):
 - Launch the Discourse setup script
 	- ./discourse-setup
 	- Put the SMTP creds in
-	- 
+	- OR
+		- ./launcher bootstrap app
+		- ./launcher start app
