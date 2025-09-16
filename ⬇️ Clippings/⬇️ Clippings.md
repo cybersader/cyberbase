@@ -29,6 +29,7 @@
 	- **[[pfSense- DNS Rebinding and NAT Reflection]]**
 	- **[[Poster Storage Solutions]]**
 	- **[[Secular Santa Claus Origins]]**
+	- **[[Social engineering printer attacks]]**
 	- **[[Suicide Lane Usage Rules]]**
 	- **[[Tag Selection Workflow Options]]**
 	- **[[Texas Outdoor Adventures]]**
