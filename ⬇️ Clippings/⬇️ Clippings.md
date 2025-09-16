@@ -8,6 +8,7 @@
 	- **[[Amazon Made in USA Filter]]**
 	- **[[American Made Laundry Baskets]]**
 
+	- **[[Android Portmaster alternatives]]**
 	- **[[Best Budget Mic Options]]**
 	- **[[Budget Zwift Setup Guide]]**
 	- **[[Calling Out Arrogance]]**
@@ -33,11 +34,14 @@
 	- **[[pfSense- DNS Rebinding and NAT Reflection]]**
 	- **[[Poster Storage Solutions]]**
 	- **[[Secular Santa Claus Origins]]**
+	- **Smart light connection routes**
+		- [[Smart light landscape]]
 	- **[[Social engineering printer attacks]]**
 	- **[[Spa cleaning process]]**
 	- **[[Suicide Lane Usage Rules]]**
 	- **[[Tag Selection Workflow Options]]**
 	- **[[Texas Outdoor Adventures]]**
+	- **[[TrueNAS storage tools]]**
 	- **[[VLC Alternatives for Android]]**
 
 	- **[[Wifi Mode Explanation]]**
