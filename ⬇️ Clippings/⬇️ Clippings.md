@@ -4,6 +4,7 @@
 - **[[ChatGPT]]**
 	- **[[2FA Backup and Recovery]]**
 
+	- **[[Affordable roller shades Home Assistant]]**
 	- **[[Amazon Made in USA Filter]]**
 	- **[[American Made Laundry Baskets]]**
 
@@ -11,9 +12,11 @@
 	- **[[Budget Zwift Setup Guide]]**
 	- **[[Calling Out Arrogance]]**
 
+	- **[[Chlorine and pH in hot tubs]]**
 	- **[[Codex CLI VS Code Setup]]**
 	- **[[Credit Freeze vs Fraud Alert]]**
 	- **[[Display Android on Windows]]**
+	- **[[Download m3u8 video]]**
 	- **[[Draft and Cyber Roles]]**
 
 	- **[[Getting Out of Mud]]**
@@ -22,6 +25,7 @@
 	- **[[Legal Documents to Keep]]**
 
 	- **[[Meta-framework]]**
+	- **[[Mosquito control near hot tub]]**
 	- **[[Open Explorer in PS]]**
 	- **[[Optimum Racing Sim Setup]]**
 	- **[[pfSense - View pfSense Blocked Traffic]]**
