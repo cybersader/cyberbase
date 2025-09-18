@@ -488,7 +488,7 @@ D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/TV Shows/{n} - {s00e00} - {t} ({y}) {'{tmdb
 - [filebot.net > Rename from file hash - FileBot](https://www.filebot.net/forums/viewtopic.php?t=2984) - not as good as you might think - harder to do or automate
 - [filebot.net > Advanced Settings / Developer Options / System Properties - FileBot](https://www.filebot.net/forums/viewtopic.php?t=3913)
 
-<u>V1:</u>
+#### <u>V1:</u>
 
 Movies:
 ```json
@@ -500,7 +500,7 @@ TV Shows:
 D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}) {"{tmdb-$tmdbid}"} {audioLanguages.size() > 2 ? ' (Multi Audio)' : audioLanguages.size() > 1 ? ' (Dual Audio)' : audioLanguages =~ /eng/ ? null : audioLanguages.ISO3.joining(', ', ' (', ')').upper()} / Season {s}/{s00E00} - {t} {"[$vf $vc $ac $af]"}{subt}{pi != null ? ' -cd'+pi : dc>1 ? ' -cd'+di : ''}
 ```
 
-<u>V2:</u>
+#### <u>V2:</u>
 
 Movies:
 
@@ -580,9 +580,9 @@ C. Edition keywords (your original “m=” scan)
 
 Notes: `duration` gives ISO-8601 (e.g., `PT1H43M21S`), which Jellyfin ignores but is great for uniqueness. `{crc32}` is shorter if you prefer that. Jellyfin multiple versions require filenames like `Movie (Year) [id] - Label.ext`; the part **before** the `-` must match exactly. “Stacking” (cd1/cd2) cannot be combined with versions
 
-##### Full Format Expressions
+#### Full Format Expressions
 
-###### BATCH 2
+##### BATCH 2
 
 TV Shows (use duration)
 
@@ -611,7 +611,7 @@ D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/Movies/{n} ({y}) {' [imdbid-'+imdbid+']'}{ 
 D:/MEDIA/_BATCH_2TRANSCODE_HANDBRAKE/Movies/{n} ({y}){' [imdbid-'+imdbid+']'}{m=fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' ');m?' ('+m+')':''}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!(audioLanguages =~ /eng/)?' ('+audioLanguages.ISO3.join(', ').upper()+')':''}{' ['+any{vf}{height+'p'}+' '+any{vc}{'NA'}+' '+any{ac}{'NA'}+' '+any{af}{'NA'}+' '+any{duration}{'PT0M'}+']'}{bt=fn.match(/(?:\[(?!\d[^\]]*Ch\])[^\]]+\]|\([^\)]+\))$/);bt?' '+bt:''}
 ```
 
-###### BATCH 4
+##### BATCH 4
 
 Movies:
 
@@ -641,6 +641,44 @@ D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}) {'[tmdbid-'+tmdbid+']'}/
 
 ```json
 D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}) {'[tmdbid-'+tmdbid+']'}/Season {s}/{s00e00} - {t} - { m = fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' '); m ? ' ('+m+')' : '' }{ audioLanguages.size()>2 ? ' (Multi Audio)' : audioLanguages.size()>1 ? ' (Dual Audio)' : !audioLanguages =~ /eng/ ? ' ('+audioLanguages.ISO3.join(', ').upper()+')' : '' }{ ' ['+height+'p '+vc+' '+ac+' '+af+' '+duration+']'}{ bt = fn.match(/(?:\[(?!\d[^\]]*Ch\])[^\]]+\]|\([^\)]+\))$/); bt ? ' - '+bt : '' }
+```
+
+#### More Full Formats to Test
+
+##### Movies — Duration (keep `_tNN`)
+
+```groovy
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-'+imdbid+']'}/{n} ({y}) {'[imdbid-'+imdbid+']'} - {m=fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' ');m?' ('+m+')':''}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!(audioLanguages =~ /eng/)?' ('+audioLanguages.ISO3.join(', ').upper()+')':''}{' ['+any{vf}{height+'p'}+' '+any{vc}{'NA'}+' '+any{ac}{'NA'}+' '+any{af}{'NA'}+' '+any{duration}{'PT0M'}+']'}{bt=fn.match(/(?:\[(?![\d]+P[^\]]*(?:Ch|S)\])[^\]]+\]|\([^\)]+\))$/);x=fn.match(/(?i)_t\d{2}\b$/);x?' - '+x:bt?' - '+bt:''}
+```
+
+##### Movies — Duration (no `_tNN`)
+
+```groovy
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-'+imdbid+']'}/{n} ({y}) {'[imdbid-'+imdbid+']'} - {m=fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' ');m?' ('+m+')':''}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!(audioLanguages =~ /eng/)?' ('+audioLanguages.ISO3.join(', ').upper()+')':''}{' ['+any{vf}{height+'p'}+' '+any{vc}{'NA'}+' '+any{ac}{'NA'}+' '+any{af}{'NA'}+' '+any{duration}{'PT0M'}+']'}{bt=fn.match(/(?:\[(?![\d]+P[^\]]*(?:Ch|S)\])[^\]]+\]|\([^\)]+\))$/);bt?' - '+bt:''}
+```
+
+##### Movies — CRC32 + Duration (keep `_tNN`)
+
+```groovy
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-'+imdbid+']'}/{n} ({y}) {'[imdbid-'+imdbid+']'} - {m=fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' ');m?' ('+m+')':''}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!(audioLanguages =~ /eng/)?' ('+audioLanguages.ISO3.join(', ').upper()+')':''}{' ['+any{vf}{height+'p'}+' '+any{vc}{'NA'}+' '+any{ac}{'NA'}+' '+any{af}{'NA'}+' '+crc32+' '+any{duration}{'PT0M'}+']'}{bt=fn.match(/(?:\[(?![\d]+P[^\]]*(?:Ch|S)\])[^\]]+\]|\([^\)]+\))$/);x=fn.match(/(?i)_t\d{2}\b$/);x?' - '+x:bt?' - '+bt:''}
+```
+
+##### Movies — CRC32 + Duration (no `_tNN`)
+
+```groovy
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/Movies/{collection+'/'}{n} ({y}) {'[imdbid-'+imdbid+']'}/{n} ({y}) {'[imdbid-'+imdbid+']'} - {m=fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' ');m?' ('+m+')':''}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!(audioLanguages =~ /eng/)?' ('+audioLanguages.ISO3.join(', ').upper()+')':''}{' ['+any{vf}{height+'p'}+' '+any{vc}{'NA'}+' '+any{ac}{'NA'}+' '+any{af}{'NA'}+' '+crc32+' '+any{duration}{'PT0M'}+']'}{bt=fn.match(/(?:\[(?![\d]+P[^\]]*(?:Ch|S)\])[^\]]+\]|\([^\)]+\))$/);bt?' - '+bt:''}
+```
+
+##### TV Shows — Duration (keep `_tNN`)
+
+```groovy
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}) {'[tmdbid-'+tmdbid+']'}/Season {s}/{s00e00} - {t} - {m=fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' ');m?' ('+m+')':''}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!(audioLanguages =~ /eng/)?' ('+audioLanguages.ISO3.join(', ').upper()+')':''}{' ['+any{vf}{height+'p'}+' '+any{vc}{'NA'}+' '+any{ac}{'NA'}+' '+any{af}{'NA'}+' '+any{duration}{'PT0M'}+']'}{bt=fn.match(/(?:\[(?!\d[^\]]*Ch\])[^\]]+\]|\([^\)]+\))$/);x=fn.match(/(?i)_t\d{2}\b$/);x?' - '+x:bt?' - '+bt:''}
+```
+
+##### TV Shows — Duration (no `_tNN`)
+
+```groovy
+D:/MEDIA/_BATCH_4OUTPUT_FOR_JELLYFIN/TV Shows/{n} ({y}) {'[tmdbid-'+tmdbid+']'}/Season {s}/{s00e00} - {t} - {m=fn.matchAll(/extended|uncensored|uncut|directors[ ._-]cut|remastered|unrated|special[ ._-]edition/)*.upperInitial()*.lowerTrail().sort().join(', ').replaceAll(/[.]/,' ');m?' ('+m+')':''}{audioLanguages.size()>2?' (Multi Audio)':audioLanguages.size()>1?' (Dual Audio)':!(audioLanguages =~ /eng/)?' ('+audioLanguages.ISO3.join(', ').upper()+')':''}{' ['+any{vf}{height+'p'}+' '+any{vc}{'NA'}+' '+any{ac}{'NA'}+' '+any{af}{'NA'}+' '+any{duration}{'PT0M'}+']'}{bt=fn.match(/(?:\[(?!\d[^\]]*Ch\])[^\]]+\]|\([^\)]+\))$/);bt?' - '+bt:''}
 ```
 
 #### Common Filebot Issues
