@@ -5,6 +5,22 @@
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
     },
     {
+      "basename": "YLC 2024 Presentation",
+      "path": "📁 50 - Cybersade/YLC 2024 Presentation/YLC 2024 Presentation.md"
+    },
+    {
+      "basename": "Home-Ec 2025",
+      "path": "🕸️ UNSTRUCTURED/Home-Ec 2025/Home-Ec 2025.md"
+    },
+    {
+      "basename": "Security Metaphors & Allegories",
+      "path": "📁 06 - Learning, Notes/Security Metaphors & Allegories/Security Metaphors & Allegories.md"
+    },
+    {
+      "basename": "📁 04 - Cyber & Digital Trust",
+      "path": "📁 04 - Cyber & Digital Trust/📁 04 - Cyber & Digital Trust.md"
+    },
+    {
       "basename": "Android Portmaster alternatives",
       "path": "⬇️ Clippings/ChatGPT/Android Portmaster alternatives/Android Portmaster alternatives.md"
     },
@@ -125,10 +141,6 @@
       "path": "📁 07 - Cybersader Arsenal/Paperless Storage, Document Scanners/Paperless Storage, Document Scanners.md"
     },
     {
-      "basename": "YLC 2024 Presentation",
-      "path": "📁 50 - Cybersade/YLC 2024 Presentation/YLC 2024 Presentation.md"
-    },
-    {
       "basename": "Data Entry Tools",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "CYGNVS",
       "path": "⬇️ Clippings/Websites/CYGNVS/CYGNVS.md"
-    },
-    {
-      "basename": "Smart Blinds",
-      "path": "⬇ INBOX, DROPZONE/Smart Blinds/Smart Blinds.md"
-    },
-    {
-      "basename": "Vim",
-      "path": "⬇ INBOX, DROPZONE/Vim/Vim.md"
-    },
-    {
-      "basename": "Comma3x",
-      "path": "⬇️ Clippings/Tech/Comma3x/Comma3x.md"
     }
   ],
   "omittedPaths": [],
