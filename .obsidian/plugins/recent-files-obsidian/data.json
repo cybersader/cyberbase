@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Cyber & Game Theory",
+      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Cyber & Game Theory/Cyber & Game Theory.md"
+    },
+    {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "DFIR-IRIS",
       "path": "⬇️ Clippings/Websites/DFIR-IRIS/DFIR-IRIS.md"
-    },
-    {
-      "basename": "CYGNVS",
-      "path": "⬇️ Clippings/Websites/CYGNVS/CYGNVS.md"
     }
   ],
   "omittedPaths": [],
