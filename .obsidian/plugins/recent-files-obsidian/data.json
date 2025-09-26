@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Cyber & Game Theory",
-      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Cyber & Game Theory/Cyber & Game Theory.md"
-    },
-    {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
+    },
+    {
+      "basename": "WWHF 2024 - Deadwood",
+      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/WWHF 2024 - Deadwood.md"
+    },
+    {
+      "basename": "Cyber & Game Theory",
+      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Cyber & Game Theory/Cyber & Game Theory.md"
     },
     {
       "basename": "YLC 2024 Presentation",
@@ -195,10 +199,6 @@
     {
       "basename": "📁 23 - Wellness, Fitness",
       "path": "📁 23 - Wellness, Fitness/📁 23 - Wellness, Fitness.md"
-    },
-    {
-      "basename": "DFIR-IRIS",
-      "path": "⬇️ Clippings/Websites/DFIR-IRIS/DFIR-IRIS.md"
     }
   ],
   "omittedPaths": [],
