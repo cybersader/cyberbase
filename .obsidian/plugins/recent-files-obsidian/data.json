@@ -5,6 +5,14 @@
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
     },
     {
+      "basename": "TrueNAS Immich Setup",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md"
+    },
+    {
+      "basename": "TrueNAS Scale - Nginx Proxy Setup",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
+    },
+    {
       "basename": "WWHF 2024 - Deadwood",
       "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/WWHF 2024 - Deadwood.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Tech Stacks from Tech Content Creators",
       "path": "🕸️ UNSTRUCTURED/Tech Stacks from Tech Content Creators/Tech Stacks from Tech Content Creators.md"
-    },
-    {
-      "basename": "Digital Resistance",
-      "path": "📁 23 - Wellness, Fitness/Digital Resistance/Digital Resistance.md"
-    },
-    {
-      "basename": "📁 23 - Wellness, Fitness",
-      "path": "📁 23 - Wellness, Fitness/📁 23 - Wellness, Fitness.md"
     }
   ],
   "omittedPaths": [],
