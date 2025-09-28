@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sun, Sep 7, 2025 - [[Catholic & Christian Taxonomies]]
+> Sun, Sep 28, 2025 - [[WWHF 2024 - Deadwood]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                          | Last modified             |
-| --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 50 - Cybersade/Catholic & Christian Taxonomies/Catholic & Christian Taxonomies.md\|Catholic & Christian Taxonomies]]                     | Sun - 9/7/2025, 7:35 PM   |
-| [[📁 50 - Cybersade/📁 50 - Cybersade.md\|📁 50 - Cybersade]]                                                                                 | Sun - 9/7/2025, 7:24 PM   |
-| [[⬇️ Clippings/Tech/Activitywatch/Activitywatch.md\|Activitywatch]]                                                                           | Sun - 8/31/2025, 10:02 PM |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                | Sun - 8/31/2025, 10:02 PM |
-| [[📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md\|Organization Documentation & Wikis]] | Sun - 8/31/2025, 9:47 PM  |
-| [[⬇️ Clippings/Tech/Brace/Brace.md\|Brace]]                                                                                                   | Sun - 8/31/2025, 9:46 PM  |
-| [[⬇️ Clippings/Tech/Wakapi/Wakapi.md\|Wakapi]]                                                                                                | Sun - 8/31/2025, 9:39 PM  |
-| [[⬇️ Clippings/Tech/Titan Core/Titan Core.md\|Titan Core]]                                                                                    | Sun - 8/31/2025, 9:37 PM  |
-| [[⬇️ Clippings/Tech/Gitbutler/Gitbutler.md\|Gitbutler]]                                                                                       | Sun - 8/31/2025, 9:35 PM  |
-| [[📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md\|⬇ Tech Dropzone]]                                                             | Sun - 8/31/2025, 9:28 PM  |
+| File                                                                                                                                                 | Last modified            |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [[📁 06 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/WWHF 2024 - Deadwood.md\|WWHF 2024 - Deadwood]]                                      | Fri - 9/26/2025, 3:39 PM |
+| [[📁 06 - Learning, Notes/Security Metaphors & Allegories/Security Metaphors & Allegories.md\|Security Metaphors & Allegories]]                      | Sun - 9/21/2025, 7:26 PM |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md\|My Media Server]]                   | Thu - 9/18/2025, 7:39 PM |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                       | Mon - 9/15/2025, 8:49 PM |
+| [[⬇️ Clippings/ChatGPT/Android Portmaster alternatives/Android Portmaster alternatives.md\|Android Portmaster alternatives]]                         | Mon - 9/15/2025, 8:49 PM |
+| [[⬇️ Clippings/ChatGPT/Smart light connection routes/Smart light landscape.md\|Smart light landscape]]                                               | Mon - 9/15/2025, 8:47 PM |
+| [[⬇️ Clippings/ChatGPT/TrueNAS storage tools/TrueNAS storage tools.md\|TrueNAS storage tools]]                                                       | Mon - 9/15/2025, 8:44 PM |
+| [[⬇️ Clippings/ChatGPT/Spa cleaning process/Spa cleaning process.md\|Spa cleaning process]]                                                          | Mon - 9/15/2025, 8:42 PM |
+| [[⬇️ Clippings/ChatGPT/Affordable roller shades Home Assistant/Affordable roller shades Home Assistant.md\|Affordable roller shades Home Assistant]] | Mon - 9/15/2025, 8:40 PM |
+| [[⬇️ Clippings/ChatGPT/Mosquito control near hot tub/Mosquito control near hot tub.md\|Mosquito control near hot tub]]                               | Mon - 9/15/2025, 8:37 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
