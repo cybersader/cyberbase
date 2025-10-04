@@ -213,6 +213,7 @@
 	- **[[Seraph Secure]]**
 	- **[[Silent Link]]**
 	- **[[SimpleFIN]]**
+	- **[[SimpleLogin]]**
 	- **[[Simplemind]]**
 	- **[[skwad]]**
 	- **[[Slido]]**
