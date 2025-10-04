@@ -20,11 +20,19 @@ date modified: Saturday, October 4th 2025, 2:29 pm
 - Had to create all of the below datasets
 	- ![](_attachments/file-20251004142532434.png)
 
+- Permission the datasets
+	- For the `data` dataset
+		- 
+	- For the `init` dataset
+		- 
+
 - Had to also initialize the database schema via TrueNAS shell
 	- change directories to the init dataset
 	- Run the command mentioned here
 		- https://github.com/boschkundendienst/guacamole-docker-compose/tree/master?tab=readme-ov-file#preparesh
 		- Match the current guacamole version
+
+
 
 Copy the below compose file
 
