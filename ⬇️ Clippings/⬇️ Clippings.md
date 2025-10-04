@@ -194,11 +194,13 @@
 	- **[[Privacy Virtual Cards]]**
 	- **[[ProjectionLab]]**
 	- **[[Proton-wallet]]**
+	- **[[Rallly]]**
 	- **[[Raycast]]**
 	- **[[Readdy]]**
 	- **[[Readwise]]**
 	- **[[Redact_dev]]**
 	- **[[refined-github extension]]**
+	- **[[Reitti]]**
 	- **[[ReVanced]]**
 	- **[[Revolut]]**
 	- **[[Screenpipe]]**
