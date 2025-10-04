@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Saturday, October 4th 2025, 1:01 pm
-date modified: Saturday, October 4th 2025, 2:29 pm
+date modified: Saturday, October 4th 2025, 3:44 pm
 ---
 
 [Apache Guacamole](../../../../📁%2005%20-%20Organizational%20Cyber/Remote%20Desktop%20Gateways/Apache%20Guacamole/Apache%20Guacamole.md)
@@ -24,7 +24,11 @@ date modified: Saturday, October 4th 2025, 2:29 pm
 	- For the `data` dataset
 		- 
 	- For the `init` dataset
-		- 
+		- .
+	- I REALLY don't understand why, but I had to give permissions to the data and init datasets in special ways.  Something to do with permissions mapping
+		- `chown -R root:70 /mnt/personal/APP_Configs/guacamole/init`
+		- `chmod -R 755 /mnt/personal/APP_Configs/guacamole/init`
+	- 
 
 - Had to also initialize the database schema via TrueNAS shell
 	- change directories to the init dataset
