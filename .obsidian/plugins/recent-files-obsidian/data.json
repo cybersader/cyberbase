@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "SendGrid",
+      "path": "⬇️ Clippings/Tech/SendGrid/SendGrid.md"
+    },
+    {
+      "basename": "Postmark",
+      "path": "⬇️ Clippings/Tech/Postmark/Postmark.md"
+    },
+    {
       "basename": "ForwardEmail.net",
       "path": "⬇️ Clippings/Tech/ForwardEmail.net/ForwardEmail.net.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Paperless Storage, Document Scanners",
       "path": "📁 07 - Cybersader Arsenal/Paperless Storage, Document Scanners/Paperless Storage, Document Scanners.md"
-    },
-    {
-      "basename": "Data Entry Tools",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md"
-    },
-    {
-      "basename": "📁 10 - My Obsidian Stack",
-      "path": "📁 10 - My Obsidian Stack/📁 10 - My Obsidian Stack.md"
     }
   ],
   "omittedPaths": [],

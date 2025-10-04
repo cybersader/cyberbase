@@ -192,6 +192,7 @@
 	- **[[Photopea]]**
 	- **[[Pintree]]**
 	- **[[Pocketsmith]]**
+	- **[[Postmark]]**
 	- **[[PowerToys]]**
 	- **[[Printify]]**
 	- **[[Privacy Virtual Cards]]**
@@ -208,6 +209,7 @@
 	- **[[Revolut]]**
 	- **[[Screenpipe]]**
 	- **[[Scrypted]]**
+	- **[[SendGrid]]**
 	- **[[Seraph Secure]]**
 	- **[[Silent Link]]**
 	- **[[SimpleFIN]]**
