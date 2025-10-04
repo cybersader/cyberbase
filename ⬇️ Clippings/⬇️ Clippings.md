@@ -123,6 +123,7 @@
 	- **[[Flameshot]]**
 	- **[[Formance]]**
 	- **[[Formed]]**
+	- **[[ForwardEmail.net]]**
 	- **[[Garmin Pay]]**
 	- **[[Ghostfolio]]**
 	- **[[Gitbutler]]**
