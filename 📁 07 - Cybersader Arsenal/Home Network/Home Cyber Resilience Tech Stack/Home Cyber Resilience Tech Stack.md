@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Sunday, August 3rd 2025, 3:09 pm
-date modified: Monday, August 4th 2025, 9:40 am
+date modified: Friday, October 3rd 2025, 9:52 pm
 ---
 
 [Home Lab, Home Server](../../Home%20Lab,%20Home%20Server/Home%20Lab,%20Home%20Server.md)
@@ -13,8 +13,17 @@ date modified: Monday, August 4th 2025, 9:40 am
 - [youtube.com > NetworkChuck > monitor all your stuff RIGHT NOW!!](https://www.youtube.com/watch?v=-2yzXSIuC8o)
 - .
 
+# Misc
+
+- [adventurelog.app > AdventureLog](https://adventurelog.app/)
+- [dawarich.app > Dawarich — Your memories, mapped automatically](https://dawarich.app/)
+- [linkwarden.app > Linkwarden - Bookmarks, Evolved](https://linkwarden.app/)
+- [stirling.com > Stirling - Free PDF Workspace & Infrastructure](https://www.stirling.com/)
+- 
+
 # Technology
 
+- 
 - [Netdata](https://www.netdata.cloud/)
 - SNMPv3
 - Prometheus, Grafana, Telegraph
@@ -90,6 +99,8 @@ date modified: Monday, August 4th 2025, 9:40 am
 - Tailscale
 - Cloudflare Tunnels
 - Wireguard
+- Teleport
+- Guacamole
 - Zabbix
 - [Matano](https://matanosecurity.com/)
 	- Modern Cloud Native SIEM
