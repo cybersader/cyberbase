@@ -99,6 +99,7 @@
 	- **[[CasaOS]]**
 	- **[[Cashapp]]**
 	- **[[Castopod]]**
+	- **[[Ceph]]**
 	- **[[cFIREsim]]**
 	- **[[Chatwoot]]**
 	- **[[Claude]]**
@@ -136,6 +137,7 @@
 	- **[[HandBrake]]**
 	- **[[hledger]]**
 	- **[[Honeydue]]**
+	- **[[Houston Command Center]]**
 	- **[[Hushed]]**
 	- **[[Invidious]]**
 	- **[[IronVest]]**
@@ -205,6 +207,7 @@
 	- **[[Revolut]]**
 	- **[[Screenpipe]]**
 	- **[[Scrypted]]**
+	- **[[Seraph Secure]]**
 	- **[[Silent Link]]**
 	- **[[SimpleFIN]]**
 	- **[[Simplemind]]**
@@ -238,6 +241,7 @@
 	- **[[WizTree]]**
 	- **[[Wo mic]]**
 	- **[[Workflowy]]**
+	- **[[XCP-ng]]**
 	- **[[Yaak]]**
 	- **[[YNAB]]**
 	- **[[Zelle]]**
