@@ -40,6 +40,7 @@ date modified: Monday, May 27th 2024, 1:14 pm
 - **[[TrueNAS Scale - Nginx Proxy Setup]]**
 	- [[Drawing 2024-09-28 18.39.28.excalidraw]]
 - **[[TrueNAS Scale Apps, Adding TrueCharts]]**
+- **[[TrueNAS Scale Guacamole]]**
 - **[[TrueNAS Scale RAID Setup]]**
 - **[[Turning Old PC into NAS in 2024]]**
 - **[[Using a New Router with TrueNAS]]**

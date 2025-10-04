@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "SimpleLogin",
-      "path": "⬇️ Clippings/Tech/SimpleLogin/SimpleLogin.md"
+      "basename": "TrueNAS Scale Guacamole",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Guacamole/TrueNAS Scale Guacamole.md"
     },
     {
       "basename": "SendGrid",
       "path": "⬇️ Clippings/Tech/SendGrid/SendGrid.md"
+    },
+    {
+      "basename": "SimpleLogin",
+      "path": "⬇️ Clippings/Tech/SimpleLogin/SimpleLogin.md"
+    },
+    {
+      "basename": "DMARC Vendors and Solutions",
+      "path": "⬇️ Clippings/Websites/DMARC Vendors and Solutions/DMARC Vendors and Solutions.md"
+    },
+    {
+      "basename": "Home Lab, Home Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md"
     },
     {
       "basename": "Postmark",
@@ -187,18 +199,6 @@
     {
       "basename": "Fake Window Light",
       "path": "⬇ INBOX, DROPZONE/Fake Window Light/Fake Window Light.md"
-    },
-    {
-      "basename": "Personal Productivity Stack",
-      "path": "📁 03 - Curations, Stacks/Personal Productivity Stack/Personal Productivity Stack.md"
-    },
-    {
-      "basename": "Portfolio CMSs",
-      "path": "📁 51 - Cyberbase/Portfolio CMSs/Portfolio CMSs.md"
-    },
-    {
-      "basename": "⬇️ Obsidian Ideas Drop",
-      "path": "📁 10 - My Obsidian Stack/⬇️ Obsidian Ideas Drop/⬇️ Obsidian Ideas Drop.md"
     }
   ],
   "omittedPaths": [],
