@@ -100,7 +100,7 @@
         "startupType": "disabled"
       },
       "obsidian-copy-block-link": {
-        "startupType": "disabled"
+        "startupType": "instant"
       },
       "obsidian-copy-search-url": {
         "startupType": "disabled"
