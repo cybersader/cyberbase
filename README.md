@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sun, Sep 28, 2025 - [[WWHF 2024 - Deadwood]]
+> Sat, Oct 4, 2025 - [[TrueNAS Smallstep CA]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                                 | Last modified            |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[📁 06 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/WWHF 2024 - Deadwood.md\|WWHF 2024 - Deadwood]]                                      | Fri - 9/26/2025, 3:39 PM |
-| [[📁 06 - Learning, Notes/Security Metaphors & Allegories/Security Metaphors & Allegories.md\|Security Metaphors & Allegories]]                      | Sun - 9/21/2025, 7:26 PM |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md\|My Media Server]]                   | Thu - 9/18/2025, 7:39 PM |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                       | Mon - 9/15/2025, 8:49 PM |
-| [[⬇️ Clippings/ChatGPT/Android Portmaster alternatives/Android Portmaster alternatives.md\|Android Portmaster alternatives]]                         | Mon - 9/15/2025, 8:49 PM |
-| [[⬇️ Clippings/ChatGPT/Smart light connection routes/Smart light landscape.md\|Smart light landscape]]                                               | Mon - 9/15/2025, 8:47 PM |
-| [[⬇️ Clippings/ChatGPT/TrueNAS storage tools/TrueNAS storage tools.md\|TrueNAS storage tools]]                                                       | Mon - 9/15/2025, 8:44 PM |
-| [[⬇️ Clippings/ChatGPT/Spa cleaning process/Spa cleaning process.md\|Spa cleaning process]]                                                          | Mon - 9/15/2025, 8:42 PM |
-| [[⬇️ Clippings/ChatGPT/Affordable roller shades Home Assistant/Affordable roller shades Home Assistant.md\|Affordable roller shades Home Assistant]] | Mon - 9/15/2025, 8:40 PM |
-| [[⬇️ Clippings/ChatGPT/Mosquito control near hot tub/Mosquito control near hot tub.md\|Mosquito control near hot tub]]                               | Mon - 9/15/2025, 8:37 PM |
+| File                                                                                                                                                       | Last modified             |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Smallstep CA/TrueNAS Smallstep CA.md\|TrueNAS Smallstep CA]]          | Sat - 10/4/2025, 10:09 PM |
+| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                                   | Sat - 10/4/2025, 9:49 PM  |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md\|Home Lab, Home Server]]                                                       | Sat - 10/4/2025, 9:49 PM  |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md\|TrueNAS Scale Home Server]]                     | Sat - 10/4/2025, 9:49 PM  |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Guacamole/TrueNAS Scale Guacamole.md\|TrueNAS Scale Guacamole]] | Sat - 10/4/2025, 3:44 PM  |
+| [[⬇️ Clippings/Websites/DMARC Vendors and Solutions/DMARC Vendors and Solutions.md\|DMARC Vendors and Solutions]]                                          | Sat - 10/4/2025, 1:03 PM  |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                             | Sat - 10/4/2025, 1:03 PM  |
+| [[⬇️ Clippings/Tech/SimpleLogin/SimpleLogin.md\|SimpleLogin]]                                                                                              | Sat - 10/4/2025, 12:07 PM |
+| [[⬇️ Clippings/Tech/SendGrid/SendGrid.md\|SendGrid]]                                                                                                       | Sat - 10/4/2025, 12:05 PM |
+| [[⬇️ Clippings/Tech/Postmark/Postmark.md\|Postmark]]                                                                                                       | Sat - 10/4/2025, 12:05 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 

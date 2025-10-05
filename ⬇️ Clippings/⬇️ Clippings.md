@@ -120,6 +120,7 @@
 	- **[[Financial Freedom]]**
 	- **[[Finicity]]**
 	- **[[Fintable]]**
+	- **[[Firezone]]**
 	- **[[Flameshot]]**
 	- **[[Formance]]**
 	- **[[Formed]]**

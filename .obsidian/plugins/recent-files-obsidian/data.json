@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "TrueNAS Scale Guacamole",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Guacamole/TrueNAS Scale Guacamole.md"
+    },
+    {
+      "basename": "Firezone",
+      "path": "⬇️ Clippings/Tech/Firezone/Firezone.md"
+    },
+    {
       "basename": "TrueNAS Smallstep CA",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Smallstep CA/TrueNAS Smallstep CA.md"
     },
     {
       "basename": "TrueNAS Scale Home Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
-    },
-    {
-      "basename": "TrueNAS Scale Guacamole",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Guacamole/TrueNAS Scale Guacamole.md"
     },
     {
       "basename": "SendGrid",
@@ -195,10 +199,6 @@
     {
       "basename": "Gitbutler",
       "path": "⬇️ Clippings/Tech/Gitbutler/Gitbutler.md"
-    },
-    {
-      "basename": "⬇ Tech Dropzone",
-      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
     }
   ],
   "omittedPaths": [],

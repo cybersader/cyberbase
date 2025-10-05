@@ -14,4 +14,7 @@ date modified: Saturday, October 4th 2025, 9:49 pm
 - [github.com > smallstep/certificates: 🛡️ A private certificate authority (X.509 & SSH) & ACME server for secure automated certificate management, so you can use TLS everywhere & SSO for SSH.](https://github.com/smallstep/certificates)
 - [smallstep.com > Build a Tiny Certificate Authority For Your Homelab](https://smallstep.com/blog/build-a-tiny-ca-with-raspberry-pi-yubikey/)
 - [youtube.com > How I secure my Server Access with Teleport (for SSH, K8S, and Web)](https://www.youtube.com/watch?v=9__A_nO2pbk)
-- 
+
+- Related?
+	- [firezone.dev > Firezone: Zero trust access that scales](https://www.firezone.dev/)
+	- 
