@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sat, Oct 4, 2025 - [[TrueNAS Smallstep CA]]
+> Sat, Oct 4, 2025 - [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Smallstep CA/TrueNAS Self-Hosted CA & Access Infrastructure]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -102,7 +102,7 @@ SORT file.mtime DESC LIMIT 10
 
 | File                                                                                                                                                       | Last modified             |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Smallstep CA/TrueNAS Smallstep CA.md\|TrueNAS Smallstep CA]]          | Sat - 10/4/2025, 10:09 PM |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Smallstep CA/TrueNAS Self-Hosted CA & Access Infrastructure|TrueNAS Smallstep CA]]          | Sat - 10/4/2025, 10:09 PM |
 | [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                                   | Sat - 10/4/2025, 9:49 PM  |
 | [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md\|Home Lab, Home Server]]                                                       | Sat - 10/4/2025, 9:49 PM  |
 | [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md\|TrueNAS Scale Home Server]]                     | Sat - 10/4/2025, 9:49 PM  |

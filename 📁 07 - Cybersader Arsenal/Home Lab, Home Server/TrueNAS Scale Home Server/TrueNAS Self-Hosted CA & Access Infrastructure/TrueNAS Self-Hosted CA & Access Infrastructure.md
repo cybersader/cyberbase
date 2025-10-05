@@ -1,11 +1,11 @@
 ---
-aliases: 
-tags: 
+aliases: [TrueNAS Self-Hosted Certificate Authority]
+tags: []
 publish: true
 permalink:
 title:
 date created: Saturday, October 4th 2025, 9:49 pm
-date modified: Saturday, October 4th 2025, 9:49 pm
+date modified: Sunday, October 5th 2025, 1:31 pm
 ---
 
 
