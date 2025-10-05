@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "Wazuh Setup TrueNAS",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Wazuh Setup TrueNAS/Wazuh Setup TrueNAS.md"
+    },
+    {
       "basename": "TrueNAS Self-Hosted CA & Access Infrastructure",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Self-Hosted CA & Access Infrastructure/TrueNAS Self-Hosted CA & Access Infrastructure.md"
+    },
+    {
+      "basename": "Home Cyber Resilience Tech Stack",
+      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Cyber Resilience Tech Stack/Home Cyber Resilience Tech Stack.md"
     },
     {
       "basename": "Implementing a Forum Website",
@@ -67,10 +75,6 @@
     {
       "basename": "XCP-ng",
       "path": "⬇️ Clippings/Tech/XCP-ng/XCP-ng.md"
-    },
-    {
-      "basename": "Home Cyber Resilience Tech Stack",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Cyber Resilience Tech Stack/Home Cyber Resilience Tech Stack.md"
     },
     {
       "basename": "Rallly",
@@ -195,10 +199,6 @@
     {
       "basename": "Titan Core",
       "path": "⬇️ Clippings/Tech/Titan Core/Titan Core.md"
-    },
-    {
-      "basename": "Gitbutler",
-      "path": "⬇️ Clippings/Tech/Gitbutler/Gitbutler.md"
     }
   ],
   "omittedPaths": [],

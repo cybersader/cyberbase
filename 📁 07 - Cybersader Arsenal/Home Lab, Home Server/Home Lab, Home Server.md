@@ -18,6 +18,7 @@ date modified: Sunday, May 11th 2025, 11:28 am
 	- **[[pfsense_with_local_services]]**
 
 - **[[TrueNAS Scale Home Server]]**
+- **[[Wazuh Setup TrueNAS]]**
 
 %% End Waypoint %%
 
