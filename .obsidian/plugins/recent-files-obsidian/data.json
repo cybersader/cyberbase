@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "TrueNAS Smallstep CA",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Smallstep CA/TrueNAS Smallstep CA.md"
+    },
+    {
+      "basename": "TrueNAS Scale Home Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
+    },
+    {
       "basename": "TrueNAS Scale Guacamole",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Guacamole/TrueNAS Scale Guacamole.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "⬇ Tech Dropzone",
       "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/⬇ Tech Dropzone.md"
-    },
-    {
-      "basename": "Windows Desktop Provisioning",
-      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
-    },
-    {
-      "basename": "Fake Window Light",
-      "path": "⬇ INBOX, DROPZONE/Fake Window Light/Fake Window Light.md"
     }
   ],
   "omittedPaths": [],

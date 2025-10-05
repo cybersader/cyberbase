@@ -42,6 +42,7 @@ date modified: Monday, May 27th 2024, 1:14 pm
 - **[[TrueNAS Scale Apps, Adding TrueCharts]]**
 - **[[TrueNAS Scale Guacamole]]**
 - **[[TrueNAS Scale RAID Setup]]**
+- **[[TrueNAS Smallstep CA]]**
 - **[[Turning Old PC into NAS in 2024]]**
 - **[[Using a New Router with TrueNAS]]**
 - **[[Using Hostnames Locally]]**
