@@ -14,6 +14,11 @@ date modified: Sunday, October 5th 2025, 1:31 pm
 - [github.com > smallstep/certificates: 🛡️ A private certificate authority (X.509 & SSH) & ACME server for secure automated certificate management, so you can use TLS everywhere & SSO for SSH.](https://github.com/smallstep/certificates)
 - [smallstep.com > Build a Tiny Certificate Authority For Your Homelab](https://smallstep.com/blog/build-a-tiny-ca-with-raspberry-pi-yubikey/)
 - [youtube.com > How I secure my Server Access with Teleport (for SSH, K8S, and Web)](https://www.youtube.com/watch?v=9__A_nO2pbk)
+- [hashicorp.com > SSH secrets engine | Vault | HashiCorp Developer](https://developer.hashicorp.com/vault/docs/secrets/ssh)
+- [openalternative.co > Best Open Source Identity & Access Management (IAM) Tools (2025)](https://openalternative.co/categories/security-privacy/identity-access-management-iam)
+- [openalternative.co > JumpServer: Open Source Alternative to CyberArk and Teleport](https://openalternative.co/jumpserver)
+- [goteleport.com > Teleport: Access & Protect AI and Classic Infrastructure](https://goteleport.com/)
+	- [github.com > gravitational/teleport: The easiest, and most secure way to access and protect all of your infrastructure.](https://github.com/gravitational/teleport)
 
 - Related?
 	- [firezone.dev > Firezone: Zero trust access that scales](https://www.firezone.dev/)
