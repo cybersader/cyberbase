@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Sunday, October 5th 2025, 2:03 pm
-date modified: Sunday, October 5th 2025, 4:32 pm
+date modified: Sunday, October 5th 2025, 5:10 pm
 ---
 
 - [Wazuh](https://wazuh.com/)
@@ -111,13 +111,9 @@ Add an **alias IP** on your TrueNAS NIC (Network → Interfaces). In Compose, bi
 ### 4) Reverse proxy with **Nginx Proxy Manager (NPM)**
 
 - **Proxy only the Dashboard** to `https://APP_IP:443` (container exposes **5601**, we’ll bind it to 443 on the app IP).
-    
 - Keep **9200 (indexer)** internal (do not publish publicly). Keep **55000 (API)** LAN-only unless you truly need remote access. [Wazuh Documentation](https://documentation.wazuh.com/current/deployment-options/docker/wazuh-container.html?utm_source=chatgpt.com)
-    
 - Because the dashboard defaults to a **self-signed** upstream cert, either:
-    
     - In NPM, allow invalid upstream certs **or**
-        
     - Add an advanced block to **disable upstream verification** for this host:
         
         ```
@@ -137,11 +133,67 @@ Add an **alias IP** on your TrueNAS NIC (Network → Interfaces). In Compose, bi
 
 > **DNS-01** in NPM is only needed for wildcards or when HTTP-01 isn’t possible; otherwise HTTP-01 is simpler. [GitHub](https://github.com/wazuh/wazuh-docker/discussions/727?utm_source=chatgpt.com)
 
+
+---
+
+## 4) Certificates (no-shell, docker-run)
+
+Wazuh uses TLS between components. Generate the cert bundle **once** with the official image and write into your repo’s `config/wazuh_indexer_ssl_certs` folder.
+
+**Run from anywhere that can reach Docker on the TrueNAS host:**
+
+> [!attention] match the path to your own truenas or other system setup
+
+```bash
+docker run --rm -it \
+  -v /mnt/personal/wazuh-hdd/config/wazuh_indexer_ssl_certs:/certs \
+  -e NODE_NAME=wazuh.indexer \
+  -e WAZUH_MANAGER=wazuh.manager \
+  -e WAZUH_DASHBOARD=wazuh.dashboard \
+  wazuh/wazuh-certs-generator
+```
+
+This creates `root-ca.pem`, node certs/keys, and admin certs your stack mounts. (Tool/image are the official route.) [Docker Hub](https://hub.docker.com/r/wazuh/wazuh-certs-generator?utm_source=chatgpt.com)
+
+> If you prefer everything inside Compose, you can add a short-lived `wazuh.certs` service that runs the same generator before indexer starts; the effect is identical. [Wazuh Documentation](https://documentation.wazuh.com/current/deployment-options/docker/wazuh-container.html?utm_source=chatgpt.com)
+
 * * *
 
-### 5) Passwords & hardening (after first run)
+## 5) Passwords (keep it simple on day 1)
 
-Follow **Changing the default password of Wazuh users** for Docker: edit compose/env, generate hash(es) where required, apply. (You can only change one internal user at a time.) Also update the **manager API** user/password used by the dashboard. [Wazuh Documentation](https://documentation.wazuh.com/current/deployment-options/docker/changing-default-password.html?utm_source=chatgpt.com)
+There are **two** credential domains:
+
+- **A) Wazuh Server API user** (`wazuh-wui`) that the **dashboard** uses over port **55000**
+    - Put the **plain** password in both:
+        - `docker-compose.yml` (env `API_PASSWORD` for dashboard/manager), and
+        - `config/wazuh_dashboard/wazuh.yml` (this file is read by the dashboard).
+    - **No `securityadmin.sh` is needed** for API users. [Wazuh Documentation](https://documentation.wazuh.com/current/deployment-options/docker/changing-default-password.html?utm_source=chatgpt.com)
+- **B) Indexer internal users** (`admin`, `kibanaserver`) that live in the **OpenSearch security index**.
+    - If/when you change these, you **must** hash the new password, update `config/wazuh_indexer/internal_users.yml`, then **reapply with `securityadmin.sh`** so the security index is updated. (One user at a time.) [Wazuh Documentation](https://documentation.wazuh.com/current/deployment-options/docker/changing-default-password.html?utm_source=chatgpt.com)
+        
+
+### Optional “no-shell” `securityadmin.sh` later (docker-run)
+
+If you rotate an **indexer** user in the future, you can run the tool without a shell login by launching a **throwaway indexer container** on the same network and mounting the certs/config:
+
+```bash
+# Assumes your stack's default network is "wazuh_default".
+# If unsure, run `docker network ls` and adjust the --network name.
+docker run --rm --network=wazuh_default \
+  -v /mnt/pool/wazuh-hdd/config/wazuh_indexer_ssl_certs:/certs:ro \
+  -v /mnt/pool/wazuh-hdd/config/wazuh_indexer:/sec:ro \
+  wazuh/wazuh-indexer \
+  bash -lc '\
+    export CACERT=/certs/root-ca.pem; \
+    export CERT=/certs/admin.pem; \
+    export KEY=/certs/admin-key.pem; \
+    /usr/share/wazuh-indexer/plugins/opensearch-security/tools/securityadmin.sh \
+      -cd /sec/opensearch-security/ -nhnv \
+      -cacert $CACERT -cert $CERT -key $KEY -p 9200 -icl \
+      -h wazuh.indexer'
+```
+
+That’s the same command the docs call for—just executed via `docker run` pointed at `wazuh.indexer:9200` on the compose network. [Wazuh Documentation](https://documentation.wazuh.com/current/deployment-options/docker/changing-default-password.html?utm_source=chatgpt.com)
 
 * * *
 
@@ -150,11 +202,8 @@ Follow **Changing the default password of Wazuh users** for Docker: edit compose
 The compose you pasted expects cert/key files under `./config/wazuh_indexer_ssl_certs/...`. Generate them **once** using the official **wazuh-certs-generator** container, writing into your repo’s `config` directory (which you then bind-mount from a dataset). After that, regular upgrades don’t need the generator again. [Docker Hub+1](https://hub.docker.com/r/wazuh/wazuh-certs-generator?utm_source=chatgpt.com)
 
 You can either:
-
 - Run a **one-shot certs service** in Compose (`depends_on` waits for it), **or**
-    
 - Pre-generate certs with a manual `docker run ...` and commit them in your repo path under `/mnt/pool/wazuh-hdd/config`.
-    
 
 * * *
 
@@ -168,14 +217,73 @@ Changes vs. your original:
 - **9200** **not** published publicly; if you need it, bind it only to `127.0.0.1:9200` or your alias IP and firewall tightly.
 - Dashboard’s **5601** bound to **443** on the alias IP (easier for NPM).
 - Kept your **ulimits**.
-    
 
 ```yaml
 services:
+  # 1) One-shot: generate TLS certs into your repo/config dir
+  wazuh.certs:
+    image: wazuh/wazuh-certs-generator:latest
+    command: >
+      bash -lc "/entrypoint.sh && echo CERTS_OK"
+    environment:
+      - NODE_NAME=wazuh.indexer
+      - WAZUH_MANAGER=wazuh.manager
+      - WAZUH_DASHBOARD=wazuh.dashboard
+    volumes:
+      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs:/certs
+    restart: "no"
+
+  # 2) One-shot: rotate passwords (Indexer internal + Manager API) from file
+  wazuh.passwords:
+    image: wazuh/wazuh-indexer:4.13.1
+    depends_on:
+      wazuh.certs:
+        condition: service_completed_successfully
+    # We run the official "passwords tool" in file mode (-f) pointing at your YAML.
+    # The tool lives in the indexer image path. Docs: file-based mode supported.
+    command: >
+      bash -lc "
+        curl -sO https://packages.wazuh.com/4.13/wazuh-passwords-tool.sh &&
+        chmod +x wazuh-passwords-tool.sh &&
+        ./wazuh-passwords-tool.sh --file ${CONFIG_DIR}/passwords/passwords.yml &&
+        echo PW_OK
+      "
+    volumes:
+      - ${CONFIG_DIR}:/mnt/config
+    environment:
+      - CONFIG_DIR=/mnt/config
+    restart: "no"
+
+  wazuh.indexer:
+    image: wazuh/wazuh-indexer:4.13.1
+    hostname: wazuh.indexer
+    restart: always
+    depends_on:
+      wazuh.passwords:
+        condition: service_completed_successfully
+    environment:
+      - OPENSEARCH_JAVA_OPTS=${OPENSEARCH_JAVA_OPTS}
+    ulimits:
+      memlock: { soft: -1, hard: -1 }
+      nofile:  { soft: 65536, hard: 65536 }
+    volumes:
+      - ${DATA_SSD}/indexer-data:/var/lib/wazuh-indexer
+      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/root-ca.pem:/usr/share/wazuh-indexer/certs/root-ca.pem:ro
+      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.indexer-key.pem:/usr/share/wazuh-indexer/certs/wazuh.indexer.key:ro
+      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.indexer.pem:/usr/share/wazuh-indexer/certs/wazuh.indexer.pem:ro
+      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/admin.pem:/usr/share/wazuh-indexer/certs/admin.pem:ro
+      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/admin-key.pem:/usr/share/wazuh-indexer/certs/admin-key.pem:ro
+      - ${CONFIG_DIR}/wazuh_indexer/wazuh.indexer.yml:/usr/share/wazuh-indexer/opensearch.yml:ro
+      - ${CONFIG_DIR}/wazuh_indexer/internal_users.yml:/usr/share/wazuh-indexer/opensearch-security/internal_users.yml:ro
+    # keep 9200 internal; do NOT publish it
+
   wazuh.manager:
     image: wazuh/wazuh-manager:4.13.1
     hostname: wazuh.manager
     restart: always
+    depends_on:
+      wazuh.indexer:
+        condition: service_started
     ulimits:
       memlock: { soft: -1, hard: -1 }
       nofile:  { soft: 655360, hard: 655360 }
@@ -195,7 +303,6 @@ services:
       - API_USERNAME=${API_USERNAME}
       - API_PASSWORD=${API_PASSWORD}
     volumes:
-      # manager data (HDD)
       - ${DATA_HDD}/manager/api_configuration:/var/ossec/api/configuration
       - ${DATA_HDD}/manager/etc:/var/ossec/etc
       - ${DATA_HDD}/manager/logs:/var/ossec/logs
@@ -205,43 +312,22 @@ services:
       - ${DATA_HDD}/manager/active-response:/var/ossec/active-response/bin
       - ${DATA_HDD}/manager/agentless:/var/ossec/agentless
       - ${DATA_HDD}/manager/wodles:/var/ossec/wodles
-      # filebeat state (HDD)
       - ${DATA_HDD}/filebeat/etc:/etc/filebeat
       - ${DATA_HDD}/filebeat/var:/var/lib/filebeat
-      # certs + config files (bind from your repo/config tree)
       - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/root-ca-manager.pem:/etc/ssl/root-ca.pem:ro
       - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.manager.pem:/etc/ssl/filebeat.pem:ro
       - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.manager-key.pem:/etc/ssl/filebeat.key:ro
       - ${CONFIG_DIR}/wazuh_cluster/wazuh_manager.conf:/wazuh-config-mount/etc/ossec.conf:ro
 
-  wazuh.indexer:
-    image: wazuh/wazuh-indexer:4.13.1
-    hostname: wazuh.indexer
-    restart: always
-    # DO NOT expose 9200 publicly; if needed, bind to 127.0.0.1:9200 instead.
-    # ports:
-    #   - "127.0.0.1:9200:9200"
-    environment:
-      - OPENSEARCH_JAVA_OPTS=${OPENSEARCH_JAVA_OPTS}
-    ulimits:
-      memlock: { soft: -1, hard: -1 }
-      nofile:  { soft: 65536, hard: 65536 }
-    volumes:
-      - ${DATA_SSD}/indexer-data:/var/lib/wazuh-indexer
-      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/root-ca.pem:/usr/share/wazuh-indexer/certs/root-ca.pem:ro
-      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.indexer-key.pem:/usr/share/wazuh-indexer/certs/wazuh.indexer.key:ro
-      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.indexer.pem:/usr/share/wazuh-indexer/certs/wazuh.indexer.pem:ro
-      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/admin.pem:/usr/share/wazuh-indexer/certs/admin.pem:ro
-      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/admin-key.pem:/usr/share/wazuh-indexer/certs/admin-key.pem:ro
-      - ${CONFIG_DIR}/wazuh_indexer/wazuh.indexer.yml:/usr/share/wazuh-indexer/opensearch.yml:ro
-      - ${CONFIG_DIR}/wazuh_indexer/internal_users.yml:/usr/share/wazuh-indexer/opensearch-security/internal_users.yml:ro
-
   wazuh.dashboard:
     image: wazuh/wazuh-dashboard:4.13.1
     hostname: wazuh.dashboard
     restart: always
+    depends_on:
+      - wazuh.indexer
+      - wazuh.manager
     ports:
-      - "${APP_IP}:443:5601"   # bind container 5601 to 443 on the alias IP
+      - "${APP_IP}:443:5601"
     environment:
       - INDEXER_USERNAME=${INDEXER_USERNAME}
       - INDEXER_PASSWORD=${INDEXER_PASSWORD}
@@ -250,11 +336,6 @@ services:
       - DASHBOARD_PASSWORD=${DASHBOARD_PASSWORD}
       - API_USERNAME=${API_USERNAME}
       - API_PASSWORD=${API_PASSWORD}
-    depends_on:
-      - wazuh.indexer
-    links:
-      - wazuh.indexer:wazuh.indexer
-      - wazuh.manager:wazuh.manager
     volumes:
       - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.dashboard.pem:/usr/share/wazuh-dashboard/certs/wazuh-dashboard.pem:ro
       - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.dashboard-key.pem:/usr/share/wazuh-dashboard/certs/wazuh-dashboard-key.pem:ro
@@ -325,20 +406,15 @@ If you prefer everything in Compose, add a short-lived `wazuh.certs` service tha
 ### 8) NPM setup (quick)
 
 - Proxy Host: `wazuh.example.com` → **https → ${APP_IP}:443**, **Websockets on**.
-    
 - If using the **self-signed** default: use the “allow invalid certs” toggle **or** add the `proxy_ssl_verify off;` advanced block (above). [GitHub](https://github.com/NginxProxyManager/nginx-proxy-manager/discussions/3332?utm_source=chatgpt.com)
-    
 - If you install a **trusted** cert **inside** the dashboard (LE), you can keep upstream verification on. [Wazuh Documentation+1](https://documentation.wazuh.com/current/user-manual/wazuh-dashboard/configuring-third-party-certs/index.html?utm_source=chatgpt.com)
-    
 
 * * *
 
 ### 9) Ports you should/shouldn’t publish
 
 - **Publish on APP_IP:** `1514/tcp+udp` (syslog—your file maps tcp; you can add udp), `1515/tcp` (agent enrollment), `55000/tcp` (API—keep LAN-only), `443/tcp` (dashboard → NPM).
-    
 - **Keep internal:** `9200/tcp` (indexer/OpenSearch). If you _must_ expose, bind to `127.0.0.1:9200` only and reverse-proxy/VPN into it. [Wazuh Documentation](https://documentation.wazuh.com/current/deployment-options/docker/wazuh-container.html?utm_source=chatgpt.com)
-    
 
 * * *
 
@@ -351,7 +427,5 @@ Bump image tags and follow Wazuh’s **Upgrading Wazuh Docker** steps. Your bind
 #### Why this fits your “code-server → Custom YAML” workflow
 
 - All config/certs live in your **repo path** (bind-mounted from datasets), so you can edit in code-server.
-    
 - The **generator** runs outside or once via Compose; no manual “bash into container then copy files” dance. [Docker Hub](https://hub.docker.com/r/wazuh/wazuh-certs-generator?utm_source=chatgpt.com)
-    
 - The only host tweak is the **sysctl** (done once, in UI). [OpenSearch Documentation](https://docs.opensearch.org/latest/install-and-configure/install-opensearch/index/?utm_source=chatgpt.com)
