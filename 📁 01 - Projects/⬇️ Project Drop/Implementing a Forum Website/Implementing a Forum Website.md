@@ -175,4 +175,7 @@ Use a trusted **transactional email provider** (SES, Postmark, SendGrid, etc.):
 	- Make sure your SMTP server address, username, and password are correct
 	- [discourse.org > Troubleshoot email on a new Discourse install - Documentation / Self-Hosting](https://meta.discourse.org/t/troubleshoot-email-on-a-new-discourse-install/16326)
 	- Change the DISCOURSE_NOTIFICATION_EMAIL and DISCOURSE_SMTP_DOMAIN to match what you have in your email provider (e.g. Mailgun).  The notification email will become your from address which will need to match the SMTP domain.  This also assumes that you've set up DMARC, DKIM, and SPF in your DNS (e.g. Cloudflare)
-- 
+- Upgrading, updating
+	- [discourse.org > Manually update Discourse and Docker image to latest - Documentation / Self-Hosting](https://meta.discourse.org/t/manually-update-discourse-and-docker-image-to-latest/23325)
+	- [discourse.org > Discourse Docker Manager - Plugin](https://meta.discourse.org/t/discourse-docker-manager/12655)
+	- 
