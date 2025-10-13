@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Sunday, October 5th 2025, 2:03 pm
-date modified: Monday, October 13th 2025, 1:15 pm
+date modified: Monday, October 13th 2025, 1:50 pm
 ---
 
 - [Wazuh](https://wazuh.com/)
@@ -701,6 +701,71 @@ docker run --rm -it \
   -e WAZUH_DASHBOARD=wazuh.dashboard \
   wazuh/wazuh-certs-generator:4.13.1
 ```
+
+```bash
+cd /mnt/personal/docker-configs/wazuh
+
+# Stop all services
+docker compose down -v
+
+# Remove any leftover containers
+docker container rm -f $(docker container ls -aq --filter "name=wazuh") 2>/dev/null || echo "No containers to remove"
+
+# Remove all wazuh-related volumes
+docker volume rm $(docker volume ls -q | grep wazuh) 2>/dev/null || echo "No volumes to remove"
+
+# Nuclear option - remove ALL unused containers, networks, images, and volumes
+docker system prune -af --volumes
+
+# Verify nothing wazuh-related remains
+docker ps -a | grep wazuh || echo "✅ No Wazuh containers"
+docker volume ls | grep wazuh || echo "✅ No Wazuh volumes" 
+docker network ls | grep wazuh || echo "✅ No Wazuh networks"
+```
+
+Delete all config data and certs:
+
+```bash
+cd /mnt/personal/docker-configs/wazuh
+
+# Show what we're about to delete
+echo "=== WILL DELETE ==="
+ls -la config/ 2>/dev/null || echo "No config directory"
+
+echo "=== WILL KEEP ==="
+ls -la docker-compose.yml .env 2>/dev/null
+
+# Delete all config directories and files
+rm -rf config/
+
+# Verify clean slate
+ls -la
+echo "✅ Config data deleted"
+```
+
+Create fresh directory structure:
+
+```bash
+cd /mnt/personal/docker-configs/wazuh
+
+# Create fresh config directories
+mkdir -p config/wazuh_indexer_ssl_certs
+mkdir -p config/wazuh_indexer
+mkdir -p config/wazuh_indexer/opensearch-security
+mkdir -p config/wazuh_dashboard
+mkdir -p config/wazuh_cluster
+
+# Verify directory structure
+tree config/ || find config/ -type d
+echo "✅ Fresh directories created"
+```
+
+Next Steps After Reset:
+1. Regenerate certificates (manual or auto)
+2. Create minimal config files (indexer, dashboard configs)
+3. Deploy with default passwords first
+4. Test that it works
+5. Then change passwords if desired
 
 # Troubleshooting File Contents
 
