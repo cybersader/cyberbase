@@ -452,13 +452,10 @@ Verify in the Web Shell anytime: `cat /proc/sys/vm/max_map_count`. [OpenSearch D
 Pick one:
 
 - **Simple:** one dataset, e.g. `/mnt/pool/wazuh`.
-    
 - **Better (recommended):** split by speed
-    
     - **SSD**: `/mnt/pool/wazuh-ssd/indexer-data` (heavy I/O)
-        
     - **HDD**:
-        
+
         ```
         /mnt/pool/wazuh-hdd/manager/{api_configuration,etc,logs,queue,
                                     var_multigroups,integrations,active-response,
@@ -468,7 +465,7 @@ Pick one:
         /mnt/pool/wazuh-hdd/config    # your ./config tree (yml + certs)
         /mnt/pool/wazuh-hdd/certs     # optional separate certs folder
         ```
-        
+
 
 These paths map directly to the volumes in the Wazuh Docker docs. [Wazuh Documentation](https://documentation.wazuh.com/current/deployment-options/docker/wazuh-container.html?utm_source=chatgpt.com)
 
@@ -499,32 +496,22 @@ This creates `root-ca.pem`, node certs/keys, and the admin client certs that you
 
 * * *
 
-## 5) Passwords—what needs what (and when)
+## 5) Passwords - what needs what (and when)
 
 There are **two** credential domains:
 
 **A) Wazuh Manager API user** (`wazuh-wui`) — used by **Dashboard → Manager** over **55000**
-
 - Put the **plain** password in both places:
-    
     - your compose envs (`API_USERNAME` / `API_PASSWORD`) and
-        
     - the Dashboard config file you mount: `config/wazuh_dashboard/wazuh.yml`.
-        
 - **No `securityadmin.sh` here.** This is not part of the OpenSearch security index. [Wazuh Documentation](https://documentation.wazuh.com/current/deployment-options/docker/changing-default-password.html?utm_source=chatgpt.com)
-    
 
 **B) Indexer internal users** (`admin`, `kibanaserver`) — live in **OpenSearch security index**
-
 - When you change them you must:
-    
     1. set the **plain** password in your compose/envs where referenced,
-        
     2. generate a **hash** (using `hash.sh`) and place it into `config/wazuh_indexer/internal_users.yml`, then
-        
     3. **apply with `securityadmin.sh`** so OpenSearch loads the updated file into its security index.  
         (You can only change **one user at a time**.) [Wazuh Documentation](https://documentation.wazuh.com/current/deployment-options/docker/changing-default-password.html?utm_source=chatgpt.com)
-        
 
 ### How to run `securityadmin.sh` from the TrueNAS Web Shell (no interactive container exec)
 
@@ -533,7 +520,7 @@ When you rotate an **indexer** user later, use a throwaway container that sits o
 ```bash
 # 1) (Optional) generate a new hash to paste into internal_users.yml:
 docker run --rm wazuh/wazuh-indexer \
-  bash -lc '/usr/share/wazuh-indexer/plugins/opensearch-security/tools/hash.sh "NEWSTRONGPASSWORD"'
+  bash -lc '/usr/share/wazuh-indexer/plugins/opensearch-security/tools/hash.sh -p "NEWSTRONGPASSWORD"'
 
 # -> copy the resulting hash into:
 #    /mnt/personal/wazuh-hdd/config/wazuh_indexer/internal_users.yml
@@ -561,9 +548,7 @@ OpenSearch does **not** auto-apply edits to `internal_users.yml`; running `secur
 ## 6) Reverse proxy (Nginx Proxy Manager)
 
 - Proxy **only the Dashboard**: `https://<APP_IP>:443` (container **5601** → host **443** on the alias IP).
-    
 - Keep **9200 (indexer)** private. Keep **55000 (API)** LAN-only unless truly needed off-LAN. [Wazuh Documentation](https://documentation.wazuh.com/current/deployment-options/docker/wazuh-container.html?utm_source=chatgpt.com)
-    
 - Because upstream is **self-signed** by default, either allow invalid upstream certs or add in **Advanced**:
     
     ```
@@ -576,7 +561,6 @@ OpenSearch does **not** auto-apply edits to `internal_users.yml`; running `secur
     ```
     
     (Community-documented approach.) If you later install a trusted cert **inside** the Dashboard, keep verification on. [GitHub+2Wazuh Documentation+2](https://github.com/NginxProxyManager/nginx-proxy-manager/discussions/3332?utm_source=chatgpt.com)
-    
 
 * * *
 
@@ -585,13 +569,9 @@ OpenSearch does **not** auto-apply edits to `internal_users.yml`; running `secur
 ### Where must `.env` be?
 
 - **Default:** place `.env` **next to your `compose.yaml`** (same directory). That’s where Compose auto-loads it. [Docker Documentation](https://docs.docker.com/compose/how-tos/environment-variables/variable-interpolation/?utm_source=chatgpt.com)
-    
 - If you keep `.env` higher up (e.g., in `wazuh/` while `compose.yaml` is in `wazuh/single-node/`), then either:
-    
     - run compose **from the parent** with `COMPOSE_FILE=single-node/compose.yaml`, so the “project directory” is the parent and `.env` is found there, **or**
-        
     - keep running from `single-node/` but add **`--env-file ../.env`** (Compose v2) **or** use `env_file:` entries in your services. The path is **relative to the compose file**. [Docker Documentation+1](https://docs.docker.com/compose/how-tos/environment-variables/envvars/?utm_source=chatgpt.com)
-        
 
 ### Compose file (no `version:` key)
 
@@ -607,29 +587,17 @@ All commands below run from the **TrueNAS Web Shell**.
 
 1. **Set the host sysctl** (TrueNAS UI → Sysctl) and verify:  
     `cat /proc/sys/vm/max_map_count` (must be `262144+`). [OpenSearch Documentation](https://docs.opensearch.org/latest/install-and-configure/install-opensearch/index/?utm_source=chatgpt.com)
-    
 2. **Create datasets** (SSD/HDD) per §2 and put your repo under them.
-    
 3. **Generate TLS certs** (once) per §4 (`docker run ... wazuh/wazuh-certs-generator`). [Docker Hub](https://hub.docker.com/r/wazuh/wazuh-certs-generator?utm_source=chatgpt.com)
-    
 4. **Review secrets**:
-    
     - Put the **plain** API password in `config/wazuh_dashboard/wazuh.yml` and make it match your `.env` `API_PASSWORD`.
-        
     - Set `INDEXER_USERNAME/PASSWORD` and `DASHBOARD_USERNAME/PASSWORD` in `.env` for Dashboard ↔ Indexer auth (those are _plain_ values used by services). [Wazuh Documentation](https://documentation.wazuh.com/current/deployment-options/docker/changing-default-password.html?utm_source=chatgpt.com)
-        
 5. **Deploy the Custom App** in TrueNAS (Apps → Custom → paste your compose YAML or point to it).
-    
     - Publish ports only on your **alias IP** (`443→5601`, `1514`, `1515`, `55000`, plus optional `514/udp`).
-        
     - **Do not** publish 9200. [Wazuh Documentation](https://documentation.wazuh.com/current/deployment-options/docker/wazuh-container.html?utm_source=chatgpt.com)
-        
 6. **Configure NPM** to proxy the Dashboard per §6.
-    
 7. **First login** to Dashboard using your configured credentials.
-    
 8. (Optional, later) **Rotate indexer user(s)**: generate hash → edit `internal_users.yml` → apply with **`securityadmin.sh`** via the docker-run one-shot in §5. [Wazuh Documentation+1](https://documentation.wazuh.com/current/deployment-options/docker/changing-default-password.html?utm_source=chatgpt.com)
-    
 
 * * *
 
@@ -680,6 +648,25 @@ For **cert generation** and (later) **`securityadmin.sh`**, yes—the official g
 
 **Why keep 9200 private?**  
 It’s the Indexer/OpenSearch API. Only the Manager/Filebeat/Dashboard should talk to it. Publishing it increases risk with no benefit in single-node. [Wazuh Documentation](https://documentation.wazuh.com/current/deployment-options/docker/wazuh-container.html?utm_source=chatgpt.com)
+
+## Resetting Data During Configuration
+
+Removing certs:
+
+```
+rm -rf /mnt/personal/docker-configs/wazuh/config/wazuh_indexer_ssl_certs/*
+```
+
+Regenerating certs:
+
+```
+docker run --rm -it \
+  -v /mnt/personal/docker-configs/wazuh/config/wazuh_indexer_ssl_certs:/certs \
+  -e NODE_NAME=wazuh.indexer \
+  -e WAZUH_MANAGER=wazuh.manager \
+  -e WAZUH_DASHBOARD=wazuh.dashboard \
+  wazuh/wazuh-certs-generator:4.13.1
+```
 
 # Troubleshooting File Contents
 
