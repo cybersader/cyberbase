@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Sunday, October 5th 2025, 2:03 pm
-date modified: Monday, October 13th 2025, 2:29 pm
+date modified: Monday, October 13th 2025, 2:55 pm
 ---
 
 - [Wazuh](https://wazuh.com/)
@@ -1658,6 +1658,8 @@ mkdir -p config/wazuh_cluster
 ### Step 2: Create Configuration Files
 
 Using VS Code Server interface, create the files listed above with their respective content.
+
+Download the initial ones from - https://github.com/wazuh/wazuh-docker/tree/main/single-node - or git clone the whole repo then pull the ones you want.
 
 ### Step 3: Generate Certificates
 
