@@ -5,12 +5,12 @@
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Wazuh Setup TrueNAS/Wazuh Setup TrueNAS.md"
     },
     {
-      "basename": "Custom Docker Apps in TrueNAS",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Custom Docker Apps in TrueNAS/Custom Docker Apps in TrueNAS.md"
-    },
-    {
       "basename": "TrueNAS Self-Hosted CA & Access Infrastructure",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Self-Hosted CA & Access Infrastructure/TrueNAS Self-Hosted CA & Access Infrastructure.md"
+    },
+    {
+      "basename": "Custom Docker Apps in TrueNAS",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Custom Docker Apps in TrueNAS/Custom Docker Apps in TrueNAS.md"
     },
     {
       "basename": "Home Cyber Resilience Tech Stack",
