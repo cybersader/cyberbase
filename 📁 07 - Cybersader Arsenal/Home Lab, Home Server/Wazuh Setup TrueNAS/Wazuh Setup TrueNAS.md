@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Sunday, October 5th 2025, 2:03 pm
-date modified: Monday, October 13th 2025, 10:02 am
+date modified: Monday, October 13th 2025, 1:15 pm
 ---
 
 - [Wazuh](https://wazuh.com/)
@@ -517,6 +517,36 @@ There are **two** credential domains:
 
 When you rotate an **indexer** user later, use a throwaway container that sits on the same Docker network and mounts your certs and security config. Example:
 
+For each password change, and in this order,...
+
+```bash
+# In TrueNAS Web Shell
+cd /mnt/personal/docker-configs/wazuh
+
+# Stop all services
+docker compose down
+
+# Start only indexer
+docker compose up -d wazuh.indexer
+
+# Wait for indexer to be ready
+sleep 30
+
+# Apply security configuration (update OpenSearch internal database)
+docker run --rm --network=wazuh_default \
+  -v /mnt/personal/docker-configs/wazuh/config/wazuh_indexer_ssl_certs:/certs:ro \
+  -v /mnt/personal/docker-configs/wazuh/config/wazuh_indexer:/sec:ro \
+  wazuh/wazuh-indexer:4.13.1 \
+  bash -lc '\
+    export CACERT=/certs/root-ca.pem; \
+    export CERT=/certs/admin.pem; \
+    export KEY=/certs/admin-key.pem; \
+    /usr/share/wazuh-indexer/plugins/opensearch-security/tools/securityadmin.sh \
+      -cd /sec/opensearch-security/ -nhnv \
+      -cacert $CACERT -cert $CERT -key $KEY -p 9200 -icl \
+      -h wazuh.indexer'
+```
+
 ```bash
 # 1) (Optional) generate a new hash to paste into internal_users.yml:
 docker run --rm wazuh/wazuh-indexer \
@@ -527,18 +557,18 @@ docker run --rm wazuh/wazuh-indexer \
 #    (for the one user you're changing)
 
 # 2) Apply the change to the OpenSearch security index:
-#    Adjust --network to your compose network name (often <folder>_default).
 docker run --rm --network=wazuh_default \
-  -v /mnt/personal/wazuh-hdd/config/wazuh_indexer_ssl_certs:/certs:ro \
-  -v /mnt/personal/wazuh-hdd/config/wazuh_indexer:/sec:ro \
-  wazuh/wazuh-indexer \
+  -v /mnt/personal/docker-configs/wazuh/config/wazuh_indexer_ssl_certs:/certs:ro \
+  -v /mnt/personal/docker-configs/wazuh/config/wazuh_indexer:/sec:ro \
+  wazuh/wazuh-indexer:4.13.1 \
   bash -lc '\
     export CACERT=/certs/root-ca.pem; \
     export CERT=/certs/admin.pem; \
     export KEY=/certs/admin-key.pem; \
     /usr/share/wazuh-indexer/plugins/opensearch-security/tools/securityadmin.sh \
       -cd /sec/opensearch-security/ -nhnv \
-      -cacert $CACERT -cert $CERT -key $KEY -p 9200 -icl -h wazuh.indexer'
+      -cacert $CACERT -cert $CERT -key $KEY -p 9200 -icl \
+      -h wazuh.indexer'
 ```
 
 OpenSearch does **not** auto-apply edits to `internal_users.yml`; running `securityadmin.sh` is the documented step that loads your changes into the index. [OpenSearch Documentation](https://docs.opensearch.org/latest/security/configuration/security-admin/?utm_source=chatgpt.com)
