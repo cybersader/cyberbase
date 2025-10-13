@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Sunday, October 5th 2025, 2:03 pm
-date modified: Monday, October 13th 2025, 2:01 pm
+date modified: Monday, October 13th 2025, 2:29 pm
 ---
 
 - [Wazuh](https://wazuh.com/)
@@ -1349,3 +1349,602 @@ API_PASSWORD=PASSWORD_HERE
 2025-10-13 15:55:00.630357+00:00{"type":"log","@timestamp":"2025-10-13T15:55:00Z","tags":["error","plugins","wazuh","cron-scheduler"],"pid":54,"message":"AxiosError: Request failed with status code 401"}
 2025-10-13 15:55:00.630985+00:00{"type":"log","@timestamp":"2025-10-13T15:55:00Z","tags":["error","plugins","wazuh","cron-scheduler"],"pid":54,"message":"AxiosError: Request failed with status code 401"}
 ```
+
+# Wazuh on TrueNAS SCALE - Complete Setup Guide
+
+## Overview
+
+This guide covers deploying Wazuh (single-node) on TrueNAS SCALE using Docker Compose with VS Code Server for configuration management. You'll get a working SIEM with indexer (OpenSearch), manager, and dashboard components.
+
+## Prerequisites
+
+### 1. System Requirements
+
+- TrueNAS SCALE (tested on Fangtooth)
+- Minimum 8GB RAM (4GB allocated to indexer)
+- Custom IP alias configured for the app
+- VS Code Server app installed for config management
+
+### 2. Set vm.max_map_count (Required)
+
+OpenSearch requires `vm.max_map_count ≥ 262144` on the host.
+
+**In TrueNAS UI:**
+- **System Settings → Advanced → Sysctl → Add**
+- Variable: `vm.max_map_count`
+- Value: `262144`
+- Description: `Required for OpenSearch/Wazuh indexer`
+
+**Verify in TrueNAS Web Shell:**
+```bash
+cat /proc/sys/vm/max_map_count
+# Should show: 262144
+```
+
+### 3. Network Setup
+
+Create a custom IP alias for the Wazuh application:
+- **Network → Interfaces → [Your Interface] → Edit**
+- Add IP Address: `192.168.1.29/24` (adjust to your network)
+
+## Directory Structure & Configuration Space
+
+### VS Code Server Configuration Layout
+
+```
+/mnt/personal/docker-configs/wazuh/
+├── docker-compose.yml          # Main compose file
+├── .env                       # Environment variables
+└── config/                    # Configuration directory
+    ├── wazuh_indexer_ssl_certs/          # Certificates (auto-generated)
+    ├── wazuh_indexer/                     # Indexer config files
+    │   ├── wazuh.indexer.yml
+    │   └── internal_users.yml
+    ├── wazuh_dashboard/                   # Dashboard config files
+    │   ├── opensearch_dashboards.yml
+    │   └── wazuh.yml
+    └── wazuh_cluster/                     # Manager config files
+        └── wazuh_manager.conf
+```
+
+### TrueNAS Dataset Structure
+
+Create these datasets for persistent storage:
+```
+/mnt/personal/docker-configs/wazuh/     # Config files (VS Code Server access)
+```
+
+## Configuration Files
+
+### Environment Variables (.env)
+
+**File: `/mnt/personal/docker-configs/wazuh/.env`**
+```bash
+WAZUH_VERSION=4.13.1
+WAZUH_IMAGE_VERSION=4.13.1
+WAZUH_TAG_REVISION=1
+FILEBEAT_TEMPLATE_BRANCH=4.13.1
+WAZUH_FILEBEAT_MODULE=wazuh-filebeat-0.4.tar.gz
+WAZUH_UI_REVISION=1
+
+# Host bind
+APP_IP=192.168.1.29
+
+# Storage roots
+CONFIG_DIR=/mnt/personal/docker-configs/wazuh/config
+
+# OpenSearch heap (adjust based on available RAM)
+OPENSEARCH_JAVA_OPTS=-Xms4g -Xmx4g
+
+# Credentials (CHANGE THESE after first deployment)
+INDEXER_USERNAME=admin
+INDEXER_PASSWORD=SecretPassword
+DASHBOARD_USERNAME=kibanaserver
+DASHBOARD_PASSWORD=kibanaserver
+API_USERNAME=wazuh-wui
+API_PASSWORD=MyS3cr37P450r.*-
+```
+
+### Docker Compose Configuration
+
+**File: `/mnt/personal/docker-configs/wazuh/docker-compose.yml`**
+```yaml
+services:
+  wazuh.indexer:
+    image: wazuh/wazuh-indexer:4.13.1
+    hostname: wazuh.indexer
+    restart: unless-stopped
+    environment:
+      - OPENSEARCH_JAVA_OPTS=${OPENSEARCH_JAVA_OPTS}
+    ulimits:
+      memlock: { soft: -1, hard: -1 }
+      nofile: { soft: 65536, hard: 65536 }
+    volumes:
+      # Named volume for data (Docker manages permissions)
+      - wazuh-indexer-data:/var/lib/wazuh-indexer
+      # Config files (bind mounts, read-only)
+      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/root-ca.pem:/usr/share/wazuh-indexer/certs/root-ca.pem:ro
+      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.indexer-key.pem:/usr/share/wazuh-indexer/certs/wazuh.indexer.key:ro
+      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.indexer.pem:/usr/share/wazuh-indexer/certs/wazuh.indexer.pem:ro
+      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/admin.pem:/usr/share/wazuh-indexer/certs/admin.pem:ro
+      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/admin-key.pem:/usr/share/wazuh-indexer/certs/admin-key.pem:ro
+      - ${CONFIG_DIR}/wazuh_indexer/wazuh.indexer.yml:/usr/share/wazuh-indexer/opensearch.yml:ro
+      - ${CONFIG_DIR}/wazuh_indexer/internal_users.yml:/usr/share/wazuh-indexer/opensearch-security/internal_users.yml:ro
+
+  wazuh.manager:
+    image: wazuh/wazuh-manager:4.13.1
+    hostname: wazuh.manager
+    restart: unless-stopped
+    depends_on:
+      - wazuh.indexer
+    ulimits:
+      memlock: { soft: -1, hard: -1 }
+      nofile: { soft: 655360, hard: 655360 }
+    ports:
+      - "${APP_IP}:1514:1514"
+      - "${APP_IP}:1515:1515" 
+      - "${APP_IP}:514:514/udp"
+      - "${APP_IP}:55000:55000"
+    environment:
+      - INDEXER_URL=https://wazuh.indexer:9200
+      - INDEXER_USERNAME=${INDEXER_USERNAME}
+      - INDEXER_PASSWORD=${INDEXER_PASSWORD}
+      - FILEBEAT_SSL_VERIFICATION_MODE=full
+      - SSL_CERTIFICATE_AUTHORITIES=/etc/ssl/root-ca.pem
+      - SSL_CERTIFICATE=/etc/ssl/filebeat.pem
+      - SSL_KEY=/etc/ssl/filebeat.key
+      - API_USERNAME=${API_USERNAME}
+      - API_PASSWORD=${API_PASSWORD}
+    volumes:
+      # Named volumes for persistent data
+      - wazuh_api_configuration:/var/ossec/api/configuration
+      - wazuh_etc:/var/ossec/etc
+      - wazuh_logs:/var/ossec/logs
+      - wazuh_queue:/var/ossec/queue
+      - wazuh_var_multigroups:/var/ossec/var/multigroups
+      - wazuh_integrations:/var/ossec/integrations
+      - wazuh_active_response:/var/ossec/active-response/bin
+      - wazuh_agentless:/var/ossec/agentless
+      - wazuh_wodles:/var/ossec/wodles
+      - filebeat_etc:/etc/filebeat
+      - filebeat_var:/var/lib/filebeat
+      # Config files (bind mounts)
+      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/root-ca.pem:/etc/ssl/root-ca.pem:ro
+      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.manager.pem:/etc/ssl/filebeat.pem:ro
+      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.manager-key.pem:/etc/ssl/filebeat.key:ro
+
+  wazuh.dashboard:
+    image: wazuh/wazuh-dashboard:4.13.1
+    hostname: wazuh.dashboard
+    restart: unless-stopped
+    depends_on:
+      - wazuh.indexer
+      - wazuh.manager
+    ports:
+      - "${APP_IP}:443:5601"
+    environment:
+      - INDEXER_USERNAME=${INDEXER_USERNAME}
+      - INDEXER_PASSWORD=${INDEXER_PASSWORD}
+      - WAZUH_API_URL=https://wazuh.manager
+      - API_USERNAME=${API_USERNAME}
+      - API_PASSWORD=${API_PASSWORD}
+    volumes:
+      # Named volumes for dashboard data
+      - wazuh-dashboard-config:/usr/share/wazuh-dashboard/data/wazuh/config
+      - wazuh-dashboard-custom:/usr/share/wazuh-dashboard/plugins/wazuh/public/assets/custom
+      # Config files (bind mounts)
+      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.dashboard.pem:/usr/share/wazuh-dashboard/certs/wazuh-dashboard.pem:ro
+      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.dashboard-key.pem:/usr/share/wazuh-dashboard/certs/wazuh-dashboard-key.pem:ro
+      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/root-ca.pem:/usr/share/wazuh-dashboard/certs/root-ca.pem:ro
+      - ${CONFIG_DIR}/wazuh_dashboard/opensearch_dashboards.yml:/usr/share/wazuh-dashboard/config/opensearch_dashboards.yml:ro
+      - ${CONFIG_DIR}/wazuh_dashboard/wazuh.yml:/usr/share/wazuh-dashboard/data/wazuh/config/wazuh.yml:ro
+
+# Named volumes (Docker creates and manages these)
+volumes:
+  wazuh_api_configuration:
+  wazuh_etc:
+  wazuh_logs:
+  wazuh_queue:
+  wazuh_var_multigroups:
+  wazuh_integrations:
+  wazuh_active_response:
+  wazuh_agentless:
+  wazuh_wodles:
+  filebeat_etc:
+  filebeat_var:
+  wazuh-indexer-data:
+  wazuh-dashboard-config:
+  wazuh-dashboard-custom:
+```
+
+### Required Configuration Files
+
+Create these files in VS Code Server before first deployment:
+
+#### Indexer Configuration
+
+**File: `config/wazuh_indexer/wazuh.indexer.yml`**
+```yaml
+network.host: 0.0.0.0
+node.name: wazuh.indexer
+cluster.initial_master_nodes:
+  - wazuh.indexer
+cluster.name: wazuh-cluster
+discovery.seed_hosts:
+  - wazuh.indexer
+node.max_local_storage_nodes: 3
+path.data: /var/lib/wazuh-indexer
+path.logs: /var/log/wazuh-indexer
+
+plugins.security.ssl.transport.pemcert_filepath: certs/wazuh.indexer.pem
+plugins.security.ssl.transport.pemkey_filepath: certs/wazuh.indexer.key
+plugins.security.ssl.transport.pemtrustedcas_filepath: certs/root-ca.pem
+plugins.security.ssl.http.enabled: true
+plugins.security.ssl.http.pemcert_filepath: certs/wazuh.indexer.pem
+plugins.security.ssl.http.pemkey_filepath: certs/wazuh.indexer.key
+plugins.security.ssl.http.pemtrustedcas_filepath: certs/root-ca.pem
+plugins.security.allow_unsafe_democertificates: false
+plugins.security.allow_default_init_securityindex: true
+plugins.security.authcz.admin_dn:
+  - CN=admin,OU=Wazuh,O=Wazuh,L=California,C=US
+plugins.security.check_snapshot_restore_write_privileges: true
+plugins.security.enable_snapshot_restore_privilege: true
+plugins.security.system_indices.enabled: true
+plugins.security.system_indices.indices:
+  - ".opendistro-alerting-config"
+  - ".opendistro-alerting-alert*"
+  - ".opendistro-anomaly-results*"
+  - ".opendistro-anomaly-detector*"
+  - ".opendistro-anomaly-checkpoints"
+  - ".opendistro-anomaly-detection-state"
+  - ".opendistro-reports-*"
+  - ".opendistro-notifications-*"
+  - ".opendistro-notebooks"
+  - ".opensearch-observability"
+  - ".opendistro-asynchronous-search-response*"
+  - ".replication-metadata-store"
+cluster.routing.allocation.disk.threshold_enabled: false
+```
+
+#### Dashboard Configuration
+
+**File: `config/wazuh_dashboard/opensearch_dashboards.yml`**
+```yaml
+server.host: 0.0.0.0
+server.port: 5601
+opensearch.hosts: https://wazuh.indexer:9200
+opensearch.ssl.verificationMode: certificate
+opensearch.ssl.certificateAuthorities: ["/usr/share/wazuh-dashboard/certs/root-ca.pem"]
+opensearch.username: kibanaserver
+opensearch.password: kibanaserver
+opensearch.requestHeadersAllowlist: ["securitytenant","Authorization"]
+opensearch_security.multitenancy.enabled: false
+opensearch_security.readonly_mode.roles: ["kibana_read_only"]
+server.ssl.enabled: true
+server.ssl.key: "/usr/share/wazuh-dashboard/certs/wazuh-dashboard-key.pem"
+server.ssl.certificate: "/usr/share/wazuh-dashboard/certs/wazuh-dashboard.pem"
+server.ssl.certificateAuthorities: ["/usr/share/wazuh-dashboard/certs/root-ca.pem"]
+opensearch.ssl.certificateAuthorities: ["/usr/share/wazuh-dashboard/certs/root-ca.pem"]
+uiSettings.overrides.defaultRoute: /app/wazuh
+```
+
+**File: `config/wazuh_dashboard/wazuh.yml`**
+```yaml
+hosts:
+  - 1513629884013:
+      url: https://wazuh.manager
+      port: 55000
+      username: wazuh-wui
+      password: MyS3cr37P450r.*-
+```
+
+## Deployment Process
+
+### Step 1: Create Directory Structure
+
+**In VS Code Server terminal:**
+```bash
+# Create the main directory
+mkdir -p /mnt/personal/docker-configs/wazuh
+cd /mnt/personal/docker-configs/wazuh
+
+# Create config subdirectories
+mkdir -p config/wazuh_indexer_ssl_certs
+mkdir -p config/wazuh_indexer
+mkdir -p config/wazuh_dashboard
+mkdir -p config/wazuh_cluster
+```
+
+### Step 2: Create Configuration Files
+
+Using VS Code Server interface, create the files listed above with their respective content.
+
+### Step 3: Generate Certificates
+
+**In TrueNAS Web Shell:**
+```bash
+# Generate TLS certificates (must be done from TrueNAS Web Shell)
+docker run --rm -it \
+  -v /mnt/personal/docker-configs/wazuh/config/wazuh_indexer_ssl_certs:/certificates \
+  -e NODE_NAME=wazuh.indexer \
+  -e WAZUH_MANAGER=wazuh.manager \
+  -e WAZUH_DASHBOARD=wazuh.dashboard \
+  wazuh/wazuh-certs-generator:0.0.2
+
+# Verify certificates were created
+ls -la /mnt/personal/docker-configs/wazuh/config/wazuh_indexer_ssl_certs/
+```
+
+### Step 4: Deploy Wazuh Stack
+
+**In TrueNAS Web Shell:**
+```bash
+cd /mnt/personal/docker-configs/wazuh
+
+# Deploy the stack
+docker compose up -d
+
+# Monitor the deployment
+docker compose logs -f
+```
+
+### Step 5: Initial Access
+
+- **Dashboard URL**: `https://192.168.1.29:443`
+- **Default Login**: `admin` / `SecretPassword`
+
+## Password Management
+
+Wazuh has two separate credential systems:
+
+### A) Wazuh Manager API Password (Simple)
+
+Controls: Dashboard → Manager API communication
+
+**Files to Update:**
+1. `.env` file: `API_PASSWORD=YourNewAPIPassword`
+2. `config/wazuh_dashboard/wazuh.yml`: Update the `password` field
+
+**Apply Changes:**
+```bash
+docker compose restart wazuh.manager wazuh.dashboard
+```
+
+### B) OpenSearch Internal Users (Complex)
+
+Controls: Service-to-service authentication with indexer
+
+**Important**: Change only **one user at a time**
+
+#### Example: Changing Admin Password
+
+**Step 1: Generate Password Hash**
+```bash
+# In TrueNAS Web Shell
+docker run --rm wazuh/wazuh-indexer:4.13.1 \
+  /usr/share/wazuh-indexer/plugins/opensearch-security/tools/hash.sh -p "NewStrongPassword123!"
+
+# Copy the output hash (starts with $2a$12$...)
+```
+
+**Step 2: Update Compose Environment**
+```bash
+# In VS Code Server - edit .env file
+INDEXER_PASSWORD=NewStrongPassword123!
+```
+
+**Step 3: Update Internal Users File**
+```bash
+# In VS Code Server - edit config/wazuh_indexer/internal_users.yml
+admin:
+  hash: "$2a$12$YOUR_GENERATED_HASH_HERE"
+  reserved: true
+  backend_roles:
+  - "admin"
+  description: "Demo admin user"
+
+# Keep other users unchanged during this change
+kibanaserver:
+  hash: "$2a$12$4AcgvvJ5RBKHrFAKE9fC1.MMvNPp2eM9xN2VWgqhn5Ut2fN7dWNxS"
+  reserved: true
+  description: "Demo kibanaserver user"
+```
+
+**Step 4: Apply OpenSearch Security Changes**
+```bash
+# In TrueNAS Web Shell
+cd /mnt/personal/docker-configs/wazuh
+
+# Stop all services
+docker compose down
+
+# Start only indexer
+docker compose up -d wazuh.indexer
+
+# Wait for indexer to be ready
+sleep 30
+
+# Apply security configuration
+docker run --rm --network=wazuh_default \
+  -v /mnt/personal/docker-configs/wazuh/config/wazuh_indexer_ssl_certs:/certs:ro \
+  -v /mnt/personal/docker-configs/wazuh/config/wazuh_indexer:/sec:ro \
+  wazuh/wazuh-indexer:4.13.1 \
+  /usr/share/wazuh-indexer/plugins/opensearch-security/tools/securityadmin.sh \
+  -cd /sec/opensearch-security/ -nhnv \
+  -cacert /certs/root-ca.pem \
+  -cert /certs/admin.pem \
+  -key /certs/admin-key.pem \
+  -p 9200 -icl -h wazuh.indexer
+
+# Start all services
+docker compose up -d
+```
+
+**Step 5: Verify**
+```bash
+# Test new credentials
+curl -k -u admin:NewStrongPassword123! https://192.168.1.29:9200/_cluster/health
+```
+
+## Reverse Proxy Setup (Nginx Proxy Manager)
+
+### NPM Configuration
+
+- **Proxy Host**: `wazuh.yourdomain.com`
+- **Destination**: `https://192.168.1.29:443`
+- **Websockets**: Enabled
+- **SSL Certificate**: Let's Encrypt or custom
+
+### Handle Self-Signed Upstream Certificate
+
+In NPM Advanced tab, add:
+```nginx
+proxy_set_header Host $host;
+proxy_set_header X-Forwarded-Proto $scheme;
+proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+proxy_set_header X-Real-IP $remote_addr;
+proxy_read_timeout 3600;
+proxy_ssl_verify off;
+```
+
+## Complete Reset Procedure
+
+When things break and you need to start fresh:
+
+### Clean Docker Environment
+
+**In TrueNAS Web Shell:**
+```bash
+cd /mnt/personal/docker-configs/wazuh
+
+# Stop all services
+docker compose down -v
+
+# Remove any leftover containers
+docker container rm -f $(docker container ls -aq --filter "name=wazuh") 2>/dev/null || echo "No containers to remove"
+
+# Remove all wazuh-related volumes
+docker volume rm $(docker volume ls -q | grep wazuh) 2>/dev/null || echo "No volumes to remove"
+
+# Clean up networks
+docker network rm $(docker network ls -q --filter "name=wazuh") 2>/dev/null || echo "No networks to remove"
+
+# Verify clean state
+docker ps -a | grep wazuh || echo "✅ No Wazuh containers"
+docker volume ls | grep wazuh || echo "✅ No Wazuh volumes"
+```
+
+### Reset Configuration (Keep YAML/ENV)
+
+**In TrueNAS Web Shell:**
+```bash
+cd /mnt/personal/docker-configs/wazuh
+
+# Show what will be deleted
+echo "=== WILL DELETE ==="
+ls -la config/ 2>/dev/null || echo "No config directory"
+
+echo "=== WILL KEEP ==="
+ls -la docker-compose.yml .env
+
+# Delete all config directories and files
+rm -rf config/
+
+# Create fresh directory structure
+mkdir -p config/wazuh_indexer_ssl_certs
+mkdir -p config/wazuh_indexer
+mkdir -p config/wazuh_dashboard
+mkdir -p config/wazuh_cluster
+
+echo "✅ Config reset complete"
+```
+
+### Regenerate Certificates
+
+```bash
+# Generate fresh certificates
+docker run --rm -it \
+  -v /mnt/personal/docker-configs/wazuh/config/wazuh_indexer_ssl_certs:/certificates \
+  -e NODE_NAME=wazuh.indexer \
+  -e WAZUH_MANAGER=wazuh.manager \
+  -e WAZUH_DASHBOARD=wazuh.dashboard \
+  wazuh/wazuh-certs-generator:0.0.2
+```
+
+### Recreate Configuration Files
+
+Using VS Code Server, recreate the configuration files listed in the "Required Configuration Files" section above.
+
+Download fresh config files
+
+```bash
+# Download official Wazuh configuration files
+curl -so config/wazuh_indexer/wazuh.indexer.yml https://raw.githubusercontent.com/wazuh/wazuh-docker/v4.13.0/single-node/config/wazuh_indexer/wazuh.indexer.yml
+curl -so config/wazuh_indexer/internal_users.yml https://raw.githubusercontent.com/wazuh/wazuh-docker/v4.13.0/single-node/config/wazuh_indexer/internal_users.yml  
+curl -so config/wazuh_dashboard/opensearch_dashboards.yml https://raw.githubusercontent.com/wazuh/wazuh-docker/v4.13.0/single-node/config/wazuh_dashboard/opensearch_dashboards.yml
+curl -so config/wazuh_dashboard/wazuh.yml https://raw.githubusercontent.com/wazuh/wazuh-docker/v4.13.0/single-node/config/wazuh_dashboard/wazuh.yml
+curl -so config/wazuh_cluster/wazuh_manager.conf https://raw.githubusercontent.com/wazuh/wazuh-docker/v4.13.0/single-node/config/wazuh_cluster/wazuh_manager.conf
+
+echo "✅ Fresh config files downloaded"
+```
+
+## Troubleshooting
+
+### Common Issues
+
+**1. `vm.max_map_count` Warning**
+```
+[WARN] max virtual memory areas vm.max_map_count [65530] is too low
+```
+**Solution**: Set the sysctl value as described in prerequisites.
+
+**2. Certificate Permission Warnings**
+These warnings in logs are cosmetic and don't affect functionality:
+```
+[WARN] Directory /usr/share/wazuh-indexer/certs has insecure file permissions
+```
+
+**3. 401 Authentication Errors**
+```
+Request failed with status code 401
+```
+**Solution**: Follow the password management procedures exactly, ensuring you change only one OpenSearch user at a time.
+
+**4. Certificate Generator Image Not Found**
+```
+manifest for wazuh/wazuh-certs-generator:4.13.1 not found
+```
+**Solution**: Use the correct image tag: `wazuh/wazuh-certs-generator:0.0.2`
+
+### Port Configuration
+
+- **Published Ports** (on APP_IP): 443 (dashboard), 1514/1515 (agents), 55000 (API), 514/udp (syslog)
+- **Internal Only**: 9200 (indexer) - never publish this port publicly
+
+## Maintenance
+
+### Viewing Logs
+
+```bash
+# All services
+docker compose logs -f
+
+# Specific service
+docker compose logs -f wazuh.dashboard
+```
+
+### Updates
+
+```bash
+# Update image tags in docker-compose.yml
+# Then redeploy
+docker compose pull
+docker compose up -d
+```
+
+### Backup Important Data
+
+- Configuration files in `/mnt/personal/docker-configs/wazuh/config/`
+- Docker volumes contain runtime data (managed by Docker)
+
+This comprehensive guide should get you a fully functional Wazuh deployment on TrueNAS SCALE with proper certificate management, password controls, and troubleshooting procedures.
