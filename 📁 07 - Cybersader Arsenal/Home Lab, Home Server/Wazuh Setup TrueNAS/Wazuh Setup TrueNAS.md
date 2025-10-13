@@ -1873,6 +1873,11 @@ docker run --rm -it \
   wazuh/wazuh-certs-generator:0.0.2
 ```
 
+```bash
+docker run --rm -it \ -v /mnt/personal/docker-configs/wazuh/config/wazuh_indexer_ssl_certs:/certificates \ -v /mnt/personal/docker-configs/wazuh/config/certs.yml:/config/certs.yml \ wazuh/wazuh-certs-generator:0.0.2
+```
+
+
 ### Recreate Configuration Files
 
 Using VS Code Server, recreate the configuration files listed in the "Required Configuration Files" section above.
