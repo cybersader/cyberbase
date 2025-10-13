@@ -1,10 +1,10 @@
 
-
-
-body:has(.menu.callout-menu) .menu:not(.callout-menu):has([data-section="edit"]) {
-    display: none;
+.menu.callout-menu.mod-no-icon .menu-item[data-section="collapse"] .menu-item-icon:first-child,
+.menu.callout-menu.mod-no-icon .menu-item[data-section="clear"] .menu-item-icon:first-child {
+    display: flex;
 }
 
+    
 .callout[data-callout-metadata*="no-icon"] .callout-icon {
     display: none;
 }
@@ -12,3 +12,8 @@ body:has(.menu.callout-menu) .menu:not(.callout-menu):has([data-section="edit"])
 .callout[data-callout-metadata*="no-title"] .callout-title {
     display: none;
 }
+
+.callout[data-callout-metadata*="no-border"] {
+    border: none;
+}
+
