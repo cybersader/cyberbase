@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Sunday, October 5th 2025, 2:03 pm
-date modified: Monday, October 13th 2025, 1:50 pm
+date modified: Monday, October 13th 2025, 2:01 pm
 ---
 
 - [Wazuh](https://wazuh.com/)
@@ -683,7 +683,7 @@ For **cert generation** and (later) **`securityadmin.sh`**, yes—the official g
 **Why keep 9200 private?**  
 It’s the Indexer/OpenSearch API. Only the Manager/Filebeat/Dashboard should talk to it. Publishing it increases risk with no benefit in single-node. [Wazuh Documentation](https://documentation.wazuh.com/current/deployment-options/docker/wazuh-container.html?utm_source=chatgpt.com)
 
-## Resetting Data During Configuration
+## Resetting Configs Except Env and Compose YAML
 
 Removing certs:
 
