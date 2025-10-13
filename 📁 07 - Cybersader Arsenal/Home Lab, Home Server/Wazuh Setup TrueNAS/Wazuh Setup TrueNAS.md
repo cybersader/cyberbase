@@ -832,688 +832,434 @@ API_PASSWORD=PASSWORD_HERE
 ## Wazuh.indexer
 
 ```
-2025-10-05 22:05:39.844133+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.844137+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.saveStateToConf(PerformanceAnalyzerController.java:342) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.844144+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$initPerformanceAnalyzerStateFromConf$0(PerformanceAnalyzerController.java:222) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.844149+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.844157+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.844163+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.844176+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.initPerformanceAnalyzerStateFromConf(PerformanceAnalyzerController.java:214) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.844181+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.<init>(PerformanceAnalyzerController.java:57) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.844190+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.<init>(PerformanceAnalyzerPlugin.java:172) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.844196+00:00at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
-2025-10-05 22:05:39.844203+00:00at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
-2025-10-05 22:05:39.844208+00:00at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
-2025-10-05 22:05:39.844214+00:00at org.opensearch.plugins.PluginsService.loadPlugin(PluginsService.java:809) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.844221+00:00at org.opensearch.plugins.PluginsService.loadBundle(PluginsService.java:757) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.844226+00:00at org.opensearch.plugins.PluginsService.loadBundles(PluginsService.java:551) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.844230+00:00at org.opensearch.plugins.PluginsService.<init>(PluginsService.java:197) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.844238+00:00at org.opensearch.node.Node.<init>(Node.java:524) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.844243+00:00at org.opensearch.node.Node.<init>(Node.java:451) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.844247+00:00at org.opensearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.844255+00:00at org.opensearch.bootstrap.Bootstrap.setup(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.844260+00:00at org.opensearch.bootstrap.Bootstrap.init(Bootstrap.java:404) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.844264+00:00at org.opensearch.bootstrap.OpenSearch.init(OpenSearch.java:181) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.844272+00:00at org.opensearch.bootstrap.OpenSearch.execute(OpenSearch.java:172) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.844277+00:00at org.opensearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.844284+00:00at org.opensearch.cli.Command.mainWithoutErrorHandling(Command.java:138) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.844289+00:00at org.opensearch.cli.Command.main(Command.java:101) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.844294+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:138) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.844301+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.848511+00:00[2025-10-05T22:05:39,847][ERROR][o.o.p.c.PerformanceAnalyzerController] [wazuh.indexer] java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/performance_analyzer_enabled.conf
-2025-10-05 22:05:39.848560+00:00java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/performance_analyzer_enabled.conf
-2025-10-05 22:05:39.848581+00:00at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]
-2025-10-05 22:05:39.848586+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
-2025-10-05 22:05:39.848591+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
-2025-10-05 22:05:39.848599+00:00at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
-2025-10-05 22:05:39.848604+00:00at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482) ~[?:?]
-2025-10-05 22:05:39.848610+00:00at java.base/java.nio.file.Files.newOutputStream(Files.java:228) ~[?:?]
-2025-10-05 22:05:39.848618+00:00at java.base/java.nio.file.Files.write(Files.java:3505) ~[?:?]
-2025-10-05 22:05:39.848623+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$saveStateToConf$5(PerformanceAnalyzerController.java:350) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.848629+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.848636+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.848640+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.848646+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.saveStateToConf(PerformanceAnalyzerController.java:342) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.848650+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.updatePerformanceAnalyzerState(PerformanceAnalyzerController.java:143) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.848659+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$initPerformanceAnalyzerStateFromConf$0(PerformanceAnalyzerController.java:228) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.848663+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.848671+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.848675+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.848682+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.initPerformanceAnalyzerStateFromConf(PerformanceAnalyzerController.java:214) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.848691+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.<init>(PerformanceAnalyzerController.java:57) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.848706+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.<init>(PerformanceAnalyzerPlugin.java:172) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.848714+00:00at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
-2025-10-05 22:05:39.848722+00:00at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
-2025-10-05 22:05:39.848727+00:00at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
-2025-10-05 22:05:39.848733+00:00at org.opensearch.plugins.PluginsService.loadPlugin(PluginsService.java:809) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.848740+00:00at org.opensearch.plugins.PluginsService.loadBundle(PluginsService.java:757) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.848745+00:00at org.opensearch.plugins.PluginsService.loadBundles(PluginsService.java:551) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.848750+00:00at org.opensearch.plugins.PluginsService.<init>(PluginsService.java:197) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.848758+00:00at org.opensearch.node.Node.<init>(Node.java:524) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.848763+00:00at org.opensearch.node.Node.<init>(Node.java:451) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.848769+00:00at org.opensearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.848777+00:00at org.opensearch.bootstrap.Bootstrap.setup(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.848781+00:00at org.opensearch.bootstrap.Bootstrap.init(Bootstrap.java:404) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.848786+00:00at org.opensearch.bootstrap.OpenSearch.init(OpenSearch.java:181) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.848793+00:00at org.opensearch.bootstrap.OpenSearch.execute(OpenSearch.java:172) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.848798+00:00at org.opensearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.848802+00:00at org.opensearch.cli.Command.mainWithoutErrorHandling(Command.java:138) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.848809+00:00at org.opensearch.cli.Command.main(Command.java:101) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.848814+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:138) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.848818+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.852522+00:00[2025-10-05T22:05:39,851][ERROR][o.o.p.c.PerformanceAnalyzerController] [wazuh.indexer] java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/rca_enabled.conf
-2025-10-05 22:05:39.852560+00:00java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/rca_enabled.conf
-2025-10-05 22:05:39.852582+00:00at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]
-2025-10-05 22:05:39.852586+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
-2025-10-05 22:05:39.852589+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
-2025-10-05 22:05:39.852600+00:00at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
-2025-10-05 22:05:39.852604+00:00at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482) ~[?:?]
-2025-10-05 22:05:39.852608+00:00at java.base/java.nio.file.Files.newOutputStream(Files.java:228) ~[?:?]
-2025-10-05 22:05:39.852617+00:00at java.base/java.nio.file.Files.write(Files.java:3505) ~[?:?]
-2025-10-05 22:05:39.852621+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$saveStateToConf$5(PerformanceAnalyzerController.java:350) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.852626+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.852634+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.852639+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.852645+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.saveStateToConf(PerformanceAnalyzerController.java:342) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.852650+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$initRcaStateFromConf$1(PerformanceAnalyzerController.java:242) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.852658+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.852663+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.852671+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.852675+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.initRcaStateFromConf(PerformanceAnalyzerController.java:234) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.852682+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.<init>(PerformanceAnalyzerController.java:58) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.852687+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.<init>(PerformanceAnalyzerPlugin.java:172) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.852695+00:00at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
-2025-10-05 22:05:39.852699+00:00at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
-2025-10-05 22:05:39.852704+00:00at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
-2025-10-05 22:05:39.852712+00:00at org.opensearch.plugins.PluginsService.loadPlugin(PluginsService.java:809) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.852717+00:00at org.opensearch.plugins.PluginsService.loadBundle(PluginsService.java:757) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.852721+00:00at org.opensearch.plugins.PluginsService.loadBundles(PluginsService.java:551) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.852730+00:00at org.opensearch.plugins.PluginsService.<init>(PluginsService.java:197) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.852734+00:00at org.opensearch.node.Node.<init>(Node.java:524) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.852738+00:00at org.opensearch.node.Node.<init>(Node.java:451) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.852746+00:00at org.opensearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.852751+00:00at org.opensearch.bootstrap.Bootstrap.setup(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.852755+00:00at org.opensearch.bootstrap.Bootstrap.init(Bootstrap.java:404) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.852763+00:00at org.opensearch.bootstrap.OpenSearch.init(OpenSearch.java:181) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.852767+00:00at org.opensearch.bootstrap.OpenSearch.execute(OpenSearch.java:172) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.852772+00:00at org.opensearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.852782+00:00at org.opensearch.cli.Command.mainWithoutErrorHandling(Command.java:138) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.852786+00:00at org.opensearch.cli.Command.main(Command.java:101) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.852790+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:138) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.852798+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.856028+00:00[2025-10-05T22:05:39,854][ERROR][o.o.p.c.PerformanceAnalyzerController] [wazuh.indexer] java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/rca_enabled.conf
-2025-10-05 22:05:39.856076+00:00java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/rca_enabled.conf
-2025-10-05 22:05:39.856079+00:00at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]
-2025-10-05 22:05:39.856083+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
-2025-10-05 22:05:39.856094+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
-2025-10-05 22:05:39.856097+00:00at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
-2025-10-05 22:05:39.856100+00:00at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482) ~[?:?]
-2025-10-05 22:05:39.856105+00:00at java.base/java.nio.file.Files.newOutputStream(Files.java:228) ~[?:?]
-2025-10-05 22:05:39.856108+00:00at java.base/java.nio.file.Files.write(Files.java:3505) ~[?:?]
-2025-10-05 22:05:39.856111+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$saveStateToConf$5(PerformanceAnalyzerController.java:350) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.856116+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.856119+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.856122+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.856128+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.saveStateToConf(PerformanceAnalyzerController.java:342) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.856131+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.updateRcaState(PerformanceAnalyzerController.java:158) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.856136+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$initRcaStateFromConf$1(PerformanceAnalyzerController.java:248) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.856139+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.856144+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.856147+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.856152+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.initRcaStateFromConf(PerformanceAnalyzerController.java:234) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.856155+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.<init>(PerformanceAnalyzerController.java:58) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.856166+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.<init>(PerformanceAnalyzerPlugin.java:172) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.856170+00:00at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
-2025-10-05 22:05:39.856179+00:00at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
-2025-10-05 22:05:39.856183+00:00at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
-2025-10-05 22:05:39.856186+00:00at org.opensearch.plugins.PluginsService.loadPlugin(PluginsService.java:809) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.856191+00:00at org.opensearch.plugins.PluginsService.loadBundle(PluginsService.java:757) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.856194+00:00at org.opensearch.plugins.PluginsService.loadBundles(PluginsService.java:551) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.856197+00:00at org.opensearch.plugins.PluginsService.<init>(PluginsService.java:197) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.856202+00:00at org.opensearch.node.Node.<init>(Node.java:524) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.856205+00:00at org.opensearch.node.Node.<init>(Node.java:451) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.856208+00:00at org.opensearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.856214+00:00at org.opensearch.bootstrap.Bootstrap.setup(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.856217+00:00at org.opensearch.bootstrap.Bootstrap.init(Bootstrap.java:404) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.856220+00:00at org.opensearch.bootstrap.OpenSearch.init(OpenSearch.java:181) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.856225+00:00at org.opensearch.bootstrap.OpenSearch.execute(OpenSearch.java:172) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.856228+00:00at org.opensearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.856234+00:00at org.opensearch.cli.Command.mainWithoutErrorHandling(Command.java:138) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.856237+00:00at org.opensearch.cli.Command.main(Command.java:101) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.856240+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:138) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.856245+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.859950+00:00[2025-10-05T22:05:39,858][ERROR][o.o.p.c.PerformanceAnalyzerController] [wazuh.indexer] java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/logging_enabled.conf
-2025-10-05 22:05:39.860017+00:00java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/logging_enabled.conf
-2025-10-05 22:05:39.860050+00:00at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]
-2025-10-05 22:05:39.860056+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
-2025-10-05 22:05:39.860062+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
-2025-10-05 22:05:39.860071+00:00at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
-2025-10-05 22:05:39.860076+00:00at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482) ~[?:?]
-2025-10-05 22:05:39.860081+00:00at java.base/java.nio.file.Files.newOutputStream(Files.java:228) ~[?:?]
-2025-10-05 22:05:39.860090+00:00at java.base/java.nio.file.Files.write(Files.java:3505) ~[?:?]
-2025-10-05 22:05:39.860096+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$saveStateToConf$5(PerformanceAnalyzerController.java:350) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.860101+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.860109+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.860115+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.860123+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.saveStateToConf(PerformanceAnalyzerController.java:342) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.860129+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$initLoggingStateFromConf$2(PerformanceAnalyzerController.java:262) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.860139+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.860145+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.860154+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.860159+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.initLoggingStateFromConf(PerformanceAnalyzerController.java:254) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.860167+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.<init>(PerformanceAnalyzerController.java:59) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.860173+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.<init>(PerformanceAnalyzerPlugin.java:172) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.860181+00:00at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
-2025-10-05 22:05:39.860187+00:00at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
-2025-10-05 22:05:39.860192+00:00at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
-2025-10-05 22:05:39.860201+00:00at org.opensearch.plugins.PluginsService.loadPlugin(PluginsService.java:809) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.860207+00:00at org.opensearch.plugins.PluginsService.loadBundle(PluginsService.java:757) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.860211+00:00at org.opensearch.plugins.PluginsService.loadBundles(PluginsService.java:551) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.860219+00:00at org.opensearch.plugins.PluginsService.<init>(PluginsService.java:197) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.860225+00:00at org.opensearch.node.Node.<init>(Node.java:524) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.860230+00:00at org.opensearch.node.Node.<init>(Node.java:451) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.860238+00:00at org.opensearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.860243+00:00at org.opensearch.bootstrap.Bootstrap.setup(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.860248+00:00at org.opensearch.bootstrap.Bootstrap.init(Bootstrap.java:404) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.860257+00:00at org.opensearch.bootstrap.OpenSearch.init(OpenSearch.java:181) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.860263+00:00at org.opensearch.bootstrap.OpenSearch.execute(OpenSearch.java:172) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.860267+00:00at org.opensearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.860277+00:00at org.opensearch.cli.Command.mainWithoutErrorHandling(Command.java:138) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.860282+00:00at org.opensearch.cli.Command.main(Command.java:101) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.860290+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:138) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.860297+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.862853+00:00[2025-10-05T22:05:39,862][ERROR][o.o.p.c.PerformanceAnalyzerController] [wazuh.indexer] java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/logging_enabled.conf
-2025-10-05 22:05:39.862922+00:00java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/logging_enabled.conf
-2025-10-05 22:05:39.862930+00:00at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]
-2025-10-05 22:05:39.862936+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
-2025-10-05 22:05:39.862953+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
-2025-10-05 22:05:39.862959+00:00at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
-2025-10-05 22:05:39.862964+00:00at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482) ~[?:?]
-2025-10-05 22:05:39.862974+00:00at java.base/java.nio.file.Files.newOutputStream(Files.java:228) ~[?:?]
-2025-10-05 22:05:39.862979+00:00at java.base/java.nio.file.Files.write(Files.java:3505) ~[?:?]
-2025-10-05 22:05:39.862984+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$saveStateToConf$5(PerformanceAnalyzerController.java:350) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.862993+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.862999+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.863008+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.863014+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.saveStateToConf(PerformanceAnalyzerController.java:342) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.863023+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.updateLoggingState(PerformanceAnalyzerController.java:175) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.863030+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$initLoggingStateFromConf$2(PerformanceAnalyzerController.java:268) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.863040+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.863045+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.863050+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.863059+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.initLoggingStateFromConf(PerformanceAnalyzerController.java:254) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.863065+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.<init>(PerformanceAnalyzerController.java:59) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.863074+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.<init>(PerformanceAnalyzerPlugin.java:172) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.863079+00:00at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
-2025-10-05 22:05:39.863095+00:00at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
-2025-10-05 22:05:39.863101+00:00at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
-2025-10-05 22:05:39.863113+00:00at org.opensearch.plugins.PluginsService.loadPlugin(PluginsService.java:809) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.863118+00:00at org.opensearch.plugins.PluginsService.loadBundle(PluginsService.java:757) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.863123+00:00at org.opensearch.plugins.PluginsService.loadBundles(PluginsService.java:551) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.863132+00:00at org.opensearch.plugins.PluginsService.<init>(PluginsService.java:197) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.863137+00:00at org.opensearch.node.Node.<init>(Node.java:524) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.863142+00:00at org.opensearch.node.Node.<init>(Node.java:451) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.863151+00:00at org.opensearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.863157+00:00at org.opensearch.bootstrap.Bootstrap.setup(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.863162+00:00at org.opensearch.bootstrap.Bootstrap.init(Bootstrap.java:404) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.863170+00:00at org.opensearch.bootstrap.OpenSearch.init(OpenSearch.java:181) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.863175+00:00at org.opensearch.bootstrap.OpenSearch.execute(OpenSearch.java:172) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.863180+00:00at org.opensearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.863188+00:00at org.opensearch.cli.Command.mainWithoutErrorHandling(Command.java:138) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.863193+00:00at org.opensearch.cli.Command.main(Command.java:101) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.863197+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:138) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.863205+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.865206+00:00[2025-10-05T22:05:39,864][ERROR][o.o.p.c.PerformanceAnalyzerController] [wazuh.indexer] java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/batch_metrics_enabled.conf
-2025-10-05 22:05:39.865337+00:00java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/batch_metrics_enabled.conf
-2025-10-05 22:05:39.865353+00:00at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]
-2025-10-05 22:05:39.865375+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
-2025-10-05 22:05:39.865397+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
-2025-10-05 22:05:39.865403+00:00at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
-2025-10-05 22:05:39.865409+00:00at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482) ~[?:?]
-2025-10-05 22:05:39.865420+00:00at java.base/java.nio.file.Files.newOutputStream(Files.java:228) ~[?:?]
-2025-10-05 22:05:39.865425+00:00at java.base/java.nio.file.Files.write(Files.java:3505) ~[?:?]
-2025-10-05 22:05:39.865432+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$saveStateToConf$5(PerformanceAnalyzerController.java:350) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.865442+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.865447+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.865453+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.865461+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.saveStateToConf(PerformanceAnalyzerController.java:342) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.865468+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$initBatchMetricsStateFromConf$3(PerformanceAnalyzerController.java:281) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.865479+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.865491+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.865495+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.865499+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.initBatchMetricsStateFromConf(PerformanceAnalyzerController.java:274) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.865509+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.<init>(PerformanceAnalyzerController.java:60) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.865514+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.<init>(PerformanceAnalyzerPlugin.java:172) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.865521+00:00at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
-2025-10-05 22:05:39.865528+00:00at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
-2025-10-05 22:05:39.865535+00:00at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
-2025-10-05 22:05:39.865540+00:00at org.opensearch.plugins.PluginsService.loadPlugin(PluginsService.java:809) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.865545+00:00at org.opensearch.plugins.PluginsService.loadBundle(PluginsService.java:757) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.865552+00:00at org.opensearch.plugins.PluginsService.loadBundles(PluginsService.java:551) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.865557+00:00at org.opensearch.plugins.PluginsService.<init>(PluginsService.java:197) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.865563+00:00at org.opensearch.node.Node.<init>(Node.java:524) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.865571+00:00at org.opensearch.node.Node.<init>(Node.java:451) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.865577+00:00at org.opensearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.865584+00:00at org.opensearch.bootstrap.Bootstrap.setup(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.865597+00:00at org.opensearch.bootstrap.Bootstrap.init(Bootstrap.java:404) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.865605+00:00at org.opensearch.bootstrap.OpenSearch.init(OpenSearch.java:181) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.865610+00:00at org.opensearch.bootstrap.OpenSearch.execute(OpenSearch.java:172) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.865621+00:00at org.opensearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.865627+00:00at org.opensearch.cli.Command.mainWithoutErrorHandling(Command.java:138) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.865631+00:00at org.opensearch.cli.Command.main(Command.java:101) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.865643+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:138) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.865648+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.866871+00:00[2025-10-05T22:05:39,866][ERROR][o.o.p.c.PerformanceAnalyzerController] [wazuh.indexer] java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/batch_metrics_enabled.conf
-2025-10-05 22:05:39.866932+00:00java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/batch_metrics_enabled.conf
-2025-10-05 22:05:39.866939+00:00at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]
-2025-10-05 22:05:39.866958+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
-2025-10-05 22:05:39.866963+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
-2025-10-05 22:05:39.866968+00:00at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
-2025-10-05 22:05:39.866978+00:00at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482) ~[?:?]
-2025-10-05 22:05:39.866982+00:00at java.base/java.nio.file.Files.newOutputStream(Files.java:228) ~[?:?]
-2025-10-05 22:05:39.866987+00:00at java.base/java.nio.file.Files.write(Files.java:3505) ~[?:?]
-2025-10-05 22:05:39.866992+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$saveStateToConf$5(PerformanceAnalyzerController.java:350) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.867001+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.867006+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.867015+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.867020+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.saveStateToConf(PerformanceAnalyzerController.java:342) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.867028+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.updateBatchMetricsState(PerformanceAnalyzerController.java:190) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.867035+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$initBatchMetricsStateFromConf$3(PerformanceAnalyzerController.java:291) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.867045+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.867050+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.867063+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.867068+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.initBatchMetricsStateFromConf(PerformanceAnalyzerController.java:274) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.867077+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.<init>(PerformanceAnalyzerController.java:60) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.867082+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.<init>(PerformanceAnalyzerPlugin.java:172) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.867091+00:00at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
-2025-10-05 22:05:39.867096+00:00at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
-2025-10-05 22:05:39.867101+00:00at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
-2025-10-05 22:05:39.867111+00:00at org.opensearch.plugins.PluginsService.loadPlugin(PluginsService.java:809) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.867116+00:00at org.opensearch.plugins.PluginsService.loadBundle(PluginsService.java:757) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.867121+00:00at org.opensearch.plugins.PluginsService.loadBundles(PluginsService.java:551) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.867129+00:00at org.opensearch.plugins.PluginsService.<init>(PluginsService.java:197) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.867135+00:00at org.opensearch.node.Node.<init>(Node.java:524) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.867145+00:00at org.opensearch.node.Node.<init>(Node.java:451) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.867150+00:00at org.opensearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.867155+00:00at org.opensearch.bootstrap.Bootstrap.setup(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.867164+00:00at org.opensearch.bootstrap.Bootstrap.init(Bootstrap.java:404) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.867169+00:00at org.opensearch.bootstrap.OpenSearch.init(OpenSearch.java:181) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.867173+00:00at org.opensearch.bootstrap.OpenSearch.execute(OpenSearch.java:172) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.867182+00:00at org.opensearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.867187+00:00at org.opensearch.cli.Command.mainWithoutErrorHandling(Command.java:138) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.867192+00:00at org.opensearch.cli.Command.main(Command.java:101) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.867200+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:138) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.867205+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.869066+00:00[2025-10-05T22:05:39,868][ERROR][o.o.p.c.PerformanceAnalyzerController] [wazuh.indexer] java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/thread_contention_monitoring_enabled.conf
-2025-10-05 22:05:39.869130+00:00java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/thread_contention_monitoring_enabled.conf
-2025-10-05 22:05:39.869136+00:00at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]
-2025-10-05 22:05:39.869141+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
-2025-10-05 22:05:39.869161+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
-2025-10-05 22:05:39.869165+00:00at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
-2025-10-05 22:05:39.869169+00:00at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482) ~[?:?]
-2025-10-05 22:05:39.869179+00:00at java.base/java.nio.file.Files.newOutputStream(Files.java:228) ~[?:?]
-2025-10-05 22:05:39.869184+00:00at java.base/java.nio.file.Files.write(Files.java:3505) ~[?:?]
-2025-10-05 22:05:39.869188+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$saveStateToConf$5(PerformanceAnalyzerController.java:350) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.869197+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.869202+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.869212+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.869217+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.saveStateToConf(PerformanceAnalyzerController.java:342) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.869225+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$initThreadContentionMonitoringStateFromConf$4(PerformanceAnalyzerController.java:304) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.869231+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.869241+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.869245+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.869254+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.initThreadContentionMonitoringStateFromConf(PerformanceAnalyzerController.java:297) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.869259+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.<init>(PerformanceAnalyzerController.java:61) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.869269+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.<init>(PerformanceAnalyzerPlugin.java:172) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.869273+00:00at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
-2025-10-05 22:05:39.869283+00:00at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
-2025-10-05 22:05:39.869290+00:00at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
-2025-10-05 22:05:39.869294+00:00at org.opensearch.plugins.PluginsService.loadPlugin(PluginsService.java:809) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.869306+00:00at org.opensearch.plugins.PluginsService.loadBundle(PluginsService.java:757) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.869310+00:00at org.opensearch.plugins.PluginsService.loadBundles(PluginsService.java:551) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.869314+00:00at org.opensearch.plugins.PluginsService.<init>(PluginsService.java:197) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.869323+00:00at org.opensearch.node.Node.<init>(Node.java:524) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.869328+00:00at org.opensearch.node.Node.<init>(Node.java:451) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.869332+00:00at org.opensearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.869342+00:00at org.opensearch.bootstrap.Bootstrap.setup(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.869348+00:00at org.opensearch.bootstrap.Bootstrap.init(Bootstrap.java:404) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.869353+00:00at org.opensearch.bootstrap.OpenSearch.init(OpenSearch.java:181) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.869387+00:00at org.opensearch.bootstrap.OpenSearch.execute(OpenSearch.java:172) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.869392+00:00at org.opensearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.869396+00:00at org.opensearch.cli.Command.mainWithoutErrorHandling(Command.java:138) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.869409+00:00at org.opensearch.cli.Command.main(Command.java:101) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.869414+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:138) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.869419+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.871764+00:00[2025-10-05T22:05:39,871][ERROR][o.o.p.c.PerformanceAnalyzerController] [wazuh.indexer] java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/thread_contention_monitoring_enabled.conf
-2025-10-05 22:05:39.871819+00:00java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/thread_contention_monitoring_enabled.conf
-2025-10-05 22:05:39.871857+00:00at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]
-2025-10-05 22:05:39.871863+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
-2025-10-05 22:05:39.871867+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
-2025-10-05 22:05:39.871882+00:00at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
-2025-10-05 22:05:39.871887+00:00at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482) ~[?:?]
-2025-10-05 22:05:39.871891+00:00at java.base/java.nio.file.Files.newOutputStream(Files.java:228) ~[?:?]
-2025-10-05 22:05:39.871901+00:00at java.base/java.nio.file.Files.write(Files.java:3505) ~[?:?]
-2025-10-05 22:05:39.871905+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$saveStateToConf$5(PerformanceAnalyzerController.java:350) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.871909+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.871919+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.871924+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.871933+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.saveStateToConf(PerformanceAnalyzerController.java:342) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.871938+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.updateThreadContentionMonitoringState(PerformanceAnalyzerController.java:208) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.871949+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.lambda$initThreadContentionMonitoringStateFromConf$4(PerformanceAnalyzerController.java:320) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.871954+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.lambda$invokePrivileged$1(PerformanceAnalyzerPlugin.java:141) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.871964+00:00at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) [?:?]
-2025-10-05 22:05:39.871969+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.invokePrivileged(PerformanceAnalyzerPlugin.java:137) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.871980+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.initThreadContentionMonitoringStateFromConf(PerformanceAnalyzerController.java:297) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.871985+00:00at org.opensearch.performanceanalyzer.config.PerformanceAnalyzerController.<init>(PerformanceAnalyzerController.java:61) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.871995+00:00at org.opensearch.performanceanalyzer.PerformanceAnalyzerPlugin.<init>(PerformanceAnalyzerPlugin.java:172) [opensearch-performance-analyzer-2.19.2.0.jar:2.19.2.0]
-2025-10-05 22:05:39.871999+00:00at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
-2025-10-05 22:05:39.872007+00:00at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
-2025-10-05 22:05:39.872013+00:00at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
-2025-10-05 22:05:39.872017+00:00at org.opensearch.plugins.PluginsService.loadPlugin(PluginsService.java:809) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.872039+00:00at org.opensearch.plugins.PluginsService.loadBundle(PluginsService.java:757) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.872044+00:00at org.opensearch.plugins.PluginsService.loadBundles(PluginsService.java:551) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.872048+00:00at org.opensearch.plugins.PluginsService.<init>(PluginsService.java:197) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.872064+00:00at org.opensearch.node.Node.<init>(Node.java:524) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.872069+00:00at org.opensearch.node.Node.<init>(Node.java:451) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.872074+00:00at org.opensearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.872085+00:00at org.opensearch.bootstrap.Bootstrap.setup(Bootstrap.java:242) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.872089+00:00at org.opensearch.bootstrap.Bootstrap.init(Bootstrap.java:404) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.872094+00:00at org.opensearch.bootstrap.OpenSearch.init(OpenSearch.java:181) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.872104+00:00at org.opensearch.bootstrap.OpenSearch.execute(OpenSearch.java:172) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.872108+00:00at org.opensearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.872113+00:00at org.opensearch.cli.Command.mainWithoutErrorHandling(Command.java:138) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.872122+00:00at org.opensearch.cli.Command.main(Command.java:101) [opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.872127+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:138) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:39.872131+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:104) [opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.147977+00:00[2025-10-05T22:05:40,147][INFO ][o.o.i.r.ReindexPlugin    ] [wazuh.indexer] ReindexPlugin reloadSPI called
-2025-10-05 22:05:40.148796+00:00[2025-10-05T22:05:40,148][INFO ][o.o.i.r.ReindexPlugin    ] [wazuh.indexer] Unable to find any implementation for RemoteReindexExtension
-2025-10-05 22:05:40.165077+00:00[2025-10-05T22:05:40,164][INFO ][o.o.j.JobSchedulerPlugin ] [wazuh.indexer] Loaded scheduler extension: opensearch_time_series_analytics, index: .opendistro-anomaly-detector-jobs
-2025-10-05 22:05:40.179349+00:00[2025-10-05T22:05:40,179][INFO ][o.o.j.JobSchedulerPlugin ] [wazuh.indexer] Loaded scheduler extension: reports-scheduler, index: .opendistro-reports-definitions
-2025-10-05 22:05:40.180346+00:00[2025-10-05T22:05:40,180][INFO ][o.o.j.JobSchedulerPlugin ] [wazuh.indexer] Loaded scheduler extension: opendistro-index-management, index: .opendistro-ism-config
-2025-10-05 22:05:40.181791+00:00[2025-10-05T22:05:40,181][INFO ][o.o.j.JobSchedulerPlugin ] [wazuh.indexer] Loaded scheduler extension: checkBatchJobTaskStatus, index: .ml_commons_task_polling_job
-2025-10-05 22:05:40.182426+00:00[2025-10-05T22:05:40,182][INFO ][o.o.j.JobSchedulerPlugin ] [wazuh.indexer] Loaded scheduler extension: scheduler_geospatial_ip2geo_datasource, index: .scheduler-geospatial-ip2geo-datasource
-2025-10-05 22:05:40.183465+00:00[2025-10-05T22:05:40,183][INFO ][o.o.j.JobSchedulerPlugin ] [wazuh.indexer] Loaded scheduler extension: async-query-scheduler, index: .async-query-scheduler
-2025-10-05 22:05:40.186967+00:00[2025-10-05T22:05:40,186][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [aggs-matrix-stats]
-2025-10-05 22:05:40.187220+00:00[2025-10-05T22:05:40,187][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [analysis-common]
-2025-10-05 22:05:40.187345+00:00[2025-10-05T22:05:40,187][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [cache-common]
-2025-10-05 22:05:40.187586+00:00[2025-10-05T22:05:40,187][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [geo]
-2025-10-05 22:05:40.187707+00:00[2025-10-05T22:05:40,187][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [ingest-common]
-2025-10-05 22:05:40.187852+00:00[2025-10-05T22:05:40,187][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [ingest-geoip]
-2025-10-05 22:05:40.187934+00:00[2025-10-05T22:05:40,187][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [ingest-user-agent]
-2025-10-05 22:05:40.188026+00:00[2025-10-05T22:05:40,187][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [lang-expression]
-2025-10-05 22:05:40.188138+00:00[2025-10-05T22:05:40,188][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [lang-mustache]
-2025-10-05 22:05:40.188230+00:00[2025-10-05T22:05:40,188][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [lang-painless]
-2025-10-05 22:05:40.188322+00:00[2025-10-05T22:05:40,188][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [mapper-extras]
-2025-10-05 22:05:40.188403+00:00[2025-10-05T22:05:40,188][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [opensearch-dashboards]
-2025-10-05 22:05:40.188483+00:00[2025-10-05T22:05:40,188][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [parent-join]
-2025-10-05 22:05:40.188608+00:00[2025-10-05T22:05:40,188][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [percolator]
-2025-10-05 22:05:40.188713+00:00[2025-10-05T22:05:40,188][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [rank-eval]
-2025-10-05 22:05:40.188819+00:00[2025-10-05T22:05:40,188][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [reindex]
-2025-10-05 22:05:40.188907+00:00[2025-10-05T22:05:40,188][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [repository-url]
-2025-10-05 22:05:40.189001+00:00[2025-10-05T22:05:40,188][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [search-pipeline-common]
-2025-10-05 22:05:40.189099+00:00[2025-10-05T22:05:40,189][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [systemd]
-2025-10-05 22:05:40.189196+00:00[2025-10-05T22:05:40,189][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [transport-netty4]
-2025-10-05 22:05:40.189541+00:00[2025-10-05T22:05:40,189][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-alerting]
-2025-10-05 22:05:40.189632+00:00[2025-10-05T22:05:40,189][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-anomaly-detection]
-2025-10-05 22:05:40.189759+00:00[2025-10-05T22:05:40,189][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-asynchronous-search]
-2025-10-05 22:05:40.189882+00:00[2025-10-05T22:05:40,189][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-cross-cluster-replication]
-2025-10-05 22:05:40.190002+00:00[2025-10-05T22:05:40,189][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-geospatial]
-2025-10-05 22:05:40.190130+00:00[2025-10-05T22:05:40,190][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-index-management]
-2025-10-05 22:05:40.190264+00:00[2025-10-05T22:05:40,190][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-job-scheduler]
-2025-10-05 22:05:40.190352+00:00[2025-10-05T22:05:40,190][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-knn]
-2025-10-05 22:05:40.190480+00:00[2025-10-05T22:05:40,190][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-ml]
-2025-10-05 22:05:40.190566+00:00[2025-10-05T22:05:40,190][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-neural-search]
-2025-10-05 22:05:40.190677+00:00[2025-10-05T22:05:40,190][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-notifications]
-2025-10-05 22:05:40.190776+00:00[2025-10-05T22:05:40,190][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-notifications-core]
-2025-10-05 22:05:40.190907+00:00[2025-10-05T22:05:40,190][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-observability]
-2025-10-05 22:05:40.190989+00:00[2025-10-05T22:05:40,190][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-performance-analyzer]
-2025-10-05 22:05:40.191109+00:00[2025-10-05T22:05:40,191][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-reports-scheduler]
-2025-10-05 22:05:40.191258+00:00[2025-10-05T22:05:40,191][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-security]
-2025-10-05 22:05:40.191418+00:00[2025-10-05T22:05:40,191][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-sql]
-2025-10-05 22:05:40.228712+00:00[2025-10-05T22:05:40,228][INFO ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] Disabled https compression by default to mitigate BREACH attacks. You can enable it by setting 'http.compression: true' in opensearch.yml
-2025-10-05 22:05:40.241601+00:00[2025-10-05T22:05:40,240][ERROR][o.o.b.OpenSearchUncaughtExceptionHandler] [wazuh.indexer] uncaught exception in thread [main]
-2025-10-05 22:05:40.241632+00:00org.opensearch.bootstrap.StartupException: OpenSearchException[failed to bind service]; nested: AccessDeniedException[/var/lib/wazuh-indexer/nodes];
-2025-10-05 22:05:40.241657+00:00uncaught exception in thread [main]
-2025-10-05 22:05:40.241664+00:00at org.opensearch.bootstrap.OpenSearch.init(OpenSearch.java:185) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241687+00:00at org.opensearch.bootstrap.OpenSearch.execute(OpenSearch.java:172) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241702+00:00at org.opensearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:104) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241705+00:00at org.opensearch.cli.Command.mainWithoutErrorHandling(Command.java:138) ~[opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241708+00:00at org.opensearch.cli.Command.main(Command.java:101) ~[opensearch-cli-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241716+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:138) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241719+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:104) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241722+00:00Caused by: org.opensearch.OpenSearchException: failed to bind service
-2025-10-05 22:05:40.241728+00:00at org.opensearch.node.Node.<init>(Node.java:1564) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241731+00:00at org.opensearch.node.Node.<init>(Node.java:451) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241734+00:00at org.opensearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:242) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241740+00:00at org.opensearch.bootstrap.Bootstrap.setup(Bootstrap.java:242) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241743+00:00at org.opensearch.bootstrap.Bootstrap.init(Bootstrap.java:404) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241746+00:00at org.opensearch.bootstrap.OpenSearch.init(OpenSearch.java:181) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241753+00:00... 6 more
-2025-10-05 22:05:40.241756+00:00Caused by: java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/nodes
-2025-10-05 22:05:40.241759+00:00at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]
-2025-10-05 22:05:40.241765+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
-2025-10-05 22:05:40.241768+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
-2025-10-05 22:05:40.241772+00:00at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:462) ~[?:?]
-2025-10-05 22:05:40.241778+00:00at java.base/java.nio.file.Files.createDirectory(Files.java:700) ~[?:?]
-2025-10-05 22:05:40.241781+00:00at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:808) ~[?:?]
-2025-10-05 22:05:40.241784+00:00at java.base/java.nio.file.Files.createDirectories(Files.java:794) ~[?:?]
-2025-10-05 22:05:40.241786+00:00at org.opensearch.env.NodeEnvironment.lambda$new$0(NodeEnvironment.java:343) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241793+00:00at org.opensearch.env.NodeEnvironment$NodeLock.<init>(NodeEnvironment.java:265) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241796+00:00at org.opensearch.env.NodeEnvironment.<init>(NodeEnvironment.java:341) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241802+00:00at org.opensearch.node.Node.<init>(Node.java:561) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241805+00:00at org.opensearch.node.Node.<init>(Node.java:451) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241808+00:00at org.opensearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:242) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241814+00:00at org.opensearch.bootstrap.Bootstrap.setup(Bootstrap.java:242) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241817+00:00at org.opensearch.bootstrap.Bootstrap.init(Bootstrap.java:404) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241820+00:00at org.opensearch.bootstrap.OpenSearch.init(OpenSearch.java:181) ~[opensearch-2.19.2.jar:2.19.2]
-2025-10-05 22:05:40.241826+00:00... 6 more
-2025-10-05 22:05:40.242191+00:00OpenSearchException[failed to bind service]; nested: AccessDeniedException[/var/lib/wazuh-indexer/nodes];
-2025-10-05 22:05:40.242227+00:00Likely root cause: java.nio.file.AccessDeniedException: /var/lib/wazuh-indexer/nodes
-2025-10-05 22:05:40.242234+00:00at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
-2025-10-05 22:05:40.242256+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
-2025-10-05 22:05:40.242262+00:00at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
-2025-10-05 22:05:40.242267+00:00at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:462)
-2025-10-05 22:05:40.242291+00:00at java.base/java.nio.file.Files.createDirectory(Files.java:700)
-2025-10-05 22:05:40.242296+00:00at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:808)
-2025-10-05 22:05:40.242301+00:00at java.base/java.nio.file.Files.createDirectories(Files.java:794)
-2025-10-05 22:05:40.242305+00:00at org.opensearch.env.NodeEnvironment.lambda$new$0(NodeEnvironment.java:343)
-2025-10-05 22:05:40.242315+00:00at org.opensearch.env.NodeEnvironment$NodeLock.<init>(NodeEnvironment.java:265)
-2025-10-05 22:05:40.242320+00:00at org.opensearch.env.NodeEnvironment.<init>(NodeEnvironment.java:341)
-2025-10-05 22:05:40.242325+00:00at org.opensearch.node.Node.<init>(Node.java:561)
-2025-10-05 22:05:40.242334+00:00at org.opensearch.node.Node.<init>(Node.java:451)
-2025-10-05 22:05:40.242338+00:00at org.opensearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:242)
-2025-10-05 22:05:40.242343+00:00at org.opensearch.bootstrap.Bootstrap.setup(Bootstrap.java:242)
-2025-10-05 22:05:40.242352+00:00at org.opensearch.bootstrap.Bootstrap.init(Bootstrap.java:404)
-2025-10-05 22:05:40.242357+00:00at org.opensearch.bootstrap.OpenSearch.init(OpenSearch.java:181)
-2025-10-05 22:05:40.242361+00:00at org.opensearch.bootstrap.OpenSearch.execute(OpenSearch.java:172)
-2025-10-05 22:05:40.242366+00:00at org.opensearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:104)
-2025-10-05 22:05:40.242375+00:00at org.opensearch.cli.Command.mainWithoutErrorHandling(Command.java:138)
-2025-10-05 22:05:40.242381+00:00at org.opensearch.cli.Command.main(Command.java:101)
-2025-10-05 22:05:40.242385+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:138)
-2025-10-05 22:05:40.242389+00:00at org.opensearch.bootstrap.OpenSearch.main(OpenSearch.java:104)
-2025-10-05 22:05:40.242398+00:00For complete error details, refer to the log at /var/log/wazuh-indexer/opensearch.log
-```
-
-## wazuh.manager
-
-```
-2025-10-05 22:05:38.738742+00:00Configuring Certificate Authorities.
-2025-10-05 22:05:38.740322+00:00Configuring SSL Certificate.
-2025-10-05 22:05:38.741937+00:00Configuring SSL Key.
-2025-10-05 22:05:38.745509+00:00[cont-init.d] 1-config-filebeat: exited 0.
-2025-10-05 22:05:38.746355+00:00[cont-init.d] 2-manager: executing... 
-2025-10-05 22:05:39.916987+00:00Configuring password.
-2025-10-05 22:05:40.882956+00:002025/10/05 22:05:40 wazuh-modulesd:router: INFO: Loaded router module.
-2025-10-05 22:05:40.882991+00:002025/10/05 22:05:40 wazuh-modulesd:content_manager: INFO: Loaded content_manager module.
-2025-10-05 22:05:40.882997+00:002025/10/05 22:05:40 wazuh-modulesd:inventory-harvester: INFO: Loaded Inventory harvester module.
-2025-10-05 22:05:41.257757+00:00Starting Wazuh v4.13.1...
-2025-10-05 22:06:42.632865+00:00wazuh-apid did not start correctly.
-2025-10-05 22:06:42.654836+00:00[cont-init.d] 2-manager: exited 1.
-2025-10-05 22:06:42.657616+00:00[cont-init.d] done.
-2025-10-05 22:06:42.660491+00:00[services.d] starting services
-2025-10-05 22:06:42.694337+00:00starting Filebeat
-2025-10-05 22:06:42.694666+00:00[services.d] done.
-2025-10-05 22:06:42.694997+00:002025/10/05 21:51:50 wazuh-modulesd:router: INFO: Loaded router module.
-2025-10-05 22:06:42.695010+00:002025/10/05 21:51:50 wazuh-modulesd:content_manager: INFO: Loaded content_manager module.
-2025-10-05 22:06:42.695013+00:002025/10/05 21:51:50 wazuh-modulesd:inventory-harvester: INFO: Loaded Inventory harvester module.
-2025-10-05 22:06:42.695026+00:002025/10/05 22:02:03 wazuh-modulesd:router: INFO: Loaded router module.
-2025-10-05 22:06:42.695029+00:002025/10/05 22:02:03 wazuh-modulesd:content_manager: INFO: Loaded content_manager module.
-2025-10-05 22:06:42.695032+00:002025/10/05 22:02:03 wazuh-modulesd:inventory-harvester: INFO: Loaded Inventory harvester module.
-2025-10-05 22:06:42.695036+00:002025/10/05 22:05:40 wazuh-modulesd:router: INFO: Loaded router module.
-2025-10-05 22:06:42.695039+00:002025/10/05 22:05:40 wazuh-modulesd:content_manager: INFO: Loaded content_manager module.
-2025-10-05 22:06:42.695043+00:002025/10/05 22:05:40 wazuh-modulesd:inventory-harvester: INFO: Loaded Inventory harvester module.
-2025-10-05 22:06:42.708829+00:002025-10-05T22:06:42.708Z	INFO	instance/beat.go:645	Home path: [/usr/share/filebeat] Config path: [/etc/filebeat] Data path: [/var/lib/filebeat] Logs path: [/var/log/filebeat]
-2025-10-05 22:06:42.708863+00:002025-10-05T22:06:42.708Z	INFO	instance/beat.go:653	Beat ID: 6bb3bd8f-fc0f-47a0-902f-7675172dff8c
-2025-10-05 22:06:42.709128+00:002025-10-05T22:06:42.709Z	INFO	[seccomp]	seccomp/seccomp.go:124	Syscall filter successfully installed
-2025-10-05 22:06:42.709155+00:002025-10-05T22:06:42.709Z	INFO	[beat]	instance/beat.go:981	Beat info	{"system_info": {"beat": {"path": {"config": "/etc/filebeat", "data": "/var/lib/filebeat", "home": "/usr/share/filebeat", "logs": "/var/log/filebeat"}, "type": "filebeat", "uuid": "6bb3bd8f-fc0f-47a0-902f-7675172dff8c"}}}
-2025-10-05 22:06:42.709164+00:002025-10-05T22:06:42.709Z	INFO	[beat]	instance/beat.go:990	Build info	{"system_info": {"build": {"commit": "aacf9ecd9c494aa0908f61fbca82c906b16562a8", "libbeat": "7.10.2", "time": "2021-01-12T22:10:33.000Z", "version": "7.10.2"}}}
-2025-10-05 22:06:42.709168+00:002025-10-05T22:06:42.709Z	INFO	[beat]	instance/beat.go:993	Go runtime info	{"system_info": {"go": {"os":"linux","arch":"amd64","max_procs":16,"version":"go1.14.12"}}}
-2025-10-05 22:06:42.709745+00:002025-10-05T22:06:42.709Z	INFO	[beat]	instance/beat.go:997	Host info	{"system_info": {"host": {"architecture":"x86_64","boot_time":"2025-08-19T23:16:20Z","containerized":false,"name":"wazuh.manager","ip":["127.0.0.1/8","::1/128","172.16.23.3/24","fdd0:0:0:17::3/64","fe80::42:acff:fe10:1703/64"],"kernel_version":"6.12.15-production+truenas","mac":["02:42:ac:10:17:03"],"os":{"family":"redhat","platform":"amzn","name":"Amazon Linux","version":"2023","major":2023,"minor":8,"patch":20250908},"timezone":"UTC","timezone_offset_sec":0}}}
-2025-10-05 22:06:42.709822+00:002025-10-05T22:06:42.709Z	INFO	[beat]	instance/beat.go:1026	Process info	{"system_info": {"process": {"capabilities": {"inheritable":null,"permitted":["chown","dac_override","fowner","fsetid","kill","setgid","setuid","setpcap","net_bind_service","net_raw","sys_chroot","mknod","audit_write","setfcap"],"effective":["chown","dac_override","fowner","fsetid","kill","setgid","setuid","setpcap","net_bind_service","net_raw","sys_chroot","mknod","audit_write","setfcap"],"bounding":["chown","dac_override","fowner","fsetid","kill","setgid","setuid","setpcap","net_bind_service","net_raw","sys_chroot","mknod","audit_write","setfcap"],"ambient":null}, "cwd": "/run/s6/services/filebeat", "exe": "/usr/share/filebeat/bin/filebeat", "name": "filebeat", "pid": 773, "ppid": 769, "seccomp": {"mode":"filter","no_new_privs":true}, "start_time": "2025-10-05T22:06:42.270Z"}}}
-2025-10-05 22:06:42.709835+00:002025-10-05T22:06:42.709Z	INFO	instance/beat.go:299	Setup Beat: filebeat; Version: 7.10.2
-2025-10-05 22:06:42.710146+00:002025-10-05T22:06:42.710Z	INFO	eslegclient/connection.go:99	elasticsearch url: https://wazuh.indexer:9200
-2025-10-05 22:06:42.710267+00:002025-10-05T22:06:42.710Z	INFO	[publisher]	pipeline/module.go:113	Beat name: wazuh.manager
-2025-10-05 22:06:42.711085+00:002025-10-05T22:06:42.711Z	INFO	beater/filebeat.go:117	Enabled modules/filesets: wazuh (alerts),  ()
-2025-10-05 22:06:42.711368+00:002025-10-05T22:06:42.711Z	INFO	instance/beat.go:455	filebeat start running.
-2025-10-05 22:06:42.711502+00:002025-10-05T22:06:42.711Z	INFO	memlog/store.go:119	Loading data file of '/var/lib/filebeat/registry/filebeat' succeeded. Active transaction id=0
-2025-10-05 22:06:42.711514+00:002025-10-05T22:06:42.711Z	INFO	memlog/store.go:124	Finished loading transaction log file for '/var/lib/filebeat/registry/filebeat'. Active transaction id=0
-2025-10-05 22:06:42.711552+00:002025-10-05T22:06:42.711Z	INFO	[registrar]	registrar/registrar.go:109	States Loaded from registrar: 0
-2025-10-05 22:06:42.711566+00:002025-10-05T22:06:42.711Z	INFO	[crawler]	beater/crawler.go:71	Loading Inputs: 1
-2025-10-05 22:06:42.711726+00:002025-10-05T22:06:42.711Z	INFO	log/input.go:157	Configured paths: [/var/ossec/logs/alerts/alerts.json]
-2025-10-05 22:06:42.711735+00:002025-10-05T22:06:42.711Z	INFO	[crawler]	beater/crawler.go:141	Starting input (ID: 9132358592892857476)
-2025-10-05 22:06:42.711739+00:002025-10-05T22:06:42.711Z	INFO	[crawler]	beater/crawler.go:108	Loading and starting Inputs completed. Enabled inputs: 1
+2025-10-13 15:50:27.365727+00:00WARNING: Using incubator modules: jdk.incubator.vector
+2025-10-13 15:50:27.401149+00:00WARNING: A terminally deprecated method in java.lang.System has been called
+2025-10-13 15:50:27.401189+00:00WARNING: System::setSecurityManager has been called by org.opensearch.bootstrap.OpenSearch (file:/usr/share/wazuh-indexer/lib/opensearch-2.19.2.jar)
+2025-10-13 15:50:27.401195+00:00WARNING: Please consider reporting this to the maintainers of org.opensearch.bootstrap.OpenSearch
+2025-10-13 15:50:27.401213+00:00WARNING: System::setSecurityManager will be removed in a future release
+2025-10-13 15:50:27.766711+00:00Oct 13, 2025 3:50:27 PM sun.util.locale.provider.LocaleProviderAdapter <clinit>
+2025-10-13 15:50:27.766759+00:00WARNING: COMPAT locale provider will be removed in a future release
+2025-10-13 15:50:28.023762+00:00WARNING: A terminally deprecated method in java.lang.System has been called
+2025-10-13 15:50:28.023787+00:00WARNING: System::setSecurityManager has been called by org.opensearch.bootstrap.Security (file:/usr/share/wazuh-indexer/lib/opensearch-2.19.2.jar)
+2025-10-13 15:50:28.023791+00:00WARNING: Please consider reporting this to the maintainers of org.opensearch.bootstrap.Security
+2025-10-13 15:50:28.023801+00:00WARNING: System::setSecurityManager will be removed in a future release
+2025-10-13 15:50:28.027027+00:00[2025-10-13T15:50:28,026][INFO ][o.o.n.Node               ] [wazuh.indexer] version[2.19.2], pid[1], build[rpm/63bef474b662d18fef0c73e0bd7660a8c5024121/2025-09-23T11:09:10.698387729Z], OS[Linux/6.12.15-production+truenas/amd64], JVM[Eclipse Adoptium/OpenJDK 64-Bit Server VM/21.0.6/21.0.6+7-LTS]
+2025-10-13 15:50:28.027884+00:00[2025-10-13T15:50:28,027][INFO ][o.o.n.Node               ] [wazuh.indexer] JVM home [/usr/share/wazuh-indexer/jdk], using bundled JDK/JRE [true]
+2025-10-13 15:50:28.028104+00:00[2025-10-13T15:50:28,028][INFO ][o.o.n.Node               ] [wazuh.indexer] JVM arguments [-Xshare:auto, -Dopensearch.networkaddress.cache.ttl=60, -Dopensearch.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.security.manager=allow, -Djava.locale.providers=SPI,COMPAT, -XX:+UseG1GC, -XX:G1ReservePercent=25, -XX:InitiatingHeapOccupancyPercent=30, -Djava.io.tmpdir=/tmp/opensearch-10726014082122382092, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=/var/lib/wazuh-indexer, -XX:ErrorFile=/var/log/wazuh-indexer/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=/var/log/wazuh-indexer/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Djava.security.manager=allow, --add-modules=jdk.incubator.vector, -Djava.util.concurrent.ForkJoinPool.common.threadFactory=org.opensearch.secure_sm.SecuredForkJoinWorkerThreadFactory, -Dclk.tck=100, -Djdk.attach.allowAttachSelf=true, -Djava.security.policy=file:///usr/share/wazuh-indexer/opensearch-performance-analyzer/opensearch_security.policy, --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED, -Xms4g, -Xmx4g, -XX:MaxDirectMemorySize=2147483648, -Dopensearch.path.home=/usr/share/wazuh-indexer, -Dopensearch.path.conf=/usr/share/wazuh-indexer, -Dopensearch.distribution.type=rpm, -Dopensearch.bundled_jdk=true]
+2025-10-13 15:50:28.148912+00:00[2025-10-13T15:50:28,148][INFO ][o.a.l.i.v.PanamaVectorizationProvider] [wazuh.indexer] Java vector incubator API enabled; uses preferredBitSize=512; FMA enabled
+2025-10-13 15:50:28.714326+00:00[2025-10-13T15:50:28,714][INFO ][o.o.s.s.t.SSLConfig      ] [wazuh.indexer] SSL dual mode is disabled
+2025-10-13 15:50:28.714749+00:00[2025-10-13T15:50:28,714][INFO ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] OpenSearch Config path is /usr/share/wazuh-indexer
+2025-10-13 15:50:28.899528+00:00[2025-10-13T15:50:28,899][INFO ][o.o.s.s.SslSettingsManager] [wazuh.indexer] TLS HTTP Provider                    : JDK
+2025-10-13 15:50:28.900183+00:00[2025-10-13T15:50:28,900][INFO ][o.o.s.s.SslSettingsManager] [wazuh.indexer] Enabled TLS protocols for HTTP layer : [TLSv1.3, TLSv1.2]
+2025-10-13 15:50:28.901344+00:00[2025-10-13T15:50:28,901][INFO ][o.o.s.s.SslSettingsManager] [wazuh.indexer] TLS Transport Client Provider             : JDK
+2025-10-13 15:50:28.901732+00:00[2025-10-13T15:50:28,901][INFO ][o.o.s.s.SslSettingsManager] [wazuh.indexer] TLS Transport Server Provider             : JDK
+2025-10-13 15:50:28.901935+00:00[2025-10-13T15:50:28,901][INFO ][o.o.s.s.SslSettingsManager] [wazuh.indexer] Enabled TLS protocols for Transport layer : [TLSv1.3, TLSv1.2]
+2025-10-13 15:50:29.296445+00:00[2025-10-13T15:50:29,296][INFO ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] Clustername: opensearch
+2025-10-13 15:50:29.392369+00:00[2025-10-13T15:50:29,392][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] Directory /usr/share/wazuh-indexer/certs has insecure file permissions (should be 0700)
+2025-10-13 15:50:29.392994+00:00[2025-10-13T15:50:29,392][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] Directory /usr/share/wazuh-indexer/.cache has insecure file permissions (should be 0700)
+2025-10-13 15:50:29.393439+00:00[2025-10-13T15:50:29,393][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] Directory /usr/share/wazuh-indexer/.cache/JNA has insecure file permissions (should be 0700)
+2025-10-13 15:50:29.393790+00:00[2025-10-13T15:50:29,393][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] Directory /usr/share/wazuh-indexer/.cache/JNA/temp has insecure file permissions (should be 0700)
+2025-10-13 15:50:29.394139+00:00[2025-10-13T15:50:29,394][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/opensearch.yml has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.394445+00:00[2025-10-13T15:50:29,394][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] Directory /usr/share/wazuh-indexer/logs has insecure file permissions (should be 0700)
+2025-10-13 15:50:29.395065+00:00[2025-10-13T15:50:29,394][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/opensearch-security/internal_users.yml has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.395087+00:00[2025-10-13T15:50:29,394][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/bin/opensearch has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.395104+00:00[2025-10-13T15:50:29,395][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/bin/opensearch-shard has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.395289+00:00[2025-10-13T15:50:29,395][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/bin/indexer-security-init.sh has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.395470+00:00[2025-10-13T15:50:29,395][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/bin/opensearch-upgrade has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.395651+00:00[2025-10-13T15:50:29,395][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/bin/opensearch-keystore has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.395835+00:00[2025-10-13T15:50:29,395][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/bin/opensearch-env has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.396013+00:00[2025-10-13T15:50:29,395][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/bin/systemd-entrypoint has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.396228+00:00[2025-10-13T15:50:29,396][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/bin/opensearch-performance-analyzer/performance-analyzer-agent has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.396400+00:00[2025-10-13T15:50:29,396][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/bin/opensearch-performance-analyzer/performance-analyzer-agent-cli has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.396683+00:00[2025-10-13T15:50:29,396][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/bin/opensearch-node has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.396787+00:00[2025-10-13T15:50:29,396][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/bin/opensearch-plugin has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.397002+00:00[2025-10-13T15:50:29,396][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/bin/opensearch-cli has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.397257+00:00[2025-10-13T15:50:29,397][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/bin/opensearch-env-from-file has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.398017+00:00[2025-10-13T15:50:29,397][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/lib/jspawnhelper has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.398036+00:00[2025-10-13T15:50:29,397][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/lib/modules has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.398048+00:00[2025-10-13T15:50:29,397][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jdeprscan has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.398203+00:00[2025-10-13T15:50:29,398][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/javap has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.398567+00:00[2025-10-13T15:50:29,398][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jdb has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.398717+00:00[2025-10-13T15:50:29,398][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/javac has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.398970+00:00[2025-10-13T15:50:29,398][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jrunscript has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.399197+00:00[2025-10-13T15:50:29,399][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jhsdb has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.399452+00:00[2025-10-13T15:50:29,399][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jps has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.399732+00:00[2025-10-13T15:50:29,399][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/serialver has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.400084+00:00[2025-10-13T15:50:29,399][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/keytool has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.400248+00:00[2025-10-13T15:50:29,400][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jstat has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.400473+00:00[2025-10-13T15:50:29,400][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jstatd has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.400682+00:00[2025-10-13T15:50:29,400][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jlink has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.401013+00:00[2025-10-13T15:50:29,400][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/rmiregistry has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.401237+00:00[2025-10-13T15:50:29,401][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jshell has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.401424+00:00[2025-10-13T15:50:29,401][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jconsole has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.401605+00:00[2025-10-13T15:50:29,401][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jwebserver has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.401839+00:00[2025-10-13T15:50:29,401][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jmap has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.402145+00:00[2025-10-13T15:50:29,402][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jcmd has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.402342+00:00[2025-10-13T15:50:29,402][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jstack has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.402522+00:00[2025-10-13T15:50:29,402][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jinfo has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.402825+00:00[2025-10-13T15:50:29,402][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jpackage has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.403096+00:00[2025-10-13T15:50:29,403][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/javadoc has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.403271+00:00[2025-10-13T15:50:29,403][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jfr has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.403492+00:00[2025-10-13T15:50:29,403][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jdeps has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.403662+00:00[2025-10-13T15:50:29,403][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/java has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.403845+00:00[2025-10-13T15:50:29,403][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jmod has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.404012+00:00[2025-10-13T15:50:29,403][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jar has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.404205+00:00[2025-10-13T15:50:29,404][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jarsigner has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.404474+00:00[2025-10-13T15:50:29,404][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/jdk/bin/jimage has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.404899+00:00[2025-10-13T15:50:29,404][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/plugins/opensearch-security/tools/audit_config_migrater.sh has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.405045+00:00[2025-10-13T15:50:29,404][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/plugins/opensearch-security/tools/wazuh-passwords-tool.sh has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.405281+00:00[2025-10-13T15:50:29,405][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/plugins/opensearch-security/tools/hash.sh has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.405465+00:00[2025-10-13T15:50:29,405][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/plugins/opensearch-security/tools/securityadmin.sh has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.405666+00:00[2025-10-13T15:50:29,405][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/plugins/opensearch-security/tools/wazuh-certs-tool.sh has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.405855+00:00[2025-10-13T15:50:29,405][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/performance-analyzer-rca/bin/performance-analyzer-agent has insecure file permissions (should be 0600)
+2025-10-13 15:50:29.406096+00:00[2025-10-13T15:50:29,405][WARN ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] File /usr/share/wazuh-indexer/performance-analyzer-rca/bin/performance-analyzer-rca has insecure file permissions (should be 0600)
+2025-10-13 15:50:31.296154+00:00[2025-10-13T15:50:31,295][INFO ][o.o.p.c.c.PluginSettings ] [wazuh.indexer] Trying to create directory /dev/shm/performanceanalyzer/.
+2025-10-13 15:50:31.296559+00:00[2025-10-13T15:50:31,296][INFO ][o.o.p.c.c.PluginSettings ] [wazuh.indexer] Config: metricsLocation: /dev/shm/performanceanalyzer/, metricsDeletionInterval: 1, httpsEnabled: false, cleanup-metrics-db-files: true, batch-metrics-retention-period-minutes: 7, rpc-port: 9650, webservice-port 9600
+2025-10-13 15:50:31.576676+00:00[2025-10-13T15:50:31,576][INFO ][o.o.i.r.ReindexPlugin    ] [wazuh.indexer] ReindexPlugin reloadSPI called
+2025-10-13 15:50:31.577495+00:00[2025-10-13T15:50:31,577][INFO ][o.o.i.r.ReindexPlugin    ] [wazuh.indexer] Unable to find any implementation for RemoteReindexExtension
+2025-10-13 15:50:31.593492+00:00[2025-10-13T15:50:31,593][INFO ][o.o.j.JobSchedulerPlugin ] [wazuh.indexer] Loaded scheduler extension: opensearch_time_series_analytics, index: .opendistro-anomaly-detector-jobs
+2025-10-13 15:50:31.606722+00:00[2025-10-13T15:50:31,606][INFO ][o.o.j.JobSchedulerPlugin ] [wazuh.indexer] Loaded scheduler extension: reports-scheduler, index: .opendistro-reports-definitions
+2025-10-13 15:50:31.607597+00:00[2025-10-13T15:50:31,607][INFO ][o.o.j.JobSchedulerPlugin ] [wazuh.indexer] Loaded scheduler extension: opendistro-index-management, index: .opendistro-ism-config
+2025-10-13 15:50:31.609011+00:00[2025-10-13T15:50:31,608][INFO ][o.o.j.JobSchedulerPlugin ] [wazuh.indexer] Loaded scheduler extension: checkBatchJobTaskStatus, index: .ml_commons_task_polling_job
+2025-10-13 15:50:31.609781+00:00[2025-10-13T15:50:31,609][INFO ][o.o.j.JobSchedulerPlugin ] [wazuh.indexer] Loaded scheduler extension: scheduler_geospatial_ip2geo_datasource, index: .scheduler-geospatial-ip2geo-datasource
+2025-10-13 15:50:31.610798+00:00[2025-10-13T15:50:31,610][INFO ][o.o.j.JobSchedulerPlugin ] [wazuh.indexer] Loaded scheduler extension: async-query-scheduler, index: .async-query-scheduler
+2025-10-13 15:50:31.614557+00:00[2025-10-13T15:50:31,614][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [aggs-matrix-stats]
+2025-10-13 15:50:31.614749+00:00[2025-10-13T15:50:31,614][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [analysis-common]
+2025-10-13 15:50:31.614906+00:00[2025-10-13T15:50:31,614][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [cache-common]
+2025-10-13 15:50:31.615064+00:00[2025-10-13T15:50:31,614][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [geo]
+2025-10-13 15:50:31.615247+00:00[2025-10-13T15:50:31,615][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [ingest-common]
+2025-10-13 15:50:31.615409+00:00[2025-10-13T15:50:31,615][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [ingest-geoip]
+2025-10-13 15:50:31.615534+00:00[2025-10-13T15:50:31,615][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [ingest-user-agent]
+2025-10-13 15:50:31.615639+00:00[2025-10-13T15:50:31,615][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [lang-expression]
+2025-10-13 15:50:31.615760+00:00[2025-10-13T15:50:31,615][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [lang-mustache]
+2025-10-13 15:50:31.615867+00:00[2025-10-13T15:50:31,615][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [lang-painless]
+2025-10-13 15:50:31.616022+00:00[2025-10-13T15:50:31,615][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [mapper-extras]
+2025-10-13 15:50:31.616157+00:00[2025-10-13T15:50:31,616][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [opensearch-dashboards]
+2025-10-13 15:50:31.616281+00:00[2025-10-13T15:50:31,616][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [parent-join]
+2025-10-13 15:50:31.616386+00:00[2025-10-13T15:50:31,616][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [percolator]
+2025-10-13 15:50:31.616479+00:00[2025-10-13T15:50:31,616][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [rank-eval]
+2025-10-13 15:50:31.616576+00:00[2025-10-13T15:50:31,616][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [reindex]
+2025-10-13 15:50:31.616673+00:00[2025-10-13T15:50:31,616][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [repository-url]
+2025-10-13 15:50:31.616759+00:00[2025-10-13T15:50:31,616][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [search-pipeline-common]
+2025-10-13 15:50:31.616877+00:00[2025-10-13T15:50:31,616][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [systemd]
+2025-10-13 15:50:31.616975+00:00[2025-10-13T15:50:31,616][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded module [transport-netty4]
+2025-10-13 15:50:31.617274+00:00[2025-10-13T15:50:31,617][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-alerting]
+2025-10-13 15:50:31.617383+00:00[2025-10-13T15:50:31,617][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-anomaly-detection]
+2025-10-13 15:50:31.617471+00:00[2025-10-13T15:50:31,617][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-asynchronous-search]
+2025-10-13 15:50:31.617564+00:00[2025-10-13T15:50:31,617][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-cross-cluster-replication]
+2025-10-13 15:50:31.617668+00:00[2025-10-13T15:50:31,617][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-geospatial]
+2025-10-13 15:50:31.617803+00:00[2025-10-13T15:50:31,617][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-index-management]
+2025-10-13 15:50:31.617910+00:00[2025-10-13T15:50:31,617][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-job-scheduler]
+2025-10-13 15:50:31.618003+00:00[2025-10-13T15:50:31,617][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-knn]
+2025-10-13 15:50:31.618124+00:00[2025-10-13T15:50:31,618][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-ml]
+2025-10-13 15:50:31.618222+00:00[2025-10-13T15:50:31,618][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-neural-search]
+2025-10-13 15:50:31.618301+00:00[2025-10-13T15:50:31,618][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-notifications]
+2025-10-13 15:50:31.618387+00:00[2025-10-13T15:50:31,618][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-notifications-core]
+2025-10-13 15:50:31.618509+00:00[2025-10-13T15:50:31,618][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-observability]
+2025-10-13 15:50:31.618609+00:00[2025-10-13T15:50:31,618][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-performance-analyzer]
+2025-10-13 15:50:31.618738+00:00[2025-10-13T15:50:31,618][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-reports-scheduler]
+2025-10-13 15:50:31.618833+00:00[2025-10-13T15:50:31,618][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-security]
+2025-10-13 15:50:31.618929+00:00[2025-10-13T15:50:31,618][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] loaded plugin [opensearch-sql]
+2025-10-13 15:50:31.655135+00:00[2025-10-13T15:50:31,654][INFO ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] Disabled https compression by default to mitigate BREACH attacks. You can enable it by setting 'http.compression: true' in opensearch.yml
+2025-10-13 15:50:31.670811+00:00[2025-10-13T15:50:31,670][WARN ][stderr                   ] [wazuh.indexer] WARNING: A restricted method in java.lang.foreign.Linker has been called
+2025-10-13 15:50:31.671028+00:00[2025-10-13T15:50:31,670][WARN ][stderr                   ] [wazuh.indexer] WARNING: java.lang.foreign.Linker::downcallHandle has been called by the unnamed module
+2025-10-13 15:50:31.671275+00:00[2025-10-13T15:50:31,671][WARN ][stderr                   ] [wazuh.indexer] WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for this module
+2025-10-13 15:50:31.718251+00:00[2025-10-13T15:50:31,718][INFO ][o.a.l.s.MemorySegmentIndexInputProvider] [wazuh.indexer] Using MemorySegmentIndexInput and native madvise support with Java 21 or later; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+2025-10-13 15:50:31.723516+00:00[2025-10-13T15:50:31,723][INFO ][o.o.e.NodeEnvironment    ] [wazuh.indexer] using [1] data paths, mounts [[/var/lib/wazuh-indexer (personal/ix-apps/docker)]], net usable_space [2.6tb], net total_space [2.8tb], types [zfs]
+2025-10-13 15:50:31.723884+00:00[2025-10-13T15:50:31,723][INFO ][o.o.e.NodeEnvironment    ] [wazuh.indexer] heap size [4gb], compressed ordinary object pointers [true]
+2025-10-13 15:50:31.796803+00:00[2025-10-13T15:50:31,796][INFO ][o.o.n.Node               ] [wazuh.indexer] node name [wazuh.indexer], node ID [wtM9IQfZScqa5z7prVDivA], cluster name [opensearch], roles [ingest, remote_cluster_client, data, cluster_manager]
+2025-10-13 15:50:31.825123+00:00[2025-10-13T15:50:31,824][INFO ][o.o.e.ExtensionsManager  ] [wazuh.indexer] ExtensionsManager initialized
+2025-10-13 15:50:33.319424+00:00[2025-10-13T15:50:33,319][INFO ][o.o.n.p.NeuralSearch     ] [wazuh.indexer] Registering hybrid query phase searcher with feature flag [plugins.neural_search.hybrid_search_disabled]
+2025-10-13 15:50:33.601173+00:00[2025-10-13T15:50:33,601][WARN ][o.o.s.c.Salt             ] [wazuh.indexer] If you plan to use field masking pls configure compliance salt e1ukloTsQlOgPquJ to be a random string of 16 chars length identical on all nodes
+2025-10-13 15:50:33.623049+00:00[2025-10-13T15:50:33,622][ERROR][o.o.s.a.s.SinkProvider   ] [wazuh.indexer] Default endpoint could not be created, auditlog will not work properly.
+2025-10-13 15:50:33.623660+00:00[2025-10-13T15:50:33,623][WARN ][o.o.s.a.r.AuditMessageRouter] [wazuh.indexer] No default storage available, audit log may not work properly. Please check configuration.
+2025-10-13 15:50:33.623881+00:00[2025-10-13T15:50:33,623][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Message routing enabled: false
+2025-10-13 15:50:33.647723+00:00[2025-10-13T15:50:33,647][INFO ][o.o.s.f.SecurityFilter   ] [wazuh.indexer] <NONE> indices are made immutable.
+2025-10-13 15:50:33.833767+00:00[2025-10-13T15:50:33,833][INFO ][o.o.t.b.CircuitBreakerService] [wazuh.indexer] Registered memory breaker.
+2025-10-13 15:50:34.057951+00:00[2025-10-13T15:50:34,057][INFO ][o.o.r.m.c.i.SdkClientFactory] [wazuh.indexer] Using local opensearch cluster as metadata store.
+2025-10-13 15:50:34.069179+00:00[2025-10-13T15:50:34,068][INFO ][o.o.m.b.MLCircuitBreakerService] [wazuh.indexer] Registered ML memory breaker.
+2025-10-13 15:50:34.069648+00:00[2025-10-13T15:50:34,069][INFO ][o.o.m.b.MLCircuitBreakerService] [wazuh.indexer] Registered ML disk breaker.
+2025-10-13 15:50:34.069802+00:00[2025-10-13T15:50:34,069][INFO ][o.o.m.b.MLCircuitBreakerService] [wazuh.indexer] Registered ML native memory breaker.
+2025-10-13 15:50:34.120864+00:00[2025-10-13T15:50:34,120][INFO ][o.r.Reflections          ] [wazuh.indexer] Reflections took 27 ms to scan 1 urls, producing 27 keys and 67 values 
+2025-10-13 15:50:34.133918+00:00[2025-10-13T15:50:34,133][INFO ][o.r.Reflections          ] [wazuh.indexer] Reflections took 1 ms to scan 1 urls, producing 3 keys and 5 values 
+2025-10-13 15:50:34.161219+00:00[2025-10-13T15:50:34,161][WARN ][o.o.s.p.SQLPlugin        ] [wazuh.indexer] Master key is a required config for using create and update datasource APIs. Please set plugins.query.datasources.encryption.masterkey config in opensearch.yml in all the cluster nodes. More details can be found here: https://github.com/opensearch-project/sql/blob/main/docs/user/ppl/admin/datasources.rst#master-key-config-for-encrypting-credential-information
+2025-10-13 15:50:34.625615+00:00[2025-10-13T15:50:34,625][INFO ][o.o.t.NettyAllocator     ] [wazuh.indexer] creating NettyAllocator with the following configs: [name=opensearch_configured, chunk_size=512kb, suggested_max_allocation_size=512kb, factors={opensearch.unsafe.use_netty_default_chunk_and_page_size=false, g1gc_enabled=true, g1gc_region_size=2mb}]
+2025-10-13 15:50:34.629200+00:00[2025-10-13T15:50:34,629][INFO ][o.o.s.s.t.SSLConfig      ] [wazuh.indexer] SSL dual mode is disabled
+2025-10-13 15:50:34.699385+00:00[2025-10-13T15:50:34,699][INFO ][o.o.d.DiscoveryModule    ] [wazuh.indexer] using discovery type [single-node] and seed hosts providers [settings]
+2025-10-13 15:50:34.993849+00:00[2025-10-13T15:50:34,993][WARN ][o.o.g.DanglingIndicesState] [wazuh.indexer] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2025-10-13 15:50:35.385069+00:00[2025-10-13T15:50:35,384][INFO ][o.o.p.h.c.PerformanceAnalyzerConfigAction] [wazuh.indexer] PerformanceAnalyzer Enabled: false
+2025-10-13 15:50:35.402454+00:00[2025-10-13T15:50:35,402][INFO ][o.o.n.Node               ] [wazuh.indexer] initialized
+2025-10-13 15:50:35.402661+00:00[2025-10-13T15:50:35,402][INFO ][o.o.n.Node               ] [wazuh.indexer] starting ...
+2025-10-13 15:50:35.464135+00:00[2025-10-13T15:50:35,463][INFO ][o.o.t.TransportService   ] [wazuh.indexer] publish_address {172.16.23.2:9300}, bound_addresses {[::]:9300}
+2025-10-13 15:50:35.465130+00:00[2025-10-13T15:50:35,465][INFO ][o.o.t.TransportService   ] [wazuh.indexer] Remote clusters initialized successfully.
+2025-10-13 15:50:35.787368+00:00[2025-10-13T15:50:35,787][WARN ][o.o.b.BootstrapChecks    ] [wazuh.indexer] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2025-10-13 15:50:35.788219+00:00[2025-10-13T15:50:35,788][INFO ][o.o.c.c.Coordinator      ] [wazuh.indexer] cluster UUID [COvh6pTES6Oy2hUz-NUBFA]
+2025-10-13 15:50:35.898474+00:00[2025-10-13T15:50:35,898][INFO ][o.o.c.s.MasterService    ] [wazuh.indexer] Tasks batched with key: org.opensearch.cluster.coordination.JoinHelper, count:3 and sample tasks: elected-as-cluster-manager ([1] nodes joined)[{wazuh.indexer}{wtM9IQfZScqa5z7prVDivA}{qLRE6tDkTWKI7aM5KoCvDA}{172.16.23.2}{172.16.23.2:9300}{dimr}{shard_indexing_pressure_enabled=true} elect leader, _BECOME_CLUSTER_MANAGER_TASK_, _FINISH_ELECTION_], term: 4, version: 86, delta: cluster-manager node changed {previous [], current [{wazuh.indexer}{wtM9IQfZScqa5z7prVDivA}{qLRE6tDkTWKI7aM5KoCvDA}{172.16.23.2}{172.16.23.2:9300}{dimr}{shard_indexing_pressure_enabled=true}]}
+2025-10-13 15:50:36.431472+00:00[2025-10-13T15:50:36,431][INFO ][o.o.c.s.ClusterApplierService] [wazuh.indexer] cluster-manager node changed {previous [], current [{wazuh.indexer}{wtM9IQfZScqa5z7prVDivA}{qLRE6tDkTWKI7aM5KoCvDA}{172.16.23.2}{172.16.23.2:9300}{dimr}{shard_indexing_pressure_enabled=true}]}, term: 4, version: 86, reason: Publication{term=4, version=86}
+2025-10-13 15:50:36.435815+00:00[2025-10-13T15:50:36,435][INFO ][o.o.t.i.IndexManagement  ] [wazuh.indexer] Candidate custom result indices are empty.
+2025-10-13 15:50:36.436028+00:00[2025-10-13T15:50:36,435][INFO ][o.o.t.i.IndexManagement  ] [wazuh.indexer] Candidate custom result indices are empty.
+2025-10-13 15:50:36.436231+00:00[2025-10-13T15:50:36,436][INFO ][o.o.t.c.ClusterEventListener] [wazuh.indexer] Cluster is not recovered yet.
+2025-10-13 15:50:36.449647+00:00[2025-10-13T15:50:36,449][INFO ][o.o.i.i.ManagedIndexCoordinator] [wazuh.indexer] Cache cluster manager node onClusterManager time: 1760370636449
+2025-10-13 15:50:36.454422+00:00[2025-10-13T15:50:36,454][WARN ][o.o.p.c.s.h.ConfigOverridesClusterSettingHandler] [wazuh.indexer] Config override setting update called with empty string. Ignoring.
+2025-10-13 15:50:36.458448+00:00[2025-10-13T15:50:36,458][INFO ][o.o.d.PeerFinder         ] [wazuh.indexer] setting findPeersInterval to [1s] as node commission status = [true] for local node [{wazuh.indexer}{wtM9IQfZScqa5z7prVDivA}{qLRE6tDkTWKI7aM5KoCvDA}{172.16.23.2}{172.16.23.2:9300}{dimr}{shard_indexing_pressure_enabled=true}]
+2025-10-13 15:50:36.460246+00:00[2025-10-13T15:50:36,460][WARN ][o.o.c.r.a.AllocationService] [wazuh.indexer] Falling back to single shard assignment since batch mode disable or multiple custom allocators set
+2025-10-13 15:50:36.461217+00:00[2025-10-13T15:50:36,461][INFO ][o.o.h.AbstractHttpServerTransport] [wazuh.indexer] publish_address {172.16.23.2:9200}, bound_addresses {[::]:9200}
+2025-10-13 15:50:36.461351+00:00[2025-10-13T15:50:36,461][INFO ][o.o.n.Node               ] [wazuh.indexer] started
+2025-10-13 15:50:36.461788+00:00[2025-10-13T15:50:36,461][INFO ][o.o.s.c.ConfigurationRepository] [wazuh.indexer] Will attempt to create index .opendistro_security and default configs if they are absent
+2025-10-13 15:50:36.462357+00:00[2025-10-13T15:50:36,462][INFO ][o.o.s.c.ConfigurationRepository] [wazuh.indexer] Background init thread started. Install default config?: true
+2025-10-13 15:50:36.462574+00:00[2025-10-13T15:50:36,462][INFO ][o.o.s.c.ConfigurationRepository] [wazuh.indexer] Wait for cluster to be available ...
+2025-10-13 15:50:36.462781+00:00[2025-10-13T15:50:36,462][INFO ][o.o.s.OpenSearchSecurityPlugin] [wazuh.indexer] 0 OpenSearch Security modules loaded so far: []
+2025-10-13 15:50:36.469376+00:00[2025-10-13T15:50:36,469][WARN ][o.o.c.r.a.AllocationService] [wazuh.indexer] Falling back to single shard assignment since batch mode disable or multiple custom allocators set
+2025-10-13 15:50:36.672125+00:00[2025-10-13T15:50:36,671][INFO ][o.o.c.s.ClusterSettings  ] [wazuh.indexer] updating [plugins.index_state_management.template_migration.control] from [0] to [-1]
+2025-10-13 15:50:36.693193+00:00[2025-10-13T15:50:36,693][INFO ][o.o.t.c.HashRing         ] [wazuh.indexer] Node added: [wtM9IQfZScqa5z7prVDivA]
+2025-10-13 15:50:36.695524+00:00[2025-10-13T15:50:36,695][INFO ][o.o.t.c.HashRing         ] [wazuh.indexer] Add data node to version hash ring: wtM9IQfZScqa5z7prVDivA
+2025-10-13 15:50:36.696834+00:00[2025-10-13T15:50:36,696][INFO ][o.o.t.c.HashRing         ] [wazuh.indexer] All nodes with known version: {wtM9IQfZScqa5z7prVDivA=ADNodeInfo{version=2.19.2, isEligibleDataNode=true}}
+2025-10-13 15:50:36.697035+00:00[2025-10-13T15:50:36,697][INFO ][o.o.t.c.HashRing         ] [wazuh.indexer] Rebuild hash ring for realtime with cooldown, nodeChangeEvents size 0
+2025-10-13 15:50:36.697175+00:00[2025-10-13T15:50:36,697][INFO ][o.o.t.c.HashRing         ] [wazuh.indexer] Build version hash ring successfully
+2025-10-13 15:50:36.697817+00:00[2025-10-13T15:50:36,697][INFO ][o.o.t.c.ADDataMigrator   ] [wazuh.indexer] Start migrating AD data
+2025-10-13 15:50:36.697920+00:00[2025-10-13T15:50:36,697][INFO ][o.o.t.c.ADDataMigrator   ] [wazuh.indexer] AD job index doesn't exist, no need to migrate
+2025-10-13 15:50:36.698157+00:00[2025-10-13T15:50:36,698][INFO ][o.o.t.c.ClusterEventListener] [wazuh.indexer] Init version hash ring successfully
+2025-10-13 15:50:36.705058+00:00[2025-10-13T15:50:36,704][INFO ][o.o.g.GatewayService     ] [wazuh.indexer] recovered [15] indices into cluster_state
+2025-10-13 15:50:36.706430+00:00[2025-10-13T15:50:36,706][WARN ][o.o.o.i.ObservabilityIndex] [wazuh.indexer] message: index [.opensearch-observability/pW5e07ztRWWBtabiJs4NEw] already exists
+2025-10-13 15:50:36.706596+00:00[2025-10-13T15:50:36,706][WARN ][o.o.c.r.a.AllocationService] [wazuh.indexer] Falling back to single shard assignment since batch mode disable or multiple custom allocators set
+2025-10-13 15:50:36.999902+00:00[2025-10-13T15:50:36,999][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[.opensearch-observability/pW5e07ztRWWBtabiJs4NEw]
+2025-10-13 15:50:37.074790+00:00[2025-10-13T15:50:37,074][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[wazuh-alerts-4.x-2025.10.13/M6XcTXjeSdGmKRBElqR3Ug]
+2025-10-13 15:50:37.103476+00:00[2025-10-13T15:50:37,103][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[.opendistro_security/pT5TXKLxTsW_sP5ae6-Fpw]
+2025-10-13 15:50:37.108223+00:00[2025-10-13T15:50:37,108][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[.plugins-ml-config/LjgFK-JwQQuBhw1KwbPIJg]
+2025-10-13 15:50:37.570363+00:00[2025-10-13T15:50:37,569][INFO ][o.o.s.c.ConfigurationRepository] [wazuh.indexer] Index .opendistro_security already exists
+2025-10-13 15:50:37.570969+00:00[2025-10-13T15:50:37,570][INFO ][o.o.s.c.ConfigurationRepository] [wazuh.indexer] Node started, try to initialize it. Wait for at least yellow cluster state....
+2025-10-13 15:50:37.571674+00:00[2025-10-13T15:50:37,571][WARN ][o.o.c.r.a.AllocationService] [wazuh.indexer] Falling back to single shard assignment since batch mode disable or multiple custom allocators set
+2025-10-13 15:50:37.583519+00:00[2025-10-13T15:50:37,583][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Will update 'config' with /usr/share/wazuh-indexer/opensearch-security/config.yml and populate it with empty doc if file missing and populateEmptyIfFileMissing=false
+2025-10-13 15:50:37.633472+00:00[2025-10-13T15:50:37,633][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Index .opendistro_security already contains doc with id config, skipping update.
+2025-10-13 15:50:37.633829+00:00[2025-10-13T15:50:37,633][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Will update 'roles' with /usr/share/wazuh-indexer/opensearch-security/roles.yml and populate it with empty doc if file missing and populateEmptyIfFileMissing=false
+2025-10-13 15:50:37.641143+00:00[2025-10-13T15:50:37,640][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Index .opendistro_security already contains doc with id roles, skipping update.
+2025-10-13 15:50:37.641421+00:00[2025-10-13T15:50:37,641][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Will update 'rolesmapping' with /usr/share/wazuh-indexer/opensearch-security/roles_mapping.yml and populate it with empty doc if file missing and populateEmptyIfFileMissing=false
+2025-10-13 15:50:37.646792+00:00[2025-10-13T15:50:37,646][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Index .opendistro_security already contains doc with id rolesmapping, skipping update.
+2025-10-13 15:50:37.646984+00:00[2025-10-13T15:50:37,646][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Will update 'internalusers' with /usr/share/wazuh-indexer/opensearch-security/internal_users.yml and populate it with empty doc if file missing and populateEmptyIfFileMissing=false
+2025-10-13 15:50:37.652105+00:00[2025-10-13T15:50:37,651][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Index .opendistro_security already contains doc with id internalusers, skipping update.
+2025-10-13 15:50:37.652300+00:00[2025-10-13T15:50:37,652][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Will update 'actiongroups' with /usr/share/wazuh-indexer/opensearch-security/action_groups.yml and populate it with empty doc if file missing and populateEmptyIfFileMissing=false
+2025-10-13 15:50:37.655214+00:00[2025-10-13T15:50:37,655][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Index .opendistro_security already contains doc with id actiongroups, skipping update.
+2025-10-13 15:50:37.655406+00:00[2025-10-13T15:50:37,655][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Will update 'tenants' with /usr/share/wazuh-indexer/opensearch-security/tenants.yml and populate it with empty doc if file missing and populateEmptyIfFileMissing=false
+2025-10-13 15:50:37.657678+00:00[2025-10-13T15:50:37,657][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Index .opendistro_security already contains doc with id tenants, skipping update.
+2025-10-13 15:50:37.657934+00:00[2025-10-13T15:50:37,657][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Will update 'nodesdn' with /usr/share/wazuh-indexer/opensearch-security/nodes_dn.yml and populate it with empty doc if file missing and populateEmptyIfFileMissing=true
+2025-10-13 15:50:37.659832+00:00[2025-10-13T15:50:37,659][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Index .opendistro_security already contains doc with id nodesdn, skipping update.
+2025-10-13 15:50:37.660023+00:00[2025-10-13T15:50:37,659][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Will update 'whitelist' with /usr/share/wazuh-indexer/opensearch-security/whitelist.yml and populate it with empty doc if file missing and populateEmptyIfFileMissing=true
+2025-10-13 15:50:37.661976+00:00[2025-10-13T15:50:37,661][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Index .opendistro_security already contains doc with id whitelist, skipping update.
+2025-10-13 15:50:37.662157+00:00[2025-10-13T15:50:37,662][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Will update 'allowlist' with /usr/share/wazuh-indexer/opensearch-security/allowlist.yml and populate it with empty doc if file missing and populateEmptyIfFileMissing=true
+2025-10-13 15:50:37.663972+00:00[2025-10-13T15:50:37,663][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Index .opendistro_security already contains doc with id allowlist, skipping update.
+2025-10-13 15:50:37.664235+00:00[2025-10-13T15:50:37,664][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Will update 'audit' with /usr/share/wazuh-indexer/opensearch-security/audit.yml and populate it with empty doc if file missing and populateEmptyIfFileMissing=false
+2025-10-13 15:50:37.673348+00:00[2025-10-13T15:50:37,673][INFO ][o.o.s.s.ConfigHelper     ] [wazuh.indexer] Index .opendistro_security already contains doc with id audit, skipping update.
+2025-10-13 15:50:37.775828+00:00[2025-10-13T15:50:37,775][INFO ][stdout                   ] [wazuh.indexer] [FINE] No subscribers registered for event class org.opensearch.security.securityconf.DynamicConfigFactory$NodesDnModelImpl
+2025-10-13 15:50:37.776309+00:00[2025-10-13T15:50:37,776][INFO ][stdout                   ] [wazuh.indexer] [FINE] No subscribers registered for event class org.greenrobot.eventbus.NoSubscriberEvent
+2025-10-13 15:50:37.776558+00:00[2025-10-13T15:50:37,776][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Auditing on REST API is enabled.
+2025-10-13 15:50:37.776701+00:00[2025-10-13T15:50:37,776][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] [AUTHENTICATED, GRANTED_PRIVILEGES] are excluded from REST API auditing.
+2025-10-13 15:50:37.776781+00:00[2025-10-13T15:50:37,776][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Auditing on Transport API is enabled.
+2025-10-13 15:50:37.776870+00:00[2025-10-13T15:50:37,776][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] [AUTHENTICATED, GRANTED_PRIVILEGES] are excluded from Transport API auditing.
+2025-10-13 15:50:37.776944+00:00[2025-10-13T15:50:37,776][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Auditing of request body is enabled.
+2025-10-13 15:50:37.777017+00:00[2025-10-13T15:50:37,776][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Bulk requests resolution is disabled during request auditing.
+2025-10-13 15:50:37.777088+00:00[2025-10-13T15:50:37,777][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Index resolution is enabled during request auditing.
+2025-10-13 15:50:37.777158+00:00[2025-10-13T15:50:37,777][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Sensitive headers exclusion from auditing is enabled.
+2025-10-13 15:50:37.777234+00:00[2025-10-13T15:50:37,777][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Auditing requests from kibanaserver users is disabled.
+2025-10-13 15:50:37.777329+00:00[2025-10-13T15:50:37,777][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Auditing request headers <NONE> is disabled.
+2025-10-13 15:50:37.777413+00:00[2025-10-13T15:50:37,777][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Auditing request url params <NONE> is disabled.
+2025-10-13 15:50:37.777561+00:00[2025-10-13T15:50:37,777][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Auditing of external configuration is disabled.
+2025-10-13 15:50:37.777625+00:00[2025-10-13T15:50:37,777][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Auditing of internal configuration is enabled.
+2025-10-13 15:50:37.777698+00:00[2025-10-13T15:50:37,777][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Auditing only metadata information for read request is enabled.
+2025-10-13 15:50:37.777816+00:00[2025-10-13T15:50:37,777][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Auditing will watch {} for read requests.
+2025-10-13 15:50:37.777909+00:00[2025-10-13T15:50:37,777][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Auditing read operation requests from kibanaserver users is disabled.
+2025-10-13 15:50:37.777980+00:00[2025-10-13T15:50:37,777][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Auditing only metadata information for write request is enabled.
+2025-10-13 15:50:37.778111+00:00[2025-10-13T15:50:37,778][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Auditing diffs for write requests is disabled.
+2025-10-13 15:50:37.778222+00:00[2025-10-13T15:50:37,778][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Auditing write operation requests from kibanaserver users is disabled.
+2025-10-13 15:50:37.778307+00:00[2025-10-13T15:50:37,778][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Auditing will watch <NONE> for write requests.
+2025-10-13 15:50:37.778374+00:00[2025-10-13T15:50:37,778][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] .opendistro_security is used as internal security index.
+2025-10-13 15:50:37.778437+00:00[2025-10-13T15:50:37,778][INFO ][o.o.s.a.i.AuditLogImpl   ] [wazuh.indexer] Internal index used for posting audit logs is null
+2025-10-13 15:50:37.778816+00:00[2025-10-13T15:50:37,778][INFO ][o.o.s.c.ConfigurationRepository] [wazuh.indexer] Hot-reloading of audit configuration is enabled
+2025-10-13 15:50:37.778893+00:00[2025-10-13T15:50:37,778][INFO ][o.o.s.c.ConfigurationRepository] [wazuh.indexer] Node 'wazuh.indexer' initialized
+2025-10-13 15:50:38.232828+00:00[2025-10-13T15:50:38,229][WARN ][r.suppressed             ] [wazuh.indexer] path: /.kibana/_count, params: {index=.kibana}
+2025-10-13 15:50:38.232865+00:00org.opensearch.action.search.SearchPhaseExecutionException: all shards failed
+2025-10-13 15:50:38.232869+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.onPhaseFailure(AbstractSearchAsyncAction.java:775) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:38.232888+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.executeNextPhase(AbstractSearchAsyncAction.java:395) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:38.232892+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.onPhaseDone(AbstractSearchAsyncAction.java:815) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:38.232898+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.onShardFailure(AbstractSearchAsyncAction.java:548) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:38.232901+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.lambda$performPhaseOnShard$0(AbstractSearchAsyncAction.java:290) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:38.232907+00:00at org.opensearch.action.search.AbstractSearchAsyncAction$2.doRun(AbstractSearchAsyncAction.java:373) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:38.232909+00:00at org.opensearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:52) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:38.232912+00:00at org.opensearch.threadpool.TaskAwareRunnable.doRun(TaskAwareRunnable.java:78) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:38.232917+00:00at org.opensearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:52) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:38.232920+00:00at org.opensearch.common.util.concurrent.TimedRunnable.doRun(TimedRunnable.java:59) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:38.232923+00:00at org.opensearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:1014) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:38.232928+00:00at org.opensearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:52) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:38.232931+00:00at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+2025-10-13 15:50:38.232936+00:00at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+2025-10-13 15:50:38.232940+00:00at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2025-10-13 15:50:38.701973+00:00[2025-10-13T15:50:38,701][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[wazuh-states-inventory-interfaces-wazuh.manager/1ng3Zy9gSm-__SZloTcM1g]
+2025-10-13 15:50:38.710194+00:00[2025-10-13T15:50:38,709][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[wazuh-states-inventory-networks-wazuh.manager/MI8UZWXOSFOhP8-eVFEFng]
+2025-10-13 15:50:39.661645+00:00[2025-10-13T15:50:39,661][WARN ][o.o.c.r.a.AllocationService] [wazuh.indexer] Falling back to single shard assignment since batch mode disable or multiple custom allocators set
+2025-10-13 15:50:40.401651+00:00[2025-10-13T15:50:40,401][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[wazuh-states-inventory-protocols-wazuh.manager/bNBzfOnrQpaYY0xh-Hi2gA]
+2025-10-13 15:50:40.406073+00:00[2025-10-13T15:50:40,405][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[wazuh-states-inventory-ports-wazuh.manager/2PxaYSsERUWFCnyo7G91vQ]
+2025-10-13 15:50:40.410195+00:00[2025-10-13T15:50:40,410][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[wazuh-states-inventory-hotfixes-wazuh.manager/LSk0a16XRhqqiYB7gVHg1Q]
+2025-10-13 15:50:40.413419+00:00[2025-10-13T15:50:40,413][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[wazuh-states-inventory-hardware-wazuh.manager/Np9F7r94SHK_v9h64unnVQ]
+2025-10-13 15:50:40.740642+00:00[2025-10-13T15:50:40,740][WARN ][r.suppressed             ] [wazuh.indexer] path: /.kibana/_count, params: {index=.kibana}
+2025-10-13 15:50:40.740696+00:00org.opensearch.action.search.SearchPhaseExecutionException: all shards failed
+2025-10-13 15:50:40.740702+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.onPhaseFailure(AbstractSearchAsyncAction.java:775) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:40.740734+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.executeNextPhase(AbstractSearchAsyncAction.java:395) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:40.740739+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.onPhaseDone(AbstractSearchAsyncAction.java:815) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:40.740750+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.onShardFailure(AbstractSearchAsyncAction.java:548) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:40.740757+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.lambda$performPhaseOnShard$0(AbstractSearchAsyncAction.java:290) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:40.740766+00:00at org.opensearch.action.search.AbstractSearchAsyncAction$2.doRun(AbstractSearchAsyncAction.java:373) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:40.740776+00:00at org.opensearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:52) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:40.740781+00:00at org.opensearch.threadpool.TaskAwareRunnable.doRun(TaskAwareRunnable.java:78) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:40.740789+00:00at org.opensearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:52) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:40.740793+00:00at org.opensearch.common.util.concurrent.TimedRunnable.doRun(TimedRunnable.java:59) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:40.740798+00:00at org.opensearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:1014) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:40.740807+00:00at org.opensearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:52) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:40.740812+00:00at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+2025-10-13 15:50:40.740816+00:00at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+2025-10-13 15:50:40.740827+00:00at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2025-10-13 15:50:43.246867+00:00[2025-10-13T15:50:43,246][WARN ][r.suppressed             ] [wazuh.indexer] path: /.kibana/_count, params: {index=.kibana}
+2025-10-13 15:50:43.246926+00:00org.opensearch.action.search.SearchPhaseExecutionException: all shards failed
+2025-10-13 15:50:43.246944+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.onPhaseFailure(AbstractSearchAsyncAction.java:775) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:43.246949+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.executeNextPhase(AbstractSearchAsyncAction.java:395) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:43.246959+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.onPhaseDone(AbstractSearchAsyncAction.java:815) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:43.246976+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.onShardFailure(AbstractSearchAsyncAction.java:548) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:43.246979+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.lambda$performPhaseOnShard$0(AbstractSearchAsyncAction.java:290) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:43.246995+00:00at org.opensearch.action.search.AbstractSearchAsyncAction$2.doRun(AbstractSearchAsyncAction.java:373) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:43.246998+00:00at org.opensearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:52) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:43.247003+00:00at org.opensearch.threadpool.TaskAwareRunnable.doRun(TaskAwareRunnable.java:78) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:43.247006+00:00at org.opensearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:52) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:43.247009+00:00at org.opensearch.common.util.concurrent.TimedRunnable.doRun(TimedRunnable.java:59) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:43.247014+00:00at org.opensearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:1014) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:43.247017+00:00at org.opensearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:52) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:43.247022+00:00at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+2025-10-13 15:50:43.247025+00:00at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+2025-10-13 15:50:43.247029+00:00at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2025-10-13 15:50:43.927193+00:00[2025-10-13T15:50:43,927][WARN ][o.o.c.r.a.AllocationService] [wazuh.indexer] Falling back to single shard assignment since batch mode disable or multiple custom allocators set
+2025-10-13 15:50:45.498747+00:00[2025-10-13T15:50:45,498][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[wazuh-states-inventory-packages-wazuh.manager/Za1P807YRcSIRP9Noouevw]
+2025-10-13 15:50:45.504553+00:00[2025-10-13T15:50:45,504][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[wazuh-states-inventory-system-wazuh.manager/HhBuml_TSQGHdWMX-awlSA]
+2025-10-13 15:50:45.508118+00:00[2025-10-13T15:50:45,507][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[wazuh-states-vulnerabilities-wazuh.manager/3AwsmwfgQPOvT-2IY32png]
+2025-10-13 15:50:45.511439+00:00[2025-10-13T15:50:45,511][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[wazuh-states-inventory-processes-wazuh.manager/bLHgiPVHTWuryw5X7CVpNQ]
+2025-10-13 15:50:45.757651+00:00[2025-10-13T15:50:45,756][WARN ][r.suppressed             ] [wazuh.indexer] path: /.kibana/_count, params: {index=.kibana}
+2025-10-13 15:50:45.757723+00:00org.opensearch.action.search.SearchPhaseExecutionException: all shards failed
+2025-10-13 15:50:45.757751+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.onPhaseFailure(AbstractSearchAsyncAction.java:775) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:45.757754+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.executeNextPhase(AbstractSearchAsyncAction.java:395) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:45.757760+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.onPhaseDone(AbstractSearchAsyncAction.java:815) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:45.757764+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.onShardFailure(AbstractSearchAsyncAction.java:548) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:45.757767+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.lambda$performPhaseOnShard$0(AbstractSearchAsyncAction.java:290) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:45.757772+00:00at org.opensearch.action.search.AbstractSearchAsyncAction$2.doRun(AbstractSearchAsyncAction.java:373) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:45.757775+00:00at org.opensearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:52) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:45.757780+00:00at org.opensearch.threadpool.TaskAwareRunnable.doRun(TaskAwareRunnable.java:78) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:45.757783+00:00at org.opensearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:52) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:45.757786+00:00at org.opensearch.common.util.concurrent.TimedRunnable.doRun(TimedRunnable.java:59) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:45.757791+00:00at org.opensearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:1014) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:45.757794+00:00at org.opensearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:52) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:45.757799+00:00at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+2025-10-13 15:50:45.757802+00:00at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+2025-10-13 15:50:45.757806+00:00at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2025-10-13 15:50:46.475805+00:00[2025-10-13T15:50:46,475][INFO ][o.o.m.a.MLModelAutoReDeployer] [wazuh.indexer] Index not found, not performing auto reloading!
+2025-10-13 15:50:46.476011+00:00[2025-10-13T15:50:46,475][INFO ][o.o.m.c.MLCommonsClusterManagerEventListener] [wazuh.indexer] Starting ML sync up job...
+2025-10-13 15:50:48.265695+00:00[2025-10-13T15:50:48,264][WARN ][r.suppressed             ] [wazuh.indexer] path: /.kibana/_count, params: {index=.kibana}
+2025-10-13 15:50:48.265787+00:00org.opensearch.action.search.SearchPhaseExecutionException: all shards failed
+2025-10-13 15:50:48.265797+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.onPhaseFailure(AbstractSearchAsyncAction.java:775) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:48.265803+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.executeNextPhase(AbstractSearchAsyncAction.java:395) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:48.265820+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.onPhaseDone(AbstractSearchAsyncAction.java:815) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:48.265826+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.onShardFailure(AbstractSearchAsyncAction.java:548) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:48.265838+00:00at org.opensearch.action.search.AbstractSearchAsyncAction.lambda$performPhaseOnShard$0(AbstractSearchAsyncAction.java:290) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:48.265845+00:00at org.opensearch.action.search.AbstractSearchAsyncAction$2.doRun(AbstractSearchAsyncAction.java:373) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:48.265850+00:00at org.opensearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:52) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:48.265862+00:00at org.opensearch.threadpool.TaskAwareRunnable.doRun(TaskAwareRunnable.java:78) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:48.265868+00:00at org.opensearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:52) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:48.265879+00:00at org.opensearch.common.util.concurrent.TimedRunnable.doRun(TimedRunnable.java:59) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:48.265886+00:00at org.opensearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:1014) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:48.265892+00:00at org.opensearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:52) [opensearch-2.19.2.jar:2.19.2]
+2025-10-13 15:50:48.265903+00:00at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+2025-10-13 15:50:48.265909+00:00at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+2025-10-13 15:50:48.265916+00:00at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2025-10-13 15:50:48.686419+00:00[2025-10-13T15:50:48,686][WARN ][o.o.c.r.a.AllocationService] [wazuh.indexer] Falling back to single shard assignment since batch mode disable or multiple custom allocators set
+2025-10-13 15:50:49.117757+00:00[2025-10-13T15:50:49,117][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[.kibana_1/Of5cvm6cRX2sryJmVGRAZQ]
+2025-10-13 15:50:49.359015+00:00[2025-10-13T15:50:49,358][INFO ][o.o.c.r.a.AllocationService] [wazuh.indexer] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[.kibana_1][0]]]).
+2025-10-13 15:50:49.803633+00:00[2025-10-13T15:50:49,803][WARN ][o.o.c.r.a.AllocationService] [wazuh.indexer] Falling back to single shard assignment since batch mode disable or multiple custom allocators set
+2025-10-13 15:50:51.217762+00:00[2025-10-13T15:50:51,217][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[5c3-uEceS1yjViaIg-CZCA/zryrTCuIQLyIcv8c8h59hA]
+2025-10-13 15:50:51.225623+00:00[2025-10-13T15:50:51,225][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[ftXfqx04S_ih8WiQOYahDA/7vwT-wODTLKblZSSmAQFiw]
+2025-10-13 15:50:52.382821+00:00[2025-10-13T15:50:52,382][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[pQv6SkirTj6-DV7HsTnTsg/zKaWG4obSre1MgtFdbWLGg]
+2025-10-13 15:50:52.395657+00:00[2025-10-13T15:50:52,395][INFO ][o.o.c.m.MetadataIndexTemplateService] [wazuh.indexer] adding template [wazuh] for index patterns [wazuh-alerts-4.x-*, wazuh-archives-4.x-*]
+2025-10-13 15:50:56.482866+00:00[2025-10-13T15:50:56,482][INFO ][o.o.m.c.MLSyncUpCron     ] [wazuh.indexer] ML configuration already initialized, no action needed
+2025-10-13 15:51:36.450978+00:00[2025-10-13T15:51:36,450][INFO ][o.o.i.i.ManagedIndexCoordinator] [wazuh.indexer] Performing move cluster state metadata.
+2025-10-13 15:51:36.451540+00:00[2025-10-13T15:51:36,451][INFO ][o.o.i.i.MetadataService  ] [wazuh.indexer] ISM config index not exist, so we cancel the metadata migration job.
+2025-10-13 15:51:41.854267+00:00[2025-10-13T15:51:41,854][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[validate-template-pyo3slbwsu2h5srpktpg8g/EuhLIntUQVWva4gEVWVgPw]
+2025-10-13 15:51:41.858564+00:00[2025-10-13T15:51:41,858][INFO ][o.o.c.m.MetadataIndexTemplateService] [wazuh.indexer] updating index template [wazuh-states-vulnerabilities-wazuh.manager_template] for index patterns [wazuh-states-vulnerabilities-*]
+2025-10-13 15:51:42.000839+00:00[2025-10-13T15:51:42,000][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[validate-template-wv9wmkpyr_ccaebd7n2aiq/4xB5hn8BRzSsP0LOauuBog]
+2025-10-13 15:51:42.004126+00:00[2025-10-13T15:51:42,004][INFO ][o.o.c.m.MetadataIndexTemplateService] [wazuh.indexer] updating index template [wazuh-states-inventory-packages-wazuh.manager_template] for index patterns [wazuh-states-inventory-packages*]
+2025-10-13 15:51:42.093936+00:00[2025-10-13T15:51:42,093][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[wazuh-states-vulnerabilities-wazuh.manager/3AwsmwfgQPOvT-2IY32png]
+2025-10-13 15:51:43.014274+00:00[2025-10-13T15:51:43,014][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[validate-template-cy4wo5hns3ihotcprr__ew/iwf9zZj2Q92rvZgj-2oG-Q]
+2025-10-13 15:51:43.016589+00:00[2025-10-13T15:51:43,016][INFO ][o.o.c.m.MetadataIndexTemplateService] [wazuh.indexer] updating index template [wazuh-states-inventory-system-wazuh.manager_template] for index patterns [wazuh-states-inventory-system*]
+2025-10-13 15:51:44.456215+00:00[2025-10-13T15:51:44,456][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[validate-template-4mfoawbvsw-ah9y9fbzndg/rBMVLj0BTEC8UTutQxExIQ]
+2025-10-13 15:51:44.458413+00:00[2025-10-13T15:51:44,458][INFO ][o.o.c.m.MetadataIndexTemplateService] [wazuh.indexer] updating index template [wazuh-states-inventory-processes-wazuh.manager_template] for index patterns [wazuh-states-inventory-processes*]
+2025-10-13 15:51:45.504597+00:00[2025-10-13T15:51:45,504][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[validate-template-azjos9nzqu-uhzz2npmwdq/qNl3TpC2QsOg2JLNDXgFkg]
+2025-10-13 15:51:45.506541+00:00[2025-10-13T15:51:45,506][INFO ][o.o.c.m.MetadataIndexTemplateService] [wazuh.indexer] updating index template [wazuh-states-inventory-ports-wazuh.manager_template] for index patterns [wazuh-states-inventory-ports*]
+2025-10-13 15:51:46.198648+00:00[2025-10-13T15:51:46,198][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[validate-template-fv1m6tn1tlqykvdqi2acxw/qDu71NAYS4aDELmNAv3YmQ]
+2025-10-13 15:51:46.200374+00:00[2025-10-13T15:51:46,200][INFO ][o.o.c.m.MetadataIndexTemplateService] [wazuh.indexer] updating index template [wazuh-states-inventory-hotfixes-wazuh.manager_template] for index patterns [wazuh-states-inventory-hotfixes*]
+2025-10-13 15:51:47.349382+00:00[2025-10-13T15:51:47,349][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[validate-template-v7pmybqmt8g1ijvwwxuf4w/jaEZIBC4T9u--IU71Cyr_A]
+2025-10-13 15:51:47.351603+00:00[2025-10-13T15:51:47,351][INFO ][o.o.c.m.MetadataIndexTemplateService] [wazuh.indexer] updating index template [wazuh-states-inventory-hardware-wazuh.manager_template] for index patterns [wazuh-states-inventory-hardware*]
+2025-10-13 15:51:48.497371+00:00[2025-10-13T15:51:48,497][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[validate-template-7tdjicgstxkjz4e1nhklua/oWZG3vBbRtqgkwhFNhMU1g]
+2025-10-13 15:51:48.499659+00:00[2025-10-13T15:51:48,499][INFO ][o.o.c.m.MetadataIndexTemplateService] [wazuh.indexer] updating index template [wazuh-states-inventory-protocols-wazuh.manager_template] for index patterns [wazuh-states-inventory-protocols*]
+2025-10-13 15:51:49.672971+00:00[2025-10-13T15:51:49,672][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[validate-template-x2ivd6vorlaajweg_dxeng/YVCXAC27QG2yFB9uIeivnA]
+2025-10-13 15:51:49.674973+00:00[2025-10-13T15:51:49,674][INFO ][o.o.c.m.MetadataIndexTemplateService] [wazuh.indexer] updating index template [wazuh-states-inventory-interfaces-wazuh.manager_template] for index patterns [wazuh-states-inventory-interfaces*]
+2025-10-13 15:51:50.546014+00:00[2025-10-13T15:51:50,545][INFO ][o.o.p.PluginsService     ] [wazuh.indexer] PluginService:onIndexModule index:[validate-template-mlv3kgplqdq_a3r5xlurja/BTQsyajHT6aku7sZ8T_IDA]
+2025-10-13 15:51:50.547838+00:00[2025-10-13T15:51:50,547][INFO ][o.o.c.m.MetadataIndexTemplateService] [wazuh.indexer] updating index template [wazuh-states-inventory-networks-wazuh.manager_template] for index patterns [wazuh-states-inventory-networks*]
+2025-10-13 15:52:36.451031+00:00[2025-10-13T15:52:36,450][INFO ][o.o.i.i.ManagedIndexCoordinator] [wazuh.indexer] Cancel background move metadata process.
+2025-10-13 15:52:36.451562+00:00[2025-10-13T15:52:36,451][INFO ][o.o.i.i.ManagedIndexCoordinator] [wazuh.indexer] Performing move cluster state metadata.
+2025-10-13 15:52:36.451658+00:00[2025-10-13T15:52:36,451][INFO ][o.o.i.i.MetadataService  ] [wazuh.indexer] Move metadata has finished.
+2025-10-13 15:55:35.790845+00:00[2025-10-13T15:55:35,790][INFO ][o.o.j.s.JobSweeper       ] [wazuh.indexer] Running full sweep
 ```
 
 ## wazuh.dashboard
 
 ```
-0:0:0:17::2:9200"}
-2025-10-13 13:16:50.762259+00:00{"type":"log","@timestamp":"2025-10-13T13:16:50Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:16:53.266757+00:00{"type":"log","@timestamp":"2025-10-13T13:16:53Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:16:55.766919+00:00{"type":"log","@timestamp":"2025-10-13T13:16:55Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:16:58.271060+00:00{"type":"log","@timestamp":"2025-10-13T13:16:58Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:00.758044+00:00{"type":"log","@timestamp":"2025-10-13T13:17:00Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:03.263606+00:00{"type":"log","@timestamp":"2025-10-13T13:17:03Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:05.770930+00:00{"type":"log","@timestamp":"2025-10-13T13:17:05Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:08.280526+00:00{"type":"log","@timestamp":"2025-10-13T13:17:08Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:10.776226+00:00{"type":"log","@timestamp":"2025-10-13T13:17:10Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:13.268313+00:00{"type":"log","@timestamp":"2025-10-13T13:17:13Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:15.765984+00:00{"type":"log","@timestamp":"2025-10-13T13:17:15Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:18.289890+00:00{"type":"log","@timestamp":"2025-10-13T13:17:18Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:20.783095+00:00{"type":"log","@timestamp":"2025-10-13T13:17:20Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:23.288560+00:00{"type":"log","@timestamp":"2025-10-13T13:17:23Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:25.785035+00:00{"type":"log","@timestamp":"2025-10-13T13:17:25Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:28.287800+00:00{"type":"log","@timestamp":"2025-10-13T13:17:28Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:30.786597+00:00{"type":"log","@timestamp":"2025-10-13T13:17:30Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:33.280285+00:00{"type":"log","@timestamp":"2025-10-13T13:17:33Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:35.792145+00:00{"type":"log","@timestamp":"2025-10-13T13:17:35Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:38.287307+00:00{"type":"log","@timestamp":"2025-10-13T13:17:38Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:40.792386+00:00{"type":"log","@timestamp":"2025-10-13T13:17:40Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:43.295521+00:00{"type":"log","@timestamp":"2025-10-13T13:17:43Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:45.784086+00:00{"type":"log","@timestamp":"2025-10-13T13:17:45Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:48.285542+00:00{"type":"log","@timestamp":"2025-10-13T13:17:48Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:50.786008+00:00{"type":"log","@timestamp":"2025-10-13T13:17:50Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:53.292868+00:00{"type":"log","@timestamp":"2025-10-13T13:17:53Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:55.801732+00:00{"type":"log","@timestamp":"2025-10-13T13:17:55Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:17:58.295304+00:00{"type":"log","@timestamp":"2025-10-13T13:17:58Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:00.802767+00:00{"type":"log","@timestamp":"2025-10-13T13:18:00Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:03.293117+00:00{"type":"log","@timestamp":"2025-10-13T13:18:03Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:05.805446+00:00{"type":"log","@timestamp":"2025-10-13T13:18:05Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:08.299014+00:00{"type":"log","@timestamp":"2025-10-13T13:18:08Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:10.803690+00:00{"type":"log","@timestamp":"2025-10-13T13:18:10Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:13.306698+00:00{"type":"log","@timestamp":"2025-10-13T13:18:13Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:15.805745+00:00{"type":"log","@timestamp":"2025-10-13T13:18:15Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:18.297003+00:00{"type":"log","@timestamp":"2025-10-13T13:18:18Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:20.806286+00:00{"type":"log","@timestamp":"2025-10-13T13:18:20Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:23.312410+00:00{"type":"log","@timestamp":"2025-10-13T13:18:23Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:25.812466+00:00{"type":"log","@timestamp":"2025-10-13T13:18:25Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:28.312416+00:00{"type":"log","@timestamp":"2025-10-13T13:18:28Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:30.806748+00:00{"type":"log","@timestamp":"2025-10-13T13:18:30Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:33.317457+00:00{"type":"log","@timestamp":"2025-10-13T13:18:33Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:35.805454+00:00{"type":"log","@timestamp":"2025-10-13T13:18:35Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:38.321073+00:00{"type":"log","@timestamp":"2025-10-13T13:18:38Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:40.808045+00:00{"type":"log","@timestamp":"2025-10-13T13:18:40Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:43.321055+00:00{"type":"log","@timestamp":"2025-10-13T13:18:43Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:45.810298+00:00{"type":"log","@timestamp":"2025-10-13T13:18:45Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:48.319558+00:00{"type":"log","@timestamp":"2025-10-13T13:18:48Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:50.810709+00:00{"type":"log","@timestamp":"2025-10-13T13:18:50Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:53.312116+00:00{"type":"log","@timestamp":"2025-10-13T13:18:53Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:55.813395+00:00{"type":"log","@timestamp":"2025-10-13T13:18:55Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:18:58.328503+00:00{"type":"log","@timestamp":"2025-10-13T13:18:58Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:00.816529+00:00{"type":"log","@timestamp":"2025-10-13T13:19:00Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:03.331683+00:00{"type":"log","@timestamp":"2025-10-13T13:19:03Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:05.823983+00:00{"type":"log","@timestamp":"2025-10-13T13:19:05Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:08.321622+00:00{"type":"log","@timestamp":"2025-10-13T13:19:08Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:10.820007+00:00{"type":"log","@timestamp":"2025-10-13T13:19:10Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:13.326675+00:00{"type":"log","@timestamp":"2025-10-13T13:19:13Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:15.833228+00:00{"type":"log","@timestamp":"2025-10-13T13:19:15Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:18.337158+00:00{"type":"log","@timestamp":"2025-10-13T13:19:18Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:20.834318+00:00{"type":"log","@timestamp":"2025-10-13T13:19:20Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:23.336970+00:00{"type":"log","@timestamp":"2025-10-13T13:19:23Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:25.828705+00:00{"type":"log","@timestamp":"2025-10-13T13:19:25Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:28.338258+00:00{"type":"log","@timestamp":"2025-10-13T13:19:28Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:30.840184+00:00{"type":"log","@timestamp":"2025-10-13T13:19:30Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:33.338580+00:00{"type":"log","@timestamp":"2025-10-13T13:19:33Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:35.833487+00:00{"type":"log","@timestamp":"2025-10-13T13:19:35Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:38.335639+00:00{"type":"log","@timestamp":"2025-10-13T13:19:38Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:40.843712+00:00{"type":"log","@timestamp":"2025-10-13T13:19:40Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:43.340589+00:00{"type":"log","@timestamp":"2025-10-13T13:19:43Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:45.844657+00:00{"type":"log","@timestamp":"2025-10-13T13:19:45Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:48.337636+00:00{"type":"log","@timestamp":"2025-10-13T13:19:48Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:50.838105+00:00{"type":"log","@timestamp":"2025-10-13T13:19:50Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:53.342754+00:00{"type":"log","@timestamp":"2025-10-13T13:19:53Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:55.841160+00:00{"type":"log","@timestamp":"2025-10-13T13:19:55Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:19:58.341151+00:00{"type":"log","@timestamp":"2025-10-13T13:19:58Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:00.844852+00:00{"type":"log","@timestamp":"2025-10-13T13:20:00Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:03.344986+00:00{"type":"log","@timestamp":"2025-10-13T13:20:03Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:05.844963+00:00{"type":"log","@timestamp":"2025-10-13T13:20:05Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:08.346010+00:00{"type":"log","@timestamp":"2025-10-13T13:20:08Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:10.850708+00:00{"type":"log","@timestamp":"2025-10-13T13:20:10Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:13.348817+00:00{"type":"log","@timestamp":"2025-10-13T13:20:13Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:15.857858+00:00{"type":"log","@timestamp":"2025-10-13T13:20:15Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:18.350466+00:00{"type":"log","@timestamp":"2025-10-13T13:20:18Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:20.849451+00:00{"type":"log","@timestamp":"2025-10-13T13:20:20Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:23.352748+00:00{"type":"log","@timestamp":"2025-10-13T13:20:23Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:25.867460+00:00{"type":"log","@timestamp":"2025-10-13T13:20:25Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:28.354802+00:00{"type":"log","@timestamp":"2025-10-13T13:20:28Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:30.862441+00:00{"type":"log","@timestamp":"2025-10-13T13:20:30Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:33.356984+00:00{"type":"log","@timestamp":"2025-10-13T13:20:33Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:35.858103+00:00{"type":"log","@timestamp":"2025-10-13T13:20:35Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:38.358125+00:00{"type":"log","@timestamp":"2025-10-13T13:20:38Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:40.870497+00:00{"type":"log","@timestamp":"2025-10-13T13:20:40Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:43.360267+00:00{"type":"log","@timestamp":"2025-10-13T13:20:43Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:45.872813+00:00{"type":"log","@timestamp":"2025-10-13T13:20:45Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:48.362289+00:00{"type":"log","@timestamp":"2025-10-13T13:20:48Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:50.861991+00:00{"type":"log","@timestamp":"2025-10-13T13:20:50Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:53.363051+00:00{"type":"log","@timestamp":"2025-10-13T13:20:53Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:55.876397+00:00{"type":"log","@timestamp":"2025-10-13T13:20:55Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:20:58.365649+00:00{"type":"log","@timestamp":"2025-10-13T13:20:58Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:00.878855+00:00{"type":"log","@timestamp":"2025-10-13T13:21:00Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:03.369461+00:00{"type":"log","@timestamp":"2025-10-13T13:21:03Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:05.876584+00:00{"type":"log","@timestamp":"2025-10-13T13:21:05Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:08.369831+00:00{"type":"log","@timestamp":"2025-10-13T13:21:08Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:10.869734+00:00{"type":"log","@timestamp":"2025-10-13T13:21:10Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:13.370799+00:00{"type":"log","@timestamp":"2025-10-13T13:21:13Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:15.884042+00:00{"type":"log","@timestamp":"2025-10-13T13:21:15Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:18.373228+00:00{"type":"log","@timestamp":"2025-10-13T13:21:18Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:20.875490+00:00{"type":"log","@timestamp":"2025-10-13T13:21:20Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:23.377044+00:00{"type":"log","@timestamp":"2025-10-13T13:21:23Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:25.874001+00:00{"type":"log","@timestamp":"2025-10-13T13:21:25Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:28.376372+00:00{"type":"log","@timestamp":"2025-10-13T13:21:28Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:30.889777+00:00{"type":"log","@timestamp":"2025-10-13T13:21:30Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:33.378641+00:00{"type":"log","@timestamp":"2025-10-13T13:21:33Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:35.892685+00:00{"type":"log","@timestamp":"2025-10-13T13:21:35Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:38.380658+00:00{"type":"log","@timestamp":"2025-10-13T13:21:38Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:40.894964+00:00{"type":"log","@timestamp":"2025-10-13T13:21:40Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:43.381174+00:00{"type":"log","@timestamp":"2025-10-13T13:21:43Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:45.892716+00:00{"type":"log","@timestamp":"2025-10-13T13:21:45Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:48.386519+00:00{"type":"log","@timestamp":"2025-10-13T13:21:48Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:50.896262+00:00{"type":"log","@timestamp":"2025-10-13T13:21:50Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:53.387522+00:00{"type":"log","@timestamp":"2025-10-13T13:21:53Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:55.898122+00:00{"type":"log","@timestamp":"2025-10-13T13:21:55Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:21:58.388121+00:00{"type":"log","@timestamp":"2025-10-13T13:21:58Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:22:00.887944+00:00{"type":"log","@timestamp":"2025-10-13T13:22:00Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:22:03.396392+00:00{"type":"log","@timestamp":"2025-10-13T13:22:03Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:22:05.890042+00:00{"type":"log","@timestamp":"2025-10-13T13:22:05Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
-2025-10-13 13:22:08.391631+00:00{"type":"log","@timestamp":"2025-10-13T13:22:08Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
+2025-10-13 15:50:28.802946+00:00Created OpenSearch Dashboards keystore in /usr/share/wazuh-dashboard/config/opensearch_dashboards.keystore
+2025-10-13 15:50:29.660815+00:00Wazuh APP already configured
+2025-10-13 15:50:32.401896+00:00{"type":"log","@timestamp":"2025-10-13T15:50:32Z","tags":["info","plugins-service"],"pid":54,"message":"Plugin \"applicationConfig\" is disabled."}
+2025-10-13 15:50:32.402455+00:00{"type":"log","@timestamp":"2025-10-13T15:50:32Z","tags":["info","plugins-service"],"pid":54,"message":"Plugin \"cspHandler\" is disabled."}
+2025-10-13 15:50:32.402688+00:00{"type":"log","@timestamp":"2025-10-13T15:50:32Z","tags":["info","plugins-service"],"pid":54,"message":"Plugin \"dataSource\" is disabled."}
+2025-10-13 15:50:32.403084+00:00{"type":"log","@timestamp":"2025-10-13T15:50:32Z","tags":["info","plugins-service"],"pid":54,"message":"Plugin \"visTypeXy\" is disabled."}
+2025-10-13 15:50:32.403328+00:00{"type":"log","@timestamp":"2025-10-13T15:50:32Z","tags":["info","plugins-service"],"pid":54,"message":"Plugin \"workspace\" is disabled."}
+2025-10-13 15:50:32.438040+00:00{"type":"log","@timestamp":"2025-10-13T15:50:32Z","tags":["warning","config","deprecation"],"pid":54,"message":"\"opensearch.requestHeadersWhitelist\" is deprecated and has been replaced by \"opensearch.requestHeadersAllowlist\""}
+2025-10-13 15:50:32.487431+00:00{"type":"log","@timestamp":"2025-10-13T15:50:32Z","tags":["info","dynamic-config-service"],"pid":54,"message":"registering middleware to inject context to AsyncLocalStorage"}
+2025-10-13 15:50:32.507936+00:00[agentkeepalive:deprecated] options.freeSocketKeepAliveTimeout is deprecated, please use options.freeSocketTimeout instead
+2025-10-13 15:50:32.535902+00:00{"type":"log","@timestamp":"2025-10-13T15:50:32Z","tags":["info","plugins-system"],"pid":54,"message":"Setting up [50] plugins: [usageCollection,opensearchDashboardsUsageCollection,opensearchDashboardsLegacy,mapsLegacy,share,opensearchUiShared,legacyExport,embeddable,expressions,data,savedObjects,queryEnhancements,home,dashboard,visualizations,visTypeVega,visTypeTimeline,visTypeTable,visTypeMarkdown,visBuilder,visAugmenter,tileMap,regionMap,inputControlVis,ganttChartDashboards,visualize,apmOss,management,indexPatternManagement,dataSourceManagement,reportsDashboards,indexManagementDashboards,customImportMapDashboards,alertingDashboards,notificationsDashboards,console,advancedSettings,dataExplorer,charts,visTypeVislib,visTypeTimeseries,visTypeTagcloud,visTypeMetric,discover,savedObjectsManagement,securityDashboards,wazuhCore,wazuhCheckUpdates,wazuh,bfetch]"}
+2025-10-13 15:50:32.572694+00:00[agentkeepalive:deprecated] options.freeSocketKeepAliveTimeout is deprecated, please use options.freeSocketTimeout instead
+2025-10-13 15:50:32.576700+00:00{"type":"log","@timestamp":"2025-10-13T15:50:32Z","tags":["info","plugins","queryEnhancements"],"pid":54,"message":"queryEnhancements: Setup complete"}
+2025-10-13 15:50:32.661472+00:00[agentkeepalive:deprecated] options.freeSocketKeepAliveTimeout is deprecated, please use options.freeSocketTimeout instead
+2025-10-13 15:50:32.666291+00:00[agentkeepalive:deprecated] options.freeSocketKeepAliveTimeout is deprecated, please use options.freeSocketTimeout instead
+2025-10-13 15:50:32.667632+00:00[agentkeepalive:deprecated] options.freeSocketKeepAliveTimeout is deprecated, please use options.freeSocketTimeout instead
+2025-10-13 15:50:32.671593+00:00[agentkeepalive:deprecated] options.freeSocketKeepAliveTimeout is deprecated, please use options.freeSocketTimeout instead
+2025-10-13 15:50:32.680640+00:00[agentkeepalive:deprecated] options.freeSocketKeepAliveTimeout is deprecated, please use options.freeSocketTimeout instead
+2025-10-13 15:50:32.686819+00:00[agentkeepalive:deprecated] options.freeSocketKeepAliveTimeout is deprecated, please use options.freeSocketTimeout instead
+2025-10-13 15:50:32.688452+00:00[agentkeepalive:deprecated] options.freeSocketKeepAliveTimeout is deprecated, please use options.freeSocketTimeout instead
+2025-10-13 15:50:32.695437+00:00[agentkeepalive:deprecated] options.freeSocketKeepAliveTimeout is deprecated, please use options.freeSocketTimeout instead
+2025-10-13 15:50:32.705788+00:00[agentkeepalive:deprecated] options.freeSocketKeepAliveTimeout is deprecated, please use options.freeSocketTimeout instead
+2025-10-13 15:50:32.760419+00:00{"type":"log","@timestamp":"2025-10-13T15:50:32Z","tags":["info","dynamic-config-service"],"pid":54,"message":"initiating start()"}
+2025-10-13 15:50:32.760955+00:00{"type":"log","@timestamp":"2025-10-13T15:50:32Z","tags":["info","dynamic-config-service"],"pid":54,"message":"finished start()"}
+2025-10-13 15:50:32.780550+00:00{"type":"log","@timestamp":"2025-10-13T15:50:32Z","tags":["info","savedobjects-service"],"pid":54,"message":"Waiting until all OpenSearch nodes are compatible with OpenSearch Dashboards before starting saved objects migrations..."}
+2025-10-13 15:50:32.794546+00:00{"type":"log","@timestamp":"2025-10-13T15:50:32Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
+2025-10-13 15:50:32.809725+00:00{"type":"log","@timestamp":"2025-10-13T15:50:32Z","tags":["error","savedobjects-service"],"pid":54,"message":"Unable to retrieve version information from OpenSearch nodes."}
+2025-10-13 15:50:35.294328+00:00{"type":"log","@timestamp":"2025-10-13T15:50:35Z","tags":["error","opensearch","data"],"pid":54,"message":"[ConnectionError]: connect ECONNREFUSED fdd0:0:0:17::2:9200"}
+2025-10-13 15:50:38.173319+00:00{"type":"log","@timestamp":"2025-10-13T15:50:38Z","tags":["info","savedobjects-service"],"pid":54,"message":"Starting saved objects migrations"}
+2025-10-13 15:50:38.235234+00:00{"type":"log","@timestamp":"2025-10-13T15:50:38Z","tags":["error","opensearch","data"],"pid":54,"message":"[search_phase_execution_exception]: all shards failed"}
+2025-10-13 15:50:38.235638+00:00{"type":"log","@timestamp":"2025-10-13T15:50:38Z","tags":["warning","savedobjects-service"],"pid":54,"message":"Unable to connect to OpenSearch. Error: search_phase_execution_exception: "}
+2025-10-13 15:50:40.742174+00:00{"type":"log","@timestamp":"2025-10-13T15:50:40Z","tags":["error","opensearch","data"],"pid":54,"message":"[search_phase_execution_exception]: all shards failed"}
+2025-10-13 15:50:43.248680+00:00{"type":"log","@timestamp":"2025-10-13T15:50:43Z","tags":["error","opensearch","data"],"pid":54,"message":"[search_phase_execution_exception]: all shards failed"}
+2025-10-13 15:50:45.759422+00:00{"type":"log","@timestamp":"2025-10-13T15:50:45Z","tags":["error","opensearch","data"],"pid":54,"message":"[search_phase_execution_exception]: all shards failed"}
+2025-10-13 15:50:48.268314+00:00{"type":"log","@timestamp":"2025-10-13T15:50:48Z","tags":["error","opensearch","data"],"pid":54,"message":"[search_phase_execution_exception]: all shards failed"}
+2025-10-13 15:50:50.817728+00:00{"type":"log","@timestamp":"2025-10-13T15:50:50Z","tags":["warning","cross-compatibility-service"],"pid":54,"message":"Starting cross compatibility service"}
+2025-10-13 15:50:50.817970+00:00{"type":"log","@timestamp":"2025-10-13T15:50:50Z","tags":["info","plugins-system"],"pid":54,"message":"Starting [50] plugins: [usageCollection,opensearchDashboardsUsageCollection,opensearchDashboardsLegacy,mapsLegacy,share,opensearchUiShared,legacyExport,embeddable,expressions,data,savedObjects,queryEnhancements,home,dashboard,visualizations,visTypeVega,visTypeTimeline,visTypeTable,visTypeMarkdown,visBuilder,visAugmenter,tileMap,regionMap,inputControlVis,ganttChartDashboards,visualize,apmOss,management,indexPatternManagement,dataSourceManagement,reportsDashboards,indexManagementDashboards,customImportMapDashboards,alertingDashboards,notificationsDashboards,console,advancedSettings,dataExplorer,charts,visTypeVislib,visTypeTimeseries,visTypeTagcloud,visTypeMetric,discover,savedObjectsManagement,securityDashboards,wazuhCore,wazuhCheckUpdates,wazuh,bfetch]"}
+2025-10-13 15:50:51.130389+00:00{"type":"log","@timestamp":"2025-10-13T15:50:51Z","tags":["info","plugins","wazuh","initialize"],"pid":54,"message":"dashboard index: .kibana"}
+2025-10-13 15:50:51.130420+00:00{"type":"log","@timestamp":"2025-10-13T15:50:51Z","tags":["info","plugins","wazuh","initialize"],"pid":54,"message":"App revision: 01"}
+2025-10-13 15:50:51.130615+00:00{"type":"log","@timestamp":"2025-10-13T15:50:51Z","tags":["info","plugins","wazuh","initialize"],"pid":54,"message":"Total RAM: 63975MB"}
+2025-10-13 15:50:51.242502+00:00{"type":"log","@timestamp":"2025-10-13T15:50:51Z","tags":["info","plugins","wazuh","monitoring"],"pid":54,"message":"Updated the wazuh-agent template"}
+2025-10-13 15:50:51.243613+00:00{"type":"log","@timestamp":"2025-10-13T15:50:51Z","tags":["info","plugins","wazuh","cron-scheduler"],"pid":54,"message":"Updated the wazuh-statistics template"}
+2025-10-13 15:50:51.291768+00:00{"type":"log","@timestamp":"2025-10-13T15:50:51Z","tags":["listening","info"],"pid":54,"message":"Server running at https://0.0.0.0:5601"}
+2025-10-13 15:50:51.358608+00:00{"type":"log","@timestamp":"2025-10-13T15:50:51Z","tags":["info","http","server","OpenSearchDashboards"],"pid":54,"message":"http server running at https://0.0.0.0:5601"}
+2025-10-13 15:50:51.497809+00:00{"type":"log","@timestamp":"2025-10-13T15:50:51Z","tags":["error","plugins","wazuh","monitoring"],"pid":54,"message":"Request failed with status code 401"}
+2025-10-13 15:55:00.630357+00:00{"type":"log","@timestamp":"2025-10-13T15:55:00Z","tags":["error","plugins","wazuh","cron-scheduler"],"pid":54,"message":"AxiosError: Request failed with status code 401"}
+2025-10-13 15:55:00.630985+00:00{"type":"log","@timestamp":"2025-10-13T15:55:00Z","tags":["error","plugins","wazuh","cron-scheduler"],"pid":54,"message":"AxiosError: Request failed with status code 401"}
 ```
