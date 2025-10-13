@@ -5,7 +5,7 @@ publish: true
 permalink:
 title:
 date created: Sunday, October 5th 2025, 2:03 pm
-date modified: Monday, October 13th 2025, 9:19 am
+date modified: Monday, October 13th 2025, 10:02 am
 ---
 
 - [Wazuh](https://wazuh.com/)
@@ -695,12 +695,11 @@ services:
       - OPENSEARCH_JAVA_OPTS=${OPENSEARCH_JAVA_OPTS}
     ulimits:
       memlock: { soft: -1, hard: -1 }
-      nofile:  { soft: 65536, hard: 65536 }
-    # keep 9200 private; publish only if you absolutely must
-    # ports:
-    #   - "127.0.0.1:9200:9200"
+      nofile: { soft: 65536, hard: 65536 }
     volumes:
-      - ${DATA_SSD}/indexer-data:/var/lib/wazuh-indexer
+      # Named volume (Docker manages permissions)
+      - wazuh-indexer-data:/var/lib/wazuh-indexer
+      # Config files still use bind mounts (read-only, no permission issues)
       - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/root-ca.pem:/usr/share/wazuh-indexer/certs/root-ca.pem:ro
       - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.indexer-key.pem:/usr/share/wazuh-indexer/certs/wazuh.indexer.key:ro
       - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.indexer.pem:/usr/share/wazuh-indexer/certs/wazuh.indexer.pem:ro
@@ -717,10 +716,10 @@ services:
       - wazuh.indexer
     ulimits:
       memlock: { soft: -1, hard: -1 }
-      nofile:  { soft: 655360, hard: 655360 }
+      nofile: { soft: 655360, hard: 655360 }
     ports:
       - "${APP_IP}:1514:1514"
-      - "${APP_IP}:1515:1515"
+      - "${APP_IP}:1515:1515" 
       - "${APP_IP}:514:514/udp"
       - "${APP_IP}:55000:55000"
     environment:
@@ -734,18 +733,20 @@ services:
       - API_USERNAME=${API_USERNAME}
       - API_PASSWORD=${API_PASSWORD}
     volumes:
-      - ${DATA_HDD}/manager/api_configuration:/var/ossec/api/configuration
-      - ${DATA_HDD}/manager/etc:/var/ossec/etc
-      - ${DATA_HDD}/manager/logs:/var/ossec/logs
-      - ${DATA_HDD}/manager/queue:/var/ossec/queue
-      - ${DATA_HDD}/manager/var_multigroups:/var/ossec/var/multigroups
-      - ${DATA_HDD}/manager/integrations:/var/ossec/integrations
-      - ${DATA_HDD}/manager/active-response:/var/ossec/active-response/bin
-      - ${DATA_HDD}/manager/agentless:/var/ossec/agentless
-      - ${DATA_HDD}/manager/wodles:/var/ossec/wodles
-      - ${DATA_HDD}/filebeat/etc:/etc/filebeat
-      - ${DATA_HDD}/filebeat/var:/var/lib/filebeat
-      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/root-ca-manager.pem:/etc/ssl/root-ca.pem:ro
+      # Named volumes (Docker manages permissions)
+      - wazuh_api_configuration:/var/ossec/api/configuration
+      - wazuh_etc:/var/ossec/etc
+      - wazuh_logs:/var/ossec/logs
+      - wazuh_queue:/var/ossec/queue
+      - wazuh_var_multigroups:/var/ossec/var/multigroups
+      - wazuh_integrations:/var/ossec/integrations
+      - wazuh_active_response:/var/ossec/active-response/bin
+      - wazuh_agentless:/var/ossec/agentless
+      - wazuh_wodles:/var/ossec/wodles
+      - filebeat_etc:/etc/filebeat
+      - filebeat_var:/var/lib/filebeat
+      # Config files (bind mounts)
+      - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/root-ca.pem:/etc/ssl/root-ca.pem:ro
       - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.manager.pem:/etc/ssl/filebeat.pem:ro
       - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.manager-key.pem:/etc/ssl/filebeat.key:ro
       - ${CONFIG_DIR}/wazuh_cluster/wazuh_manager.conf:/wazuh-config-mount/etc/ossec.conf:ro
@@ -758,7 +759,7 @@ services:
       - wazuh.indexer
       - wazuh.manager
     ports:
-      - "${APP_IP}:443:5601"  # 5601 in container → 443 on the alias IP
+      - "${APP_IP}:443:5601"
     environment:
       - INDEXER_USERNAME=${INDEXER_USERNAME}
       - INDEXER_PASSWORD=${INDEXER_PASSWORD}
@@ -768,13 +769,32 @@ services:
       - API_USERNAME=${API_USERNAME}
       - API_PASSWORD=${API_PASSWORD}
     volumes:
+      # Named volumes (Docker manages permissions)
+      - wazuh-dashboard-config:/usr/share/wazuh-dashboard/data/wazuh/config
+      - wazuh-dashboard-custom:/usr/share/wazuh-dashboard/plugins/wazuh/public/assets/custom
+      # Config files (bind mounts)
       - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.dashboard.pem:/usr/share/wazuh-dashboard/certs/wazuh-dashboard.pem:ro
       - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/wazuh.dashboard-key.pem:/usr/share/wazuh-dashboard/certs/wazuh-dashboard-key.pem:ro
       - ${CONFIG_DIR}/wazuh_indexer_ssl_certs/root-ca.pem:/usr/share/wazuh-dashboard/certs/root-ca.pem:ro
       - ${CONFIG_DIR}/wazuh_dashboard/opensearch_dashboards.yml:/usr/share/wazuh-dashboard/config/opensearch_dashboards.yml:ro
       - ${CONFIG_DIR}/wazuh_dashboard/wazuh.yml:/usr/share/wazuh-dashboard/data/wazuh/config/wazuh.yml:ro
-      - ${DATA_HDD}/dashboard/config:/usr/share/wazuh-dashboard/data/wazuh/config
-      - ${DATA_HDD}/dashboard/custom:/usr/share/wazuh-dashboard/plugins/wazuh/public/assets/custom
+
+# Named volumes (Docker creates and manages these)
+volumes:
+  wazuh_api_configuration:
+  wazuh_etc:
+  wazuh_logs:
+  wazuh_queue:
+  wazuh_var_multigroups:
+  wazuh_integrations:
+  wazuh_active_response:
+  wazuh_agentless:
+  wazuh_wodles:
+  filebeat_etc:
+  filebeat_var:
+  wazuh-indexer-data:
+  wazuh-dashboard-config:
+  wazuh-dashboard-custom:
 ```
 
 ## .env
