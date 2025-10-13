@@ -548,6 +548,10 @@ docker run --rm --network=wazuh_default \
 ```
 
 ```bash
+docker exec -it wazuh-wazuh.indexer-1 bash
+```
+
+```bash
 # 1) (Optional) generate a new hash to paste into internal_users.yml:
 docker run --rm wazuh/wazuh-indexer \
   bash -lc '/usr/share/wazuh-indexer/plugins/opensearch-security/tools/hash.sh -p "NEWSTRONGPASSWORD"'
