@@ -122,6 +122,7 @@
 	- **[[Fintable]]**
 	- **[[Firezone]]**
 	- **[[Flameshot]]**
+	- **[[Flic 2]]**
 	- **[[Formance]]**
 	- **[[Formed]]**
 	- **[[ForwardEmail.net]]**
