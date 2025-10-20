@@ -268,6 +268,7 @@
 	- **[[R_frugal_reddit_frontpage]]**
 	- **[[R_personalfinance_overview]]**
 	- **[[R_pftools_community]]**
+	- **[[Server Part Deals - Enterprise Drives]]**
 	- **[[St Paul Center]]**
 	- **[[Techlore]]**
 	- **[[Tertulia]]**
