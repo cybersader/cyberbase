@@ -96,6 +96,7 @@
 	- **[[Cake-pay]]**
 	- **[[CalyxOS]]**
 	- **[[Canarytokens]]**
+	- **[[Capacities]]**
 	- **[[CasaOS]]**
 	- **[[Cashapp]]**
 	- **[[Castopod]]**
