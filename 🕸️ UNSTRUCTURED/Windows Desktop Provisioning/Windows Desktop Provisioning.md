@@ -5,13 +5,17 @@ aliases: [Windows Desktop Environment and App Setup Tools - Provisioning Worksta
 tags: []
 publish: true
 date created: Wednesday, November 6th 2024, 11:36 am
-date modified: Sunday, August 31st 2025, 9:25 pm
+date modified: Monday, October 27th 2025, 6:51 pm
 ---
 
 [Home OS Provisioning & Resetting](../../📁%2007%20-%20Cybersader%20Arsenal/Home%20OS%20Provisioning%20&%20Resetting/Home%20OS%20Provisioning%20&%20Resetting.md)
 
 
 - [ ] Make my own provisioning workflow for home users - security, scripting (powershell), Python, apps, etc. ➕ 2024-11-06
+
+
+- [youtube.com > How to Setup Windows PROPERLY](https://www.youtube.com/watch?v=MBCiMK4AmEI)
+- [youtube.com > How To Setup Windows](https://www.youtube.com/watch?v=0PA1wgdMeeI)
 
 # Tools, Resources
 
@@ -29,7 +33,7 @@ date modified: Sunday, August 31st 2025, 9:25 pm
 - Clonezilla
 	- [Clonezilla - About](https://clonezilla.org/)
 	- [Using Clonezilla | Welcome to The Privacy Dad's Blog!](https://theprivacydad.com/using-clonezilla/)
-
+- [christitus.com > Microwin](https://winutil.christitus.com/userguide/microwin/)
 
 - [Features · PSAppDeployToolkit](https://psappdeploytoolkit.com/features "Features · PSAppDeployToolkit")
 - [Robocopy | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy "Robocopy | Microsoft Learn")
@@ -43,6 +47,9 @@ date modified: Sunday, August 31st 2025, 9:25 pm
 - [ntdevlabs/tiny11builder: Scripts to build a trimmed-down Windows 11 image.](https://github.com/ntdevlabs/tiny11builder "ntdevlabs/tiny11builder: Scripts to build a trimmed-down Windows 11 image.")
 - [NTLite](https://www.ntlite.com/ "NTLite")
 - [winget.run | Finding winget packages made simple.](https://winget.run/ "winget.run | Finding winget packages made simple.")
+
+- [schneegans.de > Generate autounattend.xml files for Windows 10/11](https://schneegans.de/windows/unattend-generator/)
+- 
 
 ## Misc Links
 

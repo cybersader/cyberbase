@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Windows Desktop Provisioning",
+      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
+    },
+    {
+      "basename": "Windows Home IT Admin",
+      "path": "📁 07 - Cybersader Arsenal/Windows Home IT Admin/Windows Home IT Admin.md"
+    },
+    {
       "basename": "Capacities",
       "path": "⬇️ Clippings/Tech/Capacities/Capacities.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Organization Documentation & Wikis",
       "path": "📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
-    },
-    {
-      "basename": "PersonalPrivacyTips",
-      "path": "📁 07 - Cybersader Arsenal/PersonalPrivacyTips/PersonalPrivacyTips.md"
-    },
-    {
-      "basename": "📁 07 - Cybersader Arsenal",
-      "path": "📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md"
     }
   ],
   "omittedPaths": [],
