@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "ESP Home Bluetooth Proxy",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/ESP Home Bluetooth Proxy/ESP Home Bluetooth Proxy.md"
+    },
+    {
+      "basename": "Home Lab, Home Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md"
+    },
+    {
       "basename": "Windows Desktop Provisioning",
       "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
     },
@@ -63,10 +71,6 @@
     {
       "basename": "DMARC Vendors and Solutions",
       "path": "⬇️ Clippings/Websites/DMARC Vendors and Solutions/DMARC Vendors and Solutions.md"
-    },
-    {
-      "basename": "Home Lab, Home Server",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md"
     },
     {
       "basename": "Postmark",
@@ -195,10 +199,6 @@
     {
       "basename": "My Dislike of Small Talk",
       "path": "📁 14 - Journal, Diary/⬇️ Journal Drop/My Dislike of Small Talk/My Dislike of Small Talk.md"
-    },
-    {
-      "basename": "Organization Documentation & Wikis",
-      "path": "📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
     }
   ],
   "omittedPaths": [],

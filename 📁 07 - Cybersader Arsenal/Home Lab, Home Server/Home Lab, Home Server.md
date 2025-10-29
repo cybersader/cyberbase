@@ -9,6 +9,7 @@ date modified: Sunday, May 11th 2025, 11:28 am
 ---
 
 %% Begin Waypoint %%
+- **[[ESP Home Bluetooth Proxy]]**
 - **[[Home Assistant]]**
 - **[[Home Lab Networking Reference]]**
 
