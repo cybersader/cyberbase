@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sat, Oct 4, 2025 - [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Smallstep CA/TrueNAS Self-Hosted CA & Access Infrastructure]]
+> Wed, Oct 29, 2025 - [[ESP Home Bluetooth Proxy]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                                       | Last modified             |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Smallstep CA/TrueNAS Self-Hosted CA & Access Infrastructure|TrueNAS Smallstep CA]]          | Sat - 10/4/2025, 10:09 PM |
-| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                                   | Sat - 10/4/2025, 9:49 PM  |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md\|Home Lab, Home Server]]                                                       | Sat - 10/4/2025, 9:49 PM  |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md\|TrueNAS Scale Home Server]]                     | Sat - 10/4/2025, 9:49 PM  |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Guacamole/TrueNAS Scale Guacamole.md\|TrueNAS Scale Guacamole]] | Sat - 10/4/2025, 3:44 PM  |
-| [[⬇️ Clippings/Websites/DMARC Vendors and Solutions/DMARC Vendors and Solutions.md\|DMARC Vendors and Solutions]]                                          | Sat - 10/4/2025, 1:03 PM  |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                             | Sat - 10/4/2025, 1:03 PM  |
-| [[⬇️ Clippings/Tech/SimpleLogin/SimpleLogin.md\|SimpleLogin]]                                                                                              | Sat - 10/4/2025, 12:07 PM |
-| [[⬇️ Clippings/Tech/SendGrid/SendGrid.md\|SendGrid]]                                                                                                       | Sat - 10/4/2025, 12:05 PM |
-| [[⬇️ Clippings/Tech/Postmark/Postmark.md\|Postmark]]                                                                                                       | Sat - 10/4/2025, 12:05 PM |
+| File                                                                                                                                                                                                                            | Last modified              |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/ESP Home Bluetooth Proxy/ESP Home Bluetooth Proxy.md\|ESP Home Bluetooth Proxy]]                                                                                             | Wed - 10/29/2025, 8:10 PM  |
+| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                                                                                                        | Wed - 10/29/2025, 7:41 PM  |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md\|Home Lab, Home Server]]                                                                                                                            | Wed - 10/29/2025, 7:41 PM  |
+| [[🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md\|Windows Desktop Provisioning]]                                                                                                                 | Mon - 10/27/2025, 6:53 PM  |
+| [[⬇️ Clippings/Tech/Capacities/Capacities.md\|Capacities]]                                                                                                                                                                      | Fri - 10/24/2025, 4:52 PM  |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                                                                  | Mon - 10/20/2025, 6:36 PM  |
+| [[⬇️ Clippings/Websites/Server Part Deals - Enterprise Drives/Server Part Deals - Enterprise Drives.md\|Server Part Deals - Enterprise Drives]]                                                                                 | Sat - 10/18/2025, 10:50 AM |
+| [[⬇️ Clippings/Tech/Flic 2/Flic 2.md\|Flic 2]]                                                                                                                                                                                  | Sat - 10/18/2025, 10:05 AM |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Wazuh Setup TrueNAS/Wazuh Setup TrueNAS.md\|Wazuh Setup TrueNAS]]                                                                                                            | Mon - 10/13/2025, 3:09 PM  |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Self-Hosted CA & Access Infrastructure/TrueNAS Self-Hosted CA & Access Infrastructure.md\|TrueNAS Self-Hosted CA & Access Infrastructure]] | Sun - 10/5/2025, 2:04 PM   |
 
 %% DATAVIEW_PUBLISHER: end %%
 
