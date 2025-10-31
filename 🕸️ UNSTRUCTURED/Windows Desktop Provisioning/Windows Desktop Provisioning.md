@@ -5,7 +5,7 @@ aliases: [Windows Desktop Environment and App Setup Tools - Provisioning Worksta
 tags: []
 publish: true
 date created: Wednesday, November 6th 2024, 11:36 am
-date modified: Monday, October 27th 2025, 6:51 pm
+date modified: Friday, October 31st 2025, 12:51 pm
 ---
 
 [Home OS Provisioning & Resetting](../../📁%2007%20-%20Cybersader%20Arsenal/Home%20OS%20Provisioning%20&%20Resetting/Home%20OS%20Provisioning%20&%20Resetting.md)
@@ -68,3 +68,532 @@ date modified: Monday, October 27th 2025, 6:51 pm
 	- Clonezilla
 	- Sysprep
 	- PowerShell 
+
+---
+
+# Home Windows 11 Provisioning – Visual, Modular, Copy‑Paste Guide
+
+> **Audience:** beginner home‑labbers who want a repeatable Windows 11 setup with minimal clicks
+>
+> **Goal:** two clean paths – (A) Manual and (B) Streamlined image (MicroWin + Unattend) – with clear steps, default choices, and lots of copy‑paste commands.
+
+---
+
+## 🧭 Overview (pick a path)
+
+```
+PATH A: Manual (fast one‑off)                PATH B: Streamlined (hands‑off image)
+┌───────────────────────────┐                ┌─────────────────────────────────────────┐
+│ Make USB (Ventoy/Rufus/   │                │ MicroWin: build debloated ISO + local  │
+│ balenaEtcher)             │                │ offline user (no MS account)           │
+│ Install Windows           │                ├─────────────────────────────────────────┤
+│ Run apps (Ninite/Winget/  │                │ NTLite (GUI) or $OEM$ structure:       │
+│ Chocolatey)               │                │  • Embed autounattend.xml              │
+│ Optional drivers          │                │  • Add post‑install scripts (apps)     │
+└───────────────────────────┘                │  • Pack final ISO                      │
+                                             └─────────────────────────────────────────┘
+```
+
+> **Do I need the Media Creation Tool (MCT) if I use MicroWin?** No. MicroWin can download the ISO for you. Use MCT only if you prefer that path.
+
+---
+
+## 🔧 Variables (edit once; reuse everywhere)
+
+```powershell
+# --- personalize these values ---
+$UserName   = "cyberadmin"
+$TimeZone   = "Eastern Standard Time"   # e.g., "Pacific Standard Time"
+$ProvRoot   = "C:\provision"           # where we stage scripts/files
+$WingetList = "$ProvRoot\packages.json" # winget export file
+$NiniteEXE  = "$ProvRoot\Ninite.exe"    # optional Ninite bundle
+$DriversDir = "$ProvRoot\drivers"       # optional .inf trees
+```
+
+---
+
+## 📦 Tooling by Phase (light)
+
+- **Bootable USB**: **[Ventoy](https://www.ventoy.net/)** (multi‑ISO), **[Rufus](https://rufus.ie/)** (Windows tweaks), **[balenaEtcher](https://www.balena.io/etcher/)** (simple)
+- **Image/Unattend**: **[MicroWin (WinUtil)](https://winutil.christitus.com/userguide/microwin/)**, **[Schneegans Unattend Generator](https://schneegans.de/windows/unattend-generator/)**, **[UnattendedWinstall](https://github.com/memstechtips/UnattendedWinstall)**, **[NTLite](https://www.ntlite.com/)**
+- **Apps**: **[Ninite](https://ninite.com/)**, **Winget** ([winget.run](https://winget.run/)), **[Chocolatey](https://chocolatey.org/)** / **[Chocolatey GUI](https://community.chocolatey.org/packages/chocolateygui)**
+- **Drivers (example)**: **[Framework BIOS & Drivers](https://knowledgebase.frame.work/en_us/bios-and-drivers-downloads-rJ3PaCexh)**
+- **Clone (optional)**: **[Clonezilla](https://clonezilla.org/)**
+
+---
+
+## 🅰️ Path A – Manual (quick & simple)
+
+### A1) Make a bootable USB
+
+- **Ventoy** (recommended for flexibility)
+
+  1. Install Ventoy to USB → copy `Windows11.iso` to the USB → boot → pick ISO.
+- **Rufus** (Windows‑specific toggles available)
+
+  1. Select ISO → *leave “User Experience” bypasses unchecked if you’ll use your own unattend later* → Start.
+- **balenaEtcher** (cross‑platform, simple)
+
+  1. Select ISO → Select USB → Flash.
+
+### A2) Install Windows + (optional) skip MS account
+
+- If OOBE forces an online account:
+
+  - Press **Shift+F10** → run: `OOBE\BYPASSNRO` → PC reboots → choose **I don’t have internet** → **Continue with limited setup**.
+  - (Alternative helpers exist in Chris Titus’s WinUtil.)
+
+### A3) Post‑install apps (pick a style)
+
+- **Ninite (zero‑click bulk install)**
+
+  1. Build your bundle at **[ninite.com](https://ninite.com/)** → run the downloaded EXE.
+- **Winget (built‑in)**
+
+  ```powershell
+  winget search 7zip
+  winget install --id=7zip.7zip --accept-package-agreements --accept-source-agreements
+
+  # export your set for reuse next time
+  winget export -o $WingetList
+
+  # import on any machine
+  winget import -i $WingetList --accept-package-agreements --accept-source-agreements
+  ```
+- **Chocolatey (PowerShell)**
+
+  ```powershell
+  Set-ExecutionPolicy Bypass -Scope Process -Force
+  [Net.ServicePointManager]::SecurityProtocol = 3072
+  iwr https://community.chocolatey.org/install.ps1 -UseBasicParsing | iex
+  choco install 7zip git vscode -y
+  ```
+
+### A4) Drivers (safe & simple)
+
+```powershell
+# Stage drivers anywhere (e.g., $DriversDir) then run:
+pnputil /add-driver $DriversDir\*.inf /subdirs /install
+```
+
+> 💡 **Tip:** Windows Update often installs most drivers. Only stage .inf drivers if storage/NIC/GPU are missing.
+
+---
+Perfect—here’s a **hand-holding, copy-paste-ready** expansion of **Path B (Streamlined)** with lots of links, defaults, and screenshot placeholders. It shows exactly where **MicroWin, Unattend, Winget, Chocolatey, Ninite** all plug in, plus safer driver options. I’ll assume Framework Laptop first, but keep it modular so you can swap driver packs anytime.
+
+---
+
+# Path B — Streamlined (MicroWin + Unattend + Auto-apps)
+
+> [!TL;DR]
+>
+> - You **do not** need the Media Creation Tool if you let **MicroWin** download the ISO. ([winutil.christitus.com][1])
+> - Bake your **autounattend.xml** + **post-install apps** into the image via **NTLite** (GUI), or drop a **$OEM$** folder with **SetupComplete.cmd**. ([Microsoft Learn][2])
+> - Prefer **post-install** for apps (Ninite/Winget/Choco), so your image stays clean & modular. ([ninite.com][3])
+
+---
+
+## B2) Create your **autounattend.xml** (GUI generator + popular templates)
+
+You’ll define **local user, privacy/timezone**, and a **FirstLogon command** that runs your **apps script**.
+
+### Option 1 — **Schneegans** (GUI, easiest)
+
+- Open **Schneegans Unattend Generator** → fill the form.
+  **Recommended**:
+
+  - User: `cyberadmin` (+ **Autologon: 1**)
+  - Region/Language: `en-US` (or yours)
+  - Time zone: `Eastern Standard Time` (or yours)
+  - Privacy: opt-out/disable
+  - Network: offline/skip MS account prompts when possible
+- Add **FirstLogonCommands** entry (see snippet below).
+- **Download** the XML and save as `autounattend.xml`.
+  (Schneegans also documents the simple “copy XML to USB root” flow.) ([schneegans.de][7])
+
+### Option 2 — Study/adapt **popular templates**
+
+- **UnattendedWinstall** (memstechtips): curated unattend files (debloat, skip MS account, privacy), plus helper tooling. ([GitHub][8])
+- **MS docs** (what FirstLogonCommands actually does & context of passes). ([Microsoft Learn][9])
+
+> [📸 Placeholder] Schneegans “FirstLogonCommands” UI
+
+**FirstLogonCommands snippet** (runs once at first admin login):
+
+```xml
+<FirstLogonCommands>
+  <SynchronousCommand wcm:action="add">
+    <Order>1</Order>
+    <Description>Post-install apps</Description>
+    <CommandLine>powershell -ExecutionPolicy Bypass -File C:\provision\postinstall.ps1</CommandLine>
+  </SynchronousCommand>
+</FirstLogonCommands>
+```
+
+*(Per MS docs, FirstLogonCommands run elevated for the first admin user.)* ([Microsoft Learn][9])
+
+---
+
+## B3) Build the “auto-apps” step (GUI or file-drop, minimal code)
+
+> Best practice: keep apps **post-install** so you can change your app list without rebuilding Windows components.
+
+### Option A — **NTLite** (GUI-first)
+
+1. Open **NTLite**, **Add** your `Win11-MicroWin.iso`.
+2. Go to **Unattended** → **Import** your `autounattend.xml`.
+3. Add a **Post-setup / RunOnce** command to call your script:
+   `powershell -ExecutionPolicy Bypass -File C:\provision\postinstall.ps1`
+4. Use NTLite’s **Files** view to **add** these payloads into the ISO:
+
+```
+C:\provision\
+  postinstall.ps1
+  packages.json          # made by `winget export`
+  Ninite.exe             # optional single EXE bundle
+  \drivers\...           # optional .inf trees
+```
+
+5. **Build ISO** (Apply → Create ISO).
+   *(NTLite community docs/threads show both RunOnce and SetupComplete patterns.)* ([NTLite][10])
+
+### Option B — **$OEM$ folder** (no extra app, still GUI-light)
+
+Inside the ISO’s folder tree, add:
+
+```
+\sources\$OEM$\$$\Setup\Scripts\SetupComplete.cmd
+\sources\$OEM$\$1\provision\postinstall.ps1
+\sources\$OEM$\$1\provision\packages.json
+\sources\$OEM$\$1\provision\Ninite.exe
+\sources\$OEM$\$1\provision\drivers\...
+```
+
+**SetupComplete.cmd** runs *after* Windows Setup completes (pre-first-login). Put it here:
+`%WINDIR%\Setup\Scripts\SetupComplete.cmd` (the $OEM$ path above lands it there). ([Microsoft Learn][2])
+
+Example `SetupComplete.cmd` (safe, idempotent):
+
+```bat
+@echo off
+:: Winget import (if present)
+if exist C:\provision\packages.json powershell -ExecutionPolicy Bypass -Command "winget import -i C:\provision\packages.json --accept-package-agreements --accept-source-agreements"
+
+:: Ninite bundle (if present)
+if exist C:\provision\Ninite.exe start /wait "" "C:\provision\Ninite.exe"
+
+:: Chocolatey bootstrap (optional)
+powershell -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol=3072; iwr https://community.chocolatey.org/install.ps1 -UseBasicParsing | iex"
+choco install git vscode 7zip -y
+
+:: Drivers (optional, safe)
+if exist C:\provision\drivers pnputil /add-driver C:\provision\drivers\*.inf /subdirs /install
+
+exit /b 0
+```
+
+*(MS “custom script” and “FirstLogon/RunOnce” docs cover when these hooks run and contexts.)* ([Microsoft Learn][2])
+
+> [📸 Placeholder] NTLite “Unattended/RunOnce” panel & Files view
+> [📸 Placeholder] $OEM$ folder structure in extracted ISO
+
+---
+
+## B4) The **apps** themselves (baseline commands you’ll reuse)
+
+### Winget (built-in)
+
+Search, export, import:
+
+```powershell
+# Find IDs
+winget search firefox
+winget search 7zip
+
+# Export your current machine's app list (golden box)
+winget export -o C:\provision\packages.json
+
+# Import (silent-ish) on a fresh box
+winget import -i C:\provision\packages.json --accept-package-agreements --accept-source-agreements
+```
+
+(Official `export`/`import` docs for schema, switches.) ([Microsoft Learn][11])
+
+### Chocolatey
+
+Install CLI, then apps:
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force
+[Net.ServicePointManager]::SecurityProtocol = 3072
+iwr https://community.chocolatey.org/install.ps1 -UseBasicParsing | iex
+
+choco install git vscode 7zip -y
+```
+
+(Official install page & setup docs.) ([Chocolatey Software][12])
+
+### Ninite
+
+- Build a one-click installer at **ninite.com**; save as `C:\provision\Ninite.exe`; re-run later to update apps silently. ([ninite.com][3])
+
+---
+
+## B5) Drivers — simple & safe (no “trench warfare” required)
+
+- **Best default**: let Windows Update pull most drivers after first boot.
+- **If you need to stage drivers** (e.g., Wi-Fi/NVMe/odd NIC), place `.inf` folders under `C:\provision\drivers\` then run:
+
+```powershell
+pnputil /add-driver C:\provision\drivers\*.inf /subdirs /install
+```
+
+(PnPUtil syntax & usage from MS docs.) ([Microsoft Learn][13])
+
+- **Export drivers** from a working machine to reuse next time:
+
+```powershell
+Export-WindowsDriver -Online -Destination C:\drivers
+# or classic DISM
+dism /online /export-driver /destination:C:\drivers
+```
+
+(Official PowerShell DISM cmdlet docs.) ([Microsoft Learn][14])
+
+> [!TIP]
+> Have *lots* of drivers? Some deployment pros prefer `pnpunattend.exe` over `pnputil` for very large driver sets—but for home use, `pnputil` is fine. ([Deployment Research][15])
+
+---
+
+## B0) Install MicroWin (WinUtil) — GUI debloat + local offline user
+
+### Install Microwin
+
+1. Open **MicroWin docs** and follow the launch/install method you prefer.
+
+- Docs & overview: **MicroWin** (what it does; debloat, no-prompt images; local user) → *read this first*. ([winutil.christitus.com][1])
+
+Winutil must be run in Admin mode because it performs system-wide tweaks. To achieve this, run PowerShell as an administrator. Here are a few ways to do it:
+
+1. **Start menu Method:**
+    
+    - Right-click on the start menu.
+    - Choose "Windows PowerShell (Admin)" (for Windows 10) or "Terminal (Admin)" (for Windows 11).
+2. **Search and Launch Method:**
+    
+    - Press the Windows key.
+    - Type "PowerShell" or "Terminal" (for Windows 11).
+    - Press `Ctrl + Shift + Enter` or Right-click and choose "Run as administrator" to launch it with administrator privileges.
+
+#### Launch Command
+
+Stable Branch (Recommended):
+
+```powershell
+irm "https://christitus.com/win" | iex
+```
+
+Dev Branch:
+
+```powershell
+irm "https://christitus.com/windev" | iex
+```
+
+If you have Issues, refer to [Known Issues](https://winutil.christitus.com/knownissues/)
+
+### Building an image with Microwin
+
+1. In **MicroWin**:
+
+- **Load/Download ISO** (you can skip MCT entirely).
+- **Choose Edition** (Pro is typical).
+- **Create local user** (ex: `cyberadmin`; autologon 1 time) to **avoid MS account** in OOBE.
+- **Debloat & privacy** toggles → use defaults for now.
+- **Driver injection**: leave **off** unless you *must* (we’ll install drivers safely later).
+- **Build** your custom ISO (e.g., `Win11-MicroWin.iso`).
+  *(MicroWin is designed to produce a minimal-bloat ISO with fewer setup interruptions.)* ([winutil.christitus.com][1])
+
+![](_attachments/file-20251031125032957.png)
+
+
+
+---
+
+## B1) Make the USB (pick one)
+
+- **Ventoy** (multi-ISO): install Ventoy to USB, then copy your `Win11-MicroWin.iso` onto it → boot & select ISO. (No need to reformat for each ISO.) ([ventoy.net][4])
+- **Rufus** (Windows-specific toggles if you needed them): write the ISO directly. (Use **rufus.ie**—avoid impersonators.) ([rufus.ie][5])
+- **balenaEtcher** (simple, cross-platform “just flash”): write the ISO. (Use **balena.io/etcher**.) ([balena.io][6])
+
+> [📸 Placeholder] Ventoy USB menu / Rufus write dialog / Etcher flash screen
+
+---
+
+## B6) Boot & install (hands-off)
+
+1. Boot your **Ventoy / Rufus / Etcher** USB and choose the **MicroWin ISO**. ([ventoy.net][4])
+2. The install should be largely **unattended** (local user pre-created). ([winutil.christitus.com][1])
+3. On first admin logon (or immediately after setup if you used **SetupComplete**), your **apps** install routine runs (Winget import, Ninite, Choco, Drivers). ([Microsoft Learn][9])
+
+> [📸 Placeholder] OOBE skipping MS account (because local user was pre-created)
+
+---
+
+## B7) Troubleshooting quickies
+
+- **SetupComplete didn’t run?** Consider moving tasks to **Post-setup/RunOnce** (NTLite schedules them for you); also confirm the exact path `%WINDIR%\Setup\Scripts\SetupComplete.cmd`. ([NTLite][16])
+- **FirstLogonCommands didn’t fire?** Ensure it’s in the **oobeSystem** pass and runs a simple command first (e.g., create a log), then call PowerShell. ([Microsoft Learn][9])
+
+---
+
+## B8) Optional: capture a “factory image” for instant resets
+
+Once everything is perfect, take a **Clonezilla** image (save/restore). For new hardware, **sysprep /generalize** first, then image, so the first boot re-OOBEs (your unattend can handle it). ([ninite.com][3])
+
+---
+
+## Quick reference (pasteables)
+
+**File map (if not using NTLite’s Files pane):**
+
+```
+C:\provision\
+  postinstall.ps1
+  packages.json
+  Ninite.exe
+  \drivers\...
+
+\sources\$OEM$\$$\Setup\Scripts\SetupComplete.cmd
+```
+
+**Winget baseline:**
+
+```powershell
+winget export -o C:\provision\packages.json
+winget import -i C:\provision\packages.json --accept-package-agreements --accept-source-agreements
+```
+
+**Choco one-liner + a few apps:**
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force
+[Net.ServicePointManager]::SecurityProtocol = 3072
+iwr https://community.chocolatey.org/install.ps1 -UseBasicParsing | iex
+choco install git vscode 7zip -y
+```
+
+**Drivers (safe):**
+
+```powershell
+pnputil /add-driver C:\provision\drivers\*.inf /subdirs /install
+```
+
+---
+
+### Links you’ll actually use (grouped)
+
+- **MicroWin (WinUtil)**: docs & features. ([winutil.christitus.com][1])
+- **Unattend GUI**: Schneegans generator + usage. ([schneegans.de][7])
+- **Popular templates**: UnattendedWinstall guide & repo. ([Memorys Tech Tips][17])
+- **Unattend hooks**: FirstLogonCommands; custom setup scripts (SetupComplete/RunOnce). ([Microsoft Learn][9])
+- **App managers**: Ninite; Winget import/export; Chocolatey install/setup. ([ninite.com][3])
+- **Drivers**: pnputil; Export-WindowsDriver. ([Microsoft Learn][13])
+- **USB writers**: Ventoy / GitHub / SourceForge; Rufus site/downloads; balenaEtcher site/GitHub. ([ventoy.net][4])
+
+---
+
+## 🎛️ Optional Driver Strategies (choose 1)
+
+- **Do nothing** (let Windows Update handle it)
+- **Stage + pnputil** (safe): place `.inf` trees in `C:\provision\drivers` and auto‑install
+- **Export from a working PC** (same model):
+
+  ```cmd
+  dism /online /export-driver /destination:C:\drivers
+  ```
+- **Inject in image** (advanced): use NTLite’s driver integration
+
+> ⚠️ Only inject storage/NIC drivers if Windows can’t see the disk/network during setup.
+
+---
+
+## 💿 USB Writers – which and when
+
+- **Ventoy** – multi‑ISO toolbox; keep stock ISO + MicroWin ISO + recovery tools together
+- **Rufus** – great if you want Windows‑specific bypass toggles *on the USB*
+- **balenaEtcher** – simple, cross‑platform “just flash it” GUI
+
+---
+
+## 🧰 Frequently reused commands (copy‑paste)
+
+```powershell
+# Winget export/import
+winget export -o $WingetList
+winget import -i $WingetList --accept-package-agreements --accept-source-agreements
+
+# Chocolatey bootstrap + a few apps
+Set-ExecutionPolicy Bypass -Scope Process -Force
+[Net.ServicePointManager]::SecurityProtocol = 3072
+iwr https://community.chocolatey.org/install.ps1 -UseBasicParsing | iex
+choco install 7zip git vscode -y
+
+# Driver install
+pnputil /add-driver $DriversDir\*.inf /subdirs /install
+```
+
+---
+
+## 🧊 Optional: Capture a “perfect state” image
+
+- **Clonezilla**: boot **[Clonezilla Live](https://clonezilla.org/clonezilla-live.php)** → *save disk image* to external drive → later *restore* in minutes
+- **For other hardware**: generalize first
+
+  ```cmd
+  sysprep /generalize /oobe /shutdown
+  ```
+
+  then image with Clonezilla; your unattend handles the next OOBE.
+
+---
+
+## 📚 Resources & Links (consolidated)
+
+- **Media/USB**: [Download Windows 11 (Microsoft)](https://www.microsoft.com/en-us/software-download/windows11) · [Ventoy](https://www.ventoy.net/) · [Rufus](https://rufus.ie/) · [balenaEtcher](https://www.balena.io/etcher/)
+- **Debloat/Unattend**: [MicroWin (WinUtil)](https://winutil.christitus.com/userguide/microwin/) · [Schneegans Unattend Generator](https://schneegans.de/windows/unattend-generator/) · [UnattendedWinstall](https://github.com/memstechtips/UnattendedWinstall) · [NTLite](https://www.ntlite.com/) · [MSMG Toolkit](https://msmgtoolkit.in/)
+- **Apps**: [Ninite](https://ninite.com/) · [winget.run](https://winget.run/) · [Chocolatey](https://chocolatey.org/) · [Chocolatey GUI](https://community.chocolatey.org/packages/chocolateygui)
+- **Drivers (Framework)**: [Framework BIOS & Drivers](https://knowledgebase.frame.work/en_us/bios-and-drivers-downloads-rJ3PaCexh)
+- **Imaging**: [Clonezilla](https://clonezilla.org/) · [Clonezilla Live](https://clonezilla.org/clonezilla-live.php)
+- **Docs**: [Provisioning packages (MS)](https://learn.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-packages)
+
+---
+
+### ✅ What you get
+
+- **Manual path** for fast resets
+- **Streamlined image** that: creates a local user, skips MS account, debloats, and **auto‑installs apps**
+- Minimal code; GUI‑centric build
+- Modular file layout so you can tweak app lists without rebuilding everything
+
+
+---
+
+# References
+
+[1]: https://winutil.christitus.com/userguide/microwin/?utm_source=chatgpt.com "Microwin - Winutil Documentation - Chris Titus Tech"
+[2]: https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-a-custom-script-to-windows-setup?view=windows-11&utm_source=chatgpt.com "Add a Custom Script to Windows Setup"
+[3]: https://ninite.com/?utm_source=chatgpt.com "Ninite - Install or Update Multiple Apps at Once"
+[4]: https://www.ventoy.net/?utm_source=chatgpt.com "Ventoy"
+[5]: https://rufus.ie/?utm_source=chatgpt.com "Rufus - Create bootable USB drives the easy way"
+[6]: https://www.balena.io/etcher?utm_source=chatgpt.com "balenaEtcher - Flash OS images to SD cards & USB drives"
+[7]: https://schneegans.de/windows/unattend-generator/?utm_source=chatgpt.com "Generate autounattend.xml files for Windows 10/11"
+[8]: https://github.com/memstechtips/UnattendedWinstall?utm_source=chatgpt.com "memstechtips/UnattendedWinstall"
+[9]: https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-firstlogoncommands?utm_source=chatgpt.com "FirstLogonCommands"
+[10]: https://www.ntlite.com/community/index.php?threads%2Fdebugging-post-setup-commands.3966%2F=&utm_source=chatgpt.com "Debugging Post-Setup Commands"
+[11]: https://learn.microsoft.com/en-us/windows/package-manager/winget/export?utm_source=chatgpt.com "export command (winget)"
+[12]: https://chocolatey.org/install?utm_source=chatgpt.com "Installing Chocolatey"
+[13]: https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/pnputil-command-syntax?utm_source=chatgpt.com "PnPUtil Command Syntax - Windows drivers"
+[14]: https://learn.microsoft.com/en-us/powershell/module/dism/export-windowsdriver?view=windowsserver2025-ps&utm_source=chatgpt.com "Export-WindowsDriver (Dism)"
+[15]: https://www.deploymentresearch.com/back-to-basics-pnputil-exe-vs-pnpunattend-exe/?utm_source=chatgpt.com "Basics - Updating Drivers - pnputil.exe vs. pnpunattend.exe"
+[16]: https://www.ntlite.com/community/index.php?threads%2Fsetupcomplete-not-running.5429%2F=&utm_source=chatgpt.com "SetupComplete not running"
+[17]: https://memstechtips.com/customize-windows-installs-unattendedwinstall/?utm_source=chatgpt.com "Customize Windows Installs Easily With UnattendedWinstall!"
