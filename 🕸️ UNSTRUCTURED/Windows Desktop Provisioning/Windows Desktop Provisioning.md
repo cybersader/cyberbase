@@ -5,7 +5,7 @@ aliases: [Windows Desktop Environment and App Setup Tools - Provisioning Worksta
 tags: []
 publish: true
 date created: Wednesday, November 6th 2024, 11:36 am
-date modified: Friday, October 31st 2025, 2:36 pm
+date modified: Friday, October 31st 2025, 3:19 pm
 ---
 
 [Home OS Provisioning & Resetting](../../📁%2007%20-%20Cybersader%20Arsenal/Home%20OS%20Provisioning%20&%20Resetting/Home%20OS%20Provisioning%20&%20Resetting.md)
@@ -881,17 +881,33 @@ Open **MicroWin**:
 
 ## B1) Embed your PREP into the ISO (pick 1 of 2)
 
+- [anyburn.com > The Official AnyBurn Website](https://www.anyburn.com/) 
+	- LTT used it here in this vid to put the `autounattend.xml` onto the image/iso - [youtube.com > How to Setup Windows PROPERLY](https://www.youtube.com/watch?v=MBCiMK4AmEI&t=511s)
+
 ### Option 1 — **NTLite** (GUI-first)
 
-1. Open **NTLite**, **Add** → Image file (ISO) → select `Win11-MicroWin.iso`
-2. **Unattended** → **Import** your `autounattend.xml`
-3. **Post-setup / RunOnce** → add:
+>[youtube.com > Making the Best Windows ISO](https://www.youtube.com/watch?v=xLCWtC6UYrM)
+
+- Open **NTLite**, **Add** → Image file (ISO) → select `Win11-MicroWin.iso`
+- OR you can 7zip extract the WinUtil-generated iso then import as "image directory" in NTLite
+- Under Operating systems, click the applicable version (e.g. Home or Pro)
+- Then, in the top left, click "Load"
+	- This will allow us to edit the underlying files and add our customizations.
+- Once it's loaded, the "🟢" (dot) will show green
+- 
+
+- If we didn't load the driver when creating the initial image in Microwin, we can also try to load drivers in NTLite
+
+- 
+
+- **Unattended** → **Import** your `autounattend.xml`
+- **Post-setup / RunOnce** → add:
 
 ```
 powershell -ExecutionPolicy Bypass -File C:\provision\postinstall.ps1
 ```
 
-4. **Files** view → add payloads into ISO:
+- **Files** view → add payloads into ISO:
 
 ```
 C:\provision\
@@ -901,7 +917,7 @@ C:\provision\
   \drivers\...            # optional .inf trees
 ```
 
-5. **Apply → Create ISO** → get `Win11-MicroWin-PREP.iso`.
+- **Apply → Create ISO** → get `Win11-MicroWin-PREP.iso`.
 
 > [📸 Placeholder] NTLite “Unattended/RunOnce” panel  
 > [📸 Placeholder] NTLite “Files” view showing C:\provision folder
@@ -1051,6 +1067,7 @@ then image; first boot will re-OOBE (your unattend handles it). (General Windows
 - [youtube.com > How To Setup Windows](https://www.youtube.com/watch?v=0PA1wgdMeeI)
 - [youtube.com > Windows Utility Alternatives](https://www.youtube.com/watch?v=f8SRqHCsrkk)
 
+- [github.com > marticliment/UniGetUI: UniGetUI: The Graphical Interface for your package managers. Could be terribly described as a package manager manager to manage your package managers](https://github.com/marticliment/UniGetUI)
 - [Ninite - Install or Update Multiple Apps at Once](https://ninite.com/)
 - [The Ultimate Windows Utility - Chris Titus Tech](https://christitus.com/windows-tool/)
 - [Is there a free app like ninite that I can customize? : r/msp](https://www.reddit.com/r/msp/comments/tc7ruz/is_there_a_free_app_like_ninite_that_i_can/?rdt=37358)
