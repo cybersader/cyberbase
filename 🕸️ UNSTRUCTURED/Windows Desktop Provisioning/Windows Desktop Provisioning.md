@@ -5,64 +5,10 @@ aliases: [Windows Desktop Environment and App Setup Tools - Provisioning Worksta
 tags: []
 publish: true
 date created: Wednesday, November 6th 2024, 11:36 am
-date modified: Friday, October 31st 2025, 2:12 pm
+date modified: Friday, October 31st 2025, 2:36 pm
 ---
 
 [Home OS Provisioning & Resetting](../../📁%2007%20-%20Cybersader%20Arsenal/Home%20OS%20Provisioning%20&%20Resetting/Home%20OS%20Provisioning%20&%20Resetting.md)
-
-
-- [ ] Make my own provisioning workflow for home users - security, scripting (powershell), Python, apps, etc. ➕ 2024-11-06
-
-
-- [youtube.com > How to Setup Windows PROPERLY](https://www.youtube.com/watch?v=MBCiMK4AmEI)
-- [youtube.com > How To Setup Windows](https://www.youtube.com/watch?v=0PA1wgdMeeI)
-
-# Tools, Resources
-
-- [Ninite - Install or Update Multiple Apps at Once](https://ninite.com/)
-- [The Ultimate Windows Utility - Chris Titus Tech](https://christitus.com/windows-tool/)
-- [Is there a free app like ninite that I can customize? : r/msp](https://www.reddit.com/r/msp/comments/tc7ruz/is_there_a_free_app_like_ninite_that_i_can/?rdt=37358)
-- [Chocolatey Software | Chocolatey GUI 2.1.1](https://community.chocolatey.org/packages/chocolateygui) 
-- [winget.run | Finding winget packages made simple.](https://winget.run/)
-- [ntdevlabs/tiny11builder: Scripts to build a trimmed-down Windows 11 image.](https://github.com/ntdevlabs/tiny11builder)
-- [NTLite](https://www.ntlite.com/)
-- [Is there a tool similar to NTLite? : r/MDT](https://www.reddit.com/r/MDT/comments/1az55j1/is_there_a_tool_similar_to_ntlite/)
-- [windows-itpro-docs/windows/configuration/provisioning-packages/provisioning-how-it-works.md at public · MicrosoftDocs/windows-itpro-docs](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/configuration/provisioning-packages/provisioning-how-it-works.md)
-- [Installing Ansible — Ansible Community Documentation](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
-- https://msmgtoolkit.in/
-- Clonezilla
-	- [Clonezilla - About](https://clonezilla.org/)
-	- [Using Clonezilla | Welcome to The Privacy Dad's Blog!](https://theprivacydad.com/using-clonezilla/)
-- [christitus.com > Microwin](https://winutil.christitus.com/userguide/microwin/)
-
-- [Features · PSAppDeployToolkit](https://psappdeploytoolkit.com/features "Features · PSAppDeployToolkit")
-- [Robocopy | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy "Robocopy | Microsoft Learn")
-- [Clonezilla - About](https://clonezilla.org/ "Clonezilla - About")
-- [Clonezilla live](https://clonezilla.org/clonezilla-live.php "Clonezilla live")
-- [Chris Titus Tech | Tech Content Creator](https://christitus.com/ "Chris Titus Tech | Tech Content Creator")
-- [Windows to Linux for Powerusers](https://christitus.com/windows-to-linux/ "Windows to Linux for Powerusers")
-- [The Most Popular Windows Utility](https://christitus.com/winutil-install/ "The Most Popular Windows Utility")
-- [Chocolatey Software | Chocolatey GUI 2.1.1](https://community.chocolatey.org/packages/chocolateygui "Chocolatey Software | Chocolatey GUI 2.1.1")
-- [winget.run | Finding winget packages made simple.](https://winget.run/ "winget.run | Finding winget packages made simple.")
-- [ntdevlabs/tiny11builder: Scripts to build a trimmed-down Windows 11 image.](https://github.com/ntdevlabs/tiny11builder "ntdevlabs/tiny11builder: Scripts to build a trimmed-down Windows 11 image.")
-- [NTLite](https://www.ntlite.com/ "NTLite")
-- [winget.run | Finding winget packages made simple.](https://winget.run/ "winget.run | Finding winget packages made simple.")
-
-- [schneegans.de > Generate autounattend.xml files for Windows 10/11](https://schneegans.de/windows/unattend-generator/)
-- 
-
-## Misc Links
-
-- [Bulk enrollment for Windows devices - Microsoft Intune | Microsoft Learn](https://learn.microsoft.com/en-us/mem/intune/enrollment/windows-bulk-enroll)
-- [Provisioning packages overview | Microsoft Learn](https://learn.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-packages)
-- [unattended answer file windows 11 - Google Search](https://www.google.com/search?q=unattended+answer+file+windows+11&oq=unattended+answer+file+windows+11&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIICAEQABgWGB4yCggCEAAYgAQYogQyCggDEAAYgAQYogQyCggEEAAYgAQYogQyBggFEC4YQNIBCDQzNzVqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8 "unattended answer file windows 11 - Google Search")
-- [memstechtips/UnattendedWinstall: Personalized Unattended Answer Files that helps automatically debloat and customize Windows 10 &amp; 11 during the installation process.](https://github.com/memstechtips/UnattendedWinstall "memstechtips/UnattendedWinstall: Personalized Unattended Answer Files that helps automatically debloat and customize Windows 10 &amp; 11 during the installation process.")
-
-# Home Windows 11 Provisioning Workflow
-
-## Building Up Apps
-
----
 
 # Home Windows 11 Provisioning – Visual, Modular, Copy‑Paste Guide
 
@@ -1019,8 +965,13 @@ Use **one** of these writers:
 
 # 🅰️ Path A — Manual (quickest reset)
 
+> Get a private, streamlined, and less-bloated setup without building an image
+
 1. **Write USB** (Ventoy / Rufus / Etcher). ([Microsoft Learn](https://learn.microsoft.com/en-us/windows/package-manager/winget/export?utm_source=chatgpt.com "export command (winget)"))
 2. **Install Windows**. If OOBE forces online account: **Shift+F10** → `OOBE\BYPASSNRO` → reboot → **Continue with limited setup** (local user). _(Manual fallback — you won’t need this in Path B.)_
+	1. use the Chris Titus command - [youtube.com > Microsoft FORCES Online Accounts](https://www.youtube.com/watch?v=aEWb1otLVPo)
+	2. [github.com > ChrisTitusTech/bypassnro: Fixing Microsoft's removal of BypassNRO](https://github.com/ChrisTitusTech/bypassnro)
+	3. 
 3. **Apps**: run Ninite once; or `winget import -i $WingetList`; or Chocolatey one-liner + installs. ([Microsoft Learn](https://learn.microsoft.com/en-us/windows/package-manager/winget/export?utm_source=chatgpt.com "export command (winget)"))
 4. **Drivers** (if needed):
 
@@ -1050,9 +1001,7 @@ C:\provision\
 # 🧊 Optional: capture a “factory image” for instant resets
 
 - **Clonezilla Live**: boot → _save disk image_ to an external drive → later _restore_ in minutes. ([Microsoft Learn](https://learn.microsoft.com/en-us/windows/package-manager/winget/export?utm_source=chatgpt.com "export command (winget)"))
-    
 - For **other hardware**, first:
-    
 
 ```cmd
 sysprep /generalize /oobe /shutdown
@@ -1064,83 +1013,88 @@ then image; first boot will re-OOBE (your unattend handles it). (General Windows
 
 ---
 
-## 🧰 Frequently reused commands
-
-```powershell
-# Winget export/import (built-in)
-winget export -o $WingetList
-winget import -i $WingetList --accept-package-agreements --accept-source-agreements
-
-# Chocolatey bootstrap + a few apps
-Set-ExecutionPolicy Bypass -Scope Process -Force
-[Net.ServicePointManager]::SecurityProtocol = 3072
-iwr https://community.chocolatey.org/install.ps1 -UseBasicParsing | iex
-choco install 7zip git vscode -y
-
-# Drivers (safe)
-pnputil /add-driver $DriversDir\*.inf /subdirs /install
-```
-
-Docs for `winget`, Chocolatey, and `pnputil`. ([Microsoft Learn](https://learn.microsoft.com/en-us/windows/package-manager/winget/?utm_source=chatgpt.com "Use WinGet to install and manage applications"))
-
----
-
 # 📚 Resources (all links consolidated)
+
+- [github.com > CodingWonders/DISMTools: The connected place for Windows system administration](https://github.com/CodingWonders/DISMTools)
+- 
 
 **Image & Debloat**
 
 - MicroWin (WinUtil) overview & docs. ([winutil.christitus.com](https://winutil.christitus.com/userguide/microwin/?utm_source=chatgpt.com "Microwin - Winutil Documentation - Chris Titus Tech"))
-    
 
 **Unattend**
 
 - Schneegans Unattend Generator (GUI). ([schneegans.de](https://schneegans.de/windows/unattend-generator/?utm_source=chatgpt.com "Generate autounattend.xml files for Windows 10/11"))
-    
 - Schneegans “How to use” (USB root copy). ([schneegans.de](https://schneegans.de/windows/unattend-generator/usage/?utm_source=chatgpt.com "Use autounattend.xml files to install Windows 10/11"))
-    
 - Microsoft: `FirstLogonCommands` (oobeSystem pass, elevated, order). ([Microsoft Learn](https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-firstlogoncommands?utm_source=chatgpt.com "FirstLogonCommands"))
-    
 - Microsoft: Add custom scripts to Windows Setup (`SetupComplete.cmd`). ([Microsoft Learn](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-a-custom-script-to-windows-setup?view=windows-11&utm_source=chatgpt.com "Add a Custom Script to Windows Setup"))
-    
 
 **Apps**
 
 - Microsoft: `winget` export/import + overview. ([Microsoft Learn](https://learn.microsoft.com/en-us/windows/package-manager/winget/export?utm_source=chatgpt.com "export command (winget)"))
-    
 - Chocolatey install (official + docs). ([Chocolatey Software](https://chocolatey.org/install?utm_source=chatgpt.com "Installing Chocolatey"))
-    
 - Ninite (build zero-click installer). ([Microsoft Learn](https://learn.microsoft.com/en-us/windows/package-manager/winget/export?utm_source=chatgpt.com "export command (winget)"))
-    
 
 **Drivers**
 
 - Microsoft: `pnputil` (syntax & usage). ([Microsoft Learn](https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/pnputil-command-syntax?utm_source=chatgpt.com "PnPUtil Command Syntax - Windows drivers"))
-    
 - Microsoft: `Export-WindowsDriver`. ([Microsoft Learn](https://learn.microsoft.com/en-us/powershell/module/dism/export-windowsdriver?view=windowsserver2025-ps&utm_source=chatgpt.com "Export-WindowsDriver (Dism)"))
-    
 
 **USB Writers**
 
 - Ventoy (multi-ISO USB). ([Microsoft Learn](https://learn.microsoft.com/en-us/windows/package-manager/winget/export?utm_source=chatgpt.com "export command (winget)"))
-    
 - Rufus (Windows USB). ([Chocolatey Software](https://chocolatey.org/install?utm_source=chatgpt.com "Installing Chocolatey"))
-    
 - balenaEtcher (simple “flash it”). ([Microsoft Learn](https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/pnputil-command-syntax?utm_source=chatgpt.com "PnPUtil Command Syntax - Windows drivers"))
-    
+
+
+- [youtube.com > How to Setup Windows PROPERLY](https://www.youtube.com/watch?v=MBCiMK4AmEI)
+- [youtube.com > How To Setup Windows](https://www.youtube.com/watch?v=0PA1wgdMeeI)
+- [youtube.com > Windows Utility Alternatives](https://www.youtube.com/watch?v=f8SRqHCsrkk)
+
+- [Ninite - Install or Update Multiple Apps at Once](https://ninite.com/)
+- [The Ultimate Windows Utility - Chris Titus Tech](https://christitus.com/windows-tool/)
+- [Is there a free app like ninite that I can customize? : r/msp](https://www.reddit.com/r/msp/comments/tc7ruz/is_there_a_free_app_like_ninite_that_i_can/?rdt=37358)
+- [Chocolatey Software | Chocolatey GUI 2.1.1](https://community.chocolatey.org/packages/chocolateygui) 
+- [winget.run | Finding winget packages made simple.](https://winget.run/)
+- [ntdevlabs/tiny11builder: Scripts to build a trimmed-down Windows 11 image.](https://github.com/ntdevlabs/tiny11builder)
+- [NTLite](https://www.ntlite.com/)
+- [Is there a tool similar to NTLite? : r/MDT](https://www.reddit.com/r/MDT/comments/1az55j1/is_there_a_tool_similar_to_ntlite/)
+- [windows-itpro-docs/windows/configuration/provisioning-packages/provisioning-how-it-works.md at public · MicrosoftDocs/windows-itpro-docs](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/configuration/provisioning-packages/provisioning-how-it-works.md)
+- [Installing Ansible — Ansible Community Documentation](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
+- https://msmgtoolkit.in/
+- Clonezilla
+	- [Clonezilla - About](https://clonezilla.org/)
+	- [Using Clonezilla | Welcome to The Privacy Dad's Blog!](https://theprivacydad.com/using-clonezilla/)
+- [christitus.com > Microwin](https://winutil.christitus.com/userguide/microwin/)
+
+- [Features · PSAppDeployToolkit](https://psappdeploytoolkit.com/features "Features · PSAppDeployToolkit")
+- [Robocopy | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy "Robocopy | Microsoft Learn")
+- [Clonezilla - About](https://clonezilla.org/ "Clonezilla - About")
+- [Clonezilla live](https://clonezilla.org/clonezilla-live.php "Clonezilla live")
+- [Chris Titus Tech | Tech Content Creator](https://christitus.com/ "Chris Titus Tech | Tech Content Creator")
+- [Windows to Linux for Powerusers](https://christitus.com/windows-to-linux/ "Windows to Linux for Powerusers")
+- [The Most Popular Windows Utility](https://christitus.com/winutil-install/ "The Most Popular Windows Utility")
+- [Chocolatey Software | Chocolatey GUI 2.1.1](https://community.chocolatey.org/packages/chocolateygui "Chocolatey Software | Chocolatey GUI 2.1.1")
+- [winget.run | Finding winget packages made simple.](https://winget.run/ "winget.run | Finding winget packages made simple.")
+- [ntdevlabs/tiny11builder: Scripts to build a trimmed-down Windows 11 image.](https://github.com/ntdevlabs/tiny11builder "ntdevlabs/tiny11builder: Scripts to build a trimmed-down Windows 11 image.")
+- [NTLite](https://www.ntlite.com/ "NTLite")
+- [winget.run | Finding winget packages made simple.](https://winget.run/ "winget.run | Finding winget packages made simple.")
+
+- [schneegans.de > Generate autounattend.xml files for Windows 10/11](https://schneegans.de/windows/unattend-generator/)
+
+- [Bulk enrollment for Windows devices - Microsoft Intune | Microsoft Learn](https://learn.microsoft.com/en-us/mem/intune/enrollment/windows-bulk-enroll)
+- [Provisioning packages overview | Microsoft Learn](https://learn.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-packages)
+- [unattended answer file windows 11 - Google Search](https://www.google.com/search?q=unattended+answer+file+windows+11&oq=unattended+answer+file+windows+11&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIICAEQABgWGB4yCggCEAAYgAQYogQyCggDEAAYgAQYogQyCggEEAAYgAQYogQyBggFEC4YQNIBCDQzNzVqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8 "unattended answer file windows 11 - Google Search")
+- [memstechtips/UnattendedWinstall: Personalized Unattended Answer Files that helps automatically debloat and customize Windows 10 &amp; 11 during the installation process.](https://github.com/memstechtips/UnattendedWinstall "memstechtips/UnattendedWinstall: Personalized Unattended Answer Files that helps automatically debloat and customize Windows 10 &amp; 11 during the installation process.")
 
 ---
 
 ## ✅ What changed vs. your draft
 
 - **Order fixed:** PREP (apps, unattend, drivers, script) → **then** MicroWin build → USB → install.
-    
 - **MicroWin step expanded** and cross-linked to PREP (NTLite/$OEM$ embed).
-    
 - **More screenshot placeholders** throughout.
-    
 - **All links consolidated** under **Resources**, with authoritative docs.
-    
 - **More copy-paste blocks** and defaults everywhere.
-    
 
 If you want, I can also generate a small, **ready-to-use** `autounattend.xml` with your defaults (`cyberadmin`, timezone, FirstLogon hook) and a clean `postinstall.ps1` file tailored to your baseline app set.
