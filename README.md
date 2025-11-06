@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Sat, Nov 1, 2025 - [[Windows Desktop Provisioning]]
+> Wed, Nov 5, 2025 - [[20-Terminal-Alt-presenterm]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                            | Last modified              |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
-| [[🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md\|Windows Desktop Provisioning]]                                 | Fri - 10/31/2025, 3:38 PM  |
-| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                                      | Fri - 10/31/2025, 12:50 PM |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/ESP Home Bluetooth Proxy/ESP Home Bluetooth Proxy.md\|ESP Home Bluetooth Proxy]]             | Wed - 10/29/2025, 8:10 PM  |
-| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                        | Wed - 10/29/2025, 7:41 PM  |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md\|Home Lab, Home Server]]                                            | Wed - 10/29/2025, 7:41 PM  |
-| [[⬇️ Clippings/Tech/Capacities/Capacities.md\|Capacities]]                                                                                      | Fri - 10/24/2025, 4:52 PM  |
-| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                  | Mon - 10/20/2025, 6:36 PM  |
-| [[⬇️ Clippings/Websites/Server Part Deals - Enterprise Drives/Server Part Deals - Enterprise Drives.md\|Server Part Deals - Enterprise Drives]] | Sat - 10/18/2025, 10:50 AM |
-| [[⬇️ Clippings/Tech/Flic 2/Flic 2.md\|Flic 2]]                                                                                                  | Sat - 10/18/2025, 10:05 AM |
-| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Wazuh Setup TrueNAS/Wazuh Setup TrueNAS.md\|Wazuh Setup TrueNAS]]                            | Mon - 10/13/2025, 3:09 PM  |
+| File                                                                                                                                                            | Last modified            |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/20-Terminal-Alt-presenterm/20-Terminal-Alt-presenterm.md\|20-Terminal-Alt-presenterm]]                      | Wed - 11/5/2025, 9:44 PM |
+| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                                                      | Wed - 11/5/2025, 9:44 PM |
+| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/Obsidian Markdown Slides Testing.md\|Obsidian Markdown Slides Testing]]                                     | Wed - 11/5/2025, 9:44 PM |
+| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/19–Consult-Theme-Clone/19–Consult-Theme-Clone.md\|19–Consult-Theme-Clone]]                                  | Wed - 11/5/2025, 9:43 PM |
+| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/15–Charts-Options/15–Charts-Options.md\|15–Charts-Options]]                                                 | Wed - 11/5/2025, 9:43 PM |
+| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/14–Excalidraw-Workflows/14–Excalidraw-Workflows.md\|14–Excalidraw-Workflows]]                               | Wed - 11/5/2025, 9:41 PM |
+| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/14–Excalidraw-Workflows/Drawing 2025-11-05 21.40.53.excalidraw.md\|Drawing 2025-11-05 21.40.53.excalidraw]] | Wed - 11/5/2025, 9:40 PM |
+| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/13–Links-Embeds-&-Transclusions/13–Links-Embeds-&-Transclusions.md\|13–Links-Embeds-&-Transclusions]]       | Wed - 11/5/2025, 9:40 PM |
+| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/12–Templates-&-DefaultTemplate.md/12–Templates-&-DefaultTemplate.md.md\|12–Templates-&-DefaultTemplate.md]] | Wed - 11/5/2025, 9:38 PM |
+| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/11-Speaker-Notes-Chalkboard/11-Speaker-Notes-Chalkboard.md\|11-Speaker-Notes-Chalkboard]]                   | Wed - 11/5/2025, 9:37 PM |
 
 %% DATAVIEW_PUBLISHER: end %%
 
