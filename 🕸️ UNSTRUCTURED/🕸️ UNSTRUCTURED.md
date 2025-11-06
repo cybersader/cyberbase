@@ -62,6 +62,7 @@ date modified: Friday, January 31st 2025, 4:34 pm
 - **[[Metals]]**
 - **[[Microsoft Outlook]]**
 - **[[Misc Web Dev]]**
+- **[[Obsidian Markdown Slides Testing]]**
 - **[[Obsidian Plugin Development Quickstart]]**
 - **[[Obsidian Vaults with Cybersecurity]]**
 - **[[OSINT]]**

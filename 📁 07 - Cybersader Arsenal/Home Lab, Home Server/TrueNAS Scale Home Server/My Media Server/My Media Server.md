@@ -5,7 +5,7 @@ aliases: []
 tags: []
 publish: true
 date created: Friday, March 29th 2024, 11:03 pm
-date modified: Monday, September 15th 2025, 4:45 pm
+date modified: Wednesday, November 5th 2025, 9:06 pm
 ---
 
 # Links
@@ -14,7 +14,7 @@ date modified: Monday, September 15th 2025, 4:45 pm
 - [github.com > HaveAGitGat/Tdarr: Tdarr - Distributed transcode automation using FFmpeg/HandBrake + Audio/Video library analytics + video health checking (Windows](https://github.com/HaveAGitGat/Tdarr)
 - [github.com > Media Workflow for Jellyfin](https://gist.github.com/Tuetenk0pp/516dce7aa4951e029ee64403191ac6f2)
 - [awesome-jellyfin/awesome-jellyfin: A Collection of Awesome Jellyfin Plugins, Themes, Guides and More!](https://github.com/awesome-jellyfin/awesome-jellyfin)
-- 
+- [youtube.com > I built an Automated Media Ingestion Server](https://www.youtube.com/watch?v=2BMk4HheUmg)
 - YouTube
 	- [Alternative YouTube Clients](../../../../📁%2003%20-%20Curations,%20Stacks/Alternative%20YouTube%20Clients/Alternative%20YouTube%20Clients.md)
 	- [r/youtubedl Wiki: yt-dlp GUI Guide](https://www.reddit.com/r/youtubedl/wiki/info-guis/)

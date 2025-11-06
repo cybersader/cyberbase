@@ -1,12 +1,76 @@
 {
   "recentFiles": [
     {
-      "basename": "Windows Desktop Provisioning",
-      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
+      "basename": "20-Terminal-Alt-presenterm",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/20-Terminal-Alt-presenterm/20-Terminal-Alt-presenterm.md"
+    },
+    {
+      "basename": "19–Consult-Theme-Clone",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/19–Consult-Theme-Clone/19–Consult-Theme-Clone.md"
+    },
+    {
+      "basename": "15–Charts-Options",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/15–Charts-Options/15–Charts-Options.md"
+    },
+    {
+      "basename": "14–Excalidraw-Workflows",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/14–Excalidraw-Workflows/14–Excalidraw-Workflows.md"
+    },
+    {
+      "basename": "Drawing 2025-11-05 21.40.53.excalidraw",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/14–Excalidraw-Workflows/Drawing 2025-11-05 21.40.53.excalidraw.md"
+    },
+    {
+      "basename": "13–Links-Embeds-&-Transclusions",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/13–Links-Embeds-&-Transclusions/13–Links-Embeds-&-Transclusions.md"
+    },
+    {
+      "basename": "12–Templates-&-DefaultTemplate.md",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/12–Templates-&-DefaultTemplate.md/12–Templates-&-DefaultTemplate.md.md"
+    },
+    {
+      "basename": "11-Speaker-Notes-Chalkboard",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/11-Speaker-Notes-Chalkboard/11-Speaker-Notes-Chalkboard.md"
+    },
+    {
+      "basename": "10-Footnotes-Citation",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/10-Footnotes-Citation/10-Footnotes-Citation.md"
+    },
+    {
+      "basename": "09-Image-Layouts-Grids",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/09-Image-Layouts-Grids/09-Image-Layouts-Grids.md"
+    },
+    {
+      "basename": "07–Mermaid-Deep-Dive.md",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/07–Mermaid-Deep-Dive.md/07–Mermaid-Deep-Dive.md.md"
+    },
+    {
+      "basename": "06–Code-Blocks-Highlighting",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/06–Code-Blocks-Highlighting/06–Code-Blocks-Highlighting.md"
+    },
+    {
+      "basename": "05-Backgrounds-Video-Parallax",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/05-Backgrounds-Video-Parallax/05-Backgrounds-Video-Parallax.md"
+    },
+    {
+      "basename": "03-Fragments-Showcase",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/03-Fragments-Showcase/03-Fragments-Showcase.md"
+    },
+    {
+      "basename": "01-Getting-Started",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/01-Getting-Started/01-Getting-Started.md"
+    },
+    {
+      "basename": "Obsidian Markdown Slides Testing",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/Obsidian Markdown Slides Testing.md"
     },
     {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
+    },
+    {
+      "basename": "Windows Desktop Provisioning",
+      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
     },
     {
       "basename": "ESP Home Bluetooth Proxy",
@@ -135,70 +199,6 @@
     {
       "basename": "Home-Ec 2025",
       "path": "🕸️ UNSTRUCTURED/Home-Ec 2025/Home-Ec 2025.md"
-    },
-    {
-      "basename": "Security Metaphors & Allegories",
-      "path": "📁 06 - Learning, Notes/Security Metaphors & Allegories/Security Metaphors & Allegories.md"
-    },
-    {
-      "basename": "📁 04 - Cyber & Digital Trust",
-      "path": "📁 04 - Cyber & Digital Trust/📁 04 - Cyber & Digital Trust.md"
-    },
-    {
-      "basename": "Android Portmaster alternatives",
-      "path": "⬇️ Clippings/ChatGPT/Android Portmaster alternatives/Android Portmaster alternatives.md"
-    },
-    {
-      "basename": "Open Explorer in PS",
-      "path": "⬇️ Clippings/ChatGPT/Open Explorer in PS/Open Explorer in PS.md"
-    },
-    {
-      "basename": "Smart light landscape",
-      "path": "⬇️ Clippings/ChatGPT/Smart light connection routes/Smart light landscape.md"
-    },
-    {
-      "basename": "TrueNAS storage tools",
-      "path": "⬇️ Clippings/ChatGPT/TrueNAS storage tools/TrueNAS storage tools.md"
-    },
-    {
-      "basename": "Spa cleaning process",
-      "path": "⬇️ Clippings/ChatGPT/Spa cleaning process/Spa cleaning process.md"
-    },
-    {
-      "basename": "Affordable roller shades Home Assistant",
-      "path": "⬇️ Clippings/ChatGPT/Affordable roller shades Home Assistant/Affordable roller shades Home Assistant.md"
-    },
-    {
-      "basename": "Mosquito control near hot tub",
-      "path": "⬇️ Clippings/ChatGPT/Mosquito control near hot tub/Mosquito control near hot tub.md"
-    },
-    {
-      "basename": "Chlorine and pH in hot tubs",
-      "path": "⬇️ Clippings/ChatGPT/Chlorine and pH in hot tubs/Chlorine and pH in hot tubs.md"
-    },
-    {
-      "basename": "Download m3u8 video",
-      "path": "⬇️ Clippings/ChatGPT/Download m3u8 video/Download m3u8 video.md"
-    },
-    {
-      "basename": "Social engineering printer attacks",
-      "path": "⬇️ Clippings/ChatGPT/Social engineering printer attacks/Social engineering printer attacks.md"
-    },
-    {
-      "basename": "Community IT Support Setup",
-      "path": "🕸️ UNSTRUCTURED/Community IT Support Setup.md"
-    },
-    {
-      "basename": "Catholic & Christian Taxonomies",
-      "path": "📁 50 - Cybersade/Catholic & Christian Taxonomies/Catholic & Christian Taxonomies.md"
-    },
-    {
-      "basename": "Activitywatch",
-      "path": "⬇️ Clippings/Tech/Activitywatch/Activitywatch.md"
-    },
-    {
-      "basename": "My Dislike of Small Talk",
-      "path": "📁 14 - Journal, Diary/⬇️ Journal Drop/My Dislike of Small Talk/My Dislike of Small Talk.md"
     }
   ],
   "omittedPaths": [],
