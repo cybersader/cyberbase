@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Wed, Nov 5, 2025 - [[20-Terminal-Alt-presenterm]]
+> Fri, Nov 7, 2025 - [[⬇️ Content Creation Stack Ideas]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                                            | Last modified            |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/20-Terminal-Alt-presenterm/20-Terminal-Alt-presenterm.md\|20-Terminal-Alt-presenterm]]                      | Wed - 11/5/2025, 9:44 PM |
-| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                                                      | Wed - 11/5/2025, 9:44 PM |
-| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/Obsidian Markdown Slides Testing.md\|Obsidian Markdown Slides Testing]]                                     | Wed - 11/5/2025, 9:44 PM |
-| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/19–Consult-Theme-Clone/19–Consult-Theme-Clone.md\|19–Consult-Theme-Clone]]                                  | Wed - 11/5/2025, 9:43 PM |
-| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/15–Charts-Options/15–Charts-Options.md\|15–Charts-Options]]                                                 | Wed - 11/5/2025, 9:43 PM |
-| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/14–Excalidraw-Workflows/14–Excalidraw-Workflows.md\|14–Excalidraw-Workflows]]                               | Wed - 11/5/2025, 9:41 PM |
-| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/14–Excalidraw-Workflows/Drawing 2025-11-05 21.40.53.excalidraw.md\|Drawing 2025-11-05 21.40.53.excalidraw]] | Wed - 11/5/2025, 9:40 PM |
-| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/13–Links-Embeds-&-Transclusions/13–Links-Embeds-&-Transclusions.md\|13–Links-Embeds-&-Transclusions]]       | Wed - 11/5/2025, 9:40 PM |
-| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/12–Templates-&-DefaultTemplate.md/12–Templates-&-DefaultTemplate.md.md\|12–Templates-&-DefaultTemplate.md]] | Wed - 11/5/2025, 9:38 PM |
-| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/11-Speaker-Notes-Chalkboard/11-Speaker-Notes-Chalkboard.md\|11-Speaker-Notes-Chalkboard]]                   | Wed - 11/5/2025, 9:37 PM |
+| File                                                                                                                                                            | Last modified             |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [[📁 12 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md\|⬇️ Content Creation Stack Ideas]]                                | Fri - 11/7/2025, 10:09 PM |
+| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/Obsidian Markdown Slides Testing.md\|Obsidian Markdown Slides Testing]]                                     | Fri - 11/7/2025, 8:35 PM  |
+| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/20-Terminal-Alt-presenterm/20-Terminal-Alt-presenterm.md\|20-Terminal-Alt-presenterm]]                      | Wed - 11/5/2025, 9:44 PM  |
+| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                                                      | Wed - 11/5/2025, 9:44 PM  |
+| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/19–Consult-Theme-Clone/19–Consult-Theme-Clone.md\|19–Consult-Theme-Clone]]                                  | Wed - 11/5/2025, 9:43 PM  |
+| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/15–Charts-Options/15–Charts-Options.md\|15–Charts-Options]]                                                 | Wed - 11/5/2025, 9:43 PM  |
+| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/14–Excalidraw-Workflows/14–Excalidraw-Workflows.md\|14–Excalidraw-Workflows]]                               | Wed - 11/5/2025, 9:41 PM  |
+| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/14–Excalidraw-Workflows/Drawing 2025-11-05 21.40.53.excalidraw.md\|Drawing 2025-11-05 21.40.53.excalidraw]] | Wed - 11/5/2025, 9:40 PM  |
+| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/13–Links-Embeds-&-Transclusions/13–Links-Embeds-&-Transclusions.md\|13–Links-Embeds-&-Transclusions]]       | Wed - 11/5/2025, 9:40 PM  |
+| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/12–Templates-&-DefaultTemplate.md/12–Templates-&-DefaultTemplate.md.md\|12–Templates-&-DefaultTemplate.md]] | Wed - 11/5/2025, 9:38 PM  |
 
 %% DATAVIEW_PUBLISHER: end %%
 
