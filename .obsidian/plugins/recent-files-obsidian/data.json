@@ -1,8 +1,44 @@
 {
   "recentFiles": [
     {
+      "basename": "⬇️ Content Creation Stack Ideas",
+      "path": "📁 12 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md"
+    },
+    {
+      "basename": "Audio Stack",
+      "path": "📁 12 - Content Creation/Audio Stack/Audio Stack.md"
+    },
+    {
+      "basename": "📁 12 - Content Creation",
+      "path": "📁 12 - Content Creation/📁 12 - Content Creation.md"
+    },
+    {
+      "basename": "Awesome Streaming",
+      "path": "📁 12 - Content Creation/Awesome Streaming/Awesome Streaming.md"
+    },
+    {
+      "basename": "Mic Setup Audio 2024",
+      "path": "📁 12 - Content Creation/Mic Setup Audio 2024/Mic Setup Audio 2024.md"
+    },
+    {
+      "basename": "AI Content Workflows",
+      "path": "📁 12 - Content Creation/Cybersader Content/AI Content Workflows/AI Content Workflows.md"
+    },
+    {
+      "basename": "Cybersader Content",
+      "path": "📁 12 - Content Creation/Cybersader Content/Cybersader Content.md"
+    },
+    {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
+    },
+    {
+      "basename": "Screen Recording",
+      "path": "📁 12 - Content Creation/Screen Recording/Screen Recording.md"
+    },
+    {
+      "basename": "Wo mic",
+      "path": "⬇️ Clippings/Tech/Wo mic/Wo mic.md"
     },
     {
       "basename": "Obsidian Markdown Slides Testing",
@@ -163,38 +199,6 @@
     {
       "basename": "Houston Command Center",
       "path": "⬇️ Clippings/Tech/Houston Command Center/Houston Command Center.md"
-    },
-    {
-      "basename": "XCP-ng",
-      "path": "⬇️ Clippings/Tech/XCP-ng/XCP-ng.md"
-    },
-    {
-      "basename": "Rallly",
-      "path": "⬇️ Clippings/Tech/Rallly/Rallly.md"
-    },
-    {
-      "basename": "Reitti",
-      "path": "⬇️ Clippings/Tech/Reitti/Reitti.md"
-    },
-    {
-      "basename": "TrueNAS Immich Setup",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Immich Setup/TrueNAS Immich Setup.md"
-    },
-    {
-      "basename": "TrueNAS Scale - Nginx Proxy Setup",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale - Nginx Proxy Setup/TrueNAS Scale - Nginx Proxy Setup.md"
-    },
-    {
-      "basename": "WWHF 2024 - Deadwood",
-      "path": "📁 06 - Learning, Notes/BHIS, Antisyphon/WWHF 2024 - Deadwood/WWHF 2024 - Deadwood.md"
-    },
-    {
-      "basename": "Cyber & Game Theory",
-      "path": "📁 50 - Cybersade/YLC 2024 Presentation/Cyber & Game Theory/Cyber & Game Theory.md"
-    },
-    {
-      "basename": "YLC 2024 Presentation",
-      "path": "📁 50 - Cybersade/YLC 2024 Presentation/YLC 2024 Presentation.md"
     }
   ],
   "omittedPaths": [],
