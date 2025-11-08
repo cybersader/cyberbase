@@ -1040,6 +1040,9 @@
       },
       "folders2graph": {
         "startupType": "instant"
+      },
+      "slides-extended": {
+        "startupType": "instant"
       }
     },
     "loadOrder": []
