@@ -9,7 +9,7 @@ date modified: Sunday, May 11th 2025, 11:28 am
 ---
 
 %% Begin Waypoint %%
-- **[[Backup TrueNAS Boot Drive]]**
+- **[[Backup TrueNAS Boot Drive & TrueCommand]]**
 - **[[ESP Home Bluetooth Proxy]]**
 - **[[Home Assistant]]**
 - **[[Home Lab Networking Reference]]**
