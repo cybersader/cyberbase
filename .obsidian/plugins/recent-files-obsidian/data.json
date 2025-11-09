@@ -5,6 +5,14 @@
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Backup TrueNAS Boot Drive/Backup TrueNAS Boot Drive.md"
     },
     {
+      "basename": "3D Printer",
+      "path": "📁 07 - Cybersader Arsenal/3D Printer/3D Printer.md"
+    },
+    {
+      "basename": "3D Printing",
+      "path": "⬇ INBOX, DROPZONE/3D Printing/3D Printing.md"
+    },
+    {
       "basename": "⬇️ Content Creation Stack Ideas",
       "path": "📁 12 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Email Aliasing",
       "path": "📁 50 - Cybersade/YLC 2024 Presentation/Email Aliasing/Email Aliasing.md"
-    },
-    {
-      "basename": "Seraph Secure",
-      "path": "⬇️ Clippings/Tech/Seraph Secure/Seraph Secure.md"
-    },
-    {
-      "basename": "Ceph",
-      "path": "⬇️ Clippings/Tech/Ceph/Ceph.md"
     }
   ],
   "omittedPaths": [],

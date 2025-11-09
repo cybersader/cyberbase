@@ -5,8 +5,11 @@ publish: true
 permalink:
 title:
 date created: Saturday, July 19th 2025, 12:03 pm
-date modified: Saturday, July 19th 2025, 12:31 pm
+date modified: Sunday, November 9th 2025, 1:16 pm
 ---
+
+[3D Prints](../3D%20Prints/3D%20Prints.md)
+[3D Printing](../../⬇%20INBOX,%20DROPZONE/3D%20Printing/3D%20Printing.md)
 
 # Setup - Ender 3 S1
 
