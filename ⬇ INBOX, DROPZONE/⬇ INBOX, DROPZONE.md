@@ -26,6 +26,7 @@ publish: true
 - **[[Governance, Mgmt]]**
 - **[[Lookalike Domain Defenses]]**
 - **[[Malware Sandboxing]]**
+- **[[MCP and Obsidian]]**
 - **[[Modern Financial Industry Tech]]**
 - **[[Productivity Tech]]**
 - **[[Public Threat Actor Reporting, Blacklists]]**

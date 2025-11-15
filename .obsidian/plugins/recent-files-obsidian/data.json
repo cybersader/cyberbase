@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "MCP and Obsidian",
+      "path": "⬇ INBOX, DROPZONE/MCP and Obsidian/MCP and Obsidian.md"
+    },
+    {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "DMARC Vendors and Solutions",
       "path": "⬇️ Clippings/Websites/DMARC Vendors and Solutions/DMARC Vendors and Solutions.md"
-    },
-    {
-      "basename": "Postmark",
-      "path": "⬇️ Clippings/Tech/Postmark/Postmark.md"
     }
   ],
   "omittedPaths": [],
