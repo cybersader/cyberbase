@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Obsidian Plugins and Ideas for Contributions",
+      "path": "📁 51 - Cyberbase/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
+    },
+    {
+      "basename": "Obsidian Plugin Development Quickstart",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Plugin Development Quickstart/Obsidian Plugin Development Quickstart.md"
+    },
+    {
+      "basename": "Plugin Development",
+      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
+    },
+    {
       "basename": "MCP and Obsidian",
       "path": "⬇ INBOX, DROPZONE/MCP and Obsidian/MCP and Obsidian.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "Firezone",
       "path": "⬇️ Clippings/Tech/Firezone/Firezone.md"
-    },
-    {
-      "basename": "SendGrid",
-      "path": "⬇️ Clippings/Tech/SendGrid/SendGrid.md"
-    },
-    {
-      "basename": "SimpleLogin",
-      "path": "⬇️ Clippings/Tech/SimpleLogin/SimpleLogin.md"
-    },
-    {
-      "basename": "DMARC Vendors and Solutions",
-      "path": "⬇️ Clippings/Websites/DMARC Vendors and Solutions/DMARC Vendors and Solutions.md"
     }
   ],
   "omittedPaths": [],

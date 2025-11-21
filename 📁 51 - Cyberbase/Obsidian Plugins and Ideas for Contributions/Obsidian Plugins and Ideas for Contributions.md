@@ -1,10 +1,11 @@
 ---
+title:
 permalink:
 aliases: []
 tags: []
 publish: true
 date created: Monday, March 18th 2024, 11:08 am
-date modified: Monday, December 16th 2024, 10:02 pm
+date modified: Friday, November 21st 2025, 11:29 am
 created: Monday, Mar 18, 2024 11:08 AM
 updated: Wednesday, Mar 20, 2024 10:07 AM
 ---
@@ -13,6 +14,22 @@ updated: Wednesday, Mar 20, 2024 10:07 AM
 [Plugin Development](../../📁%2010%20-%20My%20Obsidian%20Stack/Plugin%20Development/Plugin%20Development.md)
 
 - [ ] Extend wiki functionality with plugins and tools - focus on generating markdown and being compatible with Publish 🔼 ➕ 2024-04-22
+
+# Core Plugin Ideas (2026)
+
+- Obsidian Base to ZIP - button to create and download a ZIP from all files listed in an Obsidian Bases query
+	- 
+- Update the Obsidian Markwhen plugin to allow edits and seeing markdown on timeline items
+	- 
+- [github.com > cybersader/obsidian-tag-and-folder-mapper](https://github.com/cybersader/obsidian-tag-and-folder-mapper)
+    - Plugin to map/sync folders and tags (multiple hierarchies so we aren't limited by folders)
+- [github.com > cybersader/Crosswalker: A tool for crosswalking cybersecurity frameworks and translating them into an Obsidian vault (Other names: LavaLinker](https://github.com/cybersader/Crosswalker)
+- Frameworker - `map evidence to frameworks in one place`
+    - Obsidian plugin or workflow to define metadata per framework ↔️ obsidian_note connection. This would be step 1 of turning Obsidian into a full-fledged GRC database.
+    - Ex:
+        - You could have a `CIS 1.1.md` note generated from the above [crosswalker](https://github.com/cybersader/Crosswalker) tool and a `Evidence_containing_note.md`. Linking from one note to another isn't good enough. Instead, we can include metadata above the connection in the link syntax are in an intermediate file.
+        - From `Evidence_containing_note.md`, we would make a link like `framework_here:: [CIS 1.1](../CIS 1.1.md) {"reviewer": "Person", "status":"covered"}`.
+- 
 
 # Obsidian Plugin Sources
 
