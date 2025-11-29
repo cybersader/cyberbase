@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "MCP and Obsidian",
+      "path": "⬇ INBOX, DROPZONE/MCP and Obsidian/MCP and Obsidian.md"
+    },
+    {
+      "basename": "Personal Agentic Setup",
+      "path": "📁 01 - Projects/Personal Agentic Setup/Personal Agentic Setup.md"
+    },
+    {
       "basename": "Obsidian Plugins and Ideas for Contributions",
       "path": "📁 51 - Cyberbase/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
     },
@@ -11,10 +19,6 @@
     {
       "basename": "Plugin Development",
       "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
-    },
-    {
-      "basename": "MCP and Obsidian",
-      "path": "⬇ INBOX, DROPZONE/MCP and Obsidian/MCP and Obsidian.md"
     },
     {
       "basename": "My Media Server",
@@ -195,10 +199,6 @@
     {
       "basename": "TrueNAS Scale Home Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
-    },
-    {
-      "basename": "Firezone",
-      "path": "⬇️ Clippings/Tech/Firezone/Firezone.md"
     }
   ],
   "omittedPaths": [],
