@@ -1,8 +1,112 @@
 {
   "recentFiles": [
     {
+      "basename": "File Organization Systems",
+      "path": "📁 54 - Obsidian Vault Organization/File Organization Systems/File Organization Systems.md"
+    },
+    {
+      "basename": "Dynamic Tags & Folders Plugin Development",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
+    },
+    {
+      "basename": "📁 54 - Obsidian Vault Organization",
+      "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
+    },
+    {
+      "basename": "Obsidian Plugins and Ideas for Contributions",
+      "path": "📁 51 - Cyberbase/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
+    },
+    {
+      "basename": "📁 52 - Obsidian Starters & Templates",
+      "path": "📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md"
+    },
+    {
+      "basename": "Obsidian Plugin Development Quickstart",
+      "path": "🕸️ UNSTRUCTURED/Obsidian Plugin Development Quickstart/Obsidian Plugin Development Quickstart.md"
+    },
+    {
+      "basename": "QuickAdd Tag Selector",
+      "path": "🕸️ UNSTRUCTURED/QuickAdd Tag Selector/QuickAdd Tag Selector.md"
+    },
+    {
+      "basename": "Choosing a Tag Structure in Obsidian",
+      "path": "📁 54 - Obsidian Vault Organization/Choosing a Tag Structure in Obsidian/Choosing a Tag Structure in Obsidian.md"
+    },
+    {
+      "basename": "Combining Tags, Links, & Folders",
+      "path": "📁 54 - Obsidian Vault Organization/Combining Tags, Links, & Folders/Combining Tags, Links, & Folders.md"
+    },
+    {
+      "basename": "Cyberbase Folder Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Folder Structure/Cyberbase Folder Structure.md"
+    },
+    {
+      "basename": "Cyberbase New Note Workflow",
+      "path": "📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md"
+    },
+    {
+      "basename": "Cyberbase Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Tag Structure/Cyberbase Tag Structure.md"
+    },
+    {
+      "basename": "Vault Folder & Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
+    },
+    {
+      "basename": "Tag Structure Examples",
+      "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
+    },
+    {
+      "basename": "Tag Pages",
+      "path": "📁 54 - Obsidian Vault Organization/Tag Pages/Tag Pages.md"
+    },
+    {
+      "basename": "Tag Bugs & Issues",
+      "path": "📁 54 - Obsidian Vault Organization/Tag Bugs & Issues/Tag Bugs & Issues.md"
+    },
+    {
+      "basename": "Tag & Folder Plugins",
+      "path": "📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md"
+    },
+    {
+      "basename": "SEACOWr Quick Start",
+      "path": "📁 54 - Obsidian Vault Organization/SEACOWr Quick Start/SEACOWr Quick Start.md"
+    },
+    {
+      "basename": "Obsidian Tag Limitations & Unicode Order",
+      "path": "📁 54 - Obsidian Vault Organization/Obsidian Tag Limitations & Unicode Order/Obsidian Tag Limitations & Unicode Order.md"
+    },
+    {
+      "basename": "Knowledge Platform Organization Meta-Framework",
+      "path": "📁 54 - Obsidian Vault Organization/Knowledge Platform Organization Meta-Framework/Knowledge Platform Organization Meta-Framework.md"
+    },
+    {
+      "basename": "Knowledge Organization",
+      "path": "📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md"
+    },
+    {
+      "basename": "Information Organization Systems",
+      "path": "📁 54 - Obsidian Vault Organization/Information Organization Systems/Information Organization Systems.md"
+    },
+    {
+      "basename": "Ideas for Knowledge Organization",
+      "path": "📁 54 - Obsidian Vault Organization/Ideas for Knowledge Organization/Ideas for Knowledge Organization.md"
+    },
+    {
+      "basename": "Folders vs Tags vs Links vs Metadata",
+      "path": "📁 54 - Obsidian Vault Organization/Folders vs Tags vs Links vs Metadata/Folders vs Tags vs Links vs Metadata.md"
+    },
+    {
+      "basename": "Folder Structure Ideas",
+      "path": "📁 54 - Obsidian Vault Organization/Folder Structure Ideas/Folder Structure Ideas.md"
+    },
+    {
       "basename": "MCP and Obsidian",
       "path": "⬇ INBOX, DROPZONE/MCP and Obsidian/MCP and Obsidian.md"
+    },
+    {
+      "basename": "Plugin Development",
+      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
     },
     {
       "basename": "Wispr flow",
@@ -11,18 +115,6 @@
     {
       "basename": "Personal Agentic Setup",
       "path": "📁 01 - Projects/Personal Agentic Setup/Personal Agentic Setup.md"
-    },
-    {
-      "basename": "Obsidian Plugins and Ideas for Contributions",
-      "path": "📁 51 - Cyberbase/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
-    },
-    {
-      "basename": "Obsidian Plugin Development Quickstart",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Plugin Development Quickstart/Obsidian Plugin Development Quickstart.md"
-    },
-    {
-      "basename": "Plugin Development",
-      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
     },
     {
       "basename": "My Media Server",
@@ -107,94 +199,6 @@
     {
       "basename": "Drawing 2025-11-05 21.40.53.excalidraw",
       "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/14–Excalidraw-Workflows/Drawing 2025-11-05 21.40.53.excalidraw.md"
-    },
-    {
-      "basename": "13–Links-Embeds-&-Transclusions",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/13–Links-Embeds-&-Transclusions/13–Links-Embeds-&-Transclusions.md"
-    },
-    {
-      "basename": "12–Templates-&-DefaultTemplate.md",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/12–Templates-&-DefaultTemplate.md/12–Templates-&-DefaultTemplate.md.md"
-    },
-    {
-      "basename": "11-Speaker-Notes-Chalkboard",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/11-Speaker-Notes-Chalkboard/11-Speaker-Notes-Chalkboard.md"
-    },
-    {
-      "basename": "10-Footnotes-Citation",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/10-Footnotes-Citation/10-Footnotes-Citation.md"
-    },
-    {
-      "basename": "09-Image-Layouts-Grids",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/09-Image-Layouts-Grids/09-Image-Layouts-Grids.md"
-    },
-    {
-      "basename": "07–Mermaid-Deep-Dive.md",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/07–Mermaid-Deep-Dive.md/07–Mermaid-Deep-Dive.md.md"
-    },
-    {
-      "basename": "06–Code-Blocks-Highlighting",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/06–Code-Blocks-Highlighting/06–Code-Blocks-Highlighting.md"
-    },
-    {
-      "basename": "05-Backgrounds-Video-Parallax",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/05-Backgrounds-Video-Parallax/05-Backgrounds-Video-Parallax.md"
-    },
-    {
-      "basename": "03-Fragments-Showcase",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/03-Fragments-Showcase/03-Fragments-Showcase.md"
-    },
-    {
-      "basename": "01-Getting-Started",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/01-Getting-Started/01-Getting-Started.md"
-    },
-    {
-      "basename": "Windows Desktop Provisioning",
-      "path": "🕸️ UNSTRUCTURED/Windows Desktop Provisioning/Windows Desktop Provisioning.md"
-    },
-    {
-      "basename": "ESP Home Bluetooth Proxy",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/ESP Home Bluetooth Proxy/ESP Home Bluetooth Proxy.md"
-    },
-    {
-      "basename": "Home Lab, Home Server",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md"
-    },
-    {
-      "basename": "Windows Home IT Admin",
-      "path": "📁 07 - Cybersader Arsenal/Windows Home IT Admin/Windows Home IT Admin.md"
-    },
-    {
-      "basename": "Capacities",
-      "path": "⬇️ Clippings/Tech/Capacities/Capacities.md"
-    },
-    {
-      "basename": "Server Part Deals - Enterprise Drives",
-      "path": "⬇️ Clippings/Websites/Server Part Deals - Enterprise Drives/Server Part Deals - Enterprise Drives.md"
-    },
-    {
-      "basename": "Flic 2",
-      "path": "⬇️ Clippings/Tech/Flic 2/Flic 2.md"
-    },
-    {
-      "basename": "Custom Docker Apps in TrueNAS",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Custom Docker Apps in TrueNAS/Custom Docker Apps in TrueNAS.md"
-    },
-    {
-      "basename": "TrueNAS Scale Guacamole",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Guacamole/TrueNAS Scale Guacamole.md"
-    },
-    {
-      "basename": "TrueNAS Self-Hosted CA & Access Infrastructure",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Self-Hosted CA & Access Infrastructure/TrueNAS Self-Hosted CA & Access Infrastructure.md"
-    },
-    {
-      "basename": "Wazuh Setup TrueNAS",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Wazuh Setup TrueNAS/Wazuh Setup TrueNAS.md"
-    },
-    {
-      "basename": "Home Cyber Resilience Tech Stack",
-      "path": "📁 07 - Cybersader Arsenal/Home Network/Home Cyber Resilience Tech Stack/Home Cyber Resilience Tech Stack.md"
     }
   ],
   "omittedPaths": [],
