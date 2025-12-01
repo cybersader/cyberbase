@@ -18,7 +18,6 @@ date modified: Wednesday, March 19th 2025, 12:49 pm
 
 > [!tldr] My tag structure uses my [SEACOW(r)](../Knowledge%20Platform%20Organization%20Framework/Knowledge%20Platform%20Organization%20Meta-Framework.md) knowledge platform organization framework
 
-
 # Problems in Tagging
 
 - folders to tagging
