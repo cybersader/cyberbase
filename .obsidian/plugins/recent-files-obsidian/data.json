@@ -1,32 +1,52 @@
 {
   "recentFiles": [
     {
-      "basename": "Tag Bugs & Issues",
-      "path": "📁 54 - Obsidian Vault Organization/Tag Bugs & Issues/Tag Bugs & Issues.md"
-    },
-    {
-      "basename": "Vault Folder & Tag Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
+      "basename": "Tag & Folder Plugins",
+      "path": "📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md"
     },
     {
       "basename": "Tag Structure Examples",
       "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
     },
     {
-      "basename": "Tag Pages",
-      "path": "📁 54 - Obsidian Vault Organization/Tag Pages/Tag Pages.md"
+      "basename": "Vault Folder & Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
     },
     {
-      "basename": "Tag & Folder Plugins",
-      "path": "📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md"
+      "basename": "Tag Bugs & Issues",
+      "path": "📁 54 - Obsidian Vault Organization/Tag Bugs & Issues/Tag Bugs & Issues.md"
     },
     {
-      "basename": "SEACOWr Quick Start",
-      "path": "📁 54 - Obsidian Vault Organization/SEACOWr Quick Start/SEACOWr Quick Start.md"
+      "basename": "Dynamic Tags & Folders Plugin Development",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
+    },
+    {
+      "basename": "Cyberbase Folder Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Folder Structure/Cyberbase Folder Structure.md"
     },
     {
       "basename": "Obsidian Tag Limitations & Unicode Order",
       "path": "📁 54 - Obsidian Vault Organization/Obsidian Tag Limitations & Unicode Order/Obsidian Tag Limitations & Unicode Order.md"
+    },
+    {
+      "basename": "File Order",
+      "path": "📁 10 - My Obsidian Stack/File Order/File Order.md"
+    },
+    {
+      "basename": "Using Tags",
+      "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
+    },
+    {
+      "basename": "Cyberbase Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Tag Structure/Cyberbase Tag Structure.md"
+    },
+    {
+      "basename": "Tag Pages",
+      "path": "📁 54 - Obsidian Vault Organization/Tag Pages/Tag Pages.md"
+    },
+    {
+      "basename": "SEACOWr Quick Start",
+      "path": "📁 54 - Obsidian Vault Organization/SEACOWr Quick Start/SEACOWr Quick Start.md"
     },
     {
       "basename": "Knowledge Platform Organization Meta-Framework",
@@ -53,16 +73,8 @@
       "path": "📁 54 - Obsidian Vault Organization/File Organization Systems/File Organization Systems.md"
     },
     {
-      "basename": "Cyberbase Tag Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Tag Structure/Cyberbase Tag Structure.md"
-    },
-    {
       "basename": "Cyberbase New Note Workflow",
       "path": "📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md"
-    },
-    {
-      "basename": "Cyberbase Folder Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Folder Structure/Cyberbase Folder Structure.md"
     },
     {
       "basename": "Combining Tags, Links, & Folders",
@@ -75,10 +87,6 @@
     {
       "basename": "Dynamic Folders & Tags",
       "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
-    },
-    {
-      "basename": "Dynamic Tags & Folders Plugin Development",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
     },
     {
       "basename": "Folders vs Tags vs Links vs Metadata",
@@ -191,14 +199,6 @@
     {
       "basename": "19–Consult-Theme-Clone",
       "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/19–Consult-Theme-Clone/19–Consult-Theme-Clone.md"
-    },
-    {
-      "basename": "15–Charts-Options",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/15–Charts-Options/15–Charts-Options.md"
-    },
-    {
-      "basename": "14–Excalidraw-Workflows",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/14–Excalidraw-Workflows/14–Excalidraw-Workflows.md"
     }
   ],
   "omittedPaths": [],
