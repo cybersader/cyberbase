@@ -68,7 +68,7 @@ if (pages.length === 0) {
 %%
 
 > [!note] Latest Edit
-> Fri, Nov 7, 2025 - [[⬇️ Content Creation Stack Ideas]]
+> Fri, Dec 12, 2025 - [[Cyberbase Folder Structure]]
 
 %% DATAVIEW_PUBLISHER: end %%
 
@@ -100,18 +100,18 @@ SORT file.mtime DESC LIMIT 10
 ```
 %%
 
-| File                                                                                                                                                            | Last modified             |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [[📁 12 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md\|⬇️ Content Creation Stack Ideas]]                                | Fri - 11/7/2025, 10:09 PM |
-| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/Obsidian Markdown Slides Testing.md\|Obsidian Markdown Slides Testing]]                                     | Fri - 11/7/2025, 8:35 PM  |
-| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/20-Terminal-Alt-presenterm/20-Terminal-Alt-presenterm.md\|20-Terminal-Alt-presenterm]]                      | Wed - 11/5/2025, 9:44 PM  |
-| [[🕸️ UNSTRUCTURED/🕸️ UNSTRUCTURED.md\|🕸️ UNSTRUCTURED]]                                                                                                      | Wed - 11/5/2025, 9:44 PM  |
-| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/19–Consult-Theme-Clone/19–Consult-Theme-Clone.md\|19–Consult-Theme-Clone]]                                  | Wed - 11/5/2025, 9:43 PM  |
-| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/15–Charts-Options/15–Charts-Options.md\|15–Charts-Options]]                                                 | Wed - 11/5/2025, 9:43 PM  |
-| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/14–Excalidraw-Workflows/14–Excalidraw-Workflows.md\|14–Excalidraw-Workflows]]                               | Wed - 11/5/2025, 9:41 PM  |
-| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/14–Excalidraw-Workflows/Drawing 2025-11-05 21.40.53.excalidraw.md\|Drawing 2025-11-05 21.40.53.excalidraw]] | Wed - 11/5/2025, 9:40 PM  |
-| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/13–Links-Embeds-&-Transclusions/13–Links-Embeds-&-Transclusions.md\|13–Links-Embeds-&-Transclusions]]       | Wed - 11/5/2025, 9:40 PM  |
-| [[🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/12–Templates-&-DefaultTemplate.md/12–Templates-&-DefaultTemplate.md.md\|12–Templates-&-DefaultTemplate.md]] | Wed - 11/5/2025, 9:38 PM  |
+| File                                                                                                                                                                             | Last modified              |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| [[📁 54 - Obsidian Vault Organization/Cyberbase Folder Structure/Cyberbase Folder Structure.md\|Cyberbase Folder Structure]]                                                     | Mon - 12/1/2025, 11:08 AM  |
+| [[📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md\|Tag Structure Examples]]                                                                 | Mon - 12/1/2025, 11:06 AM  |
+| [[⬇️ Clippings/⬇️ Clippings.md\|⬇️ Clippings]]                                                                                                                                   | Sat - 11/29/2025, 2:09 PM  |
+| [[📁 51 - Cyberbase/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md\|Obsidian Plugins and Ideas for Contributions]]                 | Fri - 11/21/2025, 11:30 AM |
+| [[⬇ INBOX, DROPZONE/MCP and Obsidian/MCP and Obsidian.md\|MCP and Obsidian]]                                                                                                     | Fri - 11/14/2025, 10:31 PM |
+| [[⬇ INBOX, DROPZONE/⬇ INBOX, DROPZONE.md\|⬇ INBOX, DROPZONE]]                                                                                                                    | Fri - 11/14/2025, 10:30 PM |
+| [[📁 12 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md\|⬇️ Content Creation Stack Ideas]]                                                 | Tue - 11/11/2025, 7:53 PM  |
+| [[⬇️ Clippings/ChatGPT/Affordable roller shades Home Assistant/Affordable roller shades Home Assistant.md\|Affordable roller shades Home Assistant]]                             | Tue - 11/11/2025, 3:38 PM  |
+| [[📁 07 - Cybersader Arsenal/Home Lab, Home Server/Backup TrueNAS Boot Drive & TrueCommand/Backup TrueNAS Boot Drive & TrueCommand.md\|Backup TrueNAS Boot Drive & TrueCommand]] | Sun - 11/9/2025, 7:20 PM   |
+| [[📁 07 - Cybersader Arsenal/📁 07 - Cybersader Arsenal.md\|📁 07 - Cybersader Arsenal]]                                                                                         | Sun - 11/9/2025, 6:35 PM   |
 
 %% DATAVIEW_PUBLISHER: end %%
 
