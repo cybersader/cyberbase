@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Framework Mapping",
+      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md"
+    },
+    {
       "basename": "Tag & Folder Plugins",
       "path": "📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "20-Terminal-Alt-presenterm",
       "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/20-Terminal-Alt-presenterm/20-Terminal-Alt-presenterm.md"
-    },
-    {
-      "basename": "19–Consult-Theme-Clone",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/19–Consult-Theme-Clone/19–Consult-Theme-Clone.md"
     }
   ],
   "omittedPaths": [],
