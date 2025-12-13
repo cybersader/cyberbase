@@ -1,10 +1,11 @@
 ---
+title:
 aliases: [Cynar.io]
 tags: []
 publish: true
 permalink: 
 date created: Sunday, December 22nd 2024, 5:03 pm
-date modified: Saturday, February 8th 2025, 11:51 am
+date modified: Saturday, December 13th 2025, 4:56 pm
 ---
 
 [Workforce Cyber Resilience](../../📁%2005%20-%20Organizational%20Cyber/Workforce%20Cyber%20Resilience/Workforce%20Cyber%20Resilience.md)
@@ -20,6 +21,16 @@ date modified: Saturday, February 8th 2025, 11:51 am
 - Create graphs of scenarios with links to events
 - Markdown is easy, so it's really easy to setup
 - Would be easiest if you could create the scenario from graph view (likely just some other plugins)
+
+## 2) Web-Based tool
+
+- IO type tool where you can export the configuration from the background and import
+- PWA support
+- Graph-based UI
+- Builder UI
+- Player UI
+- Kind of like Text based RPG
+- Marketplace to share scenarios - well a search and community space or whatever.
 
 # DROPZONE
 
