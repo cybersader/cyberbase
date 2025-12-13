@@ -54,4 +54,9 @@ date modified: Saturday, February 8th 2025, 11:51 am
 - [Cybersecurity Readiness Exercises - Red Canary](https://redcanary.com/products/cybersecurity-readiness/?_bt=701412109889&_bk=cyber+security+exercise+scenarios&_bm=b&_bn=g&_bg=163998289438&gad_source=1 "Cybersecurity Readiness Exercises - Red Canary")
 
 - [pixijs.com > PixiJS | The HTML5 Creation Engine | PixiJS](https://pixijs.com/)
-- 
+
+Our graph UI is custom for performance needs.
+
+  
+Recommended paid options for graph libraries are yFiles, Cambridge Intelligence, Linkurious  
+D3 and sigma.js are open-source and useful for lightweight projects,  

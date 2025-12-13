@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "Cynario",
+      "path": "📁 01 - Projects/Cynario/Cynario.md"
+    },
+    {
+      "basename": "Home Assistant",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Assistant/Home Assistant.md"
+    },
+    {
+      "basename": "My Cyber Project Portfolio",
+      "path": "CybersaderNotion/03 Awesome-Cyber/My Cyber Project Portfolio.md"
+    },
+    {
+      "basename": "📁 01 - Projects",
+      "path": "📁 01 - Projects/📁 01 - Projects.md"
+    },
+    {
+      "basename": "vim-keybindings-everywhere-the-ultimate-list",
+      "path": "⬇️ Clippings/GitHub Repos/erikw/vim-keybindings-everywhere-the-ultimate-list/vim-keybindings-everywhere-the-ultimate-list.md"
+    },
+    {
+      "basename": "Tmux",
+      "path": "🕸️ UNSTRUCTURED/Tmux/Tmux.md"
+    },
+    {
       "basename": "Framework Mapping",
       "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md"
     },
@@ -175,30 +199,6 @@
     {
       "basename": "Awesome Streaming",
       "path": "📁 12 - Content Creation/Awesome Streaming/Awesome Streaming.md"
-    },
-    {
-      "basename": "Mic Setup Audio 2024",
-      "path": "📁 12 - Content Creation/Mic Setup Audio 2024/Mic Setup Audio 2024.md"
-    },
-    {
-      "basename": "AI Content Workflows",
-      "path": "📁 12 - Content Creation/Cybersader Content/AI Content Workflows/AI Content Workflows.md"
-    },
-    {
-      "basename": "Cybersader Content",
-      "path": "📁 12 - Content Creation/Cybersader Content/Cybersader Content.md"
-    },
-    {
-      "basename": "Screen Recording",
-      "path": "📁 12 - Content Creation/Screen Recording/Screen Recording.md"
-    },
-    {
-      "basename": "Obsidian Markdown Slides Testing",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/Obsidian Markdown Slides Testing.md"
-    },
-    {
-      "basename": "20-Terminal-Alt-presenterm",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Markdown Slides Testing/20-Terminal-Alt-presenterm/20-Terminal-Alt-presenterm.md"
     }
   ],
   "omittedPaths": [],
