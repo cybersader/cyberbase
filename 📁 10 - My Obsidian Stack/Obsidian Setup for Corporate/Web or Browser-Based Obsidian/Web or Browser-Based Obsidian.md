@@ -190,6 +190,8 @@ vaults:
 
 POC repository: `obsidian-in-the-browser/`
 
+### Full Architecture (VNC + Server)
+
 | Component | Status | Notes |
 |-----------|--------|-------|
 | Obsidian Docker image | Done | Based on linuxserver/obsidian |
@@ -197,7 +199,29 @@ POC repository: `obsidian-in-the-browser/`
 | Audit logging | Done | JSON structured logs |
 | docker-compose | Done | Local testing stack |
 | Mount orchestration | Pending | Need to integrate with IdP |
-| Obsidian plugin | Pending | Optional enhancement |
+
+### Plugin-Only (SMB/Cloud Sync)
+
+| Component | Status | Notes |
+|-----------|--------|-------|
+| Plugin design doc | Done | docs/plugin-only-sync.md |
+| Plugin scaffold | Done | TypeScript + Yjs integration |
+| File-based CRDT storage | In Progress | .crdt folder approach |
+| Server hybrid mode | Pending | Optional WebSocket sync |
+
+### Key Insight: Same Solution for Two Problems
+
+The CRDT approach solves both:
+1. **Web collaboration**: Multiple users in browser-based Obsidian
+2. **SMB share conflicts**: Multiple desktop users on network shares
+
+The plugin-only approach works with ANY file sync:
+- SMB/CIFS shares
+- Dropbox, OneDrive, Google Drive
+- Syncthing
+- iCloud
+
+Each client stores its CRDT state in `.crdt/` folder. On file open, merge all states. On save, update own state. No server required.
 
 ## Research Sources
 
