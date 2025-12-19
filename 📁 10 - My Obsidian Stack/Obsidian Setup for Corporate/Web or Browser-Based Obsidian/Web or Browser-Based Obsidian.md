@@ -4,7 +4,7 @@ aliases: []
 tags: []
 publish: true
 date created: Monday, November 25th 2024, 2:54 pm
-date modified: Friday, December 27th 2024, 5:57 pm
+date modified: Thursday, December 19th 2024, 10:00 pm
 ---
 
 - All of these options will essentially run Obsidian somewhere else with mechanisms in place to make other essentials work:
@@ -15,6 +15,199 @@ date modified: Friday, December 27th 2024, 5:57 pm
 	- Security
 
 There's only one option that seems like it could scale and that's [Kasm Workspaces](../../📁%2005%20-%20Organizational%20Cyber/Remote%20Desktop%20Gateways/Kasm%20Workspaces/Kasm%20Workspaces.md) but the general solution are [Remote Desktop Gateways](../../📁%2005%20-%20Organizational%20Cyber/Remote%20Desktop%20Gateways/Remote%20Desktop%20Gateways.md)
+
+---
+
+# Three-Layer Architecture for Enterprise Web Obsidian
+
+> [!summary] TL;DR
+> **Layer 1**: VNC gateway (Kasm/Guacamole) streams Obsidian desktop to browser
+> **Layer 2**: CRDT sync (Yjs) enables conflict-free real-time collaboration
+> **Layer 3**: Auth + mount orchestration controls vault access at session start
+>
+> **Key insight**: RBAC at vault mount time, not file level. If you can mount it, you have full access.
+
+## Architecture Overview
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                   LAYER 3: AUTH + MOUNT ORCHESTRATION           │
+│                                                                 │
+│  User authenticates → Check groups → Mount permitted vaults     │
+│                                                                 │
+│  Components:                                                    │
+│  - Authentik/Keycloak (IdP with LDAP/SAML/OIDC)               │
+│  - Mount Orchestrator (checks permissions, mounts vaults)       │
+│  - Audit Logger (who accessed what, when)                       │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+┌─────────────────────────────────────────────────────────────────┐
+│                     LAYER 2: CRDT SYNC                          │
+│                                                                 │
+│  Conflict-free collaboration between multiple users             │
+│                                                                 │
+│  Components:                                                    │
+│  - Yjs Sync Server (y-websocket) - one room per vault          │
+│  - Sync Daemon (per container) - watches files, syncs via CRDT │
+│  - MinIO/S3 (binary attachments stored by hash reference)      │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+┌─────────────────────────────────────────────────────────────────┐
+│                     LAYER 1: VNC/DESKTOP GATEWAY                │
+│                                                                 │
+│  Browser access to full Obsidian desktop experience             │
+│                                                                 │
+│  Options: Kasm Workspaces | Apache Guacamole | Selkies/noVNC   │
+│                                                                 │
+│  Per-user container:                                            │
+│  - Obsidian app (full plugin support)                          │
+│  - Sync daemon (watches filesystem)                             │
+│  - Mounted vaults (only what user is authorized for)           │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+## Key Interfaces
+
+| Interface | Protocol | Purpose |
+|-----------|----------|---------|
+| Browser → VNC Gateway | HTTPS/WSS | User accesses Obsidian UI |
+| VNC Gateway → Container | VNC | Streams desktop to gateway |
+| Sync Daemon → Yjs Server | WebSocket | CRDT sync between users |
+| Sync Daemon → Filesystem | inotify | Detects file changes |
+| Orchestrator → IdP | OIDC | Validates user, gets groups |
+| Orchestrator → Storage | Docker API / SMB | Mounts permitted vaults |
+
+## Layer 1: VNC/Desktop Gateway
+
+**Purpose**: Provide browser access to Obsidian without requiring desktop install.
+
+**Why VNC instead of native web?**
+- Obsidian depends on Node.js filesystem APIs
+- 1000+ plugins expect real filesystem
+- VNC preserves full plugin compatibility
+
+**Technology Options**:
+
+| Technology | Pros | Cons | Best For |
+|------------|------|------|----------|
+| Kasm Workspaces | Enterprise SSO, scaling, persistence | Licensing cost | Enterprise |
+| Apache Guacamole | Free, simple, well-documented | Less session mgmt | POC, small teams |
+| Selkies/GStreamer | WebRTC (lower latency) | Newer | Performance-critical |
+
+**Container runs**:
+- X11/Xvfb (virtual display)
+- VNC server
+- Obsidian app
+- Sync daemon (Layer 2)
+- Supervisor (process manager)
+
+## Layer 2: CRDT Sync Engine
+
+**Purpose**: Real-time, conflict-free collaboration.
+
+**What is CRDT?**
+Conflict-free Replicated Data Type - data structure that can be modified independently on multiple devices, then merged automatically.
+
+```
+Traditional: User A edits, User B edits → CONFLICT
+CRDT: User A edits, User B edits → Auto-merged (both changes preserved)
+```
+
+**Architecture**:
+```
+Yjs Server (central)
+    │
+    ├── WebSocket ──► Sync Daemon A (User A's container)
+    │                      │
+    │                      └── inotify watches /vault
+    │                      └── Y.Doc per .md file
+    │                      └── Writes CRDT updates to filesystem
+    │
+    └── WebSocket ──► Sync Daemon B (User B's container)
+                           └── Same pattern
+```
+
+**Why external daemon instead of Obsidian plugin?**
+- Obsidian's file cache causes timing issues
+- Plugin crashes can crash Obsidian
+- Daemon reads directly from filesystem after Obsidian writes
+
+**Handling binary files**:
+- CRDTs struggle with large binaries (images, PDFs)
+- Solution: Store binaries in MinIO/S3, sync only hash references
+- `![image](sha256:abc123)` syncs via CRDT, actual bytes in object store
+
+**Technology**: Yjs (battle-tested, TypeScript, active community)
+
+## Layer 3: Auth & Mount Orchestration
+
+**Purpose**: Control who can access which vaults.
+
+**Key Design Decision: Vault-Level RBAC**
+
+```
+❌ File-level RBAC (rejected):
+   - Check permissions on every file operation
+   - Complex, fights Obsidian's architecture
+   - Would need to hide files in UI
+
+✅ Vault-level RBAC (chosen):
+   - Control which vaults are mounted at session start
+   - If you can access a vault, you have full access
+   - Simple, works with filesystem permissions
+```
+
+**Flow**:
+1. User navigates to portal
+2. Redirected to Authentik for SSO
+3. Authentik returns JWT with user groups
+4. Mount orchestrator checks: which vaults can this user access?
+5. Only permitted vaults are mounted to container
+6. Obsidian session starts with those vaults visible
+
+**Vault Permissions Config**:
+```yaml
+vaults:
+  - name: engineering
+    path: /vaults/engineering
+    allowed_groups: [engineering, devops]
+
+  - name: finance
+    path: /vaults/finance
+    allowed_groups: [finance, executives]
+
+  - name: wiki
+    path: /vaults/wiki
+    allowed_groups: [all-employees]
+```
+
+**Storage Options**:
+- Docker volumes (simple, managed)
+- SMB/CIFS shares (corporate, AD-integrated)
+- Both (Docker for sync state, SMB for content)
+
+## Implementation Status
+
+POC repository: `obsidian-in-the-browser/`
+
+| Component | Status | Notes |
+|-----------|--------|-------|
+| Obsidian Docker image | Done | Based on linuxserver/obsidian |
+| Sync daemon (Yjs) | Done | Node.js + inotify + Yjs |
+| Audit logging | Done | JSON structured logs |
+| docker-compose | Done | Local testing stack |
+| Mount orchestration | Pending | Need to integrate with IdP |
+| Obsidian plugin | Pending | Optional enhancement |
+
+## Research Sources
+
+- [Obsidian Forum - Obsidian for Web](https://forum.obsidian.md/t/obsidian-for-web/2049/250)
+- [Relay Plugin](https://github.com/No-Instructions/Relay) - Yjs-based Obsidian sync
+- [Obsidian LiveSync](https://github.com/vrtmrz/obsidian-livesync) - CouchDB-based sync
+- [Yjs Documentation](https://docs.yjs.dev/)
+- [Kasm Workspaces Docs](https://kasmweb.com/docs/)
+
+---
 
 - [Apache Guacamole](../../../📁%2005%20-%20Organizational%20Cyber/Remote%20Desktop%20Gateways/Apache%20Guacamole/Apache%20Guacamole.md)
 - [Kasm Workspaces](../../../📁%2005%20-%20Organizational%20Cyber/Remote%20Desktop%20Gateways/Kasm%20Workspaces/Kasm%20Workspaces.md)

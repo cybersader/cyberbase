@@ -193,6 +193,8 @@ date modified: Monday, February 17th 2025, 9:38 am
 	- [github.com > agarrharr/awesome-static-website-services: 📄 🛠 A curated list of awesome static websites services](https://github.com/agarrharr/awesome-static-website-services?tab=readme-ov-file#authentication)
 	- 
 - Sync & conflict resolution
+	- **Implementation**: See [Web or Browser-Based Obsidian](../../📁%2010%20-%20My%20Obsidian%20Stack/Obsidian%20Setup%20for%20Corporate/Web%20or%20Browser-Based%20Obsidian/Web%20or%20Browser-Based%20Obsidian.md) for three-layer architecture using Yjs CRDT
+	- POC repo: `obsidian-in-the-browser/` with working sync daemon
 	- Search terms
 		- Sync engines, CRDT, COOT, OT
 		- sync engines and RPC CRDT
