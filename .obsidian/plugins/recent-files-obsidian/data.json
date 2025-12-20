@@ -1,6 +1,54 @@
 {
   "recentFiles": [
     {
+      "basename": "Cynario",
+      "path": "📁 01 - Projects/Cynario/Cynario.md"
+    },
+    {
+      "basename": "Ideas for Knowledge Organization",
+      "path": "📁 54 - Obsidian Vault Organization/Ideas for Knowledge Organization/Ideas for Knowledge Organization.md"
+    },
+    {
+      "basename": "⬇️ KnowEng Drop",
+      "path": "📁 17 - Knowledge Engineering/⬇️ KnowEng Drop/⬇️ KnowEng Drop.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Git Repo Networks",
+      "path": "📁 01 - Projects/Git Repo Networks/Git Repo Networks.md"
+    },
+    {
+      "basename": "Astro with Content Layer",
+      "path": "📁 51 - Cyberbase/Astro with Content Layer/Astro with Content Layer.md"
+    },
+    {
+      "basename": "Auto Publish For Obsidian Publish",
+      "path": "📁 51 - Cyberbase/Auto Publish For Obsidian Publish/Auto Publish For Obsidian Publish.md"
+    },
+    {
+      "basename": "Blogging Platforms",
+      "path": "📁 51 - Cyberbase/Blogging Platforms/Blogging Platforms.md"
+    },
+    {
+      "basename": "Collaboration in Obsidian",
+      "path": "📁 51 - Cyberbase/Collaboration in Obsidian/Collaboration in Obsidian.md"
+    },
+    {
+      "basename": "Contribution System",
+      "path": "📁 51 - Cyberbase/Contribution System/Contribution System.md"
+    },
+    {
+      "basename": "Contributable Obsidian Wiki",
+      "path": "📁 51 - Cyberbase/Contributable Obsidian Wiki/Contributable Obsidian Wiki.md"
+    },
+    {
+      "basename": "Customizing Obsidian Publish",
+      "path": "📁 51 - Cyberbase/Customizing Obsidian Publish/Customizing Obsidian Publish.md"
+    },
+    {
       "basename": "Cyberbase Development",
       "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
     },
@@ -17,16 +65,12 @@
       "path": "📁 10 - My Obsidian Stack/Obsidian Setup for Corporate/Web or Browser-Based Obsidian/Web or Browser-Based Obsidian.md"
     },
     {
-      "basename": "Collaboration in Obsidian",
-      "path": "📁 51 - Cyberbase/Collaboration in Obsidian/Collaboration in Obsidian.md"
+      "basename": "GitHub + Obsidian + Notion - Digital Garden",
+      "path": "📁 01 - Projects/GitHub + Obsidian + Notion - Digital Garden/GitHub + Obsidian + Notion - Digital Garden.md"
     },
     {
       "basename": "Home Assistant",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Assistant/Home Assistant.md"
-    },
-    {
-      "basename": "Cynario",
-      "path": "📁 01 - Projects/Cynario/Cynario.md"
     },
     {
       "basename": "My Cyber Project Portfolio",
@@ -109,10 +153,6 @@
       "path": "📁 54 - Obsidian Vault Organization/Information Organization Systems/Information Organization Systems.md"
     },
     {
-      "basename": "Ideas for Knowledge Organization",
-      "path": "📁 54 - Obsidian Vault Organization/Ideas for Knowledge Organization/Ideas for Knowledge Organization.md"
-    },
-    {
       "basename": "Folder Structure Ideas",
       "path": "📁 54 - Obsidian Vault Organization/Folder Structure Ideas/Folder Structure Ideas.md"
     },
@@ -159,46 +199,6 @@
     {
       "basename": "QuickAdd Tag Selector",
       "path": "🕸️ UNSTRUCTURED/QuickAdd Tag Selector/QuickAdd Tag Selector.md"
-    },
-    {
-      "basename": "MCP and Obsidian",
-      "path": "⬇ INBOX, DROPZONE/MCP and Obsidian/MCP and Obsidian.md"
-    },
-    {
-      "basename": "Plugin Development",
-      "path": "📁 10 - My Obsidian Stack/Plugin Development/Plugin Development.md"
-    },
-    {
-      "basename": "Wispr flow",
-      "path": "⬇️ Clippings/Tech/Wispr flow/Wispr flow.md"
-    },
-    {
-      "basename": "Personal Agentic Setup",
-      "path": "📁 01 - Projects/Personal Agentic Setup/Personal Agentic Setup.md"
-    },
-    {
-      "basename": "My Media Server",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
-    },
-    {
-      "basename": "📁 12 - Content Creation",
-      "path": "📁 12 - Content Creation/📁 12 - Content Creation.md"
-    },
-    {
-      "basename": "Audio Stack",
-      "path": "📁 12 - Content Creation/Audio Stack/Audio Stack.md"
-    },
-    {
-      "basename": "⬇️ Content Creation Stack Ideas",
-      "path": "📁 12 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md"
-    },
-    {
-      "basename": "Wo mic",
-      "path": "⬇️ Clippings/Tech/Wo mic/Wo mic.md"
-    },
-    {
-      "basename": "Turning Old PC into NAS in 2024",
-      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/Turning Old PC into NAS in 2024/Turning Old PC into NAS in 2024.md"
     }
   ],
   "omittedPaths": [],

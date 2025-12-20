@@ -67,7 +67,5 @@ date modified: Saturday, December 13th 2025, 4:56 pm
 - [pixijs.com > PixiJS | The HTML5 Creation Engine | PixiJS](https://pixijs.com/)
 
 Our graph UI is custom for performance needs.
-
-  
 Recommended paid options for graph libraries are yFiles, Cambridge Intelligence, Linkurious  
 D3 and sigma.js are open-source and useful for lightweight projects,  
