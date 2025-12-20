@@ -198,16 +198,22 @@ POC repository: `obsidian-in-the-browser/`
 | Sync daemon (Yjs) | Done | Node.js + inotify + Yjs |
 | Audit logging | Done | JSON structured logs |
 | docker-compose | Done | Local testing stack |
+| MinIO setup | Done | Binary attachment storage |
+| Architecture docs | Done | PARA-structured in repo |
 | Mount orchestration | Pending | Need to integrate with IdP |
 
 ### Plugin-Only (SMB/Cloud Sync)
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Plugin design doc | Done | docs/plugin-only-sync.md |
+| Plugin design doc | Done | docs/projects/plugin-only-sync.md |
 | Plugin scaffold | Done | TypeScript + Yjs integration |
-| File-based CRDT storage | In Progress | .crdt folder approach |
-| Server hybrid mode | Pending | Optional WebSocket sync |
+| CRDT state manager | Done | Per-client .yjs files |
+| Presence awareness | Done | Status bar + nudge feature |
+| Hybrid sync modes | Done | file-only / hybrid / server-only |
+| Settings UI | Done | All modes configurable |
+| diff-match-patch | Pending | Efficient text updates |
+| Conflict visualization | Pending | UI for merge conflicts |
 
 ### Key Insight: Same Solution for Two Problems
 
@@ -222,6 +228,36 @@ The plugin-only approach works with ANY file sync:
 - iCloud
 
 Each client stores its CRDT state in `.crdt/` folder. On file open, merge all states. On save, update own state. No server required.
+
+## Detailed Project Documentation
+
+> [!info] PARA-Structured Docs in Repo
+> Full project documentation with decision rationale, research notes, and implementation details lives in the `obsidian-in-the-browser/` repository.
+
+**Quick Links to Repo Docs:**
+
+| Document | Purpose |
+|----------|---------|
+| `docs/_index.md` | Project dashboard - status, roadmap, quick links |
+| `docs/areas/architecture.md` | Full technical architecture details |
+| `docs/resources/decisions/decision-log.md` | All decisions with rationale |
+| `docs/resources/ideation/ideas.md` | Captured ideas and future possibilities |
+
+**PARA Structure:**
+- **Projects**: Active work items (`docs/projects/`)
+  - `crdt-sync-plugin.md` - Plugin development
+  - `vnc-gateway-setup.md` - VNC gateway configuration
+  - `mount-orchestration.md` - RBAC service
+  - `plugin-only-sync.md` - File-based sync design
+- **Areas**: Ongoing concerns (`docs/areas/`)
+  - Architecture, Security, Testing
+- **Resources**: Reference material (`docs/resources/`)
+  - Research (CRDT options, VNC options, forum threads)
+  - Decisions (log with rationale)
+  - Ideation (raw ideas)
+- **Archive**: Completed/deprecated work
+
+**Repo Location**: `obsidian-in-the-browser/` (local development repo)
 
 ## Research Sources
 
