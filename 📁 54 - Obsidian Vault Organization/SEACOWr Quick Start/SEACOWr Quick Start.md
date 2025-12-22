@@ -1,10 +1,11 @@
 ---
+title:
 aliases: [SEACOWr Quick Guide]
 tags: []
 publish: true
 permalink: 
 date created: Wednesday, March 19th 2025, 12:44 pm
-date modified: Wednesday, March 19th 2025, 5:55 pm
+date modified: Monday, December 22nd 2025, 3:16 pm
 ---
 
 [Knowledge Platform Organization Meta-Framework](../Knowledge%20Platform%20Organization%20Meta-Framework/Knowledge%20Platform%20Organization%20Meta-Framework.md)
@@ -16,6 +17,16 @@ To use the [SEACOWr Framework](../Knowledge%20Platform%20Organization%20Meta-Fra
 	1) Look at the [SEACOWr Framework](../Knowledge%20Platform%20Organization%20Meta-Framework/Knowledge%20Platform%20Organization%20Meta-Framework.md) for more details on the components (System, Entity, and Activities - Capture, Output, Work, and Relation)
 2) **A set of goals** for entities using the knowledge system or platform 
 3) Define **system context, components, logic, capabilities, or limitations** that need to be considered
+
+What SEACOW actually is: A meta-framework / lens for analyzing and designing ANY organizational structure. It asks:
+
+  - System — What platform/technology constraints exist?
+  - Entity — WHO accesses this? (teams, individuals, agents, audiences)
+  - Activities:
+    - Capture — WHERE/HOW does information enter?
+    - Output — WHERE/HOW does information exit to consumers?
+    - Work — WHERE/HOW is information processed/used?
+    - (r)elation — HOW are things connected across the structure?
 
 # SEACOW Rule Setting
 

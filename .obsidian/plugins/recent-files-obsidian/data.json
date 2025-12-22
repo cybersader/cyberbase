@@ -1,12 +1,76 @@
 {
   "recentFiles": [
     {
-      "basename": "Cynario",
-      "path": "📁 01 - Projects/Cynario/Cynario.md"
+      "basename": "SEACOWr Quick Start",
+      "path": "📁 54 - Obsidian Vault Organization/SEACOWr Quick Start/SEACOWr Quick Start.md"
+    },
+    {
+      "basename": "Linking to Frameworks",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Linking to Frameworks/Linking to Frameworks.md"
+    },
+    {
+      "basename": "frameworker_linking",
+      "path": "📁 01 - Projects/Obsidian Frameworker/frameworker_linking/frameworker_linking.md"
+    },
+    {
+      "basename": "Obsidian Frameworker",
+      "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
+    },
+    {
+      "basename": "Combining Tags, Links, & Folders",
+      "path": "📁 54 - Obsidian Vault Organization/Combining Tags, Links, & Folders/Combining Tags, Links, & Folders.md"
+    },
+    {
+      "basename": "Dynamic Tags & Folders Plugin Development",
+      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
+    },
+    {
+      "basename": "Folders vs Tags vs Links vs Metadata",
+      "path": "📁 54 - Obsidian Vault Organization/Folders vs Tags vs Links vs Metadata/Folders vs Tags vs Links vs Metadata.md"
+    },
+    {
+      "basename": "Information Organization Systems",
+      "path": "📁 54 - Obsidian Vault Organization/Information Organization Systems/Information Organization Systems.md"
+    },
+    {
+      "basename": "Tag & Folder Plugins",
+      "path": "📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md"
+    },
+    {
+      "basename": "Knowledge Platform Organization Meta-Framework",
+      "path": "📁 54 - Obsidian Vault Organization/Knowledge Platform Organization Meta-Framework/Knowledge Platform Organization Meta-Framework.md"
+    },
+    {
+      "basename": "Knowledge Organization",
+      "path": "📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md"
     },
     {
       "basename": "Ideas for Knowledge Organization",
       "path": "📁 54 - Obsidian Vault Organization/Ideas for Knowledge Organization/Ideas for Knowledge Organization.md"
+    },
+    {
+      "basename": "Choosing a Tag Structure in Obsidian",
+      "path": "📁 54 - Obsidian Vault Organization/Choosing a Tag Structure in Obsidian/Choosing a Tag Structure in Obsidian.md"
+    },
+    {
+      "basename": "Cyberbase Folder Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Folder Structure/Cyberbase Folder Structure.md"
+    },
+    {
+      "basename": "Folder Structure Ideas",
+      "path": "📁 54 - Obsidian Vault Organization/Folder Structure Ideas/Folder Structure Ideas.md"
+    },
+    {
+      "basename": "Tag Structure Examples",
+      "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
+    },
+    {
+      "basename": "Vault Folder & Tag Structure",
+      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
+    },
+    {
+      "basename": "Cynario",
+      "path": "📁 01 - Projects/Cynario/Cynario.md"
     },
     {
       "basename": "⬇️ KnowEng Drop",
@@ -93,28 +157,8 @@
       "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md"
     },
     {
-      "basename": "Tag & Folder Plugins",
-      "path": "📁 54 - Obsidian Vault Organization/Tag & Folder Plugins/Tag & Folder Plugins.md"
-    },
-    {
-      "basename": "Tag Structure Examples",
-      "path": "📁 54 - Obsidian Vault Organization/Tag Structure Examples/Tag Structure Examples.md"
-    },
-    {
-      "basename": "Vault Folder & Tag Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Vault Folder & Tag Structure/Vault Folder & Tag Structure.md"
-    },
-    {
       "basename": "Tag Bugs & Issues",
       "path": "📁 54 - Obsidian Vault Organization/Tag Bugs & Issues/Tag Bugs & Issues.md"
-    },
-    {
-      "basename": "Dynamic Tags & Folders Plugin Development",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Tags & Folders Plugin Development/Dynamic Tags & Folders Plugin Development.md"
-    },
-    {
-      "basename": "Cyberbase Folder Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Folder Structure/Cyberbase Folder Structure.md"
     },
     {
       "basename": "Obsidian Tag Limitations & Unicode Order",
@@ -137,26 +181,6 @@
       "path": "📁 54 - Obsidian Vault Organization/Tag Pages/Tag Pages.md"
     },
     {
-      "basename": "SEACOWr Quick Start",
-      "path": "📁 54 - Obsidian Vault Organization/SEACOWr Quick Start/SEACOWr Quick Start.md"
-    },
-    {
-      "basename": "Knowledge Platform Organization Meta-Framework",
-      "path": "📁 54 - Obsidian Vault Organization/Knowledge Platform Organization Meta-Framework/Knowledge Platform Organization Meta-Framework.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md"
-    },
-    {
-      "basename": "Information Organization Systems",
-      "path": "📁 54 - Obsidian Vault Organization/Information Organization Systems/Information Organization Systems.md"
-    },
-    {
-      "basename": "Folder Structure Ideas",
-      "path": "📁 54 - Obsidian Vault Organization/Folder Structure Ideas/Folder Structure Ideas.md"
-    },
-    {
       "basename": "File Organization Systems",
       "path": "📁 54 - Obsidian Vault Organization/File Organization Systems/File Organization Systems.md"
     },
@@ -165,20 +189,8 @@
       "path": "📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md"
     },
     {
-      "basename": "Combining Tags, Links, & Folders",
-      "path": "📁 54 - Obsidian Vault Organization/Combining Tags, Links, & Folders/Combining Tags, Links, & Folders.md"
-    },
-    {
-      "basename": "Choosing a Tag Structure in Obsidian",
-      "path": "📁 54 - Obsidian Vault Organization/Choosing a Tag Structure in Obsidian/Choosing a Tag Structure in Obsidian.md"
-    },
-    {
       "basename": "Dynamic Folders & Tags",
       "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
-    },
-    {
-      "basename": "Folders vs Tags vs Links vs Metadata",
-      "path": "📁 54 - Obsidian Vault Organization/Folders vs Tags vs Links vs Metadata/Folders vs Tags vs Links vs Metadata.md"
     },
     {
       "basename": "📁 54 - Obsidian Vault Organization",
@@ -187,18 +199,6 @@
     {
       "basename": "Obsidian Plugins and Ideas for Contributions",
       "path": "📁 51 - Cyberbase/Obsidian Plugins and Ideas for Contributions/Obsidian Plugins and Ideas for Contributions.md"
-    },
-    {
-      "basename": "📁 52 - Obsidian Starters & Templates",
-      "path": "📁 52 - Obsidian Starters & Templates/📁 52 - Obsidian Starters & Templates.md"
-    },
-    {
-      "basename": "Obsidian Plugin Development Quickstart",
-      "path": "🕸️ UNSTRUCTURED/Obsidian Plugin Development Quickstart/Obsidian Plugin Development Quickstart.md"
-    },
-    {
-      "basename": "QuickAdd Tag Selector",
-      "path": "🕸️ UNSTRUCTURED/QuickAdd Tag Selector/QuickAdd Tag Selector.md"
     }
   ],
   "omittedPaths": [],
