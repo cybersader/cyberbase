@@ -5,6 +5,22 @@
       "path": "📁 54 - Obsidian Vault Organization/Ideas for Knowledge Organization/Ideas for Knowledge Organization.md"
     },
     {
+      "basename": "Home Lab, Home Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Home Lab, Home Server.md"
+    },
+    {
+      "basename": "TrueNAS Electric Eel 24.10 Update",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Electric Eel 24.10 Update/TrueNAS Electric Eel 24.10 Update.md"
+    },
+    {
+      "basename": "Backup TrueNAS Boot Drive & TrueCommand",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/Backup TrueNAS Boot Drive & TrueCommand/Backup TrueNAS Boot Drive & TrueCommand.md"
+    },
+    {
+      "basename": "TrueNAS Scale Home Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/TrueNAS Scale Home Server.md"
+    },
+    {
       "basename": "Obsidian Frameworker",
       "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "Tag Pages",
       "path": "📁 54 - Obsidian Vault Organization/Tag Pages/Tag Pages.md"
-    },
-    {
-      "basename": "File Organization Systems",
-      "path": "📁 54 - Obsidian Vault Organization/File Organization Systems/File Organization Systems.md"
-    },
-    {
-      "basename": "Cyberbase New Note Workflow",
-      "path": "📁 54 - Obsidian Vault Organization/Cyberbase New Note Workflow/Cyberbase New Note Workflow.md"
-    },
-    {
-      "basename": "Dynamic Folders & Tags",
-      "path": "📁 54 - Obsidian Vault Organization/Dynamic Folders & Tags/Dynamic Folders & Tags.md"
-    },
-    {
-      "basename": "📁 54 - Obsidian Vault Organization",
-      "path": "📁 54 - Obsidian Vault Organization/📁 54 - Obsidian Vault Organization.md"
     }
   ],
   "omittedPaths": [],
