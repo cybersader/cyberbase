@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "My Media Server",
+      "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
+    },
+    {
       "basename": "Ideas for Knowledge Organization",
       "path": "📁 54 - Obsidian Vault Organization/Ideas for Knowledge Organization/Ideas for Knowledge Organization.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Cyberbase Tag Structure",
       "path": "📁 54 - Obsidian Vault Organization/Cyberbase Tag Structure/Cyberbase Tag Structure.md"
-    },
-    {
-      "basename": "Tag Pages",
-      "path": "📁 54 - Obsidian Vault Organization/Tag Pages/Tag Pages.md"
     }
   ],
   "omittedPaths": [],
