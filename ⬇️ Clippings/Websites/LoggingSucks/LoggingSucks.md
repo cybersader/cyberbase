@@ -1,0 +1,15 @@
+---
+aliases: []
+publish: true
+permalink:
+title: "Logging Sucks - Your Logs Are Lying To You"
+source: "https://loggingsucks.com/"
+published:
+description: "Why traditional logging fails and how wide events can fix your observability"
+tags: ["clippings", "clippings/websites"]
+favicon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+CiAgPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzBhMGEwYSIvPgogIDxyZWN0IHg9IjQiIHk9IjQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcng9IjIiIGZpbGw9IiMxYTFhMWEiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgPGNpcmNsZSBjeD0iNyIgY3k9IjciIHI9IjEuNSIgZmlsbD0iI2ZmNWY1NiIvPgogIDxjaXJjbGUgY3g9IjExIiBjeT0iNyIgcj0iMS41IiBmaWxsPSIjZmZiZDJlIi8+CiAgPGNpcmNsZSBjeD0iMTUiIGN5PSI3IiByPSIxLjUiIGZpbGw9IiMyN2NhNDAiLz4KICA8cmVjdCB4PSI2IiB5PSIxMiIgd2lkdGg9IjEyIiBoZWlnaHQ9IjIiIHJ4PSIxIiBmaWxsPSIjNjY2Ii8+CiAgPHJlY3QgeD0iNiIgeT0iMTYiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyIiByeD0iMSIgZmlsbD0iIzRhZGU4MCIvPgogIDxyZWN0IHg9IjYiIHk9IjIwIiB3aWR0aD0iOCIgaGVpZ2h0PSIyIiByeD0iMSIgZmlsbD0iI2Y4NzE3MSIvPgogIDxyZWN0IHg9IjYiIHk9IjI0IiB3aWR0aD0iMTQiIGhlaWdodD0iMiIgcng9IjEiIGZpbGw9IiM2NjYiIG9wYWNpdHk9IjAuNSIvPgo8L3N2Zz4="
+date created: Monday, January 5th 2026, 3:34 pm
+date modified: Monday, January 5th 2026, 3:34 pm
+---
+
+> [loggingsucks.com > Logging Sucks - Your Logs Are Lying To You](https://loggingsucks.com/)

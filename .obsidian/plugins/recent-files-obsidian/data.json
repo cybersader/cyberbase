@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "LoggingSucks",
+      "path": "⬇️ Clippings/Websites/LoggingSucks/LoggingSucks.md"
+    },
+    {
       "basename": "My Media Server",
       "path": "📁 07 - Cybersader Arsenal/Home Lab, Home Server/TrueNAS Scale Home Server/My Media Server/My Media Server.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Using Tags",
       "path": "📁 10 - My Obsidian Stack/Using Tags/Using Tags.md"
-    },
-    {
-      "basename": "Cyberbase Tag Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Tag Structure/Cyberbase Tag Structure.md"
     }
   ],
   "omittedPaths": [],

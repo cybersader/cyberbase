@@ -262,6 +262,7 @@
 	- **[[DMARC Vendors and Solutions]]**
 	- **[[Gruv]]**
 	- **[[Humble Bundle]]**
+	- **[[LoggingSucks]]**
 	- **[[Openbazaar]]**
 	- **[[plaintextaccounting]]**
 	- **[[PotatoPirates]]**
