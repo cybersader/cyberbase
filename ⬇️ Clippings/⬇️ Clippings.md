@@ -112,6 +112,7 @@
 	- **[[Cryptpad]]**
 	- **[[Cursor]]**
 	- **[[Dangerzone_rocks]]**
+	- **[[Dioxus]]**
 	- **[[Donotpay]]**
 	- **[[EasyOptOuts]]**
 	- **[[Emma Budget App]]**
@@ -194,6 +195,7 @@
 	- **[[Peertube]]**
 	- **[[Photopea]]**
 	- **[[Pintree]]**
+	- **[[PocketBase]]**
 	- **[[Pocketsmith]]**
 	- **[[Postmark]]**
 	- **[[PowerToys]]**
@@ -214,6 +216,7 @@
 	- **[[Scrypted]]**
 	- **[[SendGrid]]**
 	- **[[Seraph Secure]]**
+	- **[[Servo]]**
 	- **[[Silent Link]]**
 	- **[[SimpleFIN]]**
 	- **[[SimpleLogin]]**

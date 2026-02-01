@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "PocketBase",
+      "path": "⬇️ Clippings/Tech/PocketBase/PocketBase.md"
+    },
+    {
+      "basename": "Servo",
+      "path": "⬇️ Clippings/Tech/Servo/Servo.md"
+    },
+    {
+      "basename": "Dioxus",
+      "path": "⬇️ Clippings/Tech/Dioxus/Dioxus.md"
+    },
+    {
       "basename": "⬇️ Content Creation Stack Ideas",
       "path": "📁 12 - Content Creation/⬇️ Content Creation Stack Ideas/⬇️ Content Creation Stack Ideas.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "Tmux",
       "path": "🕸️ UNSTRUCTURED/Tmux/Tmux.md"
-    },
-    {
-      "basename": "Framework Mapping",
-      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Framework Mapping/Framework Mapping.md"
-    },
-    {
-      "basename": "Tag Bugs & Issues",
-      "path": "📁 54 - Obsidian Vault Organization/Tag Bugs & Issues/Tag Bugs & Issues.md"
-    },
-    {
-      "basename": "Obsidian Tag Limitations & Unicode Order",
-      "path": "📁 54 - Obsidian Vault Organization/Obsidian Tag Limitations & Unicode Order/Obsidian Tag Limitations & Unicode Order.md"
     }
   ],
   "omittedPaths": [],
