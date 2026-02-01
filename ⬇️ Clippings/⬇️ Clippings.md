@@ -138,6 +138,7 @@
 	- **[[Google Wallet]]**
 	- **[[Google-Gemma-3]]**
 	- **[[GrapheneOS]]**
+	- **[[Graphiti]]**
 	- **[[Grayjay App]]**
 	- **[[HandBrake]]**
 	- **[[hledger]]**
@@ -160,6 +161,7 @@
 	- **[[MakeMKV]]**
 	- **[[Makemydrivefun]]**
 	- **[[Maybe Finance]]**
+	- **[[MegaMem]]**
 	- **[[Mercury_personal_banking]]**
 	- **[[Metube]]**
 	- **[[Minimal Theme for Twitter]]**
