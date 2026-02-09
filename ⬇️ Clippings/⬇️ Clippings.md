@@ -69,6 +69,7 @@
 	- **[[Characters That Sort After Z]]**
 - **[[News]]**
 	- **[[Deepseek Ban Proposal]]**
+	- **[[Operation Winter SHIELD]]**
 - **[[Obsidian]]**
 - **[[Obsidian Plugins]]**
 	- **[[File Manager]]**
@@ -145,6 +146,7 @@
 	- **[[Honeydue]]**
 	- **[[Houston Command Center]]**
 	- **[[Hushed]]**
+	- **[[Invariant Labs]]**
 	- **[[Invidious]]**
 	- **[[IronVest]]**
 	- **[[Khoj]]**
