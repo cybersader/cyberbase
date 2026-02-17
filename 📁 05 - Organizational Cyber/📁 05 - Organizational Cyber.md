@@ -16,6 +16,7 @@ publish: true
 - **[[Active Directory]]**
 - **[[Adversary Emulation]]**
 - **[[AI Usage in Orgs]]**
+	- [[Claude-AI coding tools governance challenges]]
 - **[[Authentication & Trust Models]]**
 - **[[Container Security]]**
 	- **[[Secure Podman Setup]]**
