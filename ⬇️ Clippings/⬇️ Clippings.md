@@ -216,6 +216,7 @@
 	- **[[Reitti]]**
 	- **[[ReVanced]]**
 	- **[[Revolut]]**
+	- **[[Saily]]**
 	- **[[Screenpipe]]**
 	- **[[Scrypted]]**
 	- **[[SendGrid]]**
