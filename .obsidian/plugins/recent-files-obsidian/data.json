@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Claude-AI coding tools governance challenges",
+      "path": "📁 05 - Organizational Cyber/AI Usage in Orgs/Claude-AI coding tools governance challenges.md"
+    },
+    {
+      "basename": "Identity Governance",
+      "path": "📁 05 - Organizational Cyber/Identity Governance/Identity Governance.md"
+    },
+    {
+      "basename": "AI Usage in Orgs",
+      "path": "📁 05 - Organizational Cyber/AI Usage in Orgs/AI Usage in Orgs.md"
+    },
+    {
+      "basename": "Enterprise IAM",
+      "path": "📁 05 - Organizational Cyber/Enterprise IAM/Enterprise IAM.md"
+    },
+    {
       "basename": "Cyberbase Development",
       "path": "📁 51 - Cyberbase/Cyberbase Development/Cyberbase Development.md"
     },
@@ -49,10 +65,6 @@
       "path": "📁 05 - Organizational Cyber/GRC/GRC.md"
     },
     {
-      "basename": "Identity Governance",
-      "path": "📁 05 - Organizational Cyber/Identity Governance/Identity Governance.md"
-    },
-    {
       "basename": "Cyber Frameworks, Ontologies",
       "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Cyber Frameworks, Ontologies/Cyber Frameworks, Ontologies.md"
     },
@@ -67,14 +79,6 @@
     {
       "basename": "Saily",
       "path": "⬇️ Clippings/Tech/Saily/Saily.md"
-    },
-    {
-      "basename": "Claude-AI coding tools governance challenges",
-      "path": "📁 05 - Organizational Cyber/AI Usage in Orgs/Claude-AI coding tools governance challenges.md"
-    },
-    {
-      "basename": "AI Usage in Orgs",
-      "path": "📁 05 - Organizational Cyber/AI Usage in Orgs/AI Usage in Orgs.md"
     },
     {
       "basename": "Invariant Labs",
@@ -195,10 +199,6 @@
     {
       "basename": "Cyberbase Folder Structure",
       "path": "📁 54 - Obsidian Vault Organization/Cyberbase Folder Structure/Cyberbase Folder Structure.md"
-    },
-    {
-      "basename": "Folder Structure Ideas",
-      "path": "📁 54 - Obsidian Vault Organization/Folder Structure Ideas/Folder Structure Ideas.md"
     }
   ],
   "omittedPaths": [],
