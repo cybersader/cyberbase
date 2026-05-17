@@ -1,0 +1,994 @@
+{
+  "version": "0.1.0",
+  "created": 1778503513,
+  "updated": 1778503635,
+  "files": {
+    "./CybersaderNotion/00 DROPZONE/The plight of COBOL mainframe programmers.md": {
+      "path": "./CybersaderNotion/00 DROPZONE/The plight of COBOL mainframe programmers.md",
+      "hash": "7bccb286eac06ea0cac22ba52f86320332935f4a2d1cf412dad1ef0cd95313c2",
+      "last_modified": 1714094673,
+      "size": 599
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal/Awesome Home Networking.md": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal/Awesome Home Networking.md",
+      "hash": "0e9d1b1e763cd3aecef303990ba411baab99933c35795ad247f4fca2794475f3",
+      "last_modified": 1714094673,
+      "size": 104151
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/Cyberspatial - YouTube.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/Cyberspatial - YouTube.md",
+      "hash": "049cdfd7e25164d8efbf23f2802997e6d55df14272acbb6e2975945a8726fcd5",
+      "last_modified": 1714094673,
+      "size": 78
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Education Options/Cybersecurity and IT Security Certifications and T.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Education Options/Cybersecurity and IT Security Certifications and T.md",
+      "hash": "648932dfc7cac78af5a7273b509ac03f7ea47dc0124adf8eb4038f324980fcd0",
+      "last_modified": 1714094673,
+      "size": 69
+    },
+    "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Testing DR Edition.md": {
+      "path": "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Testing DR Edition.md",
+      "hash": "ce561f754139857c59153320ffbc1103b68a8a4b92b32af2a0438de2e403ed71",
+      "last_modified": 1719161810,
+      "size": 48
+    },
+    "./CybersaderNotion/07 Cyberbusiness.md": {
+      "path": "./CybersaderNotion/07 Cyberbusiness.md",
+      "hash": "7426a0b6b68abcc78bf80772e004922493b549c95345e5af647271edbd2b794f",
+      "last_modified": 1714094673,
+      "size": 3491
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal/Cybersecurity Jobs.md": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal/Cybersecurity Jobs.md",
+      "hash": "e2668c25fe9cc0f7107c2dcd237b466554876ec3e15cdfe0e99f124b241b24c6",
+      "last_modified": 1716746386,
+      "size": 4545
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal/Apologetics - Defending the Faith.md": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal/Apologetics - Defending the Faith.md",
+      "hash": "8d83759fb5509fbed58e83e540b803f747c66ea14e062fd60015382d75f9dabc",
+      "last_modified": 1727551000,
+      "size": 5703
+    },
+    "./CybersaderNotion/05 Notes - Classes, Presentations, Pods.md": {
+      "path": "./CybersaderNotion/05 Notes - Classes, Presentations, Pods.md",
+      "hash": "2fdb21e34faae246dfc492f8c8b726700cbcd2992fa843849e191a9f8beafeda",
+      "last_modified": 1719161810,
+      "size": 2694
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal/Docker & Kubernetes.md": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal/Docker & Kubernetes.md",
+      "hash": "d246e89ee9b074f04b88520e6d40791984931e4bcafc38b1643f8a0ebd5f963b",
+      "last_modified": 1714094673,
+      "size": 21
+    },
+    "./CybersaderNotion/09 MISC TECH AND STACK/Online Development Environments.md": {
+      "path": "./CybersaderNotion/09 MISC TECH AND STACK/Online Development Environments.md",
+      "hash": "e6a1753cb83e24170beae2eeed3c1259827b38b923d1b7c21ea9082df3831d98",
+      "last_modified": 1724445390,
+      "size": 1848
+    },
+    "./CSS/Reader view with right corner site name": {
+      "path": "./CSS/Reader view with right corner site name",
+      "hash": "4ded529139b7a892b9c6c252078d996875e3868c525b3aa858644191863a5353",
+      "last_modified": 1720981190,
+      "size": 4857
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources.csv _(3)_": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources.csv _(3)_",
+      "hash": "6bf1767eeba03c6e352d1b59e14c91c17e6f367c0d8aa70250eaed9753809a33",
+      "last_modified": 1710035593,
+      "size": 262
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs.md",
+      "hash": "6a25ef60cfdbc103a2603ca456d54e2eff903e61894e1f17009c8cba24dd2c49",
+      "last_modified": 1714094673,
+      "size": 1242
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Modern Data Engineering Stack for Cyber/ETL (Extract Transform Load) & Data Integration &.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Modern Data Engineering Stack for Cyber/ETL (Extract Transform Load) & Data Integration &.md",
+      "hash": "edc896ffd2042e0c535d8d56443a77cd86998c0aa755a7a6b10206553f11d277",
+      "last_modified": 1714094673,
+      "size": 2969
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Grad School Papers and Presentations/Benjamin_Rader_CIT56200_Cloud-VolatileDataForensics.pdf": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Grad School Papers and Presentations/Benjamin_Rader_CIT56200_Cloud-VolatileDataForensics.pdf",
+      "hash": "799e22d25cd23bfa85d46e35487ba2e0ea7afdb2f35c9a89d93634712d01380e",
+      "last_modified": 1710774347,
+      "size": 753553
+    },
+    "./CybersaderNotion/01 CyberNews/Talkin’ Bout [Infosec] News - BlackHillsInfoSec.md": {
+      "path": "./CybersaderNotion/01 CyberNews/Talkin’ Bout [Infosec] News - BlackHillsInfoSec.md",
+      "hash": "08480f874d433d608d9643ffd54f08e27bb3647bf43e99ecb7a21308dfe35d9c",
+      "last_modified": 1716341277,
+      "size": 24855
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels.csv": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels.csv",
+      "hash": "70edfbd21cb50d00f9c23c50388e9ced2336cee2e025e0df2aae66f3f4ddd478",
+      "last_modified": 1718325238,
+      "size": 1140
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Modern Data Engineering Stack for Cyber/APIs & Integrations.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Modern Data Engineering Stack for Cyber/APIs & Integrations.md",
+      "hash": "1942a38e5a3b2b22269bb2f3fe4812388c9b54c8eb1cc64d51b70da5655e3847",
+      "last_modified": 1714094673,
+      "size": 146
+    },
+    "./CybersaderNotion/00 DROPZONE/Intro to IOT Hacking.md": {
+      "path": "./CybersaderNotion/00 DROPZONE/Intro to IOT Hacking.md",
+      "hash": "b3acb7bf8f9c9d2faee19b9571a91d5ac3bd272a659cf9dc79d18bb6133b8257",
+      "last_modified": 1714094673,
+      "size": 1922
+    },
+    "./CybersaderNotion/01 CyberNews/4-22-2024.md": {
+      "path": "./CybersaderNotion/01 CyberNews/4-22-2024.md",
+      "hash": "8b793ba080e4f2d0158d8d7ae555e2cfb1bcf1465716a09231de2c5f463dd4a0",
+      "last_modified": 1714094673,
+      "size": 103
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources/20 Coolest Cyber Security Careers SANS Institute.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources/20 Coolest Cyber Security Careers SANS Institute.md",
+      "hash": "c309975bbb40b56531809fcae5c5c01fa7c649203f28413a1ae9a7cb5254da3c",
+      "last_modified": 1714094673,
+      "size": 52
+    },
+    "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/How to Annoy Attackers so They Cry w John Strand 1.md": {
+      "path": "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/How to Annoy Attackers so They Cry w John Strand 1.md",
+      "hash": "e2a69ed7094f8a5112800687184142197a0ec5a14c0252457565f0247e4c34c5",
+      "last_modified": 1714094673,
+      "size": 2983
+    },
+    "./CybersaderNotion/00 DROPZONE/More osint.md": {
+      "path": "./CybersaderNotion/00 DROPZONE/More osint.md",
+      "hash": "3a9a0ad153be735e1316cdec4fdc5dfe2d37c316878e623cf7531059adb46fd9",
+      "last_modified": 1714094673,
+      "size": 146
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal/Research Tools.md": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal/Research Tools.md",
+      "hash": "ca414eb7d2493256a4c0cbf927960b052341580791245f2053e5f372e7aa45cf",
+      "last_modified": 1714094673,
+      "size": 3639
+    },
+    "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries EP 52.md": {
+      "path": "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries EP 52.md",
+      "hash": "132536b4f1fc381e1cb9fc2ac40befe829a0b05c23fbb1054c3213d60a367ed1",
+      "last_modified": 1714094673,
+      "size": 6104
+    },
+    "./CybersaderNotion/00 DROPZONE/Minimum Viable Appsec.md": {
+      "path": "./CybersaderNotion/00 DROPZONE/Minimum Viable Appsec.md",
+      "hash": "9db5f2e6419a04eee70f40a3675cd75542119f43746c9a7ec63546e7ec752bec",
+      "last_modified": 1714094673,
+      "size": 387
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal/Building a Knowledgebase.md": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal/Building a Knowledgebase.md",
+      "hash": "48699052f16170ccd2e1fe09f30f11469c200bb735a65050c05e46cb5bb11de9",
+      "last_modified": 1729969751,
+      "size": 2962
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/My Cyber Project Portfolio.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/My Cyber Project Portfolio.md",
+      "hash": "4049c037fb246d82f1a55417f358d95d9861b9ac06e50296c2257b51400f3e0c",
+      "last_modified": 1765662821,
+      "size": 5363
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Home-Related.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Home-Related.md",
+      "hash": "9f732e968b29c9ef12136a6915ef55c25a9b1b8990f73fe3fbe8705182d4352c",
+      "last_modified": 1714094673,
+      "size": 310
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/Purdue CERIAS - YouTube.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/Purdue CERIAS - YouTube.md",
+      "hash": "d6443858cc144d7231911687e44ffe45d111e0c1e03c09550d2fbeae19b916dc",
+      "last_modified": 1714094673,
+      "size": 78
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Digital Content Creation.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Digital Content Creation.md",
+      "hash": "1fe18280fe33fea2f0795caca4bac0754041b6bbe050dd25b69a86804ccec9d1",
+      "last_modified": 1738982353,
+      "size": 10896
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Beginner Cyber Resources.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Beginner Cyber Resources.md",
+      "hash": "9f755f50a50a8dc4811cde341831932e733736be9e753e29071ceae18e7d5b4f",
+      "last_modified": 1714094673,
+      "size": 8607
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Cyber Tools/Teleseer.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Cyber Tools/Teleseer.md",
+      "hash": "4d933352526705948680f94af70b7f78c2120790c16d8fa8706567cf486d1b62",
+      "last_modified": 1714094673,
+      "size": 4081
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources _(2)_/TrustedSec Cybersecurity.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources _(2)_/TrustedSec Cybersecurity.md",
+      "hash": "493979033a50e839c9579ec36636aa02210faab520034a18ef79625b2f878abc",
+      "last_modified": 1714094673,
+      "size": 28
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources.csv": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources.csv",
+      "hash": "0249f743dbae4dbb36ad6b9f196f76003766546cc2fb2eb9e1e7d092309e7d14",
+      "last_modified": 1710035593,
+      "size": 238
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/NetworkChuck - YouTube.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/NetworkChuck - YouTube.md",
+      "hash": "6ac0d1d88bd23261f844901b339bff94010173b927ba525c96dbb7c93d5061b5",
+      "last_modified": 1714094673,
+      "size": 92
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Social.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Social.md",
+      "hash": "d58bac04baf1e3a5771c5f07c860ce4aad1a8cd8c89faaf7f3829acd25ff0594",
+      "last_modified": 1714094673,
+      "size": 385
+    },
+    "./CybersaderNotion/01 CyberNews/CyberNews Notes.md": {
+      "path": "./CybersaderNotion/01 CyberNews/CyberNews Notes.md",
+      "hash": "e931b670b83350ae986ed3ea950c6ede0093cf1f810445d1ca7442010355b4d9",
+      "last_modified": 1714094673,
+      "size": 6467
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Undergrad Projects.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Undergrad Projects.md",
+      "hash": "3bd2d9ec20c7146629dcd7bee1e1d82c632083bdcc8d6fe8d180f0cd185aa2ea",
+      "last_modified": 1714094673,
+      "size": 943
+    },
+    "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Punchmade Dev and Famous Scammers Rappers.md": {
+      "path": "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Punchmade Dev and Famous Scammers Rappers.md",
+      "hash": "a7af96bddd518ae16820500f0ba42719b86efc209dd1b6c951c28a907f26607b",
+      "last_modified": 1714094673,
+      "size": 1807
+    },
+    "./CybersaderNotion/09 MISC TECH AND STACK.md": {
+      "path": "./CybersaderNotion/09 MISC TECH AND STACK.md",
+      "hash": "a3995ae4ee73da1865cde82ef2053ca5b7d9644c30e3e187cee07cb795656efc",
+      "last_modified": 1732156602,
+      "size": 2144
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal/Cyber & Privacy Research & Reports.md": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal/Cyber & Privacy Research & Reports.md",
+      "hash": "a08143974d1e78a9237ccfaa501ad45ccd3b8c008a02866059efda40af8eda95",
+      "last_modified": 1714094673,
+      "size": 302
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources _(2)_/Dark Reading Security Protect The Business.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources _(2)_/Dark Reading Security Protect The Business.md",
+      "hash": "c70f9d193f79b3f85e83433cc25502793c3ab6bcc41c9c522ee9d02fe2f8e992",
+      "last_modified": 1714094673,
+      "size": 48
+    },
+    "./CybersaderNotion/index.html": {
+      "path": "./CybersaderNotion/index.html",
+      "hash": "27124922c8363fbefda6399edb1f8db927b5ca47b9568a5014584c2177a8ace6",
+      "last_modified": 1710035593,
+      "size": 187622
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Notion Tools.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Notion Tools.md",
+      "hash": "b523307cc0c695b466e9ed4627136f3a2a7243ad575ce4c9da172d653d9955a4",
+      "last_modified": 1714094673,
+      "size": 2543
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Grad School Papers and Presentations.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Grad School Papers and Presentations.md",
+      "hash": "3d05302493e5173e149e25caea2c992e143197962842192965783f260f96d783",
+      "last_modified": 1727043602,
+      "size": 16658
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Education Options.csv _(2)_": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Education Options.csv _(2)_",
+      "hash": "1e3d3f0eccb73dc81a851f336d9985b80654a105a94e853107a2a0139df78979",
+      "last_modified": 1710035593,
+      "size": 116
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Awesome Red Teaming.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Awesome Red Teaming.md",
+      "hash": "3bcb2c2ae09d0a559e67ba153e970595993e3ecaa8bfa058712f545a70491136",
+      "last_modified": 1714094673,
+      "size": 21
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal/Awesome Home Networking-CN.md": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal/Awesome Home Networking-CN.md",
+      "hash": "5ddd00d29b456b18f18f033d639fa7dadeb19baee14cea1ccec07dc468ce2270",
+      "last_modified": 1714094673,
+      "size": 97733
+    },
+    "./git_publish2.css": {
+      "path": "./git_publish2.css",
+      "hash": "87fa1dedf30ddee70709b642f47e0311f72339d44ceab263114e22dfdb3bd93f",
+      "last_modified": 1739316217,
+      "size": 2821
+    },
+    "./CybersaderNotion/99 ARCHIVE.md": {
+      "path": "./CybersaderNotion/99 ARCHIVE.md",
+      "hash": "4d1366cdd4f50f9b00d4271e781cdf3430c94391aebb7f5f046bddae56f1cae2",
+      "last_modified": 1714094673,
+      "size": 12
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/Lawrence Systems - YouTube.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/Lawrence Systems - YouTube.md",
+      "hash": "6cbd0172ad2348032e51e214715b6dc2807265f3101e65f66c8f7bf9d2c42005",
+      "last_modified": 1714094673,
+      "size": 112
+    },
+    "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Is CS dead.md": {
+      "path": "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Is CS dead.md",
+      "hash": "f1f577740b61925bc4759211fb93cc5e54dee50b32399def0dd1b5787110667b",
+      "last_modified": 1714094673,
+      "size": 1045
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Awesome Blue Teaming.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Awesome Blue Teaming.md",
+      "hash": "b618d73581ace9a8b8089da02f8e1bb6ff199a3af037b448d7876de67f222d6a",
+      "last_modified": 1714094673,
+      "size": 22
+    },
+    "./CybersaderNotion/07 Cyberbusiness/Outsourcing Development.md": {
+      "path": "./CybersaderNotion/07 Cyberbusiness/Outsourcing Development.md",
+      "hash": "c928ff7c3436d4c6764ffcecce820382b3e3d6fe8ced186eddc4b55774564ea4",
+      "last_modified": 1714094673,
+      "size": 767
+    },
+    "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 120.md": {
+      "path": "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 120.md",
+      "hash": "790147cfcd39e3e0e2be5263c0cb12a5f4d0c670873cac1174855594d9f71afc",
+      "last_modified": 1714094673,
+      "size": 1187
+    },
+    "./CybersaderNotion/12 - Religion, Ontology, Philosophy.md": {
+      "path": "./CybersaderNotion/12 - Religion, Ontology, Philosophy.md",
+      "hash": "2ee0ade6ace3aef763a159eea01ac4bd13234e7205224f29c1369ce8466b67f1",
+      "last_modified": 1716740294,
+      "size": 87
+    },
+    "./CybersaderNotion/00 DROPZONE/I failed an AI job interview.md": {
+      "path": "./CybersaderNotion/00 DROPZONE/I failed an AI job interview.md",
+      "hash": "650c8edb4595b8208133f1fcc9cfc380c06fd88a48d8f8c0abde749632952d77",
+      "last_modified": 1714094673,
+      "size": 2743
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/SANS Institute - YouTube.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/SANS Institute - YouTube.md",
+      "hash": "33553d78009245e73754e7e3b44973af1e027746f3e82135f7f7ace9af8a6d0f",
+      "last_modified": 1714094673,
+      "size": 79
+    },
+    "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 23.md": {
+      "path": "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 23.md",
+      "hash": "a018102ae8b21a60b0fe92bb467120ebd11acbfb53a9835b562cfeb4884c8efc",
+      "last_modified": 1714094673,
+      "size": 2484
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources _(2)_/BleepingComputer Cybersecurity, Technology News an.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources _(2)_/BleepingComputer Cybersecurity, Technology News an.md",
+      "hash": "76baec05bd6de308d136b6015eaf4fe8608e61d49eeefc9425f590e13f9bfe51",
+      "last_modified": 1714094673,
+      "size": 63
+    },
+    "./github_publish.css": {
+      "path": "./github_publish.css",
+      "hash": "1fb98d4bae32a919403cb8e819709f0eb86177f48d581e74f415647659a2c259",
+      "last_modified": 1739328706,
+      "size": 3169
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources.csv _(2)_": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources.csv _(2)_",
+      "hash": "0249f743dbae4dbb36ad6b9f196f76003766546cc2fb2eb9e1e7d092309e7d14",
+      "last_modified": 1710035593,
+      "size": 238
+    },
+    "./CybersaderNotion/01 CyberNews/Talkin’ Bout [Infosec] News - BlackHillsInfoSec/TalkinBoutNews - TEMPLATE.md": {
+      "path": "./CybersaderNotion/01 CyberNews/Talkin’ Bout [Infosec] News - BlackHillsInfoSec/TalkinBoutNews - TEMPLATE.md",
+      "hash": "30cdc6a984d08acf946de513045d02a9af4e44e0aa1935d1c0d42e72d5dee4ec",
+      "last_modified": 1714094673,
+      "size": 128
+    },
+    "./CybersaderNotion/01 CyberNews.md": {
+      "path": "./CybersaderNotion/01 CyberNews.md",
+      "hash": "5c8d77511e4b19c271f78ac3f6575a75de4b4339cfcb3e264ff7676c4e99035c",
+      "last_modified": 1719161810,
+      "size": 741
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/App Tool Solution Discovery , Catalogues, Curation, OSS Curations.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/App Tool Solution Discovery , Catalogues, Curation, OSS Curations.md",
+      "hash": "8ba4bcd5be62c71db95404c41d1aa409be6c68652cd3b60cf4b2ec274ec46cb3",
+      "last_modified": 1756580892,
+      "size": 5003
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/David Bombal - YouTube.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/David Bombal - YouTube.md",
+      "hash": "0eec48591269051bf7aae009e6248fc8d336dd2f089cef3f4e32647b5aa6bf60",
+      "last_modified": 1714094673,
+      "size": 80
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources.csv _(4)_": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources.csv _(4)_",
+      "hash": "6bf1767eeba03c6e352d1b59e14c91c17e6f367c0d8aa70250eaed9753809a33",
+      "last_modified": 1710035593,
+      "size": 262
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal.md": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal.md",
+      "hash": "a066abd5d8773098c7e935c2c1c14f7524e1dd6bc69bde33b45452db60eb01d3",
+      "last_modified": 1724032421,
+      "size": 1914
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Education Options.csv": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Education Options.csv",
+      "hash": "1e3d3f0eccb73dc81a851f336d9985b80654a105a94e853107a2a0139df78979",
+      "last_modified": 1710035593,
+      "size": 116
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Modern Data Engineering Stack for Cyber/Excel for Cyber.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Modern Data Engineering Stack for Cyber/Excel for Cyber.md",
+      "hash": "f8fc7841746c1d1c332c365129629920a2acad644b596234b29f93ed807bce3b",
+      "last_modified": 1714094673,
+      "size": 3456
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Grad School Papers and Presentations/BenR.pdf": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Grad School Papers and Presentations/BenR.pdf",
+      "hash": "b2e0bbdbf505e6d37fc2972d94b91d2cae73808813dc4d2dc45a28859571dfbd",
+      "last_modified": 1710774347,
+      "size": 1189499
+    },
+    "./CybersaderNotion/00 DROPZONE/Golden Ticket to the Cloud.md": {
+      "path": "./CybersaderNotion/00 DROPZONE/Golden Ticket to the Cloud.md",
+      "hash": "99191afb26afca06c1754a0beb4bc7ee01a655cdf9b4dba46d59cefa9d596a05",
+      "last_modified": 1714094673,
+      "size": 1651
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Podcasts/Darknet Diaries – True stories from the dark side.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Podcasts/Darknet Diaries – True stories from the dark side.md",
+      "hash": "5178e31e31bc656f85b69be17270e98fd702e1576141a5f6bb40b36c664aa6ee",
+      "last_modified": 1714094673,
+      "size": 70
+    },
+    "./CybersaderNotion/00 DROPZONE/PKI - Common Pitfalls.md": {
+      "path": "./CybersaderNotion/00 DROPZONE/PKI - Common Pitfalls.md",
+      "hash": "29660fd69cc20a1815372a549770dddf8e9851e1fd322e403ba18301dcab361f",
+      "last_modified": 1714094673,
+      "size": 2927
+    },
+    "./basic_publish.js": {
+      "path": "./basic_publish.js",
+      "hash": "2557028da166fd87c5ba1863b01e2a855e298581bcfcb6fd1a218efe9aee1c75",
+      "last_modified": 1739042316,
+      "size": 2459
+    },
+    "./CybersaderNotion/00 DROPZONE/Registry Keys & Defense Evasion.md": {
+      "path": "./CybersaderNotion/00 DROPZONE/Registry Keys & Defense Evasion.md",
+      "hash": "740cfff8450a171a3eab6e1c8a1082b36d825bc2afecddb43a571fc813b654f0",
+      "last_modified": 1714094673,
+      "size": 2089
+    },
+    "./JS/Reader view for Obsidian Publish": {
+      "path": "./JS/Reader view for Obsidian Publish",
+      "hash": "17b36aef0f5c8cccfb956b2acb2997036ae88d087c66ab6f303049d4e0430acd",
+      "last_modified": 1720981298,
+      "size": 6042
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Podcasts/The Privacy, Security, and OSINT Show - Michael Ba.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Podcasts/The Privacy, Security, and OSINT Show - Michael Ba.md",
+      "hash": "f89739150075257d2f904924cdeece2a70987cbd47a5a239da6f70ac013581e5",
+      "last_modified": 1714094673,
+      "size": 57
+    },
+    "./CybersaderNotion/07 Cyberbusiness/5-Step Process Design.md": {
+      "path": "./CybersaderNotion/07 Cyberbusiness/5-Step Process Design.md",
+      "hash": "ebdc9ecb372c644104e1244b4a79c7e1c6b475d6b3e2abbdd5e09657e520c2d3",
+      "last_modified": 1714094673,
+      "size": 3691
+    },
+    "./CybersaderNotion/08 Cybersader LOGS or JOURNAL (PUBLIC).md": {
+      "path": "./CybersaderNotion/08 Cybersader LOGS or JOURNAL (PUBLIC).md",
+      "hash": "2bbf72650f39c26fbc124a6144a4f24539021e145a4be058ed9cb8c36c1fc683",
+      "last_modified": 1714094673,
+      "size": 40
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Grad School Papers and Presentations/Benjamin.pdf": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Grad School Papers and Presentations/Benjamin.pdf",
+      "hash": "8442e0409ce0949c3a0e796384f49e48faba14c0f87fb7582417e7d210b479c1",
+      "last_modified": 1710774347,
+      "size": 655062
+    },
+    "./CybersaderNotion/07 Cyberbusiness/Hiring Development.md": {
+      "path": "./CybersaderNotion/07 Cyberbusiness/Hiring Development.md",
+      "hash": "0a4b756aa0f309ab6a3ba6bf854b5178be34095342da040e532305140f02cff7",
+      "last_modified": 1714094673,
+      "size": 20
+    },
+    "./CSS/Reader view": {
+      "path": "./CSS/Reader view",
+      "hash": "294b4b80fddbaac2a63db62b4d26165848df1daf75d6e6498cfd9c52b88c04a2",
+      "last_modified": 1720981211,
+      "size": 4625
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Sending & Sharing - files,links,etc.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Sending & Sharing - files,links,etc.md",
+      "hash": "2cbd3b25ab1815b851ba9acce01da900d7b8b2737c7764891406eb0bf6eba28a",
+      "last_modified": 1714094673,
+      "size": 1892
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal/Cloud Security - Architecture, Virtualization, Con.md": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal/Cloud Security - Architecture, Virtualization, Con.md",
+      "hash": "6eed0588d5d837b625b928c245c86720d8df2faa7e0292edee1df817007ee922",
+      "last_modified": 1714094673,
+      "size": 463
+    },
+    "./CybersaderNotion/00 DROPZONE/First sessions.md": {
+      "path": "./CybersaderNotion/00 DROPZONE/First sessions.md",
+      "hash": "1d733e7d911568356e0a3e1e1dcb1da3aee20a1fea3d1bbc131e0b6067958073",
+      "last_modified": 1720403015,
+      "size": 2390
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Cybersecurity Ontologies, Taxonomies, and Mental M.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Cybersecurity Ontologies, Taxonomies, and Mental M.md",
+      "hash": "78f4cc04a783b3e444c05f1ebd28ccb9cbb0f0f86e66e5325c4b9317feb055ce",
+      "last_modified": 1725147664,
+      "size": 699
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources _(2)_/eSecurity Planet Latest Cybersecurity News for IT.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources _(2)_/eSecurity Planet Latest Cybersecurity News for IT.md",
+      "hash": "3eed6c06c9da2802d50034530bbce6ac99da0e0ee4b79ae9cb7cb3a9d8f8df69",
+      "last_modified": 1714094673,
+      "size": 66
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Personal Cyber Resilience Arsenal.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Personal Cyber Resilience Arsenal.md",
+      "hash": "358a26c81cdb8d1f41566cef19bffb6309bc1c5daf3961fff91cbc626b8cbd91",
+      "last_modified": 1718912578,
+      "size": 1589
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels.csv _(2)_": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels.csv _(2)_",
+      "hash": "1c43807bddc0369836dfa6a7943319f5d32216fa71f6dc94ecb812f183baadc8",
+      "last_modified": 1718325238,
+      "size": 1176
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Grad School Papers and Presentations/Targeted.pdf": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Grad School Papers and Presentations/Targeted.pdf",
+      "hash": "20a9bcd4a8a2f8f8f17ca486d2fbf2bfc5af17fe1017118376dfdd18dac767f0",
+      "last_modified": 1710774347,
+      "size": 1870816
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources _(2)_/International Association of Privacy Professionals.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources _(2)_/International Association of Privacy Professionals.md",
+      "hash": "43a21d587dd0d73c8cbb86bb05ab5146673841fbb2f5ce0a85ce0ca471c0ffff",
+      "last_modified": 1714094673,
+      "size": 72
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Grad School Papers and Presentations/BenjaminRader.pdf": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Grad School Papers and Presentations/BenjaminRader.pdf",
+      "hash": "753610d468a38eb197b5ecfb7b156bd7627f8330fe06334374aa35f18164b3b5",
+      "last_modified": 1710774347,
+      "size": 664081
+    },
+    "./CybersaderNotion/00 DROPZONE/Ttx b&b.md": {
+      "path": "./CybersaderNotion/00 DROPZONE/Ttx b&b.md",
+      "hash": "3eba4280a32dcb338e53ba08cee4dad82addaa5d65a9534ea55ba1ddea7eddc3",
+      "last_modified": 1723342105,
+      "size": 64
+    },
+    "./CybersaderNotion/01 CyberNews/6 20 2024.md": {
+      "path": "./CybersaderNotion/01 CyberNews/6 20 2024.md",
+      "hash": "d2115106c4488b04df0a25fcd723d58bbf674a5a1b96f8f861fa198fae4f6df3",
+      "last_modified": 1719161810,
+      "size": 837
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Browser.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Browser.md",
+      "hash": "380c2b809842a96646323f4fb97bb7811978ac57af27ded476449a2c02820277",
+      "last_modified": 1714094673,
+      "size": 9
+    },
+    "./basic_publish.css": {
+      "path": "./basic_publish.css",
+      "hash": "25511579739520aa92ecfaaafc52adcdadf4f8478dc777818fa683b5fbb48795",
+      "last_modified": 1739042297,
+      "size": 1758
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Desktop (mostly Windows).md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Desktop (mostly Windows).md",
+      "hash": "68789286633fd9bf74373faafb7d7b62dd6db12b861092575d9f3bfd79b2e490",
+      "last_modified": 1718830185,
+      "size": 1018
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Self-Promotion & Personal Branding.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Self-Promotion & Personal Branding.md",
+      "hash": "50742a7c50565fafb05d126aefa10eb53eada4acf135d023bdfd56de299d2e65",
+      "last_modified": 1714094673,
+      "size": 6054
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Home Networking Arsenal.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Home Networking Arsenal.md",
+      "hash": "25aef3384063d71b172e5b0fac968e08ad05b0aeb343ebf88a9dc71b5c8af920",
+      "last_modified": 1725301895,
+      "size": 1752
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Modern Data Engineering Stack for Cyber/Data Integration.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Modern Data Engineering Stack for Cyber/Data Integration.md",
+      "hash": "253089ee756180ced97852f53eefe358d881bac36ff4b638a9adf6de0d59ffda",
+      "last_modified": 1714094673,
+      "size": 1688
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Modern Data Engineering Stack for Cyber.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Modern Data Engineering Stack for Cyber.md",
+      "hash": "90edce906841ac12092ba55544f35a72d06374e853cf819885e00ebb9e1b0e32",
+      "last_modified": 1714094673,
+      "size": 2192
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Regex - Regular Expressions.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Regex - Regular Expressions.md",
+      "hash": "eb677f563dfe8efabd3f4a593cd35623f8e19e36be710bd6994aca3173132922",
+      "last_modified": 1714094673,
+      "size": 182
+    },
+    "./CybersaderNotion/00 DROPZONE/WPA 2 Stuff.md": {
+      "path": "./CybersaderNotion/00 DROPZONE/WPA 2 Stuff.md",
+      "hash": "125663814eca12d5122adc9829f366fd02be6c6bb62ccbd29776c149632211d0",
+      "last_modified": 1714094673,
+      "size": 4870
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/Black Hills Information Security - YouTube.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/Black Hills Information Security - YouTube.md",
+      "hash": "af06a379042f85631165ead2eb9fd6ed1f76c922e6c62c4a0c2369acb6a7c5f7",
+      "last_modified": 1714094673,
+      "size": 165
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Modern Data Engineering Stack for Cyber/Pandas.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Modern Data Engineering Stack for Cyber/Pandas.md",
+      "hash": "66481b453dc6a5ee4d8efbd88c6e0d5e93812b756e3b0966571a873d44b3d547",
+      "last_modified": 1714094673,
+      "size": 27305
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources/https www cyberseek org.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources/https www cyberseek org.md",
+      "hash": "fc93cca7cb2367d3cde4452ca3ae521251f85c7554f2615871dc5b930290242a",
+      "last_modified": 1714094673,
+      "size": 146
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources.md",
+      "hash": "90c97fd3f58d2956bfe2c740c3ad09c20d5ede2960df3db73040a145049a61d4",
+      "last_modified": 1714094673,
+      "size": 2915
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/Black Hat - YouTube.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/Black Hat - YouTube.md",
+      "hash": "8458d0a5cd37285023316005b723811ec5f822f0a2d2926b859349d668e9ad73",
+      "last_modified": 1714094673,
+      "size": 74
+    },
+    "./CybersaderNotion/03 Awesome-Cyber.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber.md",
+      "hash": "72fabbe2ee4cf9d00b47a768376d86b490d488f21e1b6d3436ff1b9905e3f6bd",
+      "last_modified": 1714094673,
+      "size": 2504
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal/Cyber ONBOARDING.md": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal/Cyber ONBOARDING.md",
+      "hash": "cf37256ca52d1f8996fa39a02fad91587f443af001fb70a2e4c207c4dd58c2bc",
+      "last_modified": 1716746387,
+      "size": 718
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal/Reporting & Documentation.md": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal/Reporting & Documentation.md",
+      "hash": "2f26ce7098dcfb679531ff7291e8879f976c6091034863196f3e5f2dca403376",
+      "last_modified": 1714094673,
+      "size": 776
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal/Writing Stack.md": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal/Writing Stack.md",
+      "hash": "0af69aa9b803c002cfe347c9dac9906847b2acb8264b6d0d1f7739e1f207b3bf",
+      "last_modified": 1714094673,
+      "size": 469
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/John Hammond - YouTube.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/John Hammond - YouTube.md",
+      "hash": "0307e894c5fd3e7667465a84d231f3294f9807918ee95bfa6c48fb1dfcf3e035",
+      "last_modified": 1714094673,
+      "size": 112
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Modern Data Engineering Stack for Cyber/Deploying Python Servers.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Modern Data Engineering Stack for Cyber/Deploying Python Servers.md",
+      "hash": "801c8bac5516bf812fce38f9e8bb756ff170848de40ff5135330c1e2dd063a87",
+      "last_modified": 1714094673,
+      "size": 319
+    },
+    "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/A new kind of email phishing attack.md": {
+      "path": "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/A new kind of email phishing attack.md",
+      "hash": "f0602fafba7f7f4be0b432b9b07b4aea4b10da2fa40f7808419434579a9c9300",
+      "last_modified": 1714094673,
+      "size": 612
+    },
+    "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Check washing.md": {
+      "path": "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Check washing.md",
+      "hash": "aa3fbd21605084d9498b0a386dcc6e189d519b50891d84fe0e28df34d8ca44d7",
+      "last_modified": 1714094673,
+      "size": 361
+    },
+    "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/The reality of tech jobs in 2024.md": {
+      "path": "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/The reality of tech jobs in 2024.md",
+      "hash": "4861523fe82b5d925bb671d58841e90f769d35c112686720a4aea4a63da1f619",
+      "last_modified": 1714094673,
+      "size": 797
+    },
+    "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Zero Days.md": {
+      "path": "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Zero Days.md",
+      "hash": "fa5ae1096491a6c776c4f3bb10b71e5d5e531aef3522c5774236cac343f5f981",
+      "last_modified": 1716250468,
+      "size": 869
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources _(2)_/Threatpost The first stop for security news.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources _(2)_/Threatpost The first stop for security news.md",
+      "hash": "a4c2b57081ef7135fde27c06ae7a50fbe8335686238c52409ef053abd07053ea",
+      "last_modified": 1714094673,
+      "size": 47
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/DB Tech - YouTube.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/DB Tech - YouTube.md",
+      "hash": "33a1ddac9c3effc6375a5395600b311b7412137810e2ecbf8473c490fbe42a12",
+      "last_modified": 1714094673,
+      "size": 67
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal/Misc Content Creation.md": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal/Misc Content Creation.md",
+      "hash": "31a9d54c0ebdddd3e77279f3addda05296bb0c18559b07475d3faaccd24e7b2c",
+      "last_modified": 1724445390,
+      "size": 4859
+    },
+    "./CybersaderNotion/06 Cybersader - COMMUNITY (Mostly Indiana).md": {
+      "path": "./CybersaderNotion/06 Cybersader - COMMUNITY (Mostly Indiana).md",
+      "hash": "9e5cb8fbeb99c1a377c4e1bb9f619065badd80f18f250da61c9991d9fc56d0e0",
+      "last_modified": 1716662835,
+      "size": 1206
+    },
+    "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Fintech and Payment Card Risks.md": {
+      "path": "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Fintech and Payment Card Risks.md",
+      "hash": "0149a35500ca2e5197fb5f0282e4774fc9302a4762b02752a3690d9821a405b6",
+      "last_modified": 1716427986,
+      "size": 734
+    },
+    "./CybersaderNotion/07 Cyberbusiness/Front-End Ecosystem.md": {
+      "path": "./CybersaderNotion/07 Cyberbusiness/Front-End Ecosystem.md",
+      "hash": "2a833e2c196e1cf783ecc4685e629c18bd644308311fefdaff969fcecacf2dbe",
+      "last_modified": 1714094673,
+      "size": 21
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/Wild West Hackin' Fest - YouTube.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/Wild West Hackin' Fest - YouTube.md",
+      "hash": "101b0c4861bd1cc6f07f189f325672d6e9dba18150d951b58198a6b201d2c12a",
+      "last_modified": 1714094673,
+      "size": 97
+    },
+    "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 76.md": {
+      "path": "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 76.md",
+      "hash": "92cc9c725423a817843aeb6a505e623f6c8328da1155a226a0cba15fd294ce45",
+      "last_modified": 1714180985,
+      "size": 11005
+    },
+    "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/The Most Offensive Con That Ever Offensived - Bypa/2024_03_13_Offensive-Con-2024_Michael-Allen.pdf": {
+      "path": "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/The Most Offensive Con That Ever Offensived - Bypa/2024_03_13_Offensive-Con-2024_Michael-Allen.pdf",
+      "hash": "3757699404ec19288d66028b4fa73ca15fe2676d40119288c213a59db7742a5f",
+      "last_modified": 1713388793,
+      "size": 1102851
+    },
+    "./cyberbase.portagenty.toml": {
+      "path": "./cyberbase.portagenty.toml",
+      "hash": "cc18138f257b28ec9ce1668299ad88631bb4cda04ced046b915a383d931e6268",
+      "last_modified": 1776471352,
+      "size": 254
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Podcasts.csv": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Podcasts.csv",
+      "hash": "496f00034e6232269f7e217251e826ad9b37d1209e3a4efcaff3f4ccaeed845f",
+      "last_modified": 1710035593,
+      "size": 135
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/Jack Rhysider - YouTube.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/Jack Rhysider - YouTube.md",
+      "hash": "f84d9673a12dc6cd00c3e792e6123ec585402e73997c36ce366daae3eae91192",
+      "last_modified": 1714094673,
+      "size": 93
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Podcasts.csv _(2)_": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Podcasts.csv _(2)_",
+      "hash": "496f00034e6232269f7e217251e826ad9b37d1209e3a4efcaff3f4ccaeed845f",
+      "last_modified": 1710035593,
+      "size": 135
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources _(2)_/Krebs on Security – In-depth security news and inv.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Resources _(2)_/Krebs on Security – In-depth security news and inv.md",
+      "hash": "308e908b34e45a4156a1c7a8ac1f2845b7f54b28a799e18ca19aa03b511c3da1",
+      "last_modified": 1714094673,
+      "size": 64
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Pragmatic Data Privacy for Cyber Professionals.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Pragmatic Data Privacy for Cyber Professionals.md",
+      "hash": "aea5c4c666d3c548564f1c5012f0759e78bc4d0b63faf6a2389e3e82a588d68f",
+      "last_modified": 1714094673,
+      "size": 179
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Modern Data Engineering Stack for Cyber/SSOT - Single Source of Truth Approach & Integrati.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Modern Data Engineering Stack for Cyber/SSOT - Single Source of Truth Approach & Integrati.md",
+      "hash": "a4beee1f0614a40719a1c48a3e0aa8bbfbb6416911eaee74b4cafea72a9a0675",
+      "last_modified": 1714094673,
+      "size": 2300
+    },
+    "./git_publish2.js": {
+      "path": "./git_publish2.js",
+      "hash": "0b78692d1298005840063f8fd1eca4c4fdd665ea57649b9c7669238fd440eba1",
+      "last_modified": 1739316143,
+      "size": 5573
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech.md",
+      "hash": "26f7ee5e540ca626894e76869ddc3bc6d0262de4bd2df1c10059f12179cfc4f3",
+      "last_modified": 1714094673,
+      "size": 1652
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal/Personal Privacy.md _(2)_": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal/Personal Privacy.md _(2)_",
+      "hash": "a060c6c7cb805037d778d84b34053e6aca3370abe5bbd1e937162979a0d7239a",
+      "last_modified": 1710035593,
+      "size": 180
+    },
+    "./github_publish.js": {
+      "path": "./github_publish.js",
+      "hash": "16bc02516e3cbce6303eb8587cd0ba5dfe22d2d38f1fe48e068378d465f7697d",
+      "last_modified": 1739042382,
+      "size": 3874
+    },
+    "./git_publish.js": {
+      "path": "./git_publish.js",
+      "hash": "1d6fe84ed8af916f7bc528cf5b3c73a8e7f29d38f0594f519d64f9d80b8885ad",
+      "last_modified": 1739328697,
+      "size": 5030
+    },
+    "./CybersaderNotion/00 DROPZONE/Threat Hunting.md": {
+      "path": "./CybersaderNotion/00 DROPZONE/Threat Hunting.md",
+      "hash": "936472ac41ba649ae40c451d7ffdb45cffba8cf729d2268877951e5c78a4799b",
+      "last_modified": 1714094673,
+      "size": 407
+    },
+    "./JS/publish search hotkey.js": {
+      "path": "./JS/publish search hotkey.js",
+      "hash": "238b48d55a91e6b1ba0cf97c47523983eb1439158c8091554ddf5314ed6a1bf9",
+      "last_modified": 1720981293,
+      "size": 680
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Awesome Purple Teaming.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Awesome Purple Teaming.md",
+      "hash": "91892261f9089418435653c9af9f9e0c3a92c5f6766bcc7904e8e5fcf483c8ab",
+      "last_modified": 1714094673,
+      "size": 1309
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal/Self-Hosting for Cyber.md": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal/Self-Hosting for Cyber.md",
+      "hash": "951c7fedec02195e077aa0c9c97c61c8101e7595fe460e26a26e1a969146b0b9",
+      "last_modified": 1714094673,
+      "size": 24
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Cyber Tools.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Cyber Tools.md",
+      "hash": "4e82ae150539e19492e719307f2dcc56ff977d5d0e148b788c57bff07d244585",
+      "last_modified": 1714094673,
+      "size": 195
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Education Options/Cybersecurity Colleges & Universities NICCS.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Education Options/Cybersecurity Colleges & Universities NICCS.md",
+      "hash": "2d496580ad92bcd235d723cff53ec025a60d7fa440f8308c37c4cc70eaad9fbd",
+      "last_modified": 1714094673,
+      "size": 47
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/File Hosting.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/File Hosting.md",
+      "hash": "41b1c3c438abe4088b4d8631c96b3a63e012677dbd5d4d5a0f3fda82c99d5407",
+      "last_modified": 1714094673,
+      "size": 1819
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal/Cyber Legal.md": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal/Cyber Legal.md",
+      "hash": "c6ab57146b702bd54d967c35cfb22eb3c45c3ab24cbf931b5aa738923fc94d85",
+      "last_modified": 1714094673,
+      "size": 202
+    },
+    "./CybersaderNotion/00 DROPZONE.md": {
+      "path": "./CybersaderNotion/00 DROPZONE.md",
+      "hash": "7f4c96d879374c171d83481aeb51359694f5106a314071b206ab30d9abb2c1d2",
+      "last_modified": 1723342105,
+      "size": 1473
+    },
+    "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 32.md": {
+      "path": "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/Darknet diaries episode 32.md",
+      "hash": "45252f7ba070bb20037c4622ae6cd68cf1448aa9fc2234281cef0763779b89b5",
+      "last_modified": 1714094673,
+      "size": 5261
+    },
+    "./CybersaderNotion/02 Cybersecurity Books, Merch.md": {
+      "path": "./CybersaderNotion/02 Cybersecurity Books, Merch.md",
+      "hash": "a9f5f10c190fb37a6a31dec502cf6b7416c58e803c557a9e56e08dc2752bd4c7",
+      "last_modified": 1724445390,
+      "size": 86
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/Linus Tech Tips - YouTube.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/Linus Tech Tips - YouTube.md",
+      "hash": "f6269f8a50e308e89f4e6dfada4584115e3ae7be730003b65b7ceb7562fbcb27",
+      "last_modified": 1714094673,
+      "size": 68
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/Fireship - YouTube.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Channels/Fireship - YouTube.md",
+      "hash": "37490f8eb123fb7180a1efd23ceaf6c7b2c72242c8a0d5b4b7c4fe9751b6c9d7",
+      "last_modified": 1714094673,
+      "size": 100
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal/Automated Web Scraping.md": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal/Automated Web Scraping.md",
+      "hash": "87fa0bc94023b4f098fa1c13d7763a09cb420e5cf11bcd50316c9501c1f99e32",
+      "last_modified": 1714094673,
+      "size": 263
+    },
+    "./CybersaderNotion/04 Cybersader’s Arsenal/Personal Privacy.md": {
+      "path": "./CybersaderNotion/04 Cybersader’s Arsenal/Personal Privacy.md",
+      "hash": "baa43ee58159495232fa7b7ecc398b44cf5c63e6c0b2b6e6eaaf65bff8927113",
+      "last_modified": 1714094673,
+      "size": 284
+    },
+    "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/The cybersecurity hiring gap.md": {
+      "path": "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/The cybersecurity hiring gap.md",
+      "hash": "8dc8b80fa959e4a31d05826afd0f0a8da255ee7a1691ba94803af90b6eb02ad3",
+      "last_modified": 1714094673,
+      "size": 1493
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Podcasts/CyberWire Daily.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Cybersecurity - Media, Education, Jobs/Podcasts/CyberWire Daily.md",
+      "hash": "52be25f21a628973f9603eff67db1a982b3402d3bfbdf6ea62182eb8fb681a12",
+      "last_modified": 1714094673,
+      "size": 17
+    },
+    "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/The Most Offensive Con That Ever Offensived - Bypa.md": {
+      "path": "./CybersaderNotion/05 Notes - Classes, Presentations, Pods/The Most Offensive Con That Ever Offensived - Bypa.md",
+      "hash": "937444d6d8e13f30d6e431ee403cba2c2e5febae133a899ce8bcad0546e5f3ec",
+      "last_modified": 1714094673,
+      "size": 15494
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Modern Data Engineering Stack for Cyber/Misc Curated Data Solutions.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Modern Data Engineering Stack for Cyber/Misc Curated Data Solutions.md",
+      "hash": "83a0ab49773666d94d3c09e8ed49ee11b6b06a1edab40eb406582cd2545606db",
+      "last_modified": 1714094673,
+      "size": 419
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Misc.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Apps & Tech/Misc.md",
+      "hash": "c7a5b92017bbad39cf2e63a97d40c0973a816d8ad0201717509660dd709a7023",
+      "last_modified": 1714094673,
+      "size": 6
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Awesome CTF Resources.md": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Pro Cyber Resources/Awesome CTF Resources.md",
+      "hash": "b9b0284554e39d976c13060b72e5fde9f29bcd1919bc12e76a6c39953702209d",
+      "last_modified": 1714094673,
+      "size": 606
+    },
+    "./CybersaderNotion/03 Awesome-Cyber/Grad School Papers and Presentations/Group6.pdf": {
+      "path": "./CybersaderNotion/03 Awesome-Cyber/Grad School Papers and Presentations/Group6.pdf",
+      "hash": "5049eeaf1198dbbd0e473ef31e3ba0f8134d933a010131f28d5d84f116b27c8e",
+      "last_modified": 1710774347,
+      "size": 336439
+    }
+  },
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "embedding_dimensions": 384,
+  "chunk_hash_version": 2
+}

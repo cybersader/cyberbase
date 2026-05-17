@@ -67,3 +67,25 @@ All tools are free or built into Windows; commands and links are provided so you
 - .
 
 ## 2) Baseline‑Driven Windows Provisioning
+
+---
+
+# Future Considerations
+
+## Automating first-launch credential entry (parked — currently manual)
+
+**Current state:** unattended install scripts handle the binary install silently, but anything that requires logging into an account (Covenant Eyes / Victory Shield, password manager first-unlock, Microsoft account binding, etc.) is left to the user to type in by hand after install completes. The `install.ps1` pattern explicitly prints a "MANUAL STEP" block at the end with the relevant URLs.
+
+**Future idea worth exploring:**
+
+A "fetch-and-burn" credential pattern using a local secret store + UI automation:
+
+1. Bitwarden CLI (`bw get item ...`) or 1Password CLI (`op read ...`) pulls the credential into memory only at install time
+2. Pywinauto / AutoHotkey / Power Automate Desktop types it into the app's login form
+3. Variables wiped from memory immediately after use (never written to disk in plaintext)
+
+**Even further out:** vision-capable local LLMs (Llama 3.2 Vision, Qwen2.5-VL, OmniParser, OpenAdapt) driving the UI automation — resilient to vendor UI changes that break scripted automation. Anthropic Computer Use proves the capability; local equivalents are catching up. Probably overkill for stable login forms but useful where the UI shifts frequently.
+
+**Why parked:** the manual login is also an *architectural feature* — credentials are personal identity, and parishioner deployments specifically should not have a script knowing the user's password. Automation is appropriate for one's own machines / reinstall workflows; less so for distributed parish use. See [[Tailscale File Transfer on Windows — Field Notes]] for the related conversation about the prudential-judgment line.
+
+**Captured as a future video:** [[How I fully automate a Windows install in 2026]] — full walkthrough of the MicroWin + autounattend + winget + Bitwarden CLI fetch-and-burn stack, plus the "automate the work, preserve the identity boundary" framing.
