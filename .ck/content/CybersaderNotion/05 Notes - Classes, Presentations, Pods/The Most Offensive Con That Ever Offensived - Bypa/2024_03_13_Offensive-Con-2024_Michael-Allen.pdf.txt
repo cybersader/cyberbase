@@ -1,0 +1,214 @@
+
+
+Speaker bio (Who am I?)
+
+Michael Allen (@Wh1t3Rh1n0)
+• Pentesting and red teaming for 9+ years
+• Red team lead at BHIS
+• Special interest in Initial Access
+• Creator and instructor of “Red Team Initial Access”
+• Focus on immediately actionable training
+• June 20-21 on AntiSyphonTraining.com
+
+Thanks to Joseph Kingstone on the BHIS Red Team for input & testing.
+
+Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 2
+
+Hurdles to modern hacking
+
+Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 3
+
+The “good old days”…
+
+• Email defenses were unsophisticated or nonexistent.
+• Antivirus products weren’t very good or weren’t present at all.
+• No such thing as Endpoint Detection and Response (EDR).
+• End users had never heard of “phishing” or “social engineering”.
+• Limited knowledge of their own network topology, inventory, and 
+exposure.
+
+Defenders were operating blind.
+
+Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 4
+
+Common defenses today
+(not an exhaustive list)
+
+• Communication channels
+• Email - filtered based on:
+• Domain age and reputation
+• Email security standards (SPF, DKIM)
+• Message content
+• Chat messages
+• Restricted to internal users only
+• Security awareness
+• Users suspicious of email, chat 
+messages, SMS, phone calls
+• Users trained to scrutinize 
+attachments and URLs
+ • Defenses on the endpoint
+• Advanced EDR/antivirus
+• Rapid response and isolation 
+following a single alert
+• Network defenses
+• Egress controls
+• Traffic decryption and inspection
+• Web traffic filtering
+• External access controls
+• Multi-factor authentication
+• Geolocation
+
+Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 5
+
+Head-to-head is a waste of time
+
+Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 6
+
+Thinking outside the box
+
+Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 7
+
+Attack where your opponent is weakest.
+
+Be in the place your opponent cannot see.
+
+Do what your opponent does not expect.
+
+Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 8
+
+Defensive strongholds
+
+• Communication channels
+• Well defended:
+• Email
+• Chat messages
+• Security awareness
+• Attacks expected via:
+• Email, Chat messages, SMS, 
+Phone calls
+• Easily scrutinized:
+• Attachments, URLs
+ • Defenses on the endpoint
+• Strong monitoring and defenses:
+• User’s workstation
+• Network defenses
+• Strong monitoring and defenses:
+• Company internal network
+• Company VPN
+• External access controls
+• Affected by known, reliable 
+attacks:
+• Multi-factor authentication
+• Geolocation
+
+Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 9
+
+Undefended / Invisible / Unexpected
+
+• Communication channels
+• Impossible to monitor:
+• Mail to the user’s home
+• Security awareness
+• Attacks unexpected via:
+• Physical mail at the user’s home
+• Difficult to scrutinize:
+• QR codes
+ • Defenses on the endpoint
+• Impossible to monitor or defend:
+• Web browser on a user’s phone
+• Network defenses
+• Impossible to monitor or defend:
+• User’s home internet connection
+• User’s mobile internet connection
+• External access controls
+• Affected by known, reliable 
+attacks:
+• Multi-factor authentication
+• Geolocation
+
+Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 10
+
+A new attack is born
+
+Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 11Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 12Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 13Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 14
+
+MFA-enabled credential harvesting
+
+Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 15
+
+Evilginx 3: https://github.com/kgretzky/evilginx2
+
+Reward with a REAL gift card
+
+Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 16
+
+Find the address
+
+Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 17
+
+How to defend?
+
+Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 18
+
+Some defenses (not a comprehensive list)
+
+• Security Awareness Training
+• Concept / principal focused
+• Resilient to novel, future attacks
+• Regular practice + Multiple channels
+• Email, phone, SMS, Teams, LinkedIn, snail mail, USB drops, etc.
+• Allow login ONLY from internal network/VPN
+• “Control the battlefield”
+• Phishing-Resistant MFA
+• Example: FIDO 2
+
+Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 19
+
+Undefended / Invisible / Unexpected
+
+• Communication channels
+• Impossible to monitor:
+• Mail to the user’s home
+• Security awareness
+• Attacks unexpected via:
+• Physical mail at the user’s home
+• Difficult to scrutinize:
+• QR codes
+ • Defenses on the endpoint
+• Impossible to monitor or defend:
+• Web browser on a user’s phone
+• Network defenses
+• Strong monitoring and defenses:
+• Company internal network
+• Company VPN 
+• External access controls
+• Strong monitoring and defenses:
+• External logins disallowed
+• Vulnerabilities moot:
+• Multi-factor authentication
+• Geolocation
+
+Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 20
+
+Some defenses (not a comprehensive list)
+
+• Security Awareness Training
+• Concept / principal focused
+• Resilient to novel, future attacks
+• Regular practice + Multiple channels
+• Email, phone, SMS, Teams, LinkedIn, snail mail, USB drops, etc.
+• Allow login ONLY from internal network/VPN
+• “Control the battlefield”
+• Phishing-Resistant MFA
+• Example: FIDO 2
+
+Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 21
+
+Thank you for listening!
+
+Want to learn more?
+• “Red Team Initial Access” class
+• June 20-21 on AntiSyphonTraining.com
+• Follow me: @Wh1t3Rh1n0
+
+Greetings From The Red Team ©️ Michael Allen | @Wh1t3Rh1n0 22

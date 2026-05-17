@@ -1,0 +1,11 @@
+# Workspace file for portagenty. See:
+# https://cybersader.github.io/portagenty/reference/schema/
+name = "Home Lab, Home Server"
+id = "14f91b01-1eec-4b4d-986a-8cd7f52042b3"
+multiplexer = "zellij"
+
+[[session]]
+name = "shell"
+cwd = "."
+command = "bash"
+kind = "shell"
