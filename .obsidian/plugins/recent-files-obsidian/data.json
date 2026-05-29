@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Data Entry Tools",
+      "path": "📁 03 - Curations, Stacks/⬇ Tech Dropzone/Data Entry Tools/Data Entry Tools.md"
+    },
+    {
+      "basename": "NIST & CIS Resources",
+      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources/NIST & CIS Resources.md"
+    },
+    {
+      "basename": "Data Classifications",
+      "path": "📁 05 - Organizational Cyber/Org Data Governance/Data Classifications/Data Classifications.md"
+    },
+    {
+      "basename": "GRC",
+      "path": "📁 05 - Organizational Cyber/GRC/GRC.md"
+    },
+    {
+      "basename": "Organization Documentation & Wikis",
+      "path": "📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
+    },
+    {
       "basename": "Claude-AI coding tools governance challenges",
       "path": "📁 05 - Organizational Cyber/AI Usage in Orgs/Claude-AI coding tools governance challenges.md"
     },
@@ -57,20 +77,8 @@
       "path": "📁 01 - Projects/Obsidian Frameworker/Obsidian Frameworker.md"
     },
     {
-      "basename": "Organization Documentation & Wikis",
-      "path": "📁 05 - Organizational Cyber/Organization Documentation & Wikis/Organization Documentation & Wikis.md"
-    },
-    {
-      "basename": "GRC",
-      "path": "📁 05 - Organizational Cyber/GRC/GRC.md"
-    },
-    {
       "basename": "Cyber Frameworks, Ontologies",
       "path": "📁 05 - Organizational Cyber/Frameworks, Standards/Cyber Frameworks, Ontologies/Cyber Frameworks, Ontologies.md"
-    },
-    {
-      "basename": "NIST & CIS Resources",
-      "path": "📁 05 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources/NIST & CIS Resources.md"
     },
     {
       "basename": "Windows Desktop Provisioning",
@@ -191,14 +199,6 @@
     {
       "basename": "Knowledge Organization",
       "path": "📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md"
-    },
-    {
-      "basename": "Choosing a Tag Structure in Obsidian",
-      "path": "📁 54 - Obsidian Vault Organization/Choosing a Tag Structure in Obsidian/Choosing a Tag Structure in Obsidian.md"
-    },
-    {
-      "basename": "Cyberbase Folder Structure",
-      "path": "📁 54 - Obsidian Vault Organization/Cyberbase Folder Structure/Cyberbase Folder Structure.md"
     }
   ],
   "omittedPaths": [],
