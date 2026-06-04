@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Cyber Posters",
+      "path": "📁 03 - Curations, Stacks/Cyber Merch/Cyber Posters/Cyber Posters.md"
+    },
+    {
       "basename": "NIST & CIS Resources",
       "path": "📁 05 - Organizational Cyber/Frameworks, Standards/NIST & CIS Resources/NIST & CIS Resources.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Knowledge Platform Organization Meta-Framework",
       "path": "📁 54 - Obsidian Vault Organization/Knowledge Platform Organization Meta-Framework/Knowledge Platform Organization Meta-Framework.md"
-    },
-    {
-      "basename": "Knowledge Organization",
-      "path": "📁 54 - Obsidian Vault Organization/Knowledge Organization/Knowledge Organization.md"
     }
   ],
   "omittedPaths": [],
