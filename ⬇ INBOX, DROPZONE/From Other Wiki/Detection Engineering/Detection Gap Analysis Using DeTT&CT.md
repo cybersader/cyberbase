@@ -70,6 +70,6 @@ The gist:
 - This information can then be put into a DeTT&CT YAML via both...
 	- The DeTT&CT Editor
 	- Dettectinator - automatically generates items from various detection system config files (Splunk, etc.)
-- The detection engineer, threat intel analyst, or security professional goes through with the The DeTT&CT Editor and then grades items, adds APTs, etc.
+- The detection engineer, threat intel analyst, or security professional goes through with the DeTT&CT Editor and then grades items, adds APTs, etc.
 	- The organization can use various threat intel sources to find APTs that apply to their company or vertical
 - Lastly, this information is loaded into the ATT&CK Navigator as a layer and this can be used to find detection gaps
