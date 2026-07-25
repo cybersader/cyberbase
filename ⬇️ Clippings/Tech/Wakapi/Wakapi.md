@@ -6,7 +6,7 @@ title: "Wakapi - Coding Statistics"
 source: "https://wakapi.dev/"
 published:
 description: "Wakapi is an open-source tool that helps you keep track of the time you have spent coding on different projects in different programming languages and more. Ideal for statistics freaks and anyone else."
-tags: ["clippings", "clippings/tech", "https://wakapi.dev/"]
+tags: ["clippings", "clippings/tech"]
 favicon: "assets/images/favicon-32x32.png"
 date created: Sunday, August 31st 2025, 9:39 pm
 date modified: Sunday, August 31st 2025, 9:39 pm
