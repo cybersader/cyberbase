@@ -1,0 +1,268 @@
+# Lands in cybersader/cyberbase as .github/workflows/publish-site.yml
+#
+# The vault repo carries no renderer files. Everything this workflow runs comes
+# from the public cybersader/cyberbaser repo, cloned at build time: the
+# projection (publish boundary + safety lint + leak test) and the Quartz
+# renderer config. The vault only carries publish.yml and this file.
+name: Publish vault site
+
+# Trigger surface is deliberately narrow: trusted content from the default
+# branch, plus a manual button. This workflow must never gain a
+# `pull_request_target` trigger. That would run fork-authored markdown in a job
+# holding write scopes on this repo, which here means write access to the vault
+# itself (https://securitylab.github.com/resources/github-actions-preventing-pwn-requests/).
+# Per-PR previews go in a separate workflow pair: a `pull_request` build job
+# with no secrets that only produces an artifact, and a `workflow_run` publish
+# job that runs base-branch code and never checks out the contributor's branch.
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.md'
+      - 'publish.yml'
+      # Rebuild when the pipeline definition itself changes.
+      - '.github/workflows/publish-site.yml'
+  workflow_dispatch:
+    inputs:
+      cyberbaser_ref:
+        description: 'cyberbaser ref to build with (branch, tag, or SHA)'
+        required: false
+        default: 'main'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deploy at a time, and never cancel one in flight: a half-uploaded Pages
+# artifact is a worse state than a queued build.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  # Pinned to the version measured in the R14 spike: 20/20 on the OFM checklist,
+  # 1:54.82 wall, 2.42 GiB peak RSS, exit 0. Upstream's default branch is now
+  # v5, which adds a network plugin install (@quartz-community/*) to every
+  # build. Do not float this pin without re-running the spike.
+  QUARTZ_VERSION: v4.5.2
+  # Project site for this repo. Separate repo means a separate Pages site, so
+  # this does not touch cybersader.github.io/cyberbaser.
+  CB_SITE_URL: https://cybersader.github.io
+  CB_BASE_PATH: /cyberbase
+  # Quartz v4 `baseUrl` form: host + path, no protocol.
+  CB_BASE_URL: cybersader.github.io/cyberbase
+  QUARTZ_DIR: quartz
+  SITE_DIR: quartz/public
+  # GitHub Pages hard limit on the built artifact. Documented as "1 GB" without
+  # saying which GB, so this uses the smaller decimal reading to warn early.
+  PAGES_CAP_BYTES: '1000000000'
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # This job renders vault content, so it holds no write scopes and no
+    # secrets. Everything it produces crosses to the deploy job as an artifact.
+    permissions:
+      contents: read
+    # Measured 1:54.82 on 24 cores at 137% CPU across 4 parse threads. Hosted
+    # runners are 2 vCPU (4 on the public-repo tier), so the render alone can
+    # plausibly run 5-10x that. 25 minutes covers checkout + npm ci + render
+    # with room, and still fails fast on a hang.
+    timeout-minutes: 25
+    steps:
+      - name: Check out the vault
+        uses: actions/checkout@v4
+        with:
+          path: vault
+          # Depth 1 is enough today. The projected copy is a fresh directory and
+          # is not a git repo, so Quartz's git date resolution finds nothing
+          # either way and falls back to file mtime. Switch to fetch-depth: 0
+          # only when the projection starts stamping git-derived dates into the
+          # projected frontmatter (legal under D2: the projected copy is a
+          # disposable build input, not the vault).
+          fetch-depth: 1
+          # Do not leave the job token in vault/.git/config where a later build
+          # step could read it.
+          persist-credentials: false
+
+      - name: Check out the cyberbaser pipeline
+        uses: actions/checkout@v4
+        with:
+          repository: cybersader/cyberbaser
+          # Prefer a release tag or SHA here once cyberbaser cuts one: floating
+          # main means the site can change without a vault commit.
+          ref: ${{ github.event.inputs.cyberbaser_ref || 'main' }}
+          path: cyberbaser
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.11
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          # Quartz v4.5.2 was measured on Node v24.12.0 / npm 11.6.2.
+          node-version: '24'
+
+      - name: Install pipeline dependencies
+        run: |
+          set -euo pipefail
+          bun install --cwd cyberbaser/packages/publish --frozen-lockfile
+          bun install --cwd cyberbaser/packages/projection --frozen-lockfile
+
+      - name: Project the vault
+        # cb-project runs the publish boundary (default-deny allowlist +
+        # cb-publish grants, deny-wins), the reachability pass for assets, the
+        # path safety lint, and the leak test. It exits non-zero on any of them,
+        # which fails this job. That pre-flight is not optional: Quartz v4.5.2
+        # has no per-file error isolation, so one unparseable YAML frontmatter
+        # block aborts the entire build with no partial output (4 such files
+        # exist in the vault today).
+        run: |
+          set -euo pipefail
+          BIN_REL="$(node -p "
+            const b = require('./cyberbaser/packages/projection/package.json').bin;
+            typeof b === 'string' ? b : b['cb-project'];
+          ")"
+          # Positional contract: cb-project <vaultDir> <outDir> [--report path]
+          bun "cyberbaser/packages/projection/${BIN_REL}" \
+            vault \
+            content-projected \
+            --report projection-report.json
+          echo "Projected files: $(find content-projected -type f | wc -l)"
+
+      - name: Upload the projection report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: projection-report
+          path: projection-report.json
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Set up the Quartz renderer
+        run: |
+          set -euo pipefail
+          bash cyberbaser/renderers/quartz-cyberbase/setup.sh "${QUARTZ_DIR}"
+
+      - name: Render the projected content
+        # Spoke contract: build.sh CONTENT_DIR [QUARTZ_DIR]; output defaults to
+        # $QUARTZ_DIR/public, which is exactly $SITE_DIR here.
+        run: |
+          set -euo pipefail
+          bash cyberbaser/renderers/quartz-cyberbase/build.sh \
+            content-projected \
+            "${QUARTZ_DIR}"
+          test -f "${SITE_DIR}/index.html"
+
+      - name: Assert no colon in any emitted path
+        # The R14 spike emitted 6 paths containing ':' from a single note whose
+        # `tags:` array held a URL ("https://wakapi.dev/"), which Quartz split
+        # into a `https:` tag directory. The input path census was clean: this
+        # hazard only exists on DERIVED paths. An artifact containing a colon
+        # cannot be checked out or unzipped on Windows, so it fails here rather
+        # than after it is published.
+        run: |
+          set -euo pipefail
+          # -path, not -name: a colon in a directory segment has to surface
+          # every file underneath it, which is how the spike's 6 offending
+          # paths were counted.
+          mapfile -t OFFENDERS < <(cd "${SITE_DIR}" && find . -path '*:*' -print)
+          if [ "${#OFFENDERS[@]}" -gt 0 ]; then
+            printf 'colon in emitted path: %s\n' "${OFFENDERS[@]}" >&2
+            echo "::error::${#OFFENDERS[@]} emitted path(s) contain ':'. Fix the source frontmatter (usually a URL in a tags array), do not filter the output."
+            exit 1
+          fi
+          echo "No colon in any emitted path."
+
+      - name: Report artifact size against the Pages 1 GB cap
+        # Spike baseline on the unfiltered vault: 7,466 files, 537,599,039 bytes
+        # (513 MiB), 53.8% of the cap. Reachability-only asset publishing should
+        # come in well under that, since 364 MB of the spike total was Quartz
+        # copying every unreferenced non-markdown file.
+        run: |
+          set -euo pipefail
+          du -sh "${SITE_DIR}"
+          BYTES="$(du -sb "${SITE_DIR}" | cut -f1)"
+          FILES="$(find "${SITE_DIR}" -type f | wc -l)"
+          PCT="$(( BYTES * 100 / PAGES_CAP_BYTES ))"
+          echo "Artifact: ${BYTES} bytes across ${FILES} files (${PCT}% of the 1 GB Pages cap; spike baseline was 537,599,039 bytes / 7,466 files = 53.8%)."
+          {
+            echo "| Metric | This build | Spike baseline |"
+            echo "|---|---|---|"
+            echo "| Bytes | ${BYTES} | 537,599,039 |"
+            echo "| Files | ${FILES} | 7,466 |"
+            echo "| % of 1 GB cap | ${PCT}% | 53.8% |"
+          } >> "${GITHUB_STEP_SUMMARY}"
+          # Advisory: emitted paths over 200 characters. Counted in UTF-16 code
+          # units, matching the safety lint, because emoji path segments make a
+          # byte count wrong. The budget has to be set on emitted paths, not
+          # source paths: Quartz appends "-og-image.webp" and expands " & " to
+          # "--and--", so the spike had 1 source path over 200 but 5 emitted
+          # ones (longest 214).
+          node -e '
+            const fs = require("fs"), path = require("path");
+            const root = process.env.SITE_DIR;
+            const long = [];
+            (function walk(d) {
+              for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+                const f = path.join(d, e.name);
+                if (e.isDirectory()) walk(f);
+                else {
+                  const rel = path.relative(root, f);
+                  if (rel.length > 200) long.push([rel.length, rel]);
+                }
+              }
+            })(root);
+            long.sort((a, b) => b[0] - a[0]);
+            console.log(`Emitted paths over 200 chars: ${long.length}`);
+            for (const [n, p] of long.slice(0, 10)) console.log(`  ${n}  ${p}`);
+          '
+          if [ "${BYTES}" -ge "${PAGES_CAP_BYTES}" ]; then
+            echo "::error::Artifact is at or over the 1 GB GitHub Pages cap. The deploy would be rejected."
+            exit 1
+          fi
+          if [ "${PCT}" -ge 80 ]; then
+            echo "::warning::Artifact is at ${PCT}% of the 1 GB Pages cap. Move media out before it becomes a deploy failure."
+          fi
+
+      - name: Disable Jekyll processing
+        # build_type=workflow does not run Jekyll, but the vault emits
+        # underscore-prefixed directories (_attachments) and this is one line of
+        # insurance against that ever mattering.
+        run: touch "${SITE_DIR}/.nojekyll"
+
+      - name: Upload the Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ env.SITE_DIR }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    # deploy-pages has its own internal timeout (default 10 minutes) on the
+    # Pages side unpacking and serving the artifact. The spike's 7,466 files /
+    # 513 MiB has never been timed through that path, so this is the untested
+    # risk in the pipeline. If the deploy step times out, the fixes in order of
+    # preference are: cut file count (disable OG image generation, one webp per
+    # page = 1,420 files and 26 MB), move large media out of the published set,
+    # then raise `timeout` on the deploy-pages step.
+    timeout-minutes: 20
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
