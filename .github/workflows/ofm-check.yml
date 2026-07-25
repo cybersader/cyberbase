@@ -1,0 +1,65 @@
+# OFM round-trip validator — REPORT-ONLY phase.
+#
+# On every PR that touches markdown, compares each changed file against its
+# base version with @cyberbaser/ofm's change classifier:
+#   clean   — plausible honest region edit
+#   suspect — re-serialization fingerprints (mass churn, style rewrites, escapes)
+#   damage  — OFM constructs removed or degraded (wikilinks, embeds, callouts…)
+#
+# While report-only (continue-on-error: true) a damage verdict annotates the PR
+# but never blocks a merge. After the observation window, drop that line and
+# mark the check required in branch protection.
+#
+# Context: cyberbaser R12 — the write path never re-serializes files, so an
+# honest edit is a splice; tools that re-serialize leave fingerprints this
+# check detects. https://cybersader.github.io/cyberbaser/research/v1-build-plan/
+name: ofm-check
+
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    continue-on-error: true # report-only phase — remove to enforce
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Fetch the validator (@cyberbaser/ofm)
+        run: |
+          git clone --depth 1 https://github.com/cybersader/cyberbaser /tmp/cyberbaser
+          cd /tmp/cyberbaser/packages/ofm
+          bun install --frozen-lockfile
+
+      - name: Classify changed markdown files against base
+        run: |
+          set -u
+          git fetch origin "${{ github.base_ref }}" --depth=1
+          git diff --name-only --diff-filter=ACM "origin/${{ github.base_ref }}...HEAD" -- '*.md' > /tmp/changed.txt
+          echo "changed markdown files:"; cat /tmp/changed.txt
+          rc=0
+          while IFS= read -r f; do
+            [ -z "$f" ] && continue
+            echo ""
+            echo "=== $f ==="
+            if git cat-file -e "origin/${{ github.base_ref }}:$f" 2>/dev/null; then
+              git show "origin/${{ github.base_ref }}:$f" > /tmp/before.md
+              if ! node /tmp/cyberbaser/packages/ofm/bin/ofm-check.js diff /tmp/before.md "$f"; then
+                echo "::warning file=$f::ofm-check verdict: damage — OFM constructs removed or degraded"
+                rc=1
+              fi
+            else
+              echo "(new file — round-trip diagnostic, informational only)"
+              node /tmp/cyberbaser/packages/ofm/bin/ofm-check.js roundtrip "$f" || true
+            fi
+          done < /tmp/changed.txt
+          exit $rc
