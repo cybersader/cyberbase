@@ -44,10 +44,15 @@ jobs:
         run: |
           set -u
           git fetch origin "${{ github.base_ref }}" --depth=1
-          git diff --name-only --diff-filter=ACM "origin/${{ github.base_ref }}...HEAD" -- '*.md' > /tmp/changed.txt
-          echo "changed markdown files:"; cat /tmp/changed.txt
+          # -z: null-delimited paths. Nearly every path in this vault contains
+          # emoji; without -z, git quotes them (core.quotepath) and the loop
+          # feeds a literally-quoted string to ofm-check, which crashes.
+          # Caught by the loop rehearsal on PR #5 (masked as green by
+          # report-only mode).
+          git diff --name-only -z --diff-filter=ACM "origin/${{ github.base_ref }}...HEAD" -- '*.md' > /tmp/changed.zlist
+          echo "changed markdown files:"; tr '\0' '\n' < /tmp/changed.zlist
           rc=0
-          while IFS= read -r f; do
+          while IFS= read -r -d '' f; do
             [ -z "$f" ] && continue
             echo ""
             echo "=== $f ==="
@@ -61,5 +66,5 @@ jobs:
               echo "(new file — round-trip diagnostic, informational only)"
               node /tmp/cyberbaser/packages/ofm/bin/ofm-check.js roundtrip "$f" || true
             fi
-          done < /tmp/changed.txt
+          done < /tmp/changed.zlist
           exit $rc
