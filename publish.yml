@@ -1,0 +1,23 @@
+# Publish boundary for the cyberbase vault (agent-authored, maintainer-approved 2026-07-25).
+# Default-deny: anything not matched here stays off the published site.
+# Grants: folder allowlist below, or `cb-publish: true` in a file's frontmatter
+#   (outside these folders that also requires an explicit `slug:`).
+# Denies: `cb-publish: false` or legacy `publish: false` always win.
+# NOTE (R15): legacy `publish: true` flags are IGNORED as grants — 587 stale
+#   ones exist from an earlier publishing era, including on journals.
+allow:
+  - "📁 02 - CyberNews/**"
+  - "📁 03 - Curations, Stacks/**"
+  - "📁 05 - Organizational Cyber/**"
+  - "📁 06 - Learning, Notes/**"
+  - "📁 07 - Cybersader Arsenal/**"
+  - "📁 10 - My Obsidian Stack/**"
+  - "📁 13 - Religion, Ontology, Philosophy/**"
+  - "📁 16 - Society, Culture, Politics, Government/**"
+  - "📁 17 - Knowledge Engineering/**"
+  - "📁 21 - Development/**"
+  - "📁 51 - Cyberbase/**"
+  - "📁 52 - Obsidian Starters & Templates/**"
+  - "📁 54 - Obsidian Vault Organization/**"
+  - "⬇️ Clippings/**"
+  - "CybersaderNotion/**"
