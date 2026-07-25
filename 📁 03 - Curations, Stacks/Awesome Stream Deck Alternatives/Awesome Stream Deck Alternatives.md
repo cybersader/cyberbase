@@ -113,7 +113,7 @@ Each of these alternatives offers different levels of customization and integrat
 
 **You:**
 
-What are some control surfaces and maybe what are some useful software sets that could be used.  I'm in an educational classroom setting and would mostly like to to specific sounds and from anywhere in the room to my computer
+What are some control surfaces and maybe what are some useful software sets that could be used.  I'm in an educational classroom setting and would mostly like to send specific sounds and from anywhere in the room to my computer
 
 * * *
 
