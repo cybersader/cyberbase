@@ -89,7 +89,7 @@ Copy the below compose file
 #  and according to the official nginx container docs the guacamole.conf.template will be
 #  placed in /etc/nginx/conf.d/guacamole.conf after container startup.
 #  ./nginx/ssl will be mapped into the container at /etc/nginx/ssl
-#  prepare.sh creates a a self-signed certificate. If you want to use your own certs
+#  prepare.sh creates a self-signed certificate. If you want to use your own certs
 #  just remove the part that generates the certs from prepare.sh and replace
 #  'self-ssl.key' and 'self.cert' with your certificate.
 #  nginx will export port 8443 to the outside world, make sure that this port is reachable
