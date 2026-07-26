@@ -1,0 +1,208 @@
+# trust-gate — classify a PR into a review route. DECISION ONLY; it never merges.
+#
+# Reads `.cyberbaser/trust.yml` **from the base branch** (never from the PR head:
+# a PR that could add its own author to `agents:` would otherwise self-promote),
+# builds a change description from the PR diff, and runs @cyberbaser/trust.
+#
+# Routes: auto-merge | quick-review | full-review | reject. The route is posted
+# as a `trust:<route>` label and a step summary. Nothing is merged and nothing is
+# blocked — see the commented-out auto-merge step at the bottom for the
+# preconditions before that changes.
+#
+# Companion to ofm-check.yml: that one asks "is this change safe for OFM", this
+# one asks "given who sent it and what it touches, who has to look at it".
+# Context: https://cybersader.github.io/cyberbaser/research/option-space/ (Option 2)
+name: trust-gate
+
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+
+permissions:
+  contents: read
+  pull-requests: write # labels; read-only in practice for fork PRs, see the label step
+
+jobs:
+  classify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Fetch the classifier (@cyberbaser/trust)
+        run: |
+          git clone --depth 1 https://github.com/cybersader/cyberbaser /tmp/cyberbaser
+          cd /tmp/cyberbaser/packages/trust
+          bun install --frozen-lockfile
+
+      - name: Read the trust policy from the base branch
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          set -eu
+          git fetch origin "$BASE_REF" --depth=1
+          # From the base ref on purpose: the policy is not editable by the PR it governs.
+          if git cat-file -e "origin/$BASE_REF:.cyberbaser/trust.yml" 2>/dev/null; then
+            git show "origin/$BASE_REF:.cyberbaser/trust.yml" > /tmp/trust.yml
+            echo "policy: .cyberbaser/trust.yml @ origin/$BASE_REF"
+          else
+            # No policy committed yet. cb-trust fails closed on a missing config
+            # (route = full-review), which is the behaviour we want, so let it.
+            echo "policy: NONE — every PR will route to full-review"
+          fi
+
+      - name: Build the change description from the PR diff
+        env:
+          BASE_REF: ${{ github.base_ref }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          PR_AUTHOR_KIND: ${{ github.event.pull_request.user.type }}
+        run: |
+          set -eu
+          # The script lives inside packages/trust so `js-yaml` resolves from the
+          # install above. It shells out to git with argv arrays, never a string:
+          # nearly every path in this vault contains emoji, and unquoted/quotepath'd
+          # git output has already broken one loop here (PR #5, ofm-check).
+          cat > /tmp/cyberbaser/packages/trust/build-change.mjs <<'EOF'
+          import { execFileSync } from 'node:child_process';
+          import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+          import { join } from 'node:path';
+          import yaml from 'js-yaml';
+
+          const base = `origin/${process.env.BASE_REF}`;
+          const author = process.env.PR_AUTHOR ?? '';
+          const kind = process.env.PR_AUTHOR_KIND ?? 'User';
+          // This script is executed from the classifier's own checkout (so js-yaml
+          // resolves), but every git call and every file read has to happen in the
+          // PR checkout. Pin both to the workspace explicitly.
+          const ws = process.env.GITHUB_WORKSPACE ?? process.cwd();
+          const git = (args) => execFileSync('git', args, { cwd: ws, encoding: 'utf8', maxBuffer: 256 * 1024 * 1024 });
+
+          // -z keeps paths raw and null-delimited: no core.quotepath escaping,
+          // no shell word splitting, emoji and spaces survive intact.
+          const raw = git(['diff', '--name-status', '-z', '--diff-filter=ACMDR', `${base}...HEAD`, '--', '*.md']);
+          const fields = raw.split('\0').filter((s) => s !== '');
+
+          const files = [];
+          for (let i = 0; i < fields.length;) {
+            const code = fields[i++];
+            const letter = code[0];
+            if (letter === 'R' || letter === 'C') {
+              const oldPath = fields[i++], newPath = fields[i++];
+              // A rename is a deletion plus an addition as far as trust is concerned.
+              files.push({ path: oldPath, before: show(base, oldPath), after: '', status: 'removed' });
+              files.push({ path: newPath, before: '', after: read(newPath), status: 'added' });
+              continue;
+            }
+            const path = fields[i++];
+            if (letter === 'A') files.push({ path, before: '', after: read(path), status: 'added' });
+            else if (letter === 'D') files.push({ path, before: show(base, path), after: '', status: 'removed' });
+            else files.push({ path, before: show(base, path), after: read(path), status: 'modified' });
+          }
+
+          function show(ref, path) {
+            try { return git(['show', `${ref}:${path}`]); } catch { return ''; }
+          }
+          function read(path) {
+            const p = join(ws, path);
+            try { return existsSync(p) ? readFileSync(p, 'utf8') : ''; } catch { return ''; }
+          }
+
+          // authorType is a proposal, not an authorization: an account claiming the
+          // agent class still has to appear in the base branch's `agents:` list, or
+          // classify() returns tier `unregistered-agent` -> full-review.
+          let agents = [];
+          try { agents = (yaml.load(readFileSync('/tmp/trust.yml', 'utf8'))?.agents ?? []).map((a) => String(a).toLowerCase()); } catch {}
+          const isAgent = agents.includes(author.toLowerCase()) || kind === 'Bot' || author.endsWith('[bot]');
+          const authorType = author === '' ? 'anonymous' : isAgent ? 'agent' : 'human';
+
+          writeFileSync('/tmp/change.json', JSON.stringify({
+            author,
+            authorType,
+            files,
+            meta: { pr: process.env.GITHUB_REF, base: process.env.BASE_REF, authorKind: kind },
+          }));
+          console.log(`author=${author} type=${authorType} files=${files.length}`);
+          for (const f of files) console.log(`  ${f.status}\t${f.path}`);
+          EOF
+          cd /tmp/cyberbaser/packages/trust
+          node build-change.mjs
+
+      - name: Classify
+        id: classify
+        run: |
+          set -eu
+          node /tmp/cyberbaser/packages/trust/bin/cb-trust.js /tmp/trust.yml --json /tmp/change.json --out /tmp/result.json | tee /tmp/result.txt
+          # cb-trust always exits 0 — it classifies, it does not gate.
+          echo "route=$(jq -r .route /tmp/result.json)" >> "$GITHUB_OUTPUT"
+          echo "tier=$(jq -r .tier /tmp/result.json)" >> "$GITHUB_OUTPUT"
+
+      - name: Step summary
+        if: always()
+        run: |
+          set -eu
+          ROUTE=$(jq -r .route /tmp/result.json)
+          TIER=$(jq -r .tier /tmp/result.json)
+          {
+            echo "## Trust gate: \`$ROUTE\`"
+            echo ""
+            echo "| | |"
+            echo "|---|---|"
+            echo "| contributor tier | \`$TIER\` |"
+            echo "| author | \`$(jq -r .author /tmp/change.json)\` |"
+            echo "| files | $(jq -r '.checks.files.count // 0' /tmp/result.json) / $(jq -r '.checks.files.cap // "-"' /tmp/result.json) |"
+            echo "| changed lines | $(jq -r '.checks.lines.changed // 0' /tmp/result.json) / $(jq -r '.checks.lines.cap // "-"' /tmp/result.json) |"
+            echo "| ofm verdict | \`$(jq -r '.checks.ofm.verdict // "n/a"' /tmp/result.json)\` |"
+            echo "| source cited | $(jq -r 'if .checks.source == null then "n/a" elif .checks.source.hasUrl then "yes" else "no" end' /tmp/result.json) |"
+            echo ""
+            echo "### Reasons"
+            jq -r '.reasons[] | "- `\(.)`"' /tmp/result.json
+            echo ""
+            echo "_Decision only: nothing is merged or blocked by this check._"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Label the PR with the route
+        # Fork PRs get a read-only token, so this is best-effort by design; the step
+        # summary above is always written. If labels on fork PRs become important,
+        # move labelling into a separate workflow_run-triggered job.
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ROUTE: ${{ steps.classify.outputs.route }}
+          PR: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -eu
+          for r in auto-merge quick-review full-review reject; do
+            gh label create "trust:$r" --repo "$REPO" --color BFD4F2 --description "cyberbaser trust gate route" 2>/dev/null || true
+            [ "$r" = "$ROUTE" ] || gh api -X DELETE "repos/$REPO/issues/$PR/labels/trust:$r" >/dev/null 2>&1 || true
+          done
+          gh issue edit "$PR" --repo "$REPO" --add-label "trust:$ROUTE"
+
+      # --- auto-merge: intentionally NOT enabled ---------------------------------
+      #
+      # Enabling this makes the classifier load-bearing: a bug in it becomes an
+      # unreviewed commit on the vault. All of the following must be true first.
+      #
+      #   1. Observation window: at least 20 PRs classified with the route recorded
+      #      and the maintainer's own decision recorded, with zero disagreements on
+      #      any PR the gate called `auto-merge`.
+      #   2. ofm-check is a REQUIRED check (it is still report-only today), so the
+      #      `clean` verdict this gate relies on has actually been enforced.
+      #   3. The site build is a required check, so an auto-merged page cannot break
+      #      the published site.
+      #   4. `.cyberbaser/trust.yml` is covered by CODEOWNERS (or branch protection),
+      #      so adding an agent handle stays a reviewed act. Note the policy is read
+      #      from the base ref, so a PR cannot promote itself — but a merged PR can.
+      #   5. Branch protection forbids force-push to the default branch, so the
+      #      revert path stays a plain `git revert`.
+      #   6. A revert runbook exists and has been rehearsed once on a scratch repo.
+      #
+      # - name: Enable auto-merge for the auto-merge route
+      #   if: steps.classify.outputs.route == 'auto-merge' && steps.classify.outputs.tier == 'agent'
+      #   env:
+      #     GH_TOKEN: ${{ github.token }}
+      #   run: gh pr merge "${{ github.event.pull_request.number }}" --repo "${{ github.repository }}" --squash --auto
