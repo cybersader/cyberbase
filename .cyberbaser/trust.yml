@@ -1,0 +1,46 @@
+# Trust policy for the cyberbase vault. Read by @cyberbaser/trust in CI, always
+# from the BASE branch of a PR — a PR cannot promote its own author.
+#
+# The maintainer is the only human contributor today; the expected contributor
+# class is the maintainer's own agents (see cyberbase#2, and cyberbaser's
+# research/option-space Option 2). Moving a handle onto either list is a
+# conscious act, and it is a reviewable commit.
+
+trusted:
+  - cybersader
+
+agents: []
+  # Add the bot handle here once it exists — see "the identity gap" below.
+  # - cyberbase-bot
+
+caps:
+  lines: 60        # added + removed non-blank lines, whole change
+  files: 5
+  proseWords: 25   # net new prose words above which a cited source is expected
+  typoLines: 6     # human typo-class ceiling
+  typoWords: 10
+
+# New files may only be created inside the published boundary (publish.yml).
+allowedNewFolders:
+  - "📁 02 - CyberNews/**"
+  - "📁 03 - Curations, Stacks/**"
+  - "📁 05 - Organizational Cyber/**"
+  - "📁 06 - Learning, Notes/**"
+  - "📁 07 - Cybersader Arsenal/**"
+  - "📁 10 - My Obsidian Stack/**"
+  - "📁 13 - Religion, Ontology, Philosophy/**"
+  - "📁 16 - Society, Culture, Politics, Government/**"
+  - "📁 17 - Knowledge Engineering/**"
+  - "📁 21 - Development/**"
+  - "📁 51 - Cyberbase/**"
+  - "📁 52 - Obsidian Starters & Templates/**"
+  - "📁 54 - Obsidian Vault Organization/**"
+  - "⬇️ Clippings/**"
+  - "CybersaderNotion/**"
+
+# Frontmatter keys an agent may change without a human looking. Everything else
+# — title, slug, cb-publish, publish, aliases — is a publishing or identity
+# decision and routes to full-review.
+frontmatterAllowlist:
+  - tags
+  - updated
