@@ -8,7 +8,7 @@ date modified: Thursday, November 21st 2024, 7:54 pm
 
 
 - IR Playbooks
-    - Have your IR, emergency comms platforms, and OOB (out of band) comms platforms ready to send out playbooks when an incident is called.  This can call out responsibilites, processes, and help tell people where to go or what to do
+    - Have your IR, emergency comms platforms, and OOB (out of band) comms platforms ready to send out playbooks when an incident is called.  This can call out responsibilities, processes, and help tell people where to go or what to do
 
 
 - [SIEM, Visibility, and Event-Driven Architecture Curated Solutions - Cybersader Wiki](https://base.cybersader.com/%F0%9F%93%81+98+-+ARCHIVE/GradSchoolProjects/SIEM+Framework/Solution+%26+Architecture+Curation/SIEM%2C+Visibility%2C+and+Event-Driven+Architecture+Curated+Solutions#Security-Focused+Analytics+Platforms+(SIEM%2C+SIRP))
