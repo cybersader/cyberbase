@@ -16,4 +16,4 @@ date modified: Tuesday, February 18th 2025, 9:03 am
 - [catholic.com > A Bad Argument for Sola Scriptura](https://www.catholic.com/magazine/online-edition/a-bad-argument-for-sola-scriptura)
 - [The Case for Catholicism: Answers to Classic and Contemporary Protestant Objections: Horn](https://www.amazon.com/Case-Catholicism-Contemporary-Protestant-Objections/dp/1621641449) - $18.41
 - [Why We're Catholic: Our Reasons for Faith](https://www.amazon.com/Why-Were-Catholic-Reasons-Faith/dp/1683570243) - $11.85
-- 
+- test
