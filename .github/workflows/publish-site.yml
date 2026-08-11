@@ -20,14 +20,13 @@ on:
     paths:
       - '**/*.md'
       - 'publish.yml'
+      # The reviewed inventory is cumulative public history. Add new canonical
+      # URLs after publication; never remove an old entry merely because it is
+      # now served by a redirect.
+      - '.cyberbaser/url-baseline.xml'
       # Rebuild when the pipeline definition itself changes.
       - '.github/workflows/publish-site.yml'
   workflow_dispatch:
-    inputs:
-      cyberbaser_ref:
-        description: 'cyberbaser ref to build with (branch, tag, or SHA)'
-        required: false
-        default: 'main'
 
 permissions:
   contents: read
@@ -94,9 +93,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: cybersader/cyberbaser
-          # Prefer a release tag or SHA here once cyberbaser cuts one: floating
-          # main means the site can change without a vault commit.
-          ref: ${{ github.event.inputs.cyberbaser_ref || 'main' }}
+          # R23 checker and all pipeline inputs are immutable for this vault
+          # publication. Change this only through a reviewed vault commit.
+          ref: eac9f1fb1947d60b084cdbf92cbb997844732640
           path: cyberbaser
           fetch-depth: 1
           persist-credentials: false
@@ -162,6 +161,27 @@ jobs:
             content-projected \
             "${QUARTZ_DIR}"
           test -f "${SITE_DIR}/index.html"
+
+      - name: Enforce published URL continuity
+        # R23 gates emitted output, not source naming. Every URL in the reviewed
+        # cumulative baseline must remain canonical or have one direct static
+        # redirect to a current canonical URL.
+        run: |
+          set -euo pipefail
+          node cyberbaser/packages/linkcheck/bin/cb-urlcheck.js \
+            vault/.cyberbaser/url-baseline.xml \
+            "${SITE_DIR}" \
+            --base-path "${CB_BASE_PATH}" \
+            --json url-continuity-report.json
+
+      - name: Upload the URL continuity report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: url-continuity-report
+          path: url-continuity-report.json
+          if-no-files-found: warn
+          retention-days: 30
 
       - name: Assert no colon in any emitted path
         # The R14 spike emitted 6 paths containing ':' from a single note whose
