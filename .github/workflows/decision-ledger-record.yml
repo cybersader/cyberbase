@@ -47,7 +47,7 @@ jobs:
         with:
           repository: cybersader/cyberbaser
           # NON-RUNNABLE PLACEHOLDER: replace only with the reviewed implementation commit.
-          ref: '7410256e3701245283f05dab8543fcf26563c9d0'
+          ref: 'c5438067e3dbad336e1b3521f8850a97700a53c3'
           fetch-depth: 1
           path: cyberbaser
           persist-credentials: false
