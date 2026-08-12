@@ -1,0 +1,47 @@
+name: Decision Ledger Capture
+run-name: 'Decision Ledger Capture / PR #${{ github.event.pull_request.number }}'
+
+on:
+  pull_request:
+    types: [closed]
+
+# This untrusted stage needs no repository token scope. Artifact upload uses the
+# Actions runtime token, not contents write access.
+permissions: {}
+
+jobs:
+  capture:
+    name: capture-routing-hint
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Create the inert routing hint
+        shell: bash
+        env:
+          CAPTURE_PATH: ${{ runner.temp }}/decision-ledger-capture.json
+          REPOSITORY_ID: ${{ github.event.repository.id }}
+          REPOSITORY: ${{ github.repository }}
+          SOURCE_RUN_ID: ${{ github.run_id }}
+          SOURCE_RUN_ATTEMPT: ${{ github.run_attempt }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          set -euo pipefail
+          umask 077
+          [[ "$REPOSITORY_ID" =~ ^[1-9][0-9]*$ ]]
+          [[ "$REPOSITORY" =~ ^[A-Za-z0-9][A-Za-z0-9-]*/[A-Za-z0-9._-]+$ ]]
+          [[ "$SOURCE_RUN_ID" =~ ^[1-9][0-9]*$ ]]
+          [[ "$SOURCE_RUN_ATTEMPT" =~ ^[1-9][0-9]*$ ]]
+          [[ "$PR_NUMBER" =~ ^[1-9][0-9]*$ ]]
+          printf '{"schemaVersion":1,"repositoryId":"%s","repository":"%s","sourceRunId":"%s","sourceRunAttempt":%s,"prNumber":%s}\n' \
+            "$REPOSITORY_ID" "$REPOSITORY" "$SOURCE_RUN_ID" "$SOURCE_RUN_ATTEMPT" "$PR_NUMBER" \
+            > "$CAPTURE_PATH"
+          [[ "$(wc -c < "$CAPTURE_PATH")" -le 1024 ]]
+
+      - name: Upload the routing hint
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: decision-ledger-capture-run-${{ github.run_id }}-pr-${{ github.event.pull_request.number }}
+          path: ${{ runner.temp }}/decision-ledger-capture.json
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 9
