@@ -280,7 +280,7 @@ My type:
 
 Person:
 
-- What the the different aspects of keycaps, mechnical keyboard layouts or percentages, and the different switches and everything i need to know to mix and match mech keyboard stuff. For instance, i need to know how keycaps fit to switches, if certain mech keyboard are laid out for certain size keycaps, etc.
+- What the different aspects of keycaps, mechnical keyboard layouts or percentages, and the different switches and everything i need to know to mix and match mech keyboard stuff. For instance, i need to know how keycaps fit to switches, if certain mech keyboard are laid out for certain size keycaps, etc.
 
 Give me a taxonomy of all the components and various types. This can be a multi layered hierarchical notes if you will.
 
