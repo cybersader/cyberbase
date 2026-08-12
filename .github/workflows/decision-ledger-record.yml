@@ -23,7 +23,8 @@ jobs:
     if: >-
       github.event.workflow_run.conclusion == 'success' &&
       github.event.workflow_run.event == 'pull_request' &&
-      github.event.workflow_run.name == 'Decision Ledger Capture' &&
+      startsWith(github.event.workflow_run.name, 'Decision Ledger Capture / PR #') &&
+      github.event.workflow_run.name == github.event.workflow_run.display_title &&
       github.event.workflow_run.path == '.github/workflows/decision-ledger-capture.yml' &&
       github.event.workflow_run.repository.id == github.event.repository.id &&
       github.event.workflow_run.repository.full_name == github.repository &&
@@ -46,7 +47,7 @@ jobs:
         with:
           repository: cybersader/cyberbaser
           # NON-RUNNABLE PLACEHOLDER: replace only with the reviewed implementation commit.
-          ref: '2f76d0e57962f34e8908f8b1994bb87cd920f3ff'
+          ref: '7410256e3701245283f05dab8543fcf26563c9d0'
           fetch-depth: 1
           path: cyberbaser
           persist-credentials: false
