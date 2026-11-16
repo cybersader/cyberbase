@@ -13,8 +13,8 @@ date modified: Monday, November 4th 2024, 11:00 am
 # Feature Requests & Problems for Obsidian Git
 
 - Related
-	- [[Feature]: newest file feature · Issue #740 · Vinzent03/obsidian-git · GitHub](https://github.com/Vinzent03/obsidian-git/issues/740)
-	- [[feature] Make auto commit a per device setting · Issue #789 · Vinzent03/obsidian-git · GitHub](https://github.com/Vinzent03/obsidian-git/issues/789)
+	- [\[Feature\]: newest file feature · Issue #740 · Vinzent03/obsidian-git · GitHub](https://github.com/Vinzent03/obsidian-git/issues/740)
+	- [\[feature\] Make auto commit a per device setting · Issue #789 · Vinzent03/obsidian-git · GitHub](https://github.com/Vinzent03/obsidian-git/issues/789)
 	- 
 - Conflicts often happen with the workspace.json file
 	- You can see how to fix it @ [Obsidian Setup for Corporate](../../Obsidian%20Setup%20for%20Corporate/Obsidian%20Setup%20for%20Corporate.md)

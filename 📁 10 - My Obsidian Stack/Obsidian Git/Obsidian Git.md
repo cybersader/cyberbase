@@ -11,7 +11,7 @@ date modified: Sunday, February 2nd 2025, 11:55 am
 
 - [Tips-and-Tricks - Git Documentation - Obsidian Publish](https://publish.obsidian.md/git-doc/Tips-and-Tricks) 
 - [Start here - Git Documentation - Obsidian Publish](https://publish.obsidian.md/git-doc/Start+here) 
-- [[Guide] Using Git to sync your Obsidian vault on Android devices - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/guide-using-git-to-sync-your-obsidian-vault-on-android-devices/41887)
+- [\[Guide\] Using Git to sync your Obsidian vault on Android devices - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/guide-using-git-to-sync-your-obsidian-vault-on-android-devices/41887)
 
 # Disable Git on Certain Clients
 

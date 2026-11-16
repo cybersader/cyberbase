@@ -286,7 +286,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [2020 生活手册系列：家用网络配置与选购指南 – Yachen’s Blog](https://yach.me/2020/10/06/2020-%E7%94%9F%E6%B4%BB%E6%89%8B%E5%86%8C%E7%B3%BB%E5%88%97%EF%BC%9A%E5%AE%B6%E7%94%A8%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE%E4%B8%8E%E9%80%89%E8%B4%AD%E6%8C%87%E5%8D%97/)
 - [导购-路由器交流](https://www.acwifi.net/tag/%E5%AF%BC%E8%B4%AD)
 - [选购攻略-路由器交流](https://www.acwifi.net/tag/%E9%80%89%E8%B4%AD%E6%94%BB%E7%95%A5)
-- [[硬件升级] 2022年的802.11ax(wifi6)产品推荐 4.6更新5G WIFI6 CPE NGA玩家社区](https://bbs.nga.cn/read.php?tid=31122302&rand=939)
+- [\[硬件升级\] 2022年的802.11ax(wifi6)产品推荐 4.6更新5G WIFI6 CPE NGA玩家社区](https://bbs.nga.cn/read.php?tid=31122302&rand=939)
 
 ### 设备厂商与品牌
 

@@ -19,10 +19,10 @@ date modified: Friday, November 22nd 2024, 2:33 pm
 - [Has anyone solved cloudflare's problem with uploading files larger than 1GB?](https://github.com/immich-app/immich/discussions/8299#discussioncomment-9569293)
 - [How To Bypass Cloudflare Max Upload Size 100 MB Limit - YouTube](https://www.youtube.com/watch?v=V61Z0WEbVtE&feature=youtu.be)
 - [Alternative to Cloudflare zero trust tunnel with >1GB upload : r/CloudFlare](https://www.reddit.com/r/CloudFlare/comments/18vhu4p/alternative_to_cloudflare_zero_trust_tunnel_with/)
-- [[Guide] Cloudflare Tunnels with SSO/OAuth working for immich · immich-app/immich · Discussion #8299](https://github.com/immich-app/immich/discussions/8299)
+- [\[Guide\] Cloudflare Tunnels with SSO/OAuth working for immich · immich-app/immich · Discussion #8299](https://github.com/immich-app/immich/discussions/8299)
 - [Max upload size - Zero Trust / Cloudflare Tunnel - Cloudflare Community](https://community.cloudflare.com/t/max-upload-size/630925)
 - [413 Request Entity Too Large - How to increase the size? - Website, Application, Performance / DNS & Network - Cloudflare Community](https://community.cloudflare.com/t/413-request-entity-too-large-how-to-increase-the-size/330117)
-- [[Feature]: Upload large files in chunks · immich-app/immich · Discussion #1674](https://github.com/immich-app/immich/discussions/1674#discussioncomment-11065843)
+- [\[Feature\]: Upload large files in chunks · immich-app/immich · Discussion #1674](https://github.com/immich-app/immich/discussions/1674#discussioncomment-11065843)
 
 # The Why/Issue
 
@@ -34,7 +34,7 @@ Can't use Cloudflare Tunnels until Immich implements chunking from their clients
 
 The request needs to be broken up into pieces on the client application side and then streamed over to the server in chunks.  There are libraries for doing this that they're trying to implement.
 
-There is a feature request for this currently - [[Feature]: Upload large files in chunks · immich-app/immich · Discussion #1674](https://github.com/immich-app/immich/discussions/1674)
+There is a feature request for this currently - [\[Feature\]: Upload large files in chunks · immich-app/immich · Discussion #1674](https://github.com/immich-app/immich/discussions/1674)
 
 Ironically, this was mentioned last week.
 

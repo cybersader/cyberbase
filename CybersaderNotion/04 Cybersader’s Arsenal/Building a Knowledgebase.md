@@ -72,11 +72,11 @@
 
 ## Random Papers & Resources
 
-- [[2110.07178] Symbolic Knowledge Distillation: from General Language Models to Commonsense Models](https://arxiv.org/abs/2110.07178)
+- [\[2110.07178\] Symbolic Knowledge Distillation: from General Language Models to Commonsense Models](https://arxiv.org/abs/2110.07178)
 - [https://www.mdpi.com/2076-3417/11/21/10037/pdf?version=1635318340](https://www.mdpi.com/2076-3417/11/21/10037/pdf?version=1635318340)
 - [Neural Networks & Word Embeddings | by Nwamaka Imasogie | Nwamaka Imasogie’s Machine Learning and Artificial Intelligence Projects | Medium](https://medium.com/nwamaka-imasogie/neural-networks-word-embeddings-8ec8b3845b2e)
 - [Learning Semantic Word Embeddings based on Ordinal Knowledge Constraints - ACL Anthology](https://aclanthology.org/P15-1145/)
-- [[PDF] Contextual Semantic Embeddings for Ontology Subsumption Prediction | Semantic Scholar](https://www.semanticscholar.org/paper/Contextual-Semantic-Embeddings-for-Ontology-Chen-He/44bfb8934cf5bf345903166f380dcc5ac159dd7a)
+- [\[PDF\] Contextual Semantic Embeddings for Ontology Subsumption Prediction | Semantic Scholar](https://www.semanticscholar.org/paper/Contextual-Semantic-Embeddings-for-Ontology-Chen-He/44bfb8934cf5bf345903166f380dcc5ac159dd7a)
 - [Ontology Matching with Word Embeddings | SpringerLink](https://link.springer.com/chapter/10.1007/978-3-319-12277-9_4)
 - [A guide to ontology, epistemology, and philosophical perspectives for interdisciplinary researchers – Integration and Implementation Insights](https://i2insights.org/2017/05/02/philosophy-for-interdisciplinarity/comment-page-1/)
 - [Paradigm, Ontology, Epistemology on PostgraduateForum.com](https://www.postgraduateforum.com/forum/phd/advice/thread/paradigm-ontology-epistemology/24090)

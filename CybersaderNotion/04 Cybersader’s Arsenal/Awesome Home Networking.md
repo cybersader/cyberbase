@@ -153,7 +153,7 @@ In addition to routers, switches and other devices, there are many auxiliary dev
 - [2020 Life Manual Series: Home Network Configuration and Purchase Guide – Yachen's Blog]([https://yach.me/2020/10/06/2020-生活�%](https://yach.me/2020/10/06/2020-%E7%94%9F%E6%B4%BB%E6%25)89%8B%E5%86%8C%E7%B3%BB%E5%88%97%EF%BC%9A%E5%AE%B6%E7%94%A8%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE%E4%B8%8E%E9%80%89%E8%B4%AD% E6%8C%87%E5%8D%97/)
 - [Shopping Guide-Router Exchange](https://www.acwifi.net/tag/%E5%AF%BC%E8%B4%AD)
 - [Purchasing Guide - Router Communication](https://www.acwifi.net/tag/%E9%80%89%E8%B4%AD%E6%94%BB%E7%95%A5)
-- [[Hardware upgrade] 802.11ax (wifi6) product recommendation in 2022 4.6 update 5G WIFI6 CPE NGA player community](https://bbs.nga.cn/read.php?tid=31122302&rand=939)
+- [\[Hardware upgrade\] 802.11ax (wifi6) product recommendation in 2022 4.6 update 5G WIFI6 CPE NGA player community](https://bbs.nga.cn/read.php?tid=31122302&rand=939)
 
 ### Equipment manufacturers and brands
 
@@ -596,7 +596,7 @@ For devices with only one network port (such as ordinary home computers, Intel N
 
 One-arm routing is equivalent to creating multiple sub-interfaces on an interface, and different sub-interfaces correspond to different VLANs, so that one interface can be used as multiple interfaces.
 
-- [[Tutorial] LEDE one-arm soft router installation experience](https://nipgeihou.com/router-on-a-stick/)
+- [\[Tutorial\] LEDE one-arm soft router installation experience](https://nipgeihou.com/router-on-a-stick/)
 
 ## Technical concepts
 
