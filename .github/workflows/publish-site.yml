@@ -47,10 +47,13 @@ env:
   QUARTZ_VERSION: v4.5.2
   # Project site for this repo. Separate repo means a separate Pages site, so
   # this does not touch cybersader.github.io/cyberbaser.
-  CB_SITE_URL: https://cybersader.github.io
-  CB_BASE_PATH: /cyberbase
+  CB_SITE_URL: https://cybersader.com
+  CB_BASE_PATH: ''
   # Quartz v4 `baseUrl` form: host + path, no protocol.
-  CB_BASE_URL: cybersader.github.io/cyberbase
+  CB_BASE_URL: cybersader.com
+  # Old Obsidian Publish URLs (cybersader.com before the move) redirect to their
+  # notes via this snapshot; the renderer reads it at build time.
+  CYBERBASER_LEGACY_URLS: ${{ github.workspace }}/vault/.cyberbaser/publish-legacy-urls.json
   QUARTZ_DIR: quartz
   SITE_DIR: quartz/public
   # GitHub Pages hard limit on the built artifact. Documented as "1 GB" without
@@ -95,7 +98,7 @@ jobs:
           repository: cybersader/cyberbaser
           # R23 checker and all pipeline inputs are immutable for this vault
           # publication. Change this only through a reviewed vault commit.
-          ref: efb6b72d4a0fcc503dd97b0339c972021b21a995
+          ref: 0d0b8fa4a6cdee9f76db3e17d7d8b6362ad05730
           path: cyberbaser
           fetch-depth: 1
           persist-credentials: false
@@ -172,6 +175,7 @@ jobs:
             vault/.cyberbaser/url-baseline.xml \
             "${SITE_DIR}" \
             --base-path "${CB_BASE_PATH}" \
+            --rebase-previous "https://cybersader.github.io/cyberbase=${CB_SITE_URL}" \
             --json url-continuity-report.json
 
       - name: Upload the URL continuity report
