@@ -19,7 +19,6 @@ publish: true
 - **[[Content Link Downloader]]**
 - **[[Copy & Paste Nuance - CLI & Virtualization]]**
 - **[[Fake Login Forms for Testing]]**
-- **[[Fake Window Light]]**
 - **[[Financial Cyber]]**
 - **[[From Other Wiki]]**
 - **[[Go Pro as a Webcam]]**
