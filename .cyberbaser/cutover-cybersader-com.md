@@ -45,7 +45,7 @@ The input is a snapshot of the Publish URL list stored in the vault (old URL to 
 ## Work before the switch
 
 - [x] **Owner decisions (2026-11-17):** `publish.yml` unchanged for the cutover (the 497 stay off; personal material moves to a private vault and topical folders get reviewed afterwards); the three broken short links are accepted; Cloudflare records DNS only.
-- [ ] **PR #14:** the Publish URL snapshot `.cyberbaser/publish-legacy-urls.json`. Must merge before PR #17.
+- [x] **PR #14 (merged 2026-11-18):** the Publish URL snapshot `.cyberbaser/publish-legacy-urls.json`. Must merge before PR #17.
 - [x] **Cyberbaser renderer:** redirect layer, settings file support. Cyberbaser holds no Cyberbase values; this vault's `.cyberbaser/site.yml` supplies title, address, source repository, PostHog and the snapshot.
 - [x] **Switch configuration, draft PR #17 (merge only at the switch):** `.cyberbaser/site.yml` with `baseUrl: cybersader.com`, the workflow pointing the renderer at it, renderer and ofm-check pins, rebased continuity check.
 - [x] **Exact rehearsal** from public sources: see PR #17.
@@ -54,7 +54,7 @@ The 404 fallback hashes paths with the browser's Web Crypto, which needs HTTPS: 
 
 ## The switch
 
-**Exact build:** the `publish-site.yml` run triggered by merging vault PR #17 (after PR #14), renderer `0d0b8fa4a6cdee9f76db3e17d7d8b6362ad05730`. Record its run ID and vault commit here. Before it, deployed: renderer `efb6b72d4a0fcc503dd97b0339c972021b21a995`.
+**Exact build:** the `publish-site.yml` run triggered by merging vault PR #17 (after PR #14), renderer `14440e0428142b23f852747ce53cb1f3677398c9`. Record its run ID and vault commit here. Before it, deployed: renderer `efb6b72d4a0fcc503dd97b0339c972021b21a995`.
 
 **Current DNS (Cloudflare zone, nameservers `ingrid`/`howard.ns.cloudflare.com`):** `cybersader.com` and `www` both proxied; public answers are Cloudflare anycast `104.21.19.146`, `172.67.186.127`, `2606:4700:3033::6815:1392`, `2606:4700:3030::ac43:ba7f`. The underlying records are hidden by the proxy (Obsidian's documented setup is a proxied CNAME to `publish-main.obsidian.md`). `www` currently returns 404 from Publish. Leave every MX and TXT record (mail and site verifications) untouched.
 
