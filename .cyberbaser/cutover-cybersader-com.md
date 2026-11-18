@@ -8,7 +8,7 @@ Prepared 2026-11-17 at the owner's request. Planning only: no DNS, Pages, Publis
 
 The old URL list comes from three live Publish sources, read once: its `sitemap.xml` (1,417 URLs), its file index (1,417 notes, 1,212 attachments) and the six `permalink:` values. Publish serves every path as a single-page app and resolves notes case-insensitively, so any capitalization or `+`/`%20` spelling of a note path works today.
 
-Mapped against the vault at `0cc579a` and a full Quartz build of it with the current renderer:
+Mapped against the vault at `0cc579a` (`873382a` after the 2026-11-18 history rewrite) and a full Quartz build of it with the current renderer:
 
 | Result | Notes | What happens after the switch |
 |---|---|---|
