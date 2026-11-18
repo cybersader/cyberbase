@@ -54,7 +54,7 @@ The 404 fallback hashes paths with the browser's Web Crypto, which needs HTTPS: 
 
 ## The switch
 
-**Exact build:** the `publish-site.yml` run triggered by merging vault PR #17 (after PR #14), renderer `14440e0428142b23f852747ce53cb1f3677398c9`. Record its run ID and vault commit here. Before it, deployed: renderer `efb6b72d4a0fcc503dd97b0339c972021b21a995`.
+**Exact build:** the `publish-site.yml` run triggered by merging vault PR #17 (after PR #14), renderer `1495a0dda9c0c4e1eaeb1f615a59babe6bfad091`. Record its run ID and vault commit here. Before it, deployed: renderer `efb6b72d4a0fcc503dd97b0339c972021b21a995`.
 
 **Current DNS (Cloudflare zone, nameservers `ingrid`/`howard.ns.cloudflare.com`):** `cybersader.com` and `www` both proxied; public answers are Cloudflare anycast `104.21.19.146`, `172.67.186.127`, `2606:4700:3033::6815:1392`, `2606:4700:3030::ac43:ba7f`. The underlying records are hidden by the proxy (Obsidian's documented setup is a proxied CNAME to `publish-main.obsidian.md`). `www` currently returns 404 from Publish. Leave every MX and TXT record (mail and site verifications) untouched.
 

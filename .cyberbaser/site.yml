@@ -21,3 +21,9 @@ analytics:
 
 # Old Obsidian Publish URLs redirect to their notes (snapshot taken 2026-11-17).
 legacyUrls: publish-legacy-urls.json
+
+# The site's look: this stylesheet loads after Cyberbaser's own (like publish.css
+# on Obsidian Publish), and new visitors start in dark mode.
+appearance:
+  stylesheet: site.css
+  colorScheme: dark
