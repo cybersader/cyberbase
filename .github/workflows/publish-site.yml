@@ -50,10 +50,9 @@ env:
   CB_SITE_URL: https://cybersader.com
   CB_BASE_PATH: ''
   # Quartz v4 `baseUrl` form: host + path, no protocol.
-  CB_BASE_URL: cybersader.com
-  # Old Obsidian Publish URLs (cybersader.com before the move) redirect to their
-  # notes via this snapshot; the renderer reads it at build time.
-  CYBERBASER_LEGACY_URLS: ${{ github.workspace }}/vault/.cyberbaser/publish-legacy-urls.json
+  # Site title, address, source links, analytics and old Publish URL redirects
+  # come from this vault's settings file, not from Cyberbaser.
+  CYBERBASER_SITE_CONFIG: ${{ github.workspace }}/vault/.cyberbaser/site.yml
   QUARTZ_DIR: quartz
   SITE_DIR: quartz/public
   # GitHub Pages hard limit on the built artifact. Documented as "1 GB" without
@@ -98,7 +97,7 @@ jobs:
           repository: cybersader/cyberbaser
           # R23 checker and all pipeline inputs are immutable for this vault
           # publication. Change this only through a reviewed vault commit.
-          ref: 0d0b8fa4a6cdee9f76db3e17d7d8b6362ad05730
+          ref: 14440e0428142b23f852747ce53cb1f3677398c9
           path: cyberbaser
           fetch-depth: 1
           persist-credentials: false
