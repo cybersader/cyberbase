@@ -26,4 +26,5 @@ legacyUrls: publish-legacy-urls.json
 # on Obsidian Publish), and new visitors start in dark mode.
 appearance:
   stylesheet: site.css
+  favicon: favicon.png
   colorScheme: dark

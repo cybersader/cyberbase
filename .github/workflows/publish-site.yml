@@ -97,7 +97,7 @@ jobs:
           repository: cybersader/cyberbaser
           # R23 checker and all pipeline inputs are immutable for this vault
           # publication. Change this only through a reviewed vault commit.
-          ref: dc60cf7c203ccd1d1768e3e8090acf9b2f2beea2
+          ref: 1590d9f2418ab3402ba3f63aa5655e6cb620823d
           path: cyberbaser
           fetch-depth: 1
           persist-credentials: false
