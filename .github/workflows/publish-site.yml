@@ -53,6 +53,8 @@ env:
   # Site title, address, source links, analytics and old Publish URL redirects
   # come from this vault's settings file, not from Cyberbaser.
   CYBERBASER_SITE_CONFIG: ${{ github.workspace }}/vault/.cyberbaser/site.yml
+  # Read-only: commit dates for notes without frontmatter dates.
+  CYBERBASER_SOURCE_CHECKOUT: ${{ github.workspace }}/vault
   QUARTZ_DIR: quartz
   SITE_DIR: quartz/public
   # GitHub Pages hard limit on the built artifact. Documented as "1 GB" without
@@ -80,13 +82,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: vault
-          # Depth 1 is enough today. The projected copy is a fresh directory and
-          # is not a git repo, so Quartz's git date resolution finds nothing
-          # either way and falls back to file mtime. Switch to fetch-depth: 0
-          # only when the projection starts stamping git-derived dates into the
-          # projected frontmatter (legal under D2: the projected copy is a
-          # disposable build input, not the vault).
-          fetch-depth: 1
+          # Full history: notes without frontmatter dates get their first and
+          # last commit dates (renderer GitDates, CYBERBASER_SOURCE_CHECKOUT).
+          # The projected copy is not a git repo, so without this they would
+          # show the build time.
+          fetch-depth: 0
           # Do not leave the job token in vault/.git/config where a later build
           # step could read it.
           persist-credentials: false
@@ -97,7 +97,7 @@ jobs:
           repository: cybersader/cyberbaser
           # R23 checker and all pipeline inputs are immutable for this vault
           # publication. Change this only through a reviewed vault commit.
-          ref: 1590d9f2418ab3402ba3f63aa5655e6cb620823d
+          ref: d896c0c362c453461edf81b08ea61ee3ea5331b6
           path: cyberbaser
           fetch-depth: 1
           persist-credentials: false

@@ -39,7 +39,7 @@ jobs:
           # Pinned to the same reviewed Cyberbaser commit as publish-site.yml.
           # Move both pins together through a reviewed vault commit.
           git init --quiet /tmp/cyberbaser
-          git -C /tmp/cyberbaser fetch --quiet --depth 1 https://github.com/cybersader/cyberbaser 1590d9f2418ab3402ba3f63aa5655e6cb620823d
+          git -C /tmp/cyberbaser fetch --quiet --depth 1 https://github.com/cybersader/cyberbaser d896c0c362c453461edf81b08ea61ee3ea5331b6
           git -C /tmp/cyberbaser checkout --quiet --detach FETCH_HEAD
           cd /tmp/cyberbaser/packages/ofm
           bun install --frozen-lockfile
