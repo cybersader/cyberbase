@@ -3,6 +3,8 @@ permalink:
 aliases: []
 tags: []
 publish: true
+cb-publish: true
+slug: index
 date created: Saturday, March 9th 2024, 8:53 pm
 date modified: Thursday, March 20th 2025, 4:14 pm
 title: Welcome to my Cyberbase

@@ -1,0 +1,29 @@
+# Cyberbaser site settings for this vault (read by the renderer at build time).
+# Reference: https://cybersader.github.io/cyberbaser/development/site-settings/
+site:
+  title: Cyberbase
+  baseUrl: cybersader.com
+
+# Source links on every note: View source, Copy Markdown, Show raw,
+# Download vault, "Interact with this note", and the public Edit link.
+source:
+  provider: github
+  repository: cybersader/cyberbase
+  branch: main
+
+# Carried over from the old publish.js. Counts only the public site built in
+# this repository; never the private owner site.
+analytics:
+  provider: posthog
+  apiKey: phc_599knGAT15HiAYE5nHJjTqIlAY3O6e2F3QdlFzIRHKb
+  apiHost: https://us.i.posthog.com
+  personProfiles: identified_only
+
+# Old Obsidian Publish URLs redirect to their notes (snapshot taken 2026-11-17).
+legacyUrls: publish-legacy-urls.json
+
+# The site's look: this stylesheet loads after Cyberbaser's own (like publish.css
+# on Obsidian Publish), and new visitors start in dark mode.
+appearance:
+  stylesheet: site.css
+  colorScheme: dark

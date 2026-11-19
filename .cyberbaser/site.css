@@ -1,0 +1,150 @@
+/*
+ * Cyberbase site look (read by Cyberbaser via appearance.stylesheet in site.yml).
+ * Nord palette, carried over from publish.css (Minimal + Nord) on Obsidian Publish.
+ */
+
+:root {
+  --bodyFont: "Inter", "Noto Sans", -apple-system, "Segoe UI", system-ui, sans-serif;
+  --headerFont: "Inter", "Noto Sans", -apple-system, "Segoe UI", system-ui, sans-serif;
+  --cb-panel: #eceff4;
+  --cb-card: #ffffff;
+}
+
+:root[saved-theme="light"] {
+  --light: #ffffff;
+  --lightgray: #d8dee9;
+  --gray: #7d8697;
+  --darkgray: #2e3440;
+  --dark: #2e3440;
+  --secondary: #5e81ac;
+  --tertiary: #81a1c1;
+  --highlight: rgba(94, 129, 172, 0.12);
+  --textHighlight: rgba(235, 203, 139, 0.5);
+  --cb-panel: #eceff4;
+  --cb-card: #ffffff;
+}
+
+:root[saved-theme="dark"] {
+  --light: #2e3440;
+  --lightgray: #434c5e;
+  --gray: #9eafcc;
+  --darkgray: #d8dee9;
+  --dark: #eceff4;
+  --secondary: #88c0d0;
+  --tertiary: #8fbcbb;
+  --highlight: rgba(135, 152, 190, 0.15);
+  --textHighlight: rgba(235, 203, 139, 0.3);
+  --cb-panel: #3b4252;
+  --cb-card: #3b4252;
+}
+
+/* Left panel, like the Publish sidebar. */
+@media (min-width: 800px) {
+  .page > #quartz-body > .sidebar.left {
+    background: var(--cb-panel);
+  }
+}
+
+/* Images used by the README (publish.css carried over). */
+.responsive-readme-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+article img {
+  border-radius: 6px;
+}
+
+/* cssclasses: list-cards. Each top-level list item becomes a card; a nested
+   list under it becomes the card's caption (Minimal's list-cards). */
+article.list-cards > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr));
+  gap: 0.75rem;
+  padding: 0;
+  margin: 1rem 0;
+  list-style: none;
+}
+
+article.list-cards > ul > li {
+  min-width: 0;
+  margin: 0;
+  padding: 0.6rem 0.75rem;
+  background: var(--cb-card);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  font-weight: 600;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+article.list-cards > ul > li::marker {
+  content: none;
+}
+
+article.list-cards > ul > li:hover {
+  border-color: var(--secondary);
+  transform: translateY(-1px);
+}
+
+article.list-cards > ul > li > a {
+  text-decoration: none;
+  background: none;
+}
+
+article.list-cards > ul > li > ul {
+  margin: 0.3rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+
+article.list-cards > ul > li > ul > li {
+  margin: 0;
+}
+
+article.list-cards > ul > li img,
+article.list-cards > ul > li svg {
+  vertical-align: -2px;
+  margin-right: 0.15rem;
+}
+
+/* Small icons placed with <img width=…> in headings and cards sit inline, as in Obsidian. */
+article :is(h1, h2, h3, h4, h5, h6) img,
+article.list-cards > ul > li img {
+  display: inline-block;
+  margin: 0 0.3rem 0 0;
+  vertical-align: middle;
+  border-radius: 0;
+}
+
+/* Home page: the README's own heading and hero carry the title. */
+body[data-slug="index"] :is(.article-title, .cb-note-dates) {
+  display: none;
+}
+
+body[data-slug="index"] article > div[style*="center"] h1 a[role="anchor"] {
+  display: none;
+}
+
+body[data-slug="index"] article > div[style*="center"] h1 {
+  margin-top: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+body[data-slug="index"] article > div[style*="center"] img {
+  box-shadow: 0 0 0 1px var(--lightgray), 0 18px 48px -12px rgba(136, 192, 208, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  article.list-cards > ul > li {
+    transition: none;
+  }
+  article.list-cards > ul > li:hover {
+    transform: none;
+  }
+}
