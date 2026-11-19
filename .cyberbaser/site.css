@@ -122,6 +122,31 @@ article.list-cards > ul > li img {
   border-radius: 0;
 }
 
+/* Links read as links, as on the old site: underlined, no chip background. */
+.page article a.internal {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--secondary) 45%, transparent);
+  text-underline-offset: 2px;
+}
+
+.page article a.internal:hover {
+  text-decoration-color: var(--secondary);
+}
+
+/* No stray external-link arrow after image links (stat cards, badges, buttons). */
+.page article a.external:has(img) .external-icon {
+  display: none;
+}
+
+/* Callouts upright and in body color, as in Obsidian (plain quotes stay italic). */
+.page article blockquote.callout {
+  font-style: normal;
+  color: var(--darkgray);
+}
+
 /* Home page: the README's own heading and hero carry the title. */
 body[data-slug="index"] :is(.article-title, .cb-note-dates) {
   display: none;
