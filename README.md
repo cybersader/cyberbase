@@ -12,7 +12,7 @@ cssclasses:
   - list-cards
 ---
 
-<div style="text-align: center;">
+<div id="cyberbase-intro" style="text-align: center;">
   <h1 style="margin-bottom: 10px;">Cybersader</h1>
   <figure style="display: inline-block; margin: 0;">
     <img src="_attachments/file-20250217124401299.png" alt="Cybersader art" style="width: 400px; max-width: 100%;">

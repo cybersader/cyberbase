@@ -173,3 +173,32 @@ body[data-slug="index"] article > div[style*="center"] img {
     transform: none;
   }
 }
+
+/* The homepage action row follows its introduction in source and tab order. */
+#cyberbase-intro { min-width: 0; }
+#cyberbase-intro figure { max-width: 100%; }
+#cyberbase-intro + .cb-note-actions {
+  justify-content: center;
+  margin: .5rem auto 1rem;
+  gap: .125rem .5rem;
+}
+#cyberbase-intro + .cb-note-actions :is(a, button) {
+  box-sizing: border-box;
+  min-height: 44px;
+  min-width: 44px;
+  padding-inline: .5rem;
+  color: var(--darkgray);
+  font: inherit;
+}
+#cyberbase-intro + .cb-note-actions .cb-note-action-label {
+  position: static; width: auto; height: auto; clip: auto;
+}
+@media (max-width: 32rem) {
+  /* Quartz’s auto grid track otherwise grows to min-content on small phones. */
+  body[data-slug="index"] .page > #quartz-body { grid-template-columns: minmax(0, 1fr); }
+  #cyberbase-intro + .cb-note-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 22rem;
+  }
+}
