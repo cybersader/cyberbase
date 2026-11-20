@@ -20,6 +20,8 @@ on:
     paths:
       - '**/*.md'
       - 'publish.yml'
+      - '.github/scripts/place-home-actions.mjs'
+      - '.cyberbaser/site.css'
       # The reviewed inventory is cumulative public history. Add new canonical
       # URLs after publication; never remove an old entry merely because it is
       # now served by a redirect.
@@ -163,6 +165,9 @@ jobs:
             content-projected \
             "${QUARTZ_DIR}"
           test -f "${SITE_DIR}/index.html"
+
+      - name: Place homepage actions after the introduction
+        run: node vault/.github/scripts/place-home-actions.mjs "$QUARTZ_DIR" "$SITE_DIR/index.html"
 
       - name: Enforce published URL continuity
         # R23 gates emitted output, not source naming. Every URL in the reviewed
