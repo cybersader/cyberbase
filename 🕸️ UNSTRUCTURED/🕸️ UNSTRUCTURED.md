@@ -15,7 +15,6 @@ date modified: Friday, January 31st 2025, 4:34 pm
 - **[[Android Shortcuts]]**
 - **[[AR Glasses]]**
 - [[Audio to Multiple Headphones]]
-- **[[Awesome Clothing]]**
 - **[[Awesome Web Design]]**
 - [[Backups - The 3,2,1 Rule]]
 - **[[Bluesky Social]]**
@@ -47,7 +46,6 @@ date modified: Friday, January 31st 2025, 4:34 pm
 - **[[Favorite Fonts]]**
 - [[Find All Enabled Plugins From Obsidian Folder]]
 - **[[Finding Archived Content]]**
-- **[[First Time Cat Owner]]**
 - [[Gaming Hacks & Cheats]]
 - **[[Ghost Blogs]]**
 - **[[Home-Ec 2025]]**
@@ -91,7 +89,6 @@ date modified: Friday, January 31st 2025, 4:34 pm
 - **[[Unifi Home Networks]]**
 - [[Useful Obsidian Dataview Metadata]]
 - **[[Voice Typing]]**
-- [[Whey Protein Recipes]]
 - **[[Why Use Obsidian Sync]]**
 - [[Why You Should Ask Stupid Questions]]
 - **[[Windows Desktop Provisioning]]**
