@@ -1,0 +1,78 @@
+{
+  "note": "The 2026-11-18 history rewrite (git-filter-repo) changed every commit ID. decision-ledger.jsonl is append-only and keeps the IDs that were true when each decision was recorded; this file maps those to the rewritten commits. Matched by author date, author and subject; each match is unique.",
+  "rewrite": "2026-11-18",
+  "records": [
+    {
+      "prNumber": 10,
+      "field": "mergeCommitSha",
+      "before": "604f97cdbab620097a8513b81a7c9b7b86e0b249",
+      "after": "552c432aa79a8c6d9c9818da006462c620a6242f"
+    },
+    {
+      "prNumber": 10,
+      "field": "baseSha",
+      "before": "4234fbe18a399b8fec2fac48c3584bf1d83c27ea",
+      "after": "b83ba95ffec0348bdced4ba097fba8c479da37cc"
+    },
+    {
+      "prNumber": 10,
+      "field": "headSha",
+      "before": "f5dbf3283489017f1922e0e77e0f93fb1e73b6ad",
+      "after": "1af5f90ed2f835756f0ae9158b81536202ec3b10"
+    },
+    {
+      "prNumber": 12,
+      "field": "mergeCommitSha",
+      "before": "831afdc46890e3ca3ed46be184042bb378c52f99",
+      "after": "1bf64f8a7ef5e7095592e504bcc0bea8c4cbd54e"
+    },
+    {
+      "prNumber": 12,
+      "field": "baseSha",
+      "before": "0cc579a4b0484b1939db1bd76ed9b8b3c1b6a717",
+      "after": "873382a91bd0a21280c6d075b719b54eb47102d2"
+    },
+    {
+      "prNumber": 12,
+      "field": "headSha",
+      "before": "61a263911e1ae3cd4aa7406bff8b049ba10c861c",
+      "after": "535159025d4b65d3218bf93a6692baa92765003a"
+    },
+    {
+      "prNumber": 13,
+      "field": "mergeCommitSha",
+      "before": "30af844139edb39c6e262b2307a7f54d0e00fe69",
+      "after": "fe5e402c45c567192bb7c0ce20a8b35973ffeec6"
+    },
+    {
+      "prNumber": 13,
+      "field": "baseSha",
+      "before": "ed1476fba327848d3327455a2ab217cddf05b0a4",
+      "after": "32d0109a1bfc725bc4f84460db8591cf8fdcc540"
+    },
+    {
+      "prNumber": 13,
+      "field": "headSha",
+      "before": "ab234a338907fabf4d9402e47e09c58b2537d895",
+      "after": "c0042432cc1f5965142ae2936eb4fbb10da30a4b"
+    },
+    {
+      "prNumber": 14,
+      "field": "mergeCommitSha",
+      "before": "1ea469932fa127d8a05b418a8a8bd09f15e54f6d",
+      "after": "49b7b61a9cf2c5a5aa740a5bffa13430e405c8a5"
+    },
+    {
+      "prNumber": 14,
+      "field": "baseSha",
+      "before": "2b9bcb944462b04060297ebd7f31bcb20239fc8a",
+      "after": "4a8905a6a8eb342d82e89c1bcd7e1569088b4865"
+    },
+    {
+      "prNumber": 14,
+      "field": "headSha",
+      "before": "8a5abda3f778c33e96ffbc84993f249deb26bc17",
+      "after": "82a94266ad506eb8b621ad48011f3974f0803af1"
+    }
+  ]
+}
