@@ -12,6 +12,6 @@ date modified: Saturday, November 23rd 2024, 5:43 pm
 
 # Using OpenWRT w/Old Router
 
-- Make sure it's supported first - [[OpenWrt Wiki] Table of Hardware](https://openwrt.org/toh/start)
+- Make sure it's supported first - [\[OpenWrt Wiki\] Table of Hardware](https://openwrt.org/toh/start)
 - [Seeking Recommendations on OpenWRT Router (Not made by TP-Link, DynaLink, or GL.iNet) : r/openwrt](https://www.reddit.com/r/openwrt/comments/1flfqvf/seeking_recommendations_on_openwrt_router_not/)
 - 

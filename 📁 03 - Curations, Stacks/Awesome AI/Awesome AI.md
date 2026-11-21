@@ -13,6 +13,12 @@ date modified: Wednesday, February 12th 2025, 8:56 pm
 
 # AI Tools
 
+## Agent Infrastructure
+
+- [[Jev - Fast Decision Model for Agents]] - TypeSafe's sub-second classifier model; a "reflex" layer for routing, skill selection, and risk checks inside agent harnesses
+- [[Tailscale Aperture - AI Gateway]] - Tailscale-hosted AI gateway with tailnet identity, spending caps, and request logging (note: it processes prompt content)
+- [[Memorilla - Latent Agent Memory]] - *(watch)* Stanford research compressing documents into learned latent tokens for a local Qwen decoder; 80 GB GPU, research-grade
+
 # Misc
 
 [There's An AI For That (TAAFT) - The #1 AI Aggregator](https://theresanaiforthat.com/) 

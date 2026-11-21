@@ -15,7 +15,7 @@ Here's me attempting to fix the TrueNAS issues and re-network it.
 # The Error
 
 Forum post with error below:
-- [[EFAULT] Unable to determine default interface - TrueNAS General - TrueNAS Community Forums](https://forums.truenas.com/t/efault-unable-to-determine-default-interface/21716)
+- [\[EFAULT\] Unable to determine default interface - TrueNAS General - TrueNAS Community Forums](https://forums.truenas.com/t/efault-unable-to-determine-default-interface/21716)
 
 Related links:
 - [Changed router, now truenas scale server can't connect or be connected to. (Please help I've spent like 6 hours on this) : r/truenas](https://www.reddit.com/r/truenas/comments/11ctd4c/changed_router_now_truenas_scale_server_cant/)
